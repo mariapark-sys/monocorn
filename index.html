@@ -660,6 +660,147 @@ const STORIES = [
     { title: "Loot Drop database export, 1,749 failed startups", url: "https://www.loot-drop.io/", grade: "C", how: "Local export. AI-written summaries, not independently verified. Source for the failed predecessors." },
     { title: "NeuronFeed directory entry for Chatbase", url: "https://neuronfeed.com/startups/chatbase", grade: "C", how: "Read in full. An AI-written directory. It claims a Y Combinator batch and a US$3 million raise. Cited only for that conflict." }
   ]
+},
+{
+  slug: "cal-ai",
+  name: "Cal AI",
+  country: "USA",
+  sector: "Health Care",
+  productType: "Calorie tracking from food photos",
+  aiType: "AI-native",
+  team: "small",
+  outcome: "exit",
+  evidence: "B",
+  added: "2026-10-12",
+  launchLabel: "May 2024",
+  outcomeLabel: "Sold to MyFitnessPal, price not disclosed, December 2025",
+  sticker: "Sold at $30M+ revenue",
+  outcomeUsd: 30000000,
+  months: 19,
+  teamLabel: "2 teenage founders plus 2 partners, 7 employees at the sale",
+  fundingLabel: "None",
+  primaryFactor: "Distribution",
+  meters: { evidence: 3, copyable: 3, capital: 2 },
+  tags: ["AI-native", "Small team", "Bootstrapped", "Exit", "Consumer app", "Teen founders"],
+  product: "You photograph your meal. Cal AI sends the picture to a rented AI model and returns an estimate of the calories, protein, carbohydrates and fat. No search, no portion menus.",
+  why: "It sold speed to people who gave up on manual food logging, it paid 250 influencers fixed monthly fees to reach them, and it had a 30-dollar-a-year price. The rented model made the hard part cost almost nothing to build.",
+  summary: [
+    `Cal AI is a mobile app that estimates the calories in a meal from a photo. It uses a <dfn>multimodal model</dfn> through an API. A multimodal model is an AI model that reads images as well as text, and an API is a paid interface that lets an app send a picture to a model that another company runs. The founders did not train a model. Older calorie apps, such as MyFitnessPal, asked the user to search a database and enter portions by hand.`,
+    `Zach Yadegari and Henry Langmack, both 17 and still in high school on Long Island, New York, wrote the first code in March 2024 and launched in May 2024 with two older partners. The app passed US$1 million in sales within five months and reached an <dfn>annual run rate</dfn> above US$35 million one year after launch. Annual run rate is the current monthly revenue multiplied by twelve. MyFitnessPal, the largest calorie app, bought Cal AI in December 2025 after almost a year of talks. The price was not disclosed. MyFitnessPal told TechCrunch that Cal AI had more than 15 million downloads and more than US$30 million in annual revenue in under two years.`,
+    `The headline numbers on this page are grade B: a buyer's statement to the press, and documents that CNBC and Fortune reviewed. The founder's own figures, such as the US$50 million run rate at the sale, are grade C. The page also shows what happened to earlier attempts at the same idea.`
+  ],
+  factsCaption: "Sold to MyFitnessPal 19 months after launch, with the buyer confirming US$30 million in annual revenue and 15 million downloads, and the price undisclosed",
+  factsRead: "How to read this table: a grade B value was stated by the buyer to the press, or comes from financial documents that a journalist reviewed. A grade C value is a founder claim. A \"calc\" value was computed on this page from the rows above it. No value on this page is grade A, because neither company is public and no payment processor has published the revenue.",
+  timelineLead: "From a weekend project in a parents' house to a sale to the market leader in 19 months. Each entry carries its grade.",
+  pricing: {
+    caption: "Cal AI subscription prices, as reported in September 2025 and listed in the App Store in October 2026 (grade B and C)",
+    note: "The app is free to download, with a three-day free trial. The 2025 press prices are US$2.49 a month or US$29.99 a year, which is US$2.50 a month. The App Store listing in October 2026 shows in-app purchases called Unlimited at US$2.99, US$9.99, US$19.99 and US$29.99, and a Streak Restore at US$0.99. The listing does not say which period each price covers, so the two columns below hold the yearly and monthly prices from the press only.",
+    rows: [
+      ["Free", "0", "0", "Download and a 3-day trial"],
+      ["Unlimited, 2025 press", "2.50", "2.49", "Billed US$29.99 a year, or monthly"],
+      ["Unlimited, App Store 2026", "", "", "Prices listed: 2.99, 9.99, 19.99, 29.99"]
+    ]
+  },
+  facts: [
+    { fact: "Annual revenue at the sale", value: "more than US$30 million", grade: "B", note: "MyFitnessPal's chief executive to TechCrunch, March 2026. MyFitnessPal is privately owned, so this is a buyer's statement, not a filing.", src: [1] },
+    { fact: "Downloads at the sale", value: "more than 15 million", grade: "B", note: "Same statement to TechCrunch.", src: [1] },
+    { fact: "Sale price", value: "not disclosed", grade: "B", note: "TechCrunch: terms not disclosed. One blog writes a rumored US$100 million without a source. That number is not used on this page.", src: [1, 9] },
+    { fact: "Annual run rate claimed at the sale", value: "US$50 million", grade: "C", note: "Founder's post on X, 2 March 2026, 18 months after launch.", src: [2] },
+    { fact: "Annual revenue, March 2026, compiled estimate", value: "US$40 million", grade: "C", note: "Latka's company page, which cites Yahoo Finance. Not confirmed by the company.", src: [3] },
+    { fact: "Gross profit per month, September 2025", value: "about US$1.4 million", grade: "B", note: "Documents reviewed by CNBC Make It. Gross profit here is revenue after the 15% to 30% that Apple and Google keep.", src: [4] },
+    { fact: "Net operating income per month, September 2025", value: "about US$274,000", grade: "B", note: "Same documents. Profit before tax and interest, after marketing and salaries.", src: [4] },
+    { fact: "Gross profit per year, from the monthly figure", value: "about US$16.8 million", grade: "X", note: "Calculated: 1.4 million times 12.", src: [4] },
+    { fact: "Net operating income per year, from the monthly figure", value: "about US$3.3 million", grade: "X", note: "Calculated: 274,000 times 12. Most of the gross profit went to marketing and salaries.", src: [4] },
+    { fact: "Revenue per month, September 2025", value: "about US$2.1 million", grade: "B", note: "CNBC Make It headline figure, reprinted by The Nightly. Fortune reviewed records showing several million dollars a month.", src: [4, 5] },
+    { fact: "Annual run rate, May 2025", value: "more than US$35 million", grade: "C", note: "Founder in a recorded interview with Latka, one year after launch.", src: [6] },
+    { fact: "First month of revenue, May 2024", value: "more than US$28,000", grade: "B", note: "Documents reviewed by CNBC. The second month was US$115,000.", src: [4] },
+    { fact: "Cumulative sales of US$1 million", value: "by 4 September 2024", grade: "C", note: "Founder interview. About five months after launch.", src: [6] },
+    { fact: "New downloads per day, May 2025", value: "20,000 to 30,000", grade: "C", note: "Founder interview.", src: [6] },
+    { fact: "Share of new users who start a trial or pay in the first session", value: "20% to 25%", grade: "C", note: "Founder interview.", src: [6] },
+    { fact: "Influencers on fixed monthly fees, May 2025", value: "about 250", grade: "C", note: "Founder interview. Total influencer spend reached the mid six figures in one month.", src: [6] },
+    { fact: "Marketing test before launch", value: "US$2,000", grade: "B", note: "CNBC: the founders spent US$2,000 on a social media test. One founder and one partner then paid the costs for six months until app-store payouts arrived.", src: [4] },
+    { fact: "Team size", value: "17 in May 2025, 30 in September 2025, 7 employees plus contractors at the sale", grade: "B", note: "17 from the founder interview (grade C). 30 from CNBC documents. 7 retained employees from MyFitnessPal to TechCrunch. The founder's March 2026 post thanks a team of more than 30, so the 7 may count only employees, not contractors.", src: [1, 2, 4, 6] },
+    { fact: "Outside funding", value: "none", grade: "B", note: "Founder interview and Fortune. The founder wrote that investors kept offering money and were refused.", src: [5, 6] },
+    { fact: "Founders' age at launch", value: "17", grade: "B", note: "TechCrunch and Fortune.", src: [1, 5] },
+    { fact: "Time from launch to the sale closing", value: "19 months", grade: "X", note: "Calculated: May 2024 to December 2025. The sale was announced in March 2026.", src: [1] }
+  ],
+  timeline: [
+    { when: "2021 to February 2024", what: "In his first year of high school, Yadegari builds Totally Science, a games website for school networks. It reaches 5 million users and about US$60,000 a month in advertising. He sells it for about US$100,000 in February 2024, at age 16.", grade: "B", src: [4, 5] },
+    { when: "March 2024", what: "First line of code. Yadegari, who tracked calories to gain weight, found manual logging so tedious that he had stopped. He and Langmack, a friend from coding camp, build the photo app with two partners met on X: Blake Anderson, 24, and Jake Castillo, 30.", grade: "B", src: [4, 6] },
+    { when: "May 2024", what: "Launch from his parents' house in Roslyn, New York, after a US$2,000 social media test. First month: more than US$28,000. Second month: US$115,000.", grade: "B", src: [4] },
+    { when: "July 2024", what: "The founders spend the month in a San Francisco hacker house and hire about 15 people. Investors offer money. They refuse.", grade: "B", src: [4, 5] },
+    { when: "4 September 2024", what: "US$1 million in cumulative sales, about five months after launch.", grade: "C", src: [6] },
+    { when: "Early 2025", what: "MyFitnessPal notices Cal AI in the app-store rankings through Sensor Tower and starts talks. The two apps are neck and neck in their category.", grade: "B", src: [1] },
+    { when: "May 2025", what: "Annual run rate above US$35 million, 17 people, 20,000 to 30,000 downloads a day, 250 paid influencers. Yadegari is still in high school.", grade: "C", src: [6] },
+    { when: "Spring 2025", what: "Yadegari's posts about being rejected by 15 of 18 colleges, with a 4.0 grade average and a profitable company, get tens of millions of views and television coverage.", grade: "B", src: [1, 6] },
+    { when: "September 2025", what: "CNBC reviews documents: about US$1.4 million gross profit and US$274,000 net operating income a month, 30 employees. Yadegari starts at the University of Miami.", grade: "B", src: [4, 5] },
+    { when: "December 2025", what: "The sale to MyFitnessPal closes. Cal AI gets access to MyFitnessPal's database of 20 million foods.", grade: "B", src: [1] },
+    { when: "2 March 2026", what: "The sale is announced. Seven employees plus contractors join MyFitnessPal. Cal AI stays a separate app. The founder posts that it passed US$50 million in annual run rate.", grade: "B", src: [1, 2] },
+    { when: "June 2026", what: "Yadegari leaves MyFitnessPal.", grade: "B", src: [7] },
+    { when: "8 October 2026", what: "He announces Persona, an AI assistant with a US$179 wristband, with US$10 million from Vine Ventures and others.", grade: "B", src: [7] }
+  ],
+  mechanism: [
+    { title: "Distribution", text: "Cal AI paid about 250 influencers fixed monthly fees to post on TikTok and Instagram, instead of a commission per sale. Half of the 17-person team in May 2025 worked on marketing and influencer management. The founder's own viral posts added television coverage at no cost. The product was built in two months. The audience took the rest of the money." },
+    { title: "Speed over accuracy", text: "MyFitnessPal's chief executive said it himself: his app is for users who want to specify three pickles, not two. Cal AI is for people who want an answer in two seconds and do not want to think about it. That audience was larger than the dedicated one, and nobody served it." },
+    { title: "A rented model", text: "The founder says the app was only possible because of model APIs such as ChatGPT's, and that they did not train a model. The expensive part of a 2011 photo-calorie app, the recognition, cost Cal AI a fraction of a cent per picture." },
+    { title: "A low price with a trial", text: "US$29.99 a year, with a three-day free trial and a paywall tested hundreds of times. About 20% to 25% of new users started a trial or paid in their first session. The founders expected 25% to 50% of yearly subscribers to renew." }
+  ],
+  howBuilt: {
+    intro: "These details come from the founder's recorded interview with Latka, from CNBC's reporting, and from TechCrunch. They are grade B and C.",
+    items: [
+      "A native mobile app for iPhone and Android. The calorie estimate comes from a third-party multimodal model through an API; the company did not train its own model.",
+      "Yadegari and Langmack wrote the code. Anderson, a serial entrepreneur, and Yadegari paid the running costs for six months, because Apple and Google pay out with a delay.",
+      "Superwall, a paywall tool, ran hundreds of tests on the subscription screen.",
+      "Growth: a US$2,000 social media test before launch, then TikTok and Instagram influencers on monthly retainers. The largest influencer earned tens of thousands of dollars a month for four posts.",
+      "The weekly team meeting was on Sunday night, because the founders were in school.",
+      "After the sale, the app was connected to MyFitnessPal's nutrition database: 20 million foods, 68,500 brands, 380 restaurant chains."
+    ],
+    src: [1, 4, 6]
+  },
+  predecessorsIntro: "The Loot Drop database has no failed food-photo app. The closest entries are below: a hardware tracker, a coaching service, and two personalized-plan apps whose records are thin. The values are from that database and are not independently verified. Two real photo-calorie attempts from 2011, which are not in the database, are described in the next section.",
+  predecessors: [
+    { name: "Jawbone", years: "1999 to 2017", funding: "US$930M", cause: "Competition", promise: "A wristband that turns your daily activity and food into health insights.", died: "Fitbit and Apple built better hardware. Recalls and lawsuits drained the money. The food feature came from The Eatery, a photo app that Jawbone bought in 2013 and let die.", url: "https://www.loot-drop.io/startup/257-jawbone" },
+    { name: "Arivale", years: "2015 to 2019", funding: "US$50M", cause: "Unit economics", promise: "Scientific wellness: blood tests, DNA, activity tracking and a personal coach.", died: "It cost about US$4,700 a year to serve a customer who paid about US$1,200 after the first year. The coach could not be automated.", url: "https://www.loot-drop.io/startup/8-arivale" },
+    { name: "Overfit", years: "2020 to 2023", funding: "US$5M", cause: "Competition", promise: "Personalized fitness and nutrition plans from machine learning.", died: "Customer acquisition cost more than a subscriber paid over their lifetime. Noom and MyFitnessPal kept users longer.", url: "https://www.loot-drop.io/startup/1347-overfit", note: "The database record names no founder. Treat it as an illustration." },
+    { name: "Refolo", years: "2017 to 2021", funding: "US$2M", cause: "No market need", promise: "Paid meal plans for people who switch to a plant-based diet.", died: "Free recipes existed everywhere, and larger wellness apps added meal plans as a feature.", url: "https://www.loot-drop.io/startup/1994-refolo", note: "The database record could not be matched to press coverage." }
+  ],
+  whatChanged: [
+    `Photo calorie counting was tried in 2011. Meal Snap, by DailyBurn, let users photograph a meal and returned a calorie range. TechCrunch assumed that people behind the app, probably paid through Mechanical Turk, identified the food, and reported a handful of cashews rated at 150 to 614 calories. The Eatery, by Massive Health, had other users rate the photo as Fit or Fat. A study of 200,000 downloads found that 69% of users never took a picture, and 2.6% used the app for more than a week. Jawbone bought Massive Health in 2013 and stopped development.`,
+    `The idea was right and the recognition did not exist. In 2024 a rented multimodal model identified the food and the portion in seconds, for a fraction of a cent. Two teenagers could build in two months what a funded company could not deliver in 2011. The remaining problem was the one the 2011 apps also had: getting people to open the app. Cal AI spent its money there.`
+  ],
+  copy: {
+    verdict: "The exact app, no. The playbook, yes, with money for marketing.",
+    text: "Photo calorie apps are now a category with dozens of entries, and the market leader owns the best-known one. A new entrant needs a reason to be chosen. Cal AI's playbook costs money: influencer retainers reached the mid six figures in one month, and the founders had a previous exit to fund the first six months.",
+    steps: [
+      "Pick a daily habit that people abandon because of manual entry, and remove the entry with a model API.",
+      "Price it low with a trial, and test the paywall constantly.",
+      "Pay creators fixed fees for reach before competitors do, and make the founder story part of the marketing.",
+      "Watch for the incumbent: the buyer found Cal AI in the app-store rankings."
+    ],
+    open: "Other logging habits that people abandon: receipts and expenses, medication, water, chores, mileage. Each one has a manual-entry app that users quit."
+  },
+  watch: [
+    { title: "No disclosed price", text: "Neither company is public, so the sale price may never be known. The outcome on this page is the revenue that the buyer confirmed, not the money the founders received. Retention terms for the founders were not disclosed, and the chief executive left after six months." },
+    { title: "Renewals", text: "A US$29.99 yearly plan sold through influencer traffic depends on renewals. In May 2025 the founders expected 25% to 50% of subscribers to renew, which is a wide range. The 2011 photo apps lost most users within a week." },
+    { title: "Accuracy", text: "The founder claims 90% accuracy. App Store reviews describe wrong sodium and fiber values and confusing portion sizes. The buyer sells the precise version itself." },
+    { title: "Platform cut", text: "Apple and Google keep 15% to 30% of every subscription. The CNBC documents show gross profit of US$1.4 million on revenue of about US$2.1 million a month." },
+    { title: "Numbers that do not agree", text: "Revenue at the sale is US$30 million (buyer), US$40 million (Latka estimate) and US$50 million run rate (founder). Team size is 7, 17 or 30 depending on the date and on whether contractors count." }
+  ],
+  sources: [
+    { title: "TechCrunch, 2 March 2026: MyFitnessPal has acquired Cal AI, the viral calorie app built by teens", url: "https://techcrunch.com/2026/03/02/myfitnesspal-has-acquired-cal-ai-the-viral-calorie-app-built-by-teens/", grade: "B", how: "Read in full. The buyer's chief executive states the revenue, the downloads, the team size, the closing date and the undisclosed terms." },
+    { title: "Zach Yadegari on X, 2 March 2026: Cal AI has been acquired by MyFitnessPal", url: "https://x.com/zach_yadegari/status/2028473704359874652", grade: "C", how: "Read as reproduced on arr.club, because X does not serve the post without login. Source for the US$50 million run rate and the team of more than 30." },
+    { title: "Latka company page: Cal AI revenue 2026", url: "https://getlatka.com/companies/calai.app", grade: "C", how: "Read in full. A compiled page that cites Yahoo Finance for US$40 million. Used only for that estimate." },
+    { title: "CNBC Make It, September 2025, reprinted by The Nightly: 18yo CEO Zach Yadegari learned to code at age 7, now he has a $2.1 million-a-month AI app", url: "https://thenightly.com.au/business/cal-ai-18yo-ceo-zach-yadegari-learned-to-code-at-age-7-now-he-has-a-21-million-a-month-ai-app-c-20025032", grade: "B", how: "Read in full. CNBC reviewed company documents. Source for the gross profit, the net operating income, the first two months of revenue, the team of 30 and the 2024 sale of Totally Science." },
+    { title: "Fortune, 27 September 2025: This Ivy League reject taught himself to code at 7, built a $30m app by 18", url: "https://fortune.com/2025/09/27/gen-z-founder-treats-college-like-vacation-30-million-app-by-18", grade: "B", how: "Read in full. Fortune reviewed financial records. Source for the prices, the launch month, the four founders and the refused investors." },
+    { title: "Latka interview with Zach Yadegari, May 2025: How Cal AI hit $35M ARR and 20,000 daily downloads in under a year", url: "https://getlatka.com/interviews/cal-ai-zach-yadegari-2025", grade: "C", how: "Read the transcript and the figure list. Founder statements on camera. Source for the run rate, downloads, conversion, influencers, team and the rented model." },
+    { title: "TechCrunch, 8 October 2026: Cal AI's 19-year-old founder just raised $10M for his new AI startup", url: "https://techcrunch.com/2026/10/08/cal-ais-19-year-old-founder-just-raised-10m-for-his-new-ai-startup/", grade: "B", how: "Read in full. Source for the founder's departure in June 2026 and the Persona round." },
+    { title: "Apple App Store listing: Cal AI, Calorie Tracker, read 12 October 2026", url: "https://apps.apple.com/us/app/cal-ai-calorie-tracker/id6480417616", grade: "C", how: "Read in full. Source for the in-app purchase prices, the seller name Viral Development LLC, the 370,000 ratings and the accuracy complaints." },
+    { title: "stork.ai blog, 2026: This teen's AI app sold for $100 million", url: "https://www.stork.ai/blog/this-teens-ai-app-sold-for-100-million", grade: "C", how: "Read in full. States a rumored price without a source. Cited only to say that the rumor is not used." },
+    { title: "TechCrunch, 5 April 2011: Too lazy to count calories? Now you can just take a picture of your meal", url: "https://techcrunch.com/2011/04/05/too-lazy-to-count-calories-now-you-can-just-take-a-picture-of-your-meal/", grade: "B", how: "Read in full. Source for Meal Snap and the 150 to 614 calorie range." },
+    { title: "MobiHealthNews, 2014: Study: less than 3 percent of The Eatery downloaders really used it", url: "https://www.mobihealthnews.com/news/study-less-3-percent-eatery-downloaders-really-used-it", grade: "B", how: "Read in full. Reports a study in JMIR of 200,000 downloads." },
+    { title: "TechCrunch, 4 February 2013: Jawbone acquires mobile health startup Massive Health in big talent acquisition", url: "https://techcrunch.com/2013/02/04/jawbone-acquires-mobile-health-startup-massive-health-for-tens-of-millions/", grade: "B", how: "Read in full. Source for the acquisition and the end of The Eatery's development." },
+    { title: "Loot Drop database export, 1,749 failed startups", url: "https://www.loot-drop.io/", grade: "C", how: "Local export. AI-written summaries, not independently verified. Source for the failed predecessors. Several health-app records in this export name no founders, which is why the page uses only four." }
+  ]
 }
 ];
 
