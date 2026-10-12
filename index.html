@@ -1072,6 +1072,150 @@ const STORIES = [
     { title: "Pieter Levels, 1 August 2026: I vibecoded a full video editor into Photo AI", url: "https://levels.io/video-editor-added-to-photo-ai", grade: "C", how: "Read in full on the founder's blog." },
     { title: "Loot Drop database export, 1,749 failed startups", url: "https://www.loot-drop.io/", grade: "C", how: "Local export. AI-written summaries, not independently verified. Source for the failed predecessors. Viewdle's funding field in the export holds the value 12, which is not a dollar amount, so it is shown as not recorded." }
   ]
+},
+{
+  slug: "typingmind",
+  name: "TypingMind",
+  country: "Vietnam",
+  sector: "Information Technology",
+  productType: "Chat interface for AI models",
+  aiType: "AI-native",
+  team: "solo",
+  outcome: "running",
+  evidence: "C",
+  added: "2026-10-12",
+  launchLabel: "6 March 2023",
+  outcomeLabel: "US$130,000 to US$160,000 a month, October 2025",
+  sticker: "$1.7M/yr run rate",
+  outcomeUsd: 1740000,
+  months: 31,
+  teamLabel: "1 founder, then 5 people with 2 employees by mid-2024",
+  fundingLabel: "None",
+  primaryFactor: "Speed",
+  meters: { evidence: 2, copyable: 3, capital: 1 },
+  tags: ["AI-native", "Solo founder", "Bootstrapped", "Running", "B2B"],
+  product: "A chat window for AI models that is better than the one the model makers ship: search in old conversations, folders, prompt library, plugins, and any model from OpenAI, Anthropic or Google. You bring your own API key, so TypingMind never pays for the model.",
+  why: "It shipped five days after the ChatGPT API appeared, when the official interface logged people out, typed slowly and had no search. It charged from the first day and raised the price with every update. Then a Team version for companies turned one-time sales into subscriptions.",
+  summary: [
+    `TypingMind is a <dfn>chat frontend</dfn> for AI models. A frontend is the part of a program that the user sees and clicks; the model itself runs elsewhere. You paste your own <dfn>API key</dfn>, a password that lets a program call a model provider on your account, and TypingMind sends your messages to OpenAI, Anthropic or Google and shows the answers with search, folders, plugins and a prompt library. The company pays nothing for the model and almost nothing for hosting.`,
+    `Tony Dinh, a Vietnamese software engineer who left a job in Singapore in 2021 to build small products alone, started it on 1 March 2023, the day OpenAI released the ChatGPT API, and released it on 6 March. It made US$22,000 in its first seven days as a one-time purchase that started at US$9. In February 2024 it passed US$500,000 in total revenue. In November 2024 he wrote that it had made US$1 million in the last twelve months. In October 2025 he wrote that it makes US$130,000 to US$160,000 a month, more than half of it recurring revenue from a Team version sold to companies.`,
+    `Every number on this page is a founder statement in his own newsletter, grade C. No payment processor or buyer has confirmed them. The page also shows what happened to earlier companies that built a better interface on top of someone else's platform.`
+  ],
+  factsCaption: "A one-time purchase that reached US$1 million in twelve months of revenue by November 2024, then a run rate of about US$1.7 million a year, all self-reported",
+  factsRead: "How to read this table: a grade C value is a founder statement from his newsletter or interviews, or an estimate by a third party that says so. A \"calc\" value was computed on this page from the rows above it. No value is grade A or B.",
+  timelineLead: "From a domain name suggested by ChatGPT to a business that sells 3,000-seat contracts, in 31 months. Each entry carries its grade.",
+  pricing: {
+    caption: "TypingMind prices in October 2026: personal licenses as reported by reviewers, Team plans from the company's page (grade C)",
+    note: "Personal licenses are one-time purchases, sold as lifetime licenses, and the pricing page shows a permanent 50% off. Team plans are subscriptions per month, billed yearly with two months free, with 5 seats included and more seats at US$8 each per month. Enterprise starts at US$18,700 a year with seats as low as US$4. In every case the customer pays the model provider separately for usage.",
+    rows: [
+      ["Standard, personal", "39 one-time", "", "reviewers"],
+      ["Extended, personal", "79 one-time", "", "reviewers"],
+      ["Premium, personal", "99 one-time", "", "reviewers; shown as 50% off US$198"],
+      ["Starter, team", "83", "99", "5 seats"],
+      ["Growth, team", "166", "199", "5 seats"],
+      ["Professional, team", "249", "299", "5 seats; shown as 50% off US$499"],
+      ["Enterprise", "from 18,700 a year", "", "custom contract"]
+    ]
+  },
+  facts: [
+    { fact: "Revenue per month, October 2025", value: "US$130,000 to US$160,000", grade: "C", note: "Founder's newsletter, 9 October 2025. Recurring revenue from the Team version is more than half of it.", src: [1] },
+    { fact: "Run rate from the October 2025 range", value: "about US$1.56 million to US$1.92 million a year", grade: "X", note: "Calculated: the range times 12. The headline figure on this page is the midpoint, US$1.74 million.", src: [1] },
+    { fact: "Revenue in the twelve months to November 2024", value: "US$1 million", grade: "C", note: "Founder's newsletter, 22 November 2024, from his profit-and-loss statement. Twenty months after launch. One-time purchases were still about half of monthly revenue.", src: [2] },
+    { fact: "Total revenue by February 2024", value: "US$500,000", grade: "C", note: "Founder's newsletter, February 2024, one year after launch. Subscriptions were US$15,000 a month of it.", src: [3] },
+    { fact: "Revenue per month, March 2024", value: "more than US$40,000", grade: "C", note: "Founder's newsletter on the sale of his screenshot app.", src: [4] },
+    { fact: "Revenue in the first seven days, March 2023", value: "US$22,000", grade: "C", note: "Founder. US$1,000 on the first day, US$2,000 on the second, US$4,000 on the third.", src: [2, 5] },
+    { fact: "First price", value: "US$9 one-time, raised to US$19, US$29 and later up to US$79", grade: "C", note: "Founder interviews. Each update came with a price rise.", src: [5, 6] },
+    { fact: "Paying users after three months", value: "more than 4,000", grade: "C", note: "Founder interview with Indie Hackers, mid-2023.", src: [6] },
+    { fact: "Updates in the first twelve months", value: "171", grade: "C", note: "Founder's newsletter.", src: [3] },
+    { fact: "Largest contracts, November 2024", value: "one 3,000-seat deal and several 1,000-seat deals", grade: "C", note: "Founder's newsletter. Enterprises use TypingMind as the front end of an internal AI platform.", src: [2] },
+    { fact: "Team, July 2024", value: "5 people, of which 2 full-time employees", grade: "C", note: "Founder's newsletter on getting SOC 2. Latka records 3 employees in October 2024.", src: [7, 8] },
+    { fact: "Cost of the SOC 2 Type I security audit", value: "under US$10,000 and about 10 days of work", grade: "C", note: "Founder's newsletter. He had expected US$30,000 a year. Half went to a consultant, half to the auditor.", src: [7] },
+    { fact: "Paid advertising results", value: "US$2,000 on LinkedIn: no revenue. US$600 later: 2 conversions", grade: "C", note: "Founder's newsletters, April 2024 and October 2025. Sales come from word of mouth.", src: [1, 9] },
+    { fact: "Hosting cost of the personal version", value: "almost nothing", grade: "C", note: "A static web app with no backend, no database and no login, activated by a license key. That is why a one-time price was possible.", src: [3] },
+    { fact: "Outside funding", value: "none", grade: "C", note: "Founder statements throughout.", src: [1, 2] },
+    { fact: "Latka's revenue estimate for 2024", value: "US$817,000", grade: "C", note: "A third-party estimate, marked as such. Lower than the founder's twelve-month figure of US$1 million in November 2024.", src: [8] },
+    { fact: "Time from launch to the October 2025 figure", value: "31 months", grade: "X", note: "Calculated: March 2023 to October 2025.", src: [1, 5] }
+  ],
+  timeline: [
+    { when: "August 2021", what: "Dinh, then a senior engineer in Singapore, quits to build products alone from Vietnam. His side products make US$600 a month. He has 8,000 followers on X.", grade: "C", src: [10] },
+    { when: "2022", what: "Black Magic, a tool for X users, reaches about US$13,000 to US$14,000 a month.", grade: "C", src: [10, 11] },
+    { when: "January 2023", what: "He turns down a US$500,000 acquisition offer.", grade: "C", src: [12] },
+    { when: "1 March 2023", what: "OpenAI releases the ChatGPT API. The same day he decides to build a better chat interface for it. ChatGPT suggests the domain name typingmind.com, registered on 2 March.", grade: "C", src: [5] },
+    { when: "6 March 2023", what: "Release on X, five days after the API. US$9 one-time. US$22,000 in the first seven days.", grade: "C", src: [3, 5] },
+    { when: "April 2023", what: "X raises its API price. He sells Black Magic for US$128,000 instead of rebuilding it.", grade: "C", src: [11, 12] },
+    { when: "Mid-2023", what: "More than 4,000 paying users, first place of the day on Product Hunt, and a Custom version for companies at US$3,500 a month in recurring revenue.", grade: "C", src: [6] },
+    { when: "February 2024", what: "US$500,000 in total revenue after one year and 171 updates. Subscriptions reach US$15,000 a month.", grade: "C", src: [3] },
+    { when: "19 March 2024", what: "He sells Xnapper, his screenshot app, for US$150,000, because TypingMind makes more than US$40,000 a month and needs all his time.", grade: "C", src: [4] },
+    { when: "26 July 2024", what: "SOC 2 Type I security certification for under US$10,000, to close enterprise deals. Team of 5 with 2 full-time employees.", grade: "C", src: [7] },
+    { when: "22 November 2024", what: "US$1 million in revenue in the last twelve months. A 3,000-seat deal and several 1,000-seat deals. He looks for a salesperson.", grade: "C", src: [2] },
+    { when: "9 October 2025", what: "US$130,000 to US$160,000 a month, more than half recurring. He writes that the product gave him financial independence.", grade: "C", src: [1] },
+    { when: "June 2026", what: "Still building TypingMind, now with AI coding agents, from a hacker house in Da Nang.", grade: "C", src: [13] }
+  ],
+  mechanism: [
+    { title: "Speed", text: "The API came out on a Wednesday; the product shipped the next Monday. In the founder's words, when you are first to a niche, the first version does not have to be amazing, because people have an itch and nothing on the market scratches it. OpenAI fixed the slow typing, the logouts and the missing search a few months later. By then the customers were his." },
+    { title: "Charge from day one, raise the price with every update", text: "US$9 on launch day, then US$19, US$29 and up to US$79 as features arrived. Each update was a public post, and each post was a reason to buy before the next rise." },
+    { title: "No model costs, no server costs", text: "Customers bring their own API key and pay the model provider. The personal version is a static web page with a license key, so hosting is close to free. That is why a one-time price made money, and why a copy by a funded competitor would not have had a cost advantage." },
+    { title: "The Team version", text: "Companies that wanted an internal AI chat for staff bought TypingMind Custom as the front end, with single sign-on and a security audit. Seat-based subscriptions passed one-time sales in 2025. The founder says B2B sales calls exhaust him and that he did them badly, and the contracts closed anyway." }
+  ],
+  howBuilt: {
+    intro: "These details come from the founder's newsletter and his interviews. They are grade C.",
+    items: [
+      "Next.js, Tailwind CSS and Node. The first version was built in a weekend for his own use, then released five days after the API.",
+      "The personal version is a static web app: no backend, no database, no accounts. A license key unlocks it. Hosting costs almost nothing.",
+      "The Team version runs servers and databases, so it is a subscription. It added single sign-on at customers' request, and a SOC 2 Type I audit in July 2024 for under US$10,000.",
+      "Model-agnostic from the first day, after the Black Magic experience: it works with OpenAI, Anthropic, Google and others, so no single provider can end it.",
+      "Payments moved from Lemon Squeezy to Stripe in 2024 because the subscription analytics were wrong.",
+      "Marketing is the founder's posts on X and word of mouth. Paid ads were tried twice and failed."
+    ],
+    src: [1, 3, 7, 9, 5]
+  },
+  predecessorsIntro: "Five companies in the Loot Drop database built a better interface on top of a platform that they did not control. The values below are from that database and are not independently verified.",
+  predecessors: [
+    { name: "Xobni", years: "2006 to 2013", funding: "US$42M", cause: "Competition", promise: "A smarter inbox inside Microsoft Outlook.", died: "Tied to Outlook, which Microsoft improved itself. Mobile made the desktop add-on irrelevant. Yahoo bought the remains.", url: "https://www.loot-drop.io/startup/763-xobni" },
+    { name: "Rockmelt", years: "2009 to 2014", funding: "US$40M", cause: "Competition", promise: "A browser with your social feeds built in.", died: "Users moved to phones, where the social apps themselves were the interface. Chrome had Google behind it.", url: "https://www.loot-drop.io/startup/510-rockmelt" },
+    { name: "Xmarks", years: "2006 to 2014", funding: "US$9M", cause: "Competition", promise: "Sync your bookmarks and tabs across browsers.", died: "Chrome, Firefox and Safari built sync in, for free.", url: "https://www.loot-drop.io/startup/762-xmarks" },
+    { name: "Flux", years: "2015 to 2018", funding: "US$7M", cause: "Founder conflict", promise: "One inbox for Slack, email, WhatsApp and the rest.", died: "The platforms kept changing their interfaces and breaking the integrations. The money went into repairs.", url: "https://www.loot-drop.io/startup/1901-flux" },
+    { name: "Readability", years: "2009 to 2015", funding: "US$5M", cause: "Competition", promise: "Clutter-free reading of any web article.", died: "Browsers added a reader mode, free. Few readers paid.", url: "https://www.loot-drop.io/startup/485-readability" }
+  ],
+  whatChanged: [
+    `Each of the five built a better window onto a platform that it did not own, and the platform owner closed the window by adding the feature, changing the interface or moving to phones. TypingMind is the same bet. OpenAI fixed the problems that TypingMind solved within months of its launch, and the founder says so himself.`,
+    `Two things differ. First, the platform is an API that the provider sells and wants used, so improvements to ChatGPT do not break TypingMind, and the model providers are several, not one. Second, the customer pays the provider directly, so TypingMind carries no usage cost and could charge once instead of monthly. The Team version added the part the platforms do not sell: an internal chat for a company with its own login, data rules and audit. That is where the recurring revenue came from.`
+  ],
+  copy: {
+    verdict: "The launch, no. The structure, yes.",
+    text: "Being first with a better ChatGPT window was a one-week opening in March 2023, and the founder says a late entrant would have found no painful problem left to solve. The structure is still available: a product with no usage cost, a one-time price for individuals, and a subscription for the version that companies need for compliance.",
+    steps: [
+      "When a provider releases an API, ship the obvious interface improvement within a week and charge for it.",
+      "Let customers bring their own API key, so the model is never your cost.",
+      "Raise the price with each visible update, and post every update.",
+      "Build the company version, with login, security audit and seats, because that is what recurs."
+    ],
+    open: "Any new API with a weak first-party interface: voice, video and image models, agent frameworks, and the internal tools that companies want behind single sign-on."
+  },
+  watch: [
+    { title: "Self-reported, and a wide range", text: "The founder gives a range of US$130,000 to US$160,000 a month, not a figure, and no one outside has checked it. Latka's estimate for 2024 is below his own figure." },
+    { title: "The platform can close the window", text: "Every predecessor on this page died when the platform added the feature. OpenAI, Anthropic and Google ship their own desktop apps, teams plans and enterprise versions. TypingMind's answer is to support all of them at once." },
+    { title: "One-time revenue does not recur", text: "About half of monthly revenue in late 2024 was one-time licenses, which must be re-earned every month. The shift to Team subscriptions is what makes the business durable, and it needs sales calls that the founder dislikes." },
+    { title: "Sales depend on one person's audience", text: "Paid ads have not worked. Growth comes from the founder's posts and word of mouth. When he sold Xnapper, he structured the deal around the fact that his X account drove its revenue." },
+    { title: "Permanent discount pricing", text: "Both the personal and the Team pages show 50% off, which reviewers note is always on. Customers who notice may wait or distrust the list price." }
+  ],
+  sources: [
+    { title: "Tony Dinh's newsletter, 9 October 2025: Oct 2025 updates: code, money and travel", url: "https://news.tonydinh.com/p/oct-2025-updates-code-money-and-travel", grade: "C", how: "Read in full. Founder's own update. Source for the monthly revenue range, the share of recurring revenue and the ad test." },
+    { title: "Tony Dinh's newsletter, 22 November 2024: Nov 2024: My first million!", url: "https://news.tonydinh.com/p/nov-2024-my-first-million", grade: "C", how: "Read in full. Source for the US$1 million in twelve months, the seat deals and the B2B sales account." },
+    { title: "Tony Dinh's newsletter, February 2024: $500K milestone, my reflections after 1 year of building Typing Mind", url: "https://news.tonydinh.com/p/500k-milestone-my-reflections-after", grade: "C", how: "Read in full. Source for the total revenue, the launch timing, the updates count and the static-app pricing logic." },
+    { title: "Tony Dinh's newsletter, 19 March 2024: Another 6-figure exit and the future", url: "https://news.tonydinh.com/p/another-6-figure-exit-and-the-future", grade: "C", how: "Read in full. Source for the Xnapper sale and the US$40,000 monthly figure." },
+    { title: "Startup Founder Stories: Tony Dinh, TypingMind, $22K in 7 days", url: "https://startupfounderstories.com/stories/tony-dinh-typingmind-22k-7-days", grade: "C", how: "Read in full. Quotes the founder's launch account with the exact dates and the first three days of revenue." },
+    { title: "Indie Hackers, 2023: How a tool that improves the UI for ChatGPT reached $10k/mo only a few months after launch", url: "https://www.indiehackers.com/post/how-a-tool-that-improves-the-ui-for-chatgpt-reached-10k-mo-only-a-few-months-after-launch-5e69b67949", grade: "C", how: "Read in full. Founder interview. Source for the price steps, the user count and the early Custom version." },
+    { title: "Tony Dinh's newsletter, 26 July 2024: Get SOC 2 certified as an indie hacker", url: "https://news.tonydinh.com/p/get-soc-2-certified-as-an-indie-hacker", grade: "C", how: "Read in full. Source for the audit cost and the team size." },
+    { title: "Latka company page: TypingMind revenue 2024, estimate", url: "https://getlatka.com/companies/typingmind", grade: "C", how: "Read in full. A third-party estimate and a headcount from LinkedIn." },
+    { title: "Tony Dinh's newsletter, April 2024: April 2024 updates, new product", url: "https://news.tonydinh.com/p/april-2024-updates-new-product", grade: "C", how: "Read in full. Source for the LinkedIn ads test and the move to Stripe." },
+    { title: "Nomadpreneur newsletter, 2025: Solo founder who turned $100 into $1,500,000, no team, no investors", url: "https://nomadpreneur.beehiiv.com/p/solo-founder-who-turned-100-into-1-500-000-no-team-no-investors", grade: "C", how: "Read in full. A secondary account of the founder's story. Source for the 2021 background." },
+    { title: "Indie Hackers, 2024: He made $45k/month with ChatGPT, Tony Dinh's story", url: "https://www.indiehackers.com/post/he-made-45k-month-with-chatgpt-tony-dinh-s-story-c40283745c", grade: "C", how: "Read in full. A community summary. Source for the Black Magic figures and the X API change." },
+    { title: "Tony Dinh's newsletter, 26 December 2023: 2023 recap", url: "https://news.tonydinh.com/p/2023-recap", grade: "C", how: "Read in full. Source for the rejected US$500,000 offer and the Black Magic sale." },
+    { title: "Tony Dinh's newsletter, 10 June 2026: I'm on Product Hunt, updates Jun 2026", url: "https://news.tonydinh.com/p/im-on-product-hunt-updates-jun-2026", grade: "C", how: "Read in full. Confirms the product is still being built in 2026." },
+    { title: "TypingMind Custom pricing page, read 12 October 2026, and reviewer pages diyai.io and toolradar.com for the personal licenses", url: "https://custom.typingmind.com/pricing", grade: "C", how: "The company page gives the Team plans. The personal pricing page loads its prices by script and could not be read, so those come from reviewers." },
+    { title: "Loot Drop database export, 1,749 failed startups", url: "https://www.loot-drop.io/", grade: "C", how: "Local export. AI-written summaries, not independently verified. Source for the failed predecessors." }
+  ]
 }
 ];
 
