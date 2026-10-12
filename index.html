@@ -938,6 +938,140 @@ const STORIES = [
     { title: "The AI Corner newsletter, 2026: Zero ads, zero VC, $230M ARR, the story of Magnific", url: "https://www.the-ai-corner.com/p/the-story-of-magnific", grade: "C", how: "Read in full. Narrative account that led to the founder's posts. Not used for numbers." },
     { title: "Loot Drop database export, 1,749 failed startups", url: "https://www.loot-drop.io/", grade: "C", how: "Local export. AI-written summaries, not independently verified. Source for the failed predecessors." }
   ]
+},
+{
+  slug: "photo-ai",
+  name: "Photo AI",
+  country: "Netherlands, run from anywhere",
+  sector: "Information Technology",
+  productType: "AI photo studio",
+  aiType: "AI-native",
+  team: "solo",
+  outcome: "running",
+  evidence: "C",
+  added: "2026-10-12",
+  launchLabel: "10 February 2023",
+  outcomeLabel: "US$105,000 a month revenue, US$80,000 profit, March 2026",
+  sticker: "$1.3M/yr, 1 person",
+  outcomeUsd: 1260000,
+  months: 37,
+  teamLabel: "1 person, no employees",
+  fundingLabel: "None",
+  primaryFactor: "Audience",
+  meters: { evidence: 2, copyable: 2, capital: 1 },
+  tags: ["AI-native", "Solo founder", "Bootstrapped", "Running", "Consumer app"],
+  product: "You upload about 20 photos of yourself. Photo AI trains a model of your face, and then generates photos of you in any clothes, place or style: headshots, dating photos, product shots. The site calls it firing your photographer.",
+  why: "The founder had posted his revenue in public for ten years and had hundreds of thousands of followers before he shipped it. He launched a cheesy avatar version first, made US$100,000 in ten days, then pivoted to the useful version. Rented GPUs, one PHP file and no employees keep the profit margin above 75%.",
+  summary: [
+    `Photo AI is an <dfn>AI photo studio</dfn>. You upload about twenty photos of yourself, and the service <dfn>fine-tunes</dfn> an image model on your face. Fine-tuning means that an existing model is trained a little more on a small set of new examples, here your photos, so that it learns one new concept: you. After that, the model generates new photos of you in any setting from a text prompt. The site sells this as a replacement for a photographer.`,
+    `Pieter Levels, a Dutch programmer who has run one-person internet businesses since 2014, built it alone. He first sold AI avatars in November 2022 and made US$100,000 in ten days, then launched Photo AI on 10 February 2023 as the useful version of the same technology. In July 2023 it had 1,872 paying customers and US$61,808 of revenue a month. In March 2026 he posted that it makes US$105,000 a month with US$80,000 of profit, from a single 40,870-line PHP file on rented GPUs, with no employees.`,
+    `Every number on this page is a founder statement, grade C. Levels publishes his revenue himself, and no payment processor or buyer has confirmed it. The page also shows what happened to earlier photo startups, which could only filter, tag or print a photo that already existed.`
+  ],
+  factsCaption: "One person, no employees, revenue of about US$1.3 million a year in March 2026 and a profit margin of 76%, all self-reported",
+  factsRead: "How to read this table: every value is a founder statement, grade C, unless marked \"calc\", which means computed on this page from the rows above it. The founder posts his revenue in public and has done so for a decade, but no independent party has verified these figures.",
+  timelineLead: "From a cheesy avatar generator to a one-person studio that outlived its funded copies. Each entry carries its grade.",
+  pricing: {
+    caption: "Photo AI plans in October 2026, from the product page (grade C)",
+    note: "An AI credit pays for one generated photo or one step of video. Yearly billing gives about six months free: the yearly prices are US$99, US$349, US$599 and US$1,199. The site claims that a professional photo shoot costs US$250 to US$1,500 for 75 to 100 photos, which is the comparison the product is sold against; that claim is the company's own.",
+    rows: [
+      ["Starter", "8.25", "19", "50 credits a month"],
+      ["Pro", "29", "49", "1,000 credits a month, commercial use"],
+      ["Max", "49.92", "99", "3,000 credits a month, most popular"],
+      ["Ultra", "99.92", "199", "10,000 credits a month"]
+    ]
+  },
+  facts: [
+    { fact: "Revenue per month, March 2026", value: "US$105,000", grade: "C", note: "Founder's post of 6 March 2026, with the size of the code: one file of 40,870 lines.", src: [1] },
+    { fact: "Profit per month, March 2026", value: "US$80,000", grade: "C", note: "Same post.", src: [1] },
+    { fact: "Profit margin, March 2026", value: "76%", grade: "X", note: "Calculated: 80,000 divided by 105,000.", src: [1] },
+    { fact: "Revenue per year, from the March 2026 figure", value: "about US$1.26 million", grade: "X", note: "Calculated: 105,000 times 12. Profit about US$960,000 a year.", src: [1] },
+    { fact: "Revenue per month, November 2025", value: "US$132,000", grade: "C", note: "Founder's public revenue figures, reported by PPC Land. The highest figure on this page.", src: [2] },
+    { fact: "Monthly recurring revenue, September 2026", value: "US$86,000", grade: "C", note: "Founder's public figure, tracked daily by IdeaWave. About 35% below the November 2025 figure.", src: [3] },
+    { fact: "Paying customers, July 2023", value: "1,872", grade: "C", note: "Founder's post of 3 July 2023.", src: [4] },
+    { fact: "Revenue per month, July 2023", value: "US$61,808", grade: "C", note: "Same post. About US$33 per paying customer per month.", src: [4] },
+    { fact: "AvatarAI sales in its first ten days, November 2022", value: "US$100,000", grade: "C", note: "Founder's post of 7 November 2022. On the Lex Fridman podcast he recalled about US$150,000 in a week; this page uses the written figure.", src: [5, 6] },
+    { fact: "Photos generated, all time", value: "30,920,367", grade: "C", note: "Counter on the product page, 12 October 2026.", src: [7] },
+    { fact: "Employees", value: "0", grade: "C", note: "Founder statements. For model setup he once hired one AI developer temporarily, according to the Indie Hackers case study.", src: [6, 8] },
+    { fact: "Outside funding", value: "none", grade: "C", note: "Founder: I don't raise money, I don't use VC funding, I do everything myself.", src: [6] },
+    { fact: "Compute", value: "rented GPUs from Replicate", grade: "C", note: "Founder on the podcast. He later invested in Replicate and FAL, the two inference companies he uses.", src: [6, 9] },
+    { fact: "All of the founder's businesses, revenue per month, September 2026", value: "US$200,000 to US$250,000", grade: "C", note: "Founder's post of 23 September 2026. Photo AI is the largest. His claimed US$10 million a year includes investment gains, mostly unrealized.", src: [9] },
+    { fact: "Projects that made money, out of more than 70", value: "4", grade: "C", note: "Founder on the podcast: more than 95% of everything he built failed.", src: [2, 6] },
+    { fact: "Time from launch to the March 2026 figure", value: "37 months", grade: "X", note: "Calculated: February 2023 to March 2026.", src: [1, 8] }
+  ],
+  timeline: [
+    { when: "2014 to 2022", what: "Levels builds Nomad List, Remote OK and dozens of other sites alone, and posts their revenue in public. He gains hundreds of thousands of followers on X.", grade: "C", src: [6, 8] },
+    { when: "August 2022", what: "Stable Diffusion, an open image model, is released. He plays with it, makes a site of houses that do not exist, then Interior AI for room redesigns.", grade: "C", src: [6] },
+    { when: "October 2022", what: "He uploads photos of himself to a fine-tuning tool and finds that the model learns his face. He launches AvatarAI.me, which makes stylized avatars.", grade: "C", src: [6] },
+    { when: "7 November 2022", what: "US$100,000 in avatar sales in ten days. The GPU vendor raises its training price from US$3 to US$20 after seeing his revenue posts, while he sells at US$30. Lensa, a funded competitor, ships the same product as an iPhone app within weeks.", grade: "C", src: [5, 6] },
+    { when: "10 February 2023", what: "Photo AI launches: not cheesy avatars but photorealistic photos of yourself for headshots and profiles. The first output quality is, in his words, so bad, and people pay anyway.", grade: "C", src: [6, 8] },
+    { when: "3 July 2023", what: "1,872 paying customers, US$61,808 a month, about 14,000 lines of PHP with jQuery and no framework.", grade: "C", src: [4] },
+    { when: "August 2024", what: "Four-hour interview on the Lex Fridman podcast. Sign-ups across his sites double, and Photo AI's triple.", grade: "C", src: [6, 8] },
+    { when: "November 2025", what: "US$132,000 a month, the peak figure on this page. Interior AI makes US$40,000 and Remote OK US$41,000 a month.", grade: "C", src: [2] },
+    { when: "6 March 2026", what: "He posts that the 40,870-line index.php makes US$105,000 a month in revenue and US$80,000 in profit.", grade: "C", src: [1] },
+    { when: "1 August 2026", what: "He adds a video editor that generates videos with the trained models, written with AI coding tools.", grade: "C", src: [10] },
+    { when: "September 2026", what: "Monthly recurring revenue tracked at US$86,000. He posts that his businesses make US$200,000 to US$250,000 a month in total.", grade: "C", src: [3, 9] }
+  ],
+  mechanism: [
+    { title: "Audience", text: "Levels had posted his revenue and his experiments in public for a decade before Photo AI. The Indie Hackers case study puts it bluntly: the product succeeded because he had spent ten years building an audience of more than 600,000 followers. A four-hour podcast with Lex Fridman in 2024 tripled sign-ups. About half of the traffic now comes from search, helped by the exact-match domain and early press links." },
+    { title: "Ship, charge, pivot", text: "He launched the avatar version within days of discovering that fine-tuning worked, asked for US$30 per order, and made US$100,000 in ten days. When funded copies with iPhone apps appeared, he left the avatar market and built the useful version: photos that look real, for people who need them for work or dating." },
+    { title: "Almost no cost", text: "One PHP file, rented GPUs billed per job, no employees. The founder reports 76% profit in March 2026 and says his companies run at about 90% margins. He also says that owning no team is why he never sells: a company that runs itself earns the sale price in three years anyway." },
+    { title: "Rented models, renewed often", text: "The product uses whichever image model is best at the time. By 2026 the plans advertise Nano Banana Pro, a Google model, and video from Seedance. Each new model improves the output without new engineering, and each is one API call away for a competitor, which is why the audience matters more than the code." }
+  ],
+  howBuilt: {
+    intro: "These details come from the founder's own posts and from his interview with Lex Fridman. They are grade C.",
+    items: [
+      "One file, index.php, with inline HTML, CSS and jQuery: 14,000 lines in July 2023, 40,870 lines in March 2026. No framework, no TypeScript.",
+      "Training and generation run on Replicate, a GPU rental service that bills per job. The founder asked its chief executive to add DreamBooth, the fine-tuning method, after his first vendor raised the training price from US$3 to US$20 per model.",
+      "The first vendor took half an hour per training run. In 2026 the product page says training takes one to three minutes.",
+      "The image models are swapped as better ones appear: open Stable Diffusion variants first, later commercial models such as Google's Nano Banana Pro, and video models for the editor added in 2026.",
+      "Content rules are a real cost: many fine-tuned base models were trained on adult content, and the prompts and filters had to work around that.",
+      "Marketing was the founder's own posts, press coverage of an AI that replaces photographers, and search traffic to an exact-match domain."
+    ],
+    src: [1, 4, 6, 7, 8]
+  },
+  predecessorsIntro: "Five companies in the Loot Drop database tried to make money from people's photos before image models existed. The values below are from that database and are not independently verified.",
+  predecessors: [
+    { name: "Mobli", years: "2010 to 2017", funding: "US$86M", cause: "Competition", promise: "Photo and video sharing with filters, backed by celebrities.", died: "Instagram had the users first and was bought by Facebook. Filters on a real photo were not enough to make anyone switch.", url: "https://www.loot-drop.io/startup/341-mobli" },
+    { name: "Color Labs", years: "2011 to 2014", funding: "US$41M", cause: "No market need", promise: "Share photos with the strangers around you.", died: "Users did not understand it. US$41 million before launch bought no answer to the question of why anyone needed it.", url: "https://www.loot-drop.io/startup/65-color-labs" },
+    { name: "Seerslab", years: "2016 to 2019", funding: "US$5M", cause: "Competition", promise: "Augmented-reality effects for selfies.", died: "Snapchat built the same effects into an app that already had the users.", url: "https://www.loot-drop.io/startup/1463-seerslab" },
+    { name: "Viewdle", years: "2006 to 2013", funding: "not recorded", cause: "Competition", promise: "Face recognition that tags your photos automatically.", died: "Google and Facebook built their own. Viewdle sold itself to Google.", url: "https://www.loot-drop.io/startup/709-viewdle" },
+    { name: "Picplum", years: "2011 to 2014", funding: "US$1M", cause: "Competition", promise: "Upload photos, and they arrive printed in the mail.", died: "Digital sharing replaced prints, and the logistics cost more than customers would pay.", url: "https://www.loot-drop.io/startup/1603-picplum" }
+  ],
+  whatChanged: [
+    `Every earlier photo startup needed a photo that already existed. Mobli and Seerslab added filters and effects to it, Viewdle tagged the face in it, Picplum printed it. The photo itself still needed a camera, a place, an outfit and, for a good one, a photographer. None of those companies could charge much, because the platform that owned the camera, Instagram or Snapchat, added the same feature for free.`,
+    `In 2022 an open image model learned to generate a face from twenty examples. The photo no longer needed to exist. Photo AI charges for the shoot, not for the filter, and its comparison is a photographer at US$250 or more, not a free app. The risk did not disappear. Lensa copied the avatar version in weeks, and the image models that Photo AI rents are available to anyone. The founder's answer is the one asset that cannot be copied in weeks: his audience.`
+  ],
+  copy: {
+    verdict: "The product, easily. The customers, not without an audience.",
+    text: "An AI photo studio is a weekend project in 2026: the fine-tuning and the models are rented by the call, and the founder himself says the product is simple. Dozens of copies exist, several with venture funding. What made Photo AI work was ten years of public building, an early viral launch, press that treated an AI replacing photographers as news, and a domain that matches the search term.",
+    steps: [
+      "Build in public for years before the product, and post real numbers, so that a launch reaches people who already trust you.",
+      "When a new model does something new, ship the obvious version within days and charge for it, even if the output is still bad.",
+      "Leave the novelty market when funded copies arrive, and sell the useful version to people who need the result for work.",
+      "Keep costs near zero: rented compute billed per job, no employees, no office, so that revenue is profit."
+    ],
+    open: "The same pattern fits any output that people used to pay a professional for: product photos for small shops, real-estate interiors, voice-overs, short video. The customer who needs the result for work, not for fun, pays and stays."
+  },
+  watch: [
+    { title: "Self-reported numbers", text: "Every figure here comes from the founder. He has published revenue for a decade and his figures have not been contradicted, but nobody outside has checked them. His US$10 million a year claim mixes business revenue with unrealized investment gains, so it is not comparable with the other stories on this site." },
+    { title: "Revenue is falling", text: "US$132,000 a month in November 2025, US$105,000 in March 2026, US$86,000 in September 2026. The image models that produce the photos are now sold directly by Google and others, and chat apps generate a headshot for free." },
+    { title: "Vendor pricing", text: "The first GPU vendor raised the training price from US$3 to US$20 the moment it saw his revenue posts. The business depends on two rental companies, and the founder now owns shares in both, which he discloses." },
+    { title: "Funded competition", text: "Lensa out-shipped him on mobile in 2022, and he says he now has fierce competition from a venture-backed company for the first time. He has no iPhone app." },
+    { title: "Content and likeness", text: "A service that generates realistic photos of real people carries moderation and misuse risk, and the fine-tuned base models were often trained on adult content. Dating photos that look better than the person are also a product with an unhappy end user." }
+  ],
+  sources: [
+    { title: "Pieter Levels, 6 March 2026: Photoai.com is a 40,870 line index.php making 105,000/mo revenue and 80,000/mo profit", url: "https://levels.io/photoai-40870-line-index-php-105k-mo-revenue", grade: "C", how: "Read in full on the founder's blog, which mirrors his X posts. Source for the headline figures." },
+    { title: "PPC Land, 2025: How one photo AI app generates $132K monthly after 70 failed startups", url: "https://ppc.land/how-one-photo-ai-app-generates-132k-monthly-after-70-failed-startups/", grade: "C", how: "Read in full. Reports the founder's public revenue figures and quotes the podcast. The numbers are the founder's." },
+    { title: "IdeaWave revenue tracker: PhotoAI, US$86K MRR, self-reported, checked daily from 1 August to 29 September 2026", url: "https://ideawave.io/startup/photoai-2", grade: "C", how: "Read in full. A tracker that records the founder's self-reported figure each day." },
+    { title: "Pieter Levels, 3 July 2023: Photo AI is almost 14,000 lines of raw PHP making $61,808 per month", url: "https://levels.io/photoai-14000-lines-raw-php-revenue", grade: "C", how: "Read in full on the founder's blog. Source for the 2023 customer count and revenue." },
+    { title: "Pieter Levels, 7 November 2022: Sold $100,000 in AI-generated avatars with AvatarAI.me in 10 days", url: "https://levels.io/sold-100k-ai-avatars-with-avatarai-me", grade: "C", how: "Read in full on the founder's blog." },
+    { title: "Lex Fridman Podcast #440, August 2024: Pieter Levels: Programming, Viral AI Startups, and Digital Nomad Life, transcript", url: "https://lexfridman.com/pieter-levels-transcript/", grade: "C", how: "Read the Photo AI, AvatarAI and When to sell startup sections of the transcript. Source for the origin story, the GPU vendor story, Lensa, Replicate, the failure rate and the margin claim." },
+    { title: "Photo AI product page, read 12 October 2026", url: "https://photoai.com/", grade: "C", how: "Read in full. Source for the plans, the credits, the photo counter, the training time and the photographer price claim." },
+    { title: "Indie Hackers, 2025: Photo AI by Pieter Levels, complete deep dive case study, $0 to $132K MRR", url: "https://www.indiehackers.com/post/photo-ai-by-pieter-levels-complete-deep-dive-case-study-0-to-132k-mrr-in-18-months-3a9a2b1579", grade: "C", how: "Read in full. A community case study that compiles the founder's posts. Source for the launch date, the temporary hire, the search-traffic share and the podcast effect." },
+    { title: "Pieter Levels, 23 September 2026: I passed $10M/y in revenue and investment gains with a 94.5% profit margin", url: "https://levels.io/passed-10m-revenue-investment-gains", grade: "C", how: "Read in full on the founder's blog. Source for the total business revenue and the investments in Replicate and FAL." },
+    { title: "Pieter Levels, 1 August 2026: I vibecoded a full video editor into Photo AI", url: "https://levels.io/video-editor-added-to-photo-ai", grade: "C", how: "Read in full on the founder's blog." },
+    { title: "Loot Drop database export, 1,749 failed startups", url: "https://www.loot-drop.io/", grade: "C", how: "Local export. AI-written summaries, not independently verified. Source for the failed predecessors. Viewdle's funding field in the export holds the value 12, which is not a dollar amount, so it is shown as not recorded." }
+  ]
 }
 ];
 
