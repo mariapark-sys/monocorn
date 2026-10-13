@@ -2085,6 +2085,142 @@ const STORIES = [
     { title: "Tweet Hunter pricing page, read 12 October 2026", url: "https://tweethunter.io/pricing", grade: "C", how: "Read in full, including the page script that sets the monthly and yearly prices." },
     { title: "Loot Drop database export, 1,749 failed startups", url: "https://www.loot-drop.io/", grade: "C", how: "Local export. AI-written summaries, not independently verified. Source for the failed predecessors." }
   ]
+},
+{
+  slug: "audiopen",
+  name: "AudioPen",
+  country: "India",
+  sector: "Information Technology",
+  productType: "Voice notes to clean text",
+  aiType: "AI-native",
+  team: "solo",
+  outcome: "running",
+  evidence: "C",
+  added: "2026-10-12",
+  launchLabel: "26 March 2023",
+  outcomeLabel: "US$15K to US$20K a month, February 2026",
+  sticker: "$15K to $20K a month",
+  outcomeUsd: 210000,
+  months: 35,
+  teamLabel: "1 founder, no employees, part time next to a family retail business",
+  fundingLabel: "None",
+  primaryFactor: "Distribution",
+  meters: { evidence: 1, copyable: 3, capital: 1 },
+  tags: ["AI-native", "Solo founder", "Bootstrapped", "Running", "B2C", "Productivity software"],
+  product: "You press a button, talk in any language, and AudioPen returns a short, well-structured text in the style and language you chose, not a word-for-word transcript. It runs on the web, as a phone app, on desktop and as a browser extension. The free plan has short recordings; the paid plan, Prime, is sold for 3 months, 1 year or 2 years, never by the month.",
+  why: "The founder had 10,000 followers on X who watched him build it, so it had 100 paying users two days after a 12-hour hackathon and sold itself by word of mouth after that. A no-code stack kept costs near zero, a lifetime deal whose price rose from US$19 to US$150 funded the first year, and yearly-only pricing cut support work for one person.",
+  summary: [
+    `AudioPen is a <dfn>voice-to-text</dfn> tool: it records what you say and turns it into written text. Most such tools return a <dfn>transcript</dfn>, the exact words you spoke. AudioPen instead sends the transcript to a <dfn>large language model</dfn>, a program that rewrites and summarises text, and returns a clean, short, well-ordered note in the style and language you picked. The AI parts are rented: OpenAI's Whisper model for the speech and GPT models for the rewriting.`,
+    `Louis Pereira, a 31-year-old from Goa, India, who works in his family's retail business by day and has no engineering training, built the first version in under 12 hours on 26 March 2023 during a hackathon he organises himself, using the <dfn>no-code</dfn> tool Bubble, a visual builder that makes web apps without written code. He had paying customers that same day. By 22 April 2023 it had 400 paying users, by 16 May 2023 more than 500, and on 4 May 2023 it was first product of the day on Product Hunt. Two months after launch it had made US$73,000 from more than 1,000 paying users. In May 2024 he said it made about US$15,000 a month; in October 2024, US$12,000 to US$15,000 a month; in February 2026, US$15,000 to US$20,000 a month, from yearly and two-year subscriptions only.`,
+    `Every number on this page is a founder statement in interviews, a podcast or his own posts, grade C. No payment processor or buyer has confirmed them. The founder says that he keeps the exact revenue to himself, so the figures are ranges. The page also shows what happened to earlier companies that sold note-taking and voice products against larger platforms.`
+  ],
+  factsCaption: "A 12-hour build that made US$73,000 in two months and then settled at about US$15,000 to US$20,000 a month for three years, all self-reported",
+  factsRead: "How to read this table: a grade C value is a founder statement from an interview, a podcast, his own post on X, or a page of his company. A \"calc\" value was computed on this page from the rows above it. No value is grade A or B.",
+  timelineLead: "From four tiny experiments with new AI APIs to a product with 200,000 registered users, in 35 months. Each entry carries its grade.",
+  pricing: {
+    caption: "AudioPen Prime prices on the company's pricing page, read 12 October 2026 (grade C)",
+    note: "There is no monthly plan. Prime is sold as a 3-month, 1-year or 2-year pass; the second column is the price divided by the months in the pass, as the page itself shows it. The free plan has shorter recordings and fewer voice typing sessions. The phone apps sell Prime through the App Store and Google Play at their own prices. Up to 100 one-year licenses can be bought in one order at a 20% discount. The lifetime deal sold in 2023 is no longer on the page.",
+    rows: [
+      ["Free", "0", "0", "shorter recordings, fewer voice typing sessions"],
+      ["Prime, 3 months", "11", "", "33 for 3 months"],
+      ["Prime, 1 year", "8.25", "", "99 a year; shown as 25% off"],
+      ["Prime, 2 years", "6.63", "", "159 for 2 years; shown as 40% off"],
+      ["Prime, team or class", "6.60", "", "20% off one-year licenses, 100 per order"]
+    ]
+  },
+  facts: [
+    { fact: "Revenue per month, February 2026", value: "US$15,000 to US$20,000", grade: "C", note: "Founder's account in an Indie Hackers article of 17 February 2026. Only yearly and two-year subscriptions are sold.", src: [1] },
+    { fact: "Run rate from the February 2026 range", value: "about US$180,000 to US$240,000 a year", grade: "X", note: "Calculated: the range times 12. The headline figure on this page is the midpoint, US$210,000.", src: [1] },
+    { fact: "Revenue per month, October 2024", value: "US$12,000 to US$15,000", grade: "C", note: "Indie Hackers profile of 29 October 2024. Nineteen months after launch.", src: [3] },
+    { fact: "Revenue per month, May 2024", value: "about US$15,000", grade: "C", note: "Founder's interview with Starter Story, 16 May 2024.", src: [2] },
+    { fact: "Revenue in the first two months", value: "US$73,000", grade: "C", note: "Founder's interview, late May 2023. More than 1,000 paying users at several price points, and more than 11,000 registered users.", src: [4] },
+    { fact: "Paying users, August 2023", value: "about 3,000", grade: "C", note: "Goa newspaper interview, 11 August 2023, which also gives about 35,000 registered users.", src: [5] },
+    { fact: "Registered users, 2026", value: "more than 200,000", grade: "C", note: "The company's home page says \"Used by 200,000+ people\". Registered includes free users.", src: [13] },
+    { fact: "Paying share of registered users, May 2023", value: "about 9%", grade: "X", note: "Calculated: 1,000 of 11,000. August 2023: 3,000 of 35,000, about 8.6%.", src: [4, 5] },
+    { fact: "Lifetime deal price, 2023", value: "US$19 at launch, US$150 by August 2023", grade: "C", note: "Founder on the Bootstrapped Founder podcast, 16 August 2023. The price rose with each new feature. Lifetime was defined as the lifetime of the product.", src: [7] },
+    { fact: "Paid marketing", value: "US$7,000 spent on TikTok influencers, no measurable traffic", grade: "C", note: "Indie Hackers profile, October 2024. Growth is otherwise word of mouth and the founder's posts on X.", src: [3] },
+    { fact: "Team", value: "1 person, part time", grade: "C", note: "The founder runs his family's offline business by day and builds at night. No employees are mentioned in any source.", src: [5, 1] },
+    { fact: "Outside funding", value: "none", grade: "C", note: "No source mentions investors. Build cost was about US$30 a month for Bubble.", src: [2] },
+    { fact: "Time from launch to the February 2026 figure", value: "35 months", grade: "X", note: "Calculated: 26 March 2023 to February 2026.", src: [1, 5] }
+  ],
+  timeline: [
+    { when: "2018", what: "Pereira, who studied in Delhi, worked in management consulting and ran a company in Gurgaon for two years, moves back to Goa to join the family business. From 2020 he writes and builds small products online at night.", grade: "C", src: [5] },
+    { when: "March 2023", what: "He builds four tiny tools in a week to learn the new AI APIs, hosted on his personal website to save the cost of domains. One of them is a small voice-note tool.", grade: "C", src: [2, 4] },
+    { when: "26 March 2023", what: "He builds the full version in under 12 hours at Half Day Build, a free hackathon he organises every two months, with a payment link live from the first minute. A few beta testers from X buy before launch; the first paying customers arrive the same day. The lifetime deal is US$19.", grade: "C", src: [5, 7] },
+    { when: "Late March 2023", what: "100 paying customers within two days of launch, from his 10,000 followers on X.", grade: "C", src: [3] },
+    { when: "21 April 2023", what: "400 paying users, announced on X the next day.", grade: "C", src: [8] },
+    { when: "4 May 2023", what: "Product Hunt launch, first product of the day. The founder delayed the launch until he already had more than 500 paying customers. The post offered 20% off Prime for the first 200 buyers.", grade: "C", src: [9, 6] },
+    { when: "16 May 2023", what: "More than 500 paying subscribers in one month. Prices: annual pass US$60, lifetime US$120. Stack: Bubble, Whisper, GPT-4, Lemon Squeezy, Progressier, Loops, Zapier.", grade: "C", src: [6] },
+    { when: "Late May 2023", what: "US$73,000 in revenue in two months, more than 1,000 paying users, 11,000 registered users, 4,000 visits a day.", grade: "C", src: [4, 10] },
+    { when: "11 August 2023", what: "About 35,000 registered and 3,000 paying users. A Goa newspaper reports that TechCrunch has mentioned the app.", grade: "C", src: [5] },
+    { when: "16 August 2023", what: "On the Bootstrapped Founder podcast: 30,000 registered users, the lifetime deal now US$150, and he answers 20 to 25 support emails a day himself.", grade: "C", src: [7] },
+    { when: "16 May 2024", what: "About US$15,000 a month. He says the AI API bills are his largest cost.", grade: "C", src: [2] },
+    { when: "29 October 2024", what: "US$12,000 to US$15,000 a month on a US$99 annual subscription. A US$7,000 TikTok influencer test brought no noticeable traffic.", grade: "C", src: [3] },
+    { when: "17 February 2026", what: "US$15,000 to US$20,000 a month from yearly and two-year plans only. He reports DDoS attacks on the service and says his goal for the next year is 10 times the current revenue.", grade: "C", src: [1] }
+  ],
+  mechanism: [
+    { title: "An audience before the product", text: "He had posted every small experiment on X for three years. When the hackathon version went live, people were already watching, so there were 100 paying customers in two days and 500 in a month before any launch site saw it. After that, in his words, people who are paying customers keep talking about it, and he has never had to market the product actively." },
+    { title: "A rewrite, not a transcript", text: "Speech-to-text was old. The new part in March 2023 was that a language model could turn five minutes of rambling into a tidy paragraph in the user's chosen style and language. Users show the output to other people, which is how word of mouth works for a tool whose result is a piece of text." },
+    { title: "A lifetime deal that rose with every feature", text: "There was no time to build subscriptions in 12 hours, so he sold lifetime access for US$19. Each new feature raised the price, to US$150 by August 2023, and each rise was a reason to buy now. The deal funded the first year while he worked out what usage cost him. The annual pass came next, and in 2026 only yearly and two-year passes are sold." },
+    { title: "Yearly-only pricing as a workload choice", text: "With no monthly plan there are fewer casual users, so fewer support emails for one person, and the revenue is predictable. He says this is a deliberate choice for a business he runs alone at night." }
+  ],
+  howBuilt: {
+    intro: "These details come from the founder's interviews and the Product Hunt comments. They are grade C.",
+    items: [
+      "Designed in Figma, built in Bubble, a no-code web app builder costing about US$30 a month. The founder is not a developer; the MVP took about 12 hours.",
+      "OpenAI's Whisper API for speech recognition and GPT models for rewriting. The API bills are the largest cost and scale with use, which is why the free plan limits recording length.",
+      "Payments through Lemon Squeezy, a progressive web app through Progressier, email through Loops, and Zapier for connections. Later a backend on Xano and phone apps built in Draftbit, as readers of the 2026 Indie Hackers article summarise its paid part.",
+      "Support is a message box in the account tab that sends an email with the user's address; the founder answered 20 to 25 a day in 2023 and refused to add a chatbot or a help page, saying the app should be clear enough not to need one.",
+      "By 2026 the product runs on web, iPhone, Android, Mac, Windows and a Chrome extension under one account."
+    ],
+    src: [2, 6, 7, 1, 12]
+  },
+  predecessorsIntro: "Five companies in the Loot Drop database sold note-taking or voice products against platforms with far more money, or could not turn free users into paying ones. The values below are from that database and are not independently verified.",
+  predecessors: [
+    { name: "Springpad", years: "2008 to 2014", funding: "US$7.5M", cause: "Unit Economics", promise: "Collect, organise and find your notes, articles and recipes in one tidy place.", died: "A liked free product with no premium feature that users would pay for. Evernote moved faster into teams and companies.", url: "https://www.loot-drop.io/startup/1893-springpad" },
+    { name: "Transpose", years: "2012 to 2018", funding: "US$0", cause: "Competition", promise: "An Evernote alternative with templates and collaboration for businesses.", died: "Charged US$14.99 against Evernote with no money and no reason for anyone to switch. Few free users converted.", url: "https://www.loot-drop.io/startup/1849-transpose" },
+    { name: "Voicery", years: "2018 to 2021", funding: "US$2M", cause: "Competition", promise: "Text-to-speech voices that sound human.", died: "Google, Amazon and Microsoft sold better voices cheaper, bundled with other services. US$2M could not keep up with their models.", url: "https://www.loot-drop.io/startup/1004-voicery" },
+    { name: "Storyline", years: "2018 to 2021", funding: "US$120K", cause: "No Market Need", promise: "Build Alexa voice apps without code.", died: "Few people wanted voice apps, and the platforms were owned by Amazon and Google.", url: "https://www.loot-drop.io/startup/1011-storyline" },
+    { name: "Petalite", years: "2014 to 2025", funding: "US$12M", cause: "Competition", promise: "A privacy-first voice assistant that runs on the device.", died: "Amazon and Google sold hardware below cost and had billions of voice queries to train on. The on-device model could not improve as fast.", url: "https://www.loot-drop.io/startup/2471-petalite" }
+  ],
+  whatChanged: [
+    `Voicery, Storyline and Petalite built their own voice technology and lost to companies whose models improved faster. AudioPen builds none: it rents Whisper and GPT by the minute, so when the models improve, the product improves for free. The cost moves to the user's bill, which is why the free plan is limited and there is no monthly plan.`,
+    `Springpad and Transpose had the opposite problem: a note product people liked but would not pay for. AudioPen charged from the first minute, with a lifetime deal that validated demand before any subscription existed, and it never built a free product first. About 9% of registered users paid in 2023, a high share for a consumer tool. The remaining risk is the same as the predecessors': Apple, Google and OpenAI can add a rewrite button to their own voice memo apps.`
+  ],
+  copy: {
+    verdict: "The timing, no. The method, yes.",
+    text: "Being the first clean voice-to-text tool on the new APIs in March 2023 was a short opening, and the phone makers now ship transcription and summaries of their own. The method is still available: build the smallest product on rented models, put a payment link on it the first day, sell to an audience you already have, and raise the price with each feature.",
+    steps: [
+      "Post what you build for a long time before you need an audience; the hackathon version sold because people were already watching.",
+      "Put a payment link on the first version, even a lifetime deal, to see whether anyone pays before building subscriptions.",
+      "Raise the price with each feature and say so in public; early buyers get a bargain and later buyers get a reason to hurry.",
+      "Limit the free plan by the dimension that costs you money, here minutes of audio, and sell yearly passes so support stays small."
+    ],
+    open: "Any workflow where a rented model turns a messy input into a finished output that people share: meeting notes, field reports, medical dictation in a specific speciality, or one language community's voice messages."
+  },
+  watch: [
+    { title: "Self-reported ranges, no outside check", text: "The founder gives ranges, says he keeps the exact revenue private, and no payment processor or journalist has checked the figures. The Product Hunt page today shows 877 points, while the 2023 interview said more than 1,000 upvotes." },
+    { title: "Flat for three years", text: "About US$15,000 a month in May 2024, US$12,000 to US$15,000 in October 2024, US$15,000 to US$20,000 in February 2026. The product grew in users but not much in revenue; the founder's stated goal of 10 times in a year is a goal, not a result." },
+    { title: "The platforms can add the feature", text: "Apple, Google and Samsung ship on-device transcription and summaries in their voice memo and notes apps. Every voice predecessor on this page lost to a platform owner." },
+    { title: "Usage costs rise with the models", text: "The AI API bills are the largest cost and lifetime buyers from 2023 still use the product. The founder's answer was to raise prices and remove the lifetime deal; the margin is not published." },
+    { title: "One person, part time, under attack", text: "The founder also runs a family business, answers support himself, and reported DDoS attacks in 2026. There is no second person to keep the service up." }
+  ],
+  sources: [
+    { title: "Indie Hackers, 17 February 2026: Building an AI tool in a half-day hackathon and hitting $20k/mo", url: "https://www.indiehackers.com/post/tech/building-an-ai-tool-in-a-half-day-hackathon-and-hitting-20k-mo-BCloDTDRfjuip0pDghap", grade: "C", how: "Read the open part and the founder's replies in the comments; the full article is behind a free login. Source for the US$15,000 to US$20,000 range, the yearly-only pricing, the DDoS attacks and the 10 times goal." },
+    { title: "Starter Story, 16 May 2024: The App I Built In 12 Hours Now Makes $15K/Mo", url: "https://www.starterstory.com/stories/audiopen", grade: "C", how: "Read in full. Founder interview. Source for the US$15,000 a month, the four tiny products, Figma and Bubble, the Bubble cost and the API cost." },
+    { title: "Indie Hackers, 29 October 2024: Louis Pereira, from idea to $15K a month with AudioPen (title shortened)", url: "https://www.indiehackers.com/post/eda6e4c6e4", grade: "C", how: "Read in full. Short profile; the id-only link redirects to the post's full title. Source for the US$12,000 to US$15,000 range, the 100 paying customers in two days, the US$99 annual price and the US$7,000 TikTok test." },
+    { title: "Solveo, May 2023 (republished from Indie Hackers, 25 May 2023): How I accidentally created a generative AI tool that's made $73,000 in 2 months", url: "https://www.solveo.co/post/accidentally-created-ai-tool-thats-made-73000", grade: "C", how: "Read in full. The Indie Hackers original is behind a free login; its open part and comments were also read. Source for the US$73,000, the 1,000 paying and 11,000 registered users, and the Product Hunt result." },
+    { title: "O Heraldo (Herald Goa), 11 August 2023: Goan creates a revolutionary AI tool for converting messy voice notes into clear, shareable text", url: "https://www.heraldgoa.in/?p=124807", grade: "C", how: "Read in full. Newspaper interview. Source for the 26 March 2023 build date, the 35,000 registered and 3,000 paying users, and the founder's background." },
+    { title: "AI Makers newsletter, 16 May 2023: 500 paying customers in 1 month", url: "https://aimakers.beehiiv.com/p/500-paying-customers-1-month", grade: "C", how: "Read in full. Founder interview. Source for the 500 paying subscribers, the 2023 prices, the tool stack and the delayed Product Hunt launch." },
+    { title: "The Bootstrapped Founder podcast with Arvid Kahl, 16 August 2023: Louis Pereira, When an Indie Hacker Strikes Gold (transcript)", url: "https://thebootstrappedfounder.com/louis-pereira-when-an-indie-hacker-strikes-gold/", grade: "C", how: "Read the transcript sections on numbers, pricing and support. Source for the 30,000 registered users, the lifetime deal from US$19 to US$150, the beta buyers and the support routine." },
+    { title: "Louis Pereira on X, 22 April 2023: AudioPen crossed 400 paying users yesterday", url: "https://x.com/louispereira/status/1649882187515453440", grade: "C", how: "Read in full through the fxtwitter API, which gives the post date." },
+    { title: "Product Hunt: AudioPen, launched 4 May 2023", url: "https://www.producthunt.com/products/audiopen", grade: "C", how: "Read in full. The launch date is in the page data; the founder's launch post and his answers in the comments give the six weeks since launch, the Bubble stack and the discount code." },
+    { title: "NoCodeLife, 2023: The half-day build that turned into 1,000 paying customers", url: "https://www.nocodelife.com/the-half-day-build-that-turned-into-1-000-paying-customers/", grade: "C", how: "Read in full. Founder interview. Source for the 10,000 registered users, 4,000 daily visits and 1,000 paying users under two months after launch." },
+    { title: "Build in Public Hub, 12 May 2023: Lessons from building AudioPen to 600+ paid users to clinching #1 on Product Hunt", url: "https://buildinpublichub.substack.com/p/how-i-built-this-in-public-louis", grade: "C", how: "Read in full. Founder guest post on building in public. Source for the 600 paid users in May 2023 and his approach to early users." },
+    { title: "AudioPen pricing page, read 12 October 2026", url: "https://audiopen.ai/pricing", grade: "C", how: "Read in full. Source for the pricing table, the free plan limits and the team licenses." },
+    { title: "AudioPen home page, read 12 October 2026", url: "https://audiopen.ai/", grade: "C", how: "Read in full. Source for the 200,000+ users claim and the list of platforms." },
+    { title: "Loot Drop database export, 1,749 failed startups", url: "https://www.loot-drop.io/", grade: "C", how: "Local export. AI-written summaries, not independently verified. Source for the failed predecessors." }
+  ]
 }
 ];
 
