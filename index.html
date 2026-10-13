@@ -2806,6 +2806,145 @@ const STORIES = [
     { title: "Rytr pricing page, read 12 October 2026", url: "https://rytr.me/pricing", grade: "C", how: "Read in full. Source for the current plans, the yearly prices and the 8,000,000+ claim. The monthly prices are calculated from the two-months-free rule stated on the page." },
     { title: "Loot Drop database export, 1,749 failed startups", url: "https://www.loot-drop.io/", grade: "C", how: "Local export. AI-written summaries, not independently verified. Source for the failed predecessors." }
   ]
+},
+{
+  slug: "talknotes",
+  name: "Talknotes",
+  country: "France",
+  sector: "Information Technology",
+  productType: "AI voice-note to text app",
+  aiType: "AI-native",
+  team: "solo",
+  outcome: "exit",
+  evidence: "B",
+  added: "2026-10-12",
+  launchLabel: "14 August 2023",
+  outcomeLabel: "Sold for US$200K, July 2024",
+  sticker: "Sold for $200K",
+  outcomeUsd: 200000,
+  months: 11,
+  teamLabel: "1 founder, no employees",
+  fundingLabel: "None",
+  primaryFactor: "Paid ads",
+  meters: { evidence: 2, copyable: 3, capital: 2 },
+  tags: ["AI-native", "Solo founder", "Bootstrapped", "Exit", "B2C", "Productivity"],
+  product: "You speak into your phone or browser. Talknotes transcribes the recording with a speech-to-text model and rewrites it in a style you pick: a clean transcript, a short note, a task list, a formal email, a blog post or a video script. It works in more than 50 languages and exports to text, email or a link.",
+  why: "A marketer who had learned to code one year earlier built it in a week, found that paid ads could buy customers for about US$50 each with a yearly plan that paid the ad bill up front, and sold the business for cash eleven months after launch, when the bugs and the support load became more than one person wanted to carry.",
+  summary: [
+    `Talknotes is a <dfn>voice-note app</dfn>: a program that records what you say, turns the audio into text, and then rewrites that text into a usable document. The transcription uses <dfn>Whisper</dfn>, OpenAI's speech-to-text model, which the founder called through the OpenAI <dfn>API</dfn>, a paid interface that lets one program send audio to another company's model and get text back. A second model call turns the raw transcript into the style the user picked. Because each note costs the company money at the model provider, the product is sold as a subscription.`,
+    `Nico Jeannen, a French marketer who had managed more than US$1 million of ad spend for clients before he learned to code in 2022, built the first version in about one week and showed it on X on 14 August 2023. It made US$1,500 in the first 20 days from startup directories and his X followers, fell to almost nothing when he replaced one-time passes with subscriptions, reached US$100 a month of recurring revenue on 22 September 2023, and US$2,000 a month in November 2023 after a first place of the day on Product Hunt. Facebook ads then became the main sales channel. In April 2024 he reported about US$5,000 a month in revenue, US$4,000 of it recurring, from more than 900 paying customers.`,
+    `In May 2024 he listed the business on Acquire.com, a marketplace for small software companies, after a day of bugs cut sales by 71% and burned him out. He accepted US$200,000 in cash rather than wait for a higher offer with conditions. Acquire.com, which ran the sale, confirmed the all-cash price in September 2024, which is why the headline number is grade B. The monthly revenue figures are the founder's own, grade C. The buyer has not been named in public, and the product is still sold at talknotes.io under new owners.`
+  ],
+  factsCaption: "A one-week prototype that reached about US$7,500 a month in recurring revenue and sold for US$200,000 in cash after eleven months, with the price confirmed by the marketplace that ran the deal",
+  factsRead: "How to read this table: a grade B value was confirmed by Acquire.com, the marketplace that listed the business and handled the sale. A grade C value is a founder statement in his blog, his X posts or an interview, or a secondary account that quotes him. A \"calc\" value was computed on this page from the rows above it. No value is grade A.",
+  timelineLead: "From a bad experience with the dictation feature in Google Docs to a US$200,000 wire transfer in eleven months. Each entry carries its grade.",
+  pricing: {
+    caption: "Talknotes prices in October 2026, read from the company's pricing page, with the pre-sale prices of July 2024 from the Wayback Machine for comparison (grade C)",
+    note: "Today there is one plan with all features and a 7-day free trial. The yearly price is US$197, which is US$16.42 a month. In July 2024, just before the sale, the founder sold two plans, Plus at US$11.97 a month and Pro at US$49 a month, with notes limited to 20 minutes on Plus and a credit system for longer notes on Pro, and a launch offer of US$69.10 a year. The customer never pays the model provider; the company pays OpenAI for every note.",
+    rows: [
+      ["Talknotes, all features, 2026", "16.42", "19.97", "unlimited notes, 2-hour recordings, iOS and Android"],
+      ["Plus, July 2024", "5.76 (launch offer)", "11.97", "unlimited notes up to 20 minutes"],
+      ["Pro, July 2024", "", "49", "credits for 2-hour notes, guest recorder link"]
+    ]
+  },
+  facts: [
+    { fact: "Sale price", value: "US$200,000, all cash", grade: "B", note: "Acquire.com, the marketplace that listed the business, wrote on 19 September 2024 that he \"secured an all-cash $200,000 deal in weeks\". Its headline says US$250,000, its text says US$200,000; the founder's own posts say US$200,000.", src: [1, 2, 3] },
+    { fact: "Monthly recurring revenue at the sale", value: "about US$7,500 a month", grade: "C", note: "Founder's announcement post on X, quoted by No-Code Exits and SoFarBot: \"I took it from $0 to $7500 MRR in just 11 months.\" The original post could not be opened.", src: [3, 14] },
+    { fact: "Sale price as a multiple of yearly recurring revenue", value: "about 2.2 times", grade: "X", note: "Calculated: US$7,500 times 12 is US$90,000 a year; US$200,000 divided by US$90,000 is 2.22.", src: [1, 3] },
+    { fact: "Total sales before the sale", value: "US$77,000", grade: "C", note: "Founder in a Starter Story video interview, March 2025: Talknotes \"generated 77,000 of sales before I sold it for 200,000 last July\".", src: [5] },
+    { fact: "Revenue per month, April 2024", value: "about US$5,000, of which US$4,000 recurring", grade: "C", note: "Founder's Starter Story interview, 4 April 2024. More than 900 paying customers, recurring revenue growing about 10% a month, churn under 10%.", src: [4] },
+    { fact: "Cost to win one customer with ads", value: "about US$50", grade: "C", note: "Founder's Starter Story interview. He says the yearly plan, sold at a large discount, paid the ad cost up front.", src: [4] },
+    { fact: "Earlier offer refused", value: "US$150,000 in cash at US$3,000 a month recurring", grade: "C", note: "Founder's Starter Story interview, April 2024.", src: [4] },
+    { fact: "Sales in the first 20 days", value: "US$1,500", grade: "C", note: "Founder's post on the Talknotes blog and on Indie Hackers, 1 September 2023. Sold as one-year passes, one click to Stripe, no account.", src: [7, 2] },
+    { fact: "Cost to build the first version", value: "under US$10", grade: "C", note: "Founder's Starter Story interview: the only cost was OpenAI API calls during three or four days of coding.", src: [4] },
+    { fact: "Outside funding", value: "none", grade: "C", note: "Founder statements throughout. He reinvested only revenue from the product into ads.", src: [4, 14] },
+    { fact: "Time from launch to the sale", value: "11 months", grade: "X", note: "Calculated: August 2023 to July 2024. The founder uses the same figure.", src: [6, 3] }
+  ],
+  timeline: [
+    { when: "2022", what: "Jeannen, a French marketer and former e-commerce seller who has managed more than US$1 million of ad spend, loses his main client, locks himself in a hotel room for two months and learns to code from an online course.", grade: "C", src: [4, 13] },
+    { when: "February 2023", what: "He sells MakeLogo.ai, an AI logo generator built in 48 hours, for US$65,000 on Acquire.com three months after launch.", grade: "C", src: [3, 5] },
+    { when: "August 2023", what: "The dictation feature in Google Docs fails him while he drafts a post. He builds a voice-to-text prototype on Whisper in three or four days and a landing page in the rest of the week.", grade: "C", src: [4, 2] },
+    { when: "14 August 2023", what: "Soft launch on X: more than 4,000 visitors and 800 sign-ups in the first days. He then submits the app to every startup directory he can find.", grade: "C", src: [6, 2] },
+    { when: "1 September 2023", what: "US$1,500 in sales in 20 days, as one-year passes.", grade: "C", src: [7] },
+    { when: "September 2023", what: "He replaces one-year passes with subscriptions, because transcription costs money every month. Sales fall from US$150 a day to zero. US$100 a month of recurring revenue on 22 September.", grade: "C", src: [7, 2] },
+    { when: "October to November 2023", what: "First place of the day on Product Hunt. Recurring revenue goes from US$500 to US$2,000 a month in under a month. Most traffic now comes from Facebook and Google, not from his X account.", grade: "C", src: [2, 8] },
+    { when: "4 April 2024", what: "About US$5,000 a month in revenue, more than 900 customers, ads as the main channel at about US$50 per customer. He has already refused a US$150,000 cash offer.", grade: "C", src: [4] },
+    { when: "17 April 2024", what: "The demo on the landing page breaks and sales fall 71%. Two bugs in the mobile app lock out users for a day and Apple rejects the fix. He writes that he is burned out.", grade: "C", src: [9, 2] },
+    { when: "May 2024", what: "He lists Talknotes on Acquire.com at US$200,000.", grade: "C", src: [8, 14] },
+    { when: "July 2024", what: "The sale closes for US$200,000 in cash after a problem with the escrow service. He turns down a higher offer with conditions in order to close within weeks.", grade: "B", src: [1, 8, 3] },
+    { when: "19 September 2024", what: "Acquire.com publishes a podcast episode and a page on the sale, confirming the all-cash US$200,000 deal.", grade: "B", src: [1] },
+    { when: "17 August 2025", what: "He writes that he has not built anything of note since the sale, that he has enough money to live for about 20 years, and that losing the pressure took away his purpose.", grade: "C", src: [10] },
+    { when: "2026", what: "He builds AdKit, an ads research tool, back in the field he knows. Talknotes is still sold by its new owners at US$19.97 a month.", grade: "C", src: [3, 12] }
+  ],
+  mechanism: [
+    { title: "A one-week product on a rented model", text: "Whisper did the transcription and a second model call did the rewriting, so the product was a recording interface, a style picker and a payment form. The first version cost under US$10 in API calls. That is why the founder could afford to treat it as one of 17 experiments and drop it if the first week brought no sales." },
+    { title: "Test with money, not sign-ups", text: "The launch page had one button that went straight to Stripe for a one-year pass, no account needed. When free sign-ups were allowed for a few days in September 2023, there were many sign-ups and no sales, so he removed the free plan again. US$1,500 in 20 days was the signal to continue." },
+    { title: "Subscriptions, because every note costs money", text: "Each note is a paid API call, so a one-year pass would have left the company paying for users who had stopped paying it. The switch to subscriptions cut sales to zero for weeks and the founder describes that period as the hardest of his career, but recurring revenue is what made the business sellable." },
+    { title: "Paid ads with a yearly plan that pays for them", text: "His trade was Facebook ads. At about US$50 per customer, a monthly plan took months to pay back, so he sold a yearly plan at a steep discount. The yearly payment arrived up front and funded the next round of ads. Growth stopped depending on his X account, which he notes made the business worth more to a buyer." },
+    { title: "Sell for cash before the cost of continuing rises", text: "After the April 2024 outage he saw months of bug fixing and support ahead, the two jobs he did not want. He listed within weeks and took US$200,000 in cash rather than a larger offer with conditions. A comparable sale had worked for him once before, with MakeLogo.ai." }
+  ],
+  howBuilt: {
+    intro: "These details come from the founder's blog diary, his X posts and his interviews. They are grade C.",
+    items: [
+      "Transcription by OpenAI's Whisper model through the API; a second model call rewrites the transcript in the chosen style. The founder describes the first version as a single index.js file and a user interface in front of it.",
+      "First version in plain JavaScript, HTML and CSS with a Node backend. Rebuilt on Nuxt, a Vue framework, in early 2024, with the mobile app and the web app merged into one code base in March 2024.",
+      "Payments by Stripe. The first product was a one-year pass, then a monthly subscription, then Plus and Pro plans with a credit system for notes longer than 20 minutes.",
+      "iOS and Android apps. A bug in the mobile app in April 2024 could not be fixed quickly because the app gave no error messages or logs.",
+      "Feature requests collected with Canny, a public request board, and most requested features were built. A welcome email asked every new user how they planned to use the app.",
+      "Marketing: startup directories at launch, a Product Hunt launch two months later, then Facebook ads at US$30 to US$100 a day. SEO content brought three sales in total, and he dropped it.",
+      "Coding help from Cursor, ChatGPT and Copilot; analytics with Plausible; email with Bento."
+    ],
+    src: [4, 2, 9, 7]
+  },
+  predecessorsIntro: "Five companies in the Loot Drop database sold voice or note-taking technology and failed. The values below are from that database and are not independently verified.",
+  predecessors: [
+    { name: "Tellme", years: "1999 to 2011", funding: "US$238M", cause: "Competition", promise: "Information and transactions by voice, over the telephone.", died: "Speech recognition was weak and the telephony infrastructure was expensive. Smartphone apps with screens replaced voice menus. Microsoft bought it and shut it down.", url: "https://www.loot-drop.io/startup/612-tellme" },
+    { name: "VocalIQ", years: "2011 to 2017", funding: "US$2M", cause: "Competition", promise: "A voice interface that understands context.", died: "Apple, Google and Amazon built their own assistants with far more money. Apple bought the team and the product disappeared.", url: "https://www.loot-drop.io/startup/719-vocaliq" },
+    { name: "Voicery", years: "2018 to 2021", funding: "US$2M", cause: "Competition", promise: "Natural-sounding text-to-speech for businesses.", died: "Google, Amazon and Microsoft offered better speech synthesis at lower prices, bundled with their clouds. A small company could not charge a premium for its own model.", url: "https://www.loot-drop.io/startup/1004-voicery" },
+    { name: "Transpose", years: "2012 to 2018", funding: "none recorded", cause: "Competition", promise: "A flexible note-taking tool as an alternative to Evernote.", died: "Charged US$14.99 to compete with Evernote with no funding and no reason for users to switch.", url: "https://www.loot-drop.io/startup/1849-transpose" },
+    { name: "Storyline", years: "2018 to 2021", funding: "US$120K", cause: "No Market Need", promise: "Build voice apps for Alexa without code.", died: "Few people wanted voice apps, and the platform owners controlled the only way to make money from them.", url: "https://www.loot-drop.io/startup/1011-storyline" }
+  ],
+  whatChanged: [
+    `Tellme, VocalIQ and Voicery built their own speech technology, which took tens of millions of dollars and still lost to the large companies' models. Talknotes built none. It rented Whisper for cents per note, so the model race was someone else's cost, and the whole product was the part the model providers do not sell: a recording button, a set of output styles and a subscription.`,
+    `Transpose and Storyline show the other risk, a product with no distribution. Talknotes had a founder whose trade was buying ads, and a price structure built around the cost of one ad-bought customer. That is also why the business could be sold: the buyer got an ad channel and a subscriber base, not a dependency on the founder's X account. What Talknotes did not have was a defense against the same model being available to everyone. The founder said in April 2024 that the same app could not be launched again because the novelty had worn off, and he sold three months later.`
+  ],
+  copy: {
+    verdict: "Yes, if you can buy customers at a known price.",
+    text: "A voice-note app on a rented model is a weekend project in 2026, and the sale shows the ceiling: about two times yearly recurring revenue for a one-person product with ad-driven growth. The method is the part worth copying. Validate with a payment, price so that a yearly plan pays for the ad that brought the customer, and decide early whether the exit is the plan.",
+    steps: [
+      "Build the smallest product on a rented model in a week, and launch with one button that takes payment, not a free sign-up.",
+      "Submit to every directory and post on your own channels to get a first signal of sales, then stop counting on that traffic.",
+      "Switch to subscriptions as soon as the product has a per-use cost, and accept the sales dip.",
+      "Run paid ads only when a discounted yearly plan can cover the cost of one customer up front.",
+      "Keep the business separable from yourself: paid traffic, clean accounts, a public feature board. Then a marketplace sale is possible within weeks."
+    ],
+    open: "Any narrow use of speech-to-text where the output format matters more than the transcript: inspections, field reports, medical or legal dictation with the right compliance, and languages that the big assistants serve badly."
+  },
+  watch: [
+    { title: "The revenue figures are self-reported", text: "The US$7,500 a month figure comes from the founder's own announcement, quoted by newsletters; the original post could not be opened. Only the sale price has outside confirmation, and that confirmation is from the marketplace that earned a fee on the deal." },
+    { title: "The headline was inflated", text: "Acquire.com's page title says US$250,000 and its text says US$200,000. SoFarBot's check reached the same conclusion. This page uses US$200,000." },
+    { title: "Exact dates differ", text: "One interview page says the sale closed in June 2024, the founder said \"last July\" in March 2025, and a newsletter reported the completed sale on 4 July 2024. This page uses July 2024." },
+    { title: "The buyer is unknown", text: "No source names the buyer. The product is still sold at talknotes.io, now with a Texas postal address on the site, at a higher price than before the sale." },
+    { title: "A one-person business is one outage from a crisis", text: "A broken demo and two mobile bugs cut sales by 71% in a day and led directly to the decision to sell. The founder says the profit was never measured exactly, only the ad cost per customer." },
+    { title: "The founder's own account of life after the sale", text: "A year later he wrote that he had done little since and had lost his sense of purpose. A cash exit solved his money problem and removed his reason to work." }
+  ],
+  sources: [
+    { title: "Acquire.com blog, 19 September 2024: Making $250k on His Second Sale on Acquire.com, Startup Acquisition Stories Ep #112", url: "https://blog.acquire.com/startup-acquisition-episode-112/", grade: "B", how: "Read the page text in full; the podcast audio was not listened to. The marketplace that listed and closed the sale confirms the all-cash US$200,000 deal, the 70% drop after the bug round and the listing reason." },
+    { title: "Nico Jeannen's blog diary, 30 August 2023 onwards: TalkNotes, From $0 to $200,000 in 1 year", url: "https://jeannen.com/blog/making-talknotes-io", grade: "C", how: "Read in full. Dated diary entries from the launch to the sale note. Source for the directory strategy, the US$26 MRR, the US$2,000 MRR, the Facebook and Google traffic, the April 2024 outage and the US$200,000 note." },
+    { title: "No-Code Exits newsletter, 25 September 2026: Nico Jeannen's $290K in Exits", url: "https://nocodeexits.substack.com/p/three-exits-for-290000-then-a-year", grade: "C", how: "Read in full. A secondary account that quotes the founder's sale post on X, including the US$7,500 MRR and the eleven months, and his post on life after the sale." },
+    { title: "Starter Story, 4 April 2024: I Taught Myself To Code And Now Make $5K/Mo", url: "https://www.starterstory.com/stories/talknotes-the-ai-voice-notes-app", grade: "C", how: "Read in full. Founder interview in his own words. Source for the US$5,000 a month, the customer count, the ad cost, the refused offer, the Whisper prototype and the tech stack." },
+    { title: "Starter Story video transcript, 31 March 2025: I Locked Myself In A Room, Made 17 Apps, and Sold 2 for $265,000", url: "https://www.starterstory.com/stories/i-locked-myself-in-a-room-made-17-apps-sold-2-for-265-000", grade: "C", how: "Read the transcript sections on Talknotes and on his background. Source for the US$77,000 of sales before the sale and \"last July\"." },
+    { title: "Nico Jeannen on X, 14 August 2023: Result of my soft launch for TalkNotes.io", url: "https://x.com/nico_jeannen/status/1691035753088991232", grade: "C", how: "Read in full through the fxtwitter API. Source for the launch date, 4,000 visitors and 800 sign-ups." },
+    { title: "Indie Hackers product page for TalkNotes: the founder's posts of 1, 18 and 22 September 2023", url: "https://www.indiehackers.com/product/talknotes", grade: "C", how: "Read in full. Source for the US$1,500 in 20 days, the one-click Stripe pass, the switch to subscriptions, the fall from US$150 a day to zero and the US$100 MRR date." },
+    { title: "NextFounder newsletter, 4 July 2024: From Idea to $200K, The Talknotes Success Story", url: "https://nextfounder.substack.com/p/from-idea-to-200k-the-talknotes-success", grade: "C", how: "Read in full. A secondary summary of the founder's account written days after the sale. Source for the May 2024 listing, the US$1,500 MRR at Product Hunt and the escrow problem." },
+    { title: "Nico Jeannen on X, 18 April 2024: Yesterday was the worst day I had since I started making apps", url: "https://x.com/nico_jeannen/status/1780923502465540272", grade: "C", how: "Read in full through the fxtwitter API. Source for the 71% sales drop, the mobile bugs, the Apple rejection and the 800 users." },
+    { title: "Nico Jeannen on X, 17 August 2025: on the loss of purpose after selling Talknotes", url: "https://x.com/nico_jeannen/status/1957054052204007817", grade: "C", how: "Read in full through the fxtwitter API. Source for the statement that the sale left him enough money for about 20 years." },
+    { title: "No CS Degree, 10 July 2024: $200k exit after learning to code", url: "https://www.nocsdegree.com/200k-exit-after-learning-to-code/", grade: "C", how: "Read the free part; the rest is behind a subscription. Gives June 2024 as the sale month and the learning-to-code background." },
+    { title: "Talknotes pricing page, read 12 October 2026, and the Wayback Machine copy of 12 July 2024", url: "https://talknotes.io/pricing", grade: "C", how: "Read both in full. The current page gives one plan at US$19.97 a month or US$197 a year. The archived page gives the Plus and Pro plans sold just before the sale." },
+    { title: "Nico Jeannen's blog, 8 January 2023 post about his background, reached from the blog index", url: "https://jeannen.com/blog", grade: "C", how: "Read the post in full; it is listed on the blog index as the post of 8 January 2023. Source for his nationality, French, and his earlier work in e-commerce and ads." },
+    { title: "SoFarBot, 8 September 2026: TalkNotes actually sold for $200K", url: "https://www.sofarbot.com/stories/talknotes-nico-jeannen-sold-250k-france", grade: "C", how: "Read in full. A secondary account that checked the US$250,000 headline against the text and the founder's post, and reached US$200,000. Also quotes the founder's rule of reinvesting only the product's revenue." },
+    { title: "Loot Drop database export, 1,749 failed startups", url: "https://www.loot-drop.io/", grade: "C", how: "Local export. AI-written summaries, not independently verified. Source for the failed predecessors." }
+  ]
 }
 ];
 
