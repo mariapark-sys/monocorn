@@ -3261,6 +3261,150 @@ const STORIES = [
     { title: "Postiz pricing page, read 12 October 2026", url: "https://postiz.com/pricing", grade: "C", how: "Read in full. Source for the plan prices, the yearly prices, the quotas, the trial and the refund rule." },
     { title: "Loot Drop database export, 1,749 failed startups", url: "https://www.loot-drop.io/", grade: "C", how: "Local export. AI-written summaries, not independently verified. Source for the failed predecessors." }
   ]
+},
+{
+  slug: "arcads",
+  name: "Arcads",
+  country: "France",
+  sector: "Information Technology",
+  productType: "AI video ads with AI actors",
+  aiType: "AI-native",
+  team: "small",
+  outcome: "running",
+  evidence: "C",
+  added: "2026-10-12",
+  launchLabel: "January 2024",
+  outcomeLabel: "US$6M annual recurring revenue, May 2025",
+  sticker: "$6M ARR, 5 people",
+  outcomeUsd: 6000000,
+  months: 16,
+  teamLabel: "2 co-founders in a team of 5 at US$6M ARR (the interviewer counted 6), 8 people at US$10M ARR",
+  fundingLabel: "None until US$10M ARR, then a US$16M seed round in December 2025",
+  primaryFactor: "Distribution",
+  meters: { evidence: 1, copyable: 2, capital: 2 },
+  tags: ["AI-native", "Small team", "Funded", "Running", "B2B", "Advertising"],
+  product: "A marketer types a script, picks an AI actor from a library of more than 1,000 or creates a new one, and receives a short video of that actor speaking the script, in the style of a customer's phone video. The same ad can be made again with another face, another script or another language, so the marketer can test which version sells.",
+  why: "The two founders had bought video ads every week for their own mobile app, so they knew the buyer and the price. They sold AI-made ads as a service before they wrote the software. Then they advertised the product with its own output, and software agents did the growth work that a larger company hires people for.",
+  summary: [
+    `Arcads makes <dfn>UGC ads</dfn> with AI. UGC means user-generated content: a UGC ad is a short video that looks like a customer filmed it on a phone, and brands normally pay a person, a UGC actor, to record each one. In Arcads the person is an <dfn>AI actor</dfn>, a generated face and voice that speaks any script the marketer types. A company that advertises on Meta or TikTok needs many versions of each ad to find the one that sells, and Arcads produces each version in minutes.`,
+    `Romain Torres and Dylan Fournier founded this French company after they had run a marketing agency and then a mobile app studio. They took their first customers in January 2024. In an interview recorded on 16 May 2025, Torres said that Arcads had US$6 million in <dfn>annual recurring revenue</dfn> with a team of five people, and no outside investors. Annual recurring revenue (ARR) is the current monthly subscription revenue multiplied by twelve. On 14 November 2025 he said US$10 million with eight people, and showed his revenue dashboard on screen when the interviewer asked for proof. On 17 December 2025 the company announced a US$16 million <dfn>seed round</dfn>, the first sale of shares to professional investors, led by the investment group Eurazeo.`,
+    `This page uses the May 2025 figure as its headline, because that is the number reached with about five people. It is a founder statement, grade C. The November figure is grade B, because a person outside the company saw the dashboard. The page also shows four failed companies that sold cheap video advertising made by human creators, before a model could generate the person.`
+  ],
+  pricing: {
+    caption: "Arcads plans in October 2026: credit amounts from the company's help center, prices from a reviewer, because the prices appear only inside the app after sign-up (grade C)",
+    note: "A credit is the unit that the app charges for each generation. On Starter and Creator, unused credits expire at each renewal and the account pauses when they are used up. On Pro, Scale and Business, unused credits carry over and extra credits are billed. The prices of US$110 and US$220 come from a June 2026 review that describes a screenshot of the in-app price screen, taken when the same plans were described as 10 and 20 videos a month. They were not verified inside the app for this page, and no yearly prices were found.",
+    rows: [
+      ["Free trial", "", "0", "3 days, 1,000 credits, card required; then the Starter price is charged"],
+      ["Starter", "not found", "110", "8,000 credits a month"],
+      ["Creator", "not found", "220", "16,000 credits a month"],
+      ["Pro, Scale, Business", "custom", "custom", "More credits, unused credits carry over, extra credits billed"]
+    ]
+  },
+  factsCaption: "US$6 million in annual recurring revenue 16 months after the first customer, with five people and no investors, then US$10 million shown on a live dashboard six months later",
+  factsRead: "How to read this table: a grade B value was seen or confirmed by someone outside the company (the interviewer saw the revenue dashboard; the investor's law firm confirmed the round). A grade C value is a statement by the founders or the company, or a figure from a reviewer or a database. A \"calc\" value was computed on this page from the rows above it. No value is grade A.",
+  timelineLead: "From a service delivered by hand in January 2024 to US$6 million in annual recurring revenue 16 months later, then a venture-funded company. Each entry carries its grade.",
+  facts: [
+    { fact: "Annual recurring revenue, 16 May 2025", value: "US$6 million", grade: "C", note: "Founder on camera. No document was shown in this interview. Six months later he showed a revenue graph that covers this period, but no one read the May value from it.", src: [1, 3] },
+    { fact: "Team at US$6 million ARR", value: "5 people, including the 2 founders", grade: "C", note: "Founder's words: the team is still five people, engineers. The interviewer says six full-time employees twice in the same recording. The two counts were never reconciled.", src: [1, 3] },
+    { fact: "ARR per person, May 2025", value: "US$1.2 million with 5 people, US$1.0 million with 6", grade: "X", note: "Calculated: 6,000,000 divided by 5 equals 1,200,000, and divided by 6 equals 1,000,000.", src: [1] },
+    { fact: "Monthly revenue behind the headline", value: "about US$500,000 a month", grade: "X", note: "Calculated: 6,000,000 divided by 12.", src: [1] },
+    { fact: "ARR, April 2025", value: "US$5 million", grade: "C", note: "Founder: one month ago we were at 5 million.", src: [1] },
+    { fact: "Growth from April to May 2025", value: "20% in one month", grade: "X", note: "Calculated: 6 minus 5, divided by 5.", src: [1] },
+    { fact: "Date of US$1 million ARR", value: "June 2024", grade: "C", note: "Founder: the first time was in June, I think. That is 5 months after the first customer (calculated).", src: [1] },
+    { fact: "Monthly recurring revenue after the first week, January 2024", value: "about US$5,000", grade: "C", note: "Founder, in both interviews. At that time Arcads delivered the ads as a service and had no login page.", src: [1, 2] },
+    { fact: "Paying customers, May 2025", value: "close to 4,000", grade: "C", note: "Founder.", src: [1] },
+    { fact: "ARR, 14 November 2025", value: "US$10 million", grade: "B", note: "The founder said the figure. The interviewer asked for proof, and the founder showed his live revenue dashboard on a shared screen, in euros. The interviewer is a podcast host who also runs a lending company, not a newsroom, and no payment processor has published the figure.", src: [2, 3] },
+    { fact: "Team at US$10 million ARR", value: "8 people, 2 of them in sales", grade: "C", note: "Founder in November 2025. The company's own press release of 17 December 2025 says a team of seven.", src: [2, 5] },
+    { fact: "ARR per person, November 2025", value: "US$1.25 million", grade: "X", note: "Calculated: 10,000,000 divided by 8.", src: [2] },
+    { fact: "Paying customers, November and December 2025", value: "more than 6,000", grade: "C", note: "Founder's answer to the interviewer, and the company press release.", src: [2, 5] },
+    { fact: "Largest contract, November 2025", value: "six figures a year", grade: "C", note: "Founder. The interviewer summarizes it as more than US$100,000 a year. Large customers grow by usage: they generate more videos each month.", src: [2] },
+    { fact: "Videos and other assets generated, December 2025", value: "100,000 a month", grade: "C", note: "Company press release.", src: [5] },
+    { fact: "Outside funding before December 2025", value: "none", grade: "C", note: "Founder in both interviews: bootstrapped, which means paid for by the company's own revenue. He said the two founders each own 50%.", src: [1, 2] },
+    { fact: "Seed round, 17 December 2025", value: "US$16 million, led by Eurazeo", grade: "B", note: "Confirmed by Jones Day, the law firm that advised Eurazeo, and by a quotation from a Eurazeo managing director in the announcement. Other investors: Alpha Intelligence Capital and the Sequoia Scout program.", src: [5, 6, 7] },
+    { fact: "Profit", value: "profitable, amount not disclosed", grade: "C", note: "The founder refused to give a margin in both interviews. The press release says already profitable. Spending on ads, influencers and model providers is not public.", src: [1, 2, 5] },
+    { fact: "Revenue, April 2026", value: "US$15 million a year", grade: "C", note: "Latka database, marked confirmed by CEO. No interview or document for this figure was found.", src: [4] },
+    { fact: "Ad impressions of Arcads videos by June 2025", value: "more than 1 billion", grade: "C", note: "Published by ElevenLabs, the voice supplier. The count itself most likely comes from Arcads; not verified.", src: [8] },
+    { fact: "Time from the first customer to US$6 million ARR", value: "16 months", grade: "X", note: "Calculated: January 2024 to May 2025.", src: [1] }
+  ],
+  timeline: [
+    { when: "Before 2024", what: "Torres and Fournier, who met as students about ten years earlier, run a marketing agency and then a mobile app studio. Its main product is WeFast, a weight-loss app for women with seven-figure revenue, which means at least US$1 million. Torres spends his days buying UGC ads for it.", grade: "C", src: [1, 2, 3, 5] },
+    { when: "January 2024", what: "They decide to sell the app studio and start Arcads. The first customers are friends in the mobile app industry. Arcads delivers AI-made ads as a service, with no login page, to test whether brands will pay. About US$5,000 in monthly recurring revenue after one week.", grade: "C", src: [1, 2] },
+    { when: "March 2024", what: "The software is live. A customer posts an Arcads video on X and it spreads. Hundreds of sales arrive in one night, and monthly revenue jumps from about 5,000 to almost 64,000 euros. The product breaks under the load. The founders refund everyone.", grade: "C", src: [2, 3] },
+    { when: "April 2024", what: "Relaunch after one month of rebuilding.", grade: "C", src: [2] },
+    { when: "June 2024", what: "US$1 million ARR.", grade: "C", src: [1] },
+    { when: "April 2025", what: "US$5 million ARR.", grade: "C", src: [1] },
+    { when: "16 May 2025", what: "US$6 million ARR with a team of five, close to 4,000 paying customers, and about 100 automation agents that do growth tasks. Torres says the company is bootstrapped and very profitable.", grade: "C", src: [1] },
+    { when: "June 2025", what: "ElevenLabs publishes that every Arcads actor speaks with one of its voices.", grade: "B", src: [8] },
+    { when: "Mid-2025", what: "Growth slows to about 10% a month for about two months, while Torres stops marketing to hire the first salesperson and build a sales process for large brands. The exact months are not stated.", grade: "C", src: [2] },
+    { when: "14 November 2025", what: "US$10 million ARR, shown on the revenue dashboard. Eight people, more than 6,000 paying customers, growth above 20% a month, and 210 ads running in the company's Meta account, which the interviewer also sees on screen. Torres says he would refuse US$150 million for the company.", grade: "B", src: [2, 3] },
+    { when: "17 December 2025", what: "US$16 million seed round led by Eurazeo, to open an office in San Francisco. More than half of the users are in the United States.", grade: "B", src: [5, 6, 7] },
+    { when: "April 2026", what: "US$15 million in yearly revenue, according to the Latka database.", grade: "C", src: [4] },
+    { when: "July to October 2026", what: "The help center lists five plans, from Starter to Business, and a 3-day free trial. The home page shows more than 1,000 AI actors and newer video models.", grade: "C", src: [9, 11] }
+  ],
+  mechanism: [
+    { title: "The product is its own advertisement", text: "The largest sales channel in May 2025 was paid ads on Meta, made with Arcads. In the founder's words: we use our own tool to promote our tool. Each ad shows a buyer what the product makes, and each test tells the team which feature is missing. In November 2025 the account ran 210 ads at once, and the best ones were translated into other languages." },
+    { title: "The founders had been the customer", text: "They ran a consumer app with seven-figure revenue and bought UGC ads for it every week. They knew what a marketer pays a human actor, how long delivery takes, and how many versions a campaign needs. The first buyers were friends in the same industry." },
+    { title: "Sell the result before the software", text: "In January 2024 there was no product to log in to. The founders made AI ads by hand and delivered them, to learn two things: whether brands pay for an AI-made ad, and whether they order again after they see the results. Only then did they build the software." },
+    { title: "Rented models, own workflow", text: "Arcads does not build the large video and image models. It integrates models from Google, ByteDance, Kling and ElevenLabs as they appear, and adds the actor library, the script-to-video steps and the translation. The founder says the company also builds some models of its own for narrow cases." },
+    { title: "Agents instead of hires", text: "Torres built about 100 agents in Gumloop, a tool that chains AI steps without code. One reads competitors' ad libraries every day, transcribes new ads, rewrites them for Arcads and posts them in Slack. Others find influencers and large advertisers and draft the first message. That work is why five people were enough at US$6 million." }
+  ],
+  howBuilt: {
+    intro: "These details come from the two recorded interviews, the ElevenLabs customer story and the company's own site. They are grade B and C.",
+    items: [
+      "Voices: ElevenLabs, chosen after tests of every large text-to-speech provider, according to ElevenLabs. Video and image generation: models from Google, ByteDance and Kling, selected by the app for each request, plus some models that Arcads builds itself for narrow cases.",
+      "Stripe for payments, with each sale posted to a Slack channel. Intercom for the support chat. That chat is where the founders saw in March 2024 that the product had broken.",
+      "A hook generator on a separate page of the site. A hook is the first sentence of an ad, the part that makes a viewer keep watching.",
+      "About 100 Gumloop agents for growth work. The founder trains them with examples, not instructions: a Notion database of hooks that worked and a document of his best posts.",
+      "Three sales channels in May 2025: paid ads made with the product, content by the founder and by partner creators, and direct contact with companies that spend heavily on ads. By November 2025 a two-person sales team came first, then paid ads, then paid influencers.",
+      "Roles: Torres leads marketing and sales, Fournier leads product. The team of five in May 2025 was all engineers by the founder's description."
+    ],
+    src: [1, 2, 8, 11]
+  },
+  predecessorsIntro: "Four companies in the Loot Drop database sold cheaper video advertising for brands when every video still needed a human in front of a camera. The values below are from that database and are not independently verified.",
+  predecessors: [
+    { name: "ClearMix", years: "2020 to 2023", funding: "US$2M", cause: "Competition", promise: "Professional marketing videos without a film crew budget, made by freelance videographers and editors on demand.", died: "The process was manual. Canva and Adobe added video tools, and AI editing tools automated the steps that ClearMix did by hand.", url: "https://www.loot-drop.io/startup/1336-clearmix" },
+    { name: "FameBit", years: "2013 to 2019", funding: "US$1.75M", cause: "Competition", promise: "A self-service marketplace where a brand posts a campaign and YouTube creators apply to make the sponsored video.", died: "Google bought it in 2016. YouTube then moved to larger brand deals, advertisers moved to Instagram and TikTok, and the marketplace was phased out.", url: "https://www.loot-drop.io/startup/132-famebit" },
+    { name: "CollabFinder", years: "2013 to 2016", funding: "US$150K", cause: "No market need", promise: "Automatic matching of brands with social media creators, without an agency.", died: "About 60% of the matched pairs made their deal outside the platform, so the commission income collapsed. Brands wanted protection against fraud more than they wanted discovery.", url: "https://www.loot-drop.io/startup/64-collabfinder" },
+    { name: "Big Un", years: "2013 to 2018", funding: "US$20M", cause: "Legal or regulatory", promise: "Video reviews and testimonials for small local businesses, produced for them and published on its platform.", died: "The database records that it overstated its revenue by 300% to 400% and its customer count about tenfold, while about 80% of customers left each year. The Australian regulator investigated and the company collapsed.", url: "https://www.loot-drop.io/startup/2337-big-un" }
+  ],
+  whatChanged: [
+    `Before 2023, every video ad with a person in it needed that person. FameBit and CollabFinder matched brands with creators, and ClearMix sent freelance videographers. In each case a human had to be found, briefed, paid and waited for, so a brand could afford only a few versions of an ad. The marketplaces also had a second weakness: once a brand and a creator knew each other, they could work without the marketplace.`,
+    `Video and voice models removed the person. A script becomes a talking actor in minutes, and a second version with another face or another language costs one more generation. A reviewer puts the cost at about US$11 per finished video on the smallest Arcads plan. That changes how advertisers work: Arcads itself ran 210 ads at once in November 2025, a volume that would have needed a production team. The four companies above had to recruit humans for each video. Arcads rents the models and had five employees at US$6 million in annual recurring revenue.`
+  ],
+  copy: {
+    verdict: "The product, hard now. The method, yes.",
+    text: "AI video ads became a crowded market within two years. The Latka database lists HeyGen, Synthesia and Creatify as direct competitors, and a reviewer puts Creatify's first paid plan at US$19 a month against US$110 for Arcads. Every competitor can rent the same models. The part that can be repeated is the order of the work: the founders chose a task that they had paid for themselves for years, sold the result by hand first, and only then built software.",
+    steps: [
+      "Choose a task that you already buy from people every week, so you know the buyer, the price and what a good result looks like.",
+      "Deliver the result as a service to a few buyers before you build the software, and check that they order again.",
+      "Rent the models. Build the steps around them: a library, a simple path from input to output, variants and translation.",
+      "Advertise the product with its own output, test many versions, and keep only the ads that pay for themselves.",
+      "Automate each repeated growth task with an agent before you hire a person for it."
+    ],
+    open: "Arcads serves general consumer advertising. Narrower versions are still open: video ads for one regulated industry with its rules built in, ads for one language market with local faces and accents, and the step after generation, which is deciding from campaign data which version to run next."
+  },
+  watch: [
+    { title: "The headline is a founder statement", text: "US$6 million in May 2025 was said on camera and not shown. The dashboard was shown only in November 2025, to an interviewer who also runs a lending company. No payment processor, auditor or newspaper has confirmed any revenue figure." },
+    { title: "Team counts that do not agree", text: "The founder said five people in May 2025 and the interviewer said six in the same recording. The founder said eight in November 2025 and the company's press release said seven in December 2025. The differences are small, but revenue per person depends on them." },
+    { title: "It is no longer a five-person bootstrapped company", text: "Since December 2025 Arcads has US$16 million from investors, a sales team and a plan for a San Francisco office. The numbers on this page describe the period before that. Later growth says less about what a small team can do without capital." },
+    { title: "Rented models and unknown margins", text: "Every video costs Arcads a payment to a model provider, and the founder would not say how large that cost is or how much goes to ads and influencers. Google and ByteDance, two of the providers, also sell advertising and could offer the generation step inside their own ad products." },
+    { title: "Price and credits", text: "Reviewers describe Arcads as one of the most expensive tools to start with, and quote users who used a month of credits in minutes while testing versions. Cheaper competitors use the same kind of models." },
+    { title: "Ads with people who do not exist", text: "The product makes a person who was never a customer recommend a product. The founder describes customers, some about 16 years old, who run TikTok accounts with AI characters for supplement brands. Disclosure rules for such ads differ by country and platform, and this page did not check them." }
+  ],
+  sources: [
+    { title: "Founderpath, interview by Nathan Latka recorded 16 May 2025, published 8 July 2025: How Arcads Hit $6M ARR With a Five-Person Team and AI Agents", url: "https://founderpath.com/resources/romain-torres-arcads-6m-arr-five-person-team-ai-agents", grade: "C", how: "Read the full transcript on the page's watch view. Founder statements on camera. Primary source for the headline figure, the team of five, the launch story and the agents." },
+    { title: "Founderpath, interview by Nathan Latka recorded 14 November 2025, published 10 December 2025: How Arcads Grew to $10M ARR in 20 Months With AI Video Ads and a Sales Team", url: "https://founderpath.com/resources/romain-torres-arcads-10m-arr-ai-video-ads-sales", grade: "B", how: "Read the full transcript on the page's watch view. The founder shares his revenue dashboard and his Meta ads account on screen. Grade B for what the interviewer saw, grade C for the other statements. The automatic transcript has errors in some numbers, so only clearly stated figures are used." },
+    { title: "Latka blog, by Nathan Latka, updated 31 August 2026: Arcads Revenue: Bootstrapped to $10M ARR in 22 Months, Shown Live on a Revenue Dashboard", url: "https://getlatka.com/blog/arcads-revenue-ceo", grade: "B", how: "Read in full. The interviewer's written account of both recordings, with a dated table and the conflicts he found, including the five or six people in May 2025." },
+    { title: "Latka database page for Arcads, updated 7 October 2026", url: "https://getlatka.com/companies/arcads.ai", grade: "C", how: "Read in full. Source for the April 2026 revenue marked confirmed by CEO, the two headcount readings and the competitor list." },
+    { title: "Arcads blog, 17 December 2025: Arcads.ai Raises 16 Million USD in Seed Funding to Accelerate Development in the United States", url: "https://www.arcads.ai/blog/arcads-raises-16m-seed", grade: "C", how: "Read in full. The company's press release, with a quotation from Eurazeo's managing director. Source for the investors, the founders' names, the team of seven, the 6,000 clients and the 100,000 assets a month." },
+    { title: "Jones Day, December 2025: Eurazeo leads $16 million seed financing in Arcads.ai", url: "https://www.jonesday.com/en/practices/experience/2025/12/eurazeo-leads-16-million-seed-financing-in-arcadsai", grade: "B", how: "Read in full. A short notice by the law firm that advised the lead investor. It confirms the round and the amount from the investor's side. No announcement on Eurazeo's own site was found." },
+    { title: "Net Influencer, 19 December 2025: Arcads.ai Secures $16M Seed Funding To Expand AI Video Creation Platform", url: "https://www.netinfluencer.com/arcads-ai-secures-16m-seed-funding-to-expand-ai-video-creation-platform/", grade: "C", how: "Read in full. Trade press that repeats the press release. It adds no reviewed numbers." },
+    { title: "ElevenLabs customer story, 16 June 2025: Arcads gets more than a billion of ad impressions with ElevenLabs voices", url: "https://elevenlabs.io/blog/arcads", grade: "B", how: "Read in full. A supplier's account with a founder quotation. Source for the voice provider and the impression count." },
+    { title: "Arcads help center, 30 July 2026: How to buy more credits, and the article How the free trial works", url: "https://help.arcads.ai/en/articles/13230774-how-to-buy-more-credits", grade: "C", how: "Read both articles in full. Source for the plan names, the monthly credits, the carry-over rule and the trial. The public site has no pricing page: the address arcads.ai/pricing returns page not found." },
+    { title: "eesel AI blog, last edited 17 June 2026: Arcads AI pricing in 2026: plans, credits, and the real per-video cost", url: "https://www.eesel.ai/en/blog/arcads-ai-pricing", grade: "C", how: "Read in full. A reviewer that describes a screenshot of the in-app price screen from another review. Source for the US$110 and US$220 prices, the cost per video and the user complaints. eesel sells other AI software and promotes it in the article." },
+    { title: "Arcads home page, read 12 October 2026", url: "https://www.arcads.ai/", grade: "C", how: "Read in full. Source for the size of the actor library and the list of models. Not used for money figures." },
+    { title: "Loot Drop database export, 1,749 failed startups", url: "https://www.loot-drop.io/", grade: "C", how: "Local export. AI-written summaries, not independently verified. Source for the failed predecessors." }
+  ]
 }
 ];
 
