@@ -1806,6 +1806,142 @@ const STORIES = [
     { title: "PDF.ai pricing page, read in a browser on 12 October 2026", url: "https://pdf.ai/pricing", grade: "C", how: "The page renders by script, so it was read in Chrome with both billing toggles. Source for the pricing table and the product list." },
     { title: "Loot Drop database export, 1,749 failed startups", url: "https://www.loot-drop.io/", grade: "C", how: "Local export. AI-written summaries, not independently verified. Source for the failed predecessors." }
   ]
+},
+{
+  slug: "jenni-ai",
+  name: "Jenni AI",
+  country: "USA",
+  sector: "Information Technology",
+  productType: "AI writing assistant for academic papers",
+  aiType: "AI-native",
+  team: "small",
+  outcome: "running",
+  evidence: "C",
+  added: "2026-10-12",
+  launchLabel: "July 2022",
+  outcomeLabel: "US$3M a year run rate, January 2024",
+  sticker: "$3M/yr run rate",
+  outcomeUsd: 3000000,
+  months: 18,
+  teamLabel: "2 co-founders; about 5 people in late 2023, about 8 by July 2024, 23 by April 2025",
+  fundingLabel: "About US$600,000 to US$850,000 in small checks, no venture round",
+  primaryFactor: "Distribution",
+  meters: { evidence: 1, copyable: 3, capital: 1 },
+  tags: ["AI-native", "Small team", "Funded", "Running", "B2C", "Education"],
+  product: "A text editor for students and researchers in which a language model suggests the next sentence, writes from the PDFs you upload, and inserts citations in more than 1,700 styles. Free with a daily word limit; paid plans remove the limits.",
+  why: "After three years stuck at US$2,000 a month as a marketing-copy tool, it narrowed to one group, students writing papers, and sold to them through short videos on TikTok and Instagram made by many small creators. One viral post in July 2022 gave it the first thousand customers; a system of paid creators and referral programs kept the growth going.",
+  summary: [
+    `Jenni AI is an <dfn>AI writing assistant</dfn>, a text editor in which a language model proposes the next sentence while you type and writes paragraphs from sources you give it. Its users are students and researchers. They upload PDFs of papers, and the editor writes from them and adds <dfn>citations</dfn>, the formal references to those papers, in any of more than 1,700 academic styles. The model behind it is OpenAI's, so the company resells model output; in September 2023 its model bill was US$20,000 to US$30,000 a month against US$150,000 of revenue.`,
+    `David Park, who dropped out of the University of California, San Diego, started it with co-founder Henry Mao in 2019 as an internal tool for a content-writing agency called Altum. The company sold it as a marketing-copy tool from 2020 and was stuck at US$2,000 a month for about three years. A viral post by a technology writer in July 2022 sent hundreds of thousands of visitors, and the two founders rebuilt the product for academic writing. On 14 January 2024 Park wrote on X that revenue had gone from zero to US$3,000,000 in <dfn>annual recurring revenue</dfn>, the subscription revenue of one month times twelve, in 18 months. A third-party database recorded 5 employees in late 2023. By July 2024 the team was about 8 at US$6 million ARR, and the US$10 million mark in early 2025 was reached with 23 people, so this page uses the US$3 million figure as the small-team headline.`,
+    `Every revenue number on this page is a founder statement on X, in interviews, or in a research report that quotes him. No payment processor or buyer has confirmed them. The page also shows what happened to earlier companies that sold writing tools and study tools to students.`
+  ],
+  factsCaption: "A marketing-copy tool that found its real customers, students, and went from about US$560,000 to US$3 million in annual recurring revenue in thirteen months, all self-reported",
+  factsRead: "How to read this table: a grade C value is a founder statement on X or in an interview, or a reading from a third-party database that says so. A \"calc\" value was computed on this page from the rows above it. No value is grade A or B.",
+  timelineLead: "From a dead marketing tool at US$2,000 a month to a US$3 million run rate in 18 months, and to US$10 million a year with a much bigger team after that. Each entry carries its grade.",
+  pricing: {
+    caption: "Jenni AI prices as shown on the company's pricing page, read 12 October 2026 (grade C)",
+    note: "The page has a Monthly/Annual switch with the label Save 60%, and the static text shows one price per plan: Plus US$12 a month and Pro US$29 a month. The static text does not say which billing period those prices belong to, so the yearly column is empty. Starter Story, in December 2024, described the paid plan as US$30 a month with a 60% discount on the annual plan, which matches US$12 a month billed yearly. The free plan allows 200 words a day according to the same source.",
+    rows: [
+      ["Free", "", "0", "daily word limit; 3 AI edits, 5 chat messages, unlimited citations"],
+      ["Plus", "", "12", "5,000 autocompletes, 500 AI edits, 500 chat messages a month; period not stated"],
+      ["Pro", "", "29", "unlimited autocomplete, edits, chat, reviews; period not stated"]
+    ]
+  },
+  facts: [
+    { fact: "Annual recurring revenue, January 2024", value: "US$3,000,000", grade: "C", note: "Founder's post on X, 14 January 2024: from zero to US$3,000,000 ARR in 18 months.", src: [1] },
+    { fact: "Monthly recurring revenue, September 2023", value: "US$150,000", grade: "C", note: "Sacra report, April 2024, citing the founder. OpenAI bill of US$20,000 to US$30,000 a month, about 83% gross margin.", src: [2] },
+    { fact: "Run rate from the September 2023 figure", value: "US$1.8 million a year", grade: "X", note: "Calculated: US$150,000 times 12. Latka records the same US$1.8 million for October 2023 from X.", src: [2, 6] },
+    { fact: "Annual recurring revenue, end of 2022", value: "about US$560,000", grade: "C", note: "Sacra report. The post of January 2024 gives the same stage as US$600,000.", src: [2, 1] },
+    { fact: "Team size, late 2023", value: "5 employees", grade: "C", note: "Latka headcount readings: 2 in November 2021, 3 in November 2022, 5 in October and November 2023, 23 in April 2025. Latka does not record the source of the 2021 to 2023 readings.", src: [6] },
+    { fact: "Team size, July 2024", value: "about 8", grade: "C", note: "Founder's hiring post on X: a small group of about 8, at US$6 million ARR.", src: [3] },
+    { fact: "Annual recurring revenue, April 2024", value: "US$5.1 million", grade: "C", note: "Sacra estimate. Four years from zero to US$1 million ARR, then 4 months to US$2 million and 6 more months to US$5 million. Monthly churn 16%.", src: [2] },
+    { fact: "Annual recurring revenue, early 2025", value: "more than US$10 million", grade: "C", note: "TMTPost, December 2025, citing figures shared by the company; reached with 23 employees. Latka records US$10 million for February 2025 from X.", src: [7, 6] },
+    { fact: "Jenni AI monthly revenue, April 2025", value: "US$667,500", grade: "C", note: "Founder's post on X, 2 May 2025. The whole group, with two unnamed products and an acquired product, made US$793,300 that month.", src: [4] },
+    { fact: "Monthly revenue, September 2025", value: "about US$730,000", grade: "C", note: "Founder's post on X, 25 September 2025: flat at about US$730,000 a month for a year, by choice, to stay profitable.", src: [5] },
+    { fact: "Outside funding", value: "US$600,000 to US$850,000", grade: "C", note: "CB Insights: US$600,000 over 4 rounds, the last a US$250,000 convertible note from AI Grant in September 2023. Sacra: US$850,000 raised. The founder names a US$100,000 check from Jason Calacanis and funding from a Korean startup competition.", src: [11, 2, 8] },
+    { fact: "Time from the academic pivot to the January 2024 figure", value: "18 months", grade: "X", note: "Calculated: July 2022 to January 2024. The founder himself counts 18 months.", src: [1, 7] }
+  ],
+  timeline: [
+    { when: "2019", what: "Park and Henry Mao, who met at UC San Diego, build a writing tool on GPT-2 for the human writers of their content agency, Altum.", grade: "C", src: [2, 7] },
+    { when: "2020", what: "After GPT-3 appears in June 2020 they sell the tool as a service to agencies and marketing teams, against Jasper and Copy.ai. Revenue stalls at about US$2,000 a month.", grade: "C", src: [2, 7, 8] },
+    { when: "2021", what: "A US$100,000 investment from Jason Calacanis after a podcast appearance. Park moves to Malaysia to make the money last, then to Korea, where a startup competition brings more funding. Latka records 2 employees.", grade: "C", src: [8, 13, 6] },
+    { when: "July 2022", what: "A post by technology writer Zain Kahn listing free tools goes viral. Revenue goes from US$30,000 to US$120,000 ARR in one month; about US$10,000 of subscriptions in one day. The founders rebuild the product for students and researchers. Park is diagnosed with thyroid cancer the same year.", grade: "C", src: [1, 7] },
+    { when: "December 2022", what: "About US$560,000 ARR after adding automatic citations, chat with your own library, and Word and LaTeX export. Latka records 3 employees in November 2022.", grade: "C", src: [2, 6] },
+    { when: "Summer 2023", what: "Short videos stop working during school breaks. The team adds referrals, a larger creator budget, SEO and paid ads, and goes from US$1 million to US$1.75 million ARR in three months.", grade: "C", src: [1] },
+    { when: "September 2023", what: "US$150,000 a month. A US$250,000 convertible note from AI Grant.", grade: "C", src: [2, 11] },
+    { when: "14 January 2024", what: "Park posts that revenue went from zero to US$3,000,000 ARR in 18 months and describes each growth stage. Latka records 5 employees in late 2023.", grade: "C", src: [1, 6] },
+    { when: "April 2024", what: "Sacra estimates US$5.1 million ARR, up 481% in a year.", grade: "C", src: [2] },
+    { when: "9 July 2024", what: "Hiring post: US$6 million ARR, a group of about 8 people working as digital nomads, looking for a tech lead.", grade: "C", src: [3] },
+    { when: "September 2024", what: "US$8 million ARR. An Indie Hackers writer counts eleven people.", grade: "C", src: [10, 13] },
+    { when: "Early 2025", what: "More than US$10 million ARR with 23 employees. In April 2025 Jenni AI alone makes US$667,500 in the month; the group buys a citation tool, Citesure, for US$150,000 cash plus stock and earnouts.", grade: "C", src: [7, 4, 12] },
+    { when: "25 September 2025", what: "Park writes that Jenni has been flat at about US$730,000 a month for a year, because he chose profit over growth.", grade: "C", src: [5] }
+  ],
+  mechanism: [
+    { title: "One narrow customer instead of everyone", text: "As a tool for marketers it had no advantage over Jasper or Copy.ai and sat at US$2,000 a month for three years. User interviews showed that the people who stayed were students writing papers. The team removed the marketing features and built what students need: an academic tone, writing from uploaded papers, and citations that point back to the source. The founder's view is that ChatGPT killed the general writing tools but helped the specialized ones, because it taught everyone that a model can write." },
+    { title: "Short videos made by many small creators", text: "After the viral post of July 2022, creators on TikTok and Instagram made videos about the tool on their own, and those went viral too. The company then paid small creators to run new accounts that post only about Jenni, with one repeated format: a student with a paper due tonight. The videos reached hundreds of millions of views. Creators were paid partly per subscriber, US$15 each plus a share while the user stays." },
+    { title: "Spread the channels before a channel dies", text: "Growth stopped during winter break 2022 because nobody watched school videos. The team added referral programs, a ten times larger creator budget, SEO and paid ads, and had its fastest quarter the next summer while the videos failed. By January 2024 organic video was no longer the main traffic source." },
+    { title: "Conversion before more traffic", text: "From US$1.74 million to US$3 million ARR the work was internal: free-to-paid conversion, churn and referral loops, through thousands of experiments. Before this, 241,700 new users added US$26,000 of monthly revenue; after it, 152,300 new users added US$48,000." }
+  ],
+  howBuilt: {
+    intro: "These details come from the founder's posts, his interview with Sacra, and press that quotes him. They are grade C.",
+    items: [
+      "The first version, in 2019, ran on a fine-tuned GPT-2 and made the agency's writers 10% to 20% faster. GPT-3 in 2020 made it good enough to sell.",
+      "The product resells OpenAI model output. In September 2023 the model cost US$20,000 to US$30,000 a month against US$150,000 of revenue, about 83% gross margin.",
+      "The academic version has three parts: sentence autocomplete tuned for academic tone, a document library of uploaded PDFs that the model writes from, and a citation system covering more than 1,700 styles with links back to the source passage.",
+      "Free plan with a daily limit, paid plans at US$12 and US$29 a month, sold directly to the student.",
+      "The team works remotely as digital nomads. The stack named in the July 2024 hiring post is TypeScript, React and Rust.",
+      "Funding was small checks: US$10,000 from a stranger on a plane, US$100,000 from Jason Calacanis, a Korean competition, and a US$250,000 note from AI Grant."
+    ],
+    src: [2, 7, 3, 8, 11, 14]
+  },
+  predecessorsIntro: "Five companies in the Loot Drop database sold writing tools or study tools to students and writers. The values below are from that database and are not independently verified.",
+  predecessors: [
+    { name: "Draft", years: "2011 to 2014", funding: "US$120K", cause: "Competition", promise: "A simple online editor for writers with version control and collaboration.", died: "Google Docs added the same features. The free plan never turned into enough paid users.", url: "https://www.loot-drop.io/startup/1605-draft" },
+    { name: "WriteWith", years: "2007 to 2010", funding: "US$20K", cause: "Competition", promise: "Group writing in the browser.", died: "Google Docs did the same thing inside an ecosystem people already used; almost no money to compete.", url: "https://www.loot-drop.io/startup/1237-writewith" },
+    { name: "Flashnotes", years: "2010 to 2016", funding: "US$1.47M", cause: "Competition", promise: "A marketplace where students sell class notes and study guides to other students.", died: "Course Hero and Chegg had better products and more money; note quality could not be controlled. Sold to a smaller rival.", url: "https://www.loot-drop.io/startup/154-flashnotes" },
+    { name: "StudyRoom", years: "2010 to 2013", funding: "US$2M", cause: "No Market Need", promise: "A place for students to share notes and study together online.", died: "Too few users for network effects, high churn, and students would not pay.", url: "https://www.loot-drop.io/startup/1691-studyroom" },
+    { name: "Knewton", years: "2008 to 2020", funding: "US$182.3M", cause: "Competition", promise: "Adaptive learning that personalizes content for each student.", died: "Expensive to integrate with institutions, while Khan Academy gave content away. Sold to Wiley.", url: "https://www.loot-drop.io/startup/281-knewton" }
+  ],
+  whatChanged: [
+    `Draft and WriteWith sold a better text editor and lost to Google Docs, which was free and already open in every student's browser. Flashnotes and StudyRoom sold to students, who would not pay, and depended on other students to supply the content. Knewton sold personalized learning to institutions, which buy slowly.`,
+    `Jenni AI differs on each point. The product is not a better editor; it is the writing itself, which a word processor does not do, and the citation step, which students fear getting wrong. The content comes from a model, not from other users, so there is no supply problem. And it sells directly to the student at US$12 to US$29 a month, with no institution in the loop. The remaining weakness is the same one the predecessors had: the platform owner, here OpenAI, can add citations and PDF writing to ChatGPT, and students churn at 16% a month.`
+  ],
+  copy: {
+    verdict: "Yes, the method is general; the viral start is not.",
+    text: "A model-based writing tool for one group of users with a specific fear, sold through many small creators on short video, needs no capital and no sales team. The 2022 opening, when a single post could bring hundreds of thousands of users to an unknown tool, is gone, but the founder's own account says the later growth came from systems, not from that post.",
+    steps: [
+      "Interview the users who stay, not the ones who leave, and rebuild the product for them alone.",
+      "Pay small creators per paying subscriber to run accounts about your product, with one repeatable video format.",
+      "The month a channel slows, add two more: referrals, SEO, paid ads.",
+      "Once traffic is steady, spend a quarter only on free-to-paid conversion and churn."
+    ],
+    open: "Any writing task with a formal rule set that people are afraid to get wrong: grant applications, legal filings, clinical notes, code documentation, and the academic markets outside English."
+  },
+  watch: [
+    { title: "Self-reported", text: "Every revenue figure comes from the founder, from a database that cites his posts, or from a research firm that interviewed him. No payment processor or buyer has confirmed any of them." },
+    { title: "The small-team headline is the early one", text: "The US$3 million figure is the latest number that the sources put with about 5 people. The US$10 million a year that press reports was reached with 23 employees, and the founder said about 8 at US$6 million. Latka does not record where its 2021 to 2023 headcounts came from." },
+    { title: "Growth stopped for a year", text: "The founder wrote in September 2025 that revenue had been flat at about US$730,000 a month for a year, by his choice, and that he was tempted to trade profit for growth." },
+    { title: "Churn and seasons", text: "Monthly churn of 16% in 2024, and revenue drops every summer and winter break. Each month the company must replace a sixth of its customers." },
+    { title: "The model provider can add the feature", text: "The product resells OpenAI output with its own interface for citations and PDFs. ChatGPT already reads PDFs; a native citation feature would remove the main difference." },
+    { title: "Academic integrity rules", text: "Universities may ban AI-written papers or detect them. The company's answer is traceable citations, but the market can change with one policy." }
+  ],
+  sources: [
+    { title: "David Park on X, 14 January 2024: How to go from 0 to $3,000,000 ARR in 18 months (step by step)", url: "https://x.com/Davidjpark96/status/1746573265425064293", grade: "C", how: "Read in full through the fxtwitter API. Founder's own post. Source for the headline figure, the growth stages, the viral post and the conversion numbers." },
+    { title: "Sacra, 26 April 2024: Jenni AI: the $5M/year Chegg of generative AI, and the interview with David Park published the same day", url: "https://sacra.com/research/jenni-ai-the-chegg-of-generative-ai/", grade: "C", how: "Read the free part in full; the rest needs a membership. Research firm citing the founder. Source for the US$150,000 monthly figure, the model bill, the US$560,000 and US$5.1 million ARR figures, churn and the US$850,000 raised." },
+    { title: "David Park on X, 9 July 2024: We are hiring a Tech Lead at Jenni AI", url: "https://x.com/Davidjpark96/status/1810718648425927092", grade: "C", how: "Read in full through the fxtwitter API. Source for the US$6 million ARR, the team of about 8 and the stack." },
+    { title: "David Park on X, 2 May 2025: We hit $793.3K MRR in April", url: "https://x.com/Davidjpark96/status/1918413056960545201", grade: "C", how: "Read in full through the fxtwitter API. Source for the April 2025 monthly figures by product." },
+    { title: "David Park on X, 25 September 2025: Jenni has plateaued at ~$730k MRR for a year now", url: "https://x.com/Davidjpark96/status/1971258958561321222", grade: "C", how: "Read in full through the fxtwitter API. Source for the flat year and the profit-first choice." },
+    { title: "Latka company page: Jenni AI revenue and headcount readings", url: "https://getlatka.com/companies/jenni.ai", grade: "C", how: "Read in full. Third-party database. Source for the headcount readings by year and the revenue readings it attributes to X." },
+    { title: "TMTPost, 19 December 2025: Small AI, Big Returns: How a Nine-Person Team Turned an Overlooked Writing Tool Into a $10 Million Business", url: "https://en.tmtpost.com/post/7814928", grade: "C", how: "Read in full. Press article from an interview with the founder. Source for the co-founder, the three pivots, the July 2022 post, the nine-person team until late 2024, the 23 employees and the US$10 million figure." },
+    { title: "David Park on X, 8 June 2024: We had 10+ years of failure before any semblance of success", url: "https://x.com/Davidjpark96/status/1799250774930952492", grade: "C", how: "Read in full through the fxtwitter API. Source for the US$100,000 investment, the US$2,000 a month stage, Malaysia and Korea." },
+    { title: "Starter Story, 12 December 2024: How a 27-Year-Old Grew Jenni AI To $5M ARR in 2 Years", url: "https://www.starterstory.com/jenni-ai-breakdown", grade: "C", how: "Read the free part in full. A summary built from public sources. Source for the 9 employees estimate, the creator pay per subscriber and the pricing description." },
+    { title: "ARR Club, 6 September 2024: Jenni AI ARR at $8M, hit 4M users", url: "https://www.arr.club/jenni/jenni-ai-arr-at-8m-hit-4m-users", grade: "C", how: "Read in full. A short note citing the founder. Source for the US$8 million ARR in September 2024." },
+    { title: "CB Insights: Jenni funding and financials", url: "https://www.cbinsights.com/company/altum-1/financials", grade: "C", how: "Read the free part. Source for the US$600,000 over 4 rounds and the AI Grant convertible note." },
+    { title: "David Park on X, 3 August 2025: Here's the exact details of citesure acquisition", url: "https://x.com/Davidjpark96/status/1952039463485616622", grade: "C", how: "Read in full through the fxtwitter API. Source for the Citesure purchase terms." },
+    { title: "Indie Hackers, 25 September 2024: He beat cancer and built an $8M AI empire: David Park's story, by David Kim", url: "https://www.indiehackers.com/post/he-beat-cancer-and-built-an-8m-ai-empire-david-parks-story-1a03c7a33a", grade: "C", how: "Read in full. A community summary of a podcast. Source for the team of eleven, the US$10,000 plane investment and the withdrawn Korean offer." },
+    { title: "Jenni AI pricing page, read 12 October 2026", url: "https://jenni.ai/pricing", grade: "C", how: "Read the static text. The Monthly/Annual switch is script-driven, so the billing period of the shown prices could not be confirmed." },
+    { title: "Loot Drop database export, 1,749 failed startups", url: "https://www.loot-drop.io/", grade: "C", how: "Local export. AI-written summaries, not independently verified. Source for the failed predecessors." }
+  ]
 }
 ];
 
