@@ -2371,6 +2371,151 @@ const STORIES = [
     { title: "Startup Daily, February 2021: Canva buys two design startups after doubling its monthly users to 50 million", url: "https://www.startupdaily.net/?p=87553", grade: "C", how: "Read in full. Canva's co-founder quote and the founder's 600 percent statement." },
     { title: "Product Hunt, remove.bg product page with its launch list", url: "https://www.producthunt.com/products/remove-bg", grade: "C", how: "Read the launch list. Source for the Photoshop extension (25 April 2019), the desktop app (18 May 2019) and the Android app (5 June 2020)." }
   ]
+},
+{
+  slug: "podsqueeze",
+  name: "Podsqueeze",
+  country: "Portugal",
+  sector: "Media",
+  productType: "AI show notes and content repurposing for podcasts",
+  aiType: "AI-native",
+  team: "small",
+  outcome: "running",
+  evidence: "C",
+  added: "2026-10-12",
+  launchLabel: "February 2023",
+  outcomeLabel: "€16K a month and flat for two years, August 2026",
+  sticker: "$16K/mo, stuck two years",
+  outcomeUsd: 192000,
+  months: 42,
+  teamLabel: "2 co-founders, then 3 employees by January 2025",
+  fundingLabel: "None",
+  primaryFactor: "Timing",
+  meters: { evidence: 1, copyable: 3, capital: 1 },
+  tags: ["AI-native", "Small team", "Bootstrapped", "Running", "B2C", "Media"],
+  product: "Upload a podcast episode and get the transcript, show notes, timestamps, a newsletter, social posts, a blog article, short video clips and quote images. The podcaster pays a monthly subscription priced by minutes of audio processed. Media companies and agencies pay custom contracts.",
+  why: "It was built in one week, right after the ChatGPT API appeared, by a podcaster who hated writing his own show notes. Reddit, cold email and a second place on Product Hunt took it to US$10,000 a month in five months. Then the first wave of AI curiosity ended, churn stayed high, and revenue has been flat at about €16,000 a month since 2024.",
+  summary: [
+    `Podsqueeze is a <dfn>content repurposing</dfn> tool: it takes one long piece of content, a podcast episode, and produces the short pieces that promote it, such as show notes, a newsletter, social posts and video clips. The audio is first turned into text by a <dfn>speech-to-text model</dfn>, a program that converts recorded speech into written words, and a <dfn>large language model</dfn>, a program that writes text from instructions, then writes the show notes and the rest. Customers pay a subscription priced by minutes of audio.`,
+    `Tiago Ferreira, a Portuguese software engineer who had worked at Trivago in Germany, and João Amaro, an architect by training who had run a cookie dough shop in Lisbon, built the first version in one week and added payments in the second. They released it at the end of February 2023. It reached US$800 in <dfn>monthly recurring revenue</dfn> (MRR, the subscription income that repeats every month) in the first month, US$2,000 by 2 April, US$6,500 in May, and US$10,000 on 20 July 2023. In October 2023 it made US$14,300 in revenue with US$10,725 in profit. In September 2024 the founder said it made US$16,000 a month. In August 2026 the founders appeared on Jason Cohen's podcast with the title stuck at €16,000 a month, and said they turned down an offer of 500,000 to buy the company in 2025.`,
+    `Every number on this page is a founder statement, on X, in interviews or on podcasts, grade C. No payment processor or buyer has confirmed them. This is a story about reaching a plateau as much as about reaching it fast: the page also shows what happened to earlier companies that sold convenience tools to content creators.`
+  ],
+  factsCaption: "Five months to US$10,000 a month on the first wave of AI interest, then about €16,000 a month, flat, for two years, all self-reported",
+  factsRead: "How to read this table: a grade C value is a founder statement on X, in an interview or on a podcast, or a third-party estimate that says so. A \"calc\" value was computed on this page from the rows above it. No value is grade A or B.",
+  timelineLead: "From a one-week prototype to US$10,000 a month in five months, then a plateau that has lasted longer than the growth. Each entry carries its grade.",
+  pricing: {
+    caption: "Podsqueeze prices on 12 October 2026, from the company's pricing page (grade C). The page shows monthly prices and a toggle that says yearly billing is 30% off; the yearly column was computed from that note",
+    note: "Plans are priced by minutes of audio processed per month, with unused minutes carried over up to three times the monthly amount. Each plan includes transcription, show notes and other text, a number of video clips or audiograms, and tools such as audio enhancement and an audio editor. The Enterprise plan has custom minutes and a demo call. There is no free plan on the page; the founders said on the Smart Bear Live podcast that the Pro plan has a free trial.",
+    rows: [
+      ["Starter", "6.29", "8.99", "120 minutes a month, 8 video clips"],
+      ["Pro", "34.30", "49", "320 minutes a month, 20 video clips"],
+      ["Agency Lite", "62.30", "89", "600 minutes a month, 40 video clips"],
+      ["Enterprise", "custom", "custom", "custom minutes and clips, priority support"]
+    ]
+  },
+  facts: [
+    { fact: "Revenue per month, August 2026", value: "about €16,000", grade: "C", note: "Title and summary of Smart Bear Live episode 3, 23 August 2026, where both founders appear. The host says in the introduction that it reached 16K in MRR in 18 months and that growth has plateaued. The founders showed their revenue graph on the video.", src: [1, 2] },
+    { fact: "Revenue per month, September 2024", value: "US$16,000", grade: "C", note: "Indie Bites podcast episode notes, 13 September 2024: currently doing $16k MRR and growing. The two sources give the same figure two years apart in different currencies.", src: [3] },
+    { fact: "Run rate used as the headline on this page", value: "about US$192,000 a year", grade: "X", note: "Calculated: US$16,000 times 12, from the September 2024 dollar figure. At €16,000 the dollar amount would be somewhat higher; the page keeps the dollar figure the founder gave.", src: [3] },
+    { fact: "Paying customers, August 2026", value: "about 500", grade: "C", note: "Host's introduction on Smart Bear Live: only five hundred of those trial users converting to paying customers. In March 2024 the founder also said around 500 subscribers.", src: [2, 9] },
+    { fact: "Churn per month", value: "15% to 20% in 2026; about 10% in March 2024", grade: "C", note: "The 2026 figure is the host's introduction on Smart Bear Live. The 2024 figure is the founder in the SaaStrappers interview, who called it terrible.", src: [2, 9] },
+    { fact: "Acquisition offer turned down", value: "500,000, in 2025", grade: "C", note: "Cohost Craig Hewitt on Smart Bear Live: they turned down an offer for 500 grand last year. The currency is not stated. Not verified beyond the podcast.", src: [2] },
+    { fact: "Revenue and profit, October 2023", value: "US$14,300 revenue, US$10,725 profit", grade: "C", note: "SpyMetrics interview with the founder, 12 November 2023. A profit margin of 75%, computed on this page.", src: [8] },
+    { fact: "Monthly recurring revenue, 20 July 2023", value: "US$10,000", grade: "C", note: "Founder's X post, read through the fxtwitter API: crossed a mythical indie milestone, $10K MRR, in only 5 months.", src: [4] },
+    { fact: "Annual recurring revenue, mid-2023", value: "US$100,000", grade: "C", note: "Indie Hackers interview published 5 October 2023: 320 users and US$9,000 MRR five months after a late-February launch, and reaching US$100,000 ARR named as the biggest achievement. ARR is MRR times 12.", src: [7] },
+    { fact: "Monthly recurring revenue, May 2023", value: "US$6,500", grade: "C", note: "Indie Hackers case study by Sveta Bay, 12 May 2023, two months after launch. SpyMetrics gives US$6,600 at the beginning of May.", src: [10, 8] },
+    { fact: "Monthly recurring revenue, 2 April 2023", value: "US$2,000, 1,368 users", grade: "C", note: "Founder's X post closing the month of March: US$2,000 MRR, 1,368 users, 31,000 minutes processed.", src: [5] },
+    { fact: "Registered users, January 2025", value: "more than 55,000", grade: "C", note: "Essential Business, 20 January 2025, from the founders. Most are free-trial users: about 500 pay, which is under 1% of 55,000, computed on this page.", src: [11, 2] },
+    { fact: "Team", value: "2 co-founders, 3 employees in January 2025, 1 contractor in Latin America in 2026", grade: "C", note: "Essential Business says the company Userquest Lda, formed at the end of 2023, has two partners and three more employees. On Smart Bear Live the founders said they hired a person in Latin America for sales. Latka counts 1 person on LinkedIn.", src: [11, 2, 12] },
+    { fact: "Outside funding", value: "none", grade: "C", note: "Essential Business: entirely bootstrapped, developed without any kind of external investment. The founders split the company 50/50.", src: [11, 9] },
+    { fact: "Latka's revenue estimate for 2024", value: "US$182,200 a year", grade: "C", note: "A third-party estimate, marked as such. Latka also records US$144,000 a year for October 2023 from X, which is US$12,000 a month.", src: [12] },
+    { fact: "Time from launch to the August 2026 figure", value: "42 months", grade: "X", note: "Calculated: February 2023 to August 2026. SpyMetrics lists the launch as 29 January 2023; the founder says the end of February.", src: [1, 9, 8] }
+  ],
+  timeline: [
+    { when: "2021", what: "Ferreira leaves a well-paid engineering job to build his own products, starts the Wannabe Entrepreneur podcast and a paid community that reaches about US$600 a month. He interviews more than 60 bootstrapped founders.", grade: "C", src: [9] },
+    { when: "Late 2022", what: "He and Amaro agree to build products together, one month each, and kill any that get no traction. Their first, a Product Hunt competitor called Indie Lottery, is dropped.", grade: "C", src: [9] },
+    { when: "February 2023", what: "With the ChatGPT API new, they build Podsqueeze in one week to write show notes for Ferreira's own podcast and add Stripe payments in the second week. Released at the end of February. The first week brings one paying customer and many excited users reporting bugs.", grade: "C", src: [9, 7] },
+    { when: "29 March 2023", what: "US$800 MRR in the first month. Product Hunt launch, second product of the day with 632 votes, about 5,000 visitors, 40 new users on the day and US$500 more MRR.", grade: "C", src: [6, 8, 10] },
+    { when: "2 April 2023", what: "US$2,000 MRR, 1,368 users, 31,000 minutes of audio processed.", grade: "C", src: [5] },
+    { when: "May 2023", what: "US$6,500 MRR two months after launch. First ten customers came from Reddit, AI newsletters and cold email within two weeks of launch.", grade: "C", src: [10, 8] },
+    { when: "19 July 2023", what: "4,000 cold emails a day from their own email server.", grade: "C", src: [8] },
+    { when: "20 July 2023", what: "US$10,000 MRR, five months after launch, after ten years of trying different projects.", grade: "C", src: [4] },
+    { when: "September 2023", what: "Growth slows. The founders say they had expected the AI trend alone to carry them to a million in ARR and had neglected lasting marketing channels. They pay about US$1,000 for an SEO audit and start writing two or three articles a week.", grade: "C", src: [9] },
+    { when: "October 2023", what: "US$14,300 in revenue and US$10,725 in profit for the month. Reaching US$100,000 ARR named as the biggest achievement.", grade: "C", src: [8, 7] },
+    { when: "End of 2023", what: "The founders form Userquest Lda in Portugal to hold Podsqueeze and other products.", grade: "C", src: [11] },
+    { when: "17 March 2024", what: "About US$14,000 MRR, around 500 subscribers, churn of about 10% a month. The goal for 2024 is US$100,000 MRR, which would need about 2,000 subscribers.", grade: "C", src: [9] },
+    { when: "13 September 2024", what: "US$16,000 MRR and growing, per the Indie Bites episode notes.", grade: "C", src: [3] },
+    { when: "20 January 2025", what: "More than 55,000 users. The company has two partners and three employees, no outside investment.", grade: "C", src: [11] },
+    { when: "2025", what: "The founders turn down an offer of 500,000 to buy the company. Portuguese media groups become customers at a few hundred a month each and add about 2,000 to MRR; a 5x price rise for them goes through without objection.", grade: "C", src: [2] },
+    { when: "23 August 2026", what: "On Smart Bear Live, Jason Cohen and Craig Hewitt work through why revenue has sat at about €16,000 a month for two years: 15% to 20% monthly churn, about 500 paying customers, and a self-serve podcaster market where most shows stop within months.", grade: "C", src: [1, 2] }
+  ],
+  mechanism: [
+    { title: "Timing", text: "The ChatGPT API came out in early 2023 and podcasters had never seen show notes written for them in one click. The founders say the first wave of AI interest, plus one Product Hunt launch, did most of the work up to US$10,000 a month, and that they wrongly expected it to continue on its own." },
+    { title: "Build for yourself, in one week", text: "Ferreira ran a podcast and wrote show notes by hand. The product was the fix for his own task, so the first version was correct enough to excite users who then stayed through the bugs. The rule was one month per product, kill it if nobody is excited." },
+    { title: "Cold email at scale", text: "They collected podcasters' email addresses and sent 300 a day, then 4,000 a day from their own email server, with short personal messages that end in a question. This, Reddit and AI directories brought the first customers and kept working after Product Hunt." },
+    { title: "Price by minutes, carry the model cost", text: "Unlike a bring-your-own-key tool, Podsqueeze pays for transcription and text generation itself and charges by minutes of audio. The founders reported a 75% profit margin in October 2023. Minutes that roll over keep customers from feeling cheated on quiet months." },
+    { title: "What stopped working", text: "Podcasts fade: most shows stop within months, so a self-serve subscriber stops paying when the show stops. With 15% to 20% of customers leaving each month, new sign-ups only replace the lost ones. Revenue growth after 2024 came from a few media companies in Portugal, which stay and accepted a 5x price rise, but the founders have not repeated that outside Portugal." }
+  ],
+  howBuilt: {
+    intro: "These details come from the founders' interviews and podcast appearances. They are grade C.",
+    items: [
+      "Python backend, JavaScript and React frontend, hosted on Google Cloud Platform. Payments through Stripe from the second week.",
+      "The first version took one week; a weekly go or no-go decision followed for the first months.",
+      "Marketing: Reddit posts, listings on AI directories, cold email from their own SMTP server at up to 4,000 messages a day, a Product Hunt launch, then SEO from late 2023 after a paid audit.",
+      "The product grew from show notes into transcription in more than 20 languages, video clips, quote images, audio enhancement, an audio editor and podcast landing pages, which the podcast hosts in 2026 argued made the home page talk to everyone.",
+      "Media companies in Portugal were sold by the founders in person; a hired contractor in Latin America tried the same by WhatsApp and demos, with meetings but few sales.",
+      "The company, Userquest Lda in Lisbon, also holds the founders' other products."
+    ],
+    src: [7, 9, 2, 11, 8]
+  },
+  predecessorsIntro: "Five companies in the Loot Drop database sold tools that saved content creators effort, and died when the platforms added the feature or the creators stopped creating. The values below are from that database and are not independently verified.",
+  predecessors: [
+    { name: "Pixelpipe", years: "2008 to 2013", funding: "US$2M", cause: "Competition", promise: "Post your photos and videos to every social network at once.", died: "The social networks closed their APIs and built cross-posting in themselves.", url: "https://www.loot-drop.io/startup/435-pixelpipe" },
+    { name: "Pressly", years: "2011 to 2018", funding: "US$2.9M", cause: "Competition", promise: "Curate and distribute content for your brand with less effort.", died: "Larger competitors offered full content suites and basic curation was not enough to keep paying.", url: "https://www.loot-drop.io/startup/462-pressly" },
+    { name: "HighlightCam", years: "2009 to 2012", funding: "US$500K", cause: "Competition", promise: "Automatic video editing by algorithm, no skill needed.", died: "Free smartphone apps did the same and the market did not know it needed the product.", url: "https://www.loot-drop.io/startup/1636-highlightcam" },
+    { name: "ReelSurfer", years: "2012 to 2015", funding: "US$1.25M", cause: "Competition", promise: "Clip and share segments of online video without technical skill.", died: "YouTube and Facebook added clipping; few people paid for a separate tool.", url: "https://www.loot-drop.io/startup/1577-reelsurfer" },
+    { name: "Trapit", years: "2011 to 2019", funding: "US$21.5M", cause: "Competition", promise: "AI-curated content feeds for marketers.", died: "Stayed a niche, overpriced tool while large platforms covered the same need.", url: "https://www.loot-drop.io/startup/658-trapit" }
+  ],
+  whatChanged: [
+    `Each of the five sold a convenience to people who publish content, and the convenience stopped selling when a platform added it for free or when the publishers lost interest. Podsqueeze faces both: podcast hosting services and the model providers themselves can add show notes, and most podcasters stop publishing within months, which the founders and their hosts name as the main reason revenue has not grown since 2024.`,
+    `Two things differ. First, Podsqueeze cost almost nothing to build and reached profit in months, so it survives a plateau that a funded company could not; the five predecessors spent between US$500,000 and US$21.5 million before closing. Second, the founders found one customer type that does not fade, media companies with many shows, and those customers accepted a price five times higher. Whether that can be sold outside Portugal is the open question in the August 2026 episode.`
+  ],
+  copy: {
+    verdict: "The first five months, yes. The business after that, only with a different customer.",
+    text: "The method that produced US$10,000 a month in five months is plain and repeatable: build the tool for your own repeated task, ship in a week, charge from the second week, and reach customers by cold email and Reddit. What it does not give you is a customer who keeps paying. Pick a customer whose need does not fade, such as an agency or a media company with many shows, before the first wave of interest ends.",
+    steps: [
+      "Pick a task you do every week and hate; write the first version in one week and add payments in the second.",
+      "Send cold email at volume from your own server, with a short personal message that ends in a question.",
+      "Launch once on Product Hunt with your network warmed up a week before, and treat it as a one-time event.",
+      "Measure monthly churn from the first month. If it is above 10%, change the customer, not the feature list.",
+      "Charge by a unit that grows with the customer, such as minutes or shows, and test much higher prices on business customers."
+    ],
+    open: "Any repeated writing or editing task for a group that publishes constantly: newsletters, video channels, local media, agencies, internal communications teams, and the regulated industries where a transcript must be kept."
+  },
+  watch: [
+    { title: "Self-reported, with a currency change", text: "The 2024 figure is in dollars and the 2026 figure in euros, both about 16,000 a month. No one outside the company has checked either. Latka's 2024 estimate is in the same range." },
+    { title: "The plateau is the main fact", text: "Revenue has been flat for two years, with 15% to 20% of customers leaving every month. The founders chose to keep the company rather than sell it for 500,000; the podcast hosts argue that a flat, self-serve business is worth less each year it stays flat." },
+    { title: "The platforms can add the feature", text: "Every predecessor on this page died when a platform built the convenience in. Podcast hosts, YouTube and the model providers can all produce show notes and clips, and in 2026 there are hundreds of tools that cut podcasts into shorts." },
+    { title: "Growth outside Portugal has not worked yet", text: "The customers who stay are Portuguese media groups won by the founders in person. A hired salesperson in Latin America got meetings but few contracts." },
+    { title: "Launch date differs by source", text: "SpyMetrics lists 29 January 2023; the founders say the end of February. This page uses February 2023 and the 42-month count depends on it." }
+  ],
+  sources: [
+    { title: "Smart Bear Live, episode 3, 23 August 2026: Restarting growth after stuck at €16k/mo, show notes", url: "https://smartbearlive.transistor.fm/3", grade: "C", how: "Read in full. Jason Cohen's podcast with Tiago Ferreira and João Amaro as guests and Craig Hewitt as cohost. Source for the €16,000 a month, the two flat years and the timestamps on the 500K offer and the 5x price test." },
+    { title: "Smart Bear Live, episode 3, transcript", url: "https://smartbearlive.transistor.fm/3/transcript", grade: "C", how: "Read the introduction and the sections on churn, the Portuguese media customers, the Latin America hire, the price rise and the offer. Automatic transcript, about 35,000 words." },
+    { title: "Indie Bites, 13 September 2024: How Podsqueeze grew to $16k MRR in 18 months, Tiago Ferreira", url: "https://share.transistor.fm/s/02980e76", grade: "C", how: "Read the episode notes in full. Source for the US$16,000 MRR in September 2024. The audio was not transcribed." },
+    { title: "Tiago Ferreira on X, 20 July 2023: $10K MRR", url: "https://x.com/wbetiago/status/1682035513660952576", grade: "C", how: "Read in full through the fxtwitter API. Names @JOAOTHA as co-founder." },
+    { title: "Tiago Ferreira on X, 2 April 2023: closing the month of March", url: "https://x.com/wbetiago/status/1642429155534053376", grade: "C", how: "Read in full through the fxtwitter API. Source for US$2,000 MRR, 1,368 users and 31,000 minutes." },
+    { title: "Tiago Ferreira on X, 29 March 2023: Product Hunt launch", url: "https://x.com/wbetiago/status/1640973197771264000", grade: "C", how: "Read in full through the fxtwitter API. Source for US$800 MRR in the first month." },
+    { title: "Indie Hackers, 5 October 2023: How Tiago grew an AI SaaS to over 100K ARR in 5 months", url: "https://www.indiehackers.com/post/how-tiago-grew-an-ai-saas-to-over-100k-arr-in-5-months-c6fa354bc5", grade: "C", how: "Read in full. Founder interview. Source for the late-February launch, 320 users, US$9,000 MRR, US$100,000 ARR and the tech stack." },
+    { title: "SpyMetrics, 12 November 2023: Podsqueeze.com made $14,300 in revenue last month", url: "https://spymetrics.beehiiv.com/p/podsqueeze", grade: "C", how: "Read in full. Interview with the founder, with his X posts embedded. Source for the October 2023 revenue and profit, the Product Hunt figures, the cold email volumes and the 29 January launch date." },
+    { title: "SaaStrappers, 17 March 2024: From podcasting to a tool for podcasters, Tiago Ferreira", url: "https://saastrappers.beehiiv.com/p/18-podcasting-tool-podcasters", grade: "C", how: "Read in full. Interview transcript. Source for the one-week build, the plateau from September 2023, the SEO audit, the 500 subscribers, the 10% churn, the 50/50 split and the earlier community income." },
+    { title: "Indie Hackers, 12 May 2023: Reaching $6.5K MRR with SaaS for podcasts in 2 months", url: "https://www.indiehackers.com/post/reaching-6-5k-mrr-with-saas-for-podcasts-in-2-months-9458343b5f", grade: "C", how: "Read in full. Case study by Sveta Bay with the founder's answers. Source for the US$6,500 MRR, the first ten customers and the Product Hunt traffic." },
+    { title: "Essential Business, 20 January 2025: Young Portuguese entrepreneurs shake-up digital content creation with AI", url: "https://www.essential-business.pt/?p=29287", grade: "C", how: "Read in full. Portuguese business news site, based on the founders' statements. Source for both founders' full names and backgrounds, the 55,000 users, the no-investment statement, Userquest Lda and the three employees." },
+    { title: "Latka company page: Podsqueeze revenue 2024, estimate", url: "https://getlatka.com/companies/podsqueeze", grade: "C", how: "Read in full. A third-party estimate marked as such, an October 2023 figure attributed to X, and a LinkedIn headcount." },
+    { title: "Podsqueeze pricing page, read 12 October 2026", url: "https://podsqueeze.com/pricing", grade: "C", how: "Read in full. Monthly prices and plan limits. The yearly price is shown only through a script toggle labeled 30% off, so the yearly column was computed." },
+    { title: "Podsqueeze home page, team section, and the co-founder's X profile", url: "https://podsqueeze.com/", grade: "C", how: "Read the team section. The co-founder entry links to the X account @JOAOTHA, whose profile name, read through the fxtwitter API, is João Amaro." },
+    { title: "Loot Drop database export, 1,749 failed startups", url: "https://www.loot-drop.io/", grade: "C", how: "Local export. AI-written summaries, not independently verified. Source for the failed predecessors." }
+  ]
 }
 ];
 
