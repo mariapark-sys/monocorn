@@ -2516,6 +2516,162 @@ const STORIES = [
     { title: "Podsqueeze home page, team section, and the co-founder's X profile", url: "https://podsqueeze.com/", grade: "C", how: "Read the team section. The co-founder entry links to the X account @JOAOTHA, whose profile name, read through the fxtwitter API, is João Amaro." },
     { title: "Loot Drop database export, 1,749 failed startups", url: "https://www.loot-drop.io/", grade: "C", how: "Local export. AI-written summaries, not independently verified. Source for the failed predecessors." }
   ]
+},
+{
+  slug: "sitegpt",
+  name: "SiteGPT",
+  country: "India",
+  sector: "Information Technology",
+  productType: "AI customer-support chatbot trained on a website",
+  aiType: "AI-native",
+  team: "solo",
+  outcome: "running",
+  evidence: "C",
+  added: "2026-10-12",
+  launchLabel: "30 March 2023",
+  outcomeLabel: "US$190K a year recurring revenue, December 2025",
+  sticker: "$190K ARR, two brothers",
+  outcomeUsd: 190000,
+  months: 33,
+  teamLabel: "1 founder alone for about 14 months, then 2 brothers, no employees",
+  fundingLabel: "None",
+  primaryFactor: "Speed",
+  meters: { evidence: 1, copyable: 3, capital: 1 },
+  tags: ["AI-native", "Solo founder", "Bootstrapped", "Running", "B2B", "Customer support"],
+  product: "A company pastes its website address. SiteGPT reads every page, builds a chatbot that answers visitor questions from that content, and puts it on the site. Plans are priced by the number of chatbots, pages and messages. There is no free plan, only a 7-day trial.",
+  why: "It was built in two to three weeks as a side feature for an existing product and launched with a paywall on day one, one month after the ChatGPT API appeared. It reached US$10,000 a month in 25 days, then lost half of it to churn. What kept it alive for three years was cheap customer acquisition: more than 50 free web tools that rank on Google and send visitors to the paid product.",
+  summary: [
+    `SiteGPT is a <dfn>customer-support chatbot</dfn> for websites. A customer-support chatbot is a program that answers visitor questions in a chat window instead of a person. SiteGPT builds the answers from the company's own pages: it crawls the website, stores the text, and gives it to a language model when a visitor asks something. Chatbase, already on this site, sells the same idea from Canada and the USA at about fifty times the revenue; SiteGPT is the small, two-person version of the same category, run from India.`,
+    `Bhanu Teja Pachipulusu, a software engineer who had left his job to build small products, started it in March 2023 as a feature for his earlier product Feather, a tool that turns Notion pages into a blog. He launched it on 30 March 2023 with a post on X and a paywall. In 25 days it passed US$10,000 of <dfn>monthly recurring revenue</dfn> (MRR, the subscription revenue of one month). Then about half of the customers left, and revenue stayed near US$15,000 a month for the next year. In late 2024 he stopped accepting new sign-ups for three months and MRR fell to US$8,200. In April 2025 he and his brother, who had joined in 2024, nearly sold the product, then decided to work on nothing else. MRR almost doubled in eight months to US$15,800 at the end of 2025, which is US$190,000 of <dfn>annual recurring revenue</dfn> (ARR, MRR multiplied by twelve). In February 2026 he wrote that it had crossed US$20,000 a month.`,
+    `Every number on this page is a founder statement, mostly from his own posts on X, grade C. No payment processor or buyer has confirmed them. The page also shows four earlier companies that promised a computer that answers questions in plain language and failed before language models existed.`
+  ],
+  factsCaption: "A side feature that reached US$10,000 a month in 25 days, then needed three years to get to US$190,000 a year, all self-reported by the founder on X",
+  factsRead: "How to read this table: a grade C value is a founder statement from his posts on X or his interviews, or an estimate by a third party that says so. A \"calc\" value was computed on this page from the rows above it. No value is grade A or B.",
+  timelineLead: "From a weekend experiment to a two-brother business at US$190,000 a year, with a crash and a near-sale in between, in 33 months. Each entry carries its grade.",
+  pricing: {
+    caption: "SiteGPT prices read from the company's pricing page on 12 October 2026 (grade C)",
+    note: "A message is one answer from the chatbot. The message limit counts answers from a small model (GPT-4.1 mini); an answer from the large model (GPT-4.1) uses ten times the quota. A page is 2,500 characters of cleaned text from the company's website or files. Extra packs of 5,000 messages cost US$59 a month. Every self-serve plan starts with a 7-day trial that requires a credit card. Yearly billing is about 34% to 40% cheaper than monthly billing.",
+    rows: [
+      ["Starter", "39", "59", "1 chatbot, 4,000 messages a month, 1,000 pages"],
+      ["Growth", "79", "129", "2 chatbots, 10,000 messages a month, 10,000 pages, API"],
+      ["Scale", "259", "429", "3 chatbots, 40,000 messages a month, 50,000 pages, webhooks"],
+      ["Enterprise", "custom", "custom", "up to 500,000 pages, custom integrations, HIPAA agreement"]
+    ]
+  },
+  facts: [
+    { fact: "Monthly recurring revenue, 31 December 2025", value: "US$15,800", grade: "C", note: "Founder's post on X on 1 January 2026: he ended the year at US$15,800 MRR, almost double the start of the year.", src: [1] },
+    { fact: "Annual recurring revenue, 18 December 2025", value: "US$190,000", grade: "C", note: "Founder's post on X. This is the headline figure of this page. US$15,800 times 12 is US$189,600, so the two posts agree.", src: [1, 2] },
+    { fact: "Monthly recurring revenue, 25 February 2026", value: "more than US$20,000", grade: "C", note: "Founder's post on X, quoted by the Arrfounder directory. The post itself could not be opened on 12 October 2026, so this value is not verified on this page. It would be US$240,000 a year.", src: [11] },
+    { fact: "Revenue in calendar year 2024", value: "US$251,000", grade: "C", note: "Founder's post on X, 30 December 2024. His total 2024 income was US$524,000: SiteGPT US$251,000, Feather US$22,000 before its sale, and the Feather sale US$251,000.", src: [3] },
+    { fact: "Average SiteGPT revenue per month in 2024", value: "about US$20,900", grade: "X", note: "Calculated: 251,000 divided by 12. Higher than the MRR of that year because it includes yearly plans paid up front and one-time charges.", src: [3] },
+    { fact: "Revenue, expenses and profit, June 2024", value: "US$15,801 revenue, US$4,271 expenses, US$11,530 profit, 73% margin", grade: "C", note: "Founder's monthly update on X, 1 July 2024. MRR was US$11,700 at that time, growing 4% a month.", src: [6] },
+    { fact: "Monthly recurring revenue, 1 January 2025", value: "US$8,200", grade: "C", note: "Founder's post on X. He had closed new sign-ups more than three months earlier and MRR had been falling since.", src: [4] },
+    { fact: "Revenue, expenses and churn, August 2025", value: "US$10,183 revenue, US$2,230 expenses, MRR growth 8%, churn under 5%", grade: "C", note: "Founder's monthly update on X, 1 September 2025. Churn is the share of customers who cancel in a month.", src: [5] },
+    { fact: "Profit margin, August 2025", value: "about 78%", grade: "X", note: "Calculated: (10,183 minus 2,230) divided by 10,183.", src: [5] },
+    { fact: "MRR growth during 2025", value: "about 1.9 times, from US$8,200 to US$15,800", grade: "X", note: "Calculated: 15,800 divided by 8,200. The founder writes almost doubled.", src: [1, 4] },
+    { fact: "Time from launch to US$10,000 MRR", value: "25 days", grade: "X", note: "Calculated: 30 March 2023 to 24 April 2023, the date of the post Crossed $10k now.", src: [7, 8] },
+    { fact: "Churn after the launch month", value: "about half of customers", grade: "C", note: "Founder interview, October 2023: US$10,000 MRR in the first month and US$5,000 of churn the next month.", src: [10] },
+    { fact: "Monthly recurring revenue, October 2023", value: "about US$15,000", grade: "C", note: "Founder interview with Starter Story, six months after launch.", src: [10] },
+    { fact: "Website visitors in the first five days", value: "more than 40,000", grade: "C", note: "Founder's post on X with a traffic chart, 4 April 2023. About 15,000 on launch day according to his interview.", src: [9, 10] },
+    { fact: "Show HN post, 1 April 2023", value: "118 points, 96 comments, front page", grade: "C", note: "Read from the Hacker News search API. The front-page claim is the founder's.", src: [13] },
+    { fact: "Product Hunt launch, 5 April 2023", value: "667 upvotes on the product page today; number 2 of the day in the founder's post that morning", grade: "C", note: "Later case studies write number 1 of the day. The founder's own post that morning says number 2 with the top entries very close. This page does not settle it.", src: [14, 9] },
+    { fact: "Paying customers and revenue per customer, January 2026", value: "about 130 businesses at about US$100 a month", grade: "C", note: "Founder in a video interview, summarized by Superframeworks. Lifetime value US$1,700 to US$1,800 per customer, which is 17 to 18 months at US$100.", src: [12] },
+    { fact: "Total revenue since launch, early 2026", value: "more than US$500,000", grade: "C", note: "Same interview. Consistent with US$251,000 in 2024 alone.", src: [12, 3] },
+    { fact: "Free tools built for search traffic", value: "more than 50", grade: "C", note: "Founder: about 90% of Google traffic lands on these tools, about 50,000 visits a month give 200 leads, 60 trials, and 25% to 40% of trials pay.", src: [12] },
+    { fact: "Sale of the previous product Feather, 2024", value: "US$251,000", grade: "C", note: "Founder's post on X, 30 December 2024. Feather was at about US$6,000 MRR, so the price was about 3.5 times its yearly revenue.", src: [3, 12] },
+    { fact: "Outside funding", value: "none", grade: "C", note: "Founder statements throughout. Two brothers, no employees.", src: [2, 12] },
+    { fact: "Latka's revenue estimate, June 2024", value: "US$300,000 a year", grade: "C", note: "A third-party estimate, marked as such. Higher than the founder's 2024 revenue of US$251,000.", src: [16] },
+    { fact: "Time from launch to the December 2025 figure", value: "33 months", grade: "X", note: "Calculated: March 2023 to December 2025.", src: [2, 7] }
+  ],
+  timeline: [
+    { when: "2021 to 2022", what: "Pachipulusu leaves a software job after eight months, moves back to his parents' house in Andhra Pradesh to have no expenses, and builds Feather, a Notion-to-blog tool, to about US$4,000 to US$6,000 MRR.", grade: "C", src: [10, 12] },
+    { when: "15 March 2023", what: "He posts that he will try to build a new AI project that weekend, because he feels behind on everything related to AI. The idea: his 100 Feather customers all have blogs, so let visitors chat with the blog.", grade: "C", src: [7, 10] },
+    { when: "27 March 2023", what: "Paddle, the payment processor, approves his account. He builds the first version in two to three weeks with one feature: paste a website address, get a chatbot. No free plan, prices set high in case the model bills were large.", grade: "C", src: [7, 10] },
+    { when: "30 March 2023", what: "Launch with one post on X to about 10,000 followers, paywall already in place. First customers within the hour, about 15,000 visitors on the day.", grade: "C", src: [7, 10] },
+    { when: "1 to 5 April 2023", what: "Show HN reaches the front page with 118 points. A denial-of-service attack hits both products the same day. 40,000 visitors in five days. He launches on Product Hunt without a plan and reaches number 2, later reported as number 1.", grade: "C", src: [9, 13, 14] },
+    { when: "24 April 2023", what: "Crossed US$10,000 MRR, 25 days after launch. The next month about half of the customers cancel.", grade: "C", src: [8, 10] },
+    { when: "October 2023", what: "About US$15,000 MRR, six months after launch. He writes that the hype brought curious buyers and that real businesses only started to sign up after it ended.", grade: "C", src: [10] },
+    { when: "13 June 2024", what: "His elder brother Sai Dheeraj leaves his job and joins as co-founder. June revenue US$15,801, profit US$11,530, MRR US$11,700.", grade: "C", src: [18, 6] },
+    { when: "Late 2024", what: "Feather is sold for US$251,000. New sign-ups to SiteGPT are closed for more than three months, and MRR drifts down.", grade: "C", src: [3, 4] },
+    { when: "1 January 2025", what: "MRR US$8,200. He sets a goal of US$1 million ARR, which needs about 10 times the current MRR.", grade: "C", src: [4] },
+    { when: "April 2025", what: "After two years without growth, the brothers try to sell. Only one buyer appears, at a much lower price. At signing time they refuse, shut down every other side project, and work only on SiteGPT.", grade: "C", src: [2] },
+    { when: "10 August 2025", what: "Back to US$10,000 MRR for the third time. Churn under 5% by the end of the month.", grade: "C", src: [19, 5] },
+    { when: "28 October to 5 December 2025", what: "US$13,000, then US$14,000, then US$15,000 MRR.", grade: "C", src: [20, 1] },
+    { when: "18 December 2025", what: "US$190,000 ARR. Two people building, coding and growing.", grade: "C", src: [2] },
+    { when: "1 January 2026", what: "Year ends at US$15,800 MRR, almost double January 2025.", grade: "C", src: [1] },
+    { when: "25 February 2026", what: "More than US$20,000 MRR, which he attributes to a new side product, MissionControlHQ. Quoted by a directory; the post itself could not be opened.", grade: "C", src: [11] }
+  ],
+  mechanism: [
+    { title: "Speed, with a paywall on day one", text: "OpenAI released the ChatGPT API on 1 March 2023. SiteGPT launched on 30 March with one feature and no free plan. The founder wrote that every day of delay he saw a similar product appear. The first week brought US$10,000 of monthly revenue because the launch post, Show HN and Product Hunt all hit in five days. He says himself that this cannot be repeated on demand." },
+    { title: "Engineering as marketing", text: "After the launch spike, the growth channel was free web tools: a sitemap generator, a meta-tag checker, a PDF-to-Markdown converter, an FAQ generator, more than 50 in all. Each targets a Google keyword with low competition, and each ends with a link to SiteGPT. By 2026 these tools brought about 90% of Google traffic, about 50,000 visits a month, and the paid product had no advertising budget. With a coding assistant, a new tool now takes about five minutes." },
+    { title: "Reuse of an existing customer list", text: "The first users were the roughly 100 paying customers of Feather, who all ran blogs. The product was a feature for them before it was a company." },
+    { title: "Retention before growth", text: "Three times the product fell back below US$10,000 MRR. The recovery in 2025 came from working on churn, not on sign-ups: closing new sign-ups for three months, talking to customers, and getting churn under 5% a month before trying new positioning." }
+  ],
+  howBuilt: {
+    intro: "These details come from the founder's posts on X and his interviews. They are grade C.",
+    items: [
+      "Built in two to three weeks in March 2023 as a side feature of Feather, with one function: crawl a website and answer questions from its text with the OpenAI API.",
+      "Paddle as the payment processor and merchant of record, so a founder in India could charge customers worldwide. Account approval took a few weeks and delayed the launch.",
+      "No free plan from the first day, because the founder says he cannot convert free users to paid. Prices were set high in case the model bills were large.",
+      "The launch broke the servers. The founder spent two days rewriting code for the traffic, and Cloudflare reported a denial-of-service attack on the second day.",
+      "Pricing is metered on three things: chatbots, pages of content, and messages a month. Answers from the large model count ten times as much against the message limit.",
+      "Marketing is more than 50 free tools on the company site, generated from a template with a coding assistant, plus the founder's monthly revenue posts on X. No paid advertising.",
+      "Team of two brothers, no employees. The second brother joined in June 2024."
+    ],
+    src: [7, 10, 12, 15, 18]
+  },
+  predecessorsIntro: "Four companies in the Loot Drop database promised a computer that answers a question asked in plain language. All four needed hand-written answers or custom models. The values below are from that database and are not independently verified.",
+  predecessors: [
+    { name: "Ask Jeeves", years: "1996 to 2007", funding: "US$50M", cause: "Competition", promise: "Ask the web a question in plain English instead of keywords.", died: "Human editors wrote the answers, so cost grew with every new question. Google answered with an algorithm at no marginal cost. The natural-language interface was dropped in 2006.", url: "https://www.loot-drop.io/startup/10-ask-jeeves" },
+    { name: "Tellme", years: "1999 to 2011", funding: "US$238M", cause: "Competition", promise: "Ask for stock prices, weather and services by voice over the phone, with no human operator.", died: "Every answer path was built by hand. Smartphone apps and the voice assistants of Google and Apple replaced it. Microsoft bought it in 2007 and phased it out.", url: "https://www.loot-drop.io/startup/612-tellme" },
+    { name: "VocalIQ", years: "2011 to 2017", funding: "US$2M", cause: "Competition", promise: "A dialogue system that understands context and improves with use.", died: "It could not compete with the voice teams of Apple, Google and Amazon. Apple bought it in 2015 and folded the technology into Siri.", url: "https://www.loot-drop.io/startup/719-vocaliq" },
+    { name: "AllHere", years: "2016 to 2024", funding: "US$13M", cause: "Product/Tech Failure", promise: "An AI chatbot that talks to families in many languages to reduce school absence.", died: "It built custom language models before GPT and had to keep paying engineers to maintain them. The chatbot misunderstood parents, and a data breach and fraud charges ended the company.", url: "https://www.loot-drop.io/startup/2306-allhere" }
+  ],
+  whatChanged: [
+    `Before 2023, a program that answered questions needed its answers written or modelled by people. Ask Jeeves paid editors per question. Tellme built every voice menu by hand. AllHere trained its own models and could not keep up with them. In each case the cost of adding one more question grew with the size of the knowledge.`,
+    `A rented language model removed that cost. SiteGPT reads a website once and the model composes the answer to any question. One engineer built it in two to three weeks, as a side feature, and sold it with a paywall from the first hour. AllHere is the sharpest contrast: it raised US$13 million for custom models and closed in 2024, while SiteGPT ran at a 73% to 78% margin on a model it does not own.`
+  ],
+  copy: {
+    verdict: "The launch, no. The acquisition method, yes.",
+    text: "Chatbots trained on a website were copied hundreds of times in 2023, and SiteGPT itself was nearly sold in 2025 because it had not grown for two years. The part worth copying is cheap acquisition: free tools that rank on Google for low-competition keywords and point at the paid product. That method works for any business software and costs nothing but time.",
+    steps: [
+      "Build the first version as a feature for customers you already have, then make it a product if strangers want it too.",
+      "Launch with a paywall and no free plan; price high enough that the model bills cannot surprise you.",
+      "Find keywords with low difficulty and real search volume, build one small free tool per keyword, and end every tool with a link to the paid product.",
+      "When growth stops, measure churn before you buy more sign-ups. Under 5% a month is the founder's target.",
+      "Post revenue, expenses and churn every month in public. The posts are the marketing, and they are also the source for pages like this one."
+    ],
+    open: "A support chatbot for one industry with the integrations that industry needs, for example clinics, property managers, or online shops in one country. SiteGPT sells the generic version; the vertical version is still open, as the Chatbase page also notes."
+  },
+  watch: [
+    { title: "Numbers only from the founder", text: "Every revenue figure here is from his posts on X or interviews. Two of the posts, the US$140,000 ARR post of September 2025 and the US$20,000 MRR post of February 2026, could not be opened on 12 October 2026 and are known only from a directory's quotation." },
+    { title: "Growth is slow", text: "The product reached US$10,000 MRR in 25 days and US$15,800 MRR after 33 months. The founder's goal of US$1 million ARR needs more than five times the current revenue. He wrote in September 2025 that something needs to change for SiteGPT to become a US$1 million business." },
+    { title: "A crowded category with cheap copies", text: "Chatbase sells the same product at about US$10 million ARR, and Intercom and Zendesk bundle AI agents into their support suites. A Show HN post in 2024 advertised a 10 times cheaper alternative to SiteGPT." },
+    { title: "Free-tool traffic can be diluted", text: "Any founder with a coding assistant can now build the same free tools in minutes. Google rankings for low-competition keywords are the whole acquisition channel." },
+    { title: "Product Hunt rank is uncertain", text: "The founder's own post on launch morning says number 2 of the day. Later case studies say number 1. This page does not know which is right." }
+  ],
+  sources: [
+    { title: "Bhanu Teja P on X, 1 January 2026: Ended the year with $15.8k MRR", url: "https://x.com/pbteja1998/status/2006676983024071147", grade: "C", how: "Read in full through the fxtwitter API. Founder's own post. Source for the year-end MRR." },
+    { title: "Bhanu Teja P on X, 18 December 2025: Can't believe SiteGPT is actually at $190k ARR now", url: "https://x.com/pbteja1998/status/2001757078264877136", grade: "C", how: "Read in full through the fxtwitter API. Founder's own post. Source for the headline ARR, the near-sale in April 2025 and the team of two." },
+    { title: "Bhanu Teja P on X, 30 December 2024: 2024 revenue, SiteGPT $251k, Feather acquisition $251k", url: "https://x.com/pbteja1998/status/1873663403245412430", grade: "C", how: "Read in full through the fxtwitter API. Source for the 2024 revenue and the Feather sale price." },
+    { title: "Bhanu Teja P on X, 1 January 2025: My goal for 2025 is to get to $1M ARR", url: "https://x.com/pbteja1998/status/1874439566708580804", grade: "C", how: "Read in full through the fxtwitter API. Source for the US$8,200 MRR and the closed sign-ups." },
+    { title: "Bhanu Teja P on X, 1 September 2025: August 2025 update for SiteGPT.ai", url: "https://x.com/pbteja1998/status/1962388042792251459", grade: "C", how: "Read in full through the fxtwitter API. Source for the August 2025 revenue, expenses, growth and churn." },
+    { title: "Bhanu Teja P on X, 1 July 2024: June 2024 update for SiteGPT.ai", url: "https://x.com/pbteja1998/status/1807676777575379334", grade: "C", how: "Read in full through the fxtwitter API. Source for the June 2024 revenue, expenses, profit and MRR." },
+    { title: "Bhanu Teja P on X, 15 to 30 March 2023: the posts before and at launch, ending with Finally launching SiteGPT.ai", url: "https://x.com/pbteja1998/status/1641448570569015296", grade: "C", how: "Read the launch post and the five posts before it (15, 27, 29 and 30 March) through the fxtwitter API. Source for the launch date, the Paddle approval and the paywall." },
+    { title: "Bhanu Teja P on X, 24 April 2023: Crossed $10k now", url: "https://x.com/pbteja1998/status/1650586632444149763", grade: "C", how: "Read in full through the fxtwitter API. Three words and a date; the US$10,000 MRR meaning is confirmed by the Starter Story interview." },
+    { title: "Bhanu Teja P on X, 31 March to 5 April 2023: launch-week posts on traffic, the attack, Hacker News and Product Hunt", url: "https://x.com/pbteja1998/status/1643289275096522756", grade: "C", how: "Read seven posts of that week through the fxtwitter API. Source for the 40,000 visitors, the denial-of-service attack and the Product Hunt rank that morning." },
+    { title: "Starter Story, 8 October 2023: How my AI side project grew to $15K MRR in just a few months", url: "https://www.starterstory.com/stories/sitegpt", grade: "C", how: "Read in full. Founder interview in his own words. Source for the origin in Feather, the build time, the pricing decisions, the launch-day visitors, the churn and the October 2023 MRR." },
+    { title: "Arrfounder, 25 February 2026: SiteGPT crosses $20K MRR, quoting the founder's post", url: "https://arrfounder.com/news/sitegpt-crosses-20k-mrr", grade: "C", how: "Read in full. The founder's post of 25 February 2026 could not be opened on X (fxtwitter returned 404 on 12 October 2026), so the US$20,000 figure is cited from this directory's quotation and marked not verified. The same directory quotes the US$140,000 ARR post of 16 September 2025." },
+    { title: "Superframeworks case study, 10 January 2026: $13K MRR, engineering as marketing masterclass", url: "https://superframeworks.com/case-study/sitegpt", grade: "C", how: "Read in full. Summarizes a video interview with the founder. Source for the customer count, revenue per customer, lifetime value, total revenue, the free-tools funnel and the founder's background." },
+    { title: "Hacker News search API record of the Show HN post, 1 April 2023", url: "https://news.ycombinator.com/item?id=35404852", grade: "C", how: "Read the API record (hn.algolia.com), not the discussion. Source for the 118 points and 96 comments." },
+    { title: "Product Hunt product page for SiteGPT, read 12 October 2026", url: "https://www.producthunt.com/products/sitegpt", grade: "C", how: "Read the page text. Source for the 667 upvotes and the 2023 launch." },
+    { title: "SiteGPT pricing page, read 12 October 2026", url: "https://sitegpt.ai/pricing", grade: "C", how: "Read in full. The page carries the prices in plain text, including the yearly totals. Source for the pricing table and the message and page limits." },
+    { title: "Latka company page: SiteGPT revenue 2024, estimate", url: "https://getlatka.com/companies/sitegpt", grade: "C", how: "Read in full. A third-party estimate of US$300,000 a year for June 2024, plus the founding year and the city, Nellore." },
+    { title: "Loot Drop database export, 1,749 failed startups", url: "https://www.loot-drop.io/", grade: "C", how: "Local export. AI-written summaries, not independently verified. Source for the failed predecessors." },
+    { title: "Bhanu Teja P on X, 13 June 2024: on his brother joining SiteGPT", url: "https://x.com/pbteja1998/status/1801346064412536870", grade: "C", how: "Read in full through the fxtwitter API. Source for the date the brother joined as co-founder." },
+    { title: "Bhanu Teja P on X, 10 August 2025: Finally got SiteGPT.ai back to $10k MRR (again)", url: "https://x.com/pbteja1998/status/1954489670638989471", grade: "C", how: "Read in full through the fxtwitter API. Source for the third return to US$10,000 MRR and the churn target." },
+    { title: "Bhanu Teja P on X, 28 October, 25 November and 5 December 2025: crossed $13k, $14k and $15k MRR", url: "https://x.com/pbteja1998/status/1983070404261581031", grade: "C", how: "Read all three posts through the fxtwitter API. Source for the autumn 2025 milestones." }
+  ]
 }
 ];
 
