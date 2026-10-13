@@ -1942,6 +1942,149 @@ const STORIES = [
     { title: "Jenni AI pricing page, read 12 October 2026", url: "https://jenni.ai/pricing", grade: "C", how: "Read the static text. The Monthly/Annual switch is script-driven, so the billing period of the shown prices could not be confirmed." },
     { title: "Loot Drop database export, 1,749 failed startups", url: "https://www.loot-drop.io/", grade: "C", how: "Local export. AI-written summaries, not independently verified. Source for the failed predecessors." }
   ]
+},
+{
+  slug: "tweet-hunter",
+  name: "Tweet Hunter",
+  country: "France",
+  sector: "Communication Services",
+  productType: "AI-assisted writing and scheduling tool for X (Twitter)",
+  aiType: "AI-leveraged",
+  team: "small",
+  outcome: "exit",
+  evidence: "C",
+  added: "2026-10-12",
+  launchLabel: "May 2021",
+  outcomeLabel: "Sold for US$2M cash plus earn-out, August 2022",
+  sticker: "Sold for $2M plus earn-out",
+  outcomeUsd: 2000000,
+  months: 15,
+  teamLabel: "2 founders, 1 partner on profit share, 1 contract developer",
+  fundingLabel: "None",
+  primaryFactor: "Distribution",
+  meters: { evidence: 1, copyable: 2, capital: 1 },
+  tags: ["AI-leveraged", "Small team", "Bootstrapped", "Exit", "B2B", "Social media"],
+  product: "A tool for people who want to grow an audience on X (then Twitter). It started as a search box over a library of viral tweets, then added a scheduler, automatic direct messages, a contact list, and a language model that proposes tweets and threads in the user's own style. A sister product, Taplio, does the same for LinkedIn.",
+  why: "Two founders shipped eleven products in about four months and kept the one that made money. They sold it on the platform it served, gave an audience owner a share of profits instead of a sponsorship fee, and used a language model to make writing faster, not to replace it. Fifteen months after launch, with about US$1 million a year in revenue, they sold to a larger French software company run by a former schoolmate.",
+  summary: [
+    `Tweet Hunter is a tool for growing an audience on X, the social network that was called Twitter until 2023. It began in May 2021 as a searchable library of <dfn>viral tweets</dfn>, posts that were shared far more than normal, sorted by topic, so that a user could study what worked before writing. Within months it became a full suite: a scheduler, automatic direct messages, a <dfn>CRM</dfn> (customer relationship management, a list of accounts to follow up with) and an AI writer. The AI writer used a <dfn>large language model</dfn>, a program trained on large amounts of text that writes new text from a prompt. It started on OpenAI's GPT-3, then moved to a model from AI21 Labs that the founders could fine-tune on tweet formats.`,
+    `Thibault (Tibo) Louis-Lucas and Thomas (Tom) Jacquesson, two French founders whose earlier startup went bankrupt, built it under a studio called Pony Express. They had promised themselves to ship one new product every week until one made money. Ten products failed; the eleventh was Tweet Hunter, priced at US$9 a month. A partnership with JK Molina, a writer with a large X audience, took <dfn>monthly recurring revenue</dfn> (MRR, the subscription revenue of one month) from about US$4,000 to US$20,000 in two weeks in late 2021. By May 2022 the product passed US$1 million in <dfn>annual recurring revenue</dfn> (ARR, monthly recurring revenue times twelve). In August 2022, fifteen months after launch, lempire, the French maker of the sales tool lemlist, bought Tweet Hunter and its LinkedIn sister Taplio for US$2 million in cash plus an <dfn>earn-out</dfn>, extra payments that depend on the revenue the products reach in the following years.`,
+    `The cash price and the revenue figures on this page are founder statements, grade C. The buyer confirmed in his own blog that it was a multi-million dollar deal with revenue-based earn-outs, grade B, but did not publish the price. The founders later said the total reached about US$8 million. The page also shows five earlier companies that built businesses on top of a social network's data and lost when the network changed the rules, the same risk the founders named as a reason to sell.`
+  ],
+  factsCaption: "A US$2 million cash sale fifteen months after launch, plus earn-outs the founders expected to bring the total to US$10 million to US$15 million, all self-reported except the buyer's confirmation that the deal was multi-million",
+  factsRead: "How to read this table: a grade B value comes from the buyer's own blog post. A grade C value is a founder or partner statement in an interview, a thread on X, or a founder post on Indie Hackers, or a third-party report that repeats them. A \"calc\" value was computed on this page from the rows above it. No value is grade A.",
+  timelineLead: "From a weekly product challenge to a sale to a former schoolmate's company, in 15 months. Each entry carries its grade.",
+  pricing: {
+    caption: "Tweet Hunter prices in October 2026, read from the company's pricing page (grade C). The page is now run by lempire.",
+    note: "Prices are per month in US dollars. The page shows a monthly tab and a yearly tab; the yearly values are the ones its script fills in when the second tab is clicked. All plans start with a 7-day free trial and the page shows a permanent countdown offering 50% off the Grow plan. The AI writer (daily AI-written tweets, rewriting, thread ideas) is in the Grow plan and above. Enterprise adds a custom-trained model and unlimited AI use.",
+    rows: [
+      ["Discover", "23", "29", "1 X account, 3,000 auto-DMs a month, no AI writer"],
+      ["Grow", "36", "49", "5 X accounts, 7,500 auto-DMs a month, AI writer and CRM"],
+      ["Enterprise", "167", "200", "unlimited X accounts, 15,000 auto-DMs a month, custom-trained AI"]
+    ]
+  },
+  facts: [
+    { fact: "Sale price, cash", value: "US$2,000,000", grade: "C", note: "Partner JK Molina's thread on X, 16 January 2023: Tweet Hunter US$1,400,000 and Taplio US$600,000. Tibo's own thread the same day gives the cash as 7 figures and shows the deal table without amounts.", src: [1, 2] },
+    { fact: "Deal confirmed by the buyer", value: "multi-million dollar deal with revenue-based earn-outs", grade: "B", note: "Guillaume Moubeche, founder of lempire, in his blog post of 16 January 2023. He names no price. He writes that the earn-out depends on revenue goals, with an operating-margin limit, stock options with short vesting, and a time-based part.", src: [3] },
+    { fact: "Earn-out structure", value: "revenue milestones from EUR 2 million to EUR 10 million, each paying a 6- or 7-figure amount, plus 6-figure payments for year 1 and year 2", grade: "C", note: "Table posted by Tibo on X with the exact amounts hidden. Total earn-out shown as 8 figures.", src: [2] },
+    { fact: "Expected total including earn-out", value: "US$10 million to US$15 million", grade: "C", note: "Tibo in interviews, 2023 and May 2024, on condition that the Twitter and LinkedIn integrations keep working.", src: [4, 5] },
+    { fact: "Total received, as stated in 2024", value: "about US$8 million", grade: "C", note: "Tibo to Indie Hackers, September 2024: two companies sold as a package deal for US$8 million. Lower than the earlier expectation; he says he regrets selling.", src: [6] },
+    { fact: "Date of the sale", value: "August 2022", grade: "C", note: "JK Molina's thread: birth May 2021, acquisition August 2022, 15 months. The public announcement came on 16 January 2023. The exact month of the buyer's offer is not verified.", src: [1, 4] },
+    { fact: "Annual revenue at the sale", value: "about US$1 million a year, with US$100,000 of monthly recurring revenue for both products", grade: "C", note: "They Got Acquired, March 2023, from an interview with Tibo. Tweet Hunter had about 5,000 users and Taplio about 3,000.", src: [4] },
+    { fact: "Price to revenue multiple at the sale", value: "about 2 times annual revenue in cash", grade: "X", note: "Calculated: 2,000,000 divided by 1,000,000. Tibo wrote that the full deal, with earn-outs, rewards a multiple of more than 10 times ARR.", src: [1, 2, 4] },
+    { fact: "ARR of both products, May 2023", value: "US$3.5 million", grade: "C", note: "Tibo to Starter Story, nine months after the sale, with 10% to 20% growth per month and a gross margin above 50%.", src: [5] },
+    { fact: "Monthly recurring revenue, May 2022", value: "US$41,000", grade: "C", note: "Tom Jacquesson to Failory. Tweet Hunter alone, before Taplio grew.", src: [7] },
+    { fact: "Monthly recurring revenue, November 2021", value: "US$21,000", grade: "C", note: "Tom Jacquesson, interviewed six months after launch.", src: [8] },
+    { fact: "ARR, October 2021", value: "US$150,000", grade: "C", note: "Tibo's post on Indie Hackers, four months after the first version. He first titled the post with a US$1 million valuation, then changed it to the revenue figure after readers objected.", src: [9] },
+    { fact: "First price", value: "US$9 a month", grade: "C", note: "Both founders, in several interviews. Later raised.", src: [5, 7] },
+    { fact: "Effect of the partnership with JK Molina", value: "from US$4,000 to US$20,000 MRR in about two weeks", grade: "C", note: "Tibo to Starter Story; Tom says they tripled revenue in two weeks. Molina took a profit share by contract instead of equity.", src: [5, 8] },
+    { fact: "Team at the sale", value: "2 founders, 1 partner, 1 contract developer", grade: "C", note: "Tom's interview of November 2021. No later statement gives a larger team before the sale.", src: [8] },
+    { fact: "Outside funding", value: "none", grade: "C", note: "Tom: profitable from day one, nothing invested except the fees to create the company.", src: [8] },
+    { fact: "Language models used", value: "GPT-3, then AI21 Labs models", grade: "C", note: "AI21 case study with quotes from Tibo, February 2023. In October 2021 Tibo said the product did not use GPT-3 for generation; Starter Story says GPT-3 was used to analyse and sort tweets.", src: [10, 5, 9] },
+    { fact: "Twitter API cost after the sale", value: "from US$0 to US$42,000 a month", grade: "C", note: "Tibo, May 2024. Access was also cut off for a few days at one point.", src: [11] },
+    { fact: "Time from launch to the sale", value: "15 months", grade: "X", note: "Calculated: May 2021 to August 2022.", src: [1] }
+  ],
+  timeline: [
+    { when: "2015 to 2019", what: "Louis-Lucas and Jacquesson build Pistache, a chores app for children. Louis-Lucas then raises money for Dreamz, a game that teaches coding; it goes bankrupt.", grade: "C", src: [11, 5] },
+    { when: "Early 2021", what: "The two start Pony Express, a product studio, with the rule of shipping one product a week until one makes money. Ten products fail; the best reaches US$400 MRR.", grade: "C", src: [5, 11] },
+    { when: "May 2021", what: "Tweet Hunter: a search box over a library of viral tweets. First version built in two weeks, launched on X and Reddit at US$9 a month.", grade: "C", src: [5, 7, 9] },
+    { when: "October 2021", what: "US$150,000 ARR. The product now has an AI inspiration feature and a scheduler.", grade: "C", src: [9] },
+    { when: "Late 2021", what: "JK Molina, a ghostwriter with about 40,000 followers, joins as a partner on profit share. His launch takes MRR from about US$4,000 to US$20,000 in two weeks. November: US$21,000 MRR.", grade: "C", src: [5, 8] },
+    { when: "January 2022", what: "The founders decide to sell. A broker brings offers from large companies that ask them to stay two years; they refuse.", grade: "C", src: [4, 11] },
+    { when: "2022", what: "Taplio, the LinkedIn version, starts after Guillaume Moubeche, a lemlist founder and paying customer of Tweet Hunter, asks why the tool is only for Twitter. A beta reaches him one week later.", grade: "B", src: [3] },
+    { when: "May 2022", what: "US$41,000 MRR. The product passes US$1 million ARR, one year after launch.", grade: "C", src: [7, 12] },
+    { when: "Mid-2022", what: "Moubeche, a middle-school classmate of Louis-Lucas, makes an offer about a week after they discuss the broker's offers over lunch in Paris. A letter of intent is agreed in about two weeks on WhatsApp.", grade: "C", src: [3, 2] },
+    { when: "August 2022", what: "lempire buys Tweet Hunter for US$1,400,000 and Taplio for US$600,000, with earn-outs. The founders agree to stay two years.", grade: "C", src: [1, 11] },
+    { when: "16 January 2023", what: "Both founders, the partner and the buyer announce the sale publicly on X and on the lempire blog.", grade: "B", src: [1, 2, 3] },
+    { when: "May 2023", what: "Both products reach US$3.5 million ARR under lempire. Target of US$10 million ARR by summer 2024.", grade: "C", src: [5] },
+    { when: "2023", what: "Twitter raises its API price for the product from nothing to US$42,000 a month and cuts access for a few days.", grade: "C", src: [11] },
+    { when: "September 2024", what: "Louis-Lucas says the two products were sold for US$8 million in total and that he would not sell again. He now builds revid.ai, feather.so and superx.so.", grade: "C", src: [6] }
+  ],
+  mechanism: [
+    { title: "Eleven products in four months", text: "The founders treated each product as a test: ship in a week, watch for revenue, move on. Eight got users, four made money, one took off. The rule removed the usual months spent on an idea nobody pays for." },
+    { title: "Sell on the platform the product serves", text: "Every sale of the earlier products had come from Louis-Lucas's own X account, so a tool for growing on X had its customers and its sales channel in the same place. The founders also shipped free mini-tools and launched them on Product Hunt as rehearsals; Louis-Lucas became Product Hunt's Maker of the Year 2022." },
+    { title: "A creator as a partner, not a sponsor", text: "Instead of paying JK Molina for a promotion, they gave him a profit share by contract. He launched to his audience and MRR went from about US$4,000 to US$20,000 in two weeks. They repeated the model with Alex Berman for Taplio." },
+    { title: "AI as an accelerator, not the product", text: "The core idea was that reading great content helps you write better content. The language model shortened the step from inspiration to draft: daily proposed tweets, rewrites, thread hooks. Louis-Lucas says the integration made the tool ten times faster. The customer still writes and posts under their own name." },
+    { title: "Sell early because the platform owns the risk", text: "The founders said the business depended on Twitter and LinkedIn policies they did not control, and that their skills were in starting, not scaling. They took a smaller cash payment with a large earn-out from a buyer with the same culture. After the sale, Twitter's API price rose to US$42,000 a month." }
+  ],
+  howBuilt: {
+    intro: "These details come from the founders' interviews, Tibo's threads on X and the AI21 case study. They are grade C.",
+    items: [
+      "React with the Chakra UI component library, according to Jacquesson. The first version was built by Louis-Lucas in about two weeks.",
+      "A library of viral tweets built from the Twitter API, sorted by topic. Before that the founders had tried freelancers and spreadsheets to collect examples.",
+      "Tweet generation first used GPT-3, then moved to AI21 Labs models because they could fine-tune them on tweet formats and keep a style per user.",
+      "Scheduling, automatic direct messages, auto-plug and auto-retweet through the Twitter API. Early on they hit Twitter's daily posting quota and had to ask Twitter for a higher limit.",
+      "Growth came from the founders' X accounts, free side tools launched on Product Hunt, Reddit, an email list from earlier products, a purchased competitor used as a traffic source, and the creator partnership.",
+      "Priced at US$9 a month at launch, raised as features arrived. Profitable from the first month with no outside money."
+    ],
+    src: [8, 10, 7, 5, 9]
+  },
+  predecessorsIntro: "Five companies in the Loot Drop database built a product on data from a social network that they did not own. The values below are from that database and are not independently verified.",
+  predecessors: [
+    { name: "Klout", years: "2008 to 2017", funding: "US$40M", cause: "Competition", promise: "A score from 1 to 100 that measured your influence on social networks.", died: "Facebook and Twitter built their own analytics, and competitors offered better ones. The product depended on the networks' APIs and their policy changes.", url: "https://www.loot-drop.io/startup/280-klout" },
+    { name: "Nuzzel", years: "2012 to 2019", funding: "US$5.5M", cause: "Competition", promise: "The news your friends share, taken from your Twitter and Facebook feeds.", died: "It relied on the networks' APIs, and the networks began to offer the same feature for free.", url: "https://www.loot-drop.io/startup/378-nuzzel" },
+    { name: "ThinkUp", years: "2010 to 2017", funding: "US$1M", cause: "Competition", promise: "Personal analytics that explain your social media activity beyond likes and retweets.", died: "A desktop-era product with little marketing, overtaken by the networks' own mobile analytics.", url: "https://www.loot-drop.io/startup/624-thinkup" },
+    { name: "PostRocket", years: "2011 to 2014", funding: "US$610K", cause: "Product/Tech Failure", promise: "Data-driven timing to make Facebook page posts reach more people.", died: "Facebook changed its API and the company had no plan for a pivot.", url: "https://www.loot-drop.io/startup/457-postrocket" },
+    { name: "Pixelpipe", years: "2008 to 2013", funding: "US$2M", cause: "Competition", promise: "Post your photos and videos to every social network at once.", died: "The networks closed their APIs and added their own cross-posting.", url: "https://www.loot-drop.io/startup/435-pixelpipe" }
+  ],
+  whatChanged: [
+    `All five sat on top of a social network's data and died when the network changed its API or copied the feature. Tweet Hunter carried exactly that risk, and the founders named it as their first reason to sell. Within a year of the sale, Twitter's API went from free to US$42,000 a month for the product and was cut off for days.`,
+    `Three things differ. First, the founders were paid before the risk arrived: they sold at fifteen months, with the cash upfront, and let a larger company with other revenue carry the earn-out years. Second, the product was not analytics, which the networks give away, but writing help and scheduling that X itself does not sell; a language model made the writing part possible for two people. Third, the sales channel was the founders' own accounts on the same network, so growth cost nothing in advertising and the audience moved with them to the next products.`
+  ],
+  copy: {
+    verdict: "The method, yes. The deal, partly.",
+    text: "Shipping one product a week until one pays, selling it on the platform it serves, and paying a creator with a profit share are all repeatable with no money. The sale itself depended on a buyer who knew the founders, used the product, and had reasons of his own to buy; the earn-out that was expected to reach US$10 million to US$15 million closed at about US$8 million in the founders' later account.",
+    steps: [
+      "Set a weekly shipping rule and judge each product by paid signups, not by interest.",
+      "Build for the audience that already buys from you, on the network where they already see you.",
+      "Offer a creator a share of profits by contract in exchange for a launch to their audience.",
+      "Use a language model to shorten one step the customer already does by hand, and keep the customer's name on the output.",
+      "If the product depends on another company's API, price that risk into when you sell and how much you take in cash."
+    ],
+    open: "Any network or marketplace whose first-party creator tools are weak: LinkedIn, YouTube, newsletters, app stores. The same creator-partnership and weekly-shipping method applies to them."
+  },
+  watch: [
+    { title: "Platform risk", text: "The whole product runs on X's API. After the sale, the price went from zero to US$42,000 a month and access was cut for days. A policy change can end the product; the founders sold partly for this reason." },
+    { title: "The headline price is not the cash price", text: "The 8-figure number in the founders' announcement was the maximum with earn-outs. The cash was US$2 million. The founders later put the total at about US$8 million, below the US$10 million to US$15 million they expected." },
+    { title: "Founder statements only", text: "No payment processor or public filing confirms the revenue. The buyer confirmed a multi-million dollar deal but not the amount." },
+    { title: "Growth engine was the founders' audiences", text: "Sales came from the founders' and partner's X accounts. The buyer kept the founders for two years; the products' growth after that period is not public." }
+  ],
+  sources: [
+    { title: "JK Molina on X, 16 January 2023: We sold Tweet Hunter (thread, read through the Rattibha mirror)", url: "https://x.com/OneJKMolina/status/1614969492915863552", grade: "C", how: "Read in full. The first tweet was read through api.fxtwitter.com and the full thread through en.rattibha.com. Source for the dates, the buyer and the split of the US$2 million price." },
+    { title: "Tibo Louis-Lucas on X, 16 January 2023: I've just sold my startup for 8 figures (thread with the deal table)", url: "https://x.com/tibo_maker/status/1614966983698653184", grade: "C", how: "Read in full. The first tweets through api.fxtwitter.com, the full thread through en.rattibha.com, and the deal-structure image downloaded from the tweet. Source for the weekly-product challenge, the partnership effect, the broker offers, the WhatsApp negotiation and the earn-out table." },
+    { title: "Guillaume Moubeche, lempire blog, 16 January 2023: Acquiring a multi-million dollar SaaS business", url: "https://blog.lempire.com/how-i-turn-my-middle-school-mate-into-a-multi-millionaire/", grade: "B", how: "Read in full from a Wayback Machine copy; the live site did not answer. Buyer's statement. Source for the multi-million confirmation, the earn-out design, the origin of Taplio and the Paris lunch." },
+    { title: "They Got Acquired, 22 March 2023: How Pony Express' Tweet Hunter and Taplio sold to lempire", url: "https://theygotacquired.com/saas/pony-express-acquired-by-lempire/", grade: "C", how: "Read in full. Journalist's interview with Louis-Lucas. Source for the US$1 million annual revenue, US$100,000 MRR, the user counts, the January 2022 search for a buyer and the US$10 million to US$15 million expectation." },
+    { title: "Starter Story, 18 May 2023: How we built a $3.5M ARR LinkedIn tool that will be acquired for $10M-$15M", url: "https://www.starterstory.com/stories/pony-express-studio", grade: "C", how: "Read in full. Founder interview with Louis-Lucas. Source for the US$3.5 million ARR, the growth rate, the US$9 price, the US$4,000 to US$20,000 jump, the GPT-3 use and the founders' background." },
+    { title: "Indie Hackers, 11 September 2024: Here's how Tibo sold two products for $8M and why he'll never do it again", url: "https://www.indiehackers.com/post/heres-how-tibo-sold-two-products-for-8m-and-why-he-ll-never-do-it-again-iwykhfENoZqJgRLU33zv", grade: "C", how: "Read the open part; the rest is behind a free login. Source for the US$8 million total and the founder's later products." },
+    { title: "Failory, 28 May 2022: Bootstrapping a Twitter-related SaaS to $41K/mo", url: "https://www.failory.com/interview/tweet-hunter", grade: "C", how: "Read in full. Interview with Jacquesson. Source for the US$41,000 MRR, the launch channels, the US$5,000 MRR at three months and the Twitter quota problem." },
+    { title: "Indie Hackers, 4 March 2022: Interview with co-founder of Tweet Hunter ($20k MRR)", url: "https://www.indiehackers.com/post/interview-with-co-founder-of-tweet-hunter-20k-mrr-d447ff150f", grade: "C", how: "Read in full. Interview with Jacquesson recorded in November 2021. Source for the US$21,000 MRR, the team, the profit-share contract, the purchased competitor, no funding and the React stack." },
+    { title: "Indie Hackers, 5 October 2021: I built Tweet Hunter's MVP in 2 weeks. 4 months later it grew to $150k ARR. AMA", url: "https://www.indiehackers.com/post/i-built-tweet-hunters-mvp-in-2-weeks-4-months-later-it-grew-to-150k-arr-ama-a6ae1ee850", grade: "C", how: "Read the post and the first comments. Louis-Lucas's own post. Source for the US$150,000 ARR, the two-week build and the retitled valuation claim." },
+    { title: "AI21 Labs, 20 February 2023: How Tweet Hunter scaled to an 8-figure exit with AI21's LLM", url: "https://www.ai21.com/blog/tweet-hunter-case-study", grade: "C", how: "Read in full. A supplier's case study with quotes from Louis-Lucas. Source for the move from GPT-3 to AI21 models, the fine-tuning reason and the follower growth from 2,000 to 60,000." },
+    { title: "Indie Hackers, 23 May 2024: How Tibo Louis-Lucas went from bankruptcy to an eight-figure exit", url: "https://www.indiehackers.com/post/how-tibo-louis-lucas-went-from-bankruptcy-to-an-eight-figure-exit-607b389af1", grade: "C", how: "Read in full. Profile with quotes from Louis-Lucas. Source for the earlier startups, the broker, the earn-out expectation, the two-year stay and the US$42,000 a month API price." },
+    { title: "Indie Hackers, 31 May 2022: TweetHunter hits $1m ARR", url: "https://www.indiehackers.com/post/tweethunter-hits-1m-arr-8fc16ece7e", grade: "C", how: "Read in full. A newsletter item repeating the founders' announcement that the product reached US$1 million ARR one year after launch." },
+    { title: "Tweet Hunter pricing page, read 12 October 2026", url: "https://tweethunter.io/pricing", grade: "C", how: "Read in full, including the page script that sets the monthly and yearly prices." },
+    { title: "Loot Drop database export, 1,749 failed startups", url: "https://www.loot-drop.io/", grade: "C", how: "Local export. AI-written summaries, not independently verified. Source for the failed predecessors." }
+  ]
 }
 ];
 
