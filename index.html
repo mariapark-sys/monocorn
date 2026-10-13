@@ -4974,6 +4974,166 @@ const STORIES = [
     { title: "LinkedIn post by Tomasz Wesolowski, 10 July 2025, on a conference talk by Alex Rainey", url: "https://www.linkedin.com/posts/tomaszwesolowski_how-do-you-build-a-6-figure-saas-without-activity-7349050522416340992-v_3_", grade: "C", how: "Read in full. A listener's summary of the talk. The date was computed from the post's ID. It confirms the two founders, the Bubble Enterprise plan and the integrations. Not used for numbers." },
     { title: "Loot Drop database export, 1,749 failed startups", url: "https://www.loot-drop.io/", grade: "C", how: "Local export. AI-written summaries, not independently verified. Source for the failed predecessors." }
   ]
+},
+{
+  slug: "boltai",
+  name: "BoltAI",
+  country: "Vietnam",
+  sector: "Information Technology",
+  productType: "Native Mac app for many AI models",
+  aiType: "AI-native",
+  team: "solo",
+  outcome: "running",
+  evidence: "C",
+  added: "2026-10-13",
+  launchLabel: "May 2023",
+  outcomeLabel: "More than US$500K total revenue, January 2026",
+  sticker: "$500K+ total revenue",
+  outcomeUsd: 500000,
+  months: 32,
+  teamLabel: "1 founder, with help from his wife since August 2023",
+  fundingLabel: "None",
+  primaryFactor: "Distribution",
+  meters: { evidence: 1, copyable: 2, capital: 1 },
+  tags: ["AI-native", "Solo founder", "Bootstrapped", "Running", "B2C", "Productivity software"],
+  product: "A Mac app that puts many AI models in one chat window and behind one keyboard shortcut that works inside any other Mac app. You connect your own account at OpenAI, Anthropic, Google or another provider, or run a model on your own Mac, so BoltAI never pays for the model. You pay once for the app and get one year of updates.",
+  why: "It appeared in spring 2023, when people used ChatGPT in a browser tab and Mac users had to copy text between the browser and their other apps. The founder showed every step on X, one well-known founder reposted it, and AI directories and the Setapp app subscription brought buyers after that. He raised the price from US$19 to US$79 and kept the app running alone.",
+  summary: [
+    `BoltAI is a <dfn>native app</dfn> for the Mac. A native app is written for one operating system with that system's own tools, here Apple's Swift language, so it starts fast and can work inside other apps through a keyboard shortcut. It is a client for AI models: you paste your own <dfn>API key</dfn>, a password that lets a program call a model provider on your account, and BoltAI sends your text to OpenAI, Anthropic, Google or a model that runs on your own Mac. It is sold as a <dfn>perpetual license</dfn>: you pay once, you may use the version you bought for as long as you want, and you get one year of updates.`,
+    `Daniel Nguyen, a product engineer in Ho Chi Minh City, built the first version in a weekend in March 2023 and started selling it in May 2023. It had made about US$14,000 in total by September 2023. In September 2024 he said it made about US$15,000 a month on average, from license sales and from the Setapp app subscription. In March 2025 Indie Hackers reported US$15,000 to US$30,000 a month and wrote that this revenue is not recurring. He then spent more than three months in 2025 writing the app again from the start. Version 2 began to charge at the start of November 2025 and had taken US$1,162 by 16 November. In January 2026 his GitHub profile said BoltAI had made more than US$500,000 in total. The research for this page found no monthly figure for the whole product after March 2025.`,
+    `Every number on this page is a founder statement or an interview with him, grade C. No payment processor or buyer has confirmed them. TypingMind, also on this site and also built by one Vietnamese founder, is a web app, and BoltAI is a native Mac app. Both let customers bring their own API key, so neither pays for model usage. The page also shows what happened to earlier companies that built a better client for someone else's platform.`
+  ],
+  factsCaption: "A one-time purchase that made more than US$500,000 in 32 months, with a best reported level of US$15,000 to US$30,000 a month in March 2025, all self-reported",
+  factsRead: "How to read this table: a grade C value is a statement by the founder on his own pages, on X or in an interview, or a secondary account that says so. A \"calc\" value was computed on this page from the rows above it. No value is grade A or B. Most of the revenue is one-time license sales, so a monthly figure here is the revenue in that month and not recurring revenue, unless the row says recurring.",
+  timelineLead: "From a weekend prototype to more than US$500,000 in total revenue in 32 months, with a complete rewrite in the middle. Each entry carries its grade.",
+  pricing: {
+    caption: "BoltAI prices in October 2026, read from the company's pricing page (grade C)",
+    note: "All plans are one-time payments in US dollars for a perpetual license with one year of updates. After that year the customer may keep the last version received, or renew: individual licenses renew at 40% off the price first paid, team seats at US$79 per seat per year. Cloud Sync, the mobile app and new updates stop when the renewal lapses, so the renewal is the recurring part of the price. The page says a Windows version is coming soon. BoltAI is also included in the Setapp app subscription. In every case the customer pays the model provider separately for usage.",
+    rows: [
+      ["Essential", "79 one-time", "", "1 desktop device; 512 MB cloud storage"],
+      ["Pro", "99 one-time", "", "2 desktop devices and 1 mobile device; 1 GB cloud storage"],
+      ["Pro+", "199 one-time", "", "3 desktop devices and 2 mobile devices; 5 GB cloud storage"],
+      ["Team Perpetual", "99 one-time per seat", "", "5 seats minimum; 10 GB shared storage"]
+    ]
+  },
+  facts: [
+    { fact: "Total revenue of BoltAI, by January 2026", value: "more than US$500,000", grade: "C", note: "Founder's GitHub profile, last edited 27 January 2026: BoltAI is \"my top revenue generating product ($500K+)\". It gives no breakdown by year or by source.", src: [1] },
+    { fact: "Average revenue per month over the 32 months", value: "about US$15,600", grade: "X", note: "Calculated: US$500,000 divided by the 32 months from May 2023 to January 2026. A lower bound, because the profile says more than US$500,000.", src: [1, 3] },
+    { fact: "Revenue per month, March 2025 (the highest level reported)", value: "US$15,000 to US$30,000", grade: "C", note: "Indie Hackers interview, 6 March 2025. Revenue in that month, mostly one-time license sales. The article says: \"his revenue is not recurring\".", src: [2] },
+    { fact: "Average month in the same interview", value: "about US$25,000", grade: "C", note: "Not verified. This part of the interview needs a login. Two secondary summaries of the interview report it, together with a founder estimate of a margin close to 90%.", src: [19] },
+    { fact: "Revenue per month of all three products, March 2025", value: "US$18,000 to US$34,000", grade: "C", note: "Indie Hackers header. BoltAI, plus PDF Pals at US$1,000 to US$2,000 a month, plus KTool at US$1,500 monthly recurring revenue. The three ranges add up to US$17,500 to US$33,500.", src: [2] },
+    { fact: "Revenue per month, September 2024", value: "about US$15,000 on average", grade: "C", note: "Founder's unedited interview: license sales on the website plus subscription revenue through Setapp. The Indie Hackers article prints it as US$10,000 a month in one-time sales and US$5,000 recurring, and does not say which product the recurring part belongs to.", src: [3, 4] },
+    { fact: "Twelve months at those monthly levels", value: "US$180,000 at the 2024 average; US$180,000 to US$360,000 at the 2025 range", grade: "X", note: "Calculated: US$15,000 times 12, and the range of US$15,000 to US$30,000 times 12. These are not recurring run rates: a one-time sale must be made again every month.", src: [2, 3] },
+    { fact: "First 16 days of paid sales of version 2, November 2025", value: "US$1,162", grade: "C", note: "Founder's post with a screenshot of the Stripe app: gross volume from 1 to 16 November 2025, against US$0 in the same days of October. It shows only the account of version 2. Sales of version 1 in those days are not public.", src: [6] },
+    { fact: "Pace of version 2 sales in those 16 days, per 30 days", value: "about US$2,200", grade: "X", note: "Calculated: US$1,162 divided by 16 days, times 30. The first days after a release are not a normal month, and renewals and Setapp revenue may be counted elsewhere.", src: [6] },
+    { fact: "Total revenue of BoltAI by 28 September 2023", value: "about US$14,000", grade: "C", note: "Founder's post on Indie Hackers, four months after the launch.", src: [8, 9] },
+    { fact: "Total revenue of all his products by 19 April 2024", value: "US$100,000", grade: "C", note: "Founder's post on X and his newsletter of 1 May 2024, two years after he left his job. BoltAI was the largest part.", src: [10, 11] },
+    { fact: "Customers", value: "more than 7,000 in September 2024; more than 8,000 in March 2025", grade: "C", note: "Founder's interview and his post on X.", src: [3, 7] },
+    { fact: "New customers per month to September 2024", value: "about 440", grade: "X", note: "Calculated: 7,000 customers divided by the 16 months from May 2023 to September 2024.", src: [3] },
+    { fact: "Price of a license", value: "raised in steps from US$19 to US$79 by September 2024", grade: "C", note: "Founder's interview. At US$79 the monthly revenue was slightly lower than at US$39, with about half the number of customers, fewer refunds and fewer support requests. He kept US$79. Secondary summaries of the 2025 interview give a first price of US$9; not verified.", src: [3, 19] },
+    { fact: "Cost of model usage for BoltAI", value: "none", grade: "C", note: "Customers use their own API keys and pay the provider. Chats are stored on the customer's Mac.", src: [3, 4] },
+    { fact: "Updates shipped", value: "more than 100 by September 2024; 55 releases in the twelve months to October 2026", grade: "C", note: "Founder's interview, and a count of the monthly totals on the company's changelog page, November 2025 to October 2026.", src: [3, 16] },
+    { fact: "Time spent on the rewrite, 2025", value: "more than 3 months", grade: "C", note: "Founder's post of 2 November 2025. Version 2 had about 80% of the features of version 1 at its public beta on 6 October 2025 and about 95% on 2 November.", src: [5, 14] },
+    { fact: "Team", value: "one person in March 2025", grade: "C", note: "His words: \"One-person company\". His wife left her job in August 2023 to help with the products. A freelancer hired in 2024 left the same year.", src: [7, 13, 3] },
+    { fact: "Outside funding", value: "none", grade: "C", note: "Founder's post on X and the company's about page.", src: [7, 16] },
+    { fact: "Founder's followers on X", value: "38,000 in May 2024; 77,145 in October 2026", grade: "C", note: "His newsletter, and his public profile read on 13 October 2026.", src: [10, 21] },
+    { fact: "His other products", value: "PDF Pals: about US$25,000 in total and 700 paid customers by September 2024. KTool: US$1,500 monthly recurring revenue in March 2025", grade: "C", note: "Founder's interviews. Indie Hackers lists PDF Pals as revenue per month and only KTool as recurring revenue.", src: [2, 3] },
+    { fact: "Starter Story's figure, November 2024", value: "US$15,000 \"MRR\"", grade: "C", note: "A secondary account built on the September 2024 interview. It calls the figure monthly recurring revenue. The founder's own text says average monthly revenue, mostly one-time sales.", src: [18] },
+    { fact: "Time from launch to the January 2026 figure", value: "32 months", grade: "X", note: "Calculated: May 2023 to January 2026.", src: [1, 3] }
+  ],
+  timeline: [
+    { when: "About 2009", what: "Nguyen earns his first money online by selling a plugin for the forum software Invision Power Board. He leaves college and runs a WordPress consulting business that reaches US$100,000 in revenue, then closes it and works as a product engineer at startups.", grade: "C", src: [3] },
+    { when: "Before 2022", what: "Two products of his own fail: WordPress themes and plugins, and StatusBoard, an uptime monitoring service that he closes after about six months.", grade: "C", src: [3] },
+    { when: "2022", what: "He joins the founders' community on X, leaves his job and releases KTool, which sends web articles to Kindle e-readers. It takes more than a year to reach US$1,000 in monthly recurring revenue.", grade: "C", src: [3, 9, 10] },
+    { when: "28 March 2023", what: "With one year of savings left, he learns the OpenAI API to find freelance work, builds a Mac prototype in a weekend and posts a demo on X with the question \"Is this good enough to ship?\"", grade: "C", src: [12, 8, 3] },
+    { when: "May 2023", what: "BoltAI goes on sale as a one-time purchase. Growth is slow at first. Later a repost by Pieter Levels makes it spread widely on X; the founder gives no date for it.", grade: "C", src: [3] },
+    { when: "21 August 2023", what: "His wife leaves her job to help with the products.", grade: "C", src: [13] },
+    { when: "28 September 2023", what: "BoltAI has made about US$14,000. PDF Pals, a second Mac app that a BoltAI customer asked for, has made about US$6,000 in four months.", grade: "C", src: [8, 9] },
+    { when: "19 April 2024", what: "US$100,000 in total revenue from all products, two years after he left his job.", grade: "C", src: [10, 11] },
+    { when: "September 2024", what: "About US$15,000 a month on average, more than 7,000 customers, more than 100 updates, price raised to US$79. BoltAI is also in Setapp, which adds subscription revenue. A freelancer he hired has left.", grade: "C", src: [3, 4] },
+    { when: "20 January 2025", what: "He writes on Hacker News that BoltAI pays for his full-time work, and that he will add a subscription because cloud features have running costs that a one-time price cannot cover.", grade: "C", src: [17] },
+    { when: "6 March 2025", what: "Indie Hackers reports US$15,000 to US$30,000 a month for BoltAI. This is the highest level on record.", grade: "C", src: [2] },
+    { when: "23 March 2025", what: "He posts: one-person company, two years, more than 8,000 customers, no outside money, profitable.", grade: "C", src: [7] },
+    { when: "Mid-2025", what: "New users leave because the app is slow, and the old code is hard to change. He writes the app again from the start. It takes more than three months, and he publishes almost nothing in that time.", grade: "C", src: [5, 14] },
+    { when: "6 October 2025", what: "Version 2 opens as a public beta, free to use, with optional Cloud Sync.", grade: "C", src: [14] },
+    { when: "2 November 2025", what: "He turns on payment for version 2 and posts that it has made US$0 so far. He calls November the test of the decision to rewrite.", grade: "C", src: [5] },
+    { when: "16 November 2025", what: "Version 2 has taken US$1,162 in 16 days.", grade: "C", src: [6] },
+    { when: "27 January 2026", what: "His GitHub profile says BoltAI has made more than US$500,000.", grade: "C", src: [1] },
+    { when: "12 October 2026", what: "Version 2.18.0 is released. The site sells licenses at US$79 to US$199, offers a mobile app in beta for iPhone, iPad and Android, and says a Windows version is coming soon. Current monthly revenue is not public.", grade: "C", src: [15, 16, 20] }
+  ],
+  mechanism: [
+    { title: "Distribution through the founder's own posts", text: "He showed the prototype on X before it was finished and posted each new feature every week. A repost by a well-known founder, Pieter Levels, made the app spread widely after a slow start. He also listed the app in AI directories and paid for clicks in the one that converted best, wrote help articles that search engines found, and built small free Mac apps that link to BoltAI. One of them, ShotSolve, sent 1,700 visitors." },
+    { title: "A native app for a product that people used in the browser", text: "In 2023 people used ChatGPT in a browser tab. BoltAI put it behind a keyboard shortcut inside Xcode, Apple Notes and any other Mac app, which was the founder's own daily problem. He later added a full chat window, because only expert users understood the shortcut." },
+    { title: "No model cost, so a one-time price works", text: "Customers bring their own API key and pay the provider. Chats stay on the customer's Mac. The app has almost no cost per customer, so a single payment of US$19 to US$79 could pay for it, and one person could serve about 440 new customers a month." },
+    { title: "A higher price for fewer customers", text: "He raised the price from US$19 to US$79. Revenue at US$79 was slightly lower than at US$39, and he kept US$79 because he had about half the number of customers, with fewer refunds and fewer support requests. He says a founder who works alone must also optimize for his own happiness, not only for revenue." },
+    { title: "A second channel that recurs", text: "Setapp is a subscription service for Mac apps, and BoltAI receives subscription revenue from Setapp customers. The Setapp team also promoted the app, and many customers who found it there bought a license directly." }
+  ],
+  howBuilt: {
+    intro: "These details come from the founder's interview of September 2024, his announcement of version 2 and the company's pages. They are grade C.",
+    items: [
+      "Swift, SwiftUI and AppKit for the app, SQLite for local storage, and Sparkle for updates. The first version was built in a weekend.",
+      "The website uses Next.js and Tailwind CSS on Cloudflare Pages and Workers. The app files are served from Cloudflare R2.",
+      "Payments in 2024 went through Lemon Squeezy and Stripe. The pricing page in 2026 names Stripe.",
+      "Version 2, released in October 2025, is a new app written from the start: macOS 13 or later, sandboxed by default, a new chat renderer that he tested with a chat of 43,000 messages.",
+      "Cloud Sync in version 2 is optional and runs on Supabase with row-level security. API keys can be encrypted with a passphrase that only the customer knows.",
+      "Models: hosted providers through the customer's own API keys, local models through Ollama and LM Studio, and tools through MCP servers."
+    ],
+    src: [3, 14, 15, 16]
+  },
+  predecessorsIntro: "Four companies in the Loot Drop database built a better client for a platform that they did not control, or sold software once and could not pay for the updates. The values below are from that database and are not independently verified.",
+  predecessors: [
+    { name: "Sunrise", years: "2012 to 2016", funding: "US$8M", cause: "Competition", promise: "One calendar app for all your calendar accounts, on every device.", died: "Microsoft bought it in 2015 and closed it a year later, after moving its features into Outlook.", url: "https://www.loot-drop.io/startup/1957-sunrise" },
+    { name: "Mailbox", years: "2012 to 2015", funding: "US$5M", cause: "Competition", promise: "A faster mail app, with swipe gestures and a snooze button.", died: "Dropbox bought it and closed it. Google and Apple added the same features to their free mail apps, and it had no clear revenue model.", url: "https://www.loot-drop.io/startup/314-mailbox" },
+    { name: "Nuzzel", years: "2012 to 2019", funding: "US$5.5M", cause: "Competition", promise: "The news that your friends share, collected from Twitter and Facebook.", died: "It depended on the APIs of the two platforms. They changed the rules and offered a similar feature for free.", url: "https://www.loot-drop.io/startup/378-nuzzel" },
+    { name: "Tap to Learn", years: "2012 to 2015", funding: "US$500K", cause: "Competition", promise: "Learning games for children on tablets, each sold as a one-time purchase.", died: "One-time purchases limited its revenue. Competitors with subscriptions could pay for a constant flow of new content.", url: "https://www.loot-drop.io/startup/1181-tap-to-learn" }
+  ],
+  whatChanged: [
+    `The first three built a better client for mail, calendars or social feeds that belonged to someone else, and the owner of the platform added the feature, changed the rules or bought the app and closed it. The fourth sold its software once and could not pay for new work. BoltAI carries both risks. The model makers now offer their own Mac apps, and the founder wrote in January 2025 that a perpetual license is not sustainable once the product has cloud features with running costs.`,
+    `Three things differ. First, the platform is a paid API, and there are several providers plus models that run on the customer's own Mac, so the providers earn money each time BoltAI is used and no single one can end it. Second, the app has no usage cost and almost no server cost, so one person stayed profitable at a few hundred buyers a month. Third, the license was never unlimited: it includes one year of updates, and version 2 ties Cloud Sync and the mobile app to a yearly renewal. That renewal is the answer to the one-time problem, and no figure shows yet how many customers pay it.`
+  ],
+  copy: {
+    verdict: "The structure, yes. The 2023 opening, no.",
+    text: "In May 2023 there were few native Mac clients for ChatGPT. Now there are many, including those of the model makers. What remains available is the structure: a desktop app with no usage cost, sold once with a year of updates, by a person who can build native software and who shows the work in public. The same case also shows the limit: each sale happens once, the founder stopped publishing revenue during the rewrite, and he is now adding recurring parts.",
+    steps: [
+      "Build the native tool for a problem you have every day, in a weekend, and show it before it is finished.",
+      "Charge from the first version, and let customers bring their own API key, so the model is never your cost.",
+      "Raise the price until refunds and support requests fall to a level one person can handle.",
+      "Sell a year of updates with the license and a renewal after it, and put anything with a running cost behind the renewal."
+    ],
+    open: "Native desktop and mobile clients for new kinds of models, and for systems that the model makers serve late. BoltAI's own pricing page still lists its Windows version as coming soon."
+  },
+  watch: [
+    { title: "Self-reported, and no monthly figure found after March 2025", text: "The total of more than US$500,000 is one line in the founder's GitHub profile. The last monthly figure for the whole product that this research found is from March 2025. What the app makes per month in 2026, and whether revenue went up or down after the rewrite, is not verified." },
+    { title: "One-time revenue does not recur", text: "Most of the money is license sales, and each sale happens once. Indie Hackers states that the revenue is not recurring. Starter Story still printed the September 2024 average as MRR, so check the label on every BoltAI figure you read elsewhere." },
+    { title: "The rewrite cost months of sales effort", text: "New users were leaving because of slow performance, and the fix was a new app that took more than three months. Version 2 took US$1,162 in its first 16 days of paid sales, far below the levels of early 2025, though sales of version 1 in those days are not public." },
+    { title: "The platform owner can ship the same feature", text: "Three predecessors on this page ended when the platform shipped the same feature or bought the app. The model makers now have their own Mac apps. BoltAI's answer is to support every provider and local models in one app." },
+    { title: "One person", text: "In September 2024 he wrote that the largest risk for a business like his is the founder's health, after his fourth COVID infection and after a freelancer he had just hired left. He planned a small team then and called it a one-person company six months later." }
+  ],
+  sources: [
+    { title: "Daniel Nguyen's GitHub profile text, last edited 27 January 2026", url: "https://github.com/longseespace", grade: "C", how: "Read in full, as the raw README file, and checked its edit dates through the GitHub API. Source for the total of more than US$500,000 and the PDF Pals customer count." },
+    { title: "Indie Hackers, 6 March 2025: Making $30k/mo from an AI product with a perpetual license", url: "https://www.indiehackers.com/post/cRvgt7fySrr3M76MSVas", grade: "C", how: "Read the public part: the header, the introduction and the product list with revenue ranges. The rest needs a login and the Wayback Machine has no copy. Source for the US$15,000 to US$30,000 range and the statement that the revenue is not recurring." },
+    { title: "Daniel Nguyen's newsletter, 29 September 2024: Sep 2024: Interview on Indie Hackers", url: "https://newsletter.danielnguyen.me/p/sep-2024-interview-on-indie-hackers", grade: "C", how: "Read in full. The founder's unedited answers to the Indie Hackers interview. Source for the launch month, the US$15,000 average, the customer count, the price steps, the earlier products and the technical stack." },
+    { title: "Indie Hackers, 11 September 2024: How going viral on X helped this solopreneur reach $15k/mo with his native AI apps", url: "https://www.indiehackers.com/post/ZBbFBKrpwqZQkQsy7Bcs", grade: "C", how: "Read the public part and the comments. The full answers are in the founder's newsletter. Source for the split into one-time sales and recurring revenue, and for his comment that customers bring their own API key." },
+    { title: "Daniel Nguyen on X, 2 November 2025: I made $0 from BoltAI v2 so far", url: "https://x.com/daniel_nguyenx/status/1984806813439836490", grade: "C", how: "Read in full through the fxtwitter API. Source for the reasons for the rewrite, its length and the start of paid sales." },
+    { title: "Daniel Nguyen on X, 16 November 2025: I made $1,162 so far with BoltAI v2", url: "https://x.com/daniel_nguyenx/status/1990052287298105421", grade: "C", how: "Read in full through the fxtwitter API and looked at the attached Stripe screenshot. A screenshot posted by the founder is still a founder statement." },
+    { title: "Daniel Nguyen on X, 23 March 2025: I'm proud of BoltAI. One-person company, 2 years, 8,000+ customers", url: "https://x.com/daniel_nguyenx/status/1903858042317488447", grade: "C", how: "Read in full through the fxtwitter API." },
+    { title: "Indie Hackers, 28 September 2023, post by the founder: I reached $20k in revenue with my 2 smol AI apps", url: "https://www.indiehackers.com/post/i-reached-20k-in-revenue-with-my-2-smol-ai-apps-22d6c018eb", grade: "C", how: "Read in full. Source for the origin of the product and the first revenue total." },
+    { title: "Indie Hackers, 4 October 2023: 1 year as a bootstrapped founder: Daniel Nguyen discusses growing 3 tools to $32k in revenue", url: "https://www.indiehackers.com/post/1-year-as-a-bootstrapped-founder-growing-3-tools-to-32k-revenue-daniel-nguyen-2eea694a9c", grade: "C", how: "Read in full. A case study in the founder's words. Source for the first channels and the KTool figure." },
+    { title: "Daniel Nguyen's newsletter, 1 May 2024: $100K revenue after 2 years indie hacking", url: "https://newsletter.danielnguyen.me/p/100k-revenue-after-2-years-indie", grade: "C", how: "Read in full. Source for the US$100,000 total and the follower count in 2024." },
+    { title: "Daniel Nguyen on X, 19 April 2024: After 2 years indie hacking, I've just reached the $100k revenue milestone", url: "https://x.com/daniel_nguyenx/status/1781306247054241844", grade: "C", how: "Read in full through the fxtwitter API. Gives the date of the milestone." },
+    { title: "Daniel Nguyen on X, 28 March 2023: Is this good enough to ship?", url: "https://x.com/daniel_nguyenx/status/1640765174914387968", grade: "C", how: "Read in full through the fxtwitter API. The first public demo of the prototype." },
+    { title: "Daniel Nguyen on X, 21 August 2023: My wife just quit her job to help me growing our indie products", url: "https://x.com/daniel_nguyenx/status/1693465089805005238", grade: "C", how: "Read in full through the fxtwitter API." },
+    { title: "BoltAI changelog, 6 October 2025: BoltAI v2 is here", url: "https://feedback.boltai.com/changelog/boltai-v2-is-here", grade: "C", how: "Read in full. Source for the release of version 2, its license terms and its technical changes." },
+    { title: "BoltAI pricing page and renewal page, read 13 October 2026", url: "https://boltai.com/pricing", grade: "C", how: "Read in full, together with https://boltai.com/renew for the renewal discount. Source for the pricing table." },
+    { title: "BoltAI changelog, about page and home page, read 13 October 2026", url: "https://boltai.com/changelog", grade: "C", how: "Read the release list and its monthly counts, the about page and the home page. Source for the current version, the release counts and the statement of no outside funding." },
+    { title: "Hacker News comment by the founder (user longnguyen), 20 January 2025", url: "https://news.ycombinator.com/item?id=42765344", grade: "C", how: "Read in full through the Hacker News API. The account's profile names BoltAI and his X account. Source for his view on perpetual licenses and subscriptions." },
+    { title: "Starter Story, 10 November 2024: How Daniel Nguyen Grew Bolt AI to $15K MRR Rapidly", url: "https://www.starterstory.com/bolt-ai-breakdown", grade: "C", how: "Read in full. A secondary account of the September 2024 interview. Used only to show that it labels the figure as MRR." },
+    { title: "SoFarBot, 14 September 2026: How BoltAI sold up to $30K/month, and an API Token article of 11 August 2026 on the same interview", url: "https://www.sofarbot.com/stories/boltai-daniel-nguyen-25000-monthly-sales", grade: "C", how: "Read both in full. Secondary summaries of the March 2025 interview, which could not be opened in full. Used only for the row marked not verified." },
+    { title: "BoltAI documentation: BoltAI Mobile, getting started", url: "https://boltai.com/docs/boltai-mobile/getting-started", grade: "C", how: "Read the section on the beta. Source for the state of the mobile app." },
+    { title: "Daniel Nguyen's profile on X, read 13 October 2026", url: "https://x.com/daniel_nguyenx", grade: "C", how: "Read through the fxtwitter API. Confirms the account name, the follower count and that he still presents himself as the builder of BoltAI." },
+    { title: "Setapp listing for BoltAI, read 13 October 2026", url: "https://setapp.com/apps/boltai", grade: "C", how: "Read the listing. Confirms that BoltAI is still offered in the Setapp subscription." },
+    { title: "Loot Drop database export, 1,749 failed startups", url: "https://www.loot-drop.io/", grade: "C", how: "Local export. AI-written summaries, not independently verified. Source for the failed predecessors." }
+  ]
 }
 ];
 
