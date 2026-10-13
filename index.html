@@ -3566,6 +3566,165 @@ const STORIES = [
     { title: "X profile of Jacob Seeger, @Jacob_Seeger, read 12 October 2026", url: "https://x.com/Jacob_Seeger", grade: "C", how: "Read the profile through the fxtwitter API: 608 followers. His posts were not read." },
     { title: "Loot Drop database export, 1,749 failed startups", url: "https://www.loot-drop.io/", grade: "C", how: "Local export. AI-written summaries, not independently verified. Source for the failed predecessors." }
   ]
+},
+{
+  slug: "kindroid",
+  name: "Kindroid",
+  country: "USA",
+  sector: "Consumer software",
+  productType: "AI companion chat app",
+  aiType: "AI-native",
+  team: "small",
+  outcome: "running",
+  evidence: "C",
+  added: "2026-10-12",
+  launchLabel: "June 2023",
+  outcomeLabel: "US$9M annual recurring revenue, March 2026",
+  sticker: "$9M ARR, 5 people",
+  outcomeUsd: 9000000,
+  months: 33,
+  teamLabel: "1 founder, 4 people at US$5M ARR, 5 people at US$9M ARR",
+  fundingLabel: "Seed funding from Pear VC, amount not disclosed (directories say US$1M to US$2M)",
+  primaryFactor: "Timing",
+  meters: { evidence: 1, copyable: 1, capital: 2 },
+  tags: ["AI-native", "Small team", "Funded", "Running", "B2C", "AI companion"],
+  product: "A chat app for adults in which the user creates an AI character, called a Kindroid, by writing its backstory, key memories, personality, appearance and voice. The user then talks to it by text, voice call or live video call, and the character can send generated pictures and short videos of itself. The character keeps a memory of earlier conversations. The app is for users aged 18 or older and runs on the web, iOS and Android.",
+  why: "It launched in June 2023, when open-source language models had become good enough for a small company to build a companion, and when users of older companion apps were looking for a new one. The user writes the character, so a character from another app can be moved in. The company sells a subscription, prices its add-ons at the cost of the extra computing, and published an update about every eight days in 2026.",
+  summary: [
+    `Kindroid is an <dfn>AI companion app</dfn>. An AI companion app is a chat program in which the user talks to one lasting character instead of a general assistant. The character is played by a <dfn>large language model</dfn>, a program trained on very large amounts of text that writes each reply one word at a time. In Kindroid the user writes the character's backstory, key memories, personality, looks and voice, then talks to it by text, by voice call or by live video call. The character can also send generated pictures of itself, which the app calls selfies. The app is for adults only, and its company describes the AI as unfiltered.`,
+    `Jerry Meng launched Kindroid in June 2023. The Verge described him in December 2024 as a 26-year-old who had left Stanford University without a degree. A recruiting advert for the company, on the job board of its investor Pear VC, says that Kindroid grew "from 0 to $9M retentive ARR" with "a lean, 5-person team" and that it is "already profitable". The earliest dated copy of that text is from 15 March 2026. <dfn>Annual recurring revenue</dfn> (ARR) is the subscription revenue of the current month multiplied by twelve, so US$9 million of ARR means about US$750,000 a month. The advert does not define the word "retentive", and it is not a standard accounting term. An earlier copy of the same advert, dated 14 September 2025, gives US$5 million and a team of 4.`,
+    `Every revenue number on this page is the company's own statement, grade C. No payment processor, investor or journalist has confirmed it. The customer story that ElevenLabs, a supplier, published about Kindroid contains no revenue number at all. This page also lists the known risks of the category with their sources: new laws on companion chatbots, app-store rules, and user safety. It ends with four failed companies that sold company or closeness as a product.`
+  ],
+  factsCaption: "US$9 million in annual recurring revenue with 5 people, 33 months after launch, stated only in the company's own job advert",
+  factsRead: "How to read this table: a grade B value comes from independent press or from a store's own listing. A grade C value is a statement by the company, a statement that a supplier repeats, or an estimate by a third party that says so. A \"calc\" value was computed on this page from the rows above it. No value is grade A: no payment processor or filing confirms the revenue.",
+  timelineLead: "From a launch in June 2023 to a claimed US$9 million in annual recurring revenue in 33 months, then the end of the free tier in October 2026. Each entry carries its grade.",
+  pricing: {
+    caption: "Kindroid prices in October 2026: App Store prices from Apple's US listing, web prices from reviewers (grade C)",
+    note: "Kindroid's help page shows no prices. It says that the exact price appears at checkout and that the web is usually cheaper than the app stores, so the web prices here come from reviewers who wrote between April and June 2026. Ultra and MAX are add-ons that are billed monthly only, and each one needs the tier below it. A subscriber with all three pays US$98.97 a month on the web or US$113.97 through the App Store. Since 1 October 2026 there is no permanent free tier: a new account gets 50 messages and 5 selfies, then it becomes read-only until a 3-day trial or a subscription starts.",
+    rows: [
+      ["Free preview", "0", "0", "50 messages and 5 selfies, then read-only"],
+      ["Standard, web", "", "13.99", "reviewers; 10 Kindroids, 20 group chats, 1 million audio credits a month"],
+      ["Standard, App Store", "13.33", "15.99", "US$159.99 a year, or US$42.99 for 3 months"],
+      ["Ultra add-on, web", "", "24.99", "reviewers; added to Standard"],
+      ["Ultra add-on, App Store", "", "28.99", "added to Standard"],
+      ["MAX add-on, web", "", "59.99", "reviewers; added to Standard and Ultra"],
+      ["MAX add-on, App Store", "", "68.99", "added to Standard and Ultra"],
+      ["500,000 audio credits", "14.99 one-time", "", "App Store price; about 286 to 500 minutes of speech"],
+      ["100 selfie credits", "11.49 one-time", "", "App Store price"]
+    ]
+  },
+  facts: [
+    { fact: "Annual recurring revenue in the job advert, March 2026", value: "US$9 million", grade: "C", note: "The company's own recruiting text on the job board of its investor: \"from 0 to $9M retentive ARR\". The earliest dated copy is 15 March 2026, and a second copy is dated 7 April 2026. The advert does not define \"retentive\". No outside party has confirmed the figure.", src: [1, 2] },
+    { fact: "Revenue per month that this ARR means", value: "about US$750,000", grade: "X", note: "Calculated: 9,000,000 divided by 12 equals 750,000.", src: [1] },
+    { fact: "Team at that figure", value: "5 people", grade: "C", note: "The same advert: \"a lean, 5-person team\". The directory Tracxn also records 5 employees in its 2026 profile.", src: [1, 15] },
+    { fact: "ARR per person", value: "US$1.8 million a year", grade: "X", note: "Calculated: 9,000,000 divided by 5 equals 1,800,000.", src: [1] },
+    { fact: "Profit", value: "profitable, no figure given", grade: "C", note: "Both versions of the advert say \"already profitable\". In June 2026 the company wrote that its change to free access \"isn't about money or any financial trouble, we're doing fine\".", src: [1, 3, 7] },
+    { fact: "ARR in the earlier version of the advert", value: "US$5 million with 4 people", grade: "C", note: "A copy posted on Built In on 14 September 2025. The text says the figure was reached \"in just over a year\", so the figure may be older than this copy.", src: [3] },
+    { fact: "Change between the two versions of the advert", value: "1.8 times, in copies dated 6 months apart", grade: "X", note: "Calculated: 9 divided by 5 equals 1.8. The copies are dated September 2025 and March 2026.", src: [1, 3] },
+    { fact: "Third-party estimate of App Store revenue", value: "about US$250,000 a month", grade: "C", note: "An estimate by the app-research site ScreensDesign for the iOS app only, read on 12 October 2026. The site does not name its data source. It is not a company figure.", src: [13] },
+    { fact: "Share of the claimed revenue that this estimate covers", value: "about one third", grade: "X", note: "Calculated: 250,000 times 12 equals 3,000,000, and 3,000,000 divided by 9,000,000 equals 33.3%. The rest would come from web payments and Google Play. The company advises users to pay on the web.", src: [1, 8, 13] },
+    { fact: "Subscribers that US$750,000 a month would need at the Standard web price", value: "about 53,600", grade: "X", note: "Calculated: 750,000 divided by 13.99 equals 53,610, if every subscriber paid only the Standard price each month. The company does not publish its subscriber count.", src: [1, 12] },
+    { fact: "Launch", value: "June 2023", grade: "B", note: "The Verge, 3 December 2024: launched in June of the year before by Jerry Meng, whom it describes as a 26-year-old who left Stanford University without a degree.", src: [5] },
+    { fact: "Release of the iOS app", value: "2 August 2023", grade: "B", note: "Apple's App Store record. The seller is Beautifully Incorporated, the legal name of the company.", src: [10] },
+    { fact: "Usage, March 2024", value: "more than 500,000 people had tried the app; more than 90 minutes a day for the average user", grade: "C", note: "ElevenLabs customer story. ElevenLabs is a supplier and repeats what its customer told it.", src: [6] },
+    { fact: "Google Play listing, October 2026", value: "more than 1 million downloads, 26,000 reviews, 4.4 stars", grade: "B", note: "Google's own listing, rated Mature 17+, last updated on 6 October 2026.", src: [11] },
+    { fact: "App Store listing, October 2026", value: "9,700 ratings, 4.8 stars, age rating 18+", grade: "B", note: "Apple's own listing. Version 1.70 was released on 18 August 2026.", src: [10] },
+    { fact: "App Store price compared with the web price", value: "14% to 16% higher", grade: "X", note: "Calculated: 15.99 divided by 13.99, 28.99 divided by 24.99, and 68.99 divided by 59.99. The company says web prices are lower because the processing fees are lower.", src: [8, 10, 12] },
+    { fact: "Outside funding", value: "yes, from Pear VC; the company does not state the amount", grade: "C", note: "The advert says the company is backed by investors and it is published on Pear VC's job board. Caplight records a seed round on 1 July 2024 and US$2 million in total. NeuronFeed records US$1 million. Tracxn records no funding at all. These directories do not agree.", src: [1, 14, 15] },
+    { fact: "Free tier", value: "ended on 1 October 2026", grade: "C", note: "Company update log. Free accounts get a limited preview, then become read-only. The company's reason: the service is expensive to provide and a lower-quality free tier did not represent the product.", src: [7, 8] },
+    { fact: "Updates published in 2026", value: "33 dated entries from 8 January to 12 October", grade: "X", note: "Calculated: counted in the company's update log. 277 days divided by 33 equals one entry every 8.4 days.", src: [7] },
+    { fact: "Open position, September 2026", value: "1 Founding Engineer, US$200,000 to US$300,000 a year", grade: "C", note: "Published on Pear VC's job board on 3 September 2026. The salary range is from the Built In San Francisco copy.", src: [4] },
+    { fact: "Time from launch to the March 2026 figure", value: "33 months", grade: "X", note: "Calculated: June 2023 to March 2026.", src: [1, 5] }
+  ],
+  timeline: [
+    { when: "2023", what: "Replika, an older companion app, blocks erotic content after Italian regulators act against it, then brings it back with filters. Some of its users look for another app.", grade: "B", src: [5] },
+    { when: "June 2023", what: "Jerry Meng launches Kindroid. Users write their character's backstory and key memories themselves.", grade: "B", src: [5] },
+    { when: "2 August 2023", what: "The iOS app is released on the App Store.", grade: "B", src: [10] },
+    { when: "23 September 2023", what: "Soulmate, a competing companion app, announces that it is shutting down. The Verge follows one of its users, who moves his companion to Kindroid by describing her personality in words.", grade: "B", src: [5] },
+    { when: "1 March 2024", what: "ElevenLabs publishes a customer story: Kindroid uses its voices, more than 500,000 people have tried the app, and the average user spends more than 90 minutes a day in it. The story gives no revenue number.", grade: "C", src: [6] },
+    { when: "1 July 2024", what: "Seed round, as recorded by the directories Caplight and CB Insights. Pear VC is the named investor. The company has not published an amount.", grade: "C", src: [14] },
+    { when: "3 December 2024", what: "The Verge publishes a long report on AI companions with Meng among the founders interviewed. Kindroid is working on better voices and on video calls.", grade: "B", src: [5] },
+    { when: "11 September 2025", what: "The US Federal Trade Commission orders seven large companies, among them Character Technologies, Meta and OpenAI, to report how they test companion chatbots for harm to children and teens. Kindroid is not one of the seven.", grade: "B", src: [16] },
+    { when: "14 September 2025", what: "A copy of Kindroid's job advert says US$5 million in ARR, a team of 4, and profitable.", grade: "C", src: [3] },
+    { when: "13 October 2025", what: "California's governor signs SB 243, a law on companion chatbots that covers any operator with users in the state.", grade: "B", src: [17] },
+    { when: "15 March 2026", what: "A new copy of the job advert says US$9 million in ARR, a team of 5, and profitable.", grade: "C", src: [1] },
+    { when: "25 March 2026", what: "Live AI video calls leave beta: the character moves its lips and hands in real time during a call.", grade: "C", src: [7] },
+    { when: "3 April 2026", what: "Age verification starts for free accounts. An account that looks like a minor's must subscribe or pass a check by Yoti, an outside age-verification company.", grade: "C", src: [7, 9] },
+    { when: "April 2026", what: "The Android app is unavailable on Google Play. The company calls it a technical issue that it fixed on its side on 14 April. On 21 April, 7 days later, the app is still not restored.", grade: "C", src: [7] },
+    { when: "2 June 2026", what: "The log announces mobile app pricing changes and link-out purchases in the US apps, which means a button that opens the web checkout at web prices. The full announcement is on Discord and was not read.", grade: "C", src: [7, 8] },
+    { when: "1 October 2026", what: "The permanent free tier ends. Free accounts get a limited preview and then become read-only. The old interface is retired.", grade: "C", src: [7] },
+    { when: "12 October 2026", what: "The update log adds a new entry and the web app carries a build of the same day. The company still operates and still hires.", grade: "C", src: [4, 7] }
+  ],
+  mechanism: [
+    { title: "Timing", text: "The Verge reports that by 2023 open-source language models had improved so fast that building a companion was far easier than a few months before, and that dozens of companies appeared. In the same year Replika blocked content that its users valued, and Soulmate closed in September. Kindroid, launched in June, was open when those users looked for a new app." },
+    { title: "The user writes the character", text: "A Kindroid is defined by text that the user writes: backstory, key memories and other attributes. The user in The Verge's report moved his companion from an app that was closing by interviewing her for a week and writing her personality down. The same design means the character does not depend on one model version, because the description stays when the model changes." },
+    { title: "Subscribers pay for the computing", text: "There are no ads and the company says it does not sell data. The Standard subscription pays for the main model. The Ultra and MAX add-ons give more memory, and the company writes that they are priced to cover the cost of dedicated servers, not to make a profit. Extra audio credits are sold at cost. In October 2026 it ended the free tier, with the reason that paying subscribers were funding it." },
+    { title: "Web payments beside the app stores", text: "The help pages tell users that the web is cheaper and more flexible. On this page's numbers the App Store price is 14% to 16% higher than the web price. The US apps offer a button that opens the web checkout, announced in June 2026." }
+  ],
+  howBuilt: {
+    intro: "These details come from the company's help pages and job adverts, from a supplier's customer story and from The Verge. They are grade B and C. The company does not publish which base models it uses.",
+    items: [
+      "Its own named language models, served on its own computing: the flagship model in October 2026 is called Polaris and the default is called Ember. The September 2026 job advert lists fine-tuning pipelines and the upkeep of GPU clusters among the engineer's tasks. Fine-tuning means training an existing model further on chosen examples.",
+      "Voice from ElevenLabs in March 2024. The founder said this saved the time and cost of running voice models on Kindroid's own servers. Whether ElevenLabs is still the provider in 2026 is not verified.",
+      "Memory in three types: persistent text written by the user, a cascaded memory for the medium term, and long-term memories that are retrieved when relevant. Larger memory is what the paid add-ons sell.",
+      "Generated pictures, short videos and live video calls of the character, each with its own model versions and credit prices.",
+      "Web app, iOS app since 2 August 2023, and Android app. Subscriptions are sold through the App Store, Google Play and a web checkout.",
+      "Safety design: the company does not filter the model's replies. It scans user input and acts on accounts in three cases: plans for imminent self-harm, plans for imminent harm to others, and child sexual abuse material. A repeated self-harm detection shows crisis lines such as 988.",
+      "Age checks: a paid subscription counts as proof of age. A free account that a behaviour model flags as a possible minor must subscribe or pass a selfie or ID check by Yoti.",
+      "A public update log with 33 dated entries in 2026, and a page where paying subscribers comment on a policy before it changes."
+    ],
+    src: [4, 5, 6, 7, 8, 9, 10]
+  },
+  predecessorsIntro: "Four companies in the Loot Drop database sold company or closeness as a product, two as home robots and two as private social apps. The values below are from that database and are not independently verified.",
+  predecessors: [
+    { name: "Jibo", years: "2012 to 2018", funding: "US$73M", cause: "Competition", promise: "A social robot for the home that talks with the family and has a personality.", died: "The robot was expensive to build and to buy. Voice assistants from Amazon and Google did the useful tasks for far less money, and the emotional connection alone did not justify the price.", url: "https://www.loot-drop.io/startup/259-jibo" },
+    { name: "Anki", years: "2010 to 2019", funding: "US$182M", cause: "Ran Out of Cash", promise: "Small AI robots, Cozmo and Vector, that play, learn and react like a pet.", died: "Production costs and spending were high, the demand for home robots was too small, and the company could not raise more money.", url: "https://www.loot-drop.io/startup/6-anki" },
+    { name: "Path", years: "2010 to 2018", funding: "US$77M", cause: "Competition", promise: "A private social network limited to 150 close friends and family.", died: "It could not earn enough from its users, its paid features found few buyers, and Facebook had far more resources.", url: "https://www.loot-drop.io/startup/415-path" },
+    { name: "Couple", years: "2012 to 2015", funding: "US$500K", cause: "Competition", promise: "A private app for two partners to message, share photos and plan together.", died: "Free general messengers such as WhatsApp did the same job, and the app found no clear way to earn money.", url: "https://www.loot-drop.io/startup/1183-couple" }
+  ],
+  whatChanged: [
+    `Jibo and Anki tried to sell a companion as a machine. Each unit had to be manufactured, shipped and sold at a high price, and the conversation was limited, because language models that can hold a long conversation did not exist yet. Path and Couple sold closeness between people as a separate app, and free messengers offered the same thing without a charge.`,
+    `Language models changed the first problem. The conversation is now the product, it needs no hardware, and a team of five can serve it from rented or owned computing. Kindroid also charges for the part that the free messengers never had, which is a character that answers at any hour and remembers. What did not change is the cost side: Jibo and Anki died of production costs, and Kindroid writes that its service is expensive to provide and that its largest add-ons may lose money.`
+  ],
+  copy: {
+    verdict: "The app, hardly. The pricing logic, yes.",
+    text: "A companion app in 2026 needs its own model serving, picture, voice and video generation, age verification and a published safety protocol, and it must follow new laws in several places. Kindroid built these over three years with seed funding. The parts that a small founder can reuse are its pricing and its way of working with users.",
+    steps: [
+      "Let the user write and own the definition of the product's behaviour, so the value stays when the model changes.",
+      "Charge a base subscription, and sell the heavy computing as add-ons priced at cost.",
+      "Offer a web checkout beside the app stores, at a lower price, and say so in the help pages.",
+      "Publish every change in a dated log, and ask paying users before a policy change."
+    ],
+    open: "Products in which a model keeps a long memory of one user and the user pays for that continuity, in fields with fewer content and age rules than romance: language practice, coaching, and role-play tools for writers and game masters."
+  },
+  watch: [
+    { title: "The headline figure is one line in a job advert", text: "The US$9 million comes from recruiting text, which a company writes to attract candidates. The metric \"retentive ARR\" is not defined, no payment processor or journalist has confirmed it, and the company does not publish subscriber counts. The supplier page that first pointed to this story, by ElevenLabs, contains no revenue number. The advert also says the company was featured in the New York Times, the Wall Street Journal, the New Yorker and Business Insider; this page verified only The Verge." },
+    { title: "New laws on companion chatbots", text: "California's SB 243, signed on 13 October 2025, covers any operator with users in the state. It requires a notice that the chatbot is not human when a reasonable person could be misled, a published protocol against suicide and self-harm content, extra duties toward users known to be minors, and yearly reports from 1 July 2027. Kindroid publishes such a protocol on its moderation page. An injured person can sue for at least US$1,000 per violation. The Federal Trade Commission opened a study of companion chatbots in September 2025. Kindroid's own log says that laws requiring age checks are arriving worldwide. Each new rule is work for a team of five." },
+    { title: "App-store rules", text: "Apple's review guideline 1.1.4 forbids overtly sexual material. Kindroid is rated 18+ on the App Store and Mature 17+ on Google Play, and its moderation page describes an unfiltered AI that permits adult role-play. In April 2026 the Android app was unavailable on Google Play for at least 7 days; the company called it a technical issue. A removal from a store stops new installs and store billing there. During that outage the company told Android users to use the web app and to subscribe on the web." },
+    { title: "User safety", text: "The Verge describes users who formed strong attachments and suffered when an app changed its model or closed. Kindroid's policy is to leave the model unfiltered and to act only on accounts that plan imminent self-harm, plan harm to others, or produce child sexual abuse material; general expressions of despair do not trigger an intervention. The founder told The Verge that it is acceptable if a person finds more joy in an AI relationship than in a human one. A serious harm case at any companion app brings press attention and regulators to the whole category." },
+    { title: "The cost of serving", text: "The company writes that Kindroid is expensive to provide and that it expects to break even or lose money on the Ultra and MAX add-ons. It ended the free tier on 1 October 2026, which removes a cost and also removes the easiest way for new users to try the product for a long time. Profit depends on the price of computing and on how many preview users convert." }
+  ],
+  sources: [
+    { title: "Kindroid job advert, Founding Engineer, copy on the Flare Capital job board dated 15 March 2026", url: "https://careers.flarecapital.com/companies/bridgehealthai/jobs/70764263-founding-engineer-kindroid", grade: "C", how: "Read in full. The company's own recruiting text, copied from Pear VC's job board; the board files it under a wrong company name. Earliest dated copy with the US$9 million figure, the team of 5 and the word profitable. The date is the posting date in the page's data." },
+    { title: "Kindroid job advert, Founding Engineer, copy on Built In Montreal dated 7 April 2026", url: "https://builtinmontreal.com/job/founding-engineer-kindroid/8247134", grade: "C", how: "Read in full. The same text as source 1, under the name Pear VC. Confirms the wording and gives a second date." },
+    { title: "Kindroid job advert, earlier version, copy on Built In dated 14 September 2025", url: "https://builtin.com/job/founding-engineer/4460210", grade: "C", how: "Read in full. The same advert with US$5 million and a 4-person team. The page says the advert was removed on 18 September 2025." },
+    { title: "Pear VC job board on Ashby: Founding Engineer, Kindroid AI, published 3 September 2026", url: "https://jobs.ashbyhq.com/Pear-VC/68c48b6d-b2fe-4240-b190-6a4887e86e81", grade: "C", how: "Read the entry in the board's public data feed, because the page loads by script. The salary range comes from the copy at builtinsf.com/job/founding-engineer/11006924. Source for the legal name, the tasks and the open position." },
+    { title: "The Verge, 3 December 2024, Josh Dzieza: The confusing reality of AI friends", url: "https://www.theverge.com/c/24300623/ai-companions-replika-openai-chatgpt-assistant-romance", grade: "B", how: "Read in full. Independent reporting with founder interviews. Source for the launch month, the founder's background, the Replika and Soulmate events and the user accounts." },
+    { title: "ElevenLabs customer story, 1 March 2024: Kindroid gives voice to their AI companions with ElevenLabs", url: "https://elevenlabs.io/customers/kindroid", grade: "C", how: "Read in full. A supplier's page with a founder quotation. Source for the usage figures of March 2024. It contains no revenue number." },
+    { title: "Kindroid help center: Update log", url: "https://kindroid.ai/v2/docs/update-log/", grade: "C", how: "Read through a text-rendering proxy because the page loads by script. Read the entries on free access, age verification, Google Play, pricing and video calls, and counted the dated entries. The site's HTML carries a build stamp of 12 October 2026. The log prints day and month only; the year follows from the age-verification article dated 3 April 2026 and from notes marked October 2026." },
+    { title: "Kindroid help center: Subscriptions, and In-App Purchases", url: "https://kindroid.ai/v2/docs/subscriptions/", grade: "C", how: "Read in full through a text-rendering proxy. Source for the plan structure, the free preview, the add-on reasoning and the advice to pay on the web. The page gives no prices." },
+    { title: "Kindroid help center: Moderation Guidelines, and Age Verification", url: "https://kindroid.ai/v2/docs/moderation-guidelines/", grade: "C", how: "Read the sections on the three cases, the crisis protocol and the age checks, through a text-rendering proxy." },
+    { title: "Apple App Store listing: Kindroid: Your Personal AI, read 12 October 2026", url: "https://apps.apple.com/us/app/kindroid-your-personal-ai/id6451038161", grade: "B", how: "Read the listing and Apple's lookup record. Source for the in-app prices, the age rating, the rating count, the seller name, the release date and the current version." },
+    { title: "Google Play listing: Kindroid: Your Personal AI, read 12 October 2026", url: "https://play.google.com/store/apps/details?id=com.kindroid.app", grade: "B", how: "Read the listing. Source for the download band, the review count, the content rating and the date of the last update." },
+    { title: "WeavAI review, 8 April 2026, updated 17 June 2026: Kindroid AI review 2026", url: "https://weavai.app/blog/en/2026/04/08/kindroid-ai-review-2026-full-analysis-of-five-tier-memory-system-voice-calls-and-personalized-ai-companions/", grade: "C", how: "Read the pricing table. A reviewer. Source for the web prices, which the reviewer pages at jenova.ai and aiinsightsnews.net repeat." },
+    { title: "ScreensDesign app page: Kindroid: Your Personal AI", url: "https://screensdesign.com/apps/kindroid/", grade: "C", how: "Read the summary figures. A third-party estimate of iOS revenue and installs with no stated data source." },
+    { title: "Caplight company page: Kindroid valuation and funding history", url: "https://www.caplight.com/company/kindroid", grade: "C", how: "Read in full. A directory. Source for the seed round date, the total of US$2 million and the investor. CB Insights lists two rounds with Pear VC, and NeuronFeed gives US$1 million." },
+    { title: "Tracxn company page: Kindroid", url: "https://tracxn.com/d/companies/kindroid/__szE5vZ6lc8XQf00Fzgbn3vHHrDyBKmIEtbLmvtzPZUY", grade: "C", how: "Read the summary. A directory. Source for the employee count. It records no funding, which conflicts with source 14." },
+    { title: "Federal Trade Commission press release, 11 September 2025: FTC Launches Inquiry into AI Chatbots Acting as Companions", url: "https://www.ftc.gov/news-events/news/press-releases/2025/09/ftc-launches-inquiry-ai-chatbots-acting-companions", grade: "B", how: "Read in full through a text-rendering proxy, because the site refused a direct download. Source for the inquiry and the list of seven companies." },
+    { title: "California Legislative Information: SB 243, Companion chatbots, chaptered 13 October 2025", url: "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260SB243", grade: "B", how: "Read the digest and the sections on operators, minors, reporting and civil action in the official bill text." },
+    { title: "Apple App Review Guidelines, read 12 October 2026", url: "https://developer.apple.com/app-store/review/guidelines/", grade: "B", how: "Read guideline 1.1.4 and section 3.1 on payments." },
+    { title: "Loot Drop database export, 1,749 failed startups", url: "https://www.loot-drop.io/", grade: "C", how: "Local export. AI-written summaries, not independently verified. Source for the failed predecessors." }
+  ]
 }
 ];
 
