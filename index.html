@@ -1515,6 +1515,152 @@ const STORIES = [
     { title: "Pieter Levels, 26 July 2026: BigAI is cannibalizing everything that used to be apps for indiehackers", url: "https://levels.io/bigai-cannibalizing-indiehackers-apps", grade: "C", how: "Read in full. Source for the declining revenue statement." },
     { title: "Loot Drop database export, 1,749 failed startups", url: "https://www.loot-drop.io/", grade: "C", how: "Local export. AI-written summaries, not independently verified. Source for the failed predecessors." }
   ]
+},
+{
+  slug: "formula-bot",
+  name: "Formula Bot",
+  country: "USA",
+  sector: "Information Technology",
+  productType: "AI spreadsheet-formula generator, now a data-analysis chat",
+  aiType: "AI-native",
+  team: "solo",
+  outcome: "running",
+  evidence: "C",
+  added: "2026-10-12",
+  launchLabel: "28 August 2022",
+  outcomeLabel: "US$500K a year run rate, May 2025",
+  sticker: "$500K/yr run rate",
+  outcomeUsd: 504000,
+  months: 33,
+  teamLabel: "1 founder, plus two contract developers at about 20 hours a week each by 2025",
+  fundingLabel: "None",
+  primaryFactor: "Timing",
+  meters: { evidence: 1, copyable: 3, capital: 1 },
+  tags: ["AI-native", "Solo founder", "Bootstrapped", "Running", "B2C", "Spreadsheets"],
+  product: "You type what you want a spreadsheet to do, in plain words, and it returns the Excel or Google Sheets formula. Started in August 2022 as a one-page site built without code. Since 2024 it is a chat that reads uploaded files and connected data sources and returns charts, tables and reports. Renamed Better Analyst in 2026.",
+  why: "It was the first visible AI tool for a task that 750 million Excel users do, and it appeared three months before ChatGPT. A Reddit post and a TikTok video brought 100,000 visitors in a day. The founder put a paywall on the site when the OpenAI bill reached US$5,000, and 606 people paid in the first month.",
+  summary: [
+    `Formula Bot is an AI tool that turns a sentence such as "sum column B where column A says Paid" into a spreadsheet formula. It was built with <dfn>no-code</dfn> tools, programs such as Bubble that let a person assemble a web application by drawing screens and rules instead of writing code. It calls the OpenAI <dfn>API</dfn>, the paid interface through which a program sends text to a model and receives the answer, so the founder never trained a model. Since 2024 the product is a data-analysis chat: the user uploads an Excel or PDF file or connects Google Sheets or Google Analytics, asks questions, and receives charts, tables and reports. In 2026 the company renamed it Better Analyst.`,
+    `David Bressler, a director of analytics at a media agency in Orlando, Florida, built the first version during paternity leave in July 2022 and released it on 28 August 2022. A post on the Excel subreddit and a TikTok video brought about 100,000 visitors in a day and an OpenAI bill of about US$5,000 before any revenue. He added a login, a limit of 5 free formulas a month and a US$2.99 subscription. The first month ended with 55,000 active accounts, 606 paying subscribers and US$10,700 in revenue. By March 2023 <dfn>MRR</dfn>, monthly recurring revenue, the sum of all active subscriptions for one month, passed US$14,000 and total monthly revenue reached about US$23,000. He kept his job until 1 September 2024, then went full time. In May 2025 he wrote on Indie Hackers that the product made more than US$42,000 a month, which is an <dfn>ARR</dfn>, annual recurring revenue, of about US$500,000. Bubble reported 1 million users in April 2025 and a newsletter reported 1.2 million in October 2025.`,
+    `Every money figure on this page comes from the founder, through his own posts, interviews, or a third party quoting him, so the grade is C. No payment processor, buyer or journalist-reviewed document confirms them. One widely shared figure, US$2.8 million a year posted by Indie Hackers in April 2025, does not match the founder's own US$500,000 ARR written a month later on the same site, and this page does not use it.`
+  ],
+  factsCaption: "From US$10,700 in the first month to more than US$42,000 a month by May 2025, every figure self-reported (grade C)",
+  factsRead: "How to read this table: a grade C value is a founder statement in his own post or interview, or a third party's estimate that says so. A \"calc\" value was computed on this page from the rows above it. No value is grade A or B.",
+  timelineLead: "From a one-page formula generator built on paternity leave to a US$500,000-a-year data-analysis product, in 33 months. Each entry carries its grade.",
+  pricing: {
+    caption: "Better Analyst (formerly Formula Bot) prices read from the company's pricing page on 12 October 2026 (grade C). The page offers an annual option labelled \"save 50%\", but the annual prices load by script and could not be read.",
+    note: "The monthly prices are the regular prices. The page shows a half-price first month on each plan. Max and Business are priced per user. A free plan with limited usage exists and needs no card. In 2023 the only paid plan was US$6.99 a month or US$75 a year, and at launch it was US$2.99 a month.",
+    rows: [
+      ["Free", "0", "0", "limited usage, no card"],
+      ["Starter", "", "20", "250 chat messages a month, 2,500 AI actions, 2 dashboards"],
+      ["Max", "", "40 per user", "unlimited messages, 5,000 AI actions per user, 10 dashboards"],
+      ["Business", "", "80 per user", "unlimited messages, 15,000 AI actions per user, 20 dashboards, white-label embeds"],
+      ["Custom", "", "", "custom volumes and connectors, by demo"]
+    ]
+  },
+  facts: [
+    { fact: "Revenue per month, May 2025", value: "more than US$42,000", grade: "C", note: "Founder's own Indie Hackers post, 17 May 2025, headline \"after hitting $500k ARR\". The post's summary box gives \"Revenue >$42K a month\".", src: [1] },
+    { fact: "Run rate from the May 2025 figure", value: "about US$504,000 a year", grade: "X", note: "Calculated: US$42,000 times 12. This is the headline figure on this page. It matches the founder's own US$500,000 ARR.", src: [1] },
+    { fact: "Users, April 2025", value: "1 million", grade: "C", note: "Bubble's customer story, 23 April 2025, which quotes the founder. Users means accounts created, most of them free. A newsletter reported 1.2 million in October 2025.", src: [2, 8] },
+    { fact: "First month, September 2022", value: "55,000 active accounts, 606 paid subscribers, US$10,700 revenue", grade: "C", note: "Founder's X post of 2 October 2022. The paid plan was US$2.99 a month at the time.", src: [3, 6] },
+    { fact: "Revenue in the first three months", value: "about US$30,000, with MRR of about US$4,000", grade: "C", note: "Founder interviews with No Code MBA and the Hustlers newsletter, November and December 2022. Indie Hackers wrote US$20,000 in two months and US$3,000 MRR on 21 November 2022.", src: [6, 7, 14] },
+    { fact: "Revenue per month, February 2023", value: "US$22,000 to US$23,000, of which MRR above US$14,000", grade: "C", note: "Founder's Starter Story interview, 21 March 2023. The page's summary box says US$26,000 a month. The difference between total revenue and MRR is yearly plans and tips.", src: [4] },
+    { fact: "Revenue and profit, May 2023", value: "US$24,000 revenue, US$21,000 profit", grade: "C", note: "A third-party case study, September 2023, quoting the founder's listing on Acquire.com, where he offered the business for US$800,000. The listing itself is no longer online.", src: [5] },
+    { fact: "Users and paid users, September 2023", value: "650,000 free users, 10,900 paid users", grade: "C", note: "Same third-party case study. 10,900 is cumulative paid users, not active subscribers.", src: [5] },
+    { fact: "Paid share of users, early 2023", value: "about 5,000 of 750,000, or 0.7%", grade: "C", note: "Founder in a podcast quoted by Starter Story. The 5-free-formulas limit was enough for 97% of users, by his count.", src: [4] },
+    { fact: "OpenAI bill before any revenue", value: "about US$5,000 in the first two weeks, about US$10,000 in the hole after a few months", grade: "C", note: "Founder quoted by Bubble. The first version had no login and no usage limit.", src: [2, 8] },
+    { fact: "Fixed costs at launch", value: "US$25 a month for Bubble and US$10 for the domain", grade: "C", note: "Founder interview with No Code MBA, 2022.", src: [7] },
+    { fact: "Marketing spend in the first seven months", value: "US$5,000", grade: "C", note: "Founder's Starter Story interview. Influencer posts cost US$200 to US$3,000 each; some were free.", src: [4] },
+    { fact: "Share of customers using a personal email", value: "60%", grade: "C", note: "Founder's X post, 10 September 2024. He calls the product more B2C than B2B.", src: [10] },
+    { fact: "Team, 2025", value: "1 founder plus two contract Bubble developers at about 20 hours a week each", grade: "C", note: "Bubble's customer story. He hired the agency once MRR reached about US$5,000. Earlier he used Upwork contractors.", src: [2, 8] },
+    { fact: "Date the founder went full time", value: "1 September 2024", grade: "C", note: "Founder quoted by Bubble: he kept his job exactly a year to the day from 1 September 2023, after the product's income passed his salary.", src: [1, 2] },
+    { fact: "Outside funding", value: "none", grade: "C", note: "Founder in the Website Planet interview: not VC-backed. Consistent with every other source.", src: [13] },
+    { fact: "Indie Hackers' US$2.8 million a year figure, April 2025", value: "not used on this page", grade: "C", note: "An Indie Hackers X post of 8 April 2025 gives US$2.8M a year, 900K users and 87.5% profit margin. The founder's own post on the same site a month later gives US$500,000 ARR. The 87.5% margin is the May 2023 profit margin from the Acquire listing. The larger figure is unexplained.", src: [12, 1, 5] },
+    { fact: "Time from launch to the May 2025 figure", value: "33 months", grade: "X", note: "Calculated: 28 August 2022 to May 2025.", src: [1, 5] }
+  ],
+  timeline: [
+    { when: "May to July 2022", what: "Bressler, a director of analytics at a media agency, has his second child. On paternity leave he tests GPT-3 on Excel questions, learns Bubble from YouTube and builds a one-page site: an input box, a button, an output box.", grade: "C", src: [4, 2] },
+    { when: "28 August 2022", what: "Launch. Free, no login, no usage limit. A post on the Excel subreddit gets more than 10,000 upvotes; a TikTok account with 4.5 million followers posts a video; about 100,000 people visit in a day. The OpenAI bill reaches about US$5,000 in two weeks. He adds a tip page and receives a couple of thousand dollars from a couple of hundred users.", grade: "C", src: [5, 14, 2, 4] },
+    { when: "September 2022", what: "Login, a limit of 5 free formulas a month, and a US$2.99 subscription. First month: 55,000 active accounts, 606 paying subscribers, US$10,700 in revenue. A Product Hunt launch gives the best sales day.", grade: "C", src: [3, 14] },
+    { when: "November 2022", what: "About US$30,000 total revenue and US$4,000 MRR after three months, 1.1 million visitors, while he still works full time. Indie Hackers publishes the first interview.", grade: "C", src: [6, 7, 14] },
+    { when: "March 2023", what: "MRR above US$14,000 and about US$23,000 revenue in the last month. The plan is US$6.99 a month. About 10 copy products exist, some with the same front-end code. He has spent US$5,000 on marketing, mostly TikTok creators.", grade: "C", src: [4] },
+    { when: "May 2023", what: "US$24,000 revenue and US$21,000 profit in the month. He lists the business on Acquire.com for US$800,000; it does not sell. Around the same time, eight months after he bought the domain, Microsoft sends a cease-and-desist letter over the word Excel in it; he buys formulabot.com for US$500 and widens the product beyond formulas.", grade: "C", src: [5, 9] },
+    { when: "September 2023", what: "A third-party case study counts 650,000 free users and 10,900 paid users since launch and estimates US$192,760 total revenue.", grade: "C", src: [5] },
+    { when: "December 2023", what: "He publicly lists 13 competing formula generators and thanks them for pushing him to build more than a formula generator.", grade: "C", src: [11] },
+    { when: "1 September 2024", what: "He leaves his job after the product's income passes his salary. The product is now a chat over uploaded files and connected data sources. He hires a Bubble agency for development.", grade: "C", src: [1, 2] },
+    { when: "April 2025", what: "Bubble reports 1 million users. Indie Hackers posts a US$2.8 million a year figure on X that the founder's own later post does not support.", grade: "C", src: [2, 12] },
+    { when: "17 May 2025", what: "He writes on Indie Hackers that the product passed US$500,000 ARR, more than US$42,000 a month, with little marketing, and that marketing is the next focus.", grade: "C", src: [1] },
+    { when: "October 2025", what: "A newsletter reports 1.2 million users. Google Ads run only sometimes because the payback period can reach 8 months.", grade: "C", src: [8] },
+    { when: "September 2026", what: "formulabot.com redirects to betteranalyst.com. The product is renamed Better Analyst, with dashboards, scheduled tasks and a Slack bot. Plans are US$20, US$40 and US$80 a month.", grade: "C", src: [15] }
+  ],
+  mechanism: [
+    { title: "First to a task that hundreds of millions of people do", text: "In August 2022 GPT-3 could already write Excel formulas, but almost nobody had put an input box in front of it for that one task. The site asked for nothing, returned a formula in seconds, and was easy to film for TikTok. ChatGPT, which does the same thing for free, came three months later. By then the site had hundreds of thousands of accounts and was adding features ChatGPT does not have: add-ons inside Excel and Google Sheets, then file upload and charts." },
+    { title: "Raise the barrier to use, step by step", text: "In the founder's words, the biggest reason for the site's success was to gradually raise the barrier to usage. First free with no login. Then a login. Then a monthly cap. Then a subscription for unlimited use. Each step was taken after the previous one had brought users, so the paywall arrived with 55,000 active accounts already there." },
+    { title: "Almost no cost per formula", text: "A formula is a few dozen tokens in and out, so the model cost per request is tiny, and the site ran on a US$25-a-month Bubble plan. The May 2023 profit margin from the founder's own listing was 87.5%. The only expensive moment was the launch, when unlimited free use cost about US$5,000 in two weeks." },
+    { title: "Distribution by other people's videos", text: "The founder spent US$5,000 on marketing in seven months. He found TikTok creators through TikTok's Creator Marketplace, paid US$200 to US$3,000 a post or nothing, and chose by engagement, not follower count. He says he cannot tell which creator drove which signup, and that it worked anyway." }
+  ],
+  howBuilt: {
+    intro: "These details come from the founder's interviews and posts and from Bubble's customer story. They are grade C.",
+    items: [
+      "Built in Bubble, a no-code web-application builder, with no line of code written by the founder. The first version took about a week and a half of paternity leave; the public version with login and checkout came in September 2022.",
+      "The model is OpenAI's API. The product does not train or host a model. Usage limits, a login and a subscription were added after the first bill.",
+      "Add-ons for Excel and Google Sheets followed in 2022 and 2023, so the formula could be generated inside the spreadsheet.",
+      "After the Microsoft letter in 2023 the product widened into data analysis: upload Excel, CSV or PDF files, connect Google Sheets, Google Analytics, Search Console and databases, then ask questions and receive charts, tables, sentiment labels and cleaned data.",
+      "Development is done by two contract Bubble developers at about 20 hours a week each, hired through an agency once MRR reached about US$5,000.",
+      "Retention work: automated emails whose text depends on the questions a user asked and on the days since signup."
+    ],
+    src: [4, 2, 8, 9]
+  },
+  predecessorsIntro: "Five companies in the Loot Drop database sold an easier spreadsheet or an easier data analysis to people who already had Excel. The values below are from that database and are not independently verified.",
+  predecessors: [
+    { name: "Fieldbook", years: "2014 to 2019", funding: "US$1.7M", cause: "Competition", promise: "Spreadsheets with database features, without learning SQL.", died: "Excel and Google Sheets added the missing features faster than users could be persuaded to move. Switching costs were high.", url: "https://www.loot-drop.io/startup/142-fieldbook" },
+    { name: "Skysheet", years: "2009 to 2012", funding: "US$200K", cause: "Competition", promise: "A cloud spreadsheet with real-time collaboration and charts.", died: "Google and Microsoft moved their spreadsheets to the cloud and added collaboration. No clear difference remained.", url: "https://www.loot-drop.io/startup/1218-skysheet" },
+    { name: "DataNitro", years: "2012 to 2015", funding: "US$120K", cause: "Competition", promise: "Run Python scripts inside Excel for data analysis.", died: "Limited by Excel's own architecture. Power Query and Power BI, then Excel's own Python, did the job inside Excel.", url: "https://www.loot-drop.io/startup/1587-datanitro" },
+    { name: "SumAll", years: "2011 to 2019", funding: "US$15M", cause: "Competition", promise: "One data dashboard for small businesses, no data scientist needed.", died: "Free tools and large analytics products did the same. Small businesses would not pay the price, and churn was high.", url: "https://www.loot-drop.io/startup/587-sumall" },
+    { name: "Snapboard", years: "2020 to 2023", funding: "US$1.5M", cause: "Competition", promise: "All your developer tools and data in one customizable dashboard.", died: "Feature parity with Zapier and Power Automate, bigger budgets on the other side, and only subscriptions for income.", url: "https://www.loot-drop.io/startup/926-snapboard" }
+  ],
+  whatChanged: [
+    `Each of the five asked users to leave Excel, or to add a layer on top of it, and the owner of Excel or of Google Sheets then built the feature in. Formula Bot faces the same owners: Microsoft put Copilot into Excel and Google put Gemini into Sheets, both of which write formulas, and ChatGPT writes them for free. The founder's own December 2023 list of 13 copies shows how low the barrier was.`,
+    `Two things differ. First, the cost structure. The predecessors raised money and built teams before they knew who would pay. Formula Bot's fixed cost was US$35 a month, so a 0.7% paid share of users was a profit, not a problem, and no investor needed a bigger market. Second, the product did not stay a formula generator. The Microsoft letter in 2023 forced a new name, and the founder used it to move to the part that Excel does not do for a non-technical person: upload a file or connect a data source, ask a question, get the chart. That is where the US$20 to US$80 plans and the 2026 rename to Better Analyst come from.`
+  ],
+  copy: {
+    verdict: "The launch window, no. The method, yes.",
+    text: "Being the first AI formula generator was an opening of a few months in 2022, and it closed when ChatGPT arrived. The method is still available: take one task that a very large number of people do badly, put the thinnest possible interface over a model API, launch free where those people already talk, and add the login, the cap and the price only after the users are there.",
+    steps: [
+      "Pick a task with hundreds of millions of users and a short input and output, so model cost per request is near zero.",
+      "Build the first version with no-code tools in days, and launch it free with no login in the forum where the users are.",
+      "Set a spending alarm on the model API before launch. The founder did not, and paid US$5,000 for it.",
+      "Add the login, the monthly cap and the subscription one step at a time, each after the previous step has brought users.",
+      "Pay small video creators by engagement, not followers, and accept that you will not know which one worked.",
+      "When the platform owner copies the first feature, move to the next task that it does not do for a non-technical user."
+    ],
+    open: "Any single task inside a mass-market tool that a model can do from a sentence: formulas in spreadsheets, regular expressions, SQL queries, slide layouts, email filters, and the file-analysis step that follows each of them."
+  },
+  watch: [
+    { title: "Self-reported, and one figure is contradicted", text: "Every number is from the founder or from someone quoting him. Indie Hackers' own X account posted US$2.8 million a year in April 2025; the founder wrote US$500,000 ARR in May 2025. This page uses the founder's lower figure and cannot explain the higher one." },
+    { title: "The platform owners now ship the feature", text: "Microsoft Copilot in Excel and Google Gemini in Sheets write formulas inside the spreadsheet, and ChatGPT writes them for free. The founder said in 2023 that about 10% of churned customers named ChatGPT as the reason. The product's answer is to be the analysis layer, which is a more crowded market than the formula layer was." },
+    { title: "Mostly consumers, with a free tier that is good enough", text: "60% of customers use a personal email. In 2023 the free limit was enough for 97% of users and about 0.7% paid. Consumer subscriptions churn, and paid acquisition had payback periods of up to 8 months, so the founder runs ads only sometimes." },
+    { title: "Growth after the viral start is unclear", text: "US$23,000 a month in early 2023 and more than US$42,000 a month in May 2025 is less than a doubling in 26 months. The founder himself wrote that marketing had not been a focus until 2025." },
+    { title: "A rename in 2026", text: "formulabot.com now redirects to betteranalyst.com. A new name loses the search traffic and the links that carried the old one, and the pricing page shows no annual prices that can be read without running its scripts." }
+  ],
+  sources: [
+    { title: "Indie Hackers, 17 May 2025: Getting serious about marketing after hitting $500k ARR, by David Bressler", url: "https://www.indiehackers.com/post/getting-serious-about-marketing-after-hitting-500k-arr-8XGnzrxG1neA3jy37x2D", grade: "C", how: "Read the public part: the summary box (Revenue >$42K a month), the title and the first section, which gives the paternity-leave start and the move to full time. The rest is behind the Indie Hackers login. Source for the headline figure." },
+    { title: "Bubble customer story, 23 April 2025: How Formula Bot Built a 1 Million-User AI Tool on Bubble", url: "https://bubble.io/blog/formula-bot/", grade: "C", how: "Read in full from the Wayback Machine copy of 15 May 2026, because the live page loads by script. Founder quotes on the OpenAI bill, the full-time date, the agency and the user count." },
+    { title: "David Bressler on X, 2 October 2022: First month of @excelformulabot is in the books", url: "https://x.com/bresslertweets/status/1576392611480289282", grade: "C", how: "Read in full through api.fxtwitter.com. Source for the first-month accounts, subscribers and revenue." },
+    { title: "Starter Story, 21 March 2023: I Turned My Side Project into A $26K/Month SaaS Tool, interview with David Bressler", url: "https://www.starterstory.com/stories/excelformulabot", grade: "C", how: "Read in full. The page now shows the name Better Analyst. Source for the MRR, the monthly revenue, the price, the marketing spend, the barrier-to-use method and the Orlando location. Its monetization page quotes a podcast on 750,000 users and 5,000 paying." },
+    { title: "Indie Hackers, 10 September 2023: Case study: Excel AI bot makes projected $164,850 profit in 12 months", url: "https://www.indiehackers.com/post/case-study-excel-ai-bot-makes-projected-164-850-profit-in-12-months-402bf5338c", grade: "C", how: "Read in full. A third-party estimate built on the founder's Acquire.com listing and posts. Source for the launch date, the May 2023 revenue and profit, the asking price and the user counts. The Acquire listing itself could not be found in the Wayback Machine." },
+    { title: "Indie Hackers, 21 November 2022: Leveraging no code and influencers to hit $3k MRR in 2 months, David Bressler of Excelformulabot", url: "https://www.indiehackers.com/post/leveraging-no-code-and-influencers-to-hit-3k-mrr-in-2-months-david-bressler-of-excelformulabot-9ffd4bc22b", grade: "C", how: "Read the public summary; the interview is behind the login. Source for US$20,000 in two months and US$3,000 MRR. Niall Doherty's blog of the same day adds the US$2.99 a month and US$24.99 a year prices." },
+    { title: "No Code MBA, late 2022: Growing Excelformulabot to $30,000 in just 3 months", url: "https://nocode.mba/interviews/excel-formula-bot", grade: "C", how: "Read in full. Founder interview. Source for the US$4,200 MRR, the US$30,000 in three months and the fixed costs." },
+    { title: "Tiny Empires newsletter, 10 October 2025: 1.2 Million users as a solo founder", url: "https://tinyempires.substack.com/p/12-million-users-as-a-solo-founder", grade: "C", how: "Read in full. A secondary account by Joshua Tiernan. Source for the 1.2 million users, the Upwork contractors, the US$8,000 to US$10,000 loss before revenue and the ad payback period." },
+    { title: "David Bressler on X, 1 August 2024: domain purchase story, the Microsoft cease and desist", url: "https://x.com/bresslertweets/status/1818801254761406953", grade: "C", how: "Read in full through api.fxtwitter.com. Source for the letter, the US$500 domain and the pivot." },
+    { title: "David Bressler on X, 10 September 2024: Formula Bot is more B2C than B2B", url: "https://x.com/bresslertweets/status/1833477559767421345", grade: "C", how: "Read in full through api.fxtwitter.com. Source for the 60% personal-email share." },
+    { title: "David Bressler on X, 6 December 2023: I'm calling out all of my competitors", url: "https://x.com/bresslertweets/status/1732428331625095496", grade: "C", how: "Read in full through api.fxtwitter.com. Lists 13 competing formula generators." },
+    { title: "Indie Hackers on X, 8 April 2025: David Bressler (@bresslertweets): $2.8M/yr", url: "https://x.com/IndieHackers/status/1909662238123999441", grade: "C", how: "Read in full through api.fxtwitter.com. Cited only to record the contradicted figure; not used for any value on this page." },
+    { title: "Website Planet, undated, before April 2025: 900K Users As A Bootstrapped Solopreneur: How Formula Bot Founder David Bressler Did It", url: "https://www.websiteplanet.com/blog/formula-bot-interview/", grade: "C", how: "Read in full. Founder interview. The page carries no publication date. Source for the 900,000 signups, the no-investor statement and the pricing A/B test advice." },
+    { title: "The Hustlers newsletter, 2 December 2022: David's AI side project is making $4K+ monthly revenue", url: "https://hustlers.beehiiv.com/p/david-ai-excel-formula-bot", grade: "C", how: "Read in full. A secondary account. Source for the TikTok account size, the 1.1 million visitors and the Product Hunt launch day." },
+    { title: "Better Analyst pricing page (formerly formulabot.com), read 12 October 2026, with Wayback Machine snapshots of formulabot.com", url: "https://betteranalyst.com/#pricing", grade: "C", how: "Read in full for the monthly prices and plan limits; the annual prices load by script and could not be read. Wayback Machine index entries show formulabot.com serving its own page on 27 July 2026 and redirecting to betteranalyst.com on 2 September 2026." },
+    { title: "Loot Drop database export, 1,749 failed startups", url: "https://www.loot-drop.io/", grade: "C", how: "Local export. AI-written summaries, not independently verified. Source for the failed predecessors." }
+  ]
 }
 ];
 
