@@ -4525,6 +4525,150 @@ const STORIES = [
     { title: "Indie Hackers podcast, episode 278, 5 May 2023: Growing a Portfolio of AI Products Past $300k After a 7-Figure Exit with Danny Postma", url: "https://bizarro.dev.to/theindiehackerspodcast/278-growing-a-portfolio-of-ai-products-past-300k-after-a-7-figure-exit-with-danny-postma", grade: "C", how: "Read the episode title on the DEV Community mirror. The audio was not transcribed. Shows that the podcast also describes the sale only as seven figures." },
     { title: "Loot Drop database export, 1,749 failed startups", url: "https://www.loot-drop.io/", grade: "C", how: "Local export. AI-written summaries, not independently verified. Source for the failed predecessors." }
   ]
+},
+{
+  slug: "softgen",
+  name: "Softgen",
+  country: "Germany, now USA",
+  sector: "Information Technology",
+  productType: "AI app builder",
+  aiType: "AI-native",
+  team: "small",
+  outcome: "exit",
+  evidence: "C",
+  added: "2026-10-13",
+  launchLabel: "July 2024",
+  outcomeLabel: "US$500K to US$600K ARR when sold at an undisclosed price, March 2025",
+  sticker: "Sold at $500K ARR",
+  outcomeUsd: 500000,
+  months: 8,
+  teamLabel: "1 founder until November 2024, then 2 people at the sale",
+  fundingLabel: "None reported",
+  primaryFactor: "Distribution",
+  meters: { evidence: 1, copyable: 2, capital: 1 },
+  tags: ["AI-native", "Small team", "Bootstrapped", "Exit", "Vibe coding"],
+  product: "A person describes a web application in plain language. Softgen's AI agent writes a Next.js project with a database, user login and payments, shows a live preview, and changes the app when the person gives feedback. The code goes to the user's own GitHub repository.",
+  why: "A technical founder released an early full-stack AI app builder in July 2024, and revenue stayed flat for four months. Then a second person joined who worked only on distribution, and annual recurring revenue grew about 25 times in four months. They sold the product while the growth was visible and kept their company for the next product.",
+  summary: [
+    `Softgen is an <dfn>AI app builder</dfn>: a website where a person describes a web application in plain language and an AI model writes the code. This way of working is called <dfn>vibe coding</dfn>, which means that you build software by describing it to an AI model instead of writing the code yourself. Softgen builds <dfn>full-stack</dfn> apps. Full-stack means both the frontend, the part that the user sees, and the backend, the part that stores data and handles logins and payments.`,
+    `Marko Kraemer, then 19 and from Frankfurt, released Softgen in July 2024 as a product of his company Kortix AI. Revenue stayed at about US$2,000 a month until late November 2024, when Domenico Gagliardi joined to work on growth. Gagliardi wrote on 8 April 2025 that they had grown Softgen from US$20,000 to almost US$600,000 in <dfn>annual recurring revenue</dfn> in 90 days, and on 15 April 2025 that it was US$500,000 in four months. Annual recurring revenue (ARR) is the current monthly subscription revenue multiplied by twelve. Arising Ventures, a <dfn>holding company</dfn> in the United States, bought Softgen in March 2025. A holding company is a company that buys other companies and keeps them. No party has published the price. Kraemer writes that it was seven figures.`,
+    `The revenue figures at the sale are statements by the two founders, grade C, and the two figures by Gagliardi differ by US$100,000. The buyer later published US$52,000 of monthly revenue for Softgen under its ownership, grade B, which is the same level. This page shows each number with its grade. It also shows five failed startups that promised software without programmers before language models could write it.`
+  ],
+  factsCaption: "About US$500,000 to US$600,000 in annual recurring revenue eight months after launch, then a sale at a price that no party has published",
+  factsRead: "How to read this table: a grade B value was stated by the buyer, Arising Ventures, on the Softgen websites that it now controls. A grade C value is a statement by one of the two founders, or by a third party that says so. A \"calc\" value was computed on this page from the rows above it. No value is grade A.",
+  timelineLead: "From a side project to a sale in 8 months, and the buyer's changes after the sale. Each entry carries its grade.",
+  pricing: {
+    caption: "Softgen plans in October 2026, from the structured data in the company's homepage and the description of its pricing page (grade C)",
+    note: "The pricing page loads its table by script, so the yearly prices could not be read. A credit pays for AI work. Credits do not expire while the subscription runs, and unused credits move to the next month on Pro. Earlier prices: in October 2024 the launch offer was US$39 a month for Starter and US$49 a month for Pro. From 14 August 2025 the buyer charged US$33 a year plus AI usage at a 15% markup. The monthly credit plans in the table replaced that model.",
+    rows: [
+      ["Free trial", "0", "0", "trial credits, no card needed"],
+      ["Starter", "not read", "25", "500 Softgen credits a month"],
+      ["Pro", "not read", "49", "1,500 Softgen credits a month"]
+    ]
+  },
+  facts: [
+    { fact: "ARR at the sale, second founder's post of 8 April 2025", value: "almost US$600,000", grade: "C", note: "Domenico Gagliardi on X: from US$20,000 to almost US$600,000 ARR in 90 days.", src: [1] },
+    { fact: "ARR at the sale, same founder's article of 15 April 2025", value: "US$500,000", grade: "C", note: "From US$20,000 to US$500,000 ARR in 4 months. His profile line also says 0.5M ARR. This page uses the lower figure as the headline number.", src: [2] },
+    { fact: "Monthly recurring revenue within four months, first founder's profile", value: "US$50,000", grade: "C", note: "A third-party summary of Marko Kraemer's LinkedIn profile, not read at LinkedIn itself. Calculated: 50,000 times 12 equals 600,000.", src: [13] },
+    { fact: "Monthly revenue under the buyer, about October 2025", value: "US$52,000, profitable", grade: "B", note: "Stated by the current owner on its overview page, which is a sales document. The page has no exact date; it describes the 15 months after the July 2024 launch. Monthly revenue at that time included yearly licenses and AI usage fees, so it is not the same measure as recurring revenue.", src: [4] },
+    { fact: "Run rate from the buyer's figure", value: "US$624,000 a year", grade: "X", note: "Calculated: 52,000 times 12 equals 624,000.", src: [4] },
+    { fact: "Sale price", value: "not published", grade: "C", note: "Kraemer writes on his own site that Softgen was acquired for seven figures. The buyer has stated no price.", src: [5, 12] },
+    { fact: "Buyer and date of the sale", value: "Arising Ventures, March 2025", grade: "B", note: "The owner's timeline gives March 2025, and the footer of softgen.ai reads An Arising Ventures Enterprise. Gagliardi announced the sale on 8 April 2025.", src: [4, 8, 1] },
+    { fact: "What was sold", value: "the Softgen product, not the founders' company", grade: "C", note: "Before the sale the footer read a Kortix AI Corp Product. Kortix stayed with the founders. Softgen now belongs to Softgen Labs Inc. The legal form of the deal is not published.", src: [10, 8, 5] },
+    { fact: "Monthly recurring revenue, July to November 2024", value: "about US$2,000", grade: "C", note: "Gagliardi's article of 9 February 2025: steady at 2k MRR since July or August. Calculated: 2,000 times 12 equals 24,000, close to the US$20,000 ARR in his later posts.", src: [3] },
+    { fact: "Growth in ARR, late November 2024 to March 2025", value: "25 to 30 times", grade: "X", note: "Calculated: 500,000 divided by 20,000 equals 25, and 600,000 divided by 20,000 equals 30.", src: [1, 2] },
+    { fact: "People at the sale", value: "2", grade: "C", note: "Gagliardi writes that Kraemer was mostly alone on the project until he joined in late November 2024. Gagliardi kept a full-time job until early February 2025. Other staff or contractors: not verified.", src: [3, 2] },
+    { fact: "Website views per week", value: "from 3,000 to 8,000 up to more than 100,000 in 3 months", grade: "C", note: "Gagliardi on X, 20 March 2025.", src: [7] },
+    { fact: "Outside funding for Softgen", value: "none reported", grade: "C", note: "Gagliardi: bootstrapped, no VC. The owner's page calls Softgen the most established brand among app builders without venture capital. A wiki reports that Kortix, the founders' company, raised US$4 million in 2025: not verified.", src: [1, 4, 14] },
+    { fact: "Registered users, about October 2025", value: "186,000", grade: "B", note: "Owner's page, which also states 900 active paying customers and 400 new users a day. The homepage in October 2026 still shows 186,000.", src: [4, 8] },
+    { fact: "Monthly revenue per paying customer", value: "about US$58", grade: "X", note: "Calculated: 52,000 divided by 900 equals 57.78.", src: [4] },
+    { fact: "Team under the buyer", value: "5 people", grade: "B", note: "Owner's page: a chief executive, a chief technology officer, two senior engineers and one person for product and growth. The chief executive, KJ Erickson, also leads Arising Ventures.", src: [4, 12] },
+    { fact: "Time from launch to the sale", value: "8 months", grade: "X", note: "Calculated: July 2024 to March 2025.", src: [4, 6] }
+  ],
+  timeline: [
+    { when: "April 2024", what: "Kraemer, who had built websites and run a software studio since his school years in Frankfurt, starts Kortix AI.", grade: "C", src: [15, 5] },
+    { when: "12 July 2024", what: "He posts a demo on X: Softgen, which he calls an autonomous AI developer, builds a copy of X in less than 10 minutes. The post gets about 100,000 views. The buyer later dates the public launch to July 2024 and calls it a side project.", grade: "C", src: [6, 4] },
+    { when: "August to November 2024", what: "Monthly recurring revenue stays at about US$2,000. In October the site offers Starter at US$39 a month and Pro at US$49 a month and counts more than 200 makers.", grade: "C", src: [3, 10] },
+    { when: "Late November 2024", what: "Gagliardi, who had run more than 15 side projects next to a full-time job, meets Kraemer and joins to work on growth.", grade: "C", src: [3, 2] },
+    { when: "Early February 2025", what: "Gagliardi leaves his full-time job. The site counts more than 500 makers.", grade: "C", src: [3, 10] },
+    { when: "20 March 2025", what: "Gagliardi posts that weekly website views rose from 3,000 to 8,000 up to more than 100,000 in three months. The first activity he names is automated submission to hundreds of directories.", grade: "C", src: [7] },
+    { when: "March 2025", what: "Arising Ventures acquires Softgen.", grade: "B", src: [4] },
+    { when: "8 April 2025", what: "Gagliardi announces the sale on X: from US$20,000 to almost US$600,000 ARR in 90 days, no venture capital, no office.", grade: "C", src: [1] },
+    { when: "15 April 2025", what: "In an article he gives US$500,000 ARR in four months and writes that the two founders are working on their next AI product.", grade: "C", src: [2] },
+    { when: "14 August 2025", what: "The buyer changes the pricing to US$33 a year plus AI usage at a 15% markup, and calls it wholesale pricing.", grade: "B", src: [4] },
+    { when: "23 September 2025", what: "The Softgen account on X calls the product the world's first AI co-op.", grade: "C", src: [17] },
+    { when: "About October 2025", what: "The owner's overview page states 186,000 registered users, 900 paying customers, US$52,000 of monthly revenue and a team of 5.", grade: "B", src: [4] },
+    { when: "October 2026", what: "Softgen is online as An Arising Ventures Enterprise with monthly plans at US$25 and US$49. Kraemer leads Kortix, which publishes open-source software for AI agents.", grade: "B", src: [8, 9, 5, 14] }
+  ],
+  mechanism: [
+    { title: "Early in a new category", text: "Softgen was public in July 2024. The current owner calls it the first full-stack AI builder on the market, and Gagliardi calls it one of the first. Being early gave it a working product and paying users. It did not give it growth: revenue stayed near US$2,000 a month for four months." },
+    { title: "A second person for distribution", text: "Kraemer built the product and worked on it mostly alone. Gagliardi met him in November 2024 and took over the growth work. In the next four months ARR went from about US$20,000 to US$500,000 or more, which is 25 to 30 times. For the first two of those months Gagliardi still had a full-time job." },
+    { title: "Search traffic from automated directory listings", text: "Gagliardi's public thread names the first of three activities. They submitted Softgen to hundreds of web directories with an automation tool to collect backlinks. A backlink is a link from another website to yours, and search engines rank a site higher when it has many. Weekly views rose from between 3,000 and 8,000 to more than 100,000 in three months. The other two activities in the thread were not read for this page." },
+    { title: "A fast sale to an operator", text: "Softgen was sold eight months after launch and four months after the growth started. The buyer is a holding company that runs small software companies with its own staff, and its chief executive became the chief executive of Softgen. The founders kept their company, Kortix, and moved to its next product." }
+  ],
+  howBuilt: {
+    intro: "These details come from the first founder's launch post, archived copies of the Softgen website and the current owner's overview page. They are grade B and C.",
+    items: [
+      "The first public demo, on 12 July 2024, showed Softgen's AI agent building a copy of the X website in less than 10 minutes.",
+      "In October 2024 each project started from a Next.js boilerplate, which is a prepared project skeleton, with Tailwind CSS and Shadcn UI for the interface. Firebase supplied login, database and file storage. Stripe or Lemon Squeezy handled payments, and Resend sent email.",
+      "The user gives instructions in a chat and can upload images. The agent works in an autonomous mode or an interactive mode. A development server shows a live preview, each change is kept in a version history that can be reverted, and the code can be exported to GitHub.",
+      "The first plans counted AI revisions: 100 a month on Starter and 200 a month on Pro.",
+      "Under the buyer the stack changed: Next.js and Vite as frameworks, Daytona sandboxes as the development environment, Supabase as the backend, Vercel for deployment, and a choice of models from Anthropic, Google and OpenAI.",
+      "Growth work was cheap and automated: directory submissions for backlinks, and a founder who posted the numbers in public."
+    ],
+    src: [6, 10, 4, 7]
+  },
+  predecessorsIntro: "Five companies in the Loot Drop database promised websites or software without programmers, before language models could write an application. The values below are from that database and are not independently verified.",
+  predecessors: [
+    { name: "Builder.ai", years: "2016 to 2025", funding: "US$445M", cause: "Unit Economics", promise: "Custom apps for people who cannot program, built by an AI assembly line instead of expensive developers.", died: "The database records that a US$20,000 app cost up to US$35,000 to deliver, because offshore developers did most of the work that was sold as AI.", url: "https://www.loot-drop.io/startup/2170-builderai" },
+    { name: "Kite DevTool", years: "2014 to 2024", funding: "US$21M", cause: "Competition", promise: "AI code completion inside the programmer's editor, seven years before GitHub Copilot.", died: "Its own models, built before large language models, could not match Copilot, which also reached developers through GitHub and VS Code. The free product never earned enough.", url: "https://www.loot-drop.io/startup/2491-kite-devtool" },
+    { name: "The Grid", years: "2014 to 2020", funding: "US$4.7M", cause: "Product/Tech Failure", promise: "Websites that an AI designs for you, with no designer.", died: "The AI of that time produced designs of uneven quality. Wix, Squarespace and WordPress gave more reliable results, and users left.", url: "https://www.loot-drop.io/startup/618-the-grid" },
+    { name: "Crejo.Fun", years: "2020 to 2022", funding: "US$3M", cause: "No Market Need", promise: "A drag-and-drop builder so that creators in India could make their own mobile apps without programming.", died: "Creators needed a larger audience first. An app of their own meant design, updates and promotion work that they did not want.", url: "https://www.loot-drop.io/startup/2303-crejofun" },
+    { name: "Infogami", years: "2005 to 2008", funding: "US$12K", cause: "Competition", promise: "Anyone can build a dynamic website without coding.", died: "WordPress won that market with open-source software and plugins. The founder joined Reddit, and the product ended there.", url: "https://www.loot-drop.io/startup/1672-infogami" }
+  ],
+  whatChanged: [
+    `Each of the five promised that a person who cannot program would get working software. Before 2023 the software still had to be written or designed by people, or by AI that was not good enough. Builder.ai hid developers behind the word AI and lost money on each app. The Grid and Kite built their own AI and were passed by better tools. From 2024, language models could write a complete small application from a description, and a company could rent them by usage. One 19-year-old built Softgen as a side project, and two people brought it to about US$500,000 of ARR without outside money.`,
+    `The same change let many others in. Base44, another AI app builder on this site, was sold to Wix in June 2025 for about US$80 million in cash, a price with grade A evidence. Softgen was sold three months earlier at a price that no party has published, and it now competes with products that have much more money.`
+  ],
+  copy: {
+    verdict: "The product, hard. The growth method and the early sale, yes.",
+    text: "A general AI app builder now competes with Lovable, Bolt, Replit, v0 and Base44, which Softgen's own homepage names. The parts that can be repeated are different: add a person for distribution to a working product that does not grow, build search traffic with cheap automated work, and sell to an operator while growth is visible.",
+    steps: [
+      "Release a working product early in a new category and charge for it, even when revenue is small.",
+      "If you are a technical founder and revenue is flat for months, add a partner whose only job is distribution.",
+      "Automate the cheap growth tasks first, such as directory submissions for backlinks, and measure weekly visits.",
+      "Decide early whether you want to run the product for years. If not, sell while growth is visible. This sale closed eight months after launch."
+    ],
+    open: "An app builder for one industry or one country, with the integrations and rules of that market already built in. The general product is crowded. The owner's own plan is to earn money from templates, services and agents that are sold around the builder."
+  },
+  watch: [
+    { title: "Numbers that do not agree", text: "The same founder gave almost US$600,000 ARR in 90 days on 8 April 2025 and US$500,000 ARR in four months on 15 April 2025. The start level is US$20,000 ARR in those posts and US$2,000 a month, which is US$24,000 a year, in his February article. The founding year is 2023 in a review and a wiki, and 2020 in one news page, while the launch was in July 2024." },
+    { title: "No price, and no figure from the buyer for the date of the sale", text: "Seven figures is the first founder's phrase, so the price is between US$1 million and US$10 million if he is exact. Arising Ventures writes that its ideal acquisition has US$3 million to US$30 million of revenue, and Softgen was far below that. The buyer has not confirmed the ARR at the sale." },
+    { title: "Deleted and automatic sources", text: "Gagliardi deleted both articles from Medium, so this page read them from the Internet Archive, and only the public part of each. One news page that dates the sale to 22 May 2025 is written by AI and contains a quotation that it labels hypothetical. It is not used for any fact here." },
+    { title: "Revenue stayed at the same level after the sale", text: "The buyer's US$52,000 a month, about seven months after the sale, equals the level that the founders reported at the sale. The same page claims 20% to 30% monthly growth, which does not fit a level that did not change. The page calls itself a deck and names a contact at an outside advisory firm, which suggests that it is written for investors or buyers. The page does not say so. The homepage in October 2026 shows the same 186,000 users as that page." },
+    { title: "Thin margins against funded competitors", text: "Under the buyer, Softgen sold AI usage at a 15% markup and a license at US$33 a year, and then returned to monthly plans at US$25 and US$49. The owner's page says it gives up margin on purpose to be the cheapest. Competitors with venture capital can sell below cost for longer." }
+  ],
+  sources: [
+    { title: "Domenico Gagliardi on X, 8 April 2025: Softgen.ai has been acquired by Arising Ventures", url: "https://x.com/dom_gag_96/status/1909498247355515295", grade: "C", how: "Read in full through api.fxtwitter.com. Founder statement. Source for almost US$600,000 ARR in 90 days, the buyer and the bootstrapped status. His handle was DG_9_6 at that time." },
+    { title: "Domenico Gagliardi on Medium, 15 April 2025: We Sold our AI startup (500k ARR), What's next", url: "https://web.archive.org/web/20250513101521/https://gagliardidomenico.medium.com/we-sold-our-ai-startup-500k-arr-whats-next-f4c1f89c248d", grade: "C", how: "Read the public part in the Internet Archive copy of 13 May 2025. The author deleted the original, and the rest was for Medium members only. Source for US$500,000 ARR in 4 months and the month in which he joined." },
+    { title: "Domenico Gagliardi on Medium, 9 February 2025: I quit my full-time job: now bootstrapping a startup", url: "https://web.archive.org/web/20260116224123/https://gagliardidomenico.medium.com/i-quit-my-full-time-job-now-bootstrapping-a-startup-158fb5002329", grade: "C", how: "Read the public part in the Internet Archive copy. The author deleted the original. Source for the US$2,000 monthly revenue before he joined and for Kraemer working mostly alone." },
+    { title: "Softgen overview page by the current owner: The Original Full-Stack AI Builder", url: "https://teaser.softgen.ai/", grade: "B", how: "Read in full on 13 October 2026, with the page's script file for the numbers that the page shows as animated counters. A sales document by the buyer's side, with no exact date. Source for the sale month, the monthly revenue, the user and customer counts, the team and the later stack." },
+    { title: "Marko Kraemer's personal site", url: "https://markokraemer.com/", grade: "C", how: "Read in full. Founder statement. Source for his age and origin, for acquired for seven figures, and for his current work at Kortix." },
+    { title: "Marko Kraemer on X, 12 July 2024: Softgen, our new autonomous AI developer", url: "https://x.com/markokraemer/status/1811886439455674775", grade: "C", how: "Read in full through api.fxtwitter.com. Source for the first public demo and its view count." },
+    { title: "Domenico Gagliardi on X, 20 March 2025: thread on website traffic", url: "https://x.com/dom_gag_96/status/1902723039743156592", grade: "C", how: "Read the first two posts of the thread through api.fxtwitter.com. The remaining posts could not be opened. Source for the weekly views and the directory submissions." },
+    { title: "Softgen homepage, read 13 October 2026", url: "https://softgen.ai/", grade: "B", how: "Read in full, with the structured data inside the page. Controlled by the buyer. Source for the footer An Arising Ventures Enterprise, the company name Softgen Labs Inc., the user count, the named competitors and the two plan prices." },
+    { title: "Softgen pricing page, read 13 October 2026", url: "https://softgen.ai/pricing", grade: "C", how: "Read the page description only: Starter US$25 a month with 500 credits, Pro US$49 a month with 1,500 credits. The price table loads by script and could not be read." },
+    { title: "Internet Archive copies of the Softgen homepage, 8 October 2024 and 7 February 2025", url: "https://web.archive.org/web/20241008173841/https://softgen.ai/", grade: "C", how: "Read both in full. Source for the footer Softgen, a Kortix AI Corp Product, the launch prices, the maker counts and the first technology stack." },
+    { title: "Techleap Finder news entry, April 2025: Softgen AI sold for $500k ARR", url: "https://finder.techleap.nl/news/feed/softgen-ai-sold-for-500k-arr", grade: "C", how: "Read in full. A short summary of the Medium article on a startup map that runs on Dealroom data. Its title can be misread: US$500,000 is the revenue, not the price. It lists Softgen in Frankfurt and Arising Ventures in San Francisco. No link between Softgen and the Netherlands was found." },
+    { title: "Arising Ventures website", url: "https://www.arisingventures.com/", grade: "B", how: "Read in full. Source for the buyer's structure as a long-term holding company, its chief executive and its usual revenue range. The page does not name Softgen and gives no price." },
+    { title: "Happenstance profile of Marko Kraemer", url: "https://happenstance.ai/u/efb190ff-0def-4de5-a376-936912e0b532", grade: "C", how: "Read the summary section. An automatic summary of his LinkedIn profile. Source for US$50,000 monthly recurring revenue within four months." },
+    { title: "AI wiki on Miraheze: Kortix", url: "https://ai.miraheze.org/wiki/Kortix", grade: "C", how: "Read the history section. A wiki with no named author. Cited for Gagliardi's role and for the Kortix funding claim, which is not verified." },
+    { title: "Peerlist resume of Marko Kraemer", url: "https://peerlist.io/markokraemer/resume", grade: "C", how: "Read the experience section. Source for the start of Kortix AI in April 2024 and of Softgen in June 2024." },
+    { title: "Fahim AI review, 2026: I Tested Softgen AI for 60 Days", url: "https://www.fahimai.com/softgen", grade: "C", how: "Read the pricing and company sections. A reviewer's account of the US$33 a year model. It gives a founding year of 2023 and yearly revenue of about US$550,000 without a source." },
+    { title: "Softgen on X, 23 September 2025", url: "https://x.com/SoftgenAI/status/1970553075656991136", grade: "C", how: "Read in full through api.fxtwitter.com. Source for the co-op description." },
+    { title: "Signalbase news page, 22 May 2025: Arising Ventures Acquires Softgen AI", url: "https://www.trysignalbase.com/news/acquisitions/softgen-ai-acquired-by-arising-ventures-acquisition", grade: "C", how: "Read in full. An AI-written page with a quotation that it labels hypothetical. Cited only for the conflicting date and founding year." },
+    { title: "Loot Drop database export, 1,749 failed startups", url: "https://www.loot-drop.io/", grade: "C", how: "Local export. AI-written summaries, not independently verified. Source for the failed predecessors." }
+  ]
 }
 ];
 
