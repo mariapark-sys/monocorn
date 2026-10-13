@@ -4046,6 +4046,178 @@ const STORIES = [
     { title: "TrustMRR, searched 13 October 2026: no profile for AutoShorts.ai", url: "https://trustmrr.com/startup/autoaishorts.md", grade: "C", how: "The addresses for the slugs autoshorts, autoshorts-ai and autoshortsai answered \"Not found\". Read the markdown profile AutoAIShorts: it belongs to another site, autoaishorts.com. Listed only to prevent confusion." },
     { title: "Loot Drop database export, 1,749 failed startups", url: "https://www.loot-drop.io/", grade: "C", how: "Local export. AI-written summaries, not independently verified. Source for the failed predecessors." }
   ]
+},
+{
+  slug: "docsbot-ai",
+  name: "DocsBot AI",
+  country: "USA",
+  sector: "Information Technology",
+  productType: "AI chatbots trained on company documentation",
+  aiType: "AI-native",
+  team: "solo",
+  outcome: "running",
+  evidence: "C",
+  added: "2026-10-13",
+  launchLabel: "9 March 2023",
+  outcomeLabel: "US$1M annual recurring revenue, February 2026",
+  sticker: "$1M a year recurring",
+  outcomeUsd: 1000000,
+  months: 35,
+  teamLabel: "1 founder and owner; at US$1M ARR also 1 growth partner, a few employees and contractors",
+  fundingLabel: "None",
+  primaryFactor: "Timing",
+  meters: { evidence: 1, copyable: 2, capital: 1 },
+  tags: ["AI-native", "Solo founder", "Bootstrapped", "Running", "B2B", "Customer support"],
+  product: "A company connects its website, help center, files or old support tickets. DocsBot turns that material into a chatbot that answers customers or employees with links to the source passages, in a website widget, in Slack, by voice or through an API, and passes the conversation to a person when it cannot answer.",
+  why: "It opened in the week OpenAI released the ChatGPT API, after seven other AI products by the same founder had earned little. It sold to businesses, which stay longer than consumers. The last step to the first million came from higher prices and from removing the cheapest plan.",
+  summary: [
+    `DocsBot builds chatbots that answer from a company's own documentation. The method is <dfn>retrieval-augmented generation</dfn> (RAG): for each question the program first searches the company's documents for the passages that match, then gives those passages to a language model and asks it to answer only from them, with links to the sources. A company adds its website address, help-center articles, files or old support tickets, and gets a chat widget for its site, a bot for Slack, a voice agent, or an API.`,
+    `Aaron Edwards built it in four weeks while he was chief technology officer of WPMU DEV, a WordPress plugin and hosting company where he had worked since 2009. DocsBot was the eighth AI product that he launched in six months, and most of the others lost money or only covered their costs. The DocsBot beta opened on 9 March 2023, eight days after OpenAI released the ChatGPT API. One week later it had US$3,500 in monthly revenue, most of it from Japan, where one post about it was shown 2.3 million times. On 2 March 2026 he wrote that the company had crossed US$1 million in <dfn>annual recurring revenue</dfn> in February 2026. Annual recurring revenue (ARR) is the current monthly subscription revenue multiplied by twelve. That is 35 months after the beta, about four months later than he had planned, and he writes that a pricing change is what completed it.`,
+    `Every revenue number on this page is a statement by the founder, grade C: his blog, his posts on X, and an interview in an independent WordPress publication. No payment processor or buyer has confirmed the figures, and TrustMRR has no profile for the product. The figures do agree with each other across dates from 2023 to 2026. Edwards is the only owner, but he did not work alone: he hired a first employee one month after the launch, and a growth partner with a profit share joined in October 2025. The page also shows four failed startups that sold answers from a company's own knowledge before language models could read documents.`
+  ],
+  factsCaption: "US$1 million in annual recurring revenue 35 months after a beta launch, reported by the founder and not confirmed by a payment processor",
+  factsRead: "How to read this table: a grade C value is a statement by the founder in his blog, on X or to a journalist, or a figure from a company page or a review site. The one grade B value was announced to the press by the buyer of his earlier product. A \"calc\" value was computed on this page from the rows above it. No revenue value is grade A or B.",
+  timelineLead: "From a free chatbot for WordPress documentation to US$1 million in annual recurring revenue in 35 months. Each entry carries its grade.",
+  pricing: {
+    caption: "DocsBot plans on 13 October 2026: monthly prices from the company's pricing page, yearly prices from a competitor's review (grade C)",
+    note: "Yearly billing gives two months free, so the yearly column is the monthly price times 10 divided by 12; the company's own page confirms US$124 for Standard. An AI credit is one standard chat answer; larger models and actions use more credits per answer. Add-ons per month: 5,000 more credits for US$49, one more bot for US$19, 10,000 more source pages for US$29, one more team user for US$19 (Business and Enterprise only). A chat widget without the DocsBot name needs the Business plan. Customers can also connect their own model API key and pay the model provider directly.",
+    rows: [
+      ["Free", "0", "0", "1 bot, 50 source pages, 100 AI credits a month"],
+      ["Personal", "41", "49", "1 bot, 5,000 source pages, 5,000 AI credits a month"],
+      ["Standard", "124", "149", "3 bots, 15,000 source pages, 15,000 AI credits a month, 5 team users"],
+      ["Business", "416", "499", "10 bots, 100,000 source pages, 60,000 AI credits a month, 10 team users"],
+      ["Enterprise", "custom", "custom", "Custom quote"]
+    ]
+  },
+  facts: [
+    { fact: "Annual recurring revenue, February 2026", value: "more than US$1 million", grade: "C", note: "Founder's blog, 2 March 2026: \"We finally crossed $1M ARR in February.\" He gives no exact figure and no day. He repeats the milestone in his article of 14 September 2026. No payment processor has confirmed it.", src: [1, 2] },
+    { fact: "Monthly revenue that US$1 million ARR means", value: "about US$83,333", grade: "X", note: "Calculated: 1,000,000 divided by 12 equals 83,333.", src: [1] },
+    { fact: "What the US$1 million covers", value: "DocsBot, as far as the article says", grade: "C", note: "The article is about DocsBot's prices, plans and partner program. The founder's X profile says \"$1m+ ARR from my projects\", and he also owns Imajinn AI, a small image product. He does not publish the split.", src: [1, 22] },
+    { fact: "Time from the beta to US$1 million ARR", value: "35 months", grade: "X", note: "Calculated: March 2023 to February 2026. The founder writes that he expected to arrive about four months earlier.", src: [1, 11] },
+    { fact: "Monthly recurring revenue, 16 March 2023", value: "US$3,500", grade: "C", note: "One week after the beta. Monthly recurring revenue (MRR) is the subscription revenue of one month. He wrote that 95% of the customers were Japanese.", src: [8] },
+    { fact: "Monthly recurring revenue, 21 March 2023", value: "US$6,000", grade: "C", note: "He added that churn, the share of customers who cancel, was very high because there was no free trial.", src: [9] },
+    { fact: "ARR of all his products together, 27 May 2023", value: "US$250,000", grade: "C", note: "DocsBot, Imajinn AI and Infinite Uploads combined. Not a DocsBot figure.", src: [10] },
+    { fact: "ARR of all his products together, 2 April 2024", value: "US$500,000", grade: "C", note: "He calls DocsBot the main part and does not give the split. Infinite Uploads, still included here, never passed about US$3,000 MRR according to The Repository.", src: [6, 3] },
+    { fact: "Time from US$500,000 to US$1 million", value: "22 months", grade: "X", note: "Calculated: April 2024 to February 2026. The step before, US$250,000 to US$500,000, took 11 months. The two earlier figures cover all his products, so the comparison is approximate. Growth slowed.", src: [1, 6, 10] },
+    { fact: "Effect of the price rise of about June 2025, after three months", value: "MRR up 12.5%, subscribers down 2.6%", grade: "C", note: "He removed the lowest plan and raised the main plan by 50%. Churn rate down 14.7%, revenue per customer up 15.5%, customer lifetime value up 35.4%. Existing customers kept their old price, and about 15% upgraded on their own.", src: [5] },
+    { fact: "Growth in the second half of 2025", value: "flat", grade: "C", note: "Founder: growth went flat through most of the third and fourth quarter of 2025.", src: [1] },
+    { fact: "Trend in 2026", value: "fewer signups, more revenue per customer", grade: "C", note: "Founder, 14 September 2026: revenue per customer and lifetime value climbed enough to cover the drop in signups, \"barely\". He has published no ARR figure after February 2026.", src: [2] },
+    { fact: "Share of paid checkouts that came from search", value: "48.5% in 2024, 40.6% in 2026", grade: "C", note: "January to August of each year, from the company's analytics. AI assistants were the tracked source of 4.7% of paid checkouts in 2026, and 18.2% of the answers from people who booked a demo named an AI assistant.", src: [2] },
+    { fact: "Customers, October 2026", value: "more than 3,000 businesses", grade: "C", note: "Company's about page. The home page also counts more than 75,000 users, which includes free accounts. About a quarter of customers were in Japan in October 2025.", src: [14, 3] },
+    { fact: "People at US$1 million ARR", value: "1 owner, 1 growth partner, a few employees and contractors", grade: "C", note: "No exact count is published. First full-time employee in April 2023. In October 2025 the founder wrote of a few employees plus contractors, and of his son in marketing. LinkedIn lists 3 employees in October 2026, and Latka recorded 1 person there in July 2024.", src: [4, 7, 11, 20, 21] },
+    { fact: "The growth partner's stake", value: "profit share and phantom equity, not shares", grade: "C", note: "Josh Dailey joined full-time on 1 October 2025 as Chief Growth Officer. Phantom equity is a contract that pays cash tied to the value of the company without giving ownership.", src: [4, 3] },
+    { fact: "Outside funding", value: "none", grade: "C", note: "The company's about page calls it a bootstrapped business, which means paid for from its own revenue. The founder kept his job as CTO until August 2023.", src: [14, 11] },
+    { fact: "Legal owner of DocsBot", value: "UglyRobot, LLC, Delaware", grade: "C", note: "The founder's own company, separate from WPMU DEV, where he was an employee from 2009 to 2023 and then a part-time advisor.", src: [14, 18, 3] },
+    { fact: "Earlier product sold, November 2024", value: "Infinite Uploads, price not disclosed", grade: "B", note: "The buyer, ClikIT, announced the purchase to the press. The founder writes that the offer was close to his asking price of 3 times ARR, with about 40% paid at once and the rest over three years.", src: [18, 19] },
+    { fact: "Cost of the SOC 2 Type II audit, 2025", value: "US$1,200 for the auditor", grade: "C", note: "SOC 2 is a security audit that business customers ask for. The compliance tool was quoted at US$4,000 to US$6,000 a year. He expects US$5,000 to US$6,000 a year in total from now on.", src: [7] },
+    { fact: "Card payments in 2023 up to 16 October", value: "3,240, with 0 disputes", grade: "C", note: "Founder on X, as an argument for selling to businesses.", src: [11] },
+    { fact: "List price of the middle plan, monthly billing, August 2026", value: "DocsBot US$149, Chatbase US$150, SiteGPT US$129", grade: "C", note: "From DocsBot's own comparison page, checked by the company on 25 August 2026. Competitors' reviews of DocsBot recommend their own cheaper plan or a price per ticket.", src: [17, 25, 26] },
+    { fact: "Founder's stated goal, October 2026", value: "US$5 million ARR", grade: "C", note: "Text of his X profile. In October 2025 he and his partner told The Repository that they plan to grow the company for three to five years and then sell it.", src: [22, 3] }
+  ],
+  timeline: [
+    { when: "2009 to 2023", what: "Edwards is chief technology officer of WPMU DEV, which sells WordPress plugins and hosting. He sees how much work the same support questions cost.", grade: "C", src: [3, 23] },
+    { when: "2021", what: "He launches Infinite Uploads, a cloud storage plugin for WordPress, with his friend Josh Dailey. It never passes about US$3,000 in monthly recurring revenue.", grade: "C", src: [3, 6] },
+    { when: "2022 to early 2023", what: "He teaches himself Python and React and launches eight AI products in six months while employed. Most lose money or only cover their costs.", grade: "C", src: [3, 6] },
+    { when: "February 2023", what: "He releases ChatWP, a free chatbot trained on the WordPress documentation, and asks testers on a waiting list whether they would use the same thing for their own business. They say yes.", grade: "C", src: [3] },
+    { when: "9 March 2023", what: "Beta of DocsBot, eight days after OpenAI released the ChatGPT API. Customers bring their own OpenAI key, so the product has no model cost and can offer a free plan.", grade: "C", src: [11] },
+    { when: "13 March 2023", what: "A Japanese technology account posts about DocsBot. The post is shown 2.3 million times. The servers go down, and more than 50 support tickets arrive in Japanese.", grade: "C", src: [8] },
+    { when: "16 to 21 March 2023", what: "US$3,500 in monthly recurring revenue after one week, US$6,000 five days later.", grade: "C", src: [8, 9] },
+    { when: "10 April 2023", what: "He hires his first full-time employee.", grade: "C", src: [11] },
+    { when: "27 May 2023", what: "All his products together reach US$250,000 ARR.", grade: "C", src: [10] },
+    { when: "1 August 2023", what: "He leaves the CTO role for a part-time advisory role and works full-time on his own products.", grade: "C", src: [11] },
+    { when: "5 November 2023", what: "OpenAI is about to release its own chatbot builder. He writes that it will work as a free trial of his product, and four days later he connects DocsBot to it.", grade: "C", src: [12] },
+    { when: "2 April 2024", what: "All his products together reach US$500,000 ARR. He names US$1 million as the next goal.", grade: "C", src: [6] },
+    { when: "25 November 2024", what: "He sells Infinite Uploads to ClikIT to spend his time on DocsBot.", grade: "B", src: [18, 19] },
+    { when: "About June 2025", what: "He removes the lowest plan and raises the main plan by 50%. After three months MRR is 12.5% higher with 2.6% fewer subscribers.", grade: "C", src: [5] },
+    { when: "1 to 3 October 2025", what: "Josh Dailey joins as Chief Growth Officer with a profit share. DocsBot completes its SOC 2 Type II security audit.", grade: "C", src: [4, 7] },
+    { when: "July to December 2025", what: "Growth is flat.", grade: "C", src: [1] },
+    { when: "February 2026", what: "ARR passes US$1 million after a pricing change that was planned for close to a year. The consumer plan is removed, and an agency partner program starts.", grade: "C", src: [1] },
+    { when: "17 June 2026", what: "New pricing by AI credits, with add-ons and the option to connect the customer's own model API key.", grade: "C", src: [16] },
+    { when: "14 September 2026", what: "He reports a real drop in signups in 2026. Higher revenue per customer covers it, in his word, barely.", grade: "C", src: [2] },
+    { when: "5 to 7 October 2026", what: "Nearly 90 product announcements in the twelve months since the partner joined. A business podcast publishes an episode with him titled The $1M/Year AI Business Anyone Can Start.", grade: "C", src: [13, 23] },
+    { when: "October 2026", what: "The product runs and announces a week of releases for 2 to 6 November 2026.", grade: "C", src: [24] }
+  ],
+  mechanism: [
+    { title: "Timing", text: "OpenAI released the ChatGPT API on 1 March 2023. Edwards rewrote his nearly finished product for it the same day and called the result more powerful, faster and 10 times cheaper. The beta opened eight days later, and a single post in Japan brought the first paying customers. In October 2025 he said that it was a blessing to be at the very beginning of the public excitement about AI." },
+    { title: "Seven launches before the one that paid", text: "An image plugin spread widely on X and almost nobody paid. An avatar product made about US$9,000 and then demand ended. He writes that the consumer products attracted visitors who wanted to try a new toy and not pay. Each launch reused code from the last, so the eighth product took four weeks." },
+    { title: "Business customers", text: "A company that puts a support bot on its site keeps paying while the bot answers tickets. By mid-October 2023 he reported 3,240 card payments in that year without one dispute. The company names Sony Network Communications, Sentry and StellarWP as customers." },
+    { title: "A price rise completed the million", text: "About June 2025 he removed the cheapest plan, raised the main plan by 50% and gave new features only to the new plans. He reported 2.6% fewer subscribers and 12.5% more MRR after three months. He then writes that a pricing change planned for close to a year, rolled out before February 2026, is what moved ARR past US$1 million. He does not describe its details." },
+    { title: "Search as the main channel", text: "In 2024, 48.5% of paid checkouts started from a search engine: documentation, pages that compare DocsBot with each competitor, and free tools. In the year to October 2026 the company added about 1,000 pages and now offers its site in eight languages. The share from search still fell to 40.6% in 2026." }
+  ],
+  howBuilt: {
+    intro: "These details come from the founder's blog, his posts on X and his interview with The Repository. They are grade C.",
+    items: [
+      "A free test first: ChatWP answered questions from the WordPress documentation. The waiting list asked each tester whether they wanted the same for their own business.",
+      "He taught himself Python and React in 2022 to build these products. The first DocsBot took four weeks of work, night and day, while he was employed.",
+      "At launch every customer connected their own OpenAI key and paid OpenAI directly. That removed the model cost and the rate limits from the product, and it allowed a free plan.",
+      "The retrieval part is the product: more than 38 kinds of sources, scheduled refresh of sources, a vector database (a database that finds passages by meaning) that was replaced in the year to October 2026, and storage in the US or the EU.",
+      "DocsBot answers its own support tickets, many of them in Japanese, Portuguese, French and Italian.",
+      "The SOC 2 Type II security audit was done with a compliance tool and an auditor who charged US$1,200. His son, a business student, wrote the policies.",
+      "The team: contract developers and administrators, a few employees, his son in marketing, and since October 2025 a growth partner. The founder leads product and engineering.",
+      "Analytics in PostHog connect the first source of each visitor to the paid checkout."
+    ],
+    src: [3, 8, 11, 13, 7, 4, 2, 15, 26]
+  },
+  predecessorsIntro: "Four companies in the Loot Drop database promised to answer questions from a company's own written knowledge, or to talk to its customers, before language models could read documents. The values below are from that database and are not independently verified.",
+  predecessors: [
+    { name: "Answerly", years: "2013 to 2016", funding: "US$550K", cause: "Product failure", promise: "FAQ chatbots that answer support tickets so that people handle only the difficult cases.", died: "The software matched each question to an answer that someone had written by hand. Every customer needed months of FAQs and decision trees, and real questions were phrased in too many ways.", url: "https://www.loot-drop.io/startup/2168-answerly" },
+    { name: "Niles", years: "2017 to 2020", funding: "US$2.8M", cause: "Competition", promise: "A bot in Slack that answers employees' questions from the company's knowledge.", died: "Slack improved its own search, and the bot needed constant retraining that a small customer base could not pay for.", url: "https://www.loot-drop.io/startup/1031-niles" },
+    { name: "Omniref", years: "2015 to 2018", funding: "US$120K", cause: "Competition", promise: "One place where developers explain and annotate source code, so that documentation answers the reader's question.", died: "People had to write every explanation, and there was no community to write them. GitHub and Stack Overflow already had the readers.", url: "https://www.loot-drop.io/startup/1119-omniref" },
+    { name: "RightHello", years: "2014 to 2022", funding: "US$600K", cause: "Ran out of cash", promise: "Live chat for online shops that turns visitors into buyers.", died: "A person had to answer every chat. Intercom raised US$240 million while RightHello had US$600,000, and Zendesk included chat in its support product.", url: "https://www.loot-drop.io/startup/2260-righthello" }
+  ],
+  whatChanged: [
+    `In each of the four, a person had to write the answer in advance. Answerly's customers wrote FAQs and decision trees for months. Omniref waited for developers to annotate code. RightHello needed a human in every chat. The documentation that a company already had was of no use to the software, because the software could not read it.`,
+    `Retrieval-augmented generation removed that step. The company points the product at the documentation it already has, and the model reads the matching passages at the moment of the question. One developer built the first DocsBot in four weeks. Niles shows the risk that remains: its platform, Slack, added the feature itself. For DocsBot the platform is the model provider, and OpenAI released its own chatbot builder eight months after the DocsBot beta.`
+  ],
+  copy: {
+    verdict: "The product, hardly. The method, yes.",
+    text: "Chat with your documents was copied hundreds of times in 2023, and the founder wrote in 2024 that he lost millions in market share to a competitor that released a simpler product a few days before him. Chatbase, already on this site, showed its demo 35 days before the DocsBot beta and reports US$1 million ARR after 117 days; DocsBot needed 35 months. SiteGPT, also on this site, launched 21 days after DocsBot and reported US$190,000 a year in December 2025. The method is repeatable: many small launches, a free test with a question about willingness to pay, business customers, and a price that follows the value.",
+    steps: [
+      "Launch small products one after another and reuse the code. Stop the ones that people try and do not pay for.",
+      "Before building the paid product, release a free version on public data and ask the testers whether they want it for their own business.",
+      "Release the first version smaller than feels comfortable. The founder says his had too many features, and that a simpler product could have been first on the market.",
+      "Sell to businesses, then remove the cheapest plan when it brings customers who cost more in support than they pay."
+    ],
+    open: "The founder points to agencies: firms that set up and maintain AI agents for local businesses that will not do it themselves. A documentation bot built for one industry, with that industry's integrations and rules, is the other open version."
+  },
+  watch: [
+    { title: "The model providers ship the same feature", text: "In November 2023 OpenAI released a chatbot builder inside ChatGPT. The founder wrote that it would have few data sources, no refresh, and no logs, reports or escalation, and that it would work as a free trial of his product. That argument holds only while the providers' versions stay simple. This page found no measurement of how many customers chose a provider's own tool instead." },
+    { title: "Price competition", text: "DocsBot's own comparison page lists its Standard plan at US$149 a month, Chatbase Standard at US$150 and SiteGPT Growth at US$129. Competitors publish reviews of DocsBot that send readers to their own cheaper plan or to a price per ticket. With prices this close, each company competes on limits, and DocsBot keeps the widget without its name for the US$499 plan." },
+    { title: "Dependence on model API prices", text: "At launch the customer paid OpenAI directly. Now DocsBot sells AI credits: one credit per standard answer, more for larger models, and US$49 a month for 5,000 more. The company writes that stronger models and longer tasks cost more to run. If a provider raises prices, DocsBot must raise credit prices or lose margin; in March 2023 one API release made the product 10 times cheaper, so the dependence works in both directions." },
+    { title: "Fewer signups in 2026", text: "The founder reports a real drop in signups in 2026 and a falling share of checkouts from search. He asks how long higher revenue per customer can cover weaker acquisition, and answers that he does not know yet." },
+    { title: "Founder-reported and not exact", text: "The headline is one sentence in a blog post, without a dashboard image or an exact figure, and nothing newer has been published in the eight months since. The earlier figures of US$250,000 and US$500,000 cover all his products, so the growth curve of DocsBot alone is not public. Two of his statements about 2025 do not fit well: 12.5% more MRR in the three months to September, and growth that was flat through most of the third and fourth quarter." },
+    { title: "Not a one-person company at the million", text: "He founded and owns it alone, but the million was reached with a growth partner, a few employees, contractors and his son. The headcount is not published. His profile still describes a solo business, and his own article of October 2025 is titled No Longer a Solopreneur." }
+  ],
+  sources: [
+    { title: "Aaron Edwards' blog, 2 March 2026: We finally hit $1M ARR in February", url: "https://uglyrobot.dev/articles/1m-arr", grade: "C", how: "Read in full. The origin of the headline number. Source for the month, the flat second half of 2025, the pricing change and the removed consumer plan." },
+    { title: "Aaron Edwards' blog, 14 September 2026: We Had Fewer Signups. Better Customers Barely Made Up for It.", url: "https://uglyrobot.dev/articles/fewer-signups-better-customers", grade: "C", how: "Read in full, and compared with his X post of the same day (status 2099524190818783717, read through api.fxtwitter.com). Source for the 2026 trend and the channel shares." },
+    { title: "The Repository, 16 October 2025, by Rae Morey: From Treehouses to Tech: The Lifelong Friendship Behind DocsBot", url: "https://www.therepository.email/from-treehouses-to-tech-the-lifelong-friendship-behind-docsbot", grade: "C", how: "Read in full. An independent WordPress publication that interviewed the founder and his partner. It did not review financial documents. Source for the background, ChatWP, the Japanese customers and the plan to sell." },
+    { title: "Aaron Edwards' blog, 1 October 2025: No Longer a Solopreneur", url: "https://uglyrobot.dev/articles/no-longer-a-solopreneur", grade: "C", how: "Read in full. Source for the team before October 2025 and the partner's profit share and phantom equity." },
+    { title: "Aaron Edwards' blog, 10 September 2025: Raising Prices: A Scary Decision That Paid Off", url: "https://uglyrobot.dev/articles/raising-prices", grade: "C", how: "Read in full. Source for the price rise and its five percentages." },
+    { title: "Aaron Edwards' blog, 2 April 2024: article on reaching $500K ARR after launching 8 products in 6 months", url: "https://uglyrobot.dev/articles/500k-mrr", grade: "C", how: "Read in full. Source for the combined US$500,000 ARR, the list of failed products and the remark about the earlier competitor." },
+    { title: "Aaron Edwards' blog, 3 October 2025: Finally SOC 2 Certified as a Solo Founder", url: "https://uglyrobot.dev/articles/soc2-certified-solo-founder", grade: "C", how: "Read the sections on cost and team. Source for the audit cost and the phrase a few employees plus contractors." },
+    { title: "Aaron Edwards on X, 16 March 2023: launch-week thread with US$3,500 MRR", url: "https://x.com/uglyrobot/status/1636411123623948288", grade: "C", how: "Read through api.fxtwitter.com, with the next post of the thread (status 1636411126056402944) on the Japanese post and its 2.3 million impressions." },
+    { title: "Aaron Edwards on X, 21 March 2023: $6k MRR for DocsBot", url: "https://x.com/uglyrobot/status/1638250896168480780", grade: "C", how: "Read through api.fxtwitter.com." },
+    { title: "Aaron Edwards on X, 27 May 2023: all products combined reach $250k ARR", url: "https://x.com/uglyrobot/status/1662534640651886592", grade: "C", how: "Read through api.fxtwitter.com." },
+    { title: "Aaron Edwards on X, 9 March 2023: announcement of the DocsBot beta, and six other posts of 2023", url: "https://x.com/uglyrobot/status/1633813195168141312", grade: "C", how: "Read through api.fxtwitter.com: the beta (9 March), own OpenAI keys (23 February, status 1628837619114168322), the ChatGPT API rewrite (1 March, 1631053661555027969), the first employee (10 April, 1645421900271693825), leaving the CTO role (1 August, 1686411609592287239) and the payment count (16 October, 1714000953362243928)." },
+    { title: "Aaron Edwards on X, 5 November 2023: on OpenAI's coming chatbot builder", url: "https://x.com/uglyrobot/status/1721185684713513099", grade: "C", how: "Read through api.fxtwitter.com. The follow-up of 9 November 2023 on connecting DocsBot to it was read in the profile timeline embed." },
+    { title: "Aaron Edwards' blog, 5 October 2026: One Year of Building DocsBot with Josh", url: "https://uglyrobot.dev/articles/one-year-with-josh", grade: "C", how: "Read in full. Source for the product work of 2026, the new pages and languages, and the vector database change. It gives no revenue figure." },
+    { title: "DocsBot about page, read 13 October 2026", url: "https://docsbot.ai/about", grade: "C", how: "Read in full. Source for the legal operator, the bootstrapped status, the customer count and the named customers." },
+    { title: "DocsBot pricing page, read 13 October 2026", url: "https://docsbot.ai/pricing", grade: "C", how: "Read in full. Gives the monthly prices, the limits and the add-ons, and US$124 for Standard on yearly billing. The other yearly prices come from the SiteGPT review below." },
+    { title: "DocsBot news, 17 June 2026: AI Credits Are Here So DocsBot Can Grow With You", url: "https://docsbot.ai/article/docsbot-ai-credits-update", grade: "C", how: "Read in full. Source for the credit rules, the own-key option and the statement on model costs." },
+    { title: "DocsBot comparison page: Chatbase alternative, details checked by the company on 25 August 2026", url: "https://docsbot.ai/comparisons/chatbase-alternative", grade: "C", how: "Read the price sections. The company's own comparison, so it favors DocsBot. Source for the three list prices." },
+    { title: "WP Tavern, 4 December 2024: ClikIT Acquires UglyRobot's Infinite Uploads and Big File Uploads Plugins", url: "https://wptavern.com/clikit-acquires-uglyrobots-infinite-uploads-and-big-file-uploads-plugins", grade: "B", how: "Read in full. Reports the buyer's announcement and states that UglyRobot, LLC is owned by Aaron Edwards. The price is not disclosed." },
+    { title: "Aaron Edwards' blog, 9 December 2024: I sold Infinite Uploads!", url: "https://uglyrobot.dev/articles/infinite-uploads-aquired", grade: "C", how: "Read the sections on the offer and the closing. Source for the deal terms and the closing date." },
+    { title: "LinkedIn company page of DocsBot, read 13 October 2026", url: "https://www.linkedin.com/company/docsbot", grade: "C", how: "Read the public page data: company size 2 to 10, 3 employees listed. LinkedIn counts only people who list the company themselves." },
+    { title: "Latka company page: UglyRobot, LLC", url: "https://getlatka.com/companies/docsbot.ai", grade: "C", how: "Read in full. No revenue figure. It records 1 person on LinkedIn in July 2024." },
+    { title: "Aaron Edwards' X profile, read 13 October 2026", url: "https://x.com/uglyrobot", grade: "C", how: "Read through api.fxtwitter.com. Source for the US$5 million goal and the phrase $1m+ ARR from my projects." },
+    { title: "Aaron Edwards' blog, 7 October 2026: From Listening to The Koerner Office to Sitting in the Studio", url: "https://uglyrobot.dev/articles/the-koerner-office", grade: "C", how: "Read in full. Source for the podcast episode and its title. The audio was not heard." },
+    { title: "DocsBot news list, read 13 October 2026", url: "https://docsbot.ai/articles/category/news", grade: "C", how: "Read the list. Shows releases through 2026 and the announcement for 2 to 6 November 2026." },
+    { title: "eesel AI, 28 September 2026: DocsBot AI pricing in 2026: plans, credits, and the real cost", url: "https://www.eesel.ai/blog/docsbot-pricing", grade: "C", how: "Read the plan sections. A competitor's review that recommends its own price per ticket. Cited for the price competition." },
+    { title: "SiteGPT, updated 11 October 2026: DocsBot AI Review 2026", url: "https://sitegpt.ai/blog/docsbot-ai-review", grade: "C", how: "Read the pricing sections. A competitor's review. Source for the yearly prices of US$41, US$124 and US$416." },
+    { title: "YesPress directory profile of DocsBot AI, updated 5 September 2026", url: "https://yespress.io/products/docsbot-ai.md", grade: "C", how: "Read in full. A directory that repeats the February 2026 milestone with the words according to founder Aaron Edwards. Not an independent confirmation." },
+    { title: "Loot Drop database export, 1,749 failed startups", url: "https://www.loot-drop.io/", grade: "C", how: "Local export. AI-written summaries, not independently verified. Source for the failed predecessors." }
+  ]
 }
 ];
 
