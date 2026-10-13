@@ -1661,6 +1661,151 @@ const STORIES = [
     { title: "Better Analyst pricing page (formerly formulabot.com), read 12 October 2026, with Wayback Machine snapshots of formulabot.com", url: "https://betteranalyst.com/#pricing", grade: "C", how: "Read in full for the monthly prices and plan limits; the annual prices load by script and could not be read. Wayback Machine index entries show formulabot.com serving its own page on 27 July 2026 and redirecting to betteranalyst.com on 2 September 2026." },
     { title: "Loot Drop database export, 1,749 failed startups", url: "https://www.loot-drop.io/", grade: "C", how: "Local export. AI-written summaries, not independently verified. Source for the failed predecessors." }
   ]
+},
+{
+  slug: "pdf-ai",
+  name: "PDF.ai",
+  country: "USA",
+  sector: "Information Technology",
+  productType: "Chat with PDF documents",
+  aiType: "AI-native",
+  team: "solo",
+  outcome: "running",
+  evidence: "C",
+  added: "2026-10-12",
+  launchLabel: "May 2023",
+  outcomeLabel: "US$60K a month, November 2023",
+  sticker: "$720K/yr run rate",
+  outcomeUsd: 720000,
+  months: 6,
+  teamLabel: "1 founder, plus a full-time developer and a full-time video creator hired in 2023",
+  fundingLabel: "None",
+  primaryFactor: "Distribution",
+  meters: { evidence: 1, copyable: 2, capital: 2 },
+  tags: ["AI-native", "Solo founder", "Bootstrapped", "Running", "B2C", "Document tools"],
+  product: "You upload a PDF and ask questions about it in a chat window. The answers come from the text of the document. Paid plans add more uploads, more questions, OCR for scanned pages, a Chrome extension, chat across several PDFs, and an API for developers.",
+  why: "The founder did not build it. He bought a weekend project with no revenue for US$20,000, paid about US$10,000 for the domain pdf.ai, and relaunched it under that name. The domain put the product at the top of Google for the words people were already typing, and a one-time launch deal paid for a developer and a video creator within weeks.",
+  summary: [
+    `PDF.ai is a <dfn>chat-with-PDF</dfn> tool: you upload a PDF file and type questions, and a language model answers from the text of that file. It uses <dfn>OCR</dfn>, optical character recognition, which turns a scanned image of a page into text, so scanned documents can be searched too. The AI model is OpenAI's; PDF.ai is the product around it.`,
+    `Damon Chen, a former Cisco engineer in Silicon Valley who already ran Testimonial.to, bought the project in May 2023. It was called Looseleaf.ai, had been built in a weekend by Josh Schneider, and had US$0 in revenue. Chen paid US$20,000 for the code and US$9,899 for the domain pdf.ai, and relaunched it under the new name with a US$99 lifetime deal. He wrote that it broke even in 6 days, had made US$35,000 by 5 June 2023, reached a US$200,000 <dfn>annual run rate</dfn> (one month's revenue multiplied by twelve) by September 2023, US$30,000 a month in October 2023, and more than US$60,000 in revenue in November 2023, three times the purchase price.`,
+    `Every revenue number on this page is a founder statement on X, LinkedIn or in interviews, grade C. No payment processor has confirmed any of them. The founder stopped posting PDF.ai figures after 2023; later numbers are third-party estimates and are marked as such. The product has not been sold: in October 2026 pdf.ai still sells the same plans plus an API. The page also shows what happened to earlier companies that sold search or question-answering over documents.`
+  ],
+  factsCaption: "A US$30,000 purchase that reported US$60,000 of revenue in a single month six months later, all self-reported",
+  factsRead: "How to read this table: a grade C value is a founder statement on X, LinkedIn or in an interview, or a third-party estimate that says so. A \"calc\" value was computed on this page from the rows above it. No value is grade A or B.",
+  timelineLead: "From a weekend project sold for US$20,000 to US$60,000 of revenue in one month, in about six months. Each entry carries its grade.",
+  pricing: {
+    caption: "PDF.ai prices on 12 October 2026, read from the company's pricing page in a browser (grade C)",
+    note: "The pricing page is rendered by script, so it was read in a browser, not downloaded. Prices are per user per month. Yearly billing is shown as 25% off, which matches the Ultimate price (US$27 to US$20) but not exactly the Pro price (US$17 to US$10). The API for developers is sold separately in credit packs and is not in this table.",
+    rows: [
+      ["Hobby", "0", "0", "1 PDF upload, 100 questions a month, 10 MB files, OCR 2 pages per file"],
+      ["Pro", "10", "17", "100 PDF uploads, 1,000 questions a month, 50 MB files, Chrome extension"],
+      ["Ultimate", "20", "27", "Unlimited uploads and questions, advanced model, chat with all PDFs, team members"],
+      ["Enterprise", "30", "37", "Unlimited, 100 MB files, OCR 100 pages per file, white-labeled PDF embed"]
+    ]
+  },
+  facts: [
+    { fact: "Revenue in November 2023", value: "more than US$60,000", grade: "C", note: "Founder's LinkedIn post, December 2023: crossed US$60,000 in revenue in November, three times what he paid to acquire the product.", src: [3] },
+    { fact: "Run rate from the November 2023 figure", value: "about US$720,000 a year", grade: "X", note: "Calculated: US$60,000 times 12. This is the headline figure on this page.", src: [3] },
+    { fact: "Annual recurring revenue, November 2023", value: "more than US$500,000", grade: "C", note: "Founder interview with Peter Yang, 29 November 2023: grew PDF.ai to US$500,000-plus ARR. Consistent with the US$60,000 month if part of it was one-time deals.", src: [4] },
+    { fact: "Monthly recurring revenue, 17 October 2023", value: "US$30,000", grade: "C", note: "Founder's post on X: Testimonial US$70,000 MRR plus PDF.ai US$30,000 MRR equals US$100,000 MRR.", src: [2] },
+    { fact: "Revenue and profit in September 2023", value: "US$25,070 revenue, US$17,600 profit", grade: "C", note: "Case study by Diego Jaggi on Indie Hackers, 9 October 2023, from the founder's numbers. More than 1,250 paying users. A 70% margin.", src: [5] },
+    { fact: "Annual run rate, 8 September 2023", value: "US$200,000", grade: "C", note: "Founder's post on X: hits US$200,000 ARR in 3 months.", src: [1] },
+    { fact: "Revenue in the first month, by 5 June 2023", value: "US$35,000", grade: "C", note: "Founder's post on X: bought for US$20,000 early last month, generated US$35,000 so far.", src: [6] },
+    { fact: "Purchase price of the code", value: "US$20,000", grade: "C", note: "Bought on acquire.com from Josh Schneider less than 48 hours after his launch of Looseleaf.ai, with US$0 revenue, May 2023.", src: [6, 7] },
+    { fact: "Price of the domain pdf.ai", value: "US$9,899.01", grade: "C", note: "Domain-industry news, 22 May 2023. The seller had paid US$610 earlier in 2023. The founder rounds it to US$10,000.", src: [11, 1] },
+    { fact: "Time to recover the purchase price", value: "6 days", grade: "C", note: "Founder's post on X, 11 May 2023, quoted in a newsletter: broke even in 6 days with US$2,891 of profit on top.", src: [8] },
+    { fact: "Lifetime deal at launch", value: "US$99 one-time, more than 300 buyers in 3 months", grade: "C", note: "Founder interview. First customer within 24 hours. The money paid for a full-time engineer.", src: [9] },
+    { fact: "Monthly visitors, September 2023", value: "about 1,047,000, of which 350,000 from search", grade: "C", note: "Indie Hackers case study. The founder says most traffic comes from Google searches for the words PDF AI.", src: [5, 9] },
+    { fact: "Team, 2023", value: "founder, 1 full-time developer, 1 full-time video creator", grade: "C", note: "Founder's post on X, September 2023. Latka counts 1 employee on LinkedIn in October 2024.", src: [1, 12] },
+    { fact: "Outside funding", value: "none", grade: "C", note: "Founder's post on X, October 2023: bootstrapped and profitable with a very healthy margin.", src: [10] },
+    { fact: "Latka's revenue estimate for 2024", value: "US$591,700 a year", grade: "C", note: "A third-party estimate, marked as such. Latka records US$300,000 for 2023 from X.", src: [12] },
+    { fact: "Starter Story's estimate, October 2024", value: "US$60,000 a month", grade: "C", note: "Estimated from public sources, the page says. Its title claims US$1.5 million ARR, which does not match its own US$60,000 a month, so this page does not use the title figure.", src: [13] },
+    { fact: "Testimonial.to, the founder's other product, November 2025", value: "US$109,000 MRR", grade: "C", note: "Founder's post on X with a link to a Stripe public profile. Not PDF.ai revenue; shown for context. The founder has posted no PDF.ai figure since 2023.", src: [15] },
+    { fact: "Time from relaunch to the November 2023 figure", value: "6 months", grade: "X", note: "Calculated: May 2023 to November 2023.", src: [3, 6] }
+  ],
+  timeline: [
+    { when: "2020 to 2021", what: "Chen, a Cisco engineer for 8 years, builds four products that make nothing, then Testimonial.to, which reaches US$100,000 ARR in 9 months. He quits Cisco in 2021.", grade: "C", src: [4] },
+    { when: "Early May 2023", what: "Josh Schneider launches Looseleaf.ai, a weekend project built with OpenAI and LangChain. Chen buys it within 48 hours for US$20,000 on acquire.com, with US$0 revenue.", grade: "C", src: [7, 6] },
+    { when: "May 2023", what: "The domain pdf.ai sells for US$9,899.01. Chen rebrands the product to PDF.ai, launches on X and Product Hunt (4th of the day), and sells a US$99 lifetime deal. He writes that it broke even in 6 days.", grade: "C", src: [11, 8, 9] },
+    { when: "5 June 2023", what: "US$35,000 of revenue in the first month. He asks his followers what he could sell it for.", grade: "C", src: [6] },
+    { when: "6 June 2023", what: "Launch date recorded by the Indie Hackers case study. Pricing moves from the lifetime deal to subscriptions at US$15 a month, with an Enterprise plan at US$50 a month.", grade: "C", src: [5] },
+    { when: "8 September 2023", what: "US$200,000 ARR in 3 months. He lists his steps: buy a product with no revenue, buy a domain, sell a lifetime deal, move to subscriptions, hire a full-time video creator and a full-time developer, post every day.", grade: "C", src: [1] },
+    { when: "September 2023", what: "US$25,070 of revenue and US$17,600 of profit in the month. More than 1,250 paying users and about 1 million visitors, 350,000 of them from search.", grade: "C", src: [5] },
+    { when: "17 October 2023", what: "PDF.ai at US$30,000 MRR and Testimonial at US$70,000 MRR: US$100,000 MRR combined.", grade: "C", src: [2] },
+    { when: "29 October 2023", what: "OpenAI adds PDF chat to ChatGPT. Chen writes that he is optimistic, that PDF.ai is profitable, and that several million dollars in ARR within 1 to 2 years is his goal.", grade: "C", src: [10] },
+    { when: "November 2023", what: "More than US$60,000 of revenue in the month, three times the purchase price. An interview the same month puts ARR above US$500,000.", grade: "C", src: [3, 4] },
+    { when: "October 2024", what: "No founder figure. Latka estimates US$591,700 a year; Starter Story estimates US$60,000 a month.", grade: "C", src: [12, 13] },
+    { when: "26 December 2024", what: "Chen writes that for Testimonial and PDF.ai he wants a calm business, whatever the competition or the AI hype.", grade: "C", src: [14] },
+    { when: "August 2025", what: "A secondary account says his two products together make US$1.3 million a year, that the chat-with-PDF market is crowded with copies, and that monthly revenue is down.", grade: "C", src: [16] },
+    { when: "12 October 2026", what: "pdf.ai is live with four plans, a Chrome extension, AI agents and Parse, Extract and Chat APIs. No sale has been announced.", grade: "C", src: [17] }
+  ],
+  mechanism: [
+    { title: "Buy, do not build", text: "The code was a weekend project that someone else had already shown on social media, and the reaction to that demo was the market test. Chen paid US$20,000 for it rather than spending weeks writing it himself, and said the code was worth about 10% of the business." },
+    { title: "The domain is the marketing", text: "People searched Google for the words PDF AI. A site at pdf.ai with that exact name ranked first for them. Chen said this brought most of the traffic, about 350,000 search visits a month by September 2023, with no advertising spend." },
+    { title: "A lifetime deal that funds the hires", text: "A US$99 one-time offer brought more than 300 buyers in three months. That cash paid for a full-time developer and a full-time video creator for daily Instagram and TikTok posts, while the plan moved to monthly subscriptions." },
+    { title: "Daily posts and a second product's audience", text: "Chen already had an audience on X from building Testimonial.to in public since 2020. Every PDF.ai milestone was a post, and the posts were quoted by newsletters and case studies, which sent more visitors." }
+  ],
+  howBuilt: {
+    intro: "These details come from the founder's interviews and posts. They are grade C.",
+    items: [
+      "The original Looseleaf.ai was built in a weekend with OpenAI's API and LangChain on Next.js, hosted on Vercel. It could chat with one PDF at a time and had no payments.",
+      "After the purchase Chen added payments through Stripe, the lifetime deal, then subscriptions. He says the web stack was new to him and he learned it from Udemy courses.",
+      "Tools named by the founder: OpenAI, Vercel, Stripe, Mercury for banking and Deel to pay remote contractors.",
+      "Later additions: OCR for scanned pages, a Chrome extension, chat across many PDFs, an AI quiz generator, and in 2026 a developer API for parsing, extracting and chatting with documents.",
+      "Marketing is organic search on the domain name, daily short videos by a hired creator, an affiliate program paying 30% for 12 months, and the founder's own posts."
+    ],
+    src: [7, 9, 5, 17, 1]
+  },
+  predecessorsIntro: "Five companies in the Loot Drop database sold search, question-answering or management of documents before language models could read them. The values below are from that database and are not independently verified.",
+  predecessors: [
+    { name: "Niles", years: "2017 to 2020", funding: "US$2.8M", cause: "Competition", promise: "A Slack bot that answers questions from your company's documents.", died: "Slack built its own search improvements, and the AI needed constant retraining that a small customer base could not pay for.", url: "https://www.loot-drop.io/startup/1031-niles" },
+    { name: "ROSS Intelligence", years: "2015 to 2018", funding: "US$13M", cause: "Competition", promise: "AI legal research that reads case law for lawyers.", died: "Lawyers stayed with Westlaw and LexisNexis; the AI was an addition, not a replacement, and investors stopped funding long sales cycles.", url: "https://www.loot-drop.io/startup/1511-ross-intelligence" },
+    { name: "Docucharm", years: "2019 to 2022", funding: "US$3M", cause: "Competition", promise: "Cloud document management: digitize, organize and retrieve business documents.", died: "Google and Microsoft shipped the same inside their suites, for less.", url: "https://www.loot-drop.io/startup/978-docucharm" },
+    { name: "Documents.Me", years: "2012 to 2015", funding: "US$120K", cause: "Competition", promise: "All your documents from every cloud service in one app.", died: "Free tools from the platform owners did the same, and every cloud API change cost money to follow.", url: "https://www.loot-drop.io/startup/1167-documentsme" },
+    { name: "Readability", years: "2009 to 2015", funding: "US$5M", cause: "Competition", promise: "Clutter-free reading of any web article.", died: "Browsers added a reader mode, free. Few readers paid.", url: "https://www.loot-drop.io/startup/485-readability" }
+  ],
+  whatChanged: [
+    `Each of the five sold a way to find or read what is inside documents, and each died when a platform owner added the same feature for free or when the technology could not answer well enough to replace the old tool. On 29 October 2023 OpenAI added PDF chat to ChatGPT, which is exactly the event that killed Niles and Readability. Chen wrote the same day that he was not worried.`,
+    `Two things were different for PDF.ai. First, the model did the hard part: Niles and ROSS had to build and retrain their own AI; PDF.ai calls OpenAI and pays per use, so each model upgrade improved the product at no cost. Second, the customer arrived by search, not by a sales call. A person typing PDF AI into Google found pdf.ai first and paid US$15 the same day, so the business reached US$25,000 a month before any competitor's feature launch could matter. Whether that holds is the open question: the founder's own posts stopped giving PDF.ai figures after 2023, and a 2025 account says monthly revenue fell in a crowded market.`
+  ],
+  copy: {
+    verdict: "The purchase, yes. The domain, only if one is for sale.",
+    text: "Buying a demo-stage project that already had a public reaction, and relaunching it with payments, is repeatable on any marketplace for small apps. The exact-match domain was the one-off: pdf.ai sold for under US$10,000 in May 2023 because the market had not priced AI domains yet. Lifetime deals to fund the first hires and a move to subscriptions are standard and still work.",
+    steps: [
+      "Watch acquire.com and similar marketplaces for weekend projects whose launch post got attention but that have no payments yet.",
+      "Pay for the exact words customers search for, as a domain, before paying for ads.",
+      "Sell a one-time deal for 3 months to test demand and fund a developer, then switch new customers to subscriptions.",
+      "Post every number and every feature; let newsletters and case studies repeat them."
+    ],
+    open: "Any file type people ask questions about: spreadsheets, contracts, slide decks, audio transcripts, and the API version of each for developers."
+  },
+  watch: [
+    { title: "Self-reported and old", text: "The headline is a founder's LinkedIn post about one month, November 2023. He has published no PDF.ai figure since. Third-party estimates for 2024 are US$591,700 a year (Latka) and US$60,000 a month (Starter Story), which do not agree with each other or with Starter Story's own US$1.5 million title." },
+    { title: "The platform shipped the feature", text: "ChatGPT added chat with a PDF in October 2023, and other document vendors can do the same. Every predecessor on this page died from exactly that. PDF.ai's answer is more features around the model: OCR, extensions, team seats, an API." },
+    { title: "Revenue may be falling", text: "A 2025 account of the founder's story says the chat-with-PDF market is crowded with copies and that monthly revenue is down. The founder's December 2024 post speaks of wanting a calm business rather than growth." },
+    { title: "One-time money in the early numbers", text: "The first months mixed US$99 lifetime deals with subscriptions, so the US$200,000 run rate and the US$60,000 month overstate recurring revenue. The founder's own October 2023 MRR figure was US$30,000." },
+    { title: "Variable costs", text: "Every question costs an OpenAI call and every scanned page costs OCR. The founder reported a 70% margin in September 2023; a price war with free tools would squeeze it." }
+  ],
+  sources: [
+    { title: "Damon Chen on X, 8 September 2023: PDF.ai hits $200K ARR in 3 months", url: "https://x.com/damonchen/status/1700209364471333271", grade: "C", how: "Read in full via the fxtwitter API. Source for the US$200,000 ARR, the US$20,000 and US$10,000 costs, and the two hires." },
+    { title: "Damon Chen on X, 17 October 2023: $100K MRR now with Testimonial.to and PDF.ai", url: "https://x.com/damonchen/status/1714114381657870823", grade: "C", how: "Read in full via the fxtwitter API. Source for the US$30,000 MRR." },
+    { title: "Damon Chen on LinkedIn, December 2023: PDF.ai crossed $60k in revenue in November", url: "https://www.linkedin.com/posts/damengchen_pdfai-crossed-60k-in-revenue-in-november-activity-7136059894838820864-53OW", grade: "C", how: "Read the post text from the public page. Source for the headline figure." },
+    { title: "Peter Yang, Behind the Craft, 29 November 2023: Damon Chen, from engineer to indie hacker making $1,300,000 ARR", url: "https://creatoreconomy.so/p/damon-chen-engineer-to-one-million", grade: "C", how: "Read the free part; the rest is behind a paywall. Founder interview. Source for the US$500,000-plus ARR, the Testimonial figures and the 2020 to 2021 background." },
+    { title: "Diego Jaggi on Indie Hackers, 9 October 2023: PDF AI tool made $25K in MRR last month", url: "https://www.indiehackers.com/post/pdf-ai-tool-made-25k-in-mrr-last-month-07148fa17d", grade: "C", how: "Read in full. A case study from the founder's numbers. Source for September 2023 revenue, profit, users, traffic, first prices and the affiliate program." },
+    { title: "Damon Chen on X, 5 June 2023: bought pdf.ai for $20k, $35k in revenue so far", url: "https://x.com/damonchen/status/1665823454342553600", grade: "C", how: "Read in full via the fxtwitter API." },
+    { title: "Niall Doherty, 11 May 2023: Sold his app for $20K within 48 hours of launching", url: "https://www.goodreads.com/author_blog_posts/23687674-sold-his-app-for-20k-within-48-hours-of-launching", grade: "C", how: "Read in full. Quotes Josh Schneider's launch post and names the buyer, the marketplace and the stack." },
+    { title: "5 Biz Fri newsletter, May 2023: PDF.AI, $23k in 6 days", url: "https://5to9.beehiiv.com/p/5-biz-fri-0004-60k-mrr-two-months-building-around-gpt", grade: "C", how: "Read the PDF.ai section. Quotes the founder's 11 May 2023 post on breaking even in 6 days, and gives the Product Hunt rank." },
+    { title: "SaaS Starter Stack: PDF.ai founder interview", url: "https://saasstarterstack.com/interviews/pdfai", grade: "C", how: "Read in full. Undated founder interview, written after the US$50,000 MRR point. Source for the lifetime deal, the first customer, the search traffic and the tools used." },
+    { title: "Damon Chen on X, 29 October 2023: I'm optimistic about PDF.ai", url: "https://x.com/damonchen/status/1718491423065137169", grade: "C", how: "Read in full via the fxtwitter API, with the quoted post about OpenAI adding PDF chat. Source for bootstrapped and profitable, and the ARR goal." },
+    { title: "ccTLD.ru, 22 May 2023: The PDF.ai brought the former owner fifteen times the profit in a few months", url: "https://cctld.ru/en/media/news/industry/34506", grade: "C", how: "Read in full. Domain-industry news citing Domain Gang. Source for the US$610 and US$9,899.01 domain prices." },
+    { title: "Latka company page: PDF.ai revenue 2024, estimate", url: "https://getlatka.com/companies/pdf.ai", grade: "C", how: "Read in full. A third-party estimate and a headcount from LinkedIn." },
+    { title: "Starter Story, 23 October 2024: How Damon Chen scaled PDF AI to $1.5M ARR in months", url: "https://www.starterstory.com/pdf-ai-breakdown", grade: "C", how: "Read in full. The page says its figures are estimated from public sources. Used only for its estimate, with the inconsistency noted." },
+    { title: "Damon Chen on X, 26 December 2024: I just want to build a calm business", url: "https://x.com/damonchen/status/1872158126071595306", grade: "C", how: "Read in full via the fxtwitter API." },
+    { title: "Damon Chen on X, 26 November 2025: $109K MRR, with a Stripe profile link, for Testimonial", url: "https://x.com/damonchen/status/1993489819167866938", grade: "C", how: "Read in full via the fxtwitter API. About Testimonial.to, not PDF.ai; used for context only." },
+    { title: "SupaBird, 21 August 2025: Damon Chen, from corporate to $1.3M SaaS empire", url: "https://supabird.io/articles/from-corporate-dreams-to-1-3m-arr-as-an-entrepreneur", grade: "C", how: "Read in full. A secondary account with no links to the founder's posts. Used only for the 2025 statements that revenue was down and the market crowded, marked as secondary." },
+    { title: "PDF.ai pricing page, read in a browser on 12 October 2026", url: "https://pdf.ai/pricing", grade: "C", how: "The page renders by script, so it was read in Chrome with both billing toggles. Source for the pricing table and the product list." },
+    { title: "Loot Drop database export, 1,749 failed startups", url: "https://www.loot-drop.io/", grade: "C", how: "Local export. AI-written summaries, not independently verified. Source for the failed predecessors." }
+  ]
 }
 ];
 
