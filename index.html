@@ -2221,6 +2221,156 @@ const STORIES = [
     { title: "AudioPen home page, read 12 October 2026", url: "https://audiopen.ai/", grade: "C", how: "Read in full. Source for the 200,000+ users claim and the list of platforms." },
     { title: "Loot Drop database export, 1,749 failed startups", url: "https://www.loot-drop.io/", grade: "C", how: "Local export. AI-written summaries, not independently verified. Source for the failed predecessors." }
   ]
+},
+{
+  slug: "remove-bg",
+  name: "remove.bg",
+  country: "Austria",
+  sector: "Information Technology",
+  productType: "AI background removal for photos",
+  aiType: "AI-native",
+  team: "small",
+  outcome: "exit",
+  evidence: "C",
+  added: "2026-10-12",
+  launchLabel: "17 December 2018",
+  outcomeLabel: "Sold to Canva for an undisclosed price of at least US$12M, February 2021",
+  sticker: "Sold to Canva, price undisclosed",
+  outcomeUsd: 12000000,
+  months: 26,
+  teamLabel: "1 developer at the release, 2 founders, 7 people by August 2019, 25 at the sale",
+  fundingLabel: "None",
+  primaryFactor: "Distribution",
+  meters: { evidence: 1, copyable: 2, capital: 1 },
+  tags: ["AI-native", "Small team", "Bootstrapped", "Exit", "B2B", "Image editing"],
+  product: "You upload a photo. In about five seconds remove.bg returns the same photo with the background cut away, so the person or product in front stands on a transparent layer. A small preview is free; full-resolution results, the API and the Photoshop plugin cost credits.",
+  why: "It took one task that every designer does by hand in Photoshop, made it one click and free, and let Product Hunt, Twitter and TechCrunch spread it. Then it charged professionals for resolution and for an API, stayed profitable with no investors, and sold to Canva, which had already built the tool into its own product a year earlier.",
+  summary: [
+    `remove.bg is a web tool that removes the background from a photo. It uses <dfn>image segmentation</dfn>, a kind of AI model that decides for every pixel whether it belongs to the foreground (a person, later also products and animals) or to the background, and keeps fine details such as single hairs. The user does not select anything. At the release in December 2018 the tool was free, worked only on photos with a person in them, and returned images of at most 500 by 500 pixels. Later the free version became a low-resolution preview, and full resolution, an <dfn>API</dfn> (a paid interface that lets another program send images and get results back), a Photoshop extension and desktop apps were sold for credits, one credit per image.`,
+    `Benjamin Groessing, a developer in Vienna who ran a small web agency with David Fankhauser, released it on 17 December 2018 as a side product of another idea. TechCrunch, Product Hunt and Twitter made it known to millions within weeks. The two founders set up Kaleido AI around it, owned it half each, took no investors, and were profitable from the start. By August 2019 it had thousands of paying customers and seven people. In 2020 its monthly users grew from about 3 million to more than 20 million, and the company says its tools removed more than 100 million backgrounds a month. Canva, the Australian design platform, had used remove.bg inside its own product since about early 2020. In February 2021 Canva bought 40 percent and then 100 percent of Kaleido AI, with 25 employees in Vienna at the time.`,
+    `The price was not disclosed. The company and Canva called it one of the largest exits in Austrian startup history; Der Brutkasten quoted an industry insider saying at least a high two-digit million euro amount, and TechCrunch wrote that it may have fetched nearly nine figures. The headline number on this page is only the floor of what the press reported, tens of millions of euros, converted to dollars. No revenue figure was ever published; the best disclosed numbers are 80,000 paying customers and 270 percent revenue growth in 2019, both company statements. The page also shows what happened to earlier browser photo tools, several of which were bought by a large company and then closed.`
+  ],
+  factsCaption: "A free tool that reached 20 million monthly users in two years and was sold to Canva 26 months after its release, for a price that was never published",
+  factsRead: "How to read this table: a grade A value comes from the acquirer's own announcement. A grade B value was read by a journalist from the Austrian company register (Firmenbuch). A grade C value is a founder or company statement to the press, or an estimate by an insider or a traffic service. A \"calc\" value was computed on this page from the rows above it.",
+  timelineLead: "From a free side project released on Twitter to a sale to Canva in 26 months. Each entry carries its grade.",
+  pricing: {
+    caption: "remove.bg prices in October 2026, read from the data embedded in the company's pricing page; the pay-as-you-go price is from the reviewer costbench.com (grade C)",
+    note: "One credit is one image at full resolution. Preview-resolution images on the website are free, and a new account gets one free credit. Subscriptions are billed monthly or yearly; the yearly price is 10 percent lower. The Professional plans run from 200 to 5,000 credits a month and the Business plans from 7,500 to 75,000; the table shows the smallest sizes. Unused subscription credits do not roll over. In 2019 the founder quoted a price starting at 18 euro cents per image, and in February 2021 Trending Topics quoted 11 cents; today the Personal plan is US$0.225 per credit and the smallest Professional plan US$0.195.",
+    rows: [
+      ["Free", "0", "0", "preview resolution only"],
+      ["Pay as you go", "3 one-time", "", "3 credits, from the reviewer"],
+      ["Personal", "8.10", "9", "40 credits a month"],
+      ["Professional, 200", "35.10", "39", "200 credits a month"],
+      ["Professional, 500", "80.10", "89", "500 credits a month"],
+      ["Professional, 1,200", "170.10", "189", "1,200 credits a month"],
+      ["Business, 7,500", "710.10", "789", "7,500 credits a month"]
+    ]
+  },
+  facts: [
+    { fact: "Sale to Canva", value: "100 percent of Kaleido AI, completed mid-February 2021", grade: "A", note: "Canva's own announcement on 23 February 2021 names Kaleido as the company behind remove.bg. Der Brutkasten read in the company register that Canva Inc became the sole owner in mid-February 2021, and that the deal was done in two steps.", src: [3, 1] },
+    { fact: "Sale price", value: "not disclosed", grade: "C", note: "Both sides agreed not to publish it. Der Brutkasten quotes an industry insider: at least a high two-digit million euro amount. TechCrunch, citing Die Presse and Der Brutkasten, writes two-digit millions, which suggests a price approaching US$100 million. The founder said the deal was advised by i5invest and paid in two tranches.", src: [1, 2] },
+    { fact: "Headline number on this page", value: "at least US$12 million", grade: "X", note: "Calculated: the floor of the reported range, 10 million euros, times the European Central Bank reference rate of 1.2129 US dollars per euro on 15 February 2021, equals US$12.1 million. This is a floor, not an estimate of the price.", src: [1, 2, 17] },
+    { fact: "First step of the sale", value: "40 percent of Kaleido AI", grade: "B", note: "Trending Topics read in the company register on 4 February 2021 that VORGE Erste Beteiligungsverwaltung GmbH, owned fully by Canva Inc, held 40 percent, and the two founders 30 percent each.", src: [5] },
+    { fact: "Monthly users at the sale", value: "more than 20 million", grade: "C", note: "Company statement in the press release and to several papers. Leadersnet writes that the number rose from 3 million to more than 20 million during 2020, which the company describes as growth of more than 600 percent.", src: [4, 6, 14] },
+    { fact: "Backgrounds removed per month", value: "more than 100 million (company), more than 150 million (Canva)", grade: "C", note: "The company said 100 million in its release and interviews; Canva's announcement says 150 million across photos and videos. Both are company figures, so grade C.", src: [4, 3] },
+    { fact: "Paying customers", value: "more than 80,000 for remove.bg", grade: "C", note: "Futurezone, February 2021, from the company. Trend.at wrote 40,000 at about the same time. Both are company statements and the page shows the larger one with this caution.", src: [7, 8] },
+    { fact: "Revenue", value: "never published; growth of 270 percent in 2019", grade: "C", note: "Trend.at: revenue grew 270 percent in 2019, absolute figures not given. No source gives a revenue amount.", src: [8] },
+    { fact: "Price per image, 2019 and 2021", value: "from 18 euro cents, later 11 euro cents", grade: "C", note: "Founder to Trending Topics in August 2019; Trending Topics in February 2021.", src: [9, 5] },
+    { fact: "Monthly visits, early 2021", value: "more than 33 million", grade: "C", note: "Trending Topics, citing traffic analysis services; among the 2,000 largest websites. Unscreen had more than 800,000.", src: [5] },
+    { fact: "Daily users inside Canva", value: "more than 500,000", grade: "C", note: "Founder to Der Brutkasten. remove.bg had been one of Canva's Pro features for about a year before the sale.", src: [1] },
+    { fact: "Outside funding", value: "none", grade: "C", note: "Founder quote in the Canva press release and to every paper: two founders and a team, profitable from the start. Trending Topics found no investor in the company register in 2019, and Der Brutkasten wrote the founders owned 50 percent each until the sale.", src: [2, 9, 1] },
+    { fact: "Team", value: "7 in August 2019, 15 in March 2020, 25 at the sale, more than 70 in 2022", grade: "C", note: "Founder statements to Trending Topics, Futurezone and Der Brutkasten, and the company's own history page.", src: [9, 13, 1, 15] },
+    { fact: "Monthly active users, 2022", value: "30 million", grade: "C", note: "Company history page, written after the sale.", src: [15] },
+    { fact: "Output at the release", value: "free, persons only, at most 500 by 500 pixels", grade: "C", note: "The About page on 20 December 2018. An API was promised soon.", src: [12, 11] },
+    { fact: "Time from the release to the sale", value: "26 months", grade: "X", note: "Calculated: December 2018 to February 2021.", src: [11, 1] }
+  ],
+  timeline: [
+    { when: "2015", what: "Groessing and Fankhauser, who run the Vienna web agency byteq, release Wurstify, a browser plugin that puts a Conchita Wurst beard on any face. The founder later calls it the foundation of Kaleido.", grade: "C", src: [9, 13] },
+    { when: "17 December 2018", what: "Groessing announces remove.bg on Twitter. It is free, works only on photos with a person, and returns 500 by 500 pixels. The About page says it was a side product of another app idea.", grade: "C", src: [11, 12, 10] },
+    { when: "22 December 2018 to 8 January 2019", what: "Pulse 2 and TechCrunch cover it. TechCrunch tests it on hair and quotes the About page: the current service will stay free permanently.", grade: "C", src: [10, 11] },
+    { when: "2019", what: "API, Photoshop extension (April) and desktop apps (May) are released; the model now handles any photo with a clear foreground, not only people.", grade: "C", src: [15, 20, 9] },
+    { when: "30 August 2019", what: "Thousands of paying customers worldwide, from 18 euro cents per image. Four people in Vienna and three remote. Product Hunt and Twitter are the main channels. No investor in the company register.", grade: "C", src: [9] },
+    { when: "2019", what: "Revenue grows 270 percent over 2018, amount not disclosed.", grade: "C", src: [8] },
+    { when: "About early 2020", what: "Canva builds remove.bg into Canva Pro as its one-click background remover. It later becomes one of the most used Pro features, with more than 500,000 daily users.", grade: "C", src: [1, 6] },
+    { when: "5 March 2020", what: "Unscreen, the same for video, is released. 15 employees, profitable, no investors.", grade: "C", src: [13] },
+    { when: "November 2020", what: "Unscreen Pro: one minute of full-HD video costs 5 euros.", grade: "C", src: [8] },
+    { when: "2020", what: "Monthly users grow from about 3 million to more than 20 million in 180 countries.", grade: "C", src: [14, 4] },
+    { when: "4 February 2021", what: "Trending Topics finds in the company register that a Canva holding company owns 40 percent of Kaleido AI.", grade: "B", src: [5] },
+    { when: "Mid-February 2021", what: "Canva Inc becomes the sole owner, in the second of two tranches.", grade: "B", src: [1] },
+    { when: "23 February 2021", what: "Canva announces the purchase together with Smartmockups. Kaleido has 25 employees and plans 30 more hires in Vienna. The founders say they declined many investment offers.", grade: "A", src: [3, 4, 6] },
+    { when: "24 February 2021", what: "TechCrunch: price not disclosed, speculated to be nearly nine figures. Der Brutkasten: at least a high two-digit million euro amount, per an insider.", grade: "C", src: [2, 1] },
+    { when: "2022", what: "remove.bg reaches 30 million monthly active users; the Vienna team passes 70 and builds photo and video tools for Canva. Kaleido AI GmbH is later renamed Canva Austria GmbH.", grade: "C", src: [15, 4] }
+  ],
+  mechanism: [
+    { title: "One task, one click, free", text: "Cutting a person out of a photo took a designer 5 to 30 minutes in Photoshop. remove.bg did it in five seconds with no selection at all, and at the release it cost nothing. That made it easy to show in a tweet, and Product Hunt, Twitter and TechCrunch did the marketing. The founder said in 2019 that those two channels had reached millions of people." },
+    { title: "Free preview, paid resolution", text: "The free output stayed small. Anyone who needed the image for print, a shop or a catalogue paid per image, with credits sold in packs and subscriptions. The company reported thousands of paying customers after eight months and 80,000 at the sale." },
+    { title: "An API for the people who do it thousands of times", text: "Agencies and shops that cut out thousands of product photos used the API, the Photoshop extension and the desktop apps. Customers named by the company include Alibaba, Samsung and The New York Times. Canva built the API into its own editor about a year before buying the company." },
+    { title: "No investors, profitable, then sold to the distributor", text: "The founders owned the company half each and financed it from cash flow. The buyer was the company that already distributed the tool to 40 million users; Canva's head of apps said they had been in contact with the team for more than a year. The deal was done in two tranches, 40 percent and then the rest." }
+  ],
+  howBuilt: {
+    intro: "These details come from the founders' interviews, the 2018 About page and the company's history page. They are grade C.",
+    items: [
+      "The segmentation model was trained in-house and combined with classic computer-vision algorithms for fine edges and color cleanup, according to the founder in 2019. The first version detected only persons; by 2019 it handled any photo with a separable foreground.",
+      "The About page in December 2018 said uploaded images were deleted about an hour after processing and were not used to train the model. Today the result dialog asks the user whether to contribute an image to an improvement program.",
+      "An API came first, then a Photoshop extension in April 2019, Windows, Mac and Linux apps in May 2019, and an Android app in June 2020.",
+      "Pricing is credits: packs of prepaid credits, monthly subscriptions, and custom contracts for large customers. Unscreen prices video by length and quality.",
+      "Unscreen, the video version, was built on the same technology and released in March 2020, with a Pro version in November 2020.",
+      "Marketing was Product Hunt, Twitter and press coverage. The founders said in 2019 that they made decisions from customer feedback and did not want to be steered by investors."
+    ],
+    src: [9, 12, 20, 1, 13, 8]
+  },
+  predecessorsIntro: "Five companies in the Loot Drop database offered browser photo tools or image AI before remove.bg. Three of them were bought by a large company and then closed. The values below are from that database and are not independently verified.",
+  predecessors: [
+    { name: "Picnik", years: "2005 to 2012", funding: "US$3.5M", cause: "Competition", promise: "Photoshop-lite photo editing in the browser, no download.", died: "Google bought it in 2010, folded the features into Google+ and closed the product in 2012.", url: "https://www.loot-drop.io/startup/429-picnik" },
+    { name: "Snipshot", years: "2006 to 2009", funding: "US$20K", cause: "Competition", promise: "Edit photos in the browser without Adobe software.", died: "Larger rivals such as Picnik and free alternatives offered more; no clear way to charge.", url: "https://www.loot-drop.io/startup/1241-snipshot" },
+    { name: "Pixate", years: "2012 to 2016", funding: "US$3.6M", cause: "Competition", promise: "Design mobile app prototypes without code.", died: "Bought by Google, then given no resources while Figma and Sketch took the market.", url: "https://www.loot-drop.io/startup/434-pixate" },
+    { name: "Jetpac", years: "2011 to 2016", funding: "US$2.5M", cause: "Competition", promise: "Image recognition over Instagram photos to build travel guides.", died: "Google bought the team in 2014 and closed the product in 2016; it also depended on Instagram's API.", url: "https://www.loot-drop.io/startup/258-jetpac" },
+    { name: "Everalbum", years: "2013 to 2019", funding: "US$19.2M", cause: "Competition", promise: "Unlimited photo storage with AI organization.", died: "Charged a subscription for what Google Photos gave away free, and paid for the storage itself.", url: "https://www.loot-drop.io/startup/125-everalbum" }
+  ],
+  whatChanged: [
+    `Picnik and Snipshot were browser photo editors with many tools and no clear thing to charge for. remove.bg had one tool, and the thing to charge for was obvious: resolution, and volume through the API. Everalbum paid for storage; remove.bg stores an image for about an hour and sells the computation. Jetpac and Pixate were bought for their people and closed.`,
+    `Two things differ. First, the model did something that free software could not do in 2018, so the free preview was a demonstration and not the product. Second, the exit was to a company that already sold the tool to its own users. Canva renamed Kaleido AI GmbH to Canva Austria GmbH, kept remove.bg running and grew the Vienna team past 70 by 2022. The product was still at 30 million monthly users a year after the sale, which is the opposite of what happened to Picnik and Pixate.`
+  ],
+  copy: {
+    verdict: "The moment, no. The structure, yes.",
+    text: "A segmentation model good enough to cut hair was rare in 2018; today every photo app and Canva itself has one, and the press does not write about a new background remover. The structure is still available: one AI task that professionals do by hand, free at low quality, paid per image at full quality, an API for the customers who need it thousands of times, and no investors, so a sale is a choice and not a necessity.",
+    steps: [
+      "Pick one task that professionals repeat by hand and that a model does in seconds. Make it one click with no settings.",
+      "Give the low-quality result away so people can post it; charge per image for the quality that the work needs.",
+      "Ship the API and the plugin for the tools the professionals already use, because volume customers pay for integration, not for a website.",
+      "Finance it from the first paying customers. Then the companies that distribute your tool are the natural buyers."
+    ],
+    open: "Any visual AI task that is still manual in professional software: video matting beyond green screen, product photo relighting, 3D from photos, and batch edits for catalogues."
+  },
+  watch: [
+    { title: "No price and no revenue", text: "The sale price was never published, and no revenue amount ever was. The headline figure on this page is a floor taken from press reports, and the two reported customer counts, 40,000 and 80,000, do not agree." },
+    { title: "Company numbers only", text: "Users, removals per month and growth rates are company statements. The traffic figure is from an analysis service quoted by a newspaper. The only register-grade facts are the ownership steps." },
+    { title: "Not solo at the sale", text: "One developer released it, but two founders owned the company from the start and 25 people worked there at the sale. It qualifies as a small team, not as a solo business." },
+    { title: "The buyer already owned the channel", text: "Canva had integrated remove.bg for about a year before the sale. A tool that lives inside a bigger product can be replaced by that product's own model, which is what the predecessors show; here the owner chose to buy instead." },
+    { title: "The free tier is now the model's commodity", text: "Background removal is built into phones, Photoshop and every design tool. The paid business depends on quality at the edges, on the API and on Canva's distribution, not on being the only tool." }
+  ],
+  sources: [
+    { title: "Der Brutkasten, 23 February 2021: Wiener Startup Kaleido AI schafft einen der größten Exits der österreichischen Startup-Geschichte", url: "https://brutkasten.com/artikel/wiener-startup-kaleido-ai-schafft-einen-der-grosten-exits-der-osterreichischen-startup-geschichte", grade: "B", how: "The live page refuses automated requests; read in full from the Internet Archive copy. Source for the company register entry, the two tranches, the insider's price range, the 500,000 daily Canva users, the 25 employees and the 50/50 ownership." },
+    { title: "TechCrunch, 24 February 2021: Canva acquires background removal specialists Kaleido", url: "https://techcrunch.com/2021/02/24/canva-acquires-background-removal-specialists-kaleido/", grade: "C", how: "Read in full. Source for the price speculation and the founder's bootstrapping quote from the press release." },
+    { title: "Canva newsroom, 23 February 2021: Canva welcomes Smartmockups and Kaleido to the family", url: "https://www.canva.com/newsroom/news/kaleido-smartmockups/", grade: "A", how: "Read in full. The acquirer's own announcement. Source for the 150 million removals a month and the customer names." },
+    { title: "Kaleido AI press release, 23 February 2021: Kaleido is joining the Canva family", url: "https://kaleido.ai/b/kaleido-is-joining-the-canva-family", grade: "C", how: "Read in full. Source for the 100 million people in 180 countries in 2020, the 25 AI experts, the declined investment offers and the renaming banner." },
+    { title: "Trending Topics, 4 February 2021: Kaleido AI: Australisches Unicorn Canva steigt groß bei Wiener Startup ein", url: "https://www.trendingtopics.eu/canva-steigt-beikaleido-ai-ein/", grade: "B", how: "Read in full. Source for the 40 percent stake from the company register, the 33 million monthly visits and the 11 cents per image." },
+    { title: "Trending Topics, 23 February 2021: Canva: Australisches Unicorn übernimmt Wiener AI-Startup Kaleido komplett", url: "https://www.trendingtopics.eu/canva-australisches-unicorn-uebernimmt-wiener-ai-startup-kaleido-komplett/", grade: "C", how: "Read in full. Founder interview. Source for the 100 percent step, the 600 percent growth, the Canva cooperation of more than a year and the hiring plan." },
+    { title: "Futurezone, 23 February 2021: Millionen-Deal: Wiener Start-up Kaleido AI verkauft", url: "https://futurezone.at/start-ups/millionen-deal-wiener-start-up-kaleido-ai-verkauft/401196236", grade: "C", how: "Read in full. Source for the 80,000 paying customers and the profitability quote." },
+    { title: "Trend.at, February 2021: Neuer Background für Wiener Start-up Kaleido AI: Canva übernimmt", url: "https://www.trend.at/unternehmen/neuer-background-canva-wiener-start-kaleido-ai", grade: "C", how: "Read in full. Source for the 270 percent revenue growth in 2019, the 40,000 paying customers, the Unscreen Pro launch and prices." },
+    { title: "Trending Topics, 30 August 2019: Remove.bg: Dieses Wiener Startup entfernt mit AI die Hintergründe aus deinen Bildern", url: "https://www.trendingtopics.eu/remove-bg-dieses-wiener-startup-entfernt-mit-ai-die-hintergruende-aus-deinen-bildern/", grade: "C", how: "Read in full. Founder interview. Source for the agency background, Wurstify, the thousands of paying customers, the 18 cents, the team of seven and the channels." },
+    { title: "TechCrunch, 8 January 2019: This cool tool deletes the background from images so you don't have to use Photoshop", url: "https://techcrunch.com/2019/01/08/remove-bg-photoshop-free-image-background-editor/", grade: "C", how: "Read in full. Journalist's test and quotes from the About page." },
+    { title: "Pulse 2.0, 22 December 2018: Remove.bg: An easy way to remove the background from photos", url: "https://pulse2.com/remove-bg/", grade: "C", how: "Read in full. Names Benjamin Groessing as the developer and embeds his tweet of 17 December 2018." },
+    { title: "remove.bg About page, Internet Archive copy of 20 December 2018", url: "http://web.archive.org/web/20181220000000/https://www.remove.bg/about", grade: "C", how: "Read in full. Source for the free service, persons only, the 500 by 500 limit, the privacy note and the API beta." },
+    { title: "Futurezone, 5 March 2020: Hintergründe in Videos automatisch entfernen: Neues Tool aus Wien", url: "https://futurezone.at/start-ups/hintergruende-in-videos-automatisch-entfernen-neues-tool-aus-wien/400771242", grade: "C", how: "Read in full. Source for the Unscreen release, the 15 employees and the profitability statement." },
+    { title: "Leadersnet, February 2021: Australier kaufen KI-Runtastic der Wiener Start-up-Szene für Rekordsumme", url: "https://www.leadersnet.at/news/48841,australier-kaufen-ki-runtastic-der-wiener-start-up-szene-fuer.html", grade: "C", how: "Read in full. Source for the user growth from 3 million to more than 20 million in 2020." },
+    { title: "Kaleido AI company history page, read 12 October 2026", url: "https://www.kaleido.ai/about/our-story.jar", grade: "C", how: "Read in full. Source for the 2015 app, the Product Hunt claim, the 2019 API, the 30 million monthly active users and the team above 70 in 2022." },
+    { title: "remove.bg pricing page, read 12 October 2026, and costbench.com for the pay-as-you-go price", url: "https://www.remove.bg/pricing", grade: "C", how: "The page renders prices by script; the plan names, credits and prices were read from the data embedded in the page. The 3 credits for US$3 pack is from the reviewer costbench.com." },
+    { title: "European Central Bank, euro foreign exchange reference rates, historical CSV", url: "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-hist.zip", grade: "A", how: "Read the row for 15 February 2021: 1.2129 US dollars per euro." },
+    { title: "Loot Drop database export, 1,749 failed startups", url: "https://www.loot-drop.io/", grade: "C", how: "Local export. AI-written summaries, not independently verified. Source for the failed predecessors." },
+    { title: "Startup Daily, February 2021: Canva buys two design startups after doubling its monthly users to 50 million", url: "https://www.startupdaily.net/?p=87553", grade: "C", how: "Read in full. Canva's co-founder quote and the founder's 600 percent statement." },
+    { title: "Product Hunt, remove.bg product page with its launch list", url: "https://www.producthunt.com/products/remove-bg", grade: "C", how: "Read the launch list. Source for the Photoshop extension (25 April 2019), the desktop app (18 May 2019) and the Android app (5 June 2020)." }
+  ]
 }
 ];
 
