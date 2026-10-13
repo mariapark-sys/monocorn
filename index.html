@@ -3725,6 +3725,167 @@ const STORIES = [
     { title: "Apple App Review Guidelines, read 12 October 2026", url: "https://developer.apple.com/app-store/review/guidelines/", grade: "B", how: "Read guideline 1.1.4 and section 3.1 on payments." },
     { title: "Loot Drop database export, 1,749 failed startups", url: "https://www.loot-drop.io/", grade: "C", how: "Local export. AI-written summaries, not independently verified. Source for the failed predecessors." }
   ]
+},
+{
+  slug: "umax",
+  name: "Umax",
+  country: "USA",
+  sector: "Consumer software",
+  productType: "AI face-rating app",
+  aiType: "AI-native",
+  team: "solo",
+  outcome: "running",
+  evidence: "C",
+  added: "2026-10-13",
+  launchLabel: "December 2023",
+  outcomeLabel: "Almost US$5M in its first year, December 2024",
+  sticker: "$5M in first year",
+  outcomeUsd: 5000000,
+  months: 12,
+  teamLabel: "1 founder, with freelancers and paid creators; staff count not published",
+  fundingLabel: "None reported",
+  primaryFactor: "Distribution",
+  meters: { evidence: 1, copyable: 2, capital: 2 },
+  tags: ["AI-native", "Solo founder", "Bootstrapped", "Running", "B2C", "Consumer apps"],
+  product: "A phone app that scores a selfie. The user uploads a photo of his face, and the app returns a score up to 100 with ratings of the jawline, the cheekbones, the skin and masculinity, and tips such as starting a skin care routine. The results are shown after the user subscribes, at about US$4 a week, or invites three friends.",
+  why: "Young men were already posting photos online and asking strangers to rate their looks. Umax turned that habit into a private score from an AI model. One founder built it at almost no cost on a rented vision model, and creators in one small niche spread it, because a score makes a before-and-after video easy to show. Revenue was highest within months of the launch and has fallen since.",
+  summary: [
+    `Umax is a phone app for <dfn>looksmaxxing</dfn>, an online term for trying to raise one's physical attractiveness as far as possible, a trend followed mostly by boys and young men. The user uploads a selfie. A <dfn>vision model</dfn>, an AI model that takes an image as input and answers questions about it, returns a score up to 100, ratings of the jawline, the cheekbones, the skin and masculinity, and tips for improvement. The app calls OpenAI's GPT Vision model, so the founder did not train a model of his own. The results cost about US$4 a week.`,
+    `Blake Anderson, 23 years old in 2024, built it alone in November 2023, after he left the team of his first app, and released it at the start of December 2023. He says the best month brought about US$700,000, and he does not date that month. He told Fortune in July 2024 that the app made about US$500,000 a month, and Fortune wrote that it could not verify the amount. In December 2024 he said the app had made almost US$5 million in the past year, which is the headline figure of this page. Revenue then fell: about US$400,000 a month in November 2024 and US$270,000 in July 2025, the last figure he published. A <dfn>run rate</dfn> is one month of revenue multiplied by twelve. The US$6 million a year that many articles repeat is a run rate, and the founder's own total for the first twelve months is lower.`,
+    `Every revenue number on this page is a founder statement, grade C. One estimate from an app-data service is well below his figures. The page also reports the criticism: psychologists say that apps which score the faces of young users can feed anxiety about appearance. The app has had no update since June 2024. The page then shows five earlier consumer apps for young users that spread fast and closed.`
+  ],
+  factsCaption: "Almost US$5 million in the first twelve months from a face-rating app built by one person, then a decline, all self-reported",
+  factsRead: "How to read this table: a grade C value is a statement by the founder in an interview, a podcast or an X post, or an estimate by a third party that says so. Fortune printed his monthly figure and wrote that it could not verify it. A grade B value is a record in Apple's or Google's app store: dates, ratings and prices, not revenue. A \"calc\" value was computed on this page from the rows above it. No revenue value is grade A or B.",
+  timelineLead: "From a selfie scorer coded by one person in November 2023 to almost US$5 million in twelve months, and then a decline. Each entry carries its grade.",
+  pricing: {
+    caption: "Umax prices: in-app purchases listed in the App Store on 13 October 2026 (grade B), and the weekly price that Fortune and a16z recorded in 2024 (grade C)",
+    note: "The app is free to download. The App Store lists four prices for Weekly Premium and three for Monthly Premium. The founder says he tests prices and periods on different users with a paywall tool, and the listing does not say which price a new user sees today. Fortune recorded US$3.99 a week in July 2024, and a16z recorded US$4.99 a week in August 2024. At US$3.99 a week, a user who stays one year pays US$207.48. One further in-app purchase at US$3.99 is listed without a description.",
+    rows: [
+      ["Weekly Premium", "", "3.99 a week", "Also listed at 4.99, 6.99 and 9.99 a week"],
+      ["Monthly Premium", "", "9.99", "Also listed at 12.99 and 24.99 a month"],
+      ["You as a 10/10", "", "", "Listed at 6.99; a generated picture of the user with a top score; the listing does not say if it is one-time"],
+      ["Invite three friends", "0", "0", "Replaces the first weekly fee; did not work in Fortune's test in 2024"]
+    ]
+  },
+  facts: [
+    { fact: "Revenue in the first twelve months, to December 2024", value: "almost US$5 million", grade: "C", note: "Founder in a Starter Story video interview published on 29 December 2024: \"In the past year we've done almost 5 million in revenue.\" The recording date is not given. Sales before the store's commission. This is the headline figure.", src: [1] },
+    { fact: "Run rate stated by the founder, 4 October 2024", value: "US$5 million a year", grade: "C", note: "His X post lists \"Umax ($5m arr)\". ARR, annual recurring revenue, is the current monthly subscription revenue multiplied by twelve.", src: [3] },
+    { fact: "Revenue per month, July 2024", value: "about US$500,000", grade: "C", note: "Fortune, 1 July 2024, \"according to Blake Anderson\". Fortune adds: \"The amount could not be independently verified.\"", src: [2] },
+    { fact: "That month as a yearly rate", value: "US$6 million", grade: "X", note: "Calculated: 500,000 times 12 equals 6,000,000. The founder said \"a little bit over $6 million in ARR\" on a podcast published in September 2024, and newsletters repeat it. It is a run rate from one month, not money collected in a year. The claim that it was reached 3.5 months after launch was not found in any source read for this page.", src: [2, 7, 17] },
+    { fact: "Best month", value: "about US$700,000, month not stated", grade: "C", note: "Founder on the Startup Ideas Podcast, November 2024: \"at our peak, we were around 700,000 in monthly revenue\". A newsletter dates his best month, for all his apps together, to February 2024. His X post of 2 January 2025 gives US$600,000 a month for the app he built on his own.", src: [6, 18, 5] },
+    { fact: "Revenue per month, November 2024", value: "about US$400,000", grade: "C", note: "Same podcast: \"Now I think it's closer to 400,000\".", src: [6] },
+    { fact: "Profit per month, December 2024", value: "a little over US$100,000", grade: "C", note: "Starter Story interview. After creator payments, the store's commission and server costs. He adds that it used to be more.", src: [1] },
+    { fact: "Total sales on the Apple App Store, shown to Whop", value: "US$4.2 million", grade: "C", note: "Whop article, 28 May 2025; the interview date is not given. The founder showed his dashboard to a Whop employee. Whop sells the founder's paid community, so it is not an independent reviewer. In the same interview: \"Umax is still doing 350 to 400(k) a month\" and \"Apple takes 30% of that\".", src: [8] },
+    { fact: "Revenue, July 2025", value: "US$270,000", grade: "C", note: "Founder's X post of 1 August 2025, which lists the July revenue of three apps. Umax is the smallest of the three. No later figure was found.", src: [4] },
+    { fact: "Fall from the best month to July 2025", value: "61%", grade: "X", note: "Calculated: 700,000 minus 270,000 is 430,000, and 430,000 divided by 700,000 is 61.4%.", src: [6, 4] },
+    { fact: "Third-party estimate of revenue per month", value: "US$330,000 in February 2024, US$170,000 in August 2024", grade: "C", note: "An estimate in the Chinese trade site Baijing, which names the app-data service Diandian Data. It puts total revenue near US$2 million by August 2024, where the founder's own figure was more than US$3 million. The article does not say if the estimate is before or after the stores' commission.", src: [9] },
+    { fact: "Downloads", value: "more than 7 million by July 2024, more than 10 million by November 2024", grade: "C", note: "Founder to Fortune and on the podcast. Google Play shows more than 10 million downloads on Android in October 2026.", src: [2, 6, 13] },
+    { fact: "Users", value: "90% male, ages 16 to 45", grade: "C", note: "Founder to Fortune.", src: [2] },
+    { fact: "Price, 2024", value: "US$3.99 a week in July, US$4.99 a week in August", grade: "C", note: "Fortune and a16z. Both mention that inviting three friends replaces the payment; in Fortune's test this did not work.", src: [2, 11] },
+    { fact: "Cost of one year at US$3.99 a week", value: "US$207.48", grade: "X", note: "Calculated: 3.99 times 52.", src: [2] },
+    { fact: "Rank among generative-AI phone apps, August 2024", value: "44th by monthly active users", grade: "C", note: "a16z, a venture capital firm, in the third edition of its Top 100 list. A competitor, LooksMax AI, is 43rd.", src: [11] },
+    { fact: "Development cost", value: "close to zero apart from the founder's time", grade: "C", note: "Founder on the podcast: the face analysis is a call to GPT Vision, where it would earlier have needed his own facial recognition models.", src: [6] },
+    { fact: "Team when the figures were reached", value: "1 founder, plus freelancers and paid creators", grade: "C", note: "He says he had the idea, designed and built the app and led most of the marketing, and that he did it on his own. He names Upwork freelancers for occasional work, and a podcast summary mentions employees. No count of staff is public.", src: [1, 5, 7] },
+    { fact: "Outside funding", value: "none reported", grade: "C", note: "His X post: \"Reinvested every dollar and did it on my own.\" One Chinese article says he joined an accelerator with Umax; it does not name it, and no other source confirms it (not verified).", src: [5, 9] },
+    { fact: "App Store record, 13 October 2026", value: "still listed; released 29 November 2023; last update 28 June 2024", grade: "B", note: "Apple's listing: seller Improvement Tech LLC, version 1.4.3, 51,619 ratings with an average of 4.56, age rating 18+. A store record, not a revenue figure.", src: [12] },
+    { fact: "Google Play record, 13 October 2026", value: "still listed; last update 19 April 2024", grade: "B", note: "More than 10 million downloads, 400,000 reviews, 4.5 stars, content rating Everyone.", src: [13] },
+    { fact: "Time since the last iPhone update", value: "27 months", grade: "X", note: "Calculated: 28 June 2024 to 13 October 2026.", src: [12] },
+    { fact: "Time from launch to the headline figure", value: "12 months", grade: "X", note: "Calculated: December 2023 to December 2024.", src: [1, 7] }
+  ],
+  timeline: [
+    { when: "July 2023", what: "Anderson, a new graduate of Tulane University with no coding training, releases his first app, RizzGPT, a dating-message assistant. He taught himself to code with ChatGPT in May and June.", grade: "C", src: [1, 8] },
+    { when: "Before November 2023", what: "He leaves the RizzGPT team after repeated conflict with a co-founder about who leads the company, and keeps his equity. He does not give the date.", grade: "C", src: [1] },
+    { when: "November 2023", what: "He builds Umax alone, sleeping on his brother's couch. He says he spent Thanksgiving coding. The face analysis is a prompt to OpenAI's GPT Vision model.", grade: "C", src: [1, 6] },
+    { when: "29 November 2023", what: "Apple's record gives this release date for Umax, under the seller Improvement Tech LLC; the version history dates version 1.0 to 30 November. The founder dates the launch to the start of December 2023.", grade: "B", src: [12, 7] },
+    { when: "December 2023", what: "A trade article says the app started with a video by a looksmaxxing creator, Sam Zia, and made about US$100,000 in its first month. No founder source read for this page confirms the name or the terms (not verified).", grade: "C", src: [9] },
+    { when: "27 December 2023", what: "Apple's record gives this release date for a competitor, LooksMax AI, 28 days after the release date of Umax.", grade: "B", src: [12] },
+    { when: "Early 2024", what: "With revenue near US$200,000 a month and a copy on the market, he spends more than US$200,000 on creators in three days, almost all the app's income at that time. Revenue passes US$500,000 a month within five days. This account comes from a Chinese summary of his podcast; the podcast's own summary confirms the decision but not the numbers.", grade: "C", src: [10, 7] },
+    { when: "First half of 2024", what: "The best month, about US$700,000. He does not date it.", grade: "C", src: [6] },
+    { when: "May 2024", what: "Cal AI, a calorie-tracking app that he co-founded with two teenage founders, is released. They run its operations. It has its own page on this site.", grade: "C", src: [1, 9] },
+    { when: "28 June 2024", what: "Version 1.4.3, the last update of the iPhone app.", grade: "B", src: [12] },
+    { when: "1 July 2024", what: "Fortune reports about US$500,000 a month and more than 7 million downloads, both from the founder, and writes that it could not verify the revenue. Psychologists in the article criticize the trend.", grade: "C", src: [2] },
+    { when: "21 August 2024", what: "a16z ranks Umax 44th among generative-AI phone apps by monthly active users.", grade: "C", src: [11] },
+    { when: "4 October 2024", what: "He posts on X that Umax is at US$5 million a year and that he no longer builds apps with this method.", grade: "C", src: [3] },
+    { when: "November 2024", what: "On a podcast he says revenue is closer to US$400,000 a month and downloads are above 10 million.", grade: "C", src: [6] },
+    { when: "29 December 2024", what: "Starter Story publishes his interview: almost US$5 million in the past year and a little over US$100,000 of profit a month. He now works on Apex, a paid community that teaches app building.", grade: "C", src: [1, 8] },
+    { when: "1 August 2025", what: "He posts that Umax made US$270,000 in July 2025.", grade: "C", src: [4] },
+    { when: "13 October 2026", what: "Umax is still listed in the App Store and on Google Play, with no update since 2024. No revenue figure after July 2025 was found. The founder's posts in 2026 are about other products.", grade: "B", src: [12, 13, 19] }
+  ],
+  mechanism: [
+    { title: "Distribution", text: "Growth came from creators in one small niche. Anderson told Fortune that the videos that do well are before-and-after videos and that a Umax score puts a number on the change, and Fortune writes that users often show screenshots of the app in their own videos. He counts more than 1 billion impressions across platforms. He says creators are his most profitable channel, ahead of the app's own accounts and paid ads." },
+    { title: "A niche that already spent money", text: "People who wanted to look better were already buying skin care, hair care and face massage tools, and no software served them. His rule: when a niche spends heavily on physical products, that shows the niche pays, and software for the same problem can probably be built." },
+    { title: "A rented vision model", text: "A face scorer used to need a trained facial recognition model. With GPT Vision it became a prompt, written by one person in weeks. The same fact means that anyone else can write the prompt too." },
+    { title: "A low weekly price behind a tested paywall", text: "The user sees the results after subscribing. He says low prices bring more users, more recommendations between friends and better comments on social media. He tests prices and periods on different users with a paywall tool, which he says can raise revenue per download by 1.5 to 2 times." },
+    { title: "All the money on one campaign", text: "By a Chinese account of his podcast, when a copy appeared he spent almost all of the app's income on creators in three days, and monthly revenue more than doubled within five days. He describes himself as someone who has no second plan." }
+  ],
+  howBuilt: {
+    intro: "These details come from the founder's interviews and podcasts. They are grade C. The stack is the one he described in December 2024.",
+    items: [
+      "The face analysis is a prompt to OpenAI's GPT Vision model, not a model trained by the founder. He says the upfront development cost was close to zero apart from his own time.",
+      "He learned to code with ChatGPT in May and June 2023. A Chinese article that summarizes one of his podcasts says about 85% of Umax's code was generated by ChatGPT (not verified in a founder source).",
+      "React Native with the Expo framework for the app, Node.js for the server, Cursor as the code editor, Figma for design, CapCut for marketing videos.",
+      "Superwall, a paywall tool, to show different prices and subscription periods to different users. The App Store listing shows four weekly prices and three monthly prices.",
+      "Freelancers from Upwork for occasional work. His method: hire five to ten people for one or two hours each, then keep the best one.",
+      "Costs in his words: Apple keeps 15% of sales up to the first US$1 million and 30% above that, model costs are small unless the app generates images, and most of the money goes to marketing and staff.",
+      "Marketing: paid creators first, also videos made in-house for the app's own accounts, and paid ads on Meta and TikTok."
+    ],
+    src: [1, 6, 8, 10, 12]
+  },
+  predecessorsIntro: "Five consumer apps in the Loot Drop database spread fast among young users and then closed. Three of them exposed teenagers and students to harsh judgement from other people. The values below are from that database and are not independently verified.",
+  predecessors: [
+    { name: "Formspring", years: "2009 to 2016", funding: "US$14M", cause: "Competition", promise: "Anonymous questions and brutally honest answers for teenagers.", died: "Anonymous questions between teenagers turned into cyberbullying and bad press. It never earned enough from its large user base, and Ask.fm took its users.", url: "https://www.loot-drop.io/startup/161-formspring" },
+    { name: "Yik Yak", years: "2013 to 2017", funding: "US$73M", cause: "Product/Tech Failure", promise: "An anonymous message board for everyone within 5 miles, aimed at college campuses.", died: "Bullying and harassment led to school bans. Anonymity made advertising hard to sell, and growth stopped.", url: "https://www.loot-drop.io/startup/775-yik-yak" },
+    { name: "Secret", years: "2014 to 2015", funding: "US$35M", cause: "Team/Founder Conflict", promise: "Share confessions with friends without your name.", died: "The novelty faded, gossip and bullying damaged its name, and the founders disagreed about the direction.", url: "https://www.loot-drop.io/startup/526-secret" },
+    { name: "Yo", years: "2014 to 2018", funding: "US$1.5M", cause: "No Market Need", promise: "An app that sends one word: Yo.", died: "After the viral spike, users found nothing to come back for, and the app had no way to earn money.", url: "https://www.loot-drop.io/startup/776-yo" },
+    { name: "Meerkat", years: "2015 to 2016", funding: "US$14M", cause: "Competition", promise: "Live video from your phone to your Twitter followers.", died: "Its growth depended on Twitter's network. Twitter bought a competitor, Periscope, and cut Meerkat's access.", url: "https://www.loot-drop.io/startup/2194-meerkat" }
+  ],
+  whatChanged: [
+    `Formspring, Yik Yak and Secret gave young users harsh judgement from other people, without names. All three grew fast, all three were blamed for bullying, and none found a way to earn enough money. Yo shows a second pattern: a novelty that spreads in days and gives users no reason to return. Meerkat shows a third: growth that depends on a platform that the company does not control.`,
+    `Umax differs in two ways. The judgement comes from a model and only the user sees it, so there is no content from other users to moderate. And it charged from the first day, with one founder and a rented model, so it made a profit where the earlier apps spent investors' money: US$73 million in the case of Yik Yak. The other patterns still apply. Psychologists criticize face scores for young users as critics once criticized anonymous judgement. Revenue fell 61% from the best month to July 2025, as the revenue of a novelty does. And the growth depends on creators, on TikTok and Instagram, and on the stores of Apple and Google.`
+  ],
+  copy: {
+    verdict: "The method, yes. This product, with care.",
+    text: "The method is public. Anderson described it in interviews and wrote in October 2024 that he had used it three times in one year. A copy of the product itself is a weaker plan: a competitor was in the App Store 28 days after Umax, an Australian newspaper counted at least 26 face-rating apps in 2026, and Umax's own revenue has fallen since 2024. Anyone who copies the product also takes on the criticism described in the next section.",
+    steps: [
+      "Look for a niche where people already spend money on physical products and no software serves them.",
+      "Build the one function with a rented model, and spend the saved time on distribution.",
+      "Pay small creators inside the niche, measure each one, and add money only where the return is positive.",
+      "Charge a low price from the first day, and test prices and periods with a paywall tool."
+    ],
+    open: "In December 2024 Anderson said that there was still room for one app that covers the whole of personal appearance, and that Umax was only a first version. The method also works outside appearance: on a podcast in November 2024 he named career advice, journaling and language learning as app ideas."
+  },
+  watch: [
+    { title: "Founder numbers only, and one lower estimate", text: "No payment processor, buyer or journalist has confirmed any revenue figure. Fortune printed US$500,000 a month and added that it could not verify it. The dashboard was shown once, to an employee of Whop, a company that sells the founder's paid community. An estimate quoted by the trade site Baijing gives US$330,000 for February 2024 and US$170,000 for August 2024, well below the founder's figures for 2024." },
+    { title: "A peak, then a decline", text: "The US$6 million a year that many articles quote is one month multiplied by twelve. The founder's later figures are lower each time: US$5 million a year in October 2024, about US$400,000 a month in November 2024, US$270,000 in July 2025. No figure after July 2025 was found. The iPhone app was last updated on 28 June 2024 and the Android app on 19 April 2024. Both were still listed on 13 October 2026, but the product has not changed for more than two years." },
+    { title: "Appearance scores and teenagers", text: "In Fortune's 2024 article, Tom Hildebrandt, a clinical psychologist at Mount Sinai in New York, calls the effect of such feedback an erosion of the sense of self and says these products earn money from insecurity. In July 2026 the Sunday Telegraph in Australia quoted Erika Penney, president of the Australian Clinical Psychology Association: apps that rate appearance make adolescents obsess over their looks, and mild advice can lead to harder practices. A University of Colorado psychiatry professor gave similar warnings to parents in August 2026. The two 2026 articles are about the category and do not name Umax, and no study of Umax users was found. Anderson's answer to Fortune: he does not want a user to feel insecure to the point of anxiety, and he thinks that telling everyone that nothing needs work is also dangerous." },
+    { title: "The community it grew from", text: "Fortune describes looksmaxxing content as a range. At the mild end, creators tell boys to wash their faces. At the extreme end, they tell them to hit their jaws to cause small fractures, to have surgery or to take steroids. Umax's tips are of the mild kind, such as a skin care routine. Its audience came from the same videos and creators, and its name in both stores is Umax - Become Hot." },
+    { title: "Store rules and age ratings", text: "Apple's review guidelines say that apps used for objectification of real people, with hot-or-not voting as the example, do not belong on the App Store and may be removed without notice. Umax scores the user's own photo with a model, which is not voting, and it has stayed in the store since 2023. The rule shows how close the category is to the limit. Age is a second point: the App Store rates the app 18+, Google Play rates it Everyone, and the founder told Fortune that users are 16 to 45." },
+    { title: "Growth bought from creators, and easy to copy", text: "The founder calls creators his most profitable channel, and by one account he spent almost all the app's income on them in three days when a copy appeared. LooksMax AI ranked one place above Umax in a16z's list of August 2024. A product that is one prompt to a rented model has no technical protection. Its position depends on continued payments to creators and on the ranking rules of TikTok, Instagram and the App Store." },
+    { title: "Weekly billing", text: "US$3.99 a week reads as a small price and adds up to US$207.48 for a user who stays one year. Fortune's test found that the offer to replace the first fee by inviting three friends did not work." }
+  ],
+  sources: [
+    { title: "Starter Story, 29 December 2024: He made $10M with 3 iPhone apps (video interview with transcript)", url: "https://www.starterstory.com/stories/he-made-10m-with-3-iphone-apps", grade: "C", how: "Read the transcript in full. Founder interview. Source for the headline figure, the profit, how he built Umax alone, the split from his first team and the stack." },
+    { title: "Fortune, 1 July 2024, by Alexandra Sternlicht: Inside the 'looksmaxxing' economy", url: "https://fortune.com/2024/07/01/looksmaxxing-apps-rate-teen-boys-faces-mental-health", grade: "C", how: "Read in full. Fortune reports the founder's revenue and download figures and writes that it could not verify the revenue. Source for the price, the user ages, the psychologists' criticism and the founder's reply." },
+    { title: "Blake Anderson on X, 4 October 2024: RizzGPT ($2.4m arr), Umax ($5m arr)", url: "https://x.com/blakeandersonw/status/1842349939088925146", grade: "C", how: "Read in full through the fxtwitter API. Founder post." },
+    { title: "Blake Anderson on X, 1 August 2025: I made $3.94m in July 2025", url: "https://x.com/blakeandersonw/status/1951306304393531687", grade: "C", how: "Read in full through the fxtwitter API. Founder post. Source for the July 2025 revenue of Umax." },
+    { title: "Blake Anderson on X, 2 January 2025: Reinvested every dollar and did it on my own", url: "https://x.com/blakeandersonw/status/1874935568397934745", grade: "C", how: "Read in full through the fxtwitter API. Founder post. It does not name the apps; the second of three is read as Umax from the order." },
+    { title: "The Startup Ideas Podcast with Greg Isenberg, November 2024: How to build $1M+ Viral AI Apps, interview with Blake Anderson, transcript at Audioscrape", url: "https://audioscrape.com/podcast/the-startup-ideas-podcast/episode/how-to-build-1m-viral-ai-apps", grade: "C", how: "Read the free part of the transcript, the first four minutes, and the episode notes. Source for the best month, the November 2024 revenue, the downloads and the GPT Vision statement." },
+    { title: "Superhuman AI podcast, 3 September 2024: How Blake Anderson built a $6 Million app with ChatGPT, page at Podwise", url: "https://podwise.ai/episodes/1919485", grade: "C", how: "Read the episode summary, the outline and the first two minutes of the transcript; the rest needs an account. Source for the launch date, the US$6 million run rate claim and the summary of the creator campaign." },
+    { title: "Whop blog, 28 May 2025: How He Turned Looksmaxxing into $10 Million Dollars with ChatGPT", url: "https://whop.com/blog/looksmaxxing-blake-anderson/", grade: "C", how: "Read in full. Written by a company that sells the founder's paid community. Source for the App Store total, the 350,000 to 400,000 a month statement and the marketing channels." },
+    { title: "Baijing (白鲸出海), 24 September 2024: article in Chinese on a calorie app by teenage founders, with a section on Anderson's apps", url: "https://www.baijing.cn/article/50157", grade: "C", how: "Read the sections on Anderson in Chinese. A trade publication. Source for the third-party revenue estimate and the unverified account of the launch creator and the accelerator." },
+    { title: "Huxiu (虎嗅), 23 February 2025: article in Chinese on Anderson, written from his podcast interviews", url: "https://m.huxiu.com/article/4050088.html", grade: "C", how: "Read the sections on Umax in Chinese. A secondary account; the podcast audio was not checked. Source for the three-day creator campaign and the share of generated code." },
+    { title: "Andreessen Horowitz (a16z), 21 August 2024: The Top 100 Gen AI Consumer Apps, 3rd Edition", url: "https://a16z.com/100-gen-ai-apps-3/", grade: "C", how: "Read the section on aesthetics and dating apps. Source for the rank, the competitor's rank and the US$4.99 weekly price." },
+    { title: "Apple App Store listing: Umax - Become Hot, read 13 October 2026, with Apple's iTunes Search API record", url: "https://apps.apple.com/us/app/umax-become-hot/id6471026798", grade: "B", how: "Read in full. Apple's store record. Source for the seller, the version dates, the ratings, the age rating, the in-app purchase prices and the release date of the competitor LooksMax AI." },
+    { title: "Google Play listing: Umax - Become Hot, read 13 October 2026", url: "https://play.google.com/store/apps/details?id=com.umax.tech", grade: "B", how: "Read in full. Google's store record. Source for the Android downloads, the content rating and the last update date." },
+    { title: "Apple, App Store Review Guidelines, read 13 October 2026", url: "https://developer.apple.com/app-store/review/guidelines/", grade: "B", how: "Read the passage on user-generated content. Source for the rule on objectification of real people." },
+    { title: "Australian Psychological Society, 14 July 2026, reprint of a Sunday Telegraph article: Self-rating apps a bad look as users obsess over flaws", url: "https://psychology.org.au/insights/aps-in-the-sunday-telegraph-self-rating-apps-a-bad", grade: "C", how: "Read in full. About the category of appearance-rating apps; it does not name Umax. Source for the count of 26 apps and the statement by Erika Penney." },
+    { title: "University of Colorado Anschutz, 11 August 2026: Why Are Teens Asking AI to Rate Their Faces?", url: "https://news.cuanschutz.edu/news-stories/why-are-teens-asking-ai-to-rate-their-faces", grade: "C", how: "Read in full. Interview with Emily Hemendinger, associate professor of psychiatry. About the trend; it does not name Umax." },
+    { title: "Indie Hackers, 7 May 2024, post by Rushab Jain: Reddit trend, $6M ARR beauty app for men", url: "https://www.indiehackers.com/post/reddit-trend-6m-arr-beauty-app-for-men-57ec364606", grade: "C", how: "Read in full. A third party that repeats the US$6 million figure without a source. Cited only to show where the figure circulates." },
+    { title: "Scale Nuggets newsletter, 27 August 2024: The 23-Year-Old Who's Making $11M/year with AI Apps", url: "https://scalenuggets.beehiiv.com/p/23yearold-whos-making-11myear-ai-apps", grade: "C", how: "Read the free part; the rest is behind a subscription. A secondary account. Cited for the February 2024 best month." },
+    { title: "Blake Anderson on X, 29 March 2026: Introducing core.so", url: "https://x.com/blakeandersonw/status/2038276867464061056", grade: "C", how: "Read in full through the fxtwitter API. Shows that the founder's public work in 2026 is on other products." },
+    { title: "Umax website", url: "https://www.umaxapp.com", grade: "C", how: "Read in full. One page with a link to the App Store and the line that the app is owned and operated by Improvement Tech LLC. Not used for numbers." },
+    { title: "Loot Drop database export, 1,749 failed startups", url: "https://www.loot-drop.io/", grade: "C", how: "Local export. AI-written summaries, not independently verified. Source for the failed predecessors." }
+  ]
 }
 ];
 
