@@ -1363,6 +1363,158 @@ const STORIES = [
     { title: "Indie Hackers, 26 May 2023: Breaking down Danny Postma's SEO strategy for HeadshotPro, and the founder's reply on X of 25 May 2023", url: "https://indiehackers.com/post/breaking-down-danny-postmas-seo-strategy-for-headshotpro-300k-in-1-year-fad0af94d2", grade: "C", how: "Read in full, and the two X posts it links through the fxtwitter API. Source for the city pages, the rankings, the backlinks and the February 2023 free tool." },
     { title: "Loot Drop database export, 1,749 failed startups", url: "https://www.loot-drop.io/", grade: "C", how: "Local export. AI-written summaries, not independently verified. Source for the failed predecessors." }
   ]
+},
+{
+  slug: "interior-ai",
+  name: "Interior AI",
+  country: "Netherlands, run from anywhere",
+  sector: "Information Technology",
+  productType: "AI interior design and virtual staging",
+  aiType: "AI-native",
+  team: "solo",
+  outcome: "running",
+  evidence: "C",
+  added: "2026-10-12",
+  launchLabel: "September 2022",
+  outcomeLabel: "US$43K a month, September 2024",
+  sticker: "$43K/mo, 1 person",
+  outcomeUsd: 516000,
+  months: 24,
+  teamLabel: "1 person, no employees",
+  fundingLabel: "None",
+  primaryFactor: "Speed",
+  meters: { evidence: 1, copyable: 2, capital: 1 },
+  tags: ["AI-native", "Solo founder", "Bootstrapped", "Running", "B2C", "Design tool"],
+  product: "You upload a photo of a room, pick a room type and a style, and about 25 seconds later you get a photorealistic render of the same room redesigned. It also furnishes empty rooms for real estate listings, turns sketches into renders, and makes walk-through videos.",
+  why: "It was the first product of its kind, built in five days in September 2022, a few weeks after the image model it uses was released as open source. The founder already had a large audience from ten years of public revenue reports, so the launch post was enough marketing. Rented GPUs and one person keep costs low. Revenue reached about US$40,000 to US$50,000 a month and has been falling since 2025 as large AI companies and competitors ship the same feature.",
+  summary: [
+    `Interior AI is an <dfn>image-to-image</dfn> design tool. Image-to-image means that an image model takes an existing picture as input, here a photo of your room, and a text instruction, and produces a new picture that keeps the shape of the input but changes its content. Interior AI uses this to redesign a room in a chosen style, to furnish an empty room, which real estate agents call <dfn>virtual staging</dfn> (adding furniture to a photo of an empty home so that the listing looks lived in), and to turn a line sketch into a realistic render.`,
+    `Pieter Levels, a Dutch programmer who has run one-person internet businesses since 2014, built it alone in five days in September 2022, a few weeks after Stability AI released the Stable Diffusion model as open source. He has said it made US$10,000 to US$20,000 a month within a week. The site showed its own monthly recurring revenue on the home page: US$6,446 in November 2022, US$49,000 in September 2023, US$32,000 in September 2024. In September 2024 he listed it at US$43,000 a month on a record day after his Lex Fridman interview. He then launched Photo AI, which is on this site separately, from the same code and fine-tuning method.`,
+    `Every number on this page is a founder statement, grade C: his posts, his interview answers and the revenue counter that he placed on the site. No payment processor or buyer has confirmed them. His own project page shows Interior AI's share of his income falling from 13% in 2023 to 3% in 2026, and he wrote in July 2026 that large AI products are taking over what used to be small apps. The page also shows what happened to earlier interior design startups, which used human designers behind a software front.`
+  ],
+  factsCaption: "One person, no employees, about US$43,000 a month in September 2024 and a declining share of the founder's income since, all self-reported",
+  factsRead: "How to read this table: every value is a founder statement, grade C, from his posts, his interviews or the revenue counter he displayed on the site, unless marked \"calc\", which means computed on this page from the rows above it. No value is grade A or B.",
+  timelineLead: "From an open-source image model to a paid product in two weeks, then two years near US$40,000 a month, then decline. Each entry carries its grade.",
+  pricing: {
+    caption: "Interior AI prices read from the company's pricing page on 12 October 2026 (grade C)",
+    note: "All plans are subscriptions. The yearly price is shown per month and is billed once a year: Pro US$349, Premium US$599, Ultra US$1,199. The limit is the number of interior designs per month. From September 2024 to at least October 2025 the monthly prices were US$39, US$99 and US$299, and the yearly prices US$199, US$499 and US$1,699, according to archived copies of the page. The site says refunds are not given because the GPU time has already been paid for.",
+    rows: [
+      ["Pro", "29", "49", "1,000 designs a month, low quality, 4 rooms in parallel"],
+      ["Premium", "49", "99", "5,000 designs a month, medium quality, editing, virtual staging, videos"],
+      ["Ultra", "99", "199", "25,000 designs a month, highest quality, 16 rooms in parallel, dedicated server"]
+    ]
+  },
+  facts: [
+    { fact: "Revenue per month, September 2024", value: "US$43,000", grade: "C", note: "Founder's post of 22 September 2024, listing each product on a record day when total revenue reached US$420,000 a month after the Lex Fridman podcast. He wrote that it had already dropped a lot by the time of posting.", src: [1] },
+    { fact: "Run rate from the September 2024 figure", value: "about US$516,000 a year", grade: "X", note: "Calculated: US$43,000 times 12. This is the headline figure on this page.", src: [1] },
+    { fact: "Revenue per month, August 2024, founder's estimate", value: "US$40,000 to US$50,000", grade: "C", note: "Lex Fridman podcast, August 2024: \"now still makes like 40K, 50K a month, and it's been like two years\".", src: [2] },
+    { fact: "Monthly recurring revenue shown on the site, September 2024", value: "US$32,000", grade: "C", note: "The home page displayed \"$32K MRR\" next to the logo. Archived copy of 1 September 2024.", src: [5] },
+    { fact: "Monthly recurring revenue shown on the site, January 2024", value: "US$38,000", grade: "C", note: "Archived copy of 14 January 2024 shows \"$38K MRR\".", src: [6] },
+    { fact: "Monthly recurring revenue shown on the site, September 2023", value: "US$49,000", grade: "C", note: "Archived copy of 4 September 2023 shows \"$49K MRR\". The highest value found in archived copies.", src: [4] },
+    { fact: "Monthly recurring revenue shown on the site, November 2022", value: "US$6,446", grade: "C", note: "Archived copy of 1 November 2022 shows \"($6,446 MRR)\" under the title, about six weeks after launch.", src: [3] },
+    { fact: "Revenue in the first week", value: "US$10,000 to US$20,000 a month", grade: "C", note: "Founder on the Lex Fridman podcast: \"within a week, made 10K, 20K a month\". No exact figure.", src: [2] },
+    { fact: "Interiors rendered by 2 October 2022", value: "19,129", grade: "C", note: "Counter on the archived home page of 2 October 2022, when the product was still free and payment was not yet built.", src: [8] },
+    { fact: "Share of the founder's yearly revenue and investment gains", value: "2% in 2022, 13% in 2023, 12% in 2024, 6% in 2025, 3% in 2026", grade: "C", note: "Founder's project page, revenue chart, read 12 October 2026. The 2026 value is extrapolated by the page. The total includes investment gains, which grew strongly, so a falling share does not by itself prove falling revenue.", src: [10] },
+    { fact: "Third-party estimate, November 2025", value: "US$38,000 to US$45,000 a month", grade: "C", note: "Indie Hackers case study on Photo AI, which lists the founder's other products. The author does not give a source for this figure.", src: [13] },
+    { fact: "GPU cost, September 2024", value: "about US$60,000 a month for Photo AI and Interior AI together", grade: "C", note: "Founder's post. The split between the two products is not given. Other costs, server and Cloudflare, about US$500 a month.", src: [1] },
+    { fact: "Founder's total business revenue, September 2026", value: "US$200,000 to US$250,000 a month", grade: "C", note: "Founder's post of 23 September 2026, all products together, described as very stable.", src: [11] },
+    { fact: "Team", value: "1 person", grade: "C", note: "The site says \"This service was built by me, Pieter Levels\". The founder describes all his products as built by himself with no employees.", src: [12, 11] },
+    { fact: "Outside funding", value: "none", grade: "C", note: "Founder statements throughout; his blog describes all his products as bootstrapped without funding.", src: [11] },
+    { fact: "Time from launch to the September 2024 figure", value: "24 months", grade: "X", note: "Calculated: September 2022 to September 2024.", src: [1, 8] }
+  ],
+  timeline: [
+    { when: "August 2022", what: "Stability AI releases Stable Diffusion as open source. Levels installs it on his laptop and generates houses. His post of 18 September says this was two weeks earlier.", grade: "C", src: [14] },
+    { when: "5 September 2022", what: "He launches This House Does Not Exist, a site that generates modern houses. He later says that people got bored of it, but that the model was good at interiors.", grade: "C", src: [14, 2] },
+    { when: "September 2022", what: "He builds Interior AI in five days. The first archived copy, 15 September 2022, is a gallery of generated interiors. By 2 October the site accepts a photo of your room and shows 19,129 interiors rendered; payment is \"not working yet, building it now\".", grade: "C", src: [7, 8] },
+    { when: "4 October 2022", what: "The launch thread on X: \"Here's how I built interiorai.com from scratch in 5 days\". He says it made US$10,000 to US$20,000 a month within a week.", grade: "C", src: [7, 2] },
+    { when: "1 November 2022", what: "The home page shows US$6,446 in monthly recurring revenue. A Pro plan removes watermarks and unlocks more rooms, styles and resolutions.", grade: "C", src: [3] },
+    { when: "November 2022", what: "He fine-tunes the model on a gallery of good interiors, then on photos of himself. That experiment becomes Avatar AI and then Photo AI, which is on this site separately.", grade: "C", src: [2] },
+    { when: "4 September 2023", what: "The home page shows US$49,000 in monthly recurring revenue, the highest archived value. The site now calls itself \"the first AI Interior Designer in the world\".", grade: "C", src: [4] },
+    { when: "October 2023", what: "In a podcast he says that interior designers use the tool to show clients ideas, and that he wants to bring Photo AI and Interior AI to US$100,000 a month each.", grade: "C", src: [15] },
+    { when: "4 December 2023", what: "Interior AI v2 turns minimal architect sketches into renders.", grade: "C", src: [16] },
+    { when: "14 January 2024", what: "US$38,000 in monthly recurring revenue on the home page. An affiliate program pays 20% of referred payments.", grade: "C", src: [6] },
+    { when: "27 March 2024", what: "Someone at Wayfair asks him to cancel their subscription. The company had run 8 accounts for months while building its own AI interior design tool, which launched in 2023.", grade: "C", src: [9] },
+    { when: "20 August 2024", what: "Lex Fridman podcast. He says Interior AI still makes US$40,000 to US$50,000 a month after two years.", grade: "C", src: [2] },
+    { when: "1 September 2024", what: "US$32,000 in monthly recurring revenue on the home page. Prices: US$39, US$99 and US$299 a month.", grade: "C", src: [5] },
+    { when: "22 September 2024", what: "A record day after the podcast: US$43,000 a month for Interior AI inside US$420,000 a month in total, at about 80% profit. GPUs for Photo AI and Interior AI cost about US$60,000 a month.", grade: "C", src: [1] },
+    { when: "13 January 2026", what: "Room detection, the step that recognises what kind of room is in the photo, is moved to xAI's language model.", grade: "C", src: [17] },
+    { when: "24 February 2026", what: "He adds a viewer for Gaussian splats, a 3D representation built from images, so that a customer can walk through the generated interior, using the World Labs API.", grade: "C", src: [18] },
+    { when: "6 April 2026", what: "An automatic system answers Stripe payment disputes with a PDF of the designs the customer generated.", grade: "C", src: [19] },
+    { when: "26 July 2026", what: "He writes that large AI products are \"cannibalizing everything that used to be apps for indiehackers\", with declining revenue and traffic on his own projects too.", grade: "C", src: [20] },
+    { when: "23 September 2026", what: "His total business revenue is US$200,000 to US$250,000 a month and stable. His project page gives Interior AI 3% of his 2026 revenue and investment gains.", grade: "C", src: [11, 10] }
+  ],
+  mechanism: [
+    { title: "Two weeks after the model, first in the category", text: "Stable Diffusion became open source in late August 2022. Levels launched a house generator on 5 September and Interior AI in September. He has said that he launched it because \"obviously interior design AI, and nobody's doing that yet\". The first version was a free site with a counter of rendered interiors; the paid plan came weeks later." },
+    { title: "Image-to-image on a photo of your own room", text: "Generating random interiors was a toy. The product became useful when a customer could upload a photo of a real room and get the same room back in a different style. The site then added the uses that people pay for: virtual staging of empty homes for real estate listings, sketches to renders for architects, and an editor to brush away mistakes." },
+    { title: "An audience built over ten years", text: "Levels had published his revenue in public since 2014 and had hundreds of thousands of followers on X when he posted the launch thread. He has said that going on national television brings him about 3 sign-ups, while the Lex Fridman podcast raised his revenue 2.5 times. There was no paid marketing." },
+    { title: "Rented GPUs and one person", text: "The model runs on rented GPUs through inference providers; the site says refunds are not possible because the GPU time has already been paid. There are no employees. In September 2024 the founder reported about 80% profit across his products." }
+  ],
+  howBuilt: {
+    intro: "These details come from the founder's posts, his interviews and archived copies of the site. They are grade C.",
+    items: [
+      "Stable Diffusion, open-sourced in August 2022, with image-to-image: the photo of the room is the input, the style is the text prompt. Later a model fine-tuned on a gallery of good interior photos, and now the Flux model according to the pricing page.",
+      "Built in five days, alone. The founder says Photo AI is \"the same code essentially\". Photo AI is a single PHP file, as described on its own page on this site.",
+      "Inference on rented GPUs through providers such as Replicate and FAL, in which the founder later invested. GPU cost was about US$60,000 a month for Photo AI and Interior AI together in September 2024.",
+      "A language model detects the room type in the uploaded photo; moved to xAI's model in January 2026.",
+      "Gaussian splats from the World Labs API let a customer walk through the generated room in 3D, with a viewer the founder wrote himself in February 2026.",
+      "Payments through Stripe. A home page counter showed monthly recurring revenue from 2022 to 2024. In 2026 an automatic system answers payment disputes with evidence of the customer's usage.",
+      "Marketing is the founder's posts on X and podcast interviews. An affiliate program pays 20% to 30% of referred payments."
+    ],
+    src: [14, 2, 11, 1, 17, 18, 19, 6, 5]
+  },
+  predecessorsIntro: "Five companies in the Loot Drop database sold interior design or home design through software. The values below are from that database and are not independently verified.",
+  predecessors: [
+    { name: "Modsy", years: "2015 to 2022", funding: "US$72.7M", cause: "Unit Economics", promise: "Upload photos of your room and get photorealistic 3D renders with furniture you can buy.", died: "The renders were made by human designers, 2 to 4 hours per room, sold for US$69 to US$199. Margins were thin and paid social ads cost more than customers returned.", url: "https://www.loot-drop.io/startup/2521-modsy" },
+    { name: "Laurel & Wolf", years: "2014 to 2019", funding: "US$25M", cause: "Unit Economics", promise: "Online interior design: a flat fee connects you with a professional designer.", died: "Flat fees did not cover customer acquisition. Scaling the designer network lowered quality and the brand.", url: "https://www.loot-drop.io/startup/2012-laurel-wolf" },
+    { name: "Tastemaker", years: "2012 to 2015", funding: "US$1.5M", cause: "Competition", promise: "Affordable professional interior design for middle-income households, through a web platform.", died: "A distributed workforce of designers gave inconsistent results. Better-funded competitors arrived and the company could not pay to acquire enough users.", url: "https://www.loot-drop.io/startup/1572-tastemaker" },
+    { name: "Kujiale", years: "2011 to 2025", funding: "US$550M", cause: "No Market Need", promise: "Design your own home in 3D in the browser and see the furniture in place.", died: "Chinese consumers did not want to design their own homes. Users played with the tool and left, and AI tools made the technology ordinary.", url: "https://www.loot-drop.io/startup/2371-kujiale" },
+    { name: "Iwjw (Love Home)", years: "2014 to 2019", funding: "US$200M", cause: "Unit Economics", promise: "A marketplace that standardises home renovation and interior design in China.", died: "Acquiring a homeowner cost US$300 to US$500 and few came back for a second job. Contractors left the platform after one project.", url: "https://www.loot-drop.io/startup/2346-iwjw-love-home" }
+  ],
+  whatChanged: [
+    `Each of the five sold design as a service and had a human cost behind every job: a designer who spent hours per room, a contractor, a customer acquired through paid ads. The software was a front for labour, so the price could not go below the labour, and the margin never appeared.`,
+    `Interior AI has no labour per render. A design costs GPU time measured in cents and arrives in 25 seconds, so the product can be sold as a subscription with thousands of renders a month and a profit margin near 80%. The customer gets ideas, not a finished room, and the ones who pay are the ones who need many images fast: real estate agents staging listings and designers showing options to clients. What the predecessors show is the trap to avoid: as soon as a human must touch each output, the economics of the five return.`
+  ],
+  copy: {
+    verdict: "The launch, no. The method, yes, in another domain.",
+    text: "Being the first interior tool on Stable Diffusion was an opening of a few weeks in September 2022, and the founder himself now writes that large AI products take over small apps. The method is still available: take a new open model, find one input that people already have, here a photo of a room, and ship the obvious product in days, with a subscription priced above the GPU cost.",
+    steps: [
+      "When a model is released as open source, build the one-input product within a week and put a counter of outputs on the page.",
+      "Make the paid version the one that works on the customer's own data, here their room, not random generations.",
+      "Find the customer who needs volume, such as agents staging listings, and price the plans by renders per month.",
+      "Keep costs to rented GPUs and one person, and expect the revenue to fall when the model providers ship the same feature."
+    ],
+    open: "Any new open model with a one-image or one-file input: floor plans, garden photos, product photos, architectural sketches, and the walk-through videos and 3D views that image models now produce."
+  },
+  watch: [
+    { title: "Self-reported, and a record day", text: "The headline figure, US$43,000 a month, comes from a founder post about a record day after a podcast, and he wrote that revenue dropped a lot right after. The site's own counter showed US$32,000 three weeks earlier." },
+    { title: "Decline since 2025", text: "The founder's project page shows Interior AI's share of his income falling from 13% in 2023 to 6% in 2025 and 3% in 2026, and in July 2026 he wrote that his projects have declining revenue and traffic. The exact revenue after September 2024 is not published." },
+    { title: "The feature belongs to everyone now", text: "Wayfair built its own tool after studying this one, and every image model provider now does image-to-image editing from a chat window. The founder's answer is to add what the model providers do not sell: staging, sketches, videos and 3D walk-throughs." },
+    { title: "Sales depend on one person's audience", text: "There is no paid marketing. Revenue rose 2.5 times after one podcast and fell afterwards. The business is tied to the founder's posts." },
+    { title: "No refunds and dispute volume", text: "The site refuses refunds because the GPU time is already spent, and the founder built an automatic system to fight card disputes, which suggests that disputes are frequent enough to matter." }
+  ],
+  sources: [
+    { title: "Pieter Levels, 22 September 2024: I hit a new $420,000/mo revenue record thanks to the Lex Fridman podcast", url: "https://levels.io/new-420k-mo-revenue-record-lex-fridman", grade: "C", how: "Read in full. Founder's post listing each product's revenue, GPU cost and profit margin. Source for the headline figure." },
+    { title: "Lex Fridman Podcast #440 transcript, 20 August 2024: Pieter Levels: Programming, Viral AI Startups, and Digital Nomad Life", url: "https://lexfridman.com/pieter-levels-transcript/", grade: "C", how: "Read the sections on This House Does Not Exist, Interior AI, fine-tuning and Avatar AI. Source for the first-week revenue, the US$40,000 to US$50,000 a month figure and the pivot story." },
+    { title: "Archived copy of interiorai.com, 1 November 2022, Wayback Machine", url: "http://web.archive.org/web/20221101122025/https://interiorai.com/", grade: "C", how: "Read in full. The home page shows \"($6,446 MRR)\" and the Pro plan features." },
+    { title: "Archived copy of interiorai.com, 4 September 2023, Wayback Machine", url: "http://web.archive.org/web/20230904105510/https://interiorai.com/", grade: "C", how: "Read the header. The home page shows \"$49K MRR\"." },
+    { title: "Archived copy of interiorai.com, 1 September 2024, Wayback Machine", url: "http://web.archive.org/web/20240901191252/https://interiorai.com/", grade: "C", how: "Read the header and the pricing section. The home page shows \"$32K MRR\" and the prices of US$39, US$99 and US$299 a month." },
+    { title: "Archived copy of interiorai.com, 14 January 2024, Wayback Machine", url: "http://web.archive.org/web/20240114141317/https://interiorai.com/", grade: "C", how: "Read the header. The home page shows \"$38K MRR\" and a 20% affiliate program." },
+    { title: "Pieter Levels on X, 4 October 2022: Here's how I built interiorai.com from scratch in 5 days", url: "https://x.com/levelsio/status/1577086792695975936", grade: "C", how: "Read the first post of the thread through api.fxtwitter.com. The rest of the thread is images and could not be read." },
+    { title: "Archived copy of interiorai.com, 2 October 2022, Wayback Machine", url: "http://web.archive.org/web/20221002120221/https://interiorai.com/", grade: "C", how: "Read in full. Shows 19,129 interiors rendered and that payment was not yet built. An earlier copy of 15 September 2022 shows a gallery version." },
+    { title: "Pieter Levels, 27 March 2024: Wayfair used my AI interior design tool to build their own", url: "https://levels.io/wayfair-used-interior-ai-to-build-their-own", grade: "C", how: "Read in full. Source for the Wayfair accounts and the \"launched 2 years ago\" statement." },
+    { title: "Pieter Levels, projects page: everything built since 1996, with a revenue chart per year", url: "https://levels.io/projects", grade: "C", how: "Read the revenue chart and the 2022 entries. Source for Interior AI's share of yearly revenue and investment gains." },
+    { title: "Pieter Levels, 23 September 2026: I passed $10M/y in revenue and investment gains with a 94.5% profit margin", url: "https://levels.io/passed-10m-revenue-investment-gains", grade: "C", how: "Read in full. Source for total business revenue, the inference providers and the no-funding, no-employees position." },
+    { title: "Interior AI home page and pricing, read 12 October 2026", url: "https://interiorai.com/", grade: "C", how: "Read in full. Source for the prices, the render time, the refund rule, the features and the \"built by me\" statement." },
+    { title: "Indie Hackers, November 2025: Photo AI by Pieter Levels, complete deep dive case study", url: "https://www.indiehackers.com/post/photo-ai-by-pieter-levels-complete-deep-dive-case-study-0-to-132k-mrr-in-18-months-3a9a2b1579", grade: "C", how: "Read the sections on launch history and the founder's portfolio. A community case study without stated sources for the Interior AI figure." },
+    { title: "Pieter Levels, 18 September 2022: This House Does Not Exist", url: "https://levels.io/this-house-does-not-exist", grade: "C", how: "Read in full. Source for the Stable Diffusion release timing and the house generator that preceded Interior AI." },
+    { title: "The Bootstrapped Founder podcast transcript, 25 October 2023: Indie hacking is dead, now what?", url: "https://levels.io/bootstrapped-founder-indie-hacking-is-dead", grade: "C", how: "Read the sections on GPUs, Interior AI and valuation. Source for the interior designers' use and the US$100,000 a month goal." },
+    { title: "Pieter Levels, 4 December 2023: Minimal architect sketches turned into renders with Interior AI v2", url: "https://levels.io/minimal-sketches-ai-interior-renders", grade: "C", how: "Read in full." },
+    { title: "Pieter Levels, 13 January 2026: Moved all my sites LLM APIs now to xAI", url: "https://levels.io/moved-sites-llm-apis-to-xai", grade: "C", how: "Read in full. Source for the room detection step." },
+    { title: "Pieter Levels, 24 February 2026: Built my own gaussian splat viewer for Interior AI", url: "https://levels.io/built-gaussian-splat-viewer-for-interior-ai", grade: "C", how: "Read in full." },
+    { title: "Pieter Levels, 6 April 2026: Made an auto-dispute response system for Interior AI", url: "https://levels.io/auto-dispute-response-system-interior-ai-stripe", grade: "C", how: "Read in full. Source for the Stripe dispute system." },
+    { title: "Pieter Levels, 26 July 2026: BigAI is cannibalizing everything that used to be apps for indiehackers", url: "https://levels.io/bigai-cannibalizing-indiehackers-apps", grade: "C", how: "Read in full. Source for the declining revenue statement." },
+    { title: "Loot Drop database export, 1,749 failed startups", url: "https://www.loot-drop.io/", grade: "C", how: "Local export. AI-written summaries, not independently verified. Source for the failed predecessors." }
+  ]
 }
 ];
 
