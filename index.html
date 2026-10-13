@@ -5503,6 +5503,179 @@ const STORIES = [
     { title: "Nicolai Klemke on X, 26 February 2026: on Robert Scoble's Unaligned podcast", url: "https://x.com/nicolaiklemke/status/2027099427505053770", grade: "C", how: "Read the full text through api.fxtwitter.com. The podcast itself was not heard." },
     { title: "Loot Drop database export, 1,749 failed startups", url: "https://www.loot-drop.io/", grade: "C", how: "Local export. AI-written summaries, not independently verified. Source for the failed predecessors." }
   ]
+},
+{
+  slug: "castmagic",
+  name: "Castmagic",
+  country: "USA",
+  sector: "Information Technology",
+  productType: "AI content from audio and video recordings",
+  aiType: "AI-native",
+  team: "small",
+  outcome: "running",
+  evidence: "C",
+  added: "2026-10-13",
+  launchLabel: "9 February 2023",
+  outcomeLabel: "US$1M a year run rate, November 2023",
+  sticker: "$1M ARR in 9 months",
+  outcomeUsd: 1000000,
+  months: 9,
+  teamLabel: "3 co-founders, then about 10 people in May 2024, then 2 full-time employees in August 2025",
+  fundingLabel: "None",
+  primaryFactor: "Distribution",
+  meters: { evidence: 1, copyable: 2, capital: 1 },
+  tags: ["AI-native", "Small team", "Bootstrapped", "Running", "B2B", "Marketing content"],
+  product: "Upload or link a recording, such as a podcast episode, a webinar or a Zoom call, and get a transcript with speakers and timestamps. From that transcript the product writes show notes, newsletters, social posts, blog articles and quotes, and cuts captioned clips, with prompts that the customer can edit. Subscriptions are priced by the hours of recordings transcribed and start at US$19 a month.",
+  why: "Two podcast hosts had the show notes problem themselves and already knew many creators. A lifetime deal on AppSumo brought about 10,000 users and about US$350,000 in the first months, and paid creators and affiliates brought subscribers after that. Three founders with different skills worked for equity, so the company needed no investors.",
+  summary: [
+    `Castmagic is a <dfn>content repurposing</dfn> tool: it takes one long recording, such as a podcast episode, a webinar or a sales call, and writes the short pieces that are published around it: show notes, a newsletter, social posts, a blog article and captioned clips. A <dfn>speech-to-text model</dfn>, a program that converts recorded speech into written words, first makes a transcript. A <dfn>large language model</dfn>, a program that writes text from instructions, then writes each piece from that transcript and from prompts that the customer can edit. Customers pay a subscription priced by the hours of recordings transcribed.`,
+    `Blaine Bolus and Ramon Berrios, the two hosts of the business podcast DTC Pod, and Justin Tormey, a software engineer, started it with less than US$1,000 and no investors, which founders call <dfn>bootstrapped</dfn>: paid for by the founders and by customers only. Bolus announced it on 9 February 2023. A <dfn>lifetime deal</dfn>, a one-time payment for permanent access, on the deal site AppSumo in March 2023 brought about US$350,000 in sales and about 10,000 users. In November 2023, nine months after the announcement, a podcast that interviewed the founders reported US$1 million in <dfn>annual recurring revenue</dfn> (ARR, the subscription income of one month multiplied by twelve), and Berrios later wrote that the product passed US$100,000 a month in those nine months. In May 2024 two articles based on interviews with Bolus gave almost US$2 million in ARR and a team of around ten people. In August 2025 Berrios wrote that Castmagic had two full-time employees and made "6 figures a month" at a profit, and in November 2025 he announced a second company.`,
+    `Every number on this page is a founder statement, on X, in interviews or on the company's AppSumo page, grade C. No payment processor or buyer has confirmed them. The two records for mid-2025 do not agree: Latka lists US$770,000 a year from a founder webinar, which is less than "6 figures a month". The headline is the first million, reached by three people. The page also shows that the founders have reported no growth since mid-2024, and what happened to earlier companies that sold tools for writing and packaging content.`
+  ],
+  factsCaption: "Three co-founders at US$1 million a year nine months after launch, a claimed peak near US$2 million in 2024, and no growth reported since, all self-reported",
+  factsRead: "How to read this table: a grade C value is a founder statement on X, in an interview or on a sales page, a statement that a journalist or host repeats from the founders, or a third-party record that says so. A \"calc\" value was computed on this page from the rows above it. No value is grade A or B.",
+  timelineLead: "From a show notes problem on the founders' own podcast to US$1 million a year in nine months, then a peak, a smaller team and a co-founder's new company. Each entry carries its grade.",
+  pricing: {
+    caption: "Castmagic prices in October 2026, read from the company's pricing page (grade C)",
+    note: "Yearly billing is about 30% cheaper than monthly billing. Every plan includes a library of transcribed hours and unlimited AI outputs, and more hours can be bought. The Team plan adds seats at US$19 each per month. In May 2023 the entry plan cost US$39 a month for 200 minutes of audio a month. The AppSumo page shows a second deal with a founder message dated February 2025: yearly tiers at US$59 and US$169, and lifetime tiers at US$399, US$699 and US$999. It is marked sold out.",
+    rows: [
+      ["Hobby", "19", "29", "30 transcribed hours, 3 seats"],
+      ["Starter", "48", "69", "100 transcribed hours, 5 seats, API access"],
+      ["Team", "139", "199", "400 transcribed hours, 5 seats included"],
+      ["Business and Scale", "from 699", "from 999", "custom volume, sold by demo"],
+      ["AppSumo lifetime tiers, 2025 deal", "399 to 999 one-time", "", "sold out in October 2026"]
+    ]
+  },
+  facts: [
+    { fact: "Annual recurring revenue, November 2023", value: "US$1 million", grade: "C", note: "A host of the podcast Probably Something, announcing his interview with Berrios and Bolus on 28 November 2023: \"went from $0 - $1m ARR in just 9 months\". Berrios wrote the same on Indie Hackers on 13 July 2024: \"$1M ARR in under 9 months with 0 capital\".", src: [3, 2] },
+    { fact: "Revenue per month after nine months", value: "more than US$100,000", grade: "C", note: "Berrios on X, 19 July 2024. His YouTube channel said \"6 figures per month\" on 8 July 2024.", src: [1, 23] },
+    { fact: "Run rate from US$100,000 a month", value: "US$1.2 million a year", grade: "X", note: "Calculated: 100,000 times 12. It agrees with the US$1 million ARR claim for the same nine months.", src: [1] },
+    { fact: "Time from the announcement to US$1 million ARR", value: "9 months", grade: "X", note: "Calculated: February 2023 to November 2023. The founders also give March 2023 as the launch, the month of the AppSumo deal.", src: [6, 3, 9] },
+    { fact: "Team at that figure", value: "3 co-founders", grade: "C", note: "Tormey on engineering, Bolus on product, support and community, Berrios on growth. Berrios wrote that they needed nobody else at the start and took no salary at first. He announced Castmagic as his next company on 4 September 2023; before that he ran Trend.io. No employee count for November 2023 is published.", src: [1, 13] },
+    { fact: "Starting capital and outside funding", value: "less than US$1,000, no investors", grade: "C", note: "Berrios on X and Indie Hackers; Bolus wrote \"fully bootstrapped\" in August 2023; Refresh Miami wrote the same in May 2024.", src: [1, 2, 15, 5, 7] },
+    { fact: "AppSumo lifetime deal, 2023", value: "about US$350,000 in sales, about 10,000 users", grade: "C", note: "Berrios in the Starter Story interview. This is one-time revenue, not recurring. The launch was prepared in two weeks.", src: [4] },
+    { fact: "Revenue \"in 5 months\", 17 August 2023", value: "US$500,000", grade: "C", note: "Bolus on X. He does not say whether this is a yearly rate or total sales. If it is total sales, the AppSumo deal would be 70% of it.", src: [5] },
+    { fact: "Revenue per month in the Starter Story interview", value: "more than US$120,000", grade: "C", note: "Published 22 June 2024. Berrios says in it that the company started about 10 months before, so the figure is probably from the end of 2023 or the start of 2024. The recording date is not given. He adds growth of more than 20% a month.", src: [4] },
+    { fact: "Run rate from US$120,000 a month", value: "US$1.44 million a year", grade: "X", note: "Calculated: 120,000 times 12. Starter Story rounds it to US$1.4 million in its title.", src: [4] },
+    { fact: "Peak claim, May 2024", value: "almost US$2 million ARR", grade: "C", note: "Business Athletes newsletter, 18 May 2024, and Refresh Miami, 21 May 2024, both after talking to Bolus. In February 2025 Bolus wrote on AppSumo: \"nearly $2M in annual revenue\".", src: [8, 7, 9] },
+    { fact: "US$2 million a year as a monthly figure", value: "US$166,667 a month, 38.9% above US$120,000", grade: "X", note: "Calculated: 2,000,000 divided by 12, compared with the Starter Story figure.", src: [7, 4] },
+    { fact: "Team, May 2024", value: "around ten people", grade: "C", note: "Refresh Miami. Bolus told Business Athletes that the developers work from several countries.", src: [7, 8] },
+    { fact: "Revenue, August 2025", value: "\"6 figures a month\", at a profit", grade: "C", note: "Berrios on X, 5 August 2025. He gives no exact figure. It is the same wording as for November 2023, and below the May 2024 claim.", src: [10] },
+    { fact: "Team, August 2025", value: "2 full-time employees, offshore", grade: "C", note: "Berrios on X. Latka lists 7 employees in June 2025, taken from LinkedIn.", src: [10, 11] },
+    { fact: "Latka's records for June 2025", value: "US$770,000 a year (founder webinar) and US$1 million (LinkedIn)", grade: "C", note: "Latka attributes the first figure to the founder at a June 2025 webinar and the second to LinkedIn. The webinar itself could not be opened: not verified.", src: [11] },
+    { fact: "US$770,000 a year as a monthly figure", value: "about US$64,167 a month, 61.5% below the US$2 million peak claim", grade: "X", note: "Calculated: 770,000 divided by 12, and 1 minus 770,000 divided by 2,000,000. This is less than six figures a month, so it does not agree with the August 2025 post.", src: [11, 10] },
+    { fact: "Marketing spend", value: "under 20% of revenue", grade: "C", note: "Berrios, Starter Story interview. One person ran marketing, with contractors.", src: [4] },
+    { fact: "Net churn", value: "single digits", grade: "C", note: "Berrios, Starter Story interview. He does not give the period.", src: [4] },
+    { fact: "Creator program, 2023", value: "more than 10 million views and six figures in revenue", grade: "C", note: "Berrios on X, 21 August 2024.", src: [16] },
+    { fact: "Users", value: "over 60,000 in July 2024; \"over 100,000 customers\" in February 2025", grade: "C", note: "Berrios on X and Bolus on AppSumo. The company's own pricing page said 75,000+ creators served in October 2026, so the counts do not agree.", src: [14, 9, 18] },
+    { fact: "Entry price, May 2023 and October 2026", value: "US$39 a month, then US$29 a month", grade: "X", note: "Calculated: the monthly price of the Hobby plan is 25.6% lower. The limit changed from 200 minutes a month to a library of 30 hours.", src: [19, 18] },
+    { fact: "The same function in other products", value: "Buzzsprout (announced May 2023), Riverside, Descript, Podbean", grade: "C", note: "Each company's own page or press release. All four write show notes or episode descriptions from a recording that the customer already records, edits or hosts with them.", src: [24, 25, 26, 27] },
+    { fact: "A customer's comparison with a general chat model, April 2025", value: "30 minutes of rewriting after GPT, 2 minutes after Castmagic", grade: "C", note: "One customer's post, quoted by Berrios. In September 2024 Berrios wrote that Google's NotebookLM described his business better than he could.", src: [28, 29] },
+    { fact: "Sale of the company", value: "none announced", grade: "C", note: "No source read for this page mentions a sale. The site was live and selling on 13 October 2026.", src: [18, 20, 21] }
+  ],
+  timeline: [
+    { when: "Before 2023", what: "Bolus and Berrios host DTC Pod, a podcast about consumer brands. All three founders had started companies before: Bolus co-founded Seated and Omnipanel, both backed by venture investors; Berrios ran Trend.io, later bought by Soona; Tormey co-founded Upside, later sold to Ampla.", grade: "C", src: [4, 8, 20] },
+    { when: "9 February 2023", what: "Bolus announces castmagic.io on X: it turns podcast audio into summaries, quotes, timestamps and ready-to-post text.", grade: "C", src: [6] },
+    { when: "March 2023", what: "On 9 March the product connects to the GPT-3.5 Turbo API. On 15 March the founders hold a launch panel at SXSW. A lifetime deal on AppSumo, prepared in two weeks, brings about US$350,000 and about 10,000 users.", grade: "C", src: [17, 4, 9] },
+    { when: "26 May 2023", what: "Buzzsprout, a podcast hosting company, announces Cohost AI, which writes episode titles, descriptions, chapter markers and transcripts as part of its hosting service.", grade: "C", src: [24] },
+    { when: "17 August 2023", what: "Bolus on X: \"$500K in 5 months\", with no outside money.", grade: "C", src: [5] },
+    { when: "4 September 2023", what: "Berrios, whose company Trend.io was bought by Soona, announces Castmagic as his next company, with Bolus and Tormey.", grade: "C", src: [13, 20] },
+    { when: "14 November 2023", what: "Three releases: Pages, which drafts text from several recordings, an iOS app for recording, and a Zapier app.", grade: "C", src: [17] },
+    { when: "28 November 2023", what: "A podcast interview with Berrios and Bolus is announced with the claim of US$0 to US$1 million ARR in nine months.", grade: "C", src: [3] },
+    { when: "May 2024", what: "Almost US$2 million ARR and a team of around ten people, in two articles written after interviews with Bolus.", grade: "C", src: [7, 8] },
+    { when: "22 June 2024", what: "Starter Story publishes its interview with the three founders: more than US$120,000 a month, growth above 20% a month, marketing under 20% of revenue.", grade: "C", src: [4] },
+    { when: "July 2024", what: "Berrios writes that Castmagic serves over 60,000 users and processes 1 million minutes a month, and repeats US$1 million ARR in under nine months on Indie Hackers and on X.", grade: "C", src: [14, 2, 1] },
+    { when: "February 2025", what: "A second AppSumo deal. Bolus writes there that Castmagic serves over 100,000 customers and has reached nearly US$2 million in annual revenue.", grade: "C", src: [9] },
+    { when: "April 2025", what: "YouTube changes its terms and blocks downloads by other tools. Importing YouTube links into Castmagic starts to fail, and the founders tell customers to download the file themselves and upload it.", grade: "C", src: [9] },
+    { when: "June 2025", what: "Latka records US$770,000 a year from a founder webinar, and US$1 million and 7 employees from LinkedIn.", grade: "C", src: [11] },
+    { when: "5 August 2025", what: "Berrios on X: 2 full-time employees, offshore, and \"6 figures a month\" at a profit.", grade: "C", src: [10] },
+    { when: "4 November 2025", what: "Berrios announces Ripe, a new company that runs customer surveys by AI phone calls. His X profile, read on 13 October 2026, says he is building Ripe and still names Castmagic. He has not written that he left.", grade: "C", src: [12, 21] },
+    { when: "13 October 2026", what: "The site sells plans from US$19 a month and a connector that lets the Claude chat model read a customer's library. Bolus's profile says \"Bootstrapped Castmagic to 130K+ MRR\", with no date. No sale is announced.", grade: "C", src: [18, 20, 21] }
+  ],
+  mechanism: [
+    { title: "Distribution before the product", text: "The founders hosted a podcast, met the show notes problem in their own work, and knew other hosts and creators who had it too. Berrios calls this an unfair distribution advantage, and names the podcast and the founders' relationships with creators as its two parts." },
+    { title: "A lifetime deal as the launch", text: "AppSumo asked whether they could launch in two weeks, and they did. The deal brought about 10,000 users and about US$350,000, paid once. Berrios says they accepted one-time revenue because they needed a brand, a base of users and feedback. The cost is that those users can use transcription and model capacity for as long as the company exists." },
+    { title: "Three founders, three separate jobs, no salaries", text: "Engineering, product with support, and growth each had one owner. All three worked for equity and took no salary at first, so the first US$1,000 was enough. They live in three cities, hold two 30-minute calls a week and meet in person for at least one week every quarter." },
+    { title: "Creators paid per view", text: "Berrios searched Instagram and hashtags for creators in nearby fields, paid some of them per thousand views and signed others as affiliates, and kept marketing under 20% of revenue. He says the program produced more than 10 million views and six figures in revenue." },
+    { title: "A workflow around the model output", text: "Show notes alone are a single model output. Castmagic added a library of the customer's recordings, prompts that the customer can edit, clips, integrations with Zoom and Zapier, an API and, by 2026, a connector to Claude. Berrios's answer to the question about ChatGPT was that the product solves a workflow, not one output." }
+  ],
+  howBuilt: {
+    intro: "These details come from the founders' interview with Starter Story, their posts on X and the company's site. They are grade C.",
+    items: [
+      "Justin Tormey built it in Elixir with Phoenix and LiveView, so the front end and the back end are written in one language.",
+      "The first landing page was a Webflow template, so that development time went to the product. In October 2026 the site's HTML names the Astro framework as its generator.",
+      "The first version was built in two weeks to meet the AppSumo launch date. The founders say that in those weeks you have to accept an imperfect product.",
+      "On 9 March 2023 the product connected to the GPT-3.5 Turbo API and added a newsletter writer and a thread writer.",
+      "Pricing is a subscription with a cap on usage. The founders compare what they spend on language models and transcription with the price of each plan.",
+      "November 2023 added Pages, an iOS app and a Zapier app. By October 2026 the site also lists a Zoom integration, a REST API and an MCP (Model Context Protocol) connector, a standard way to give a chat model access to outside data."
+    ],
+    src: [4, 17, 20, 18, 22]
+  },
+  predecessorsIntro: "Five companies in the Loot Drop database sold a tool for writing, summarising or packaging content, and lost to a larger platform that offered the same function inside a product people already used. The values below are from that database and are not independently verified.",
+  predecessors: [
+    { name: "Wavii", years: "2009 to 2013", funding: "US$2M", cause: "Competition", promise: "Short summaries of the news, written automatically by language software.", died: "No clear way to charge for summaries. Google bought it and closed it as a separate product.", url: "https://www.loot-drop.io/startup/727-wavii" },
+    { name: "Draft", years: "2011 to 2014", funding: "US$120K", cause: "Competition", promise: "A simple online editor for writers, with version control.", died: "Google Docs added the same functions inside a larger free product. A free plan with no path to revenue could not pay the costs.", url: "https://www.loot-drop.io/startup/1605-draft" },
+    { name: "Hyperink", years: "2011 to 2014", funding: "US$1.4M", cause: "Competition", promise: "Turn what an expert knows into an e-book quickly, with marketing included.", died: "Amazon's self-publishing tools did more for less, and free online content lowered what readers would pay.", url: "https://www.loot-drop.io/startup/1192-hyperink" },
+    { name: "Vook", years: "2009 to 2017", funding: "US$5M", cause: "No Market Need", promise: "E-books with video and audio mixed into the text.", died: "Few readers wanted them, production was expensive, and Kindle and iBooks owned distribution.", url: "https://www.loot-drop.io/startup/721-vook" },
+    { name: "Pressly", years: "2011 to 2018", funding: "US$2.9M", cause: "Competition", promise: "Collect and distribute content for a brand with less work.", died: "Larger marketing platforms added content curation to full product suites, and social networks added their own distribution tools.", url: "https://www.loot-drop.io/startup/462-pressly" }
+  ],
+  whatChanged: [
+    `Each of the five sold one step of content production as a separate product, and a platform that already held the writer or the audience added that step. Castmagic is in the same position. The companies that hold the recording, such as Buzzsprout, Riverside, Descript and Podbean, now write show notes inside their own products, and Buzzsprout announced this three months after Castmagic's announcement.`,
+    `Two things differ. First, the cost: a language model made the writing step cheap to build, so three people built the product in two weeks with less than US$1,000 and reached profit, while the five predecessors raised between US$120,000 and US$5 million. A company with no investors can become smaller and stay alive, which is what the smaller team of 2025 suggests. Second, the founders owned their distribution through a podcast and creator contacts. Podsqueeze, also on this site, sells the same idea with two founders and reports about €16,000 a month, flat since 2024. Castmagic's reported figures are about six to ten times that, and neither company reports growth since 2024.`
+  ],
+  copy: {
+    verdict: "The launch method, yes. The speed of 2023, no.",
+    text: "The method is clear: build for a problem that you meet in work you already do in public, launch through a deal marketplace to get the first users and their feedback, and pay creators per view to reach the rest. The speed came from the date: Castmagic was on sale three months before Buzzsprout, a podcast host, announced the same function as part of its hosting service. Each of the three founders had also started a company before, and two of them hosted a podcast.",
+    steps: [
+      "Do the work in public first. The founders met the problem on their own podcast and already had relationships with the creators who became the market.",
+      "Divide the work among co-founders with different skills, and pay with equity until customers pay.",
+      "Use a deal marketplace for the launch, and count in advance what the one-time buyers will cost you in later years.",
+      "Pay creators and affiliates per thousand views, and keep marketing under 20% of revenue.",
+      "Sell the workflow around the model output, such as a library, prompts in the customer's voice and integrations, because the output itself becomes a free feature in other products."
+    ],
+    open: "Recordings that no platform turns into text for its users yet: sales calls, coaching sessions, research interviews, internal meetings and events. Castmagic itself moved toward these uses and toward connecting its library to chat models."
+  },
+  watch: [
+    { title: "Self-reported, and the 2025 records disagree", text: "No payment processor, buyer or journalist has seen the accounts. For mid-2025 Berrios writes \"6 figures a month\", while Latka lists US$770,000 a year from a founder webinar, which is about US$64,167 a month. The profile figure of 130K+ MRR has no date." },
+    { title: "The peak was not held", text: "The founders gave almost US$2 million a year in May 2024 and again in February 2025. In August 2025 the wording, six figures a month, was the same as for November 2023, and three months later one co-founder announced a new company. The team was 2 full-time employees after around ten people, although the two counts may not be measured in the same way. At best this is no growth in 21 months." },
+    { title: "Hosts and recording tools ship the same feature", text: "Buzzsprout announced Cohost AI in May 2023. Riverside sells AI Show Notes that write summaries, takeaways and chapters in one click. Descript writes show notes with its Underlord assistant. Podbean AI writes titles and show notes. Each of these already holds the recording, so the customer does not have to upload it to a second product." },
+    { title: "General chat models do the same job", text: "A customer whom Berrios quoted in April 2025 compared the two: 30 minutes of rewriting after GPT, 2 minutes after Castmagic. That difference is what the subscription pays for, and it can shrink with each new model. In September 2024 Berrios wrote that Google's NotebookLM described his business better than he could. In 2026 Castmagic sells a connector that lets Claude read the customer's library, so part of the writing now happens in the chat model." },
+    { title: "\"ARR\" next to one-time sales", text: "About US$350,000 of the first year came from lifetime licenses, which do not recur, and the August 2023 figure of US$500,000 does not say what it measures. Lifetime buyers keep using transcription and model capacity that the company pays for. A second AppSumo deal followed in 2025." },
+    { title: "It depends on other platforms' rules", text: "In April 2025 YouTube changed its terms and Castmagic's YouTube import began to fail. The founders wrote that Descript had removed the same feature. The pricing page lists YouTube import again in October 2026." },
+    { title: "Lower prices, and counts that differ", text: "The entry plan costs US$29 a month in 2026 against US$39 in 2023. The pricing page gives 75,000+ creators, the about page 35,000+, and the founders' AppSumo message over 100,000 customers." }
+  ],
+  sources: [
+    { title: "Ramon Berrios on X, 19 July 2024: how we built Castmagic into a $100k+ MRR in 9 months", url: "https://x.com/ramongberrios/status/1814299456587608433", grade: "C", how: "Read in full through api.fxtwitter.com. Founder's own post. Source for the monthly figure, the starting capital, the three roles and the unpaid start." },
+    { title: "Indie Hackers, 13 July 2024: Boostrapping AI startup Castmagic to $1M in under 9 months, by Ramon Berrios", url: "https://www.indiehackers.com/post/boostrapping-ai-startup-castmagic-to-1m-in-under-9-months-27bf7c9402", grade: "C", how: "Read in full. A short post by the founder with no detail beyond the claim. No comments." },
+    { title: "X post by a host of the podcast Probably Something, 28 November 2023: episode with Ramon Berrios and Blaine Bolus", url: "https://x.com/tim__msk/status/1729512027171811339", grade: "C", how: "Read in full through api.fxtwitter.com. The host repeats the founders' claim; Bolus reposted it. The episode itself was not listened to." },
+    { title: "Starter Story, 22 June 2024: They Make $1.4M/Year With AI, video interview with the three founders", url: "https://www.starterstory.com/stories/they-make-1-4m-year-with-ai", grade: "C", how: "Read the full transcript on the page. Source for the monthly revenue, growth, churn, marketing share, the AppSumo figures, the stack and the founders' earlier companies." },
+    { title: "Blaine Bolus on X, 17 August 2023: $500K in 5 months, fully bootstrapped", url: "https://x.com/bbols4/status/1692181574186320221", grade: "C", how: "Read in full through api.fxtwitter.com. Founder's own post." },
+    { title: "Blaine Bolus on X, 9 February 2023: Introducing castmagic.io", url: "https://x.com/bbols4/status/1623705770490576897", grade: "C", how: "Read in full through api.fxtwitter.com. The first public announcement found; used as the launch date." },
+    { title: "Refresh Miami, 21 May 2024: It's not just magic, it's AI! Meet the Miami startup turning conversations into content", url: "https://refreshmiami.com/news/its-not-just-magic-its-ai-meet-the-miami-startup-turning-conversations-into-content/", grade: "C", how: "Read in full. A journalist's article after an interview with Bolus. Source for US$2 million ARR, the team of around ten and Justin Tormey's full name. The article does not say that the journalist saw documents." },
+    { title: "Business Athletes newsletter, 18 May 2024: Blaine Bolus", url: "https://businessathletes.beehiiv.com/p/business-athletes-blaine-bolus", grade: "C", how: "Read in full. An interview with Bolus. Source for almost US$2 million ARR in a year and the distributed team." },
+    { title: "AppSumo: Castmagic deal page, with the founders' messages of February and April 2025", url: "https://appsumo.com/products/castmagic/", grade: "C", how: "Read in full on 13 October 2026. Source for the deal tiers, the customer count, the annual revenue claim, the March 2023 launch and the YouTube import problem." },
+    { title: "Ramon Berrios on X, 5 August 2025: 2 full time employees and 6 figures a month", url: "https://x.com/ramongberrios/status/1952877485827248501", grade: "C", how: "Read in full through api.fxtwitter.com. Founder's own post. The newest dated revenue statement found." },
+    { title: "Latka company page: Castmagic revenue 2025", url: "https://getlatka.com/companies/castmagic.io", grade: "C", how: "Read in full on 13 October 2026. It attributes US$770,000 to a founder webinar in June 2025, and US$1 million and 7 employees to LinkedIn. The webinar is not linked and could not be checked." },
+    { title: "Ramon Berrios on X, 4 November 2025: launching Ripe", url: "https://x.com/ramongberrios/status/1985735079390281778", grade: "C", how: "Read in full through api.fxtwitter.com. His timeline from July 2024 to October 2026 was also read page by page." },
+    { title: "Ramon Berrios on X, 4 September 2023: starting my next company", url: "https://x.com/ramongberrios/status/1698751514846658919", grade: "C", how: "Read as the quoted post inside Blaine Bolus's repost of the same day. Names both co-founders by their X handles." },
+    { title: "Ramon Berrios on X, 5 July 2024: just over 12 months ago we started Castmagic", url: "https://x.com/ramongberrios/status/1809226184598732994", grade: "C", how: "Read in full through api.fxtwitter.com. Source for the user count and the minutes processed." },
+    { title: "Ramon Berrios on X, 29 July 2024: I've bootstrapped 2 companies to 7 figures in ARR in under 12 months", url: "https://x.com/ramongberrios/status/1817890873159356904", grade: "C", how: "Read in full through api.fxtwitter.com. Source for the distribution advantage of the podcast." },
+    { title: "Ramon Berrios on X, 21 August 2024: the influencer program", url: "https://x.com/ramongberrios/status/1826291719211515972", grade: "C", how: "Read in full through api.fxtwitter.com. Source for the views and revenue of the creator program." },
+    { title: "Blaine Bolus on X, 9 March 2023: upgrades pushed to Castmagic this week; also his posts of 15 March and 14 November 2023", url: "https://x.com/bbols4/status/1633917415317987328", grade: "C", how: "Read in his timeline through api.fxtwitter.com. Source for the GPT-3.5 Turbo date, the SXSW launch panel and the November 2023 releases." },
+    { title: "Castmagic pricing page, read 13 October 2026", url: "https://www.castmagic.io/pricing", grade: "C", how: "Read in full, including the monthly prices that the page's HTML carries next to the yearly ones. Source for the pricing table and the 75,000+ creators count." },
+    { title: "Castmagic pricing page, Wayback Machine copy of 31 May 2023", url: "https://web.archive.org/web/20230531100016/https://www.castmagic.io/pricing", grade: "C", how: "Read in full. Source for the 2023 prices and limits." },
+    { title: "Castmagic about page and home page, read 13 October 2026", url: "https://www.castmagic.io/about", grade: "C", how: "Read in full. Source for the founders' earlier companies, the 35,000+ count, the Claude connector and the API and MCP features. The page links the third founder to another person's LinkedIn profile; his name here follows Refresh Miami and his own X profile." },
+    { title: "X profiles of Blaine Bolus (@bbols4), Ramon Berrios (@ramongberrios) and Justin Tormey (@j_tormey), read 13 October 2026", url: "https://x.com/bbols4", grade: "C", how: "Read the three profile texts through api.fxtwitter.com. Source for the 130K+ MRR line, for Berrios's work on Ripe and for Tormey's role." },
+    { title: "Starter Story, 28 December 2024: How 3 Founders Took Castmagic from $0 to $1.4M/Year Quickly", url: "https://www.starterstory.com/castmagic-breakdown", grade: "C", how: "Read in full. A written summary that the page marks as estimated from public sources. It repeats the interview figures." },
+    { title: "Ramon Berrios's YouTube channel, 8 July 2024: How I Built (And Lost) A Million-Dollar Business", url: "https://www.youtube.com/watch?v=Kx_8moLRo6s", grade: "C", how: "Read the video description only. Source for the 6 figures per month line and the publication date." },
+    { title: "Podnews press release, 26 May 2023: Buzzsprout Introduces AI Tool For Your Podcasting Workflow", url: "https://podnews.net/press-release/buzzsprout-podcast-ai", grade: "C", how: "Read in full. A competitor's own announcement of Cohost AI." },
+    { title: "Riverside: AI Show Notes product page, read 13 October 2026", url: "https://riverside.com/show-notes", grade: "C", how: "Read the description of the feature. A competitor's own page." },
+    { title: "Descript: Generate Podcast Show Notes, read 13 October 2026", url: "https://www.descript.com/tools/podcast-show-notes-generator", grade: "C", how: "Read the description of the feature. A competitor's own page." },
+    { title: "Podbean AI product page, read 13 October 2026", url: "https://www.podbean.com/ai", grade: "C", how: "Read the section on automated titles and show notes. A competitor's own page." },
+    { title: "Ramon Berrios on X, 27 April 2025, quoting a customer's comparison of GPT and Castmagic", url: "https://x.com/ramongberrios/status/1916502712105025785", grade: "C", how: "Read in his timeline through api.fxtwitter.com, with the quoted post of 25 April 2025. A customer's opinion, repeated by the founder." },
+    { title: "Ramon Berrios on X, 15 September 2024: Google launched NotebookLM", url: "https://x.com/ramongberrios/status/1835387177137738106", grade: "C", how: "Read in full through api.fxtwitter.com." },
+    { title: "Loot Drop database export, 1,749 failed startups", url: "https://www.loot-drop.io/", grade: "C", how: "Local export. AI-written summaries, not independently verified. Source for the failed predecessors." }
+  ]
 }
 ];
 
