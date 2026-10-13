@@ -1216,6 +1216,153 @@ const STORIES = [
     { title: "TypingMind Custom pricing page, read 12 October 2026, and reviewer pages diyai.io and toolradar.com for the personal licenses", url: "https://custom.typingmind.com/pricing", grade: "C", how: "The company page gives the Team plans. The personal pricing page loads its prices by script and could not be read, so those come from reviewers." },
     { title: "Loot Drop database export, 1,749 failed startups", url: "https://www.loot-drop.io/", grade: "C", how: "Local export. AI-written summaries, not independently verified. Source for the failed predecessors." }
   ]
+},
+{
+  slug: "headshotpro",
+  name: "HeadshotPro",
+  country: "Netherlands",
+  sector: "Photography",
+  productType: "AI headshot generator",
+  aiType: "AI-native",
+  team: "solo",
+  outcome: "running",
+  evidence: "C",
+  added: "2026-10-12",
+  launchLabel: "16 March 2023",
+  outcomeLabel: "More than US$10M total revenue, October 2026",
+  sticker: "$10M+ total revenue",
+  outcomeUsd: 10000000,
+  months: 43,
+  teamLabel: "1 founder for the first year, 4 people by November 2024",
+  fundingLabel: "None",
+  primaryFactor: "Timing",
+  meters: { evidence: 1, copyable: 2, capital: 1 },
+  tags: ["AI-native", "Solo founder", "Bootstrapped", "Running", "B2C", "Photography"],
+  product: "You upload a few selfies, choose backgrounds and clothing, and get 30 to 70 business headshots back in under 30 minutes. One payment of US$29 to US$59, no subscription. Companies buy credits so every employee's photo matches.",
+  why: "It took one ordinary purchase, the US$300 studio headshot, and sold it for US$29 the week the technology could do it. One-time pricing fitted a product people need once. Search pages for every city brought buyers without advertising, and company orders made the customers come back.",
+  summary: [
+    `HeadshotPro is an <dfn>AI headshot generator</dfn>: a web service that trains an image model on a customer's own selfies and then renders that person in business clothes, studio lighting and office backgrounds. The model is a <dfn>diffusion model</dfn>, a neural network that builds an image by removing noise step by step, personalised with a method called <dfn>DreamBooth</dfn>, which teaches the model one specific face from a handful of photos. The customer pays once, from US$29, and downloads the results in under 30 minutes.`,
+    `Danny Postma, a Dutch founder who had sold his AI copywriting tool Headlime in 2021, built the first version in about 30 hours and announced it on X on 16 March 2023. Within seven weeks the Indie Hackers podcast introduced him as having passed US$300,000 in revenue. He ran it alone for the first year, with his wife answering support email, and hired a team of four by late 2024. The company's own pages show 60,497 customers in February 2024, 102,207 in March 2025 and more than 250,000 in October 2026, with more than US$10,000,000 in revenue since launch.`,
+    `All money figures on this page are statements by the founder or his company, grade C. No payment processor or buyer has confirmed them, and the founder said in August 2023 that he no longer publishes revenue. Two third-party estimates disagree with each other by a factor of 30, so the page shows them as estimates and explains why. The page also lists earlier photo-tool companies that failed, and what is different here.`
+  ],
+  factsCaption: "More than US$10 million in total revenue in 43 months, from one-time purchases of US$29 to US$59, all self-reported",
+  factsRead: "How to read this table: a grade C value is a statement by the founder, by his company's website, or by a reviewer or third party that says so. A \"calc\" value was computed on this page from the rows above it. No value is grade A or B.",
+  timelineLead: "From a free experiment with AI profile pictures to a company with 250,000 customers, in 43 months. Each entry carries its grade.",
+  pricing: {
+    caption: "HeadshotPro prices on 12 October 2026, read from the company's pricing page (grade C). All prices are one-time payments, there is no subscription.",
+    note: "An individual buys one shoot. A company buys credits, one credit per person, with volume discounts that start at 20% off for 5 credits and reach 50% off at 1,000 or more; the page shows US$25.35 per shoot at 100 credits and a starting price of US$19.50 per shoot. Credits never expire. The company sells a SOC 2 Type II report and single sign-on as extras.",
+    rows: [
+      ["Basic, individual", "29 one-time", "", "30 headshots, 6 edit credits, about 2 hours"],
+      ["Professional, individual", "39 one-time", "", "50 headshots, 26 edit credits, 30 minutes, 1 free redo"],
+      ["Executive, individual", "59 one-time", "", "70 headshots, 46 edit credits, 15 minutes, 4K"],
+      ["Team credits, 5 to 1,000 people", "25.35 per shoot at 100 credits", "", "40 headshots per person, admin dashboard, invoice"],
+      ["Team credits, 1,000 or more", "19.50 per shoot", "", "50% off list, shown as the starting team price"],
+      ["Enterprise", "custom", "", "1,000+ people"]
+    ]
+  },
+  facts: [
+    { fact: "Total revenue since launch, October 2026", value: "more than US$10,000,000", grade: "C", note: "The company's About page, read 12 October 2026. The same page says 17,000,000 headshots generated and 200,000+ shoots completed, and that HubSpot's sales team is a customer.", src: [1] },
+    { fact: "Average revenue per shoot", value: "US$50", grade: "X", note: "Calculated: US$10,000,000 divided by 200,000 shoots. It sits inside the US$29 to US$59 price band, so the two company figures are consistent with each other.", src: [1] },
+    { fact: "Average revenue per month since launch", value: "about US$233,000", grade: "X", note: "Calculated: US$10,000,000 divided by 43 months, March 2023 to October 2026. A floor, because the figure says \"more than\" and the sales were not spread evenly.", src: [1] },
+    { fact: "Customers, October 2026", value: "more than 250,000", grade: "C", note: "The company's home page, read 12 October 2026.", src: [2] },
+    { fact: "Customers, 2 March 2025", value: "102,207, with 17,943,292 headshots created", grade: "C", note: "The company's home page as saved by the Internet Archive on that date.", src: [3] },
+    { fact: "Customers, 24 February 2024", value: "60,497", grade: "C", note: "The company's home page as saved by the Internet Archive on that date. Price from US$29, 120 headshots per person, done in 2 hours.", src: [4] },
+    { fact: "New customers between the two archived pages", value: "41,710 in 372 days, about 3,400 a month", grade: "X", note: "Calculated: 102,207 minus 60,497. At the US$39 middle price this is about US$1.6 million a year; at US$29 about US$1.2 million. Team orders count one credit per person, so the customer count is a count of people, not of buyers.", src: [3, 4] },
+    { fact: "New customers from March 2025 to October 2026", value: "about 148,000 in 589 days", grade: "X", note: "Calculated: 250,000 minus 102,207. At US$39 that is about US$3.6 million a year. The 250,000 is a rounded figure, so this is an approximation.", src: [2, 3] },
+    { fact: "Revenue seven weeks after launch, 5 May 2023", value: "more than US$300,000", grade: "C", note: "The Indie Hackers podcast listing for episode 278 says the founder talks about \"passing $300k in revenue\". That is total revenue since launch 50 days earlier, about US$180,000 a month. Several secondary sites later repeat US$300,000 as monthly revenue; see the watch list.", src: [5] },
+    { fact: "Revenue in the first two weeks", value: "more than US$100,000", grade: "C", note: "Not verified. Reported by secondary sites Startup Founder Stories and Grey Journal, which say it comes from the founder. No post by the founder with this figure was found.", src: [13] },
+    { fact: "Launch price and conversion, 17 March 2023", value: "US$39 average order, 4% of visitors buy", grade: "C", note: "The founder's post on X offering affiliates 20% of each sale.", src: [7] },
+    { fact: "Time to build the first version", value: "about 30 hours", grade: "C", note: "Founder interview with Unite.ai, February 2024, for ProfilePicture.AI, the product that became HeadshotPro. The Bootstrapped Founder interview says HeadshotPro was six months old in August 2023.", src: [9, 8] },
+    { fact: "Team", value: "1 person for the first year; 4 people by November 2024, planned 6", grade: "C", note: "In August 2023 the founder said his wife answered support email and he was about to make his first hire. On 30 November 2024 he wrote that he hoped to grow the team from 4 to 6 with a designer and a salesperson.", src: [8, 10] },
+    { fact: "Outside funding", value: "none", grade: "C", note: "Founder statements. He describes the choice after Headlime as venture money, bootstrapping with a team, or selling, and says he chose to build a team this time.", src: [8, 9] },
+    { fact: "Price of a studio headshot, for comparison", value: "US$232.50 average in the United States (company, 2025); US$300 to US$800 a session (company, 2026)", grade: "C", note: "The company's own comparison figures, from the archived and the current home page.", src: [3, 2] },
+    { fact: "Third-party estimate: Starter Story", value: "US$300,000 a month, US$3.6 million a year", grade: "C", note: "A profile that gives no source. It matches the podcast's cumulative US$300,000 figure, so it may be a misreading of that figure as a monthly one.", src: [13] },
+    { fact: "Third-party estimate: Latka", value: "US$96,000 revenue for 2023", grade: "C", note: "An automated database estimate, far below the founder's US$300,000 by May 2023. Shown here so the reader sees the spread of outside guesses.", src: [14] },
+    { fact: "Time from launch to the October 2026 figure", value: "43 months", grade: "X", note: "Calculated: 16 March 2023 to October 2026.", src: [1, 6] }
+  ],
+  timeline: [
+    { when: "2020 to March 2021", what: "Postma puts GPT-3 into Headlime, a copywriting tool, reaches about US$20,000 a month and sells it to Jasper after eight months for a seven-figure sum.", grade: "C", src: [9, 8] },
+    { when: "September 2022", what: "Stable Diffusion is released. He builds Stock AI, an AI stock-photo site, then drops it: quality too low and fear of a lawsuit from Getty Images.", grade: "C", src: [9, 8] },
+    { when: "Late 2022", what: "He builds ProfilePicture.AI in about 30 hours on top of DreamBooth, which trains a model on one person's face. It sells well for a week on X, then sales fall.", grade: "C", src: [9] },
+    { when: "2 February 2023", what: "He posts a free tool that makes an AI headshot with an AI background, an early test of the idea.", grade: "C", src: [15] },
+    { when: "16 March 2023", what: "HeadshotPro is announced on X as professional headshots for remote teams or yourself. Deep Agency, an AI model agency, launches the same week and gets the press; HeadshotPro gets the sales.", grade: "C", src: [6, 9] },
+    { when: "17 March 2023", what: "Affiliate programme: 20% per sale, with a US$39 average order and a 4% conversion rate. Servers go down at night during the first weeks.", grade: "C", src: [7, 8] },
+    { when: "5 May 2023", what: "Indie Hackers podcast episode 278 presents him as passing US$300,000 in revenue, seven weeks after launch.", grade: "C", src: [5] },
+    { when: "25 May 2023", what: "An Indie Hackers member finds the site in the top 10 Google results for \"professional headshots\" with 200+ city pages. Postma replies that backlinks from his other sites, his followers and the domain name did it.", grade: "C", src: [15] },
+    { when: "9 August 2023", what: "Six months in, still alone, wife on support. He says he is mentally unable to build more features, is making his first hire, and will no longer share revenue.", grade: "C", src: [8] },
+    { when: "20 February 2024", what: "Interview: a pipeline of dozens of open-source and custom models, a year of work on custom models, and a small team of contractors and part-timers.", grade: "C", src: [9] },
+    { when: "24 February 2024", what: "Home page shows 60,497 customers, 120 headshots per person, from US$29.", grade: "C", src: [4] },
+    { when: "30 November 2024", what: "Team of 4, plan to reach 6 with a designer and a salesperson. In December he says his goal for 2025 is to do no day-to-day work himself.", grade: "C", src: [10] },
+    { when: "2 March 2025", what: "Home page shows 102,207 customers and 17,943,292 headshots created.", grade: "C", src: [3] },
+    { when: "22 May 2025", what: "A CNET reviewer buys the US$29 plan: 40 headshots for US$29, 100 for US$39, 200 for US$59, results in 1 to 3 hours.", grade: "C", src: [11] },
+    { when: "12 October 2026", what: "Company pages show 250,000+ customers, 200,000+ shoots, 17 million headshots and more than US$10 million in revenue since launch. Packages now return 30 to 70 headshots in under 30 minutes.", grade: "C", src: [1, 2, 12] }
+  ],
+  mechanism: [
+    { title: "Timing: the same week the model could do it", text: "DreamBooth made it possible to teach an image model one person's face from a few photos in late 2022. Postma had already shipped a profile-picture version of the idea and watched its sales fade. HeadshotPro repeated the trick for the one photo people pay money for, and shipped before the dozens of copies that followed. By May 2023 he was already describing search rankings as his protection against them." },
+    { title: "A product people buy once, priced once", text: "A headshot is needed once every year or two, so a subscription would be cancelled at once. He charged US$29 to US$59 per shoot. Against a studio session that the company puts at US$232 to US$800, the saving is obvious and the buyer does not need to be persuaded." },
+    { title: "Search pages instead of advertising", text: "More than 200 generated pages, one for each city, such as \"professional headshots San Francisco\", plus blog posts, put the site in the top 10 for \"professional headshots\" within three months. Backlinks from his older sites and from launch posts gave the new domain authority. Affiliates got 20% of each sale." },
+    { title: "Company orders", text: "A firm that wants matching photos for all staff buys credits, one per person, with an admin dashboard, bulk download, invoices and a SOC 2 report. This is where a one-time consumer product gets repeat buyers: each new hire is a new credit." }
+  ],
+  howBuilt: {
+    intro: "These details come from the founder's interviews and the company's pages. They are grade C.",
+    items: [
+      "Image generation on Stable Diffusion, an open-source diffusion model, personalised per customer with DreamBooth. The founder says competitors stop there; HeadshotPro adds dozens of extra open-source and custom models, and had spent a year on its own models by February 2024.",
+      "LLaVA, an open vision-language model, checks uploaded photos and removes unsafe outputs. CodeFormer, a face-restoration model, removes AI artefacts from faces.",
+      "Customers upload 15 to 17 photos; the founder says that number gave the best quality in 2024. By 2026 the product asks for a few selfies and returns 30 to 70 headshots in under 30 minutes.",
+      "Marketing: programmatic search pages per city, blog posts, Product Hunt launches used for backlinks, an affiliate programme at 20%, and the founder's X account with about 187,000 followers.",
+      "Operations: the founder alone for the first year, his wife on support, then a remote team of 4 that works without meetings, with Asana as the single record of work.",
+      "Refunds are automatic and no questions asked; the founder complained in April 2023 that customers still filed card disputes."
+    ],
+    src: [9, 2, 15, 10, 7]
+  },
+  predecessorsIntro: "Five companies in the Loot Drop database sold photo tools to consumers before image models could make a photo from nothing. The values below are from that database and are not independently verified.",
+  predecessors: [
+    { name: "Picnik", years: "2005 to 2012", funding: "US$3.5M", cause: "Competition", promise: "Photo editing in the browser, no download.", died: "Google bought it and shut it down to fold the features into Google+.", url: "https://www.loot-drop.io/startup/429-picnik" },
+    { name: "Splashup", years: "2007 to 2010", funding: "US$20K", cause: "Product/Tech Failure", promise: "Online photo editing with real-time collaboration.", died: "Built on Flash with no business model, while phones and HTML5 took over.", url: "https://www.loot-drop.io/startup/1660-splashup" },
+    { name: "Seerslab", years: "2016 to 2019", funding: "US$5M", cause: "Competition", promise: "Augmented-reality filters for selfies and stories.", died: "Snapchat and the other platforms built filters in, and nobody needed a separate app.", url: "https://www.loot-drop.io/startup/1463-seerslab" },
+    { name: "Picplum", years: "2011 to 2014", funding: "US$1M", cause: "Competition", promise: "Photo prints by mail as easy as a selfie.", died: "Sharing moved to screens; costs of printing and posting ate the margin.", url: "https://www.loot-drop.io/startup/1603-picplum" },
+    { name: "Modsy", years: "2015 to 2022", funding: "US$72.7M", cause: "Unit Economics", promise: "AI-made 3D pictures of your room with furniture you can buy.", died: "Each design still needed a human designer, customer acquisition was expensive and customers rarely came back.", url: "https://www.loot-drop.io/startup/2521-modsy" }
+  ],
+  whatChanged: [
+    `Picnik, Splashup and Seerslab sold a better way to edit a photo that already existed, and the platforms that owned the photos added the feature themselves. Picplum sold a physical print that people stopped wanting. Modsy is the closest case: an AI image service for a one-time purchase, which failed because every order still needed a human designer and the customer never came back.`,
+    `HeadshotPro differs in three places. The photo is new, not edited, so there is no platform to copy the feature into; LinkedIn does not run a photo studio. The pipeline is fully automatic, so the cost of one order is model compute, not a designer's hour. And the repeat buyer is the employer, who buys a credit for every new hire. The risk that remains is the one Seerslab met: the model makers and the big platforms can offer the same picture for free.`
+  ],
+  copy: {
+    verdict: "The first-mover week, no. The shape, yes.",
+    text: "Being the first paid headshot generator was an opening of weeks in early 2023, and the founder said by May that year that search rankings, not the model, were his defence. The shape is still usable: take a purchase people already make at a known price, make an AI version at a tenth of it, charge once, and build search pages for every place the purchase is searched for.",
+    steps: [
+      "Pick a purchase with a known price and a clear result: a headshot, not an avatar.",
+      "Charge once, in the band of a tenth of the human price, and refund without questions.",
+      "Generate one page per city or niche for the search term, and get backlinks from launches and existing sites.",
+      "Add the company version, with credits per person, an admin view and the compliance paperwork, because that is where repeat orders come from."
+    ],
+    open: "Any image or document that people buy once at a fixed price: product photos for online shops, real-estate photos, passport photos, CV layouts, voice-overs for training videos."
+  },
+  watch: [
+    { title: "Self-reported, and the founder stopped reporting", text: "Every figure is the company's own. The founder said in August 2023 that he no longer shares revenue, so the only money figure after that is the About page's \"more than US$10,000,000 since launch\". No date is given for when that line appeared." },
+    { title: "The US$300,000 a month figure is probably a misreading", text: "The Indie Hackers podcast of May 2023 said he had passed US$300,000 in total revenue. Starter Story and others report US$300,000 a month. The customer counts on the company's own pages, about 3,400 new customers a month at US$29 to US$59 between February 2024 and March 2025, give US$1.2 million to US$2 million a year, not US$3.6 million." },
+    { title: "The model makers can give it away", text: "Every big image model can now make a business portrait from a selfie. HeadshotPro's answer is likeness quality, a tested pipeline, and the company product with compliance paperwork. Seerslab died when the platforms added the feature." },
+    { title: "Dozens of copies and card disputes", text: "The founder has complained about clones since his first AI product, and about customers who dispute the charge after an automatic refund is already available. One-time consumer sales carry both costs." },
+    { title: "Customer counts are not buyer counts", text: "A company order of 50 credits adds 50 customers. The 250,000 figure is therefore a count of people photographed, and the revenue per customer on this page is an approximation." }
+  ],
+  sources: [
+    { title: "HeadshotPro, About page, read 12 October 2026", url: "https://headshotpro.com/about", grade: "C", how: "Read in full. Company statement. Source for the US$10,000,000+ revenue, 17 million headshots, 200,000+ shoots and HubSpot." },
+    { title: "HeadshotPro, home page, read 12 October 2026", url: "https://headshotpro.com/", grade: "C", how: "Read in full. Source for the 250,000+ customers, the 30 to 70 headshots in under 30 minutes, and the US$300 to US$800 studio comparison." },
+    { title: "HeadshotPro home page as saved by the Internet Archive, 2 March 2025", url: "http://web.archive.org/web/20250302071352/https://www.headshotpro.com/", grade: "C", how: "Read in full. Source for the 102,207 customers, 17,943,292 headshots and the US$232.50 studio comparison." },
+    { title: "HeadshotPro home page as saved by the Internet Archive, 24 February 2024", url: "http://web.archive.org/web/20240224114606/https://www.headshotpro.com/", grade: "C", how: "Read in full. Source for the 60,497 customers, 120 headshots per person and the US$29 starting price." },
+    { title: "Indie Hackers podcast, episode 278, 5 May 2023: Growing a portfolio of AI products past $300k after a 7-figure exit with Danny Postma", url: "https://bizarro.dev.to/theindiehackerspodcast/278-growing-a-portfolio-of-ai-products-past-300k-after-a-7-figure-exit-with-danny-postma", grade: "C", how: "Read the episode description on the DEV Community mirror; the indiehackers.com page returns error 410. The audio was not transcribed. Source for the US$300,000 in revenue." },
+    { title: "Danny Postma on X, 16 March 2023: launch of HeadshotPro", url: "https://x.com/dannypostma/status/1636337910017556480", grade: "C", how: "Read in full through the fxtwitter API. Source for the launch date and the positioning for remote teams." },
+    { title: "Danny Postma on X, 17 March 2023: affiliate programme", url: "https://x.com/dannypostma/status/1636556544270823425", grade: "C", how: "Read in full through the fxtwitter API, with the follow-up post. Source for the 20% commission, the 4% conversion rate and the US$39 order value." },
+    { title: "The Bootstrapped Founder, 9 August 2023: Danny Postma, an indie hacker's business evolution", url: "https://thebootstrappedfounder.com/danny-postma-an-indie-hackers-business-evolution/", grade: "C", how: "Read the transcript in full. Source for the solo year, the wife on support, the first hire, the one-time pricing logic, the Headlime sale and the decision to stop sharing revenue." },
+    { title: "Unite.ai, 20 February 2024: Danny Postma, founder of HeadshotPro, interview series", url: "https://www.unite.ai/danny-postma-founder-of-headshotpro-interview-series/", grade: "C", how: "Read in full. Source for Stock AI, ProfilePicture.AI, the 30-hour build, the model pipeline and the move to a team." },
+    { title: "Indie Hackers product page for HeadshotPro, with the founder's X posts of November and December 2024", url: "https://www.indiehackers.com/product/headshotpro", grade: "C", how: "Read in full. The page quotes the founder's posts. Source for the team of 4, the plan for 6, the async work and the 2025 goal." },
+    { title: "CNET via Yahoo Tech, 22 May 2025: I tried an AI headshot generator", url: "https://tech.yahoo.com/ai/articles/headshot-using-ai-140002501.html", grade: "C", how: "Read the sections on pricing and setup. A journalist's own purchase. Source for the 2025 prices and the founding in the Netherlands in March 2023." },
+    { title: "HeadshotPro pricing page, read 12 October 2026", url: "https://headshotpro.com/pricing", grade: "C", how: "Read in full. Source for the pricing table and the team credit discounts." },
+    { title: "Starter Story: How an indie hacker built an AI headshot business to $300K/month", url: "https://www.starterstory.com/stories/headshotpro-breakdown", grade: "C", how: "Read in full. A third-party profile with no stated source for the monthly figure. Also the source of the unverified US$100,000 in two weeks claim, together with Grey Journal and Startup Founder Stories." },
+    { title: "Latka company page: Headshotpro revenue 2023", url: "https://getlatka.com/companies/headshotpro", grade: "C", how: "Read in full. An automated estimate, shown for contrast." },
+    { title: "Indie Hackers, 26 May 2023: Breaking down Danny Postma's SEO strategy for HeadshotPro, and the founder's reply on X of 25 May 2023", url: "https://indiehackers.com/post/breaking-down-danny-postmas-seo-strategy-for-headshotpro-300k-in-1-year-fad0af94d2", grade: "C", how: "Read in full, and the two X posts it links through the fxtwitter API. Source for the city pages, the rankings, the backlinks and the February 2023 free tool." },
+    { title: "Loot Drop database export, 1,749 failed startups", url: "https://www.loot-drop.io/", grade: "C", how: "Local export. AI-written summaries, not independently verified. Source for the failed predecessors." }
+  ]
 }
 ];
 
