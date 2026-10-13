@@ -2945,6 +2945,148 @@ const STORIES = [
     { title: "SoFarBot, 8 September 2026: TalkNotes actually sold for $200K", url: "https://www.sofarbot.com/stories/talknotes-nico-jeannen-sold-250k-france", grade: "C", how: "Read in full. A secondary account that checked the US$250,000 headline against the text and the founder's post, and reached US$200,000. Also quotes the founder's rule of reinvesting only the product's revenue." },
     { title: "Loot Drop database export, 1,749 failed startups", url: "https://www.loot-drop.io/", grade: "C", how: "Local export. AI-written summaries, not independently verified. Source for the failed predecessors." }
   ]
+},
+{
+  slug: "nightcafe",
+  name: "NightCafe",
+  country: "Australia",
+  sector: "Consumer software",
+  productType: "AI image generator with a community",
+  aiType: "AI-native",
+  team: "small",
+  outcome: "running",
+  evidence: "C",
+  added: "2026-10-12",
+  launchLabel: "12 November 2019",
+  outcomeLabel: "US$30K a month with 2 people, October 2021",
+  sticker: "$30K/mo with 2 people",
+  outcomeUsd: 360000,
+  months: 23,
+  teamLabel: "1 founder, 2 people by October 2021, 9 staff by August 2024",
+  fundingLabel: "None",
+  primaryFactor: "Timing",
+  meters: { evidence: 1, copyable: 2, capital: 2 },
+  tags: ["AI-native", "Small team", "Bootstrapped", "Running", "B2C", "Creative tools"],
+  product: "A website where anyone can type a text prompt and get an image from one of many AI models, then share it in a community with daily challenges, chat rooms and streaks. NightCafe trains no models of its own: it rents models from OpenAI, Google, Black Forest Labs and others, and sells credits and subscriptions.",
+  why: "It was already online in 2019, when the only AI art was style transfer. When open-source text-to-image models appeared in mid-2021, it added them within weeks, and a Reddit post sent a crowd to the only simple website that offered them. It then kept the crowd with community features instead of better models.",
+  summary: [
+    `NightCafe is a <dfn>text-to-image</dfn> website: you type a sentence, an AI model draws it. The model is not NightCafe's own. It is an <dfn>aggregator</dfn>, a service that connects to many model providers through their APIs and shows them in one interface, with a <dfn>credit system</dfn>, where each image costs a number of credits that the user earns daily or buys. The site also has daily challenges, chat rooms, and a feed where users comment on each other's images.`,
+    `Angus Russell, a software engineer in Australia, launched the first version on 12 November 2019 as a side project. For almost two years it covered its own costs at best. In mid-2021 he added VQGAN+CLIP, one of the first open-source text-to-image models, and in early October 2021 a Reddit post sent so much traffic that the site crashed: one day earned 15 times the previous daily record, about US$17,000. On 9 October 2021 he reported US$30,000 a month on his Indie Hackers page. That is a <dfn>run rate</dfn>, one month of revenue multiplied by 12, of US$360,000 a year, 23 months after launch. NightCafe was then two people: Russell, who still worked as a software engineer at Atlassian, and his partner Elle, who ran the business side.`,
+    `The company kept growing after that, with more people. In August 2024 TechCrunch reported, from a source close to the company that it did not name, about US$4 million a year in revenue and about US$2 million in profit with nine staff. Both money figures on this page are grade C: the first is the founder's own entry, made in the week of a traffic peak, and the second comes from an unnamed source. The user counts, 25 million users and more than one billion images, come from a Google Cloud customer story, grade B. The page also shows what happened to earlier companies that sold creative tools on top of technology they did not own.`
+  ],
+  factsCaption: "A side project of two people that reported US$30,000 a month in October 2021, 23 months after launch, and later reached about US$4 million a year with nine staff",
+  factsRead: "How to read this table: a grade B value comes from a company other than NightCafe that put its own name on it, here Google Cloud. A grade C value is a founder statement, a journalist's unnamed source, or a reviewer. A \"calc\" value was computed on this page from the rows above it. No value is grade A. The rows marked \"with 9 staff\" describe the larger company of 2024 and are not the headline of this page.",
+  timelineLead: "From a website that sold wall prints nobody bought to US$30,000 a month with two people, in 23 months, and then to one billion generated images with a larger team. Each entry carries its grade.",
+  pricing: {
+    caption: "NightCafe PRO plans in October 2026: plan names and credits from the pricing page's code; the prices load by script and could not be read, so the price range is from TechCrunch (August 2024) and a reviewer (grade C)",
+    note: "Every user gets 5 free credits a day for logging in and 3 more for the daily challenge. Subscriptions give monthly credits that do not expire, a cheaper top-up price per credit, and, from the Hobbyist plan up, unlimited base images on a set of fast models. Annual billing is shown as 40% off and quarterly as 15% off. TechCrunch reported the range as US$4.79 to US$50 a month in August 2024; the reviewer site There's An AI For That lists paid plans from US$12.49 a month in 2026. Credit packs are also sold without a subscription.",
+    rows: [
+      ["AI Beginner", "", "", "100 credits a month; shown only to some users"],
+      ["AI Hobbyist", "", "from 12.49 (reviewer)", "200 credits a month; unlimited base images on tier 1 models"],
+      ["AI Enthusiast", "", "", "500 credits a month; unlimited on tiers 1 to 2"],
+      ["AI Creator", "", "", "850 credits a month; unlimited on tiers 1 to 3"],
+      ["AI Artist", "", "", "1,400 credits a month; unlimited on tiers 1 to 4"],
+      ["AI Professional", "", "up to 50 (TechCrunch, 2024)", "2,500 credits a month; unlimited on tiers 1 to 4"]
+    ]
+  },
+  facts: [
+    { fact: "Revenue per month, October 2021", value: "US$30,000", grade: "C", note: "Self-reported by the founder on his Indie Hackers product page, last updated 9 October 2021. The site marks it as not independently verified. It was entered in the week of the Reddit traffic peak, so it may show a peak and not a normal month.", src: [1] },
+    { fact: "Run rate from the October 2021 figure", value: "US$360,000 a year", grade: "X", note: "Calculated: US$30,000 times 12. This is the headline figure on this page.", src: [1] },
+    { fact: "Team, October 2021", value: "2 people", grade: "C", note: "SmartCompany, 12 October 2021: the founder, a software engineer at Atlassian, runs NightCafe with his fiancée Elle Moule. It was his side business.", src: [2] },
+    { fact: "Time from launch to the October 2021 figure", value: "23 months", grade: "X", note: "Calculated: November 2019 to October 2021.", src: [1, 5] },
+    { fact: "Best single day, October 2021", value: "about US$17,000", grade: "C", note: "TechCrunch, 2024, on the Reddit event. SmartCompany in October 2021 reported it as about 15 times the previous daily record, without an amount.", src: [3, 2] },
+    { fact: "Server capacity added in the Reddit week", value: "about 500 times", grade: "C", note: "Founder to SmartCompany. Two days produced more images than all the time before.", src: [2] },
+    { fact: "Outside funding", value: "none", grade: "B", note: "Google Cloud writes bootstrapped and without significant outside investment. TechCrunch writes entirely bootstrapped.", src: [4, 3] },
+    { fact: "Own AI models", value: "none", grade: "C", note: "Co-founder to TechCrunch: NightCafe has no internal AI or machine-learning capability. It runs some open models on its own servers and calls the rest through APIs.", src: [3] },
+    { fact: "Revenue per year, August 2024, with 9 staff", value: "about US$4 million annualized", grade: "C", note: "TechCrunch, 31 August 2024, from a source close to the company, not named. Reached with nine staff, so it is not the headline of this page. On the record the co-founder said only that the company is profitable most months.", src: [3] },
+    { fact: "Profit per year, August 2024, with 9 staff", value: "about US$2 million", grade: "C", note: "Same unnamed source: a gross margin of nearly 50%, after expenses including payroll for nine staff.", src: [3] },
+    { fact: "Revenue per month from the August 2024 figure", value: "about US$333,000", grade: "X", note: "Calculated: US$4 million divided by 12.", src: [3] },
+    { fact: "Growth from the October 2021 run rate to August 2024", value: "about 11 times", grade: "X", note: "Calculated: US$4,000,000 divided by US$360,000 is 11.1. The two figures come from different sources of grade C, so the multiple is rough.", src: [1, 3] },
+    { fact: "Staff, August 2024", value: "9", grade: "C", note: "TechCrunch. Plus 5 paid moderators through an outsourcing firm in Indonesia and 20 volunteer moderators paid in site features.", src: [3] },
+    { fact: "Subscribers, August 2024", value: "20,000", grade: "C", note: "Co-founder Elle Russell to TechCrunch. About 1 million people visit each month.", src: [3] },
+    { fact: "Subscription prices, August 2024", value: "US$4.79 to US$50 a month", grade: "C", note: "TechCrunch. Credit packs are sold separately.", src: [3] },
+    { fact: "Registered users", value: "more than 25 million", grade: "B", note: "Google Cloud customer story, 2025, and TechCrunch, August 2024. The founder says tens of millions of authorized users in the Google text.", src: [4, 3] },
+    { fact: "Images generated", value: "more than 1 billion", grade: "B", note: "Google Cloud customer story. The company blog said the same in November 2024, and TechCrunch wrote nearly a billion in August 2024.", src: [4, 6, 3] },
+    { fact: "Engineering team, 2025", value: "4 people", grade: "B", note: "Google Cloud customer story.", src: [4] },
+    { fact: "Time from launch to the August 2024 figure", value: "57 months", grade: "X", note: "Calculated: November 2019 to August 2024.", src: [3, 5] }
+  ],
+  timeline: [
+    { when: "2019", what: "Russell, who has a design degree and had co-founded design startups, cannot find wall art he likes for his house in Sydney. He builds a site to create AI art with neural style transfer and sell it as prints. Nobody buys prints.", grade: "C", src: [3] },
+    { when: "12 November 2019", what: "He posts on Indie Hackers that he launched the Creator as a minimum product with a few styles. About 30 people from Facebook and Reddit try it.", grade: "C", src: [5] },
+    { when: "December 2019 to January 2020", what: "Unsplash image search, anonymous use without sign-up through Firebase, and style masks as the feature that sets it apart. He starts a new job the next day.", grade: "C", src: [5] },
+    { when: "April 2020", what: "Number 3 on Google for \"AI Art Generator\", more than 100 creations a day. He turns to revenue: product mockups for every image.", grade: "C", src: [5] },
+    { when: "Between April 2020 and October 2021", what: "A user generates thousands of images and raises the hosting bill by a few hundred dollars. He adds a credit limit; users ask to buy more credits. The site reaches break-even almost at once. Elle, his partner and an accountant, joins to run the business side. TechCrunch gives no date for this.", grade: "C", src: [3] },
+    { when: "Mid-2021", what: "After OpenAI shows DALL-E, he adds the open-source VQGAN+CLIP text-to-image model and rents hundreds of GPUs for it. By 16 August 2021 his posts on X show images made from text prompts.", grade: "C", src: [3, 8] },
+    { when: "Early October 2021", what: "An image made on NightCafe is posted to r/oddlyterrifying, a Reddit group with 1.3 million members. The site crashes. Rendering servers are scaled up about 500 times. Two days produce more images than all the time before. One day earns 15 times the previous record, about US$17,000.", grade: "C", src: [2, 3] },
+    { when: "9 October 2021", what: "The headline figure: the founder sets the revenue on his Indie Hackers page to US$30,000 a month. NightCafe is two people, and he still works at Atlassian.", grade: "C", src: [1, 2] },
+    { when: "After October 2021", what: "Russell quits Atlassian to work on NightCafe full time. The exact date is not given.", grade: "C", src: [3] },
+    { when: "2023", what: "Fine-tuning: users train a model on their own images. Each fine-tuned model is approved by moderators.", grade: "C", src: [3] },
+    { when: "31 August 2024", what: "TechCrunch, now with nine staff: about US$4 million a year in revenue and about US$2 million profit, both from an unnamed source close to the company. On the record: 25 million users, 20,000 subscribers, no plans for an enterprise product.", grade: "C", src: [3] },
+    { when: "17 November 2024", what: "Five years of NightCafe; more than one billion creations.", grade: "C", src: [6] },
+    { when: "22 October 2025", what: "Google Cloud announces a customer story about NightCafe: 25 million users, 1 billion images, an engineering team of four, bootstrapped.", grade: "B", src: [4, 8] },
+    { when: "24 June 2026", what: "NightCafe Select, a storytelling feature, is announced. The company page says more than one billion artworks.", grade: "C", src: [8, 7] }
+  ],
+  mechanism: [
+    { title: "Timing", text: "NightCafe existed before text-to-image AI. When the open-source VQGAN+CLIP model appeared in mid-2021 there was no simple website for it, and NightCafe became that website within weeks, with the sign-up-free flow it had built in 2019. The Reddit crowd of October 2021 went to the only easy option." },
+    { title: "Credits, not prints", text: "The first business model, selling wall prints, failed. The credit limit was added to stop one heavy user from raising the hosting bill, and users immediately asked to buy more credits. The accidental model became the real one: pay for images, not for objects." },
+    { title: "Rent every model, own none", text: "The company says it has no machine-learning capability. It runs open models on rented GPUs and calls OpenAI, Google and others through APIs. Each new model is added to the list, so the product does not fall behind when a better model appears, and the company carries no training cost." },
+    { title: "Community as the moat", text: "The co-founder says models will become commodities and competitors will compete on something else. NightCafe competes on daily challenges, streaks, chat rooms and contests, and names Leonardo, Civitai and Midjourney, the community-centred rivals, as its real competition." }
+  ],
+  howBuilt: {
+    intro: "These details come from the Google Cloud customer story (grade B), the TechCrunch interview and the founder's early Indie Hackers posts (grade C). The Google Cloud numbers describe the system in 2025, not in October 2021.",
+    items: [
+      "Firebase from the start, chosen for speed to market; Firestore is still the main database, with tens of billions of records.",
+      "Cloud Run functions for workflows and API requests, more than 100 million invocations a day; Memorystore for Redis as a cache; more than 100 TB of images in Cloud Storage.",
+      "Image generation through Vertex AI for Google's Imagen models, and through other providers' APIs; some open models such as Stable Diffusion run on the company's own rented servers.",
+      "Anonymous users through Firebase so that a visitor can create an image before signing up, added in December 2019.",
+      "AI-based prompt and image moderation, plus 5 paid moderators through an outsourcing firm and 20 volunteers.",
+      "An engineering team of four for all of this in 2025; the founder says the managed services removed the need for dedicated infrastructure staff."
+    ],
+    src: [4, 3, 5]
+  },
+  predecessorsIntro: "Five companies in the Loot Drop database sold creative tools to consumers on top of technology that someone else could ship for free. The values below are from that database and are not independently verified.",
+  predecessors: [
+    { name: "Picnik", years: "2005 to 2012", funding: "US$3.5M", cause: "Competition", promise: "Photo editing in the browser, no download.", died: "Google bought it and folded it into Google+, then shut it down.", url: "https://www.loot-drop.io/startup/429-picnik" },
+    { name: "Snipshot", years: "2006 to 2009", funding: "US$20K", cause: "Competition", promise: "Quick browser photo edits for people who would not install software.", died: "Bigger rivals and free alternatives.", url: "https://www.loot-drop.io/startup/1241-snipshot" },
+    { name: "ElectricObjects", years: "2014 to 2020", funding: "US$3.2M", cause: "Unit Economics", promise: "A US$600 screen that shows subscription digital art on your wall.", died: "Hardware costs and consumers who would not pay monthly for wall art; smart TVs did it better.", url: "https://www.loot-drop.io/startup/114-electricobjects" },
+    { name: "Kicksend", years: "2011 to 2017", funding: "US$2.5M", cause: "Competition", promise: "Share and print your photos.", died: "Google Photos took sharing, Shutterfly owned printing.", url: "https://www.loot-drop.io/startup/274-kicksend" },
+    { name: "The Grid", years: "2014 to 2020", funding: "US$4.7M", cause: "Product/Tech Failure", promise: "Websites designed by AI, no designer needed.", died: "The AI was not ready; the designs were clunky while rivals shipped polished tools.", url: "https://www.loot-drop.io/startup/618-the-grid" }
+  ],
+  whatChanged: [
+    `Picnik and Snipshot were the NightCafe of their day: a creative tool in the browser with no install. They died when the big platforms offered the same for free. ElectricObjects and Kicksend sold objects, screens and prints, and the objects killed the margins. The Grid promised AI creativity before the models could deliver it.`,
+    `NightCafe started with the ElectricObjects problem, prints nobody bought, and dropped it for credits. It avoided The Grid's problem by waiting: the site existed before the models were good, and added each model the week it became usable. Against the Picnik problem, free generation from OpenAI, Google and Microsoft, it does not compete on the model at all. It sells the community around the images, which a model provider does not ship. Whether that is enough when every phone generates images for free is the open question on this page.`
+  ],
+  copy: {
+    verdict: "The 2021 opening, no. The structure, partly.",
+    text: "Being the only simple website for VQGAN+CLIP in mid-2021 cannot be repeated. The structure can: an interface on top of models that someone else trained, paid in credits, built on managed cloud services by one engineer who kept his job, with a partner for the business side. By the founder's own report that was enough for US$30,000 a month. But it needed a crowd, and the crowd came after two years of side-project work, from one Reddit post that nobody planned.",
+    steps: [
+      "Build the interface before the model is good, so you are online the week it becomes usable.",
+      "Charge for usage in credits, with a free daily amount, and never for objects.",
+      "Rent every model through APIs and own none; add each new one as it appears.",
+      "Spend the engineering time on community features, challenges, streaks and chat, because that is what the model providers do not sell."
+    ],
+    open: "Any new generative medium where the first-party interfaces are poor and the hobbyist crowd has nowhere to gather: video, music, 3D, and game assets."
+  },
+  watch: [
+    { title: "The headline is self-reported, in a peak week", text: "The founder entered US$30,000 a month on Indie Hackers on 9 October 2021, days after the Reddit post. One day of that week earned about US$17,000. The figure may describe the peak and not a normal month, and no one outside checked it." },
+    { title: "The larger figure is from an unnamed source", text: "The US$4 million a year and the US$2 million profit of August 2024 were given to TechCrunch by a source close to the company. On the record the co-founder said only that NightCafe is profitable most months. No payment processor or filing confirms either money figure on this page." },
+    { title: "Two people in 2021, nine staff in 2024", text: "The headline figure belongs to two people, one of them with a full-time job elsewhere. The US$4 million figure belongs to a company of nine staff with outsourced moderators. Do not read the larger number as a two-person result." },
+    { title: "The model providers give images away", text: "OpenAI, Google and Microsoft ship free image generation inside their chat products. NightCafe's answer is community, and its competitors with the same answer, Midjourney, Leonardo and Civitai, raised money while it did not." },
+    { title: "Copyright and moderation", text: "The co-founder told TechCrunch that one court ruling against the model providers could force the company to rethink its business. The site allows images of political figures and mild adult content, and TechCrunch found copyrighted characters in its public gallery with little effort." },
+    { title: "Prices could not be read", text: "The pricing page loads prices by script. The ranges here come from a 2024 article and a reviewer, so the exact plan prices may differ." }
+  ],
+  sources: [
+    { title: "Indie Hackers product page: NightCafe Creator revenue, self-reported", url: "https://www.indiehackers.com/product/nightcafe-creator/revenue", grade: "C", how: "Read in full. Founder-entered US$30,000 a month, last updated 9 October 2021, marked by the site as not independently verified. Source for the headline figure." },
+    { title: "SmartCompany, 12 October 2021: How one Reddit post led to a 15x revenue boost for an Aussie AI art generator", url: "https://www.smartcompany.com.au/startupsmart/reddit-post-15x-revenue-boost-ai-art-generator-nightcafe/", grade: "C", how: "Read in full. Founder interview in the week after the Reddit event. Source for the team of two, the Atlassian job, the 15x day and the 500x server scaling." },
+    { title: "TechCrunch, 31 August 2024: Before Midjourney, there was NightCafe, and it's still kicking", url: "https://techcrunch.com/2024/08/31/before-midjourney-there-was-nightcafe-and-its-still-kicking/", grade: "C", how: "Read in full. Interview with co-founder Elle Russell plus an unnamed source for the 2024 revenue and profit. Source for the founding story, the US$17,000 day, the 2024 staff and subscriber counts, and the prices." },
+    { title: "Google Cloud customer story: NightCafe Studio, announced by Google Cloud on X on 22 October 2025", url: "https://cloud.google.com/customers/nightcafe", grade: "B", how: "Read in full. A vendor's published case study with founder quotes; the page carries no date. Source for the user and image counts, the engineering team of four, the stack and the bootstrapped status." },
+    { title: "Indie Hackers product timeline: NightCafe Creator, posts from November 2019 to April 2020", url: "https://www.indiehackers.com/product/nightcafe-creator", grade: "C", how: "Read in full. Six founder posts. Source for the launch date, the early features and the Google ranking." },
+    { title: "NightCafe blog, 17 November 2024: 5 Years of NightCafe, Artist Spotlight", url: "https://nightcafe.studio/blogs/blog/5-years-of-nightcafe-artist-spotlight", grade: "C", how: "Read in full through the Wayback Machine; the live page returned a rate-limit error. Source for the five-year date and the one billion creations." },
+    { title: "NightCafe: About NightCafe, read 12 October 2026", url: "https://creator.nightcafe.studio/about-nightcafe", grade: "C", how: "Read in full. Company's own statement: founded 2019, more than one billion artworks." },
+    { title: "Angus Russell on X: 16 August 2021, 12 October 2021, 3 September 2024, 22 October 2025 and 24 June 2026", url: "https://x.com/Angus_Russell/status/1980833123916214468", grade: "C", how: "Read through api.fxtwitter.com. Founder posts text-to-image results, then links to the SmartCompany article, the TechCrunch article, the Google Cloud case study and the Select launch. His other posts since 2021 contain no money figures." },
+    { title: "NightCafe pricing page, read 12 October 2026, and the reviewer There's An AI For That", url: "https://creator.nightcafe.studio/pricing", grade: "C", how: "Plan names and credits read from the page's JavaScript; the prices load by script and could not be read. The starting price of US$12.49 a month is from theresanaiforthat.com/ai/nightcafe/." },
+    { title: "Loot Drop database export, 1,749 failed startups", url: "https://www.loot-drop.io/", grade: "C", how: "Local export. AI-written summaries, not independently verified. Source for the failed predecessors." }
+  ]
 }
 ];
 
