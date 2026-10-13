@@ -2672,6 +2672,140 @@ const STORIES = [
     { title: "Bhanu Teja P on X, 10 August 2025: Finally got SiteGPT.ai back to $10k MRR (again)", url: "https://x.com/pbteja1998/status/1954489670638989471", grade: "C", how: "Read in full through the fxtwitter API. Source for the third return to US$10,000 MRR and the churn target." },
     { title: "Bhanu Teja P on X, 28 October, 25 November and 5 December 2025: crossed $13k, $14k and $15k MRR", url: "https://x.com/pbteja1998/status/1983070404261581031", grade: "C", how: "Read all three posts through the fxtwitter API. Source for the autumn 2025 milestones." }
   ]
+},
+{
+  slug: "rytr",
+  name: "Rytr",
+  country: "USA",
+  sector: "Information Technology",
+  productType: "AI writing assistant",
+  aiType: "AI-native",
+  team: "small",
+  outcome: "exit",
+  evidence: "C",
+  added: "2026-10-12",
+  launchLabel: "13 April 2021",
+  outcomeLabel: "Sold for an undisclosed price after a US$1M a year run rate, October 2022",
+  sticker: "Sold after $1M ARR",
+  outcomeUsd: 1000000,
+  months: 18,
+  teamLabel: "2 founders and 1 employee at US$1M ARR",
+  fundingLabel: "None",
+  primaryFactor: "Price",
+  meters: { evidence: 2, copyable: 2, capital: 1 },
+  tags: ["AI-native", "Small team", "Bootstrapped", "Exit", "B2C", "Marketing content"],
+  product: "A web page where a user picks a use case (blog outline, product description, email, ad text), a tone and a language, types a few words, and gets a short text written by GPT-3. The free plan gives a monthly character limit; paid plans remove it. Rytr sells the output of OpenAI's model with a simpler interface and a much lower price than the other AI writing tools of 2021.",
+  why: "It entered an existing market with a lower price (US$29 a month for unlimited use, later US$9) and a simpler interface, sold the first customers through AppSumo, and put all marketing effort into search engine ranking, an affiliate program and a reward for reviews. It reached about US$1 million a year in revenue in seven months with three people, and a competitor bought it 18 months after launch.",
+  summary: [
+    `Rytr is an <dfn>AI writing assistant</dfn>: a web tool that sends a short instruction to a language model and returns a draft text for a given purpose, such as a blog outline, a product description or an email. It was built on <dfn>GPT-3</dfn>, the text model that OpenAI opened to developers through an API in 2020. Rytr adds a form with more than 40 use cases, 20 tones and about 30 languages, formats the request before it goes to the model and cleans the answer that comes back, so the user never writes a prompt.`,
+    `Abhimanyu (Abhi) Godara, a former strategy consultant and seed investor, built it with co-founder Atul Yadav and one employee. They launched on 1 April 2021 to private groups and on 13 April 2021 on AppSumo, a site that sells lifetime deals on software; the first day brought about 100 users and US$500. In November 2021 Godara told Starter Story that Rytr made US$83,333 a month, which is a US$1 million <dfn>annual recurring revenue</dfn> (ARR: the current monthly subscription revenue multiplied by twelve), with more than 300,000 users and a three-person team. The home page counted 30,000 users in August 2021, 800,000 in February 2022 and 2,000,000 in September 2022. On 6 October 2022 Copysmith, a funded competitor from Alabama, announced that it had bought Rytr together with Frase; the price was not disclosed.`,
+    `The headline number is a founder statement, grade C. The sale is confirmed by the buyer's press release, grade B, but without a price, so the page does not give a sale value. Rytr still runs as a product inside Copysmith in 2026 and its page claims 8,000,000 users. The page also shows what happened to earlier companies that sold writing and marketing software to small businesses.`
+  ],
+  factsCaption: "A US$1 million a year run rate seven months after launch, then an undisclosed sale 18 months after launch; the revenue is self-reported, the sale is confirmed by the buyer",
+  factsRead: "How to read this table: a grade B value is a statement by the acquirer in its press release. A grade C value is a founder statement in an interview, a number on the company's own website, or a third-party estimate that says so. A \"calc\" value was computed on this page from the rows above it. No value is grade A: no payment processor, filing or buyer has published a revenue figure or a price.",
+  timelineLead: "From an AppSumo deal to a sale to a competitor in 18 months. Each entry carries its grade.",
+  pricing: {
+    caption: "Rytr prices in October 2026, from the company's pricing page (grade C). The yearly column is what the page shows; the monthly column is calculated",
+    note: "The pricing page shows the yearly plan as a price per month with two months free, so the monthly price is the yearly price per month times 12 divided by 10: US$9 and US$29. The monthly toggle on the page loads by script and could not be read directly. The same US$9 and US$29 monthly prices appeared on the home page in February 2022, and the first paid plan in August 2021 was US$29 a month for unlimited use. The customer does not pay OpenAI separately; model usage is included.",
+    rows: [
+      ["Free", "0", "0", "10,000 characters a month, 1 language"],
+      ["Unlimited", "7.50", "9", "unlimited generation, 1 tone match, 50 plagiarism checks a month"],
+      ["Premium", "24.16", "29", "unlimited generation, multiple tone matches, 35+ languages, 100 plagiarism checks a month"]
+    ]
+  },
+  facts: [
+    { fact: "Revenue per month, November 2021", value: "US$83,333", grade: "C", note: "Founder interview on Starter Story, 28 November 2021. The profile shows US$83.3K revenue a month, 2 founders and 1 employee. In the text he says seven figures in ARR.", src: [1] },
+    { fact: "Annual recurring revenue, November 2021", value: "about US$1 million", grade: "X", note: "Calculated: US$83,333 times 12 is US$999,996. This is the headline figure of the page.", src: [1] },
+    { fact: "Sale to Copysmith", value: "announced 6 October 2022, price not disclosed", grade: "B", note: "Copysmith's press release, carried by MarTech Series and Digital Media Story. Preqin lists the deal as an add-on acquisition with no deal size. Tracxn dates it 7 October 2022.", src: [2, 3, 5, 6] },
+    { fact: "Users, October 2022", value: "more than 2 million", grade: "B", note: "Buyer's press release, as carried by Digital Media Story: over 2 million writers, freelancers and marketers. The company's own home page showed 2,000,000+ in September 2022 (grade C).", src: [3, 11] },
+    { fact: "Users, November 2021", value: "more than 300,000", grade: "C", note: "Founder interview. The home page showed 250,000+ on 4 November 2021.", src: [1, 9] },
+    { fact: "Users, March 2023", value: "close to 5 million", grade: "C", note: "Founder on the Napier podcast, 13 March 2023. The home page showed 5,000,000+ on 2 March 2023.", src: [7, 12] },
+    { fact: "Team at US$1 million ARR", value: "3 people", grade: "C", note: "Founder interview: 2 founders, 1 employee, a small 3-member team. Tracxn names the founders as Abhi Godara and Atul Yadav.", src: [1, 6] },
+    { fact: "Outside funding", value: "none", grade: "C", note: "Tracxn: has not raised any funding rounds. Latka: bootstrapped. The founder says the venture was profitable and self-sustaining in November 2021.", src: [6, 13, 1] },
+    { fact: "Monthly growth, 2021", value: "more than 50% a month", grade: "C", note: "Founder interview, November 2021. Not checked against any other source.", src: [1] },
+    { fact: "First day on AppSumo, 13 April 2021", value: "about 100 users and about US$500 of sales", grade: "C", note: "Founder interview.", src: [1] },
+    { fact: "Latka's revenue estimate for 2025", value: "US$1.2 million a year, 11 employees", grade: "C", note: "A third-party estimate, marked as such, for the product inside Copysmith. Headcount from LinkedIn.", src: [13] },
+    { fact: "Time from launch to the sale", value: "18 months", grade: "X", note: "Calculated: April 2021 to October 2022. The press release also says within a span of 18 months since launch.", src: [1, 2] }
+  ],
+  timeline: [
+    { when: "2007 to 2020", what: "Godara works five years as a strategy consultant at a Big Four firm in London, then as an early-stage investor at a seed fund in India, then runs a venture studio and a chatbot platform for creators.", grade: "C", src: [7] },
+    { when: "2020", what: "GPT-3 opens to developers. While using it in the chatbot project, Godara tries the existing AI writing tools and finds them expensive and hard to use.", grade: "C", src: [1, 7] },
+    { when: "March to April 2021", what: "The team sketches the interface in Figma and builds the first version. Launch to private communities on 1 April 2021.", grade: "C", src: [1] },
+    { when: "13 April 2021", what: "Public launch through an AppSumo deal. About 100 users and US$500 of sales on day one.", grade: "C", src: [1] },
+    { when: "4 August 2021", what: "The home page counts 30,000+ users. Free plan 5,000 characters a month; unlimited plan US$29 a month.", grade: "C", src: [8] },
+    { when: "4 November 2021", what: "Home page: 250,000+ users.", grade: "C", src: [9] },
+    { when: "28 November 2021", what: "Founder interview: US$83,333 a month, seven figures in ARR, more than 300,000 users, growth above 50% a month, three people, profitable.", grade: "C", src: [1] },
+    { when: "27 February 2022", what: "Home page: 800,000+ users. A new US$9 a month plan with 50,000 characters sits between the free plan and the US$29 unlimited plan.", grade: "C", src: [10] },
+    { when: "2 September 2022", what: "Home page: 2,000,000+ users; the browser extension has 10,000+ installs.", grade: "C", src: [11] },
+    { when: "6 October 2022", what: "Copysmith announces that it has bought Rytr and Frase and groups the three brands as Copyrytr. Price not disclosed. Godara is quoted in the release as CEO of Rytr.", grade: "B", src: [2, 3] },
+    { when: "13 March 2023", what: "Godara on the Napier podcast: close to 5 million customers. The home page shows 5,000,000+ on 2 March 2023.", grade: "C", src: [7, 12] },
+    { when: "October 2026", what: "Rytr still runs as a Copysmith product. The pricing page claims 8,000,000+ users; Latka estimates US$1.2 million a year of revenue and 11 employees.", grade: "C", src: [14, 13] }
+  ],
+  mechanism: [
+    { title: "Price", text: "In 2021 the other GPT-3 writing tools charged more and limited output by word count. Rytr sold unlimited generation for US$29 a month, and in 2022 added a US$9 plan. The founder says the product was aimed at early-stage users and small teams without a budget for the more expensive tools. The low price was possible because the team was three people and the model was rented from OpenAI by the call." },
+    { title: "AppSumo first", text: "The first public sale was a deal on AppSumo, a site whose users buy software at a discount and leave detailed reviews. It brought paying customers, cash and feedback on day one, and the founder personally sent a welcome email to each buyer." },
+    { title: "Search ranking, affiliates and reviews instead of ads", text: "From the first day the team wrote pages for the search queries it wanted to rank for and asked bloggers who reviewed similar tools for links; after six months it ranked on the first page for most of them. A reward of credits for leaving a review and an affiliate program with a commission turned users into promoters. The founder says he picked only two channels on purpose." },
+    { title: "The form instead of the prompt", text: "Rytr hides the model behind a form: use case, tone, language, a few words of input. The team formats the request before it reaches GPT-3 and formats the answer afterwards, and limits how much a user can generate in one step so the user reads and edits the output. That interface, not the model, is what the company owned." }
+  ],
+  howBuilt: {
+    intro: "These details come from the founder's interviews and the company's own pages. They are grade C.",
+    items: [
+      "The text comes from OpenAI's GPT-3 through its API. Rytr adds its own prompt formatting on the way in and post-processing on the way out, with use-case templates refined over time.",
+      "Payments through Stripe; email through SendGrid; support chat through Crisp; analytics with Google Analytics and Hotjar from day one; affiliate tracking with Rewardful; design mock-ups in Figma.",
+      "A drip email series over the first two weeks after sign-up nudges free users to pay.",
+      "A free plan with a character limit, then one or two paid plans. The unlimited plan was US$29 a month from launch; a US$9 plan arrived by February 2022.",
+      "Features added over time: a readability score, a built-in plagiarism checker, a browser extension, team sharing and document management.",
+      "Three people until at least November 2021: two founders and one employee."
+    ],
+    src: [1, 7, 8, 10, 14]
+  },
+  predecessorsIntro: "Five companies in the Loot Drop database sold writing or marketing software to writers and small businesses before language models could write the text. The values below are from that database and are not independently verified.",
+  predecessors: [
+    { name: "Metigy", years: "2014 to 2022", funding: "US$14M", cause: "No Market Need", promise: "An AI marketing brain for small businesses.", died: "Small businesses did not want recommendations to act on; they wanted the work done for them. The money went into generic insights that nobody used.", url: "https://www.loot-drop.io/startup/2338-metigy" },
+    { name: "Draft", years: "2011 to 2014", funding: "US$120K", cause: "Competition", promise: "A minimal cloud editor for writers with version control.", died: "Google Docs covered the need for free. A narrow writing tool with a freemium plan could not pay for itself.", url: "https://www.loot-drop.io/startup/1605-draft" },
+    { name: "Pressly", years: "2011 to 2018", funding: "US$2.9M", cause: "Competition", promise: "Content curation to keep a brand relevant with less effort.", died: "Larger marketing suites added curation as one feature among many, and Pressly never grew beyond it.", url: "https://www.loot-drop.io/startup/462-pressly" },
+    { name: "Wavii", years: "2009 to 2013", funding: "US$2M", cause: "Competition", promise: "A news feed written by natural language processing.", died: "Bought by Google before it found a way to earn money. The technology was interesting; the business was not.", url: "https://www.loot-drop.io/startup/727-wavii" },
+    { name: "WriteWith", years: "2007 to 2010", funding: "US$20K", cause: "Competition", promise: "Group writing in the browser.", died: "Google Docs shipped the same thing, free, with no funding to answer it.", url: "https://www.loot-drop.io/startup/1237-writewith" }
+  ],
+  whatChanged: [
+    `The five earlier companies either built writing tools whose core function a free product from Google soon matched, or sold marketing intelligence that small businesses did not have the time to act on. In both cases the product helped a person write or decide; the person still did the work.`,
+    `GPT-3 changed what a three-person company could sell: the text itself, for a few dollars a month, with the model rented by the call and no research team. Rytr's bet was that a cheap, simple layer on top of a rented model would find millions of users before the model's owner or a funded competitor took the market. It found two million in 18 months and was sold to a funded competitor, Copysmith, a month before ChatGPT appeared in November 2022 and made plain text generation free for everyone.`
+  ],
+  copy: {
+    verdict: "The method, yes. The timing, no.",
+    text: "A new model API in 2021 left room for a cheaper, simpler product in a market that already existed, and the sale closed just before free chat interfaces removed the price advantage. The method is still available: a form that hides the prompt, an AppSumo launch, search pages and affiliates instead of ads, and a price well under the incumbents, with a company small enough to live on it.",
+    steps: [
+      "Enter an existing AI product category with a lower price and a simpler interface, not a new category.",
+      "Sell the first version on a deal site to get paying customers and public reviews on the first day.",
+      "Pick two marketing channels only, for example search ranking and an affiliate program, and write every page for a query you want to rank for.",
+      "Keep the team at two or three people so the low price still leaves a profit, and sell before the model owner makes the basic use case free."
+    ],
+    open: "Any new model API whose first products are priced for agencies: voice, video, image and code generation tools where a US$9 plan with a form interface does not yet exist."
+  },
+  watch: [
+    { title: "Self-reported revenue and no price", text: "The US$83,333 a month comes from one founder interview in November 2021, with no later revenue figure before the sale. The buyer did not disclose a price, so the value of the exit is unknown; the page shows the last public revenue figure instead." },
+    { title: "Users are not customers", text: "All the large numbers, from 30,000 to 8 million, are counts of people who signed up, mostly on the free plan. The founder's 300,000 figure in November 2021 is also a sign-up count. No source gives the number of paying subscribers." },
+    { title: "The model owner can make the product free", text: "ChatGPT launched in November 2022, one month after the sale, and gives the same plain text generation for nothing. A layer on top of a rented model has no cost advantage over the model's owner." },
+    { title: "A crowded category", text: "Tracxn counts 473 active competitors for Rytr. The price fell from US$29 to US$9 within a year, and Latka's 2025 estimate of US$1.2 million a year, if right, is close to the 2021 run rate." },
+    { title: "The acquirer's own position", text: "Copysmith is a funded competitor in the same category and faces the same pressure from free tools. Rytr's future depends on its owner, not on its founders." }
+  ],
+  sources: [
+    { title: "Starter Story, 28 November 2021: I Built A Simple AI Writing Tool That Makes $60K/Year", url: "https://www.starterstory.com/stories/i-built-a-simple-ai-writing-tool-that-makes-60k-year", grade: "C", how: "Read in full (the public part of the article). Founder interview with a profile box showing US$83.3K revenue a month, 2 founders and 1 employee. Source for the launch dates, the AppSumo day, the user count, the growth rate, the team size and the tools used. The page title says US$60K a year, which contradicts the body; this page uses the body." },
+    { title: "MarTech Series, 6 October 2022: Copysmith Announces Acquisition of Frase & Rytr, Launches Copyrytr", url: "https://martechseries.com/content/content-marketing/copysmith-announces-acquisition-of-frase-rytr-launches-copyrytr/", grade: "B", how: "Read in full. The buyer's press release with quotes from both CEOs. Source for the sale, the 18 months since launch and millions of creators. No price." },
+    { title: "Digital Media Story, 6 October 2022: Copysmith Acquires Popular AI Content Tools Frase & Rytr", url: "https://digitalmediastory.com/copysmith-acquires-frase-rytr/", grade: "B", how: "Read in full. Carries the press release with the About Rytr paragraph: over 2 million writers, freelancers and marketers." },
+    { title: "Indie Hackers, 8 October 2022: (News) Frase & Rytr Acquired by Copysmith AI!", url: "https://www.indiehackers.com/post/news-frase-rytr-acquired-by-copysmith-ai-2070049f2c", grade: "C", how: "Read in full. A community repost of the press release." },
+    { title: "Preqin company profile: Rytr LLC", url: "https://www.preqin.com/data/profile/asset/rytr-llc/514604", grade: "C", how: "Read in full. Gives Wilmington, Delaware as headquarters and lists one completed add-on deal by Copysmith on 6 October 2022 with the deal size left blank." },
+    { title: "Tracxn company profile: Rytr", url: "https://tracxn.com/d/companies/rytr/__HOCvuIDiKJVareX0OVnJlDAPrjiz0twZ64SjvgkJIio", grade: "C", how: "Read the public part. Source for the two founders' names, no funding rounds, the 7 October 2022 acquisition date and the competitor count." },
+    { title: "Napier B2B podcast, 13 March 2023: A Napier Podcast Interview with Abhi Godara, Rytr", url: "https://www.napierb2b.com/2023/03/a-napier-podcast-interview-with-abhi-godara-rytr/", grade: "C", how: "Read the transcript in full. Source for the founder's background, the GPT-3 timing, the close to 5 million customers and how the product formats prompts and outputs." },
+    { title: "Wayback Machine, rytr.me home page, 4 August 2021", url: "http://web.archive.org/web/20210804085117/https://rytr.me/", grade: "C", how: "Read in full. Shows 30,000+ users, the 5,000-character free plan and the US$29 a month unlimited plan." },
+    { title: "Wayback Machine, rytr.me home page, 4 November 2021", url: "http://web.archive.org/web/20211104192022/https://rytr.me/", grade: "C", how: "Read in full. Shows 250,000+ users." },
+    { title: "Wayback Machine, rytr.me home page, 27 February 2022", url: "http://web.archive.org/web/20220227204611/https://rytr.me/", grade: "C", how: "Read in full. Shows 800,000+ users and the US$9 and US$29 plans." },
+    { title: "Wayback Machine, rytr.me home page, 2 September 2022", url: "http://web.archive.org/web/20220902051851/https://rytr.me/", grade: "C", how: "Read in full. Shows 2,000,000+ users and 10,000+ extension installs, a month before the sale." },
+    { title: "Wayback Machine, rytr.me home page, 2 March 2023", url: "http://web.archive.org/web/20230302032123/https://rytr.me/", grade: "C", how: "Read in full. Shows 5,000,000+ users." },
+    { title: "Latka company page: Rytr revenue 2025, estimate", url: "https://getlatka.com/companies/rytr.me", grade: "C", how: "Read in full. A third-party estimate of US$1.2 million a year for July 2025 and a headcount of 11 from LinkedIn." },
+    { title: "Rytr pricing page, read 12 October 2026", url: "https://rytr.me/pricing", grade: "C", how: "Read in full. Source for the current plans, the yearly prices and the 8,000,000+ claim. The monthly prices are calculated from the two-months-free rule stated on the page." },
+    { title: "Loot Drop database export, 1,749 failed startups", url: "https://www.loot-drop.io/", grade: "C", how: "Local export. AI-written summaries, not independently verified. Source for the failed predecessors." }
+  ]
 }
 ];
 
