@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,400..900,0..100,0..1;1,9..144,400..900,0..100,0..1&family=Nunito:wght@400;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-<meta name="description" content="Verified stories of one-person AI businesses. Every number has an evidence grade, and every story is paired with the failed startups that tried the same idea before.">
+<meta name="description" content="A unicorn has one horn. A monocorn has one founder. Verified stories of businesses that one person grew with AI, with an evidence grade on every number.">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="Monocorn">
 <meta property="og:url" content="https://monocorn.space/">
 <meta property="og:title" content="Monocorn: AI businesses that made real money">
-<meta property="og:description" content="Verified stories of one-person AI businesses. Every number has an evidence grade.">
+<meta property="og:description" content="A unicorn has one horn. A monocorn has one founder. Verified stories of businesses that one person grew with AI, with an evidence grade on every number.">
 <meta property="og:image" content="https://monocorn.space/og.png">
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="1200">
@@ -24,7 +24,7 @@
 <meta property="og:image:alt" content="Monocorn. AI businesses that made real money. Verified stories of one-person AI businesses.">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Monocorn: AI businesses that made real money">
-<meta name="twitter:description" content="Verified stories of one-person AI businesses. Every number has an evidence grade.">
+<meta name="twitter:description" content="A unicorn has one horn. A monocorn has one founder. Verified stories of businesses that one person grew with AI, with an evidence grade on every number.">
 <meta name="twitter:image" content="https://monocorn.space/og.png">
 <style>
 /* ---------- design tokens ---------- */
@@ -135,6 +135,17 @@ a.kern:hover,a.kern:focus-visible{transform:scale(1.3);z-index:3;box-shadow:3px 
 @media (prefers-reduced-motion:reduce){.kern{transition:none}}
 .hero h1{font-size:clamp(44px,6.4vw,80px)}
 .hero h1 em{color:var(--green);display:inline-block;transform:rotate(-2deg)}
+.name-band .sec-head{max-width:none}
+.name-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin-top:8px}
+.name-card{display:flex;flex-direction:column;gap:12px;padding:24px 24px 22px;background:var(--paper);border:2px solid var(--ink);border-radius:var(--r-md);box-shadow:4px 4px 0 var(--ink)}
+.name-card .top{display:flex;align-items:center;gap:14px}
+.name-card svg{width:46px;height:46px;flex:none}
+.name-card .word{font-family:"Fraunces",Georgia,serif;font-weight:900;font-variation-settings:"opsz" 144,"SOFT" 100,"WONK" 1;font-size:34px;line-height:1;color:var(--ink)}
+.name-card .means{color:var(--purple)}
+.name-card p{margin:0;font-size:15px;line-height:1.6;color:var(--body);font-weight:600}
+.name-card .src{margin-top:auto;padding-top:6px;font-size:13px;font-weight:700;color:var(--muted)}
+.name-card .src a{font-weight:800}
+@media (max-width:900px){.name-grid{grid-template-columns:minmax(0,1fr)}}
 .hero .sub{font-size:clamp(17px,1.3vw,19px);line-height:1.55;color:var(--lead);max-width:640px;margin:0;font-weight:600}
 .hero .cta{display:flex;gap:12px;flex-wrap:wrap}
 
@@ -379,7 +390,7 @@ noscript .box{padding:16px;margin:16px}
 
 <footer class="site-foot">
   <div class="wrap">
-    <div class="brand"><b>Monocorn</b><span>Verified one-person AI business success stories.</span><span id="foot-meta"></span></div>
+    <div class="brand"><b>Monocorn</b><span>A unicorn has one horn. A monocorn has one founder.</span><span>Verified stories of businesses that one person grew with AI.</span><span id="foot-meta"></span></div>
     <div class="c1">Every entry is AI-assisted research from public sources: press, company filings, founder posts and reviews. Every number carries an evidence grade. A grade C number is a founder claim that no one else verified. Nothing on this site is investment advice.</div>
     <div class="c2">Failed-startup data comes from an export of the Loot Drop database (loot-drop.io), 1,749 companies. Those records are AI-written summaries and are not independently verified.</div>
   </div>
@@ -7329,12 +7340,37 @@ function renderList() {
       <div class="hero-copy">
         <span class="eyebrow mono">${n} ${plural} on the cob · more coming</span>
         <h1 class="display">AI businesses that made <em class="serif">real money.</em></h1>
-        <p class="sub">Verified stories of one-person AI businesses. Every number carries an evidence grade. Every story is paired with the failed startups that tried the same idea before.</p>
+        <p class="sub">A unicorn is a startup that investors value at more than US$1 billion. A monocorn is what one person grows with AI: smaller, real, and counted kernel by kernel. Every number carries an evidence grade. Every story is paired with the failed startups that tried the same idea before.</p>
         <div class="cta"><a class="btn" href="#/stories">Read the stories</a><a class="btn ghost" href="#/verify">How we verify ${ARROW_R}</a></div>
       </div>
       ${cobHtml()}
     </div></div>
   </section>
+  <div class="wrap">
+    <section class="sec name-band" id="name">
+      <div class="sec-head"><span class="mono accent">Why the name</span><h2 class="display">A unicorn has one horn.<br>A monocorn has one founder.</h2><p class="lead">Monocorn is the word unicorn with the Greek monos, alone, in place of the Latin unus, one. On this site the horn is an ear of corn.</p></div>
+      <div class="name-grid">
+        <div class="name-card">
+          <div class="top"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="6" y="7" width="20" height="18" rx="8" style="fill:var(--kern-b);stroke:var(--ink)" stroke-width="2"/><ellipse cx="12.5" cy="12" rx="3" ry="1.8" fill="#fff" opacity=".55"/></svg><span class="word">Mono</span></div>
+          <span class="means mono">Greek monos: alone, only</span>
+          <p>One person. Each business on this site was started by one founder or by a very small team. Every story states the size of the team next to its headline number.</p>
+          <span class="src">Source: <a href="https://en.wiktionary.org/wiki/%CE%BC%CF%8C%CE%BD%CE%BF%CF%82" target="_blank" rel="noopener">Wiktionary</a></span>
+        </div>
+        <div class="name-card">
+          <div class="top"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 2.5L22.6 26.6Q16 30.4 9.4 26.6Z" style="fill:var(--purple-soft);stroke:var(--ink)" stroke-width="2" stroke-linejoin="round"/><path d="M13.6 11.6l5.6 2.6M12.3 16.6l8.3 3.6M11 21.8l10.6 4.2" fill="none" style="stroke:var(--ink)" stroke-width="1.6" stroke-linecap="round"/></svg><span class="word">Unicorn</span></div>
+          <span class="means mono">Latin unus and cornu: one horn</span>
+          <p>The animal with one horn. The Latin word copies the Greek monokeros. Since 2013 it also means a startup that investors value at more than US$1 billion. The article that began this use counted 39 of them, about 0.07% of funded software startups.</p>
+          <span class="src">Sources: <a href="https://en.wiktionary.org/wiki/unicorn" target="_blank" rel="noopener">Wiktionary</a> · <a href="https://techcrunch.com/2013/11/02/welcome-to-the-unicorn-club/" target="_blank" rel="noopener">TechCrunch, 2013</a></span>
+        </div>
+        <div class="name-card">
+          <div class="top"><svg viewBox="0 0 32 32" aria-hidden="true"><g transform="rotate(14 16 16)"><path d="M16 2.5c3.7 0 6.2 3.4 6.2 8.3v6.6c0 4-2.5 6.6-6.2 6.6s-6.2-2.6-6.2-6.6v-6.6c0-4.9 2.5-8.3 6.2-8.3z" style="fill:var(--mustard);stroke:var(--ink)" stroke-width="2"/><path d="M10.4 9.6h11.2M9.9 14h12.2M10.2 18.4h11.6M14 3.6v19.8M18 3.6v19.8" fill="none" style="stroke:var(--ink)" stroke-width="1.1" opacity=".5"/><path d="M16 30.2c-5.8-.5-10-4.6-10.6-11.9 4.2 1.3 8.4 5 10.6 11.9z" style="fill:var(--husk);stroke:var(--ink)" stroke-width="2" stroke-linejoin="round"/><path d="M16 30.2c5.8-.5 10-4.6 10.6-11.9-4.2 1.3-8.4 5-10.6 11.9z" style="fill:var(--husk-2);stroke:var(--ink)" stroke-width="2" stroke-linejoin="round"/></g></svg><span class="word">Corn</span></div>
+          <span class="means mono">Old English corn: grain</span>
+          <p>A different word that looks the same. One seed grows one plant, and a typical ear holds about 800 kernels. AI can do the same for the work of one person. Each kernel on our cob is one business where it did, with the money checked.</p>
+          <span class="src">Sources: <a href="https://en.wiktionary.org/wiki/corn" target="_blank" rel="noopener">Wiktionary</a> · <a href="https://www.iowacorn.org/education/faqs" target="_blank" rel="noopener">Iowa Corn</a></span>
+        </div>
+      </div>
+    </section>
+  </div>
   <div class="wrap">
     <section class="sec" id="stories">
       <div class="controls">
