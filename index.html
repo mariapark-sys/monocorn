@@ -9185,6 +9185,163 @@ const STORIES = [
     { title: "European Central Bank: euro foreign exchange reference rates, 13 October 2026", url: "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml", grade: "B", how: "Read the US dollar rate, 1.1188 per euro, used to convert the euro prices and the MRR." },
     { title: "Loot Drop database export, 1,749 failed startups", url: "https://www.loot-drop.io/", grade: "C", how: "Local export. AI-written summaries, not independently verified. Source for the failed predecessors." }
   ]
+},
+{
+  slug: "fastwrite-io",
+  name: "fastwrite.io",
+  country: "Germany",
+  sector: "Consumer software",
+  productType: "AI writing add-in for Microsoft Word",
+  aiType: "AI-native",
+  team: "small",
+  outcome: "running",
+  evidence: "A",
+  added: "2026-10-14",
+  launchLabel: "8 May 2025",
+  outcomeLabel: "US$184K revenue in the last 12 months, October 2026",
+  sticker: "$184K in 12 months",
+  outcomeUsd: 183602,
+  months: 17,
+  teamLabel: "3 managing directors; 2 to 5 people according to TrustMRR",
+  fundingLabel: "None reported",
+  primaryFactor: "Niche",
+  meters: { evidence: 3, copyable: 2, capital: 1 },
+  tags: ["AI-native", "Small team", "Bootstrapped", "Running", "B2C", "Education"],
+  product: "An add-in for Microsoft Word, plus a web app, for German-speaking students who write seminar papers and theses. The student uploads the PDFs of the literature. While the student writes, fastwrite suggests the next sentence or a whole paragraph with a citation from those PDFs, and the Tab key accepts it. It also answers questions across all uploaded PDFs with the exact page, searches more than 20 million papers, and checks a draft against nine criteria that universities use for grading.",
+  why: "It puts the AI where German students already write, inside Word and in German, and each suggestion carries a citation from the student's own PDFs, so the student does not have to fear invented sources. A free plan without a time limit brings students in, and a monthly plan sold for the months in which they write turns some of them into paying customers.",
+  summary: [
+    `fastwrite is an <dfn>add-in</dfn> for Microsoft Word, a small program that runs inside Word and adds functions to it. A student uploads the PDFs of the literature for a seminar paper (Hausarbeit), a bachelor's thesis or a master's thesis. While the student types, fastwrite proposes the next sentence or a whole paragraph together with the matching citation, and the Tab key accepts it. The text comes from <dfn>large language models</dfn>, programs trained on very large amounts of text to continue a text; the privacy policy names OpenAI, Google (Gemini) and Anthropic (Claude) as the providers. To find the right passages, the documents are stored in a <dfn>vector database</dfn>, a database that stores text as lists of numbers so that passages with a similar meaning can be found, and each answer links the exact page. Plans cost €0, €22 and €35 a month, or about half with yearly billing.`,
+    `The <dfn>Impressum</dfn>, the legal notice that German law requires on a commercial website, names the operator: DocuTrust GmbH in Hamburg, a limited-liability company entered in the commercial register on 27 March 2025 with €25,000 of share capital and three managing directors. Two of them are public faces of the product. The blog's author, Moritz, is presented as a co-founder and PhD student, and Moritz Ledeganck is one of the managing directors. Timothy Williams, also a managing director, shows fastwrite.io as his project on Peerlist. On TrustMRR, a site that reads revenue directly from a company's payment processor, the founders give 8 May 2025 as the founding date, a team of 2 to 5 people and no outside funding. Its Stripe data show US$183,602 of revenue in the 12 months to 13 October 2026, US$202,018 in total, <dfn>monthly recurring revenue</dfn> (MRR, the subscription revenue of one month) of US$13,442 and 616 active subscriptions. Monthly revenue rose from US$9,185 in November 2025 to US$24,838 in March 2026, then fell to US$13,439 in September. On 12 October 2026 the business was listed for sale at US$320,000.`,
+    `The site does not promise text that AI detectors cannot find, and it does not sell finished papers. Its FAQ says: "Der Einsatz von KI muss entsprechend der Richtlinien deiner Hochschule gekennzeichnet werden" (the use of AI must be declared according to the rules of your university). That matters, because German universities ask students to sign an <dfn>Eigenständigkeitserklärung</dfn>, a declaration that they did the work alone and listed every aid, and a Universität Hamburg form for it asks students to tick each use of AI. The headline revenue is grade A, read by TrustMRR from Stripe. The team, product and usage details are the company's own statements, grade C. The page also shows four failed companies that built writing or email tools next to products of Microsoft or Google, or sold study help to students.`
+  ],
+  factsCaption: "US$183,602 of Stripe-verified revenue in twelve months from a Word add-in for German students, 17 months after its founding date, with the best month in March 2026",
+  factsRead: "How to read this table: a grade A value was read by TrustMRR from Stripe, the payment processor, through an API key. A grade B value comes from an official record: the commercial register, a university form or the European Central Bank. A grade C value is a statement by the company or its founders, or a platform page. A \"calc\" value was computed on this page from the rows above it.",
+  timelineLead: "From a company registration in Hamburg to a sale listing in 19 months, with the best month in March 2026. Each entry carries its grade.",
+  pricing: {
+    caption: "fastwrite plans in October 2026, from the company's pricing page (grade C), converted from euros at the European Central Bank rate of 14 October 2026",
+    note: "The page sells in euros, with VAT included: Premium €22 and Ultimate €35 a month billed monthly. The yearly plan costs about half; the page shows Premium from €11 a month billed yearly, and its static text does not show the yearly Ultimate price, so that cell is empty. Dollar values use the reference rate of US$1.1195 per euro. The AI advisor is a chat that answers questions and gives feedback on the work. In July 2025 there was one paid plan, Premium, at €19.99 a month or €9.99 a month billed yearly, for Word on Windows only.",
+    rows: [
+      ["Free", "0", "0", "1 project, 5 PDFs, 50 autocompletes a day, 5 AI-advisor messages a month"],
+      ["Premium", "12.31", "24.63", "unlimited projects, PDFs and autocompletes, 20 AI-advisor messages a month, Deep Review"],
+      ["Ultimate", "", "39.18", "as Premium, with 120 AI-advisor messages a month"]
+    ]
+  },
+  facts: [
+    { fact: "Revenue in the last 12 months, to 13 October 2026", value: "US$183,602", grade: "A", note: "TrustMRR, read from Stripe through an API key. The cached profile of 12 October showed US$183,616.", src: [1] },
+    { fact: "Revenue since the start", value: "US$202,018", grade: "A", note: "TrustMRR all-time figure. US$18,416 of it came before the last 12 months (calculated: 202,018 minus 183,602).", src: [1] },
+    { fact: "Monthly recurring revenue, October 2026", value: "US$13,442", grade: "A", note: "TrustMRR snapshot. It fell 10.5% in the last 30 days.", src: [1] },
+    { fact: "Active subscriptions", value: "616", grade: "A", note: "TrustMRR snapshot from Stripe.", src: [1] },
+    { fact: "Revenue in the last 30 days", value: "US$13,156", grade: "A", note: "TrustMRR, 2.9% less than in the 30 days before.", src: [1] },
+    { fact: "Best month", value: "US$24,838 in March 2026", grade: "A", note: "TrustMRR monthly timeline. November 2025 was US$9,185, February 2026 US$19,908 and April 2026 US$18,102.", src: [1] },
+    { fact: "Revenue per month, May to September 2026", value: "US$14,018 to US$14,803, then US$13,439 in September", grade: "A", note: "TrustMRR monthly timeline.", src: [1] },
+    { fact: "September 2026 compared with March 2026", value: "45.9% lower", grade: "X", note: "Calculated: 13,439 divided by 24,838 is 0.541.", src: [1] },
+    { fact: "Last 30 days compared with the 12-month average", value: "14.0% lower", grade: "X", note: "Calculated: 183,602 divided by 12 is US$15,300 a month, and 13,156 is 14.0% below that.", src: [1] },
+    { fact: "Run rate from the current MRR", value: "US$161,304 a year", grade: "X", note: "Calculated: 13,442 times 12. It is lower than the 12-month revenue because revenue has fallen since March.", src: [1] },
+    { fact: "Revenue per active subscription", value: "about US$21.82 a month", grade: "X", note: "Calculated: 13,442 divided by 616. Premium costs €22 (US$24.63) billed monthly, and about half when billed yearly.", src: [1, 4] },
+    { fact: "Profit margin, last 30 days", value: "65%", grade: "C", note: "TrustMRR snapshot. The public profile does not say how costs are measured. 65% of US$13,156 is about US$8,551 (calculated).", src: [1] },
+    { fact: "Registered students", value: "more than 30,000", grade: "C", note: "Company homepage. The founders' estimate on TrustMRR is 30,000 users.", src: [2, 1] },
+    { fact: "Writing projects, 4 June 2025 to 29 July 2026", value: "14,311 projects by 12,409 users", grade: "C", note: "Company report of 5 August 2026, from its own database. 92.7% of users created exactly one project.", src: [10] },
+    { fact: "Language of the literature that students add", value: "72% to 76% of recognizable titles are German", grade: "C", note: "Same report. 48.8% of projects use only German sources.", src: [10] },
+    { fact: "Operator", value: "DocuTrust GmbH, Hamburg, register number HRB 191525", grade: "B", note: "Entered in the commercial register on 27 March 2025 for software development and sales, with €25,000 of share capital and three managing directors. The register shows three shareholders; their names are not on the free page.", src: [8, 5] },
+    { fact: "Team", value: "2 to 5 people", grade: "C", note: "Founder-entered on TrustMRR. The Impressum names three managing directors.", src: [1, 5] },
+    { fact: "Outside funding", value: "none reported", grade: "C", note: "TrustMRR lists the company as bootstrapped. No investor appears in the downloaded sources.", src: [1, 8] },
+    { fact: "Asking price, listed 12 October 2026", value: "US$320,000", grade: "C", note: "Seller's price on TrustMRR, shown as a 2.0x revenue multiple. Calculated: 1.98 times the MRR run rate and 1.74 times the 12-month revenue. 0 offers at the time of reading.", src: [1] },
+    { fact: "First paid plan, July 2025", value: "€19.99 a month, or €9.99 a month billed yearly", grade: "C", note: "Earliest archived version of the site. Word on Windows only.", src: [11] },
+    { fact: "Subscription terms", value: "monthly or yearly, renewing automatically, VAT included", grade: "C", note: "Terms of DocuTrust GmbH, version of August 2025.", src: [7] },
+    { fact: "What the site says about AI rules", value: "AI use must be declared under the university's rules", grade: "C", note: "Homepage FAQ in German and English. The pricing page adds: check your exam regulations.", src: [2, 3, 4] },
+    { fact: "Declaration of independent work, Universität Hamburg form", value: "each use of AI must be ticked", grade: "B", note: "A form for bachelor's coursework. One listed use is \"zum Formulieren einzelner Passagen\" (for wording individual passages). Missing or wrong statements can count as an attempt to cheat.", src: [15] },
+    { fact: "Copilot in Word for consumers", value: "included in Microsoft 365 Personal and Family since 16 January 2025", grade: "C", note: "Microsoft's announcement. The US price rose by US$3 a month, and subscribers get a monthly allotment of AI credits.", src: [16] },
+    { fact: "TikTok account, October 2026", value: "948 followers, 33,232 likes, 31 videos", grade: "C", note: "Profile data read on 14 October 2026.", src: [14] },
+    { fact: "Exchange rate used on this page", value: "US$1.1195 per euro, 14 October 2026", grade: "B", note: "European Central Bank reference rate.", src: [18] },
+    { fact: "Time from the founding date to the October 2026 figures", value: "17 months", grade: "X", note: "Calculated: May 2025 to October 2026.", src: [1] }
+  ],
+  timeline: [
+    { when: "20 February 2025", what: "Date of the shareholder list and the articles of association of DocuTrust GmbH, two documents in the register file.", grade: "B", src: [8] },
+    { when: "27 March 2025", what: "DocuTrust GmbH is entered in the Hamburg commercial register: software development and sales, €25,000 of share capital, three managing directors.", grade: "B", src: [8] },
+    { when: "8 May 2025", what: "The founding date that the founders give on TrustMRR.", grade: "C", src: [1] },
+    { when: "4 June 2025", what: "First writing projects in the company's own usage data.", grade: "C", src: [10] },
+    { when: "June 2025", what: "fastwrite.io appears on Peerlist as a project of week 24 of 2025, under Timothy Williams's profile.", grade: "C", src: [12] },
+    { when: "14 July 2025", what: "Earliest archived version of the site: \"Hausarbeit 3x schneller schreiben – direkt in Microsoft Word\" (write your seminar paper 3 times faster, directly in Microsoft Word). Windows only, Premium at €19.99 a month, a Mac version announced.", grade: "C", src: [11] },
+    { when: "17 July 2025", what: "IndiePage posts on X that Timothy Williams made a €20 sale for fastwrite, about the price of one month of Premium at the time.", grade: "C", src: [13] },
+    { when: "November 2025", what: "First month in TrustMRR's public monthly timeline: US$9,185.", grade: "A", src: [1] },
+    { when: "March 2026", what: "Best month so far: US$24,838.", grade: "A", src: [1] },
+    { when: "May to August 2026", what: "Revenue settles at US$14,018 to US$14,803 a month.", grade: "A", src: [1] },
+    { when: "5 August 2026", what: "The company publishes a usage report: 14,311 writing projects by 12,409 users since June 2025.", grade: "C", src: [10] },
+    { when: "18 August 2026", what: "A blog guide explains new connectors that let Claude and ChatGPT search a student's fastwrite library.", grade: "C", src: [9, 2] },
+    { when: "12 October 2026", what: "Listed for sale on TrustMRR at US$320,000.", grade: "C", src: [1] },
+    { when: "13 October 2026", what: "Last Stripe sync: US$183,602 in 12 months, MRR of US$13,442, 616 active subscriptions.", grade: "A", src: [1] }
+  ],
+  mechanism: [
+    { title: "Inside the program where the paper is written", text: "fastwrite adds its suggestions in Word, so the student does not copy text between a chat window and the document. The first version, in July 2025, ran only in Word on Windows. By October 2026 it also ran in Word on Mac and in the browser, with a web app for other devices." },
+    { title: "Every suggestion names its source", text: "The suggestions come from the PDFs that the student uploaded, and the answers link the exact page. An own-sources-only mode limits the text to the student's literature; when nothing fits, it gives a generic suggestion without a source instead of an invented reference. This answers the two fears of a thesis writer: invented references and plagiarism." },
+    { title: "One language, one set of rules", text: "The product, the site and the guides are in German, for German citation styles and German university rules. In the company's data, 72% to 76% of the recognizable titles that students add are German. The blog compares fastwrite with ChatGPT on exactly these points: real sources, page numbers and Word." },
+    { title: "Free to start, paid for the writing months", text: "The free plan does not expire and allows 50 autocompletes a day. Premium is sold for the months in which the student really writes, and can be cancelled at any time. According to the founders' TrustMRR profile, students come through TikTok, Instagram, YouTube, Reddit and email; a review on the homepage says a group of students found fastwrite on TikTok." }
+  ],
+  howBuilt: {
+    intro: "These details come from the company's privacy policy, its pages and founder-entered profiles. They are grade C.",
+    items: [
+      "A Word add-in for Windows, Mac and Word in the browser, and a web app for other devices such as iPad and Chromebook. The first version, in July 2025, ran only in Word on Windows.",
+      "Microsoft's Office Add-ins platform runs one add-in, written with HTML, CSS and JavaScript, in Office on the web, Windows, Mac and iPad. The sources do not say whether fastwrite uses it; TrustMRR's founder-entered stack also names C# and Swift.",
+      "Language models from OpenAI, Google (Gemini) and Anthropic (Claude), used by function and availability, according to the privacy policy of September 2026. The company says users' work never trains a model.",
+      "Pinecone as the vector database that finds passages in the users' documents, and Voyage AI to rerank the search results.",
+      "Appwrite Cloud with a data center in Frankfurt for login and database, Vercel for the web app, Stripe for payments, Umami for analytics without cookies, and Twilio SendGrid for the newsletter.",
+      "Peerlist lists JavaScript, Python, Go, Appwrite and Cursor, an AI code editor, as building tools. TrustMRR also names Google Cloud.",
+      "Connectors for Claude and ChatGPT, built on the Model Context Protocol (MCP), an open standard for connecting AI assistants to outside data, let those assistants search a student's fastwrite library.",
+      "Marketing: TikTok, Instagram, YouTube, Reddit and email according to TrustMRR; ads inside ChatGPT, measured with OpenAI's ChatGPT Ads pixel, according to the privacy policy; an affiliate program in July 2025; and German guides on citation styles and university AI rules on the blog."
+    ],
+    src: [6, 2, 4, 11, 17, 1, 12, 9]
+  },
+  predecessorsIntro: "Four companies in the Loot Drop database built on a platform that they did not own, sold writing software that a large company later gave away, or sold study help to students. The values below are from that database and are not independently verified.",
+  predecessors: [
+    { name: "Xobni", years: "2006 to 2013", funding: "US$42M", cause: "Competition", promise: "A smarter inbox inside Microsoft Outlook.", died: "Tied to Outlook, which Microsoft improved itself. Mobile phones made the desktop add-on less useful, and Yahoo bought the remains.", url: "https://www.loot-drop.io/startup/763-xobni" },
+    { name: "Draft", years: "2011 to 2014", funding: "US$120,000", cause: "Competition", promise: "A simple online editor for writers.", died: "Google Docs gave most of the same functions away, and a freemium model on a narrow product could not compete.", url: "https://www.loot-drop.io/startup/1605-draft" },
+    { name: "Flashnotes", years: "2010 to 2016", funding: "US$1.47M", cause: "Competition", promise: "A marketplace where students sold class notes and study guides to other students.", died: "Course Hero and Chegg had better products and more money, and the quality of the notes could not be controlled.", url: "https://www.loot-drop.io/startup/154-flashnotes" },
+    { name: "Xuebajun", years: "2013 to 2021", funding: "US$150M", cause: "Unit Economics", promise: "Photograph a homework problem and get an automatic solution.", died: "It moved from homework help into an expensive tutoring marketplace, then Chinese rules banned the business.", url: "https://www.loot-drop.io/startup/2325-xuebajun" }
+  ],
+  whatChanged: [
+    `The four failed in two ways that also apply to fastwrite. Xobni and Draft built a better tool for email or writing next to products owned by Microsoft and Google, and the owners added the same functions themselves. Flashnotes and Xuebajun sold study help to students, a market where larger competitors or new rules decided the outcome. In January 2025 Microsoft put Copilot into Word for Microsoft 365 Personal and Family subscribers, and universities now ask students to declare each use of AI.`,
+    `Two things differ. First, fastwrite does not build its own model. It buys model access from OpenAI, Google and Anthropic, so a team of 2 to 5 people can run it, and TrustMRR shows a 65% profit margin in the last 30 days. Second, it is narrow where Copilot is general: German-language sources, citations with page numbers from the student's own PDFs, and checks against university grading criteria. Whether that is enough is not yet known. Revenue in September 2026 was 45.9% below March, and the owners have put the business up for sale.`
+  ],
+  copy: {
+    verdict: "Yes, in another language or for another kind of rule-bound document.",
+    text: "The parts are available to anyone: language models bought by the call, a vector database for the user's own PDFs, and an add-in in the program where the work is written. What fastwrite added is a narrow group with fixed rules, German students with citation styles and grading criteria, reached in their own language on the channels they use. The same structure fits other language markets, and the same risks come with it: Microsoft can add the feature to Word, and customers may leave when the paper is handed in.",
+    steps: [
+      "Pick people who write long documents in Word under fixed rules, in a language that the large tools do not focus on.",
+      "Ground every suggestion in the user's own documents, show the page, and give no source rather than an invented one.",
+      "Offer a free plan without a time limit, and a monthly plan that can be cancelled after the writing months.",
+      "Write guides for the rule questions that the group searches for, and post short videos where the group spends time."
+    ],
+    open: "Academic writing in other languages, such as French, Spanish, Italian, Polish or Dutch, and other rule-bound documents written in Word, such as grant applications or legal briefs."
+  },
+  watch: [
+    { title: "Revenue peaked in March 2026", text: "Monthly revenue rose from US$9,185 in November 2025 to US$24,838 in March 2026, then fell to US$13,439 in September, 45.9% lower. MRR fell 10.5% in the last 30 days. One year of data cannot show whether March was a seasonal peak that will come back, or the end of a launch effect." },
+    { title: "Customers stay for one paper", text: "In the company's own data, 92.7% of users created exactly one project, and Premium is sold \"für die Monate, in denen du wirklich schreibst\" (for the months in which you really write), with cancellation at any time. Every semester therefore needs new customers. The company has not published sign-ups by month, and TrustMRR shows churn only after login, so the seasonal pattern cannot be checked from public data." },
+    { title: "University rules on AI", text: "Students sign an Eigenständigkeitserklärung with their written work. A Universität Hamburg form asks them to tick each use of AI, including \"zum Formulieren einzelner Passagen\" (for wording individual passages), and warns that missing or wrong statements can be treated as an attempt to cheat (\"Täuschungsversuch\"). fastwrite tells students to declare AI use and to check their exam regulations. Stricter rules on AI-written passages would reduce the value of the main feature." },
+    { title: "Microsoft sells a writing assistant inside Word", text: "Since 16 January 2025, Microsoft 365 Personal and Family include Copilot in Word with a monthly allotment of AI credits, after a US price rise of US$3 a month. fastwrite's own comparison table lists ChatGPT, Claude, Perplexity and NotebookLM, and its blog compares it with Jenni AI. Its answer is to be narrower: German sources, citations with page numbers and university grading criteria." },
+    { title: "Built on platforms it does not control", text: "The product lives inside Microsoft Word, and Microsoft sets the rules for how add-ins run and how they are distributed through Microsoft Marketplace. The text comes from OpenAI, Google and Anthropic, whose prices and terms the company does not set. The sources do not show whether fastwrite is listed in Microsoft Marketplace." },
+    { title: "For sale while revenue falls", text: "The owners listed the business on 12 October 2026 at US$320,000, which TrustMRR shows as 2.0 times revenue; it is 1.98 times the MRR run rate and 1.74 times the last 12 months (calculated). There were 0 offers at the time of reading. Churn, refunds and advertising spend are visible only to logged-in TrustMRR users, so a buyer must check them separately." }
+  ],
+  sources: [
+    { title: "TrustMRR: fastwrite.io, Stripe-verified profile, synced 13 October 2026", url: "https://trustmrr.com/startup/fastwrite-io", grade: "A", how: "Read the markdown profile (https://trustmrr.com/startup/fastwrite-io.md). Revenue, MRR and subscriptions come from its Verification Sources section (Stripe API key); the description, team size, funding, channels, tech stack and asking price are founder-written, grade C." },
+    { title: "fastwrite.io homepage, German, read 14 October 2026", url: "https://fastwrite.io/", grade: "C", how: "Read in full. Source for the features, the FAQ, the student count and the reviews." },
+    { title: "fastwrite.io homepage, English, read 14 October 2026", url: "https://fastwrite.io/en", grade: "C", how: "Read the feature sections and the FAQ, for the English wording of the AI-rules answer." },
+    { title: "fastwrite.io pricing page (Preise), read 14 October 2026", url: "https://fastwrite.io/preise", grade: "C", how: "Read in full. The yearly price of Ultimate is not in the page text." },
+    { title: "fastwrite.io Impressum (legal notice)", url: "https://fastwrite.io/impressum", grade: "C", how: "Read in full. Names the operator, the register number and the three managing directors." },
+    { title: "fastwrite.io Datenschutzerklärung (privacy policy), version of September 2026", url: "https://fastwrite.io/datenschutz", grade: "C", how: "Read the sections on processors, language models, hosting, analytics, advertising and newsletter." },
+    { title: "fastwrite.io AGB (terms and conditions), version of August 2025", url: "https://fastwrite.io/agb", grade: "C", how: "Read the sections on the service, subscriptions, prices and cancellation." },
+    { title: "North Data: DocuTrust GmbH, Hamburg, Amtsgericht Hamburg HRB 191525", url: "https://www.northdata.de/DocuTrust+GmbH,+Hamburg/HRB+191525", grade: "B", how: "Read the free page: register publications, purpose, capital and the number of managing directors and shareholders. The shareholders' names are behind a paywall." },
+    { title: "fastwrite blog index, read 14 October 2026", url: "https://fastwrite.io/blog", grade: "C", how: "Read in full. Source for the dated guides, the comparison posts and the author box for Moritz." },
+    { title: "fastwrite Schreibreport 2026, 5 August 2026", url: "https://fastwrite.io/blog/schreibreport-2026", grade: "C", how: "Read the method section and the first findings. Company data from its own database, not independently checked." },
+    { title: "Wayback Machine: www.fastwrite.io on 14 July 2025", url: "https://web.archive.org/web/20250714085752/https://www.fastwrite.io/", grade: "C", how: "Read in full. The earliest archived version of the site, with the first promise and prices." },
+    { title: "Peerlist: fastwrite.io, project of Timothy Williams", url: "https://peerlist.io/timothyj/project/fastwriteio", grade: "C", how: "Read in full, with the profile page peerlist.io/timothyj. Source for the description, the week of listing and the building tools." },
+    { title: "IndiePage on X, 17 July 2025: Timothy Williams just made a €20 sale for fastwrite", url: "https://x.com/IndiePageApp/status/1945861217085530315", grade: "C", how: "Read through api.fxtwitter.com. Ties Timothy Williams to fastwrite and dates an early sale." },
+    { title: "TikTok: @fastwrite.io profile, read 14 October 2026", url: "https://www.tiktok.com/@fastwrite.io", grade: "C", how: "Read the profile data in the page source: followers, likes and video count." },
+    { title: "Universität Hamburg, Kulturwissenschaften: Eigenständigkeitserklärung für studienbegleitende Prüfungen (form)", url: "https://www.kulturwissenschaften.uni-hamburg.de/sm/studium/dokumente/bachelor/eigenstaendigkeitserklaerung.pdf", grade: "B", how: "Read in full (PDF). One university's form; rules differ between universities and subjects." },
+    { title: "Microsoft 365 blog, 16 January 2025: Copilot is now included in Microsoft 365 Personal and Family", url: "https://www.microsoft.com/en-us/microsoft-365/blog/2025/01/16/copilot-is-now-included-in-microsoft-365-personal-and-family/", grade: "C", how: "Read in full. Microsoft's own announcement of Copilot in Word for consumers and the price change." },
+    { title: "Microsoft Learn: Office Add-ins platform overview", url: "https://learn.microsoft.com/en-us/office/dev/add-ins/overview/office-add-ins", grade: "C", how: "Read the overview section on platforms and distribution." },
+    { title: "European Central Bank: euro foreign exchange reference rates, 14 October 2026", url: "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml", grade: "B", how: "Read in full. Source for the US dollar rate used in the pricing table." },
+    { title: "Loot Drop database export, failed startups", url: "https://www.loot-drop.io/", grade: "C", how: "Local export. AI-written summaries, not independently verified. Source for the failed predecessors." }
+  ]
 }
 ];
 
