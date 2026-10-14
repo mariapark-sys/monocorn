@@ -38,10 +38,11 @@
   --green:#4F7A22; --green-soft:#DCEBC3; --green-ink:#355514;
   --rust:#C8402E; --rust-soft:#FFD5CC; --rust-ink:#8E2A1D;
   --sky:#2F7FB8;
+  --husk:#6E9E2E; --husk-2:#8DBB45; --kern-a:#D98E0B; --kern-b:#EDB530; --kern-c:#F7DA7C;
   --dark:#2B1B33; --dark-text:#FFF1DC; --dark-muted:#D7BFAF; --dark-line:rgba(255,241,220,.22); --dark-border:transparent;
   --bar-off:#EFDDC0;
-  --shadow:6px 6px 0 var(--accent);
-  --shadow-hover:9px 9px 0 var(--purple);
+  --shadow:6px 6px 0 var(--mustard);
+  --shadow-hover:9px 9px 0 var(--husk);
   --r-lg:34px 14px 34px 14px; --r-md:22px 10px 22px 10px;
 }
 :root[data-theme="dark"]{
@@ -55,8 +56,8 @@
   --rust:#E86A55; --rust-soft:#4A221B; --rust-ink:#FFB3A3;
   --dark:#2E1F38; --dark-text:#FFF1DC; --dark-muted:#D7BFAF; --dark-line:rgba(255,241,220,.2); --dark-border:#4A365A;
   --bar-off:#3E2C4A;
-  --shadow:6px 6px 0 var(--accent);
-  --shadow-hover:9px 9px 0 var(--purple);
+  --shadow:6px 6px 0 var(--mustard);
+  --shadow-hover:9px 9px 0 var(--husk);
 }
 
 /* ---------- base ---------- */
@@ -84,15 +85,15 @@ dfn{font-style:normal;font-weight:800;color:var(--ink);background:var(--mustard-
 .hidden{display:none !important}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 .ico{width:16px;height:16px;flex:none}
-.wave{display:block;width:100%;height:24px;color:var(--ink)}
+.wave{display:block;width:100%;height:22px;color:var(--ink)}
 
 /* ---------- buttons ---------- */
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;height:48px;padding:0 24px;border-radius:999px;background:var(--accent);color:var(--ink);font:inherit;font-size:15px;font-weight:800;border:2px solid var(--ink);box-shadow:3px 3px 0 var(--ink);cursor:pointer;text-decoration:none;white-space:nowrap;transition:transform .12s,box-shadow .12s,background .12s}
-.btn:hover{background:var(--mustard);color:var(--ink);transform:translate(-1px,-1px);box-shadow:5px 5px 0 var(--ink)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;height:48px;padding:0 24px;border-radius:999px;background:var(--mustard);color:var(--ink);font:inherit;font-size:15px;font-weight:800;border:2px solid var(--ink);box-shadow:3px 3px 0 var(--ink);cursor:pointer;text-decoration:none;white-space:nowrap;transition:transform .12s,box-shadow .12s,background .12s}
+.btn:hover{background:var(--husk-2);color:var(--ink);transform:translate(-1px,-1px);box-shadow:5px 5px 0 var(--ink)}
 .btn.ghost{background:var(--paper);color:var(--ink)}
 .btn.ghost:hover{background:var(--purple-soft);color:var(--ink)}
-.btn.dark{background:var(--ink);color:var(--bg);border-color:var(--ink);box-shadow:3px 3px 0 var(--accent)}
-.btn.dark:hover{background:var(--purple);color:#FFF1DC;box-shadow:5px 5px 0 var(--accent)}
+.btn.dark{background:var(--ink);color:var(--bg);border-color:var(--ink);box-shadow:3px 3px 0 var(--mustard)}
+.btn.dark:hover{background:var(--green);color:#FFF1DC;box-shadow:5px 5px 0 var(--mustard)}
 .btn.light{background:var(--mustard);color:#2B1B33;border-color:#2B1B33;box-shadow:3px 3px 0 #FFF1DC}
 .btn.light:hover{background:#FFF1DC;color:#2B1B33;box-shadow:5px 5px 0 #FFF1DC}
 .btn.sm{height:40px;padding:0 18px;font-size:14px}
@@ -103,9 +104,9 @@ dfn{font-style:normal;font-weight:800;color:var(--ink);background:var(--mustard-
 .topbar .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px 24px;min-height:72px;padding-top:12px;padding-bottom:12px;flex-wrap:wrap}
 .wordmark{display:inline-flex;align-items:center;gap:10px;color:var(--ink);font-family:"Fraunces",Georgia,serif;font-weight:900;font-variation-settings:"opsz" 144,"SOFT" 100,"WONK" 1;font-size:24px;letter-spacing:-.01em}
 .wordmark:hover{color:var(--accent-ink)}
-.wordmark svg{width:32px;height:32px;flex:none;animation:spin 24s linear infinite}
-@keyframes spin{to{transform:rotate(360deg)}}
-@media (prefers-reduced-motion:reduce){.wordmark svg{animation:none}}
+.wordmark svg{width:34px;height:34px;flex:none;transform:rotate(14deg);transition:transform .2s}
+.wordmark:hover svg{transform:rotate(-8deg)}
+@media (prefers-reduced-motion:reduce){.wordmark svg{transition:none}}
 .topnav{display:flex;gap:4px;flex-wrap:wrap}
 .topnav a{color:var(--ink);font-size:15px;font-weight:700;padding:8px 14px;border-radius:999px;border:2px solid transparent}
 .topnav a:hover{border-color:var(--ink);background:var(--mustard-soft);color:var(--ink)}
@@ -113,19 +114,27 @@ dfn{font-style:normal;font-weight:800;color:var(--ink);background:var(--mustard-
 
 /* ---------- hero ---------- */
 .hero{padding:72px 0 56px;position:relative;overflow:hidden}
-.sun{position:absolute;right:-140px;top:-200px;width:620px;height:620px;border-radius:50%;pointer-events:none;background:
-  radial-gradient(circle,var(--mustard) 0 34%,transparent 35%),
-  repeating-conic-gradient(from 0deg,var(--accent) 0deg 9deg,transparent 9deg 22.5deg);opacity:.75}
-.sun::after{content:"";position:absolute;inset:0;border-radius:50%;background:radial-gradient(circle,transparent 0 33%,var(--bg) 34% 100%);opacity:0}
 .hero .wrap{position:relative}
-.hero-inner{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:20px 56px;align-items:end}
-.hero-inner .eyebrow{grid-column:1 / -1}
-.hero-inner h1{grid-column:1;grid-row:2 / span 2}
-.hero-inner .sub{grid-column:2;grid-row:2;align-self:end}
-.hero-inner .cta{grid-column:2;grid-row:3}
-@media (max-width:900px){.hero-inner{display:flex;flex-direction:column;align-items:flex-start;gap:22px;max-width:880px}.sun{width:380px;height:380px;right:-140px;top:-120px}}
+.hero-inner{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:24px 64px;align-items:center}
+.hero-copy{display:flex;flex-direction:column;align-items:flex-start;gap:22px;min-width:0}
+.cob-wrap{display:flex;flex-direction:column;align-items:center;gap:16px;padding:0 36px 0 20px}
+.cob{--k:var(--kd,28px);display:flex;flex-direction:column;align-items:center;position:relative;padding-top:calc(var(--k)*.9);transform:rotate(9deg);transform-origin:50% 100%}
+.krow{display:flex;justify-content:center}
+.kern{box-sizing:border-box;display:block;width:var(--k);height:calc(var(--k)*.88);margin:-1px;border:2px solid var(--ink);border-radius:44% 44% 48% 48%;background:var(--kern-c);position:relative;transition:transform .12s}
+.kern::after{content:"";position:absolute;left:18%;top:16%;width:26%;height:20%;border-radius:50%;background:rgba(255,255,255,.55)}
+.kern.gA{background:var(--kern-a)}
+.kern.gB{background:var(--kern-b)}
+.kern.gC{background:var(--kern-c)}
+.kern.blank{background:var(--paper);border-style:dashed;border-color:var(--muted)}
+.kern.blank::after{display:none}
+a.kern:hover,a.kern:focus-visible{transform:scale(1.3);z-index:3;box-shadow:3px 3px 0 var(--ink);outline:none}
+.cob .silk{position:absolute;top:0;left:50%;width:calc(var(--k)*3.2);height:calc(var(--k)*1.5);transform:translateX(-50%);overflow:visible;stroke:var(--accent-ink)}
+.cob .husk{display:block;width:calc(var(--k)*var(--cols)*1.78);height:auto;margin-top:calc(var(--k)*var(--cols)*-.6);position:relative;z-index:1;overflow:visible;pointer-events:none}
+.cob-cap{margin:0;color:var(--muted);text-align:center;line-height:1.7}
+@media (max-width:900px){.hero-inner{grid-template-columns:minmax(0,1fr)}.cob-wrap{padding:8px 0 0}.cob{--k:min(var(--kd,26px),26px)}}
+@media (prefers-reduced-motion:reduce){.kern{transition:none}}
 .hero h1{font-size:clamp(44px,6.4vw,80px)}
-.hero h1 em{color:var(--accent);display:inline-block;transform:rotate(-2deg)}
+.hero h1 em{color:var(--green);display:inline-block;transform:rotate(-2deg)}
 .hero .sub{font-size:clamp(17px,1.3vw,19px);line-height:1.55;color:var(--lead);max-width:640px;margin:0;font-weight:600}
 .hero .cta{display:flex;gap:12px;flex-wrap:wrap}
 
@@ -350,11 +359,11 @@ noscript .box{padding:16px;margin:16px}
 </head>
 <body>
 <a class="skip" href="#app">Skip to content</a>
-<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><pattern id="wavepat" width="48" height="24" patternUnits="userSpaceOnUse"><path d="M0 12 Q12 0 24 12 T48 12" fill="none" style="stroke:var(--ink)" stroke-width="3" stroke-linecap="round"/></pattern></defs></svg>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><pattern id="wavepat" width="26" height="22" patternUnits="userSpaceOnUse"><rect x="2" y="2" width="22" height="18" rx="8" style="fill:var(--kern-b);stroke:var(--ink)" stroke-width="2.5"/><ellipse cx="9" cy="7.5" rx="3" ry="1.8" fill="#fff" opacity=".5"/></pattern></defs></svg>
 <header class="topbar">
   <div class="wrap">
     <a class="wordmark" href="#/" aria-label="Monocorn, home">
-      <svg viewBox="0 0 32 32" aria-hidden="true"><g style="stroke:var(--ink)" stroke-width="2" stroke-linecap="round"><path d="M16 2v5M16 25v5M2 16h5M25 16h5M6.1 6.1l3.5 3.5M22.4 22.4l3.5 3.5M6.1 25.9l3.5-3.5M22.4 9.6l3.5-3.5"/></g><circle cx="16" cy="16" r="7" style="fill:var(--mustard);stroke:var(--ink)" stroke-width="2"/></svg>
+      <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 2.5c3.7 0 6.2 3.4 6.2 8.3v6.6c0 4-2.5 6.6-6.2 6.6s-6.2-2.6-6.2-6.6v-6.6c0-4.9 2.5-8.3 6.2-8.3z" style="fill:var(--mustard);stroke:var(--ink)" stroke-width="2"/><path d="M10.4 9.6h11.2M9.9 14h12.2M10.2 18.4h11.6M14 3.6v19.8M18 3.6v19.8" fill="none" style="stroke:var(--ink)" stroke-width="1.1" opacity=".5"/><path d="M16 30.2c-5.8-.5-10-4.6-10.6-11.9 4.2 1.3 8.4 5 10.6 11.9z" style="fill:var(--husk);stroke:var(--ink)" stroke-width="2" stroke-linejoin="round"/><path d="M16 30.2c5.8-.5 10-4.6 10.6-11.9-4.2 1.3-8.4 5-10.6 11.9z" style="fill:var(--husk-2);stroke:var(--ink)" stroke-width="2" stroke-linejoin="round"/></svg>
       Monocorn
     </a>
     <nav class="topnav" aria-label="Site">
@@ -7231,6 +7240,43 @@ const SEARCH_ICO = `<svg class="ico" viewBox="0 0 16 16" fill="none" aria-hidden
 const WAVE = `<svg class="wave" aria-hidden="true"><rect width="100%" height="100%" fill="url(#wavepat)"/></svg>`;
 const PLUS_ICO = `<svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><circle cx="20" cy="20" r="18" stroke="var(--line-strong)" stroke-width="1.5"/><path d="M20 12v16M12 20h16" stroke="var(--accent)" stroke-width="1.8" stroke-linecap="round"/></svg>`;
 
+// The story cob: one kernel per story, oldest at the base, newest near the tip.
+// Rows alternate between cols and cols - 1 kernels, which gives the brick pattern of a real cob.
+function cobHtml() {
+  const n = STORIES.length;
+  const cols = Math.max(5, Math.round(Math.sqrt(n / 3)));
+  const sizes = [];            // row sizes from the base upwards
+  const rowSize = j => (j % 2 === 0 ? cols : cols - 1);
+  sizes.push(rowSize(0), rowSize(1));   // two base rows sit inside the husk and hold no story
+  let cap = 0;
+  while (cap < n) { const z = rowSize(sizes.length); sizes.push(z); cap += z; }
+  const last = sizes[sizes.length - 1];
+  for (const d of [1, 2]) if (last - d >= 2) sizes.push(last - d);   // the tip
+  const k = Math.max(14, Math.min(34, Math.round(440 / sizes.length)));
+  let i = 0;
+  const rows = sizes.map((z, j) => {
+    let out = "";
+    for (let c = 0; c < z; c++) {
+      if (j < 2) { out += `<span class="kern gC"></span>`; continue; }
+      const s = STORIES[i++];
+      if (!s) { out += `<span class="kern blank"></span>`; continue; }
+      const label = `${esc(s.name)}: ${esc(s.sticker)}`;
+      out += k >= 24
+        ? `<a class="kern g${s.evidence}" href="#/story/${esc(s.slug)}" title="${label}" tabindex="-1"></a>`
+        : `<span class="kern g${s.evidence}" title="${label}"></span>`;
+    }
+    return `<div class="krow">${out}</div>`;
+  }).reverse().join("");
+  return `<div class="cob-wrap">
+    <div class="cob" style="--kd:${k}px;--cols:${cols}" aria-hidden="true">
+      <svg class="silk" viewBox="0 0 110 52" fill="none" stroke-width="3" stroke-linecap="round"><path d="M55 50C52 34 40 30 34 14"/><path d="M55 50C56 32 58 22 52 4"/><path d="M55 50C60 34 72 30 76 12"/><path d="M55 50C48 38 30 40 20 28"/><path d="M55 50C64 38 82 40 92 26"/></svg>
+      ${rows}
+      <svg class="husk" viewBox="0 0 320 190"><g style="stroke:var(--ink)" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"><path style="fill:var(--husk)" d="M160 186C96 186 40 150 22 84C14 54 16 26 6 6C58 20 100 58 124 104C140 134 152 160 160 186Z"/><path style="fill:var(--husk)" d="M160 186C224 186 280 150 298 84C306 54 304 26 314 6C262 20 220 58 196 104C180 134 168 160 160 186Z"/><path style="fill:var(--husk-2)" d="M160 188C128 176 104 146 98 104C96 88 100 72 96 58C128 72 150 98 160 130C170 98 192 72 224 58C220 72 224 88 222 104C216 146 192 176 160 188Z"/><path fill="none" stroke-width="3.5" d="M160 186C158 164 156 148 160 130"/><path fill="none" stroke-width="3" d="M40 60C66 86 96 120 128 160M280 60C254 86 224 120 192 160"/></g></svg>
+    </div>
+    <p class="cob-cap mono">One kernel per story.<br>Darker gold means stronger evidence.</p>
+  </div>`;
+}
+
 function cardHtml(s) {
   const when = (s.outcomeLabel.split(",")[1] || s.outcomeLabel).trim();
   return `<a class="card" href="#/story/${esc(s.slug)}" aria-label="${esc(s.name)}: open the full story">
@@ -7279,18 +7325,20 @@ function renderList() {
   const plural = n === 1 ? "story" : "stories";
   app.innerHTML = `
   <section class="hero">
-    <span class="sun" aria-hidden="true"></span>
     <div class="wrap"><div class="hero-inner">
-      <span class="eyebrow mono">${n} ${plural} live · more coming</span>
-      <h1 class="display">AI businesses that made <em class="serif">real money.</em></h1>
-      <p class="sub">Verified stories of one-person AI businesses. Every number carries an evidence grade. Every story is paired with the failed startups that tried the same idea before.</p>
-      <div class="cta"><a class="btn" href="#/stories">Read the stories</a><a class="btn ghost" href="#/verify">How we verify ${ARROW_R}</a></div>
+      <div class="hero-copy">
+        <span class="eyebrow mono">${n} ${plural} on the cob · more coming</span>
+        <h1 class="display">AI businesses that made <em class="serif">real money.</em></h1>
+        <p class="sub">Verified stories of one-person AI businesses. Every number carries an evidence grade. Every story is paired with the failed startups that tried the same idea before.</p>
+        <div class="cta"><a class="btn" href="#/stories">Read the stories</a><a class="btn ghost" href="#/verify">How we verify ${ARROW_R}</a></div>
+      </div>
+      ${cobHtml()}
     </div></div>
   </section>
   <div class="wrap">
     <section class="sec" id="stories">
       <div class="controls">
-        <div class="sec-head"><span class="mono accent">Stories</span><h2 class="display">Verified, one by one</h2></div>
+        <div class="sec-head"><span class="mono accent">Stories</span><h2 class="display">Verified, kernel by kernel</h2></div>
         <label class="search-wrap">${SEARCH_ICO}<span class="sr">Search stories</span><input id="q" class="search" type="search" placeholder="Search stories" value="${esc(state.q)}" autocomplete="off"></label>
       </div>
       <div class="filters">
