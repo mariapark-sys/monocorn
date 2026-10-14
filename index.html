@@ -8110,6 +8110,153 @@ const STORIES = [
     { title: "Systemaic teardown, 26 July 2026: Superpower ChatGPT revenue, ad spend and growth channels", url: "https://www.systemaic.com/teardowns/superpower-chatgpt", grade: "C", how: "Read the summary section. A third-party estimate that lists revenue and funding as not disclosed and the stage as bootstrapped." },
     { title: "Loot Drop database export, 1,749 failed startups", url: "https://www.loot-drop.io/", grade: "C", how: "Local export. AI-written summaries, not independently verified. Source for the failed predecessors." }
   ]
+},
+{
+  slug: "nichesss",
+  name: "Nichesss",
+  country: "Brazil",
+  sector: "Information Technology",
+  productType: "AI copywriting and business idea tool",
+  aiType: "AI-native",
+  team: "solo",
+  outcome: "running",
+  evidence: "C",
+  added: "2026-10-14",
+  launchLabel: "December 2020",
+  outcomeLabel: "US$30K a month, January 2022",
+  sticker: "$30K/mo in early 2022",
+  outcomeUsd: 360000,
+  months: 13,
+  teamLabel: "1 founder, no employees or contractors",
+  fundingLabel: "None",
+  primaryFactor: "Distribution",
+  meters: { evidence: 1, copyable: 2, capital: 1 },
+  tags: ["AI-native", "Solo founder", "Bootstrapped", "Running", "B2B", "Marketing content"],
+  product: "A web app with more than 150 small writing tools built on OpenAI's GPT-3: business ideas from a 10-second quiz, blog posts, Facebook and Google ads, emails, social media posts, even poems. The user fills a short form and gets the text back in seconds. It sold mostly as a US$59 lifetime deal on AppSumo, next to monthly plans from US$19.",
+  why: "It arrived in December 2020, when GPT-3 access still came through a waitlist and only a few competitors existed, and it was priced at about 80% of their prices on purpose. A lifetime deal on AppSumo put it in front of buyers who try unknown software, and a Facebook Group and an email list kept those buyers coming back.",
+  summary: [
+    `Nichesss is a web app that writes marketing text and suggests business ideas. It runs on GPT-3, a <dfn>large language model</dfn>: a program trained on a very large amount of text that continues whatever text it is given. OpenAI sells access to the model through an <dfn>API</dfn>, an interface that lets one program send requests to another program over the internet and pay for each use. Nichesss puts more than 150 forms on top. For each form its code holds hand-picked examples of good copy, and it sends them to the model together with the user's answers. This method is a <dfn>few-shot prompt</dfn>: a request that contains a few finished examples, so that the model writes new text in the same form. Nichesss does not train a model of its own.`,
+    `Malcolm Tyson, a self-taught programmer and designer from the United States who had moved to Rio de Janeiro, got GPT-3 access in November 2020 and had a working app in December. In January 2021 he sold it on AppSumo, a marketplace for software deals, as a <dfn>lifetime deal</dfn>: one payment for permanent access. He made US$100,000 in the first month after AppSumo's share. In an interview published by Starter Story on 14 January 2022 he said the business brought in about US$30,000 a month, with no employees and costs of about US$2,200 a month.`,
+    `Every number on this page is the founder's own, grade C, and no new figure has been published since January 2022. The site still sells in October 2026, with the same plans since February 2024 and the same AppSumo deal, but ChatGPT, released free in November 2022, gives anyone the same kind of model without a form. This page shows the business at its best documented point, how it was built, and what happened to earlier products that depended on another company's platform.`
+  ],
+  factsCaption: "A one-person GPT-3 app that made US$100,000 in its launch month on AppSumo and about US$30,000 a month a year later, all self-reported",
+  factsRead: "How to read this table: a grade C value is a statement by the founder, a page of the company or of its sales marketplace, or a press report of another party's estimate. A \"calc\" value was computed on this page from the rows above it. No value is grade A or B.",
+  timelineLead: "From GPT-3 access in November 2020 to an interview at US$30,000 a month in January 2022, then nearly five years with no new figures. Each entry carries its grade.",
+  pricing: {
+    caption: "Nichesss prices in October 2026, read from the company's pricing page and home page and from the AppSumo deal page (grade C)",
+    note: "There is no yearly billing. The three monthly prices, US$19, US$39 and US$99, were the same in January 2021 and from January 2023 on; in January 2022 the page offered one US$19 plan with unlimited use. The limits changed often: 100 and 250 credits a month in January 2021, 200 and 500 short-form generations in January 2023, and the limits below since February 2024. A short-form generation is one short text, such as an ad or a title; long-form autowrite writes whole articles. The lifetime deal is sold on AppSumo against a list price of US$999, and AppSumo's page says that it includes unlimited tokens.",
+    rows: [
+      ["Rookie", "", "19", "2,500 short-form generations a month, no long-form"],
+      ["Intermediate", "", "39", "10,000 short-form generations a month, no long-form"],
+      ["Pro", "", "99", "unlimited short-form; long-form: 1,000 generations and 100,000 words a month"],
+      ["Lifetime deal on AppSumo", "59 one-time", "", "one plan; shown against US$999"]
+    ]
+  },
+  facts: [
+    { fact: "Revenue per month, interview published 14 January 2022", value: "about US$30,000", grade: "C", note: "Founder interview with Starter Story. The answers speak of ads 'come next year', so they were probably written in late 2021. Users were copywriters, small businesses and marketing agencies.", src: [1] },
+    { fact: "Run rate from that figure", value: "about US$360,000 a year", grade: "X", note: "Calculated: US$30,000 times 12. Starter Story's headline uses the same figure.", src: [1] },
+    { fact: "Revenue in the first month on AppSumo, January 2021", value: "US$100,000 after AppSumo's share", grade: "C", note: "Founder interview. His post on X of 1 March 2021 also says that he made US$100,000 in a month with GPT-3 and would stop sharing numbers.", src: [1, 2] },
+    { fact: "Change from the launch month to the 2022 figure", value: "about 70% lower", grade: "X", note: "Calculated: from US$100,000 to about US$30,000 a month. The two figures may not be measured the same way: the first is after AppSumo's share, and the interview does not say whether the second is.", src: [1, 2] },
+    { fact: "AppSumo's share of each sale", value: "30%, or 50% for a better position on the site", grade: "C", note: "Founder interview. Nichesss was a marketplace deal, which AppSumo promotes less.", src: [1] },
+    { fact: "Lifetime deal price", value: "US$59 one-time, shown against US$999", grade: "C", note: "AppSumo deal page in May 2021, December 2021, December 2022 and October 2026. The October 2026 page says that the deal includes unlimited tokens.", src: [8] },
+    { fact: "Founder's part of one US$59 sale", value: "US$41.30 at a 30% share, US$29.50 at 50%", grade: "X", note: "Calculated: US$59 times 0.7 and times 0.5.", src: [1, 8] },
+    { fact: "Monthly costs, interview of January 2022", value: "US$200 for hosting and US$2,000 for AI generation", grade: "C", note: "Founder interview. No employees, no contractors and, at that time, no paid ads.", src: [1] },
+    { fact: "Costs as a share of revenue", value: "about 7.3%", grade: "X", note: "Calculated: US$2,200 divided by US$30,000.", src: [1] },
+    { fact: "Cost to run the app, February 2021", value: "US$3,000, about US$1 per user per month", grade: "C", note: "Founder's post on X, 1 March 2021.", src: [3] },
+    { fact: "Spending on GPT-3, January to March 2021", value: "US$10,000 in about 70 days", grade: "C", note: "Founder's post on X, 25 March 2021. He had spent about US$30 while testing.", src: [4] },
+    { fact: "Users, interview of January 2022", value: "about 12,000 in the app each month", grade: "C", note: "Founder interview. About 100 signups a day, of which about 16 became paying accounts. The US was the biggest market, then India.", src: [1] },
+    { fact: "Email list and community", value: "over 30,000 users on the email list, almost 10,000 in the Facebook Group", grade: "C", note: "Founder interview. Another answer in the same interview gives 9,000 for the group.", src: [1] },
+    { fact: "Reviews on the AppSumo deal page", value: "201 in May 2021, 236 in December 2021, 268 in December 2022, 318 in October 2026", grade: "C", note: "AppSumo page, live and in Wayback Machine copies. A review count is a sign of buyers, not a sales figure.", src: [8] },
+    { fact: "New AppSumo reviews per month", value: "about 5.0, then 2.7, then 1.1", grade: "X", note: "Calculated: 35 reviews in the 7 months to December 2021, 32 in the 12 months to December 2022, 50 in the 46 months to October 2026.", src: [8] },
+    { fact: "Tool cards on the home page", value: "166 in January 2023, 207 in December 2023, 209 in December 2024, 213 in December 2025 and October 2026", grade: "X", note: "Calculated: a count of the tool cards in Wayback Machine copies and in the live page. The heading has said 'Over 150 Tools' since January 2023.", src: [10] },
+    { fact: "Team", value: "1 founder, no employees or contractors", grade: "C", note: "Founder interview: a self-taught programmer and designer who built and ran it alone.", src: [1] },
+    { fact: "Outside funding", value: "none", grade: "C", note: "Founder interview: no startup costs beyond a domain name and hosting. No source names an investor.", src: [1] },
+    { fact: "Revenue field on Indie Hackers", value: "US$530 a month, undated", grade: "C", note: "Founder's product page, next to a first-sale entry of December 2020. Probably an early entry that was never updated (not verified).", src: [7] },
+    { fact: "Time from launch to the January 2022 figure", value: "13 months", grade: "X", note: "Calculated: December 2020 to January 2022.", src: [1] }
+  ],
+  timeline: [
+    { when: "November 2020", what: "Tyson gets access to OpenAI's GPT-3 API after asking an OpenAI co-founder on X, and starts writing the app. OpenAI still admits developers from a waitlist.", grade: "C", src: [1, 12] },
+    { when: "December 2020", what: "A working first version. One blog-post tool is tested with paid traffic, and Facebook ads return about US$3 for each US$1 spent. The first sale comes through X.", grade: "C", src: [1, 7] },
+    { when: "January 2021", what: "Listed on AppSumo as a lifetime deal: US$100,000 in the first month after AppSumo's share. The pricing page shows plans at US$19, US$39 and US$99 a month.", grade: "C", src: [1, 9] },
+    { when: "February 2021", what: "Launch on Product Hunt, 263 points. The founder says that it reached second place with the help of his users' group.", grade: "C", src: [1, 11] },
+    { when: "1 March 2021", what: "He posts that he made US$100,000 in a month with GPT-3 and will stop sharing numbers. Running the app cost US$3,000 the month before, about US$1 per user.", grade: "C", src: [2, 3] },
+    { when: "23 to 31 March 2021", what: "He writes that buyers of GPT-3 copy tools pay US$40 a month for US$1 of content and promises to stay the cheapest. He reports US$10,000 spent on GPT-3 in about 70 days, and notes that few solo founders remain after ConversionAI, another GPT-3 copy tool, bought Headlime.", grade: "C", src: [4, 5, 6] },
+    { when: "3 September 2021", what: "He asks AI21 Labs, another model maker, for API access 'without limits'. No source says that he added a second model.", grade: "C", src: [6] },
+    { when: "18 November 2021", what: "OpenAI removes the GPT-3 waitlist. It still reviews applications before they go live.", grade: "C", src: [12] },
+    { when: "January 2022", what: "The pricing page offers a single plan, US$19 a month with unlimited use. On 14 January Starter Story publishes the interview: about US$30,000 a month, 12,000 monthly users, no employees.", grade: "C", src: [1, 9] },
+    { when: "October 2022", what: "OpenAI's price for Davinci, its strongest GPT-3 model, is US$0.02 per 1,000 tokens, down from US$0.06 in December 2021.", grade: "C", src: [15] },
+    { when: "30 November 2022", what: "OpenAI releases ChatGPT, free during its research preview. Reuters reports a UBS estimate of 100 million monthly users in January 2023.", grade: "C", src: [13, 14] },
+    { when: "December 2022", what: "The AppSumo deal adds images from DALL-E 2, 15 a month at no extra cost. The deal has 268 reviews.", grade: "C", src: [8] },
+    { when: "January 2023", what: "Three plans again at US$19, US$39 and US$99, now with limits, and long-form articles on the top plan. The home page shows 'Over 150 Tools' and a US$59 lifetime deal.", grade: "C", src: [9, 10] },
+    { when: "February 2024", what: "Monthly limits rise to 2,500 and 10,000 short texts. Prices and limits have not changed since.", grade: "C", src: [9] },
+    { when: "October 2026", what: "The site and the AppSumo deal are still on sale, with 213 tools and 318 AppSumo reviews. The founder's name is still in the footer, no source reports a sale, and no revenue figure has been published since January 2022.", grade: "C", src: [8, 9, 10] }
+  ],
+  mechanism: [
+    { title: "Early access and a lower price", text: "He built the app in about a month, while GPT-3 access still came through a waitlist and only a few competitors existed. Buyers in Facebook groups complained that those competitors were expensive, so he set his price at about 80% of theirs. He lived in Brazil, where costs are lower than in the US, so the low price still paid." },
+    { title: "A lifetime deal on AppSumo", text: "AppSumo buyers pay once for software they have not heard of, if it does what it promises. The first month brought US$100,000 after AppSumo's share, and a year later the founder called AppSumo the bulk of his distribution. The price of this channel is a share of 30% to 50% of each sale, and buyers who never pay again." },
+    { title: "One pattern for every tool", text: "As the founder describes it, every tool works the same way: a short form, hand-picked examples of good copy, and a call to GPT-3. With one pattern for all tools, one person could reach more than 150 tools while costs stayed at about 7% of revenue." },
+    { title: "A community as the sales channel", text: "Buyers were invited to a Facebook Group of almost 10,000 people and an email list of over 30,000. The group told him what to build next. When he launched new features inside the app, the community bought them, and he relied on it to reach second place on Product Hunt." }
+  ],
+  howBuilt: {
+    intro: "These details come from the founder's interview and posts (grade C) and from the source code of the public web pages, which any browser loads.",
+    items: [
+      "Built alone by a self-taught programmer and designer: started in November 2020, working first version in December 2020.",
+      "OpenAI's GPT-3 API writes all the text. The code holds hundreds of examples of good copy, which go to the model together with the user's form answers.",
+      "The first test was one blog-post tool with paid traffic from Facebook ads. When visitors understood it and bought, he added trial limits and a payment form.",
+      "Costs in January 2022: US$200 a month for hosting and US$2,000 a month for AI generation. No startup costs other than a domain name and hosting.",
+      "Analytics, according to the founder: Google Analytics, Segment and June.so, which shows the most active users and where users get stuck. The page source also loads Hotjar and the Facebook Pixel, and the pricing page loads Stripe's payment script.",
+      "Later additions: images from OpenAI's DALL-E 2 (December 2022), long-form articles on the top plan (January 2023), and access to a Nichesss API for AppSumo buyers (October 2026 page)."
+    ],
+    src: [1, 8, 9, 10]
+  },
+  predecessorsIntro: "Four companies in the Loot Drop database depended on another company's platform, or charged for something that people could then get free. The values below are from that database and are not independently verified.",
+  predecessors: [
+    { name: "PostRocket", years: "2011 to 2014", funding: "US$610K", cause: "Product/Tech Failure", promise: "More reach for brands' Facebook pages by choosing the best time to post.", died: "Facebook changed its API, and the product had no other base and no plan to change direction.", url: "https://www.loot-drop.io/startup/457-postrocket" },
+    { name: "BranchOut", years: "2010 to 2017", funding: "US$49M", cause: "Competition", promise: "Professional networking built inside Facebook.", died: "Facebook changed its API rules and removed the growth channel that the company depended on.", url: "https://www.loot-drop.io/startup/30-branchout" },
+    { name: "Snipshot", years: "2006 to 2009", funding: "US$20K", cause: "Competition", promise: "Simple photo editing in the browser, with nothing to install.", died: "Larger competitors and free alternatives did the same job.", url: "https://www.loot-drop.io/startup/1241-snipshot" },
+    { name: "Neeva", years: "2019 to 2023", funding: "US$77M", cause: "No Market Need", promise: "Search without ads for US$5 a month.", died: "Few people would pay for search, and then ChatGPT changed what people expected from it.", url: "https://www.loot-drop.io/startup/2288-neeva" }
+  ],
+  whatChanged: [
+    `PostRocket and BranchOut were small products on Facebook's platform and ended when Facebook changed its API rules. Snipshot was a simple web tool that free alternatives replaced, and Neeva charged for a service that people then got free elsewhere. Nichesss carries both risks: it is a product on OpenAI's API, and since November 2022 OpenAI itself gives away a general version of what Nichesss sells.`,
+    `Three things differ. First, OpenAI sells its API and wants products built on it, and the price of its strongest GPT-3 model fell by two thirds between December 2021 and October 2022, which lowered Nichesss's costs instead of ending the business. Second, Nichesss had no investors and costs of about US$2,200 a month, so it did not need growth to survive, and its lifetime buyers had already paid. Third, the four earlier companies closed, while Nichesss is still on sale almost five years after its last published figure. No source shows what it earns today.`
+  ],
+  copy: {
+    verdict: "The GPT-3 window, no. The launch method, yes.",
+    text: "In late 2020 GPT-3 access was by waitlist, and a form that writes ads was new; since ChatGPT, anyone can ask the same kind of model for free. The method still works for any new model that most people cannot use directly: build a narrow tool in weeks, sell a lifetime deal to buyers who try unknown software, and keep them in a group and an email list.",
+    steps: [
+      "Get access to a new model early and ship one narrow tool within weeks.",
+      "Test that tool with a small paid-ads budget before you build more.",
+      "Launch with a lifetime deal on a deal marketplace, and count its 30% to 50% share in the price.",
+      "Limit monthly use in every lifetime plan, because each active user keeps costing model fees.",
+      "Gather buyers in a group and an email list, and build what they ask for."
+    ],
+    open: "New image, video, voice and music models with waitlists or weak official interfaces, where a simple form for one job still saves the buyer time."
+  },
+  watch: [
+    { title: "Founder figures only, and none since 2022", text: "The US$100,000 launch month and the US$30,000 a month come from the founder's interview and posts. No payment processor, buyer or journalist has confirmed them, and in March 2021 the founder wrote that he would stop sharing numbers. The Indie Hackers page still shows US$530 a month, with no date." },
+    { title: "ChatGPT made the basic service free", text: "OpenAI released ChatGPT on 30 November 2022 and made it free during the research preview, and Reuters reported a UBS estimate of 100 million monthly users two months later. Anyone can now ask the model for an ad or a business idea without a form. The Nichesss home page still shows the same 'Over 150 Tools' and '300+ 5-Star Reviews on AppSumo' as in January 2023, and its count of tool cards has stayed at 213 since December 2025." },
+    { title: "A thin layer over one model", text: "The product is examples and forms on top of GPT-3, a model that any competitor can also buy. The founder wrote in March 2021 that buyers of GPT-3 copy tools paid US$40 a month for US$1 worth of content. That gap is the margin, and it is also what competitors and the model maker can take away. He asked AI21 Labs for access in September 2021, but no source shows a second model in use." },
+    { title: "OpenAI sets the access, the rules and the price", text: "Until 18 November 2021 developers waited for GPT-3 access, and OpenAI reviewed applications before they went live; the founder got in by asking an OpenAI co-founder on X. The Davinci price fell from US$0.06 to US$0.02 per 1,000 tokens between December 2021 and October 2022. That helped Nichesss, but a price rise or a rule change would reach it the same way." },
+    { title: "Lifetime buyers keep costing money", text: "A US$59 lifetime sale leaves US$29.50 to US$41.30 after AppSumo's share, and the AppSumo page says that the deal includes unlimited tokens. At the founder's February 2021 cost of about US$1 per user per month, an active buyer uses up that payment in about 30 to 41 months. Lower model prices since then reduce this cost, but no newer cost figure exists." }
+  ],
+  sources: [
+    { title: "Starter Story, 14 January 2022: This Self-Taught Programmer Built A $360K/Year GPT-3 App", url: "https://www.starterstory.com/stories/this-self-taught-programmer-built-a-360k-year-gpt-3-app", grade: "C", how: "Read in full: the interview text loads without a login, although the page also shows a notice for premium members. Founder interview. Source for the monthly revenue, the AppSumo month, the costs, the users and the tools." },
+    { title: "Malcolm Tyson on X, 1 March 2021: i Made $100k in a month using gpt-3", url: "https://x.com/malcolmtyson/status/1366354125248745476", grade: "C", how: "Read in full through api.fxtwitter.com." },
+    { title: "Malcolm Tyson on X, 1 March 2021: How much does it cost to run nichesss?", url: "https://x.com/malcolmtyson/status/1366355406654746624", grade: "C", how: "Read in full through api.fxtwitter.com. Source for the US$3,000 monthly cost and the US$1 per user." },
+    { title: "Malcolm Tyson on X, 25 March 2021: $10k spent on gpt-3 in the last ~70 days", url: "https://x.com/malcolmtyson/status/1375182093148434437", grade: "C", how: "Read in full through api.fxtwitter.com." },
+    { title: "Malcolm Tyson on X, 23 March 2021: the gpt-3 marketing copy game", url: "https://x.com/malcolmtyson/status/1374376135304224780", grade: "C", how: "Read in full through api.fxtwitter.com. Source for the remark about US$40 a month for US$1 of content." },
+    { title: "Malcolm Tyson's X timeline, February 2021 to August 2026", url: "https://x.com/malcolmtyson", grade: "C", how: "Read the 298 posts that the fxtwitter timeline API returned. Source for the posts of 23 March 2021 (the cheapest in the marketplace), 31 March 2021 (Headlime), 20 August 2021 (an American living near Rio) and 3 September 2021 (AI21 Labs), and for the fact that no returned post after March 2021 mentions nichesss." },
+    { title: "Indie Hackers product page: Nichesss", url: "https://www.indiehackers.com/product/nichesss", grade: "C", how: "Read in full. Source for the founder-entered revenue field and the first-sale entry of December 2020." },
+    { title: "AppSumo deal page for nichesss, live on 14 October 2026, and Wayback Machine copies of 28 May 2021, 22 December 2021 and 2 December 2022", url: "https://appsumo.com/products/marketplace-nichesss/", grade: "C", how: "Read the price, the review count and the plan text in all four. Source for the US$59 deal, the unlimited tokens, the DALL-E 2 images and the API access." },
+    { title: "nichesss.com pricing page, live on 14 October 2026, and Wayback Machine copies of 9 January 2021, 29 January 2022, 27 January 2023 and 24 February 2024", url: "https://nichesss.com/pricing", grade: "C", how: "Read in full, all five. Source for the plans and limits over time." },
+    { title: "nichesss.com home page, live on 14 October 2026, and eight Wayback Machine copies from 9 January 2021 to 8 September 2026", url: "https://nichesss.com/", grade: "C", how: "Read in full, and counted the tool cards in each copy. Also read the page source for analytics and payment scripts, and the server header." },
+    { title: "Product Hunt: Nichesss, biz ideas + content in under 60 seconds with AI", url: "https://www.producthunt.com/products/nichesss", grade: "C", how: "Read the product page: launched in 2021, 263 points, and the founder's launch comment. The earliest comments in the page data are from 14 and 15 February 2021." },
+    { title: "OpenAI, 18 November 2021: OpenAI's API Now Available with No Waitlist", url: "https://openai.com/blog/api-no-waitlist/", grade: "C", how: "Read in full in the Wayback Machine copy of 20 November 2021. Source for the end of the waitlist and the review before an application goes live." },
+    { title: "OpenAI, 30 November 2022: Introducing ChatGPT", url: "https://openai.com/blog/chatgpt/", grade: "C", how: "Read in full in the Wayback Machine copy of 2 December 2022. Source for the release date and the free research preview." },
+    { title: "Reuters, 2 February 2023: ChatGPT sets record for fastest-growing user base - analyst note", url: "https://www.reuters.com/technology/chatgpt-sets-record-fastest-growing-user-base-analyst-note-2023-02-01/", grade: "C", how: "Read in full in the Wayback Machine copy of 4 February 2023. It reports a UBS estimate, so grade C." },
+    { title: "OpenAI API pricing page, Wayback Machine copies of 4 December 2021 and 17 October 2022", url: "https://openai.com/api/pricing/", grade: "C", how: "Read the price table in both copies. Source for the Davinci price of US$0.06 and then US$0.02 per 1,000 tokens." },
+    { title: "Loot Drop database export, 1,749 failed startups", url: "https://www.loot-drop.io/", grade: "C", how: "Local export. AI-written summaries, not independently verified. Source for the failed predecessors." }
+  ]
 }
 ];
 
