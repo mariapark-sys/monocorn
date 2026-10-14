@@ -10609,6 +10609,159 @@ const STORIES = [
     { title: "OpenAI: ChatGPT pricing", url: "https://openai.com/chatgpt/pricing/", grade: "C", how: "Read the plan names. Shows that ChatGPT has a free plan." },
     { title: "Loot Drop database export, 1,749 failed startups", url: "https://www.loot-drop.io/", grade: "C", how: "Local export. AI-written summaries, not independently verified. Source for the failed predecessors." }
   ]
+},
+{
+  slug: "screenshot-to-code",
+  name: "Screenshot to Code",
+  country: "USA",
+  sector: "Information Technology",
+  productType: "AI tool that turns screenshots and screen recordings into front-end code",
+  aiType: "AI-native",
+  team: "solo",
+  outcome: "running",
+  evidence: "A",
+  added: "2026-10-14",
+  launchLabel: "15 November 2023",
+  outcomeLabel: "US$62.8K revenue in the last 12 months, October 2026",
+  sticker: "$63K in 12 months",
+  outcomeUsd: 62779,
+  months: 35,
+  teamLabel: "1 founder; no co-founder or staff found",
+  fundingLabel: "None",
+  primaryFactor: "Open source",
+  meters: { evidence: 3, copyable: 2, capital: 1 },
+  tags: ["AI-native", "Solo founder", "Bootstrapped", "Running", "B2B", "Developer tools"],
+  product: "A web app that turns a screenshot, a mockup, a Figma design or a screen recording of a website into front-end code: HTML with Tailwind or CSS, React, Vue, Bootstrap or Ionic. The code is open source under the MIT licence and free to run with your own model keys. The hosted version at screenshottocode.com sells monthly credits, so the user needs no API key and no setup.",
+  why: "The founder released it as a free open-source tool nine days after he wrote that the new GPT-4 Vision and Turbo API previews allowed only 100 requests a day. Hacker News and GitHub trending brought the repository more than 35,000 stars in under three months, and the README sends readers on to the paid hosted version for people who do not want to set up keys and servers. It had made US$1,000 within 19 days, with a Stripe payment link and no user accounts.",
+  summary: [
+    `Screenshot to Code turns a picture of a web page or an app into working code. It sends the image to a <dfn>vision model</dfn>, an AI model that reads images as well as text, and asks it to write the page in HTML, React or Vue. The project is <dfn>open source</dfn>: the code is public on GitHub under the MIT licence, and anyone may run, change or sell it. To run it yourself you need an <dfn>API key</dfn>, a password that lets a program call a model provider such as OpenAI on your account and at your cost, and you must start a backend server and a frontend. The hosted version at screenshottocode.com does this for you and sells <dfn>credits</dfn>, prepaid units of use: 1 credit buys one generation or one edit.`,
+    `Abi Raja, a founder in New York whose company WhimsyWorks, Inc. also makes Pico, an AI app builder, posted the tool on 15 November 2023. The next day it reached the front page of Hacker News, and three days later it was first on GitHub trending. On 4 December 2023 he wrote that it had made US$1,000. By 14 October 2026 the Stripe account showed US$259,933 in total revenue, of which US$197,154, 75.8%, came before October 2025. The last 30 days brought US$4,567 and the <dfn>monthly recurring revenue</dfn> (MRR), the subscription income expected every month, was US$4,303 from 281 subscriptions. That day he listed the business for sale at US$38,000, because he is starting a full-time job.`,
+    `The revenue numbers are read from the Stripe account by TrustMRR through an API key, grade A. The repository counts and the old prices come from public records, grade B: GitHub, Hacker News, and copies of the site's code kept by the Wayback Machine. The reasons for the sale, the profit margin and the user count are the founder's words, grade C. The page also shows earlier companies that promised to turn designs into code, and what killed them.`
+  ],
+  factsCaption: "Stripe-verified revenue of US$62,779 in the last 12 months and US$259,933 since the account began, three quarters of it before October 2025, and a sale listing at US$38,000",
+  factsRead: "How to read this table: a grade A value is read from the Stripe account by TrustMRR through an API key. A grade B value is a public record: GitHub's counters, Hacker News, or the site's own code as archived by the Wayback Machine. A grade C value is a statement by the founder. A \"calc\" value was computed on this page from the rows above it.",
+  timelineLead: "From a free open-source tool to US$259,933 of verified revenue and a sale listing, in 35 months. Each entry carries its grade.",
+  pricing: {
+    caption: "Screenshot to Code prices in October 2026, read from the hosted app's code because the pricing page loads by script (grade B)",
+    note: "Yearly plans cost US$90 and US$240 a year, shown as 50% off the monthly price. Pro gives 5 times the credits of Hobby, and 1 credit pays for one generation or one edit. Earlier prices from archived copies of the site's code: 100 generations for US$15 one-time in December 2023, then subscriptions at US$15 or US$40 a month, or US$150 or US$400 a year, in February 2024. The terms say credits are non-refundable and unused credits may expire.",
+    rows: [
+      ["Hobby", "7.50", "15", "100 credits a month"],
+      ["Pro", "20", "40", "500 credits a month"],
+      ["Open-source code, run yourself", "0", "0", "you pay the model providers through your own API keys"]
+    ]
+  },
+  facts: [
+    { fact: "Verified revenue, all time to 14 October 2026", value: "US$259,933", grade: "A", note: "TrustMRR, read from Stripe through an API key, synced 14 October 2026. The account belongs to WhimsyWorks, Inc., which also sold Pico; no source says whether any Pico revenue is in this total, so the headline uses the last 12 months.", src: [1] },
+    { fact: "Verified revenue, last 12 months", value: "US$62,779", grade: "A", note: "TrustMRR, same sync. Last 6 months: US$30,755. Last 3 months: US$14,029. Last 30 days: US$4,567, 3.7% less than the 30 days before.", src: [1] },
+    { fact: "Revenue earned before the last 12 months", value: "US$197,154, which is 75.8% of the total", grade: "X", note: "Calculated: all-time revenue minus the last 12 months. It was earned in the 23 months from November 2023 to October 2025, an average of US$8,585 a month.", src: [1] },
+    { fact: "Revenue by month, November 2025 to September 2026", value: "US$5,080 in November 2025, highest US$6,478 in May 2026, US$4,727 in September 2026", grade: "A", note: "TrustMRR monthly table; only the last 12 months are public, and the Wayback Machine holds no copy of the profile. Calculated: September 2026 is 27.0% below May 2026.", src: [1] },
+    { fact: "Fall from the early average to the last 30 days", value: "46.8% lower", grade: "X", note: "Calculated: US$4,567 in the last 30 days against the US$8,585 average month before October 2025. Average month in the last 12 months: US$5,232. No source explains the fall.", src: [1] },
+    { fact: "Monthly recurring revenue (MRR)", value: "US$4,303 from 281 active subscriptions", grade: "A", note: "TrustMRR snapshot, down 9.7% in 30 days. Calculated: US$15.31 per subscription per month, close to the US$15 monthly Hobby price; a run rate of US$51,636 a year.", src: [1] },
+    { fact: "Profit margin", value: "60% over 12 months; 40.0% in the last 30 days", grade: "C", note: "The 12-month figure is the founder's sale message; the 30-day figure is a TrustMRR snapshot whose costs are not among its verified sources. The founder writes that a recent switch to cheaper AI models should lift the 30-day margin.", src: [2, 1] },
+    { fact: "Asking price, listed 14 October 2026", value: "US$38,000", grade: "C", note: "Set by the founder: about 1 times trailing twelve-month profit for a quick sale. Calculated: 0.61 times 12-month revenue, 0.74 times the MRR run rate, 1.01 times 12-month profit at the stated 60% margin (US$37,667).", src: [1, 2] },
+    { fact: "Users, subscribers and work time, October 2026", value: "258,000 registered users, about 300 subscribers, under 2 hours a week", grade: "C", note: "Founder's sale message. Calculated: 281 subscriptions are 0.11% of registered users.", src: [2] },
+    { fact: "Annual recurring revenue, March 2024", value: "US$100,000 (does not name the product)", grade: "C", note: "Founder's post on 3 April 2024: he hit 100k ARR a couple of weeks before. The post does not say whether this is Screenshot to Code alone or the whole company, which also sold Pico. Calculated: US$8,333 a month, close to the US$8,585 average above.", src: [11] },
+    { fact: "First revenue", value: "US$1,000 by 4 December 2023", grade: "C", note: "Founder's post, 19 days after the release: no login and no user accounts, only a Stripe payment link for credits and a simple ledger on the backend.", src: [9] },
+    { fact: "GitHub repository, 14 October 2026", value: "80,363 stars and 9,816 forks, MIT licence", grade: "B", note: "GitHub API. Created on 14 November 2023; last push 9 October 2026. The founder reported 35,000+ stars in February 2024 and 40,000+ in March 2024.", src: [3, 10] },
+    { fact: "Founder's share of the code", value: "1,276 of 1,457 counted commits, 87.6%", grade: "B", note: "GitHub contributors API. 28 other accounts made the rest, the largest with 41 commits.", src: [4] },
+    { fact: "Hacker News launch, 16 November 2023", value: "358 points and 90 comments", grade: "B", note: "Show HN post by the founder, read through the Algolia HN API.", src: [8] },
+    { fact: "Team and funding", value: "1 person, bootstrapped", grade: "C", note: "Founder-written fields on TrustMRR. In 130 of his posts from June 2023 to May 2026 there is no hire, co-founder or funding round.", src: [1, 10] },
+    { fact: "Time from release to the October 2026 figure", value: "35 months", grade: "X", note: "Calculated: 15 November 2023 to 14 October 2026.", src: [7, 1] }
+  ],
+  timeline: [
+    { when: "August 2023", what: "The founder's company, WhimsyWorks, Inc., sells Pico, an AI app builder. He reports US$5,591 MRR for Pico in July 2023.", grade: "C", src: [10] },
+    { when: "6 November 2023", what: "He writes that the GPT-4 Vision and Turbo API previews allow only 100 requests a day, too few to ship a product.", grade: "C", src: [10] },
+    { when: "15 November 2023", what: "Release post on X: an open-source tool built with GPT-4 Vision and DALL-E, free to try with your own OpenAI API key. The repository was created the day before.", grade: "C", src: [7, 3] },
+    { when: "16 November 2023", what: "Show HN post: 358 points and 90 comments. He reports 500+ GitHub stars in 24 hours and the Hacker News front page.", grade: "B", src: [8, 10] },
+    { when: "19 November 2023", what: "First on GitHub trending, he writes.", grade: "C", src: [10] },
+    { when: "29 November 2023", what: "First Wayback Machine copy of screenshottocode.com, the hosted version.", grade: "B", src: [12] },
+    { when: "3 December 2023", what: "The archived site code offers 100 code generations for US$15 through a Stripe payment link, or the free path with your own OpenAI key.", grade: "B", src: [13] },
+    { when: "4 December 2023", what: "US$1,000 in revenue, with no accounts and no login. Still MIT licensed and free with your own key.", grade: "C", src: [9] },
+    { when: "8 February 2024", what: "In replies under a post that is now deleted, he offers the business to serious buyers: a 70K+ mailing list, about 1,000 page views a day with no outbound marketing, 35,000+ stars, and the first two search results for screenshot to code. He still ran it in October 2026.", grade: "C", src: [10] },
+    { when: "9 February 2024", what: "The archived site code now sells subscriptions: US$15 or US$40 a month, or US$150 or US$400 a year.", grade: "B", src: [14] },
+    { when: "21 March 2024", what: "Second Show HN: turn a video of an app into a working prototype with Claude Opus.", grade: "B", src: [24] },
+    { when: "24 June 2024", what: "Adds Claude 3.5 Sonnet. In his tests it beats GPT-4o in 56% of cases, ties in 19%, loses in 25%.", grade: "C", src: [10] },
+    { when: "22 January 2026", what: "README update: the best models are now Gemini 3 and Claude Opus 4.5.", grade: "B", src: [6] },
+    { when: "May 2026", what: "Verified revenue reaches its highest month in the public table: US$6,478.", grade: "A", src: [1] },
+    { when: "September 2026", what: "Verified revenue: US$4,727 in the month.", grade: "A", src: [1] },
+    { when: "14 October 2026", what: "Listed for sale at US$38,000 because the founder starts a full-time job. All-time revenue US$259,933, MRR US$4,303, 281 subscriptions.", grade: "A", src: [1, 2] }
+  ],
+  mechanism: [
+    { title: "Open source as the sales channel", text: "The free repository is the marketing. It reached the Hacker News front page and GitHub trending in its first week, and the founder counted about 1,000 page views a day with no outbound marketing by February 2024. The README's first line sends readers to the hosted product, with tracking tags added in June 2026. In the sale message he writes that the 80,000-star repository drives steady organic traffic." },
+    { title: "Charge for convenience, not for the code", text: "The code is free, but running it needs model keys, a Python backend and a JavaScript frontend. The hosted version needs only a card. It began as a Stripe payment link for 100 generations at US$15 with no accounts at all, and became a subscription with monthly credits within three months. The backend of the hosted version is closed source." },
+    { title: "Switch to the best model, measured by tests", text: "When model providers released better models, the founder added them, and he compared some of them on his own test set first: GPT-4 Turbo in April 2024, GPT-4o in May 2024, Claude 3.5 Sonnet in June 2024, Gemini 3 and Claude Opus 4.5 in January 2026. He wrote in March 2024: models come and go but evals are forever." },
+    { title: "Very little running work", text: "The founder states that the business needs under 2 hours a week. 28 other accounts made 12.4% of the commits. The largest of them, with 41 commits, is named claude: its commits carry the address noreply@anthropic.com and a Claude Code session link, so Anthropic's coding agent wrote part of the 2026 work." }
+  ],
+  howBuilt: {
+    intro: "These details come from the public repository and the site's code (grade B) and from the founder's posts and sale message (grade C).",
+    items: [
+      "A React and Vite frontend and a Python FastAPI backend, managed with Poetry and pnpm, with a Docker setup. A headless Chromium browser through Playwright lets the agent render the page it wrote and visually check its work.",
+      "Output stacks: HTML with Tailwind, HTML with CSS, React with Tailwind, Vue with Tailwind, Bootstrap, and Ionic with Tailwind.",
+      "Models at launch: GPT-4 Vision for code and DALL-E for images. In October 2026 the README lists Gemini 3 Flash Preview and Gemini 3.1 Pro Preview as the best models, then GPT-5.5, GPT-5.4 Mini, Claude Opus 4.6 and Claude Opus 4.8, with z-image-turbo on Replicate for images. Gemini also extracts the real logos and images from the screenshot.",
+      "The first paid version had no accounts: a Stripe payment link sold credits, and a simple ledger on the backend counted them. Today the hosted app's code includes Clerk for login, PostHog for product analytics, Intercom for support chat and Sentry for error reports.",
+      "To capture a screenshot from a web address, the app calls ScreenshotOne, an outside screenshot service. Its founder wrote in November 2023 that his sign-ups jumped because of this tool.",
+      "The backend server runs on Render, at backend-screenshot-to-code.onrender.com, since at least December 2023, and Plausible counts site visits and clicks.",
+      "The hosted backend is closed source and is part of the sale. The terms name WhimsyWorks, Inc., with a New York address, and choose Delaware law."
+    ],
+    src: [5, 15, 13, 9, 10, 2, 16, 6]
+  },
+  predecessorsIntro: "Five companies in the Loot Drop database promised to turn designs or descriptions into working software before vision models existed. The values below are from that database and are not independently verified.",
+  predecessors: [
+    { name: "Pagedraw", years: "2018 to 2021", funding: "US$1.5M", cause: "Competition", promise: "Turn Sketch design files into React code.", died: "It bet on Sketch when designers moved to Figma, and developers preferred to write the final code by hand.", url: "https://www.loot-drop.io/startup/1006-pagedraw" },
+    { name: "Haiku", years: "2018 to 2021", funding: "US$1.2M", cause: "Competition", promise: "Turn designers' high-fidelity designs and animations into code.", died: "It could not keep up with Figma and Adobe XD, and the 2020 downturn ended the company.", url: "https://www.loot-drop.io/startup/1013-haiku" },
+    { name: "The Grid", years: "2014 to 2020", funding: "US$4.7M", cause: "Product/Tech Failure", promise: "Websites designed automatically by AI, with no designer.", died: "The AI of the time produced clumsy designs, while competitors offered polished site builders.", url: "https://www.loot-drop.io/startup/618-the-grid" },
+    { name: "Pixate", years: "2012 to 2016", funding: "US$3.6M", cause: "Competition", promise: "Build mobile app prototypes without writing code.", died: "Google bought it and then set it aside as Figma grew.", url: "https://www.loot-drop.io/startup/434-pixate" },
+    { name: "Builder.ai", years: "2016 to 2025", funding: "US$445M", cause: "Unit Economics", promise: "Custom apps built by an AI-assisted assembly line instead of expensive developers.", died: "Apps that sold for about US$20,000 cost about US$35,000 to build, and much of the work called AI was done by offshore developers.", url: "https://www.loot-drop.io/startup/2170-builderai" }
+  ],
+  whatChanged: [
+    `The five predecessors needed a design file in a known format, hand-written conversion rules or the weak AI of their time, and they raised between US$1.2 million and US$445 million to build it. In January 2018 a different open-source project with the same name already translated screenshots into HTML with neural networks; it reached 71 points on Hacker News. In November 2023 a general vision model, GPT-4 Vision, could read any screenshot and write the code, so one person could build the product on top of an API, with no training data and no design-file parser. The founder released it nine days after he wrote that the GPT-4 Vision and Turbo API previews allowed only 100 requests a day.`,
+    `The same change works for everyone. A model provider sells the ability that the product depends on, and the founder's own early posts note rate limits and outages of that API. Vercel announced in October 2023 that v0 would add image-to-code, and its documentation now says that v0 turns uploaded screenshots and Figma designs into working applications. Lovable and Bolt start projects from Figma designs, and ChatGPT and the Claude API accept images directly. The advantages of Screenshot to Code that the sources show are its open-source repository, which brings the traffic, and its price. No source describes a technology that others cannot copy.`
+  ],
+  copy: {
+    verdict: "The timing, no. The method, yes.",
+    text: "Being the first open-source screenshot-to-code tool on GPT-4 Vision depended on November 2023, and today v0, Lovable, Bolt and the chat apps accept screenshots and designs too. The method is still available: release a useful open-source tool on the day a new model ability appears, and sell a hosted version to the users who do not want to manage keys and servers.",
+    steps: [
+      "Build a small open-source tool around a model ability that has just been released, and post a demo video on X and Show HN on the same day.",
+      "Keep the free version fully working with the user's own API key, so developers star and share it.",
+      "Sell the hosted version from the first weeks, even with only a payment link and a ledger, then move to monthly credits.",
+      "Test each new model on your own examples and switch quickly, so the hosted version stays better than a self-run copy with an old setup."
+    ],
+    open: "New model abilities that need keys and setup to try, such as video understanding, realtime voice and computer-use agents, where a free repository can find users and a hosted version can charge for convenience."
+  },
+  watch: [
+    { title: "Revenue is falling", text: "The average month before October 2025 brought US$8,585; the last 30 days brought US$4,567, 46.8% less. The public monthly table peaked at US$6,478 in May 2026 and fell to US$4,727 in September 2026, and MRR fell 9.7% in 30 days. No source explains why." },
+    { title: "AI builders and model makers do the same job", text: "v0 by Vercel says it converts uploaded screenshots, mockups and Figma designs into working applications. Lovable and Bolt start projects from Figma designs. ChatGPT accepts image inputs, and the Claude API takes images as input. A user who already pays for one of these tools may not need a separate product." },
+    { title: "The free code is almost the same product", text: "The repository is MIT licensed with 80,363 stars and 9,816 forks, and its README explains how to run it with your own keys. Only 281 of 258,000 registered users pay. The hosted backend is closed source, but anyone can sell a hosted copy of the open code." },
+    { title: "Dependence on model providers", text: "Every generation is a paid call to OpenAI, Anthropic, Google or Replicate. The founder states a 60% margin over 12 months, while the 30-day snapshot shows 40.0%, and he writes that cheaper models should lift it. Early posts recorded a 100-requests-a-day limit and API outages." },
+    { title: "For sale, and the owner is leaving", text: "Listed on 14 October 2026 at US$38,000, about one year of profit by the founder's numbers, because he starts a full-time job. The sale includes domains, the closed-source backend, Stripe and users. The message does not say whether the GitHub repository, which brings the traffic, changes hands. Month-by-month revenue before November 2025 is not public, and the profile does not say whether the Stripe account ever carried revenue of Pico, the company's other product." }
+  ],
+  sources: [
+    { title: "TrustMRR markdown profile: Screenshot to Code (WhimsyWorks, Inc.), synced 14 October 2026", url: "https://trustmrr.com/startup/screenshot-to-code-whimsyworks-inc.md", grade: "A", how: "Read the markdown profile in full. Revenue, MRR and subscriptions are read from Stripe through an API key (grade A). Team size, funding, user estimate, profit margin and description are founder-written or not verified (grade C)." },
+    { title: "TrustMRR startup page: Screenshot to Code, with the message from the founder", url: "https://trustmrr.com/startup/screenshot-to-code-whimsyworks-inc", grade: "C", how: "Read the page text in full. Source for the founder's sale message: the reason, the pricing at about 1 times profit, the user count, the margin and what the sale includes." },
+    { title: "GitHub API: repository abi/screenshot-to-code, read 14 October 2026", url: "https://api.github.com/repos/abi/screenshot-to-code", grade: "B", how: "Read in full. GitHub's own counters: stars, forks, licence, creation and last push dates." },
+    { title: "GitHub API: contributors of abi/screenshot-to-code", url: "https://api.github.com/repos/abi/screenshot-to-code/contributors", grade: "B", how: "Read in full, with anonymous contributors included. Commit counts per account, summed on this page." },
+    { title: "Screenshot to Code README on GitHub, October 2026", url: "https://github.com/abi/screenshot-to-code/blob/main/README.md", grade: "C", how: "Read in full from the raw file. Source for the stacks, the default models, the API keys and the setup steps." },
+    { title: "GitHub API: the last 100 commits that changed the README", url: "https://api.github.com/repos/abi/screenshot-to-code/commits?path=README.md", grade: "B", how: "Read the commit dates and messages. Source for the dated model changes in 2026." },
+    { title: "Abi Raja on X, 15 November 2023: the release post", url: "https://x.com/_abi_/status/1724923096774185100", grade: "C", how: "Read through api.fxtwitter.com. Names GPT-4 Vision and DALL-E." },
+    { title: "Hacker News, 16 November 2023: Show HN: Convert any screenshot into clean HTML code using GPT Vision (OSS tool)", url: "https://news.ycombinator.com/item?id=38285228", grade: "B", how: "Read the thread through the Algolia HN API: points, comment count and the founder's replies." },
+    { title: "Abi Raja on X, 4 December 2023: Hit $1k revenue with screenshot to code", url: "https://x.com/_abi_/status/1731766806887452726", grade: "C", how: "Read through api.fxtwitter.com in full." },
+    { title: "Abi Raja's posts on X, June 2023 to May 2026", url: "https://x.com/_abi_", grade: "C", how: "Read 130 of his own posts page by page through api.fxtwitter.com/2/profile/_abi_/statuses. Source for the stars, GitHub trending, the February 2024 sale offer, the model changes, the API limits, Pico's MRR and the ScreenshotOne post that he quoted." },
+    { title: "Abi Raja on X, 3 April 2024: hit 100k ARR a couple of weeks ago", url: "https://x.com/_abi_/status/1775612588350452072", grade: "C", how: "Read through api.fxtwitter.com in full. The post does not name the product." },
+    { title: "Wayback Machine capture list for screenshottocode.com", url: "http://web.archive.org/cdx/search/cdx?url=screenshottocode.com*", grade: "B", how: "Read the list in full. Source for the first capture date of the site and the dated copies of its code." },
+    { title: "Wayback Machine copy of the hosted app's code, 3 December 2023", url: "https://web.archive.org/web/20231203id_/https://screenshottocode.com/assets/index-595f36b1.js", grade: "B", how: "Searched the downloaded code for prices and services: 100 generations for US$15 by Stripe payment link, the own-key option, ScreenshotOne, Plausible and Render." },
+    { title: "Wayback Machine copy of the hosted app's code, 9 February 2024", url: "https://web.archive.org/web/20240209id_/https://screenshottocode.com/assets/index-60bb3dbc.js", grade: "B", how: "Searched the downloaded code for prices: subscriptions at US$15 and US$40 a month, US$150 and US$400 a year." },
+    { title: "The hosted app's live code, read 14 October 2026", url: "https://screenshottocode.com/assets/index-CK-VrwOE.js", grade: "B", how: "Searched the downloaded code for the pricing block and service names. The pricing page itself loads by script and shows no text without it." },
+    { title: "Screenshot to Code Terms of Service, last updated 15 June 2026", url: "https://screenshottocode.com/legal/terms-of-service.html", grade: "C", how: "Read in full. Names WhimsyWorks, Inc., Delaware law, the New York address and the credit rules." },
+    { title: "Abi Raja's X profile", url: "https://x.com/_abi_", grade: "C", how: "Read through api.fxtwitter.com/_abi_: 2,492 followers, location New York, and his own description of Pico and his earlier company." },
+    { title: "Vercel blog, 11 October 2023: Announcing v0: Generative UI", url: "https://vercel.com/blog/announcing-v0-generative-ui", grade: "C", how: "Read in full. Lists transforming images to code as a planned feature." },
+    { title: "v0 documentation: FAQs", url: "https://v0.app/docs/faqs", grade: "C", how: "Read the section on using your own designs." },
+    { title: "Lovable documentation: FAQ", url: "https://docs.lovable.dev/introduction/faq", grade: "C", how: "Read the sections on design and on attached images." },
+    { title: "Bolt home page", url: "https://bolt.new/", grade: "C", how: "Read in full. Offers to start a project from Figma." },
+    { title: "Claude Platform documentation: Vision", url: "https://docs.claude.com/en/docs/build-with-claude/vision", grade: "C", how: "Read the section on providing images through the API." },
+    { title: "OpenAI Help Center: ChatGPT Image Inputs FAQ", url: "https://help.openai.com/en/articles/8400551-chatgpt-image-inputs-faq", grade: "C", how: "Read in full." },
+    { title: "Hacker News search results for screenshot-to-code (Algolia HN API)", url: "https://hn.algolia.com/api/v1/search?query=screenshot-to-code&tags=story", grade: "B", how: "Read in full. Source for the second Show HN of 21 March 2024 and the different 2018 project of the same name." },
+    { title: "Loot Drop database export, 1,749 failed startups", url: "https://www.loot-drop.io/", grade: "C", how: "Local export. AI-written summaries, not independently verified. Source for the failed predecessors." }
+  ]
 }
 ];
 
