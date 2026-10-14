@@ -9342,6 +9342,150 @@ const STORIES = [
     { title: "European Central Bank: euro foreign exchange reference rates, 14 October 2026", url: "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml", grade: "B", how: "Read in full. Source for the US dollar rate used in the pricing table." },
     { title: "Loot Drop database export, failed startups", url: "https://www.loot-drop.io/", grade: "C", how: "Local export. AI-written summaries, not independently verified. Source for the failed predecessors." }
   ]
+},
+{
+  slug: "chatedu",
+  name: "ChatEDU",
+  country: "USA",
+  sector: "Consumer software",
+  productType: "AI study app for students",
+  aiType: "AI-native",
+  team: "small",
+  outcome: "running",
+  evidence: "A",
+  added: "2026-10-14",
+  launchLabel: "12 December 2024",
+  outcomeLabel: "US$120K revenue in the last 12 months, October 2026",
+  sticker: "$120K in 12 months",
+  outcomeUsd: 120117,
+  months: 22,
+  teamLabel: "1 named founder; the sale offer includes 2 engineers for up to 3 months",
+  fundingLabel: "None found",
+  primaryFactor: "Niche",
+  meters: { evidence: 3, copyable: 2, capital: 1 },
+  tags: ["AI-native", "Small team", "Bootstrapped", "Running", "B2C", "Education"],
+  product: "An AI study app. A student uploads class materials, such as PDFs, lecture slides, notes, images or YouTube videos, and gets answers with citations to those files, practice questions, flashcards, study guides, audio summaries and a topic-by-topic progress view. It runs on the web and, since May 2026, as an iOS app.",
+  why: "It starts from the student's own course files instead of general knowledge, so answers and practice questions point back to the material that the class uses. A free plan with monthly limits lets students try it, and Pro is sold by the week or by the month. Stripe shows about US$13,200 a month at the end of 2025; the seller says growth came with little to no marketing, and no source explains how students found it.",
+  summary: [
+    `ChatEDU is an AI study app from ChatEDU, Inc., a US company. A student creates a course and uploads class materials: PDFs, lecture slides, documents, images, pasted text or YouTube videos. The app then answers questions with <dfn>citations</dfn>, references to the place in the student's own files that supports each answer, and turns the same files into practice questions, flashcards, study guides and audio summaries that it calls podcasts. A progress view marks each topic as mastered, in progress or not started. The free plan allows 30 AI chats, 30 practice questions and 2 podcasts per calendar month, and 3 uploads; Pro costs US$20 a month or US$10 a week. No downloaded source says which AI models it uses.`,
+    `The money figures come from <dfn>TrustMRR</dfn>, a site that reads a startup's revenue directly from its payment processor, here Stripe, through an <dfn>API key</dfn>, a password that lets one program read data from another. On 14 October 2026 it showed US$174,644 in total revenue, US$120,117 in the last 12 months, and <dfn>MRR</dfn> (monthly recurring revenue, the subscription income expected each month) of US$7,040 from 362 active subscriptions. The public monthly history starts in November 2025. Its best month is December 2025 with US$13,243; September 2026 brought US$6,698, which is 49.4% less. In January 2026 the same page showed MRR of US$11,765 from 641 subscriptions. The founder named on the profile is Vasco Singh; no source names anyone else.`,
+    `The founder listed the business for sale on TrustMRR on 8 December 2025, in the best month of its public history. The asking price was US$390,000 in January 2026 and is US$220,000 in October 2026. Since July 2025, free general chatbots offer study features of their own, such as ChatGPT's study mode. The revenue numbers on this page are grade A because they come from Stripe through TrustMRR; the product details, the team and the sale terms are statements by the company or the seller, grade C. The page also shows earlier companies that tried to sell students a better way to study.`
+  ],
+  factsCaption: "A study app that Stripe shows at US$120,117 in twelve months, after a peak of about US$13,200 a month in late 2025 and a fall by half since then",
+  factsRead: "How to read this table: a grade A value is read by TrustMRR from Stripe through an API key. A grade C value is a statement by the company, the founder or the seller, or listing data on TrustMRR. A \"calc\" value was computed on this page from the rows above it.",
+  timelineLead: "From a chatbot for course files in 2024 to a business for sale in 2026, 22 months after its founding date. Each entry carries its grade.",
+  pricing: {
+    caption: "ChatEDU prices on 14 October 2026, from the company's pricing page (grade C)",
+    note: "Pro is billed weekly or monthly, and the page shows no yearly plan. The free limits apply per calendar month; the upload allowance resets 30 days after the student reaches the limit. Uploads count files, pasted text and YouTube videos together.",
+    rows: [
+      ["Free", "0", "0", "30 AI chats, 30 practice questions and 2 podcasts a month; 3 uploads"],
+      ["Pro, monthly", "", "20", "unlimited chats, practice questions and uploads"],
+      ["Pro, weekly", "", "10 a week", "unlimited chats, practice questions and uploads"]
+    ]
+  },
+  facts: [
+    { fact: "Revenue in the last 12 months, to 14 October 2026", value: "US$120,117", grade: "A", note: "Stripe payments read by TrustMRR through an API key. The headline figure on this page.", src: [1] },
+    { fact: "Total revenue since the start", value: "US$174,644", grade: "A", note: "TrustMRR, synced 14 October 2026. On 12 January 2026 the same figure was US$93,391.", src: [1, 2] },
+    { fact: "MRR and active subscriptions, October 2026", value: "US$7,040 from 362 subscriptions", grade: "A", note: "TrustMRR snapshot. Revenue in the last 30 days was US$6,888, 7.7% more than in the 30 days before.", src: [1] },
+    { fact: "Run rate from the October 2026 MRR", value: "about US$84,480 a year", grade: "X", note: "Calculated: US$7,040 times 12. Lower than the 12-month figure, because revenue has fallen.", src: [1] },
+    { fact: "Best month in the public history", value: "US$13,243, December 2025", grade: "A", note: "The public monthly history starts in November 2025 (US$13,179). Earlier months are not shown.", src: [1] },
+    { fact: "Fall from December 2025 to September 2026", value: "49.4%, from US$13,243 to US$6,698 a month", grade: "X", note: "Calculated from the monthly history. October 2026 brought US$3,128 in its first 14 days.", src: [1] },
+    { fact: "MRR and subscriptions, January 2026", value: "US$11,765 from 641 subscriptions", grade: "A", note: "Copy of the TrustMRR page in the Wayback Machine, 12 January 2026; the page labels the MRR as estimated. Revenue in the 30 days before was US$11,512.", src: [2] },
+    { fact: "Change from January to October 2026", value: "MRR down 40.2%, subscriptions down 43.5%", grade: "X", note: "Calculated: US$11,765 to US$7,040, and 641 to 362 subscriptions.", src: [1, 2] },
+    { fact: "Revenue before mid-October 2025", value: "US$54,527", grade: "X", note: "Calculated: total revenue of US$174,644 minus the last 12 months, US$120,117. It covers about ten months after the founding date.", src: [1] },
+    { fact: "Revenue per subscription per month", value: "about US$19.45", grade: "X", note: "Calculated: US$7,040 divided by 362. Close to the US$20 monthly Pro price.", src: [1, 6] },
+    { fact: "Profit margin", value: "45% in January 2026, 73.0% in the 30 days to October 2026", grade: "C", note: "Shown on the TrustMRR page. The January page calls it reported. It is not in the profile's list of Stripe-verified metrics.", src: [1, 2] },
+    { fact: "Prices, October 2026", value: "Free, or Pro at US$20 a month or US$10 a week", grade: "C", note: "Company pricing page. Free: 30 AI chats, 30 practice questions and 2 podcasts per calendar month, and 3 uploads.", src: [6] },
+    { fact: "Asking price on TrustMRR", value: "US$390,000 in January 2026, US$220,000 in October 2026", grade: "C", note: "Set by the seller. First listed on 8 December 2025. TrustMRR shows 11 offers received by October 2026. The price cut is 43.6% (calculated).", src: [1, 2] },
+    { fact: "Students claimed on the home page", value: "200,000+", grade: "C", note: "Company claim with no source behind it. Stripe shows 362 active paid subscriptions in October 2026.", src: [4, 1] },
+    { fact: "iOS app", value: "released 1 May 2026; version 1.0.5 on 10 October 2026", grade: "C", note: "Apple App Store record. Seller ChatEDU Inc., free to download, 4 ratings with an average of 5.", src: [10] },
+    { fact: "Team", value: "1 named founder; 2 engineers offered for the handover", grade: "C", note: "Seller message on TrustMRR: \"2 engineers to support growth and marketing up to 3 months after sale.\" No source gives a headcount.", src: [1, 3] },
+    { fact: "Outside funding", value: "none found", grade: "C", note: "No source names an investor, a funding round or an accelerator. The privacy notice reads like a template, with text still in square brackets, and has a standard section on data from shareholders and investors.", src: [8] },
+    { fact: "Time from the founding date to the October 2026 figures", value: "22 months", grade: "X", note: "Calculated: December 2024 to October 2026. The founding date is entered by the founder on TrustMRR; the domain had a web page in April 2024.", src: [1, 13] }
+  ],
+  timeline: [
+    { when: "18 April 2024", what: "First copy of www.chatedu.io in the Internet Archive. Its text loads by script and could not be read.", grade: "C", src: [13] },
+    { when: "30 November 2024", what: "The site offers \"Personalized AI Tools for Students\": practice questions generated from the student's materials, a chatbot that answers with citations to the student's files, and progress tracking by topic.", grade: "C", src: [13] },
+    { when: "12 December 2024", what: "Founding date of ChatEDU Inc., as entered on TrustMRR.", grade: "C", src: [1] },
+    { when: "13 January 2025", what: "Vasco Singh posts on X that ChatEDU \"dynamically identifies courses, extracts notes, and teaches content like your professors\", with an agent update going live that week.", grade: "C", src: [11] },
+    { when: "10 February 2025", what: "Two blog articles on study methods: active recall, and the Feynman and Pomodoro methods. They are the only articles about studying on the site's blog.", grade: "C", src: [16] },
+    { when: "November and December 2025", what: "Stripe revenue of US$13,179 and US$13,243 a month, the highest in the public history.", grade: "A", src: [1] },
+    { when: "8 December 2025", what: "First listed for sale on TrustMRR.", grade: "C", src: [1] },
+    { when: "12 January 2026", what: "MRR of US$11,765 from 641 subscriptions and US$93,391 in total revenue. Asking price US$390,000.", grade: "A", src: [2] },
+    { when: "1 May 2026", what: "ChatEDU Inc. releases an iOS app on the App Store.", grade: "C", src: [10] },
+    { when: "June to September 2026", what: "Revenue falls to US$8,795, US$7,549, US$6,707 and US$6,698 a month. September, the start of the new school year, is flat against August.", grade: "A", src: [1] },
+    { when: "2 September 2026", what: "A redesign for web and iOS adds guided learning paths, chapter progress and topic-by-topic practice.", grade: "C", src: [9] },
+    { when: "14 October 2026", what: "MRR of US$7,040 from 362 subscriptions and US$120,117 in the last 12 months. Asking price US$220,000. The founder's X profile names a job at another company, Arzana.", grade: "A", src: [1, 12] }
+  ],
+  mechanism: [
+    { title: "Start from the student's files", text: "Every tool works on what the student uploads: lecture slides, PDFs, notes, images, pasted text or YouTube videos. Answers carry citations to those files, and the About page tells students to check answers and citations against the original materials and the instructor's guidance. Nothing on the site offers finished homework or text to hand in; the tools produce explanations and practice." },
+    { title: "One upload, several study formats", text: "The same file becomes a chat, practice questions, flashcards, a study guide and an audio summary. The student uploads once and studies the material in several forms. Since September 2026 a progress view marks each topic as mastered, in progress or not started." },
+    { title: "Short billing periods", text: "Pro is sold for US$10 a week or US$20 a month, with no yearly plan on the pricing page, so a student can pay for a few weeks and stop. Revenue per active subscription is about US$19.45 a month, close to the monthly price." },
+    { title: "A free plan with monthly limits", text: "The free plan allows 30 AI chats, 30 practice questions and 2 podcasts per calendar month, and 3 uploads. The pricing page presents Pro as the step after these limits: unlimited practice questions, chats and uploads." }
+  ],
+  howBuilt: {
+    intro: "These details come from the company's own pages, the page source of its site and the App Store record. They are grade C, except what the page source shows directly.",
+    items: [
+      "The web app is built with Next.js, a framework for React web sites; its images load through Next.js image addresses.",
+      "The page source opens connections to Vercel's analytics scripts and to PostHog, a product analytics service that records how visitors use a site, and its file addresses carry Vercel deployment IDs.",
+      "Payments run through Stripe. TrustMRR reads the revenue from Stripe through an API key, and the privacy notice names Stripe as the payment provider.",
+      "No downloaded source names the AI models or the model provider.",
+      "The site is offered in 15 languages, among them Spanish, Hindi, Japanese and Chinese.",
+      "An iOS app, ChatEDU: Study Tool & AI Notes, has been on the App Store since 1 May 2026, released by ChatEDU Inc.",
+      "Students can bring PDFs, slides, documents, images, pasted text and YouTube videos; the free plan counts all of them against 3 uploads."
+    ],
+    src: [4, 1, 8, 10, 6]
+  },
+  predecessorsIntro: "Five companies in the Loot Drop database tried to sell students a better way to study, and failed. The values below are from that database and are not independently verified.",
+  predecessors: [
+    { name: "Flashnotes", years: "2010 to 2016", funding: "US$1.47M", cause: "Competition", promise: "A marketplace where college students sold their class notes and study guides to other students.", died: "Course Hero and Chegg had better products and more money, and Flashnotes could not control the quality of the notes.", url: "https://www.loot-drop.io/startup/154-flashnotes" },
+    { name: "Grockit", years: "2007 to 2015", funding: "US$44.4M", cause: "Competition", promise: "Social, game-like test preparation for the SAT and the GMAT.", died: "According to the database, Kaplan bought it in 2013 and the product faded inside the larger test-preparation company.", url: "https://www.loot-drop.io/startup/196-grockit" },
+    { name: "Knewton", years: "2008 to 2020", funding: "US$182.3M", cause: "Competition", promise: "Adaptive learning: software that changes each lesson to fit the student.", died: "It spent its funding on complex AI that schools could not afford, while Khan Academy gave content away for free.", url: "https://www.loot-drop.io/startup/281-knewton" },
+    { name: "Kno", years: "2009 to 2014", funding: "US$73M", cause: "Competition", promise: "Interactive digital textbooks for students.", died: "The large publishers made their own digital textbooks faster and cheaper than Kno expected.", url: "https://www.loot-drop.io/startup/282-kno" },
+    { name: "InstaGrok", years: "2010 to 2013", funding: "US$500K", cause: "Competition", promise: "A search tool for students that showed results as a map of connected ideas.", died: "Schools did not change their methods, and free tools such as Quizlet and Khan Academy kept the students.", url: "https://www.loot-drop.io/startup/1700-instagrok" }
+  ],
+  whatChanged: [
+    `The five predecessors had to make or buy the study material: notes written by other students, digital textbooks, test-preparation courses, or adaptive lessons, for which Knewton raised US$182.3 million according to the database. ChatEDU has no content library. The student brings the material, and an AI model turns it into answers, questions, guides and audio. That is why a company with one named founder and no reported funding could reach about US$13,000 a month in Stripe revenue within a year of its founding date.`,
+    `The same fact is the risk. What ChatEDU does with a student's files, the general AI assistants now do as well: ChatGPT added a study mode for all logged-in users, including the free plan, on 29 July 2025, and Google's NotebookLM has turned uploaded documents into audio discussions since September 2024. In the database, several predecessors lost to free products such as Khan Academy and Quizlet. ChatEDU's revenue fell by half in the nine months after December 2025, while these free tools were available to every student; the sources do not say whether they caused the fall.`
+  ],
+  copy: {
+    verdict: "The method, yes. The timing is harder now.",
+    text: "A small team built a study app with no content of its own and reached about US$13,000 a month in Stripe revenue within a year. The method can be copied: the student supplies the material, an AI model does the work, and short billing periods fit the school calendar. The difficulty in 2026 is that free assistants from OpenAI and Google offer much of the same.",
+    steps: [
+      "Build on the user's own material, so you need no content library and every answer can cite its source.",
+      "Turn one upload into several study formats: chat, practice questions, flashcards, guides and audio.",
+      "Offer a free plan with monthly limits and a short paid period, such as one week, for exam time.",
+      "Verify the revenue publicly, for example on TrustMRR, before you try to sell the business."
+    ],
+    open: "Study tools for one exam or one profession, where the general assistants do not know the format: medical licensing exams, bar exams, professional certifications, and courses taught in languages other than English."
+  },
+  watch: [
+    { title: "Revenue has halved since December 2025", text: "Stripe shows US$13,243 in December 2025 and US$6,698 in September 2026, a fall of 49.4%. From January to October 2026, MRR fell 40.2% and active subscriptions 43.5%. The seller message on the listing says \"Growth is consistent with little to no marketing\"; no source explains the fall. The last 30 days were 7.7% above the 30 days before." },
+    { title: "Free chatbots with study modes", text: "OpenAI launched study mode in ChatGPT on 29 July 2025 for logged-in users on the Free, Plus, Pro and Team plans. Google's NotebookLM has made audio discussions of uploaded sources since 11 September 2024, the same idea as ChatEDU's podcasts. Both come from companies far larger than ChatEDU. The sources do not say how many ChatEDU users moved to them." },
+    { title: "A school-year pattern without the September rise", text: "Revenue was highest at the end of the autumn term, in November and December 2025. It fell 16.0% in January, rose 10.4% in March, and averaged US$7,684 a month from June to August. A business that follows the school year should rise again in September, but September 2026 was flat against August (0.1% lower). Only one school year of monthly figures is public, so the pattern cannot be compared with an earlier year." },
+    { title: "For sale, at a lower price", text: "Listed on TrustMRR since 8 December 2025. The asking price fell from US$390,000 in January 2026 to US$220,000 in October 2026, 43.6% less, with 11 offers received. The seller offers seller financing and 2 engineers for up to 3 months after the sale. In October 2026 the founder's X profile names a job at another company." },
+    { title: "Claims on the home page", text: "The home page says \"Join 200,000+ students\" and shows the logos of ten universities, among them Harvard, MIT and Stanford, under \"Trusted by top students\". No source supports these claims, and three of the six student quotes on the page carry the label \"Sample\". Stripe shows 362 active subscriptions." },
+    { title: "What the figures do not cover", text: "TrustMRR counts Stripe payments only. The iOS app has been on the App Store since May 2026, and the sources do not say whether it sells subscriptions through Apple, which would not appear here. The team size is not published; the only numbers are 1 named founder and 2 engineers offered for the handover." }
+  ],
+  sources: [
+    { title: "TrustMRR markdown profile: ChatEDU Inc., synced 14 October 2026", url: "https://trustmrr.com/startup/chatedu-inc.md", grade: "A", how: "Read the markdown profile (data as of October 2026). The Stripe-verified revenue, MRR, subscriptions and monthly history are grade A; the description, profit margin, asking price and seller message are founder-written or listing data, grade C." },
+    { title: "TrustMRR page for ChatEDU Inc., Wayback Machine copy of 12 January 2026", url: "https://web.archive.org/web/20260112175447/https://trustmrr.com/startup/chatedu-inc", grade: "A", how: "Read in full. Source for the January 2026 MRR, subscriptions, total revenue, profit margin and asking price." },
+    { title: "TrustMRR founder page: Vasco Singh", url: "https://trustmrr.com/founder/vascosingh", grade: "C", how: "Read in full. Ties the founder and his X account to ChatEDU Inc." },
+    { title: "ChatEDU home page, read 14 October 2026", url: "https://chatedu.io/", grade: "C", how: "Read in full, with the page source. Source for the features, the 200,000 claim, the university logos, the sample quotes, the 15 languages and the services that the page loads." },
+    { title: "ChatEDU About page", url: "https://chatedu.io/en/about", grade: "C", how: "Read in full. Names ChatEDU, Inc. as the provider and tells students to check answers against their materials." },
+    { title: "ChatEDU pricing page, read 14 October 2026", url: "https://chatedu.io/en/pricing", grade: "C", how: "Read in full. Source for the free limits and the Pro prices." },
+    { title: "ChatEDU Terms of Service", url: "https://chatedu.io/en/terms-of-service", grade: "C", how: "Read the sections on the provider, the output and the governing law. Names ChatEDU, Inc., chooses Delaware law and gives a mailing address in New Jersey. It does not say where the company is incorporated." },
+    { title: "ChatEDU Privacy Notice", url: "https://chatedu.io/privacy", grade: "C", how: "Read in full. Names ChatEDU, Inc. and Stripe as the payment provider; contains template text in square brackets." },
+    { title: "ChatEDU blog, 2 September 2026: Introducing the new ChatEDU", url: "https://chatedu.io/en/blog/introducing-the-new-chatedu", grade: "C", how: "Read in full. Source for the redesign and the link to the iOS app." },
+    { title: "Apple App Store: ChatEDU: Study Tool & AI Notes", url: "https://apps.apple.com/us/app/chatedu-study-tool-ai-notes/id6761738958", grade: "C", how: "Read the App Store lookup record (itunes.apple.com/lookup?id=6761738958). Source for the seller, the release date, the version and the ratings." },
+    { title: "Vasco Singh on X, 13 January 2025: AI agents are the most powerful tool a student can have today", url: "https://x.com/VascoSingh/status/1878941084207980696", grade: "C", how: "Read in full through api.fxtwitter.com. The only post about ChatEDU in the part of his timeline that the API returned." },
+    { title: "Vasco Singh's X profile, read 14 October 2026", url: "https://x.com/VascoSingh", grade: "C", how: "Read the profile through api.fxtwitter.com. Source for the job named in the bio." },
+    { title: "ChatEDU home page, Wayback Machine copy of 30 November 2024", url: "https://web.archive.org/web/20241130220109/https://www.chatedu.io/", grade: "C", how: "Read in full. The archive's earliest copy, of 18 April 2024, loads its text by script and could not be read." },
+    { title: "OpenAI, 29 July 2025: Introducing study mode", url: "https://openai.com/index/chatgpt-study-mode/", grade: "C", how: "Read in full. Source for the launch date and the plans that get study mode." },
+    { title: "Google, 11 September 2024: NotebookLM now lets you listen to a conversation about your sources", url: "https://blog.google/technology/ai/notebooklm-audio-overviews/", grade: "C", how: "Read the opening section. Source for the Audio Overview feature and its date." },
+    { title: "ChatEDU blog index", url: "https://chatedu.io/en/blog", grade: "C", how: "Read in full. Lists three posts: two on study methods dated 10 February 2025 and the redesign post of 2 September 2026." },
+    { title: "Loot Drop database export, 1,749 failed startups", url: "https://www.loot-drop.io/", grade: "C", how: "Local export. AI-written summaries, not independently verified. Source for the failed predecessors." }
+  ]
 }
 ];
 
