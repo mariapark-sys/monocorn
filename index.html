@@ -9797,6 +9797,171 @@ const STORIES = [
     { title: "Starter Story: Visualizee.ai, revenue, growth and monetization", url: "https://www.starterstory.com/businesses/visualizee-ai", grade: "C", how: "Read in full. The page says it was compiled by Starter Story's AI research system from public sources and not written by the founder. Used only for the growth channels it lists." },
     { title: "Loot Drop database export, 1,749 failed startups", url: "https://www.loot-drop.io/", grade: "C", how: "Local export. AI-written summaries, not independently verified. Source for the failed predecessors." }
   ]
+},
+{
+  slug: "koe",
+  name: "Koe",
+  country: "United States",
+  sector: "Information Technology",
+  productType: "AI film generator and editor that works from one sentence",
+  aiType: "AI-native",
+  team: "solo",
+  outcome: "running",
+  evidence: "A",
+  added: "2026-10-14",
+  launchLabel: "10 April 2026",
+  outcomeLabel: "US$88K a year run rate, October 2026",
+  sticker: "$88K/yr run rate",
+  outcomeUsd: 88224,
+  months: 6,
+  teamLabel: "1 named founder, who writes solo founder; no headcount in any source",
+  fundingLabel: "None found",
+  primaryFactor: "Timing",
+  meters: { evidence: 3, copyable: 2, capital: 1 },
+  tags: ["AI-native", "Solo founder", "Bootstrapped", "Running", "B2C", "Video"],
+  product: "A web app that writes a storyboard from one sentence, keeps the characters the same from scene to scene, generates each scene with video models rented from other companies (LTX, Kling, Seedance), and lets the user edit and export the film. Users pay with prepaid credits, on plans from US$12 to US$600 a month.",
+  why: "It put the newest video models, among them ByteDance's Seedance 2.0 from 14 April 2026, inside a storyboard editor that keeps characters consistent. Revenue grew from US$645 in May 2026 to US$32,697 in July. Then it fell by three quarters by September, and no source says why.",
+  summary: [
+    `Koe is a web app that turns one sentence into a short film. It writes a <dfn>storyboard</dfn>, a list of scenes with one still picture for each scene, keeps the same characters from scene to scene, and then sends each scene to a <dfn>text-to-video model</dfn>, an AI model that turns a description or a picture into a moving clip. Koe does not train these models. They are made by Lightricks (LTX), Kuaishou (Kling) and ByteDance (Seedance), and Koe pays for each use through an <dfn>API</dfn>, an interface that lets one program buy work from another company's servers. Users pay with <dfn>credits</dfn>, prepaid units that each generated scene uses up. Plans cost US$12 to US$600 a month.`,
+    `Koe launched on Product Hunt on 10 April 2026 and got 6 upvotes. The launch was submitted by Hong Xuan Kow, and the maker's comment says "I'm Xuan, solo founder of Koe". On 14 April Koe added ByteDance's Seedance 2.0. Stripe records, read by TrustMRR, show US$645 of revenue in May, US$7,177 in June and US$32,697 in July. On 16 July the founder posted a Stripe screenshot with about US$10,100 in <dfn>MRR</dfn>, monthly recurring revenue, the subscription revenue of one month. Then revenue fell: US$20,414 in August and US$8,616 in September. On 14 October 2026 the MRR was US$7,352 from 360 subscriptions, a run rate of US$88,224 a year, and total revenue was US$73,304.`,
+    `The revenue numbers are grade A, because TrustMRR reads them from Stripe, the payment processor, through an API key. The founder's posts and Koe's own pages are grade C. No source explains the fall after July, and no source gives a headcount. Under terms dated 15 September 2026, Koe also offers to turn authors' books into paid video series. The page also shows five earlier companies that promised easy video for everyone or sold stories as short paid video.`
+  ],
+  factsCaption: "A video app that made US$32,697 in its best month and had US$7,352 in MRR six months after launch, with revenue verified from Stripe",
+  factsRead: "How to read this table: a grade A value is read by TrustMRR from Stripe, the payment processor, through an API key. A grade C value is a founder statement, a company page, a price list or an encyclopedia article. A \"calc\" value was computed on this page from the rows above it.",
+  timelineLead: "From a Product Hunt launch with 6 upvotes to US$10,000 in MRR in three months, then a fall by three quarters. Each entry carries its grade.",
+  pricing: {
+    caption: "Koe plans in October 2026, from the company's pricing page and home page (grade C)",
+    note: "The pricing page shows monthly prices and says that yearly billing saves 20%. The home page shows Hobby at US$10 and Starter at US$24 a month billed yearly, which saves US$24 and US$72 a year. The yearly prices of the larger plans load by script and were not read. A 6-second scene on the entry model, LTX 2.3 Pro, uses about 80 credits including its start frame; Kling and Seedance scenes cost more. Credits are spent when a generation starts and are not refunded. One-time credit packs never expire.",
+    rows: [
+      ["Free", "0", "0", "720p with watermark; still frames only, motion needs a plan"],
+      ["Hobby", "10", "12", "800 credits a month, 1080p with watermark"],
+      ["Starter", "24", "30", "2,500 credits a month, no watermark"],
+      ["Pro", "", "90", "8,000 credits a month"],
+      ["Team", "", "240", "22,000 credits a month, 4K, priority queue"],
+      ["Ultra", "", "600", "60,000 credits a month, 4K, API access"],
+      ["Enterprise", "", "custom", "custom LoRA character training, single sign-on"],
+      ["Credit packs", "5.99 to 109.99 one-time", "", "100 to 3,000 credits, never expire"]
+    ]
+  },
+  facts: [
+    { fact: "Monthly recurring revenue, 14 October 2026", value: "US$7,352", grade: "A", note: "TrustMRR, from the Stripe API. 360 active subscriptions. Two days earlier the profile showed US$7,568 and 367 subscriptions.", src: [1] },
+    { fact: "Run rate from that MRR", value: "US$88,224 a year", grade: "X", note: "Calculated: 7,352 times 12. Revenue in the last 30 days, US$7,380, is almost equal to the MRR, so one-time payments do not raise this figure.", src: [1] },
+    { fact: "Verified revenue, all time to 14 October 2026", value: "US$73,304", grade: "A", note: "TrustMRR, from Stripe. Equal to the last-12-months figure, so there was no revenue before April 2026.", src: [1] },
+    { fact: "Revenue by month, 2026", value: "April US$70, May US$645, June US$7,177, July US$32,697, August US$20,414, September US$8,616, 1 to 14 October US$3,684", grade: "A", note: "TrustMRR monthly timeline, in UTC calendar months.", src: [1] },
+    { fact: "Best month", value: "July 2026, US$32,697", grade: "A", note: "4.56 times June, and 44.6% of all revenue to date (calculated).", src: [1] },
+    { fact: "Fall from July to September 2026", value: "73.6%", grade: "X", note: "Calculated: 1 minus 8,616 divided by 32,697. August was 37.6% below July, and September 57.8% below August.", src: [1] },
+    { fact: "Last 30 days against the two months before", value: "US$7,380 against US$16,677 a month, or 44%", grade: "X", note: "Calculated: 40,734 for the last 3 months minus 7,380 for the last 30 days, divided by 2, is 16,677; 7,380 divided by 16,677 is 0.443. TrustMRR shows the last 30 days 22.5% below the 30 days before them.", src: [1] },
+    { fact: "MRR, 16 July 2026", value: "about US$10,100", grade: "C", note: "Founder's post: Koe has reached 10k in MRR, and monthly revenue grew 10 times in less than a month. The attached Stripe screenshot shows US$10.1K MRR, US$32,200 gross volume and US$30,400 net volume from sales for April 2025 to July 2026.", src: [2] },
+    { fact: "Change in MRR, 16 July to 14 October 2026", value: "minus 27.2%", grade: "X", note: "Calculated: 7,352 divided by 10,100, minus 1. Revenue fell much faster than MRR.", src: [1, 2] },
+    { fact: "July revenue against the mid-July MRR", value: "3.24 times", grade: "X", note: "Calculated: 32,697 divided by 10,100. The difference comes from payments outside the mid-July MRR: one-time credit packs, yearly plans paid in advance, and subscriptions that started after 16 July or ended soon after they started. The sources do not split it.", src: [1, 2] },
+    { fact: "MRR per active subscription", value: "about US$20.42 a month", grade: "X", note: "Calculated: 7,352 divided by 360. Between the monthly prices of Hobby (US$12) and Starter (US$30).", src: [1, 7] },
+    { fact: "Profit margin, last 30 days", value: "93.0%", grade: "C", note: "A TrustMRR snapshot that is not in its list of metrics read from the payment provider. The profile does not say which costs it subtracts, so this page does not use it.", src: [1] },
+    { fact: "Launch", value: "10 April 2026, on Product Hunt", grade: "C", note: "6 upvotes, 1 comment, 68th product of the day. The first Stripe revenue, US$70, came in the same month.", src: [3, 4, 1] },
+    { fact: "Founded date on the TrustMRR profile", value: "8 April 2025", grade: "C", note: "Entered by the founder. The Stripe screenshot also starts its range in April 2025, but revenue starts in April 2026.", src: [1, 2] },
+    { fact: "Team", value: "1 named founder; no headcount in any source", grade: "C", note: "TrustMRR and Product Hunt name one founder, who writes 'solo founder of Koe'. The careers page says 'We keep the team small' and lists open roles in research and engineering.", src: [1, 4, 13] },
+    { fact: "Outside funding", value: "none found", grade: "C", note: "Koe is not in the Y Combinator company directory, and no source reports a funding round. The About page gives an email address for press and investors.", src: [15, 12] },
+    { fact: "Video models on the plans", value: "LTX 2.3 Pro, Kling 3.0 and Kling O3, Seedance 2.0", grade: "C", note: "Pricing page feature table. The privacy policy names ByteDance/BytePlus (Seedance), OpenAI, Anthropic, Google, fal.ai, Lightricks/LTX and ElevenLabs as AI model providers.", src: [7, 9] },
+    { fact: "Credits for one 6-second scene on the entry model", value: "about 60 for motion plus 20 for the start frame", grade: "C", note: "Pricing page answer for LTX 2.3 Pro. It adds that Kling and Seedance cost more, without numbers.", src: [7] },
+    { fact: "What a user pays for that scene", value: "US$0.80 to US$4.79, or US$0.13 to US$0.80 a second", grade: "X", note: "Calculated: 80 credits at US$0.01 a credit (Ultra, US$600 for 60,000 credits) up to US$0.0599 a credit (a pack of 100 credits for US$5.99). On Hobby, at US$0.015 a credit, the scene costs US$1.20.", src: [7] },
+    { fact: "List price of a 6-second clip at model providers", value: "US$0.48 to US$2.40", grade: "X", note: "Calculated: 6 seconds of Veo 3.1 on the Gemini API at US$0.08 a second (Lite, 1080p) to US$0.40 (Standard). Kling v3 Pro on fal.ai is US$0.14 a second, or US$0.84 for 6 seconds. Koe's own costs are not published.", src: [16, 17] },
+    { fact: "Time from launch to the October 2026 figure", value: "6 months", grade: "X", note: "Calculated: 10 April 2026 to 14 October 2026, 187 days.", src: [3, 1] }
+  ],
+  timeline: [
+    { when: "28 February 2025", what: "The founder opens the X account @xuan_xuan_hh. Its bio says: founder, math olympiad medalist, ex-Meta.", grade: "C", src: [6] },
+    { when: "8 April 2025", what: "The founded date that the founder entered on TrustMRR. Stripe records no revenue for the next twelve months.", grade: "C", src: [1] },
+    { when: "18 March 2026", what: "Koe's X account @koedotsh is created, with New York City as its location.", grade: "C", src: [5] },
+    { when: "10 April 2026", what: "Launch on Product Hunt as Koe, AI Film Studio: type one sentence, get a complete cinematic film. 6 upvotes, 68th of the day.", grade: "C", src: [3, 4] },
+    { when: "14 April 2026", what: "Koe adds Seedance 2.0 and Kling Omni v3. ByteDance had started its own consumer version of Seedance 2.0 outside China on 26 March, in CapCut, and the United States was not among the first markets.", grade: "C", src: [5, 21] },
+    { when: "June 2026", what: "Revenue reaches US$7,177 in the month, up from US$645 in May.", grade: "A", src: [1] },
+    { when: "16 July 2026", what: "The founder posts that Koe has reached US$10,000 in MRR and that monthly revenue grew 10 times in less than a month. The post had 289 views.", grade: "C", src: [2] },
+    { when: "July 2026", what: "Best month: US$32,697 of verified revenue. ByteDance releases Seedance 2.5 on 31 July.", grade: "A", src: [1, 21] },
+    { when: "17 August 2026", what: "Koe 2.0 is announced, available exclusively with Seedance 2.0 models. August revenue is US$20,414.", grade: "C", src: [5, 1] },
+    { when: "15 September 2026", what: "Platform Terms and Author Terms, version 2026-09-15. Koe offers to turn a book into a season of 18 to 24 episodes for US$499 and to sell it on a storefront at koe.show, keeping 20% of each sale.", grade: "C", src: [10, 11, 14] },
+    { when: "September 2026", what: "Revenue falls to US$8,616 in the month.", grade: "A", src: [1] },
+    { when: "24 September 2026", what: "OpenAI shuts down the Sora API, after it closed the Sora app on 26 April.", grade: "C", src: [20] },
+    { when: "14 October 2026", what: "MRR is US$7,352 from 360 active subscriptions, and total verified revenue is US$73,304. Koe is not listed for sale.", grade: "A", src: [1] }
+  ],
+  mechanism: [
+    { title: "An editor on top of rented models", text: "Koe does not train a video model. It writes the storyboard, keeps characters consistent, and sends each scene to LTX, Kling or Seedance. When a provider releases a better model, Koe adds it within days: Seedance 2.0 and Kling Omni v3 on 14 April 2026, and Koe 2.0, announced as available only with Seedance 2.0 models, on 17 August." },
+    { title: "Timing with a new model", text: "Koe offered Seedance 2.0 from 14 April 2026. ByteDance's own consumer version, started outside China on 26 March, did not include the United States in its first markets. Revenue rose from US$645 in May to US$32,697 in July. No source links the two; the dates are the only evidence." },
+    { title: "Free still frames, paid motion", text: "The free plan makes storyboards and still frames, and motion clips need a paid plan. The user sees the look of the film before paying for the expensive step, the generation of video." },
+    { title: "Credits spent at the start of each generation", text: "Plans give a monthly number of credits, and packs of 100 to 3,000 credits can be added. Credits are used when a generation starts, whether or not the user keeps the result, and they are not refunded." }
+  ],
+  howBuilt: {
+    intro: "These details come from Koe's own pages: the privacy policy, the pricing page and the terms. They are grade C.",
+    items: [
+      "The site is a Next.js web app; its page source shows the Next.js markers. It runs on Vercel and Railway.",
+      "Supabase stores account data and signs users in. Cloudflare R2 and the Cloudflare network store and serve the videos.",
+      "Stripe takes the payments. PostHog and Sentry measure usage and errors. Meta Pixel and the Conversions API measure the ads for the author program.",
+      "AI model providers for frames, videos, audio and assistant answers: ByteDance/BytePlus (Seedance), OpenAI, Anthropic, Google, fal.ai, Lightricks/LTX and ElevenLabs.",
+      "Video models on the plans: LTX 2.3 Pro as the entry model, Kling 3.0 and Kling O3, and Seedance 2.0. Enterprise adds LoRA training, a small add-on model trained on a customer's own character images.",
+      "Public channels: a Product Hunt launch, X posts by the founder and by the company with 18 to 388 views each, a Discord server, a subreddit and a referral program. No source says which channel brought the July customers."
+    ],
+    src: [9, 7, 10, 3, 5, 6, 8]
+  },
+  predecessorsIntro: "Five companies in the Loot Drop database promised that anyone could make good video without skills, or tried to sell stories as short paid video. The values below are from that database and are not independently verified.",
+  predecessors: [
+    { name: "HighlightCam", years: "2009 to 2012", funding: "US$500K", cause: "Competition", promise: "Professional-looking video edits, made automatically by an algorithm.", died: "Smartphone apps and free editing software did the same job, and the market did not see the need.", url: "https://www.loot-drop.io/startup/1636-highlightcam" },
+    { name: "Fuzzwich", years: "2007 to 2010", funding: "US$20K", cause: "Competition", promise: "Simple animation for people with no animation skills.", died: "It stayed on the desktop while users moved to phones, and Adobe had more money.", url: "https://www.loot-drop.io/startup/1655-fuzzwich" },
+    { name: "Viddy", years: "2011 to 2014", funding: "US$30M", cause: "Competition", promise: "Filters that make phone videos look professional.", died: "Instagram added video in 2013 and Vine spread fast; Viddy lost its users to both.", url: "https://www.loot-drop.io/startup/2190-viddy" },
+    { name: "Vook", years: "2009 to 2017", funding: "US$5M", cause: "No Market Need", promise: "Books combined with video.", died: "Readers kept reading plain e-books, and publishers did not adopt the format.", url: "https://www.loot-drop.io/startup/721-vook" },
+    { name: "Quibi", years: "2018 to 2020", funding: "US$1.75B", cause: "No Market Need", promise: "Short premium episodes for phones, behind a paywall.", died: "Lockdowns removed the commute it was designed for, and free short video on TikTok kept the audience.", url: "https://www.loot-drop.io/startup/1891-quibi" }
+  ],
+  whatChanged: [
+    `HighlightCam, Fuzzwich and Viddy promised that anyone could make good-looking video without skills. They had to build the effects themselves, and larger platforms (phone apps, Adobe, Instagram) added the same features for free. Vook and Quibi tried to sell stories as video, and readers and viewers did not pay for the format. Koe's offer to turn books into paid video seasons, in terms dated 15 September 2026, is the same bet as Vook and Quibi, with AI cutting the production price to US$499 a season.`,
+    `What is different: the hard part, the video model, is now rented by the second from companies that compete to sell it, so one person can build the editor around it. The same fact is the risk. Google, Runway and Kuaishou sell the same or similar models directly, and Runway includes Kling 3.0 and Seedance 2.5 in its own plans. An editor on top of rented models keeps its customers only while its workflow is better than the model makers' own apps.`
+  ],
+  copy: {
+    verdict: "The method, yes. The July spike, no.",
+    text: "One person built a storyboard editor on top of rented video models and reached about US$10,000 in MRR three months after launch. The spike came with new models and faded within two months. What remains, US$7,352 a month from 360 subscriptions, is what the workflow itself holds.",
+    steps: [
+      "Build the workflow that the model makers do not build: storyboard, consistent characters, a timeline and export.",
+      "Sell prepaid credits priced per model and per second, and spend them when the generation starts.",
+      "Give cheap still frames for free and charge for the expensive motion step.",
+      "Add each new model within days of its release and post about it, but do not depend on one model.",
+      "Connect Stripe to a public revenue page, so that readers and buyers can check the numbers."
+    ],
+    open: "Narrow uses where a general video app is weak: music videos from lyrics, ads for small brands, series from books, and countries where a new model is not yet sold directly."
+  },
+  watch: [
+    { title: "Revenue fell by three quarters after July", text: "Verified revenue was US$32,697 in July 2026, US$20,414 in August and US$8,616 in September, 73.6% below July. MRR fell less, from about US$10,100 on 16 July (founder's screenshot) to US$7,352 on 14 October, minus 27.2%. No source explains the fall. Possible causes that this page could not verify: a launch spike of one-time credit purchases, users moving to other apps after Seedance 2.5 (31 July) and wider Seedance access, or cancelled subscriptions. In the last 30 days revenue averaged US$246 a day and in the last 7 days US$269 a day, so the fall has slowed to the level of the subscriptions." },
+    { title: "The model makers sell to the same users", text: "Google sells Veo 3.1 and its Flow video studio inside Google AI plans: AI Plus at US$4.99 a month with 200 Flow credits, AI Pro at US$19.99 with 1,000 Flow credits and a limited Veo 3.1 Lite trial, and AI Ultra from US$99.99 with Veo 3.1. Runway's Standard plan costs US$12 a month billed yearly and includes Kling 3.0, and its Pro plan lists Seedance 2.5. Kuaishou runs Kling as its own service. Runway raised US$315 million in February 2026. OpenAI closed the Sora app on 26 April 2026 and the Sora API on 24 September 2026, so even a large maker can leave this market." },
+    { title: "Video generation is paid by the second", text: "Veo 3.1 costs US$0.05 to US$0.60 a second on the Gemini API, and Kling v3 Pro US$0.14 a second on fal.ai; fal.ai bills Seedance 2.0 by tokens. A 6-second scene on Koe's cheapest model brings Koe US$0.80 to US$4.79, depending on the plan or pack. Koe does not publish the credit price of Kling and Seedance scenes, so its margin cannot be computed. TrustMRR shows a 93.0% profit margin for the last 30 days but does not say which costs it counts. Credits are not refunded when a user discards a result, so the user pays for failed generations." },
+    { title: "Dependence on model providers", text: "Koe 2.0 was announced as available exclusively with Seedance 2.0 models. In February 2026 Disney and Netflix sent ByteDance cease-and-desist letters over Seedance 2.0, and in March two US senators asked ByteDance to shut it down. If a provider raises prices, restricts access or closes a model, as OpenAI did with the Sora API, Koe must move its users to another model, and its product changes with it." },
+    { title: "Platform rules on AI video and likeness", text: "YouTube requires creators to disclose realistic AI-generated content, and its inauthentic content policy, renamed and clarified on 15 July 2025, excludes mass-produced or repetitive videos from monetization; Koe's pricing page tells users they can earn YouTube ad revenue. TikTok labels AI-generated content automatically when it is uploaded from some other platforms with C2PA Content Credentials, metadata that records how a file was made. Meta adds AI info labels. Koe's own Platform Terms forbid real people's likenesses or voices without their written permission." },
+    { title: "Little evidence about the team and the new product", text: "Only one person is named: the founder, who writes 'solo founder of Koe' on Product Hunt. The careers page lists open research and engineering roles and says the team is small, but no source gives a headcount. The book-season product is sold under terms dated 15 September 2026, and TrustMRR does not split revenue by product. The home page says Koe was featured in Rolling Stone, Billboard, Wired and Variety; this page could not verify that." }
+  ],
+  sources: [
+    { title: "TrustMRR profile of Koe (listed as Hong Xuan Kow), revenue verified from Stripe, synced 14 October 2026", url: "https://trustmrr.com/startup/hong-xuan-kow", grade: "A", how: "Read the markdown profile in full and compared it with a copy cached on 12 October 2026. Revenue, MRR and subscriptions come from the Stripe API; the description, founded date and pricing text are written by the founder (grade C)." },
+    { title: "The founder's X post, 16 July 2026: Koe has reached 10k in MRR", url: "https://x.com/xuan_xuan_hh/status/2077723437729284451", grade: "C", how: "Read in full through api.fxtwitter.com, with the attached screenshot of the Stripe dashboard." },
+    { title: "Product Hunt: Koe, AI Film Studio, launched 10 April 2026", url: "https://www.producthunt.com/products/koe-ai-film-studio", grade: "C", how: "Read the page and its page data. Source for the launch date (scheduled 10 April 2026, 00:01 Pacific time) and the description." },
+    { title: "Hunted.space launch record: Koe, AI Film Studio", url: "https://hunted.space/product/koe-ai-film-studio", grade: "C", how: "Read in full. Source for the 6 upvotes, the 68th place of the day, the name of the person who submitted it and the maker's comment." },
+    { title: "Koe's X account @koedotsh, posts from April to August 2026", url: "https://x.com/koedotsh", grade: "C", how: "Read the profile and its 11 visible posts through api.fxtwitter.com, two pages." },
+    { title: "The founder's X profile @xuan_xuan_hh", url: "https://x.com/xuan_xuan_hh", grade: "C", how: "Read the profile through api.fxtwitter.com. The full timeline returned an error, so only the 10 posts with images or video were read." },
+    { title: "Koe pricing page, read 14 October 2026", url: "https://koe.sh/pricing", grade: "C", how: "Read in full, including the answers to its questions in the page data." },
+    { title: "Koe home page, read 14 October 2026", url: "https://koe.sh/", grade: "C", how: "Read in full, including the answers to its questions in the page data." },
+    { title: "Koe Privacy Policy", url: "https://koe.sh/privacy", grade: "C", how: "Read in full. Source for the AI model providers and the other service providers." },
+    { title: "Koe Platform Terms, version 2026-09-15", url: "https://koe.sh/terms/platform", grade: "C", how: "Read in full. Source for the credit rules, the storefront split and the likeness rule." },
+    { title: "Koe Author Terms, version 2026-09-15", url: "https://koe.sh/terms", grade: "C", how: "Read in full. Source for the book seasons at US$499, the legal entity Koe Platforms and Delaware law." },
+    { title: "Koe About page", url: "https://koe.sh/about", grade: "C", how: "Read in full." },
+    { title: "Koe Careers page", url: "https://koe.sh/careers", grade: "C", how: "Read in full. It lists open roles but gives no headcount." },
+    { title: "koe.show, the storefront for author-owned series", url: "https://koe.show/", grade: "C", how: "Read in full." },
+    { title: "Y Combinator company directory, yc-oss mirror", url: "https://yc-oss.github.io/api/companies/all.json", grade: "C", how: "Searched all 6,297 company records for Koe and koe.sh. No match." },
+    { title: "Google Gemini API pricing", url: "https://ai.google.dev/gemini-api/docs/pricing", grade: "C", how: "Read the Veo 3.1 section, prices per second." },
+    { title: "fal.ai pricing", url: "https://fal.ai/pricing", grade: "C", how: "Read the list of video model prices." },
+    { title: "Google AI plans", url: "https://gemini.google/subscriptions/", grade: "C", how: "Read the plan cards for AI Plus, AI Pro and AI Ultra." },
+    { title: "Runway pricing", url: "https://runwayml.com/pricing", grade: "C", how: "Read the plan cards and their model lists." },
+    { title: "Wikipedia: Sora (text-to-video model)", url: "https://en.wikipedia.org/wiki/Sora_(text-to-video_model)", grade: "C", how: "Read the article text through the Wikipedia API. Source for the shutdown dates." },
+    { title: "Wikipedia: Seedance", url: "https://en.wikipedia.org/wiki/Seedance", grade: "C", how: "Read in full through the Wikipedia API. Source for the release dates, the copyright disputes and the CapCut rollout." },
+    { title: "Wikipedia: Veo (text-to-video model)", url: "https://en.wikipedia.org/wiki/Veo_(text-to-video_model)", grade: "C", how: "Read in full through the Wikipedia API. Source for Veo in the Gemini app and in Google Flow." },
+    { title: "Wikipedia: Kling AI", url: "https://en.wikipedia.org/wiki/Kling_AI", grade: "C", how: "Read in full through the Wikipedia API." },
+    { title: "Wikipedia: Runway (company)", url: "https://en.wikipedia.org/wiki/Runway_(company)", grade: "C", how: "Read in full through the Wikipedia API. Source for the funding rounds." },
+    { title: "YouTube Help: Disclosing use of GenAI content", url: "https://support.google.com/youtube/answer/14328491", grade: "C", how: "Read in full." },
+    { title: "YouTube Partner Program policies", url: "https://support.google.com/youtube/answer/1311392", grade: "C", how: "Read the section on inauthentic content and its 15 July 2025 update." },
+    { title: "TikTok newsroom, 9 May 2024: Partnering with our industry to advance AI transparency and literacy", url: "https://newsroom.tiktok.com/en-us/partnering-with-our-industry-to-advance-ai-transparency-and-literacy", grade: "C", how: "Read in full. The TikTok help page on AI-generated content loads by script and could not be read." },
+    { title: "Meta newsroom: Our Approach to Labeling AI-Generated Content and Manipulated Media", url: "https://about.fb.com/news/2024/04/metas-approach-to-labeling-ai-generated-content-and-manipulated-media/", grade: "C", how: "Read in full, with its 1 July 2024 update." },
+    { title: "Loot Drop database export, failed startups", url: "https://www.loot-drop.io/", grade: "C", how: "Local export. AI-written summaries, not independently verified. Source for the failed predecessors." }
+  ]
 }
 ];
 
