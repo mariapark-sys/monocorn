@@ -8727,6 +8727,153 @@ const STORIES = [
     { title: "LLM Gateway: Sub-processor list, version of 19 August 2026", url: "https://llmgateway.io/legal/sub-processors", grade: "C", how: "Read the list of operational sub-processors in full." },
     { title: "Loot Drop database export, failed startups", url: "https://www.loot-drop.io/", grade: "C", how: "Local export. AI-written summaries, not independently verified. Source for the failed predecessors." }
   ]
+},
+{
+  slug: "calyra",
+  name: "Calyra",
+  country: "France",
+  sector: "Health Care",
+  productType: "AI calorie tracker app that estimates the nutrition of a meal from a photo",
+  aiType: "AI-native",
+  team: "solo",
+  outcome: "running",
+  evidence: "A",
+  added: "2026-10-14",
+  launchLabel: "12 August 2025",
+  outcomeLabel: "US$507K of revenue in 12 months, October 2026",
+  sticker: "$507K in 12 months",
+  outcomeUsd: 506567,
+  months: 14,
+  teamLabel: "1 founder, Maximilien Kender; NUTRIA SAS has a single shareholder and no salaried staff in the French register",
+  fundingLabel: "None found: €1,000 of share capital, and the profile says bootstrapped",
+  primaryFactor: "Distribution",
+  meters: { evidence: 3, copyable: 2, capital: 2 },
+  tags: ["AI-native", "Solo founder", "Bootstrapped", "Running", "B2C", "Health and fitness"],
+  product: "An iPhone and Android app that estimates calories, macronutrients and micronutrients from a photo of a meal, with a barcode scanner for packaged food and a log of weight and BMI. It is free to download; the service needs a subscription after a 3-day free trial, at US$9.99 a month or US$49.99 a year in the US store.",
+  why: "One founder released it in August 2025, after Cal AI, released in April 2024, had shown that photo calorie counting sells. It has a hard paywall, a short trial and cheap yearly plans. It appears to have started in France: the French App Store shows 598 ratings against 138 in the US store. The owner lists TikTok as the only marketing channel.",
+  summary: [
+    `Calyra is an iPhone and Android app that estimates the calories in a meal from one photo. The user points the camera at a plate; the app names the foods, estimates the amounts, and logs calories, <dfn>macronutrients</dfn>, the protein, carbohydrate and fat that give the body energy, and micronutrients such as vitamins. A barcode scanner covers packaged food. The company's privacy policy says only that the photos are "traitées par notre intelligence artificielle", processed by our artificial intelligence; no source names the model or the provider behind it. The app is free to download, but the service needs a paid subscription after a 3-day free trial: in the US App Store, US$9.99 a month or US$49.99 a year, with a yearly offer at US$29.99.`,
+    `One person built it in Aix-en-Provence, France. The French state business register shows that Maximilien Kender registered a <dfn>sole proprietorship</dfn>, a business that a person owns directly without a separate company, trading as NUTRIA on 1 July 2025, the founding date on the TrustMRR profile, and that he is the president of NUTRIA SAS, registered on 28 November 2025. The app's terms of use name him as its publisher, and the company's legal notice describes NUTRIA SAS as a <dfn>SASU</dfn>, a French simplified joint-stock company with a single shareholder, with €1,000 of share capital. The app has been on the App Store since 12 August 2025, first under the name Nutria. Its sales are recorded by <dfn>RevenueCat</dfn>, a service that mobile apps use to manage in-app subscriptions on the App Store and Google Play. RevenueCat's standard revenue measure is what customers paid, minus refunds, before Apple and Google take their <dfn>commission</dfn>, the share of each sale that the store keeps, and before taxes; it reports the money after those deductions separately, as proceeds.`,
+    `TrustMRR, a site that publishes revenue read directly from a company's payment provider, reads this RevenueCat account with a key that the owner gave it. On 13 October 2026 it showed US$506,567 of revenue in the last twelve months, US$558,567 since launch, and a <dfn>monthly recurring revenue (MRR)</dfn>, the value of all active subscriptions converted to one month, of US$46,051 from 14,523 active subscriptions. These figures are grade A, because they come from the payment provider and not from the founder. They show a young business that is not steady: monthly revenue fell from US$24,790 in December 2025 to US$7,383 in February 2026, rose every month to US$119,599 in August 2026, and fell to US$96,766 in September. On 6 October 2026 the owner listed the app for sale at US$1,500,000. Cal AI, a larger app of the same kind that MyFitnessPal bought in a deal that closed in December 2025, had more than US$30 million of annual revenue at the sale, about 59 times Calyra's last twelve months.`
+  ],
+  factsCaption: "US$506,567 of RevenueCat-verified revenue in the twelve months to 13 October 2026, from an app released 14 months earlier by one founder, with a peak of US$119,599 in August 2026",
+  factsRead: "How to read this table: a grade A value comes from RevenueCat payment records, read through the TrustMRR profile on 14 October 2026 (last synced 13 October 2026), from the French state business register, or from the documentation of RevenueCat or Apple. A grade B value is store data computed by Apple or Google, a published study, or a press report. A grade C value is a statement by the company or its owner. A \"calc\" value was computed on this page from the rows that it cites.",
+  timelineLead: "From a sole proprietorship in Aix-en-Provence to US$506,567 in twelve months and a sale listing, in 15 months. Each entry carries its grade.",
+  pricing: {
+    caption: "Calyra prices in the US App Store, read 14 October 2026, with the trial from the company's terms and site (grade C)",
+    note: "Apple lists three in-app purchases; the store page does not show the trial, which comes from the company's terms of use and its site. The site says no bank card is needed for the trial. There is no weekly plan in the US list. The yearly price is 58.3% below twelve monthly payments (US$119.88), and the offer is 40.0% below the yearly price.",
+    rows: [
+      ["Free trial", "0", "0", "3 days, then a paid plan is needed"],
+      ["Monthly", "", "9.99", "full access"],
+      ["Yearly", "4.17", "", "US$49.99 a year"],
+      ["Yearly, offer", "2.50", "", "US$29.99 a year, listed by Apple as an offer"]
+    ]
+  },
+  facts: [
+    { fact: "Revenue in the 12 months to 13 October 2026", value: "US$506,567", grade: "A", note: "RevenueCat payment records read by TrustMRR. RevenueCat's standard revenue measure is what customers paid minus refunds, before store commission and taxes; TrustMRR does not say that it uses another measure.", src: [1, 10, 12] },
+    { fact: "Revenue since launch", value: "US$558,567", grade: "A", note: "Calculated from the two totals: US$52,000 of it came before 13 October 2025, in the first two months on sale.", src: [1] },
+    { fact: "Revenue in the last 30 days", value: "US$83,463", grade: "A", note: "The profile gives a change of -24.0% against the 30 days before.", src: [1] },
+    { fact: "Monthly recurring revenue (MRR)", value: "US$46,051 from 14,523 active subscriptions", grade: "A", note: "MRR converts each subscription to a monthly value: a yearly plan counts as one twelfth of its price. The profile gives a change of -0.8% in 30 days.", src: [1, 11] },
+    { fact: "Best month", value: "US$119,599, August 2026", grade: "A", note: "111.0% above July (US$56,694). September 2026: US$96,766, 19.1% below August.", src: [1] },
+    { fact: "Lowest month in the published history", value: "US$7,383, February 2026", grade: "A", note: "The monthly history starts in November 2025 (US$21,616). August 2026 was 16.2 times February.", src: [1] },
+    { fact: "Revenue per day, 1 to 12 October 2026", value: "US$2,734 on average", grade: "X", note: "Calculated from the profile's daily table: US$32,805 in 12 days, 29.1% below the August average of US$3,858 a day.", src: [1] },
+    { fact: "MRR per active subscription", value: "US$3.17 a month", grade: "X", note: "Calculated: US$46,051 / 14,523. The yearly plans cost US$2.50 to US$4.17 a month and the monthly plan US$9.99, so most active subscribers probably pay yearly.", src: [1, 2] },
+    { fact: "Revenue of the last 30 days against MRR", value: "1.81 times", grade: "X", note: "Calculated: US$83,463 / US$46,051. A yearly plan is paid in full on the first day, so cash in a month with many new yearly sales is far above MRR.", src: [1, 11] },
+    { fact: "Revenue after a 15% store commission", value: "about US$430,582 in 12 months", grade: "X", note: "Calculated: US$506,567 x 0.85. Apple charges 15% to developers in its Small Business Program, open to those with up to US$1 million of proceeds a year. Enrollment is not verified, and taxes come off as well.", src: [1, 13] },
+    { fact: "Profit margin, last 30 days", value: "80.0%", grade: "C", note: "Shown on the profile. Costs do not come from RevenueCat, and the profile does not say how they were entered. Not verified.", src: [1] },
+    { fact: "Asking price", value: "US$1,500,000", grade: "C", note: "Listed for sale on TrustMRR on 6 October 2026, with 2 offers received. The price is the seller's statement.", src: [1] },
+    { fact: "Asking price as a multiple of revenue", value: "2.96 times the last 12 months", grade: "X", note: "Calculated: US$1,500,000 / US$506,567. It is 2.71 times MRR x 12 (US$552,612). TrustMRR's own 1.5x divides by 12 times the last 30 days (US$1,001,556).", src: [1] },
+    { fact: "US App Store prices", value: "US$9.99 a month, US$49.99 a year, US$29.99 a year as an offer", grade: "C", note: "In-app purchases listed on the store page. No weekly plan. The terms add a 3-day free trial, and the site says no bank card is needed for it.", src: [2, 5, 6] },
+    { fact: "Ratings", value: "4.7 of 5 from 138 ratings in the US App Store", grade: "B", note: "4.6 from 598 ratings in the French App Store, and 4.8 from 4.51 thousand reviews on Google Play, which shows more than 50,000 downloads.", src: [2, 3, 9] },
+    { fact: "App Store release", value: "12 August 2025", grade: "B", note: "Apple's lookup data. The company's site and terms still call the app Nutria, its first name.", src: [3, 5, 6] },
+    { fact: "Status on 14 October 2026", value: "on sale in both stores, listed for sale as a business", grade: "B", note: "Version 1.4.4 of 4 October 2026 is the latest on the App Store. The Google Play listing is live under the same seller.", src: [2, 3, 9, 1] },
+    { fact: "Team", value: "1 founder", grade: "A", note: "The register lists one president for NUTRIA SAS and marks both it and the earlier sole proprietorship as non-employers. The legal notice calls NUTRIA SAS a single-shareholder company (SASU). Contractors would not appear in the register.", src: [4, 7, 5] },
+    { fact: "Outside funding", value: "none found", grade: "C", note: "Share capital of €1,000 in the legal notice; the profile says bootstrapped.", src: [7, 1] },
+    { fact: "Other apps by the developer", value: "none", grade: "B", note: "Apple's lookup of developer account 1873299773 returns this one app.", src: [3] },
+    { fact: "Time from App Store release to the October 2026 figure", value: "14 months", grade: "X", note: "Calculated: 12 August 2025 to 13 October 2026, 427 days.", src: [1, 3] },
+    { fact: "Cal AI at its sale, for comparison", value: "more than US$30 million of annual revenue", grade: "B", note: "MyFitnessPal to TechCrunch, 2 March 2026; the deal closed in December 2025. That is about 59 times Calyra's last 12 months (calculated).", src: [15] }
+  ],
+  timeline: [
+    { when: "1 July 2025", what: "A sole proprietorship trading as NUTRIA, classified as software publishing, is registered in Aix-en-Provence. TrustMRR gives the same date as the founding date.", grade: "A", src: [4, 1] },
+    { when: "12 August 2025", what: "The app appears on the App Store, first under the name Nutria.", grade: "B", src: [3, 6] },
+    { when: "August to mid-October 2025", what: "US$52,000 of revenue in the first two months, calculated from the profile's totals.", grade: "X", src: [1] },
+    { when: "28 November 2025", what: "NUTRIA SAS, a single-shareholder company with €1,000 of share capital, is registered in Aix-en-Provence with the founder as president. It is the seller on both stores today.", grade: "A", src: [4, 7] },
+    { when: "December 2025", what: "US$24,790 of revenue, the best month of 2025 in the published history.", grade: "A", src: [1] },
+    { when: "February 2026", what: "US$7,383, the lowest month in the published history.", grade: "A", src: [1] },
+    { when: "March to August 2026", what: "Revenue rises every month: US$15,002, US$27,442, US$33,205, US$42,853, US$56,694, then US$119,599 in August.", grade: "A", src: [1] },
+    { when: "September 2026", what: "US$96,766, 19.1% below August.", grade: "A", src: [1] },
+    { when: "4 October 2026", what: "Version 1.4.4, the fourth update after version 1.4.0 of 6 August 2026.", grade: "B", src: [2, 3] },
+    { when: "6 October 2026", what: "Listed for sale on TrustMRR at US$1,500,000.", grade: "C", src: [1] },
+    { when: "13 October 2026", what: "Last RevenueCat sync: US$506,567 in 12 months, MRR of US$46,051, 14,523 active subscriptions.", grade: "A", src: [1] }
+  ],
+  mechanism: [
+    { title: "One photo instead of typing", text: "Older calorie apps make the user search a food database and type each portion. Calyra asks for one photo: the AI names the foods and estimates the amounts, and a barcode scan covers packaged food. The company's site says the results come in less than 3 seconds." },
+    { title: "A hard paywall with a short trial", text: "The terms say the service needs a paid subscription after a 3-day free trial. RevenueCat's 2025 report finds a median download-to-paying conversion of 12.11% for apps with a hard paywall against 2.18% for freemium apps. Most Health and Fitness apps give longer trials, of 5 to 9 days or more." },
+    { title: "Yearly plans at a large discount", text: "The yearly price is 58.3% below twelve monthly payments, and the offer is 40.0% below that. MRR of US$3.17 per active subscription suggests that most people chose a yearly plan. In RevenueCat's data, 44.1% of yearly subscribers still pay after a year, against 17.0% for monthly plans." },
+    { title: "TikTok and the French market", text: "The profile lists TikTok as the only marketing channel. The French App Store shows 598 ratings against 138 in the US store, and the company's site and terms are in French, so France appears to be the main market. This page could not see the videos or what they cost." }
+  ],
+  howBuilt: {
+    intro: "The company publishes little about how the app is built. These items come from the store listings, the company's site and its legal pages, and are grade C.",
+    items: [
+      "An iPhone and iPad app (iOS 15.1 or later, 81.1 MB) and an Android app, both sold by NUTRIA SAS. The bundle name, com.nutria25.nutriaapp, keeps the first name of the app.",
+      "Meal photos are \"traitées par notre intelligence artificielle pour identifier les aliments\" (processed by our artificial intelligence to identify the foods), in the words of the privacy policy, which names no model and no provider. The terms call it an image-recognition system.",
+      "Barcode scanning for packaged food, a food database, and a recipe page that was added in an update.",
+      "Subscriptions on both stores run through RevenueCat, and TrustMRR reads RevenueCat with a read-only key to publish the verified revenue.",
+      "The website nutriatech.com is hosted on Vercel, according to the legal notice. The terms of use are a public Notion page."
+    ],
+    src: [2, 8, 5, 1, 12, 7]
+  },
+  predecessorsIntro: "Four companies in the Loot Drop database promised that tracking food, activity or biology would become health advice that people pay for. The values below are from that database and are not independently verified.",
+  predecessors: [
+    { name: "Airo Health", years: "2016 to 2019", funding: "US$4M", cause: "Competition", promise: "A wristband that tracked stress, nutrition intake and exercise and gave advice in real time.", died: "Apple and Fitbit improved their own devices faster. The device did not justify its price, hardware production was hard, and new funding did not come.", url: "https://www.loot-drop.io/startup/1465-airo-health" },
+    { name: "Jawbone", years: "1999 to 2017", funding: "US$930M", cause: "Competition", promise: "UP fitness trackers that turned daily activity data into health insights.", died: "Fitbit and Apple competed better. Product recalls, poor customer service and long lawsuits used up money and trust.", url: "https://www.loot-drop.io/startup/257-jawbone" },
+    { name: "Arivale", years: "2015 to 2019", funding: "US$50M", cause: "Unit Economics", promise: "Scientific wellness: genome, blood and activity data with a personal coach, for US$3,500 up front and US$99 a month.", died: "Each customer cost more than US$4,700 a year to serve, against US$1,188 a year of price after the first year.", url: "https://www.loot-drop.io/startup/8-arivale" },
+    { name: "Nutrigene", years: "2018 to 2021", funding: "US$3M", cause: "Unit Economics", promise: "Liquid supplements mixed for each customer's DNA, lifestyle and health goals.", died: "Customers were expensive to win, a personalized product was hard to scale, and simpler rivals such as Care/of sold more easily.", url: "https://www.loot-drop.io/startup/1010-nutrigene" }
+  ],
+  whatChanged: [
+    `The four predecessors needed something physical to measure the body: a wristband, a fitness tracker, blood and genome tests, or a supplement mixed for each customer. Hardware and laboratories made every customer expensive, and two of them died of unit economics. Calyra measures nothing itself. The customer's own phone camera takes the picture and software estimates the calories, so one person could build it, and a new user costs little more than the processing of the photos and the store's commission.`,
+    `The cause that ended Airo Health and Jawbone has not gone away: larger companies with the same feature. Apple's search returns 183 calorie apps from 183 different sellers for one phrase, and MyFitnessPal, the largest of them by ratings, bought Cal AI and connected it to its own nutrition database. A photo calorie counter is now a common feature. What Calyra adds is a low yearly price, a start in French and a sales channel on TikTok, and a rival can copy each of these.`
+  ],
+  copy: {
+    verdict: "The method, yes. An easy market, no.",
+    text: "Calyra shows that one person can build an AI photo calorie app and sell US$506,567 of subscriptions in twelve months, with numbers verified by the payment provider. Every part of the method is public: a camera screen, an image model, a barcode scanner, a hard paywall with a short trial, discounted yearly plans and short videos. That is also the problem. More than 180 look-alike apps compete for the same search words, so the business depends on the cost of each new subscriber, which no public source shows.",
+    steps: [
+      "Choose a daily task that people now do by typing and that one photo can replace.",
+      "Put a paid subscription with a short free trial in front of the main feature, and sell the yearly plan at a large discount to twelve monthly payments.",
+      "Use a subscription service such as RevenueCat for both app stores, and publish verified numbers if you may want to sell the business later.",
+      "Start in your own language and country: Calyra has 598 ratings in the French App Store against 138 in the US store."
+    ],
+    open: "Daily logging tasks that a photo can replace and that the large apps cover badly in a given language or country: drinks, medication, skin care, plant care."
+  },
+  watch: [
+    { title: "Photo estimates are not exact", text: "A 2023 systematic review of 52 studies found average calorie errors of 0.10% to 38.3% when AI estimated food from images, with smaller errors for single, simple foods. A 2025 study gave 114 meal photos to ChatGPT-4: it identified the foods with 93.0% precision but estimated medium and large portions poorly and underestimated 11 of 16 nutrients. A 2024 study of seven apps with photo recognition found their automatic energy estimates inaccurate. Calyra publishes no accuracy test on its site or store pages, and its site calls its AI \"la plus précise du marché\", the most accurate on the market, without data." },
+    { title: "A crowded category of look-alike apps", text: "On 14 October 2026, Apple's US search for \"ai calorie tracker\" returned 195 apps. 183 have a form of the word calorie in the name, each from a different seller, and 156 of those were first released after Cal AI on 8 April 2024. Calyra was number 148 in the list. MyFitnessPal has 2,377,347 ratings and Cal AI 370,360; Calyra has 138." },
+    { title: "Churn after the first year", text: "Yearly plans keep customers longest, but not most of them: RevenueCat's 2025 report finds 44.1% of yearly subscribers still paying after one year, 17.0% for monthly plans and 3.4% for weekly plans, which Calyra does not sell in the US store. Calyra's first yearly subscribers, from August to December 2025, reach their first renewal between August and December 2026, so the coming months test the business. In the last 30 days revenue fell 24.0% while MRR fell 0.8%." },
+    { title: "For sale 15 months after founding", text: "On 6 October 2026 the owner listed the app at US$1,500,000, 2.96 times its last twelve months of revenue. TrustMRR's own figure of 1.5x divides the price by twelve times the last 30 days, which upfront yearly payments make larger. A buyer gets revenue that more than doubled from July to August 2026 and then fell, costs that are not verified, and an app that one person runs." },
+    { title: "Before commission, and one person", text: "The verified revenue is most likely before Apple's and Google's commission and before taxes, so the owner receives less than the headline: about US$430,582 at a 15% commission. The register shows no salaried staff, so the business depends on one founder." }
+  ],
+  sources: [
+    { title: "TrustMRR profile: Nutria (9e3eaa), the Calyra app, revenue last synced 13 October 2026", url: "https://trustmrr.com/startup/nutria-9e3eaa", grade: "A", how: "Read the markdown profile in full (https://trustmrr.com/startup/nutria-9e3eaa.md) on 14 October 2026. Revenue, MRR and subscriptions come from RevenueCat through an API key (grade A). The description, the funding line, the TikTok channel, the profit margin and the sale listing are written by the owner (grade C)." },
+    { title: "Apple App Store listing: Calyra - AI Calorie Tracker, US store, read 14 October 2026", url: "https://apps.apple.com/us/app/calyra-ai-calorie-tracker/id6748324995", grade: "C", how: "Read in full. Source for the prices, the rating, the version history, the seller and the size." },
+    { title: "Apple lookup API: developer account 1873299773 (Nutria SAS) and its apps, US and French stores", url: "https://itunes.apple.com/lookup?id=1873299773&entity=software", grade: "B", how: "Read in full on 14 October 2026 for the US and French stores. Source for the release date, the seller name, the ratings in each country and the single app." },
+    { title: "French state business register (Recherche d'entreprises): NUTRIA SAS, SIREN 995082831, and the sole proprietorship trading as NUTRIA", url: "https://recherche-entreprises.api.gouv.fr/search?q=nutria", grade: "A", how: "Read in full on 14 October 2026. Source for the creation dates, legal forms, activity codes, the president and the non-employer flag. Other companies named Nutria in the results are unrelated." },
+    { title: "Nutria terms of use (Conditions Générales d'Utilisation), Notion page linked from the App Store listing", url: "https://laser-carol-7ae.notion.site/Conditions-G-n-rales-D-Utilisation-223d5fa4ad3180c2856fd359537213ac", grade: "C", how: "Read in full through Notion's page API on 14 October 2026, in French. Source for the publisher's name, the 3-day free trial, the monthly or yearly subscription and the image-recognition system." },
+    { title: "NutriaTech website, home page", url: "https://nutriatech.com/", grade: "C", how: "Read in full on 14 October 2026, in French. Source for the trial without a bank card, the under-3-seconds claim and the most-accurate claim." },
+    { title: "NutriaTech legal notice (Mentions légales)", url: "https://nutriatech.com/mentions-legales", grade: "C", how: "Read in full. Source for the SASU form, the €1,000 share capital, the RCS number and the host, Vercel." },
+    { title: "NutriaTech privacy policy (Politique de confidentialité), updated 15 September 2026", url: "https://nutriatech.com/confidentialite", grade: "C", how: "Read in full, in French. Photos are processed by the company's own description of its AI; no model or provider is named." },
+    { title: "Google Play listing: Calyra - AI Calorie Tracker", url: "https://play.google.com/store/apps/details?id=com.nutria25.nutriaapp.beta", grade: "B", how: "Read the summary section on 14 October 2026: seller, rating, review count and download range." },
+    { title: "RevenueCat documentation: Revenue chart", url: "https://www.revenuecat.com/docs/dashboard-and-metrics/charts/revenue-chart", grade: "A", how: "Read the definitions section. Revenue is before taxes and store commission; Revenue (net of taxes) and Proceeds are separate measures." },
+    { title: "RevenueCat documentation: Monthly Recurring Revenue (MRR) chart", url: "https://www.revenuecat.com/docs/dashboard-and-metrics/charts/monthly-recurring-revenue-mrr-chart", grade: "A", how: "Read the definitions section. Source for how yearly plans are normalized to a month." },
+    { title: "TrustMRR llms.txt: how TrustMRR connects to payment providers", url: "https://trustmrr.com/llms.txt", grade: "C", how: "Read in full. Source for the read-only RevenueCat key and the imported daily revenue, MRR and subscription history." },
+    { title: "Apple Developer: App Store Small Business Program", url: "https://developer.apple.com/app-store/small-business-program/", grade: "A", how: "Read the program description: 15% commission for developers with up to US$1 million of proceeds in the prior calendar year." },
+    { title: "Apple search API: \"ai calorie tracker\", US store, 200-result limit", url: "https://itunes.apple.com/search?term=ai+calorie+tracker&entity=software&country=us&limit=200", grade: "B", how: "Read in full on 14 October 2026 and counted with python3: names, sellers, release dates and rating counts." },
+    { title: "TechCrunch, 2 March 2026: MyFitnessPal has acquired Cal AI, the viral calorie app built by teens", url: "https://techcrunch.com/2026/03/02/myfitnesspal-has-acquired-cal-ai-the-viral-calorie-app-built-by-teens/", grade: "B", how: "Read in full. Source for Cal AI's revenue and downloads at the sale and for the December 2025 closing." },
+    { title: "RevenueCat, State of Subscription Apps 2025", url: "https://www.revenuecat.com/state-of-subscription-apps-2025/", grade: "B", how: "Read the public sections on plan durations, trials, paywalls and retention. Aggregate data from apps that use RevenueCat, not about Calyra." },
+    { title: "Annals of Medicine, December 2023: AI-based digital image dietary assessment methods compared to humans and ground truth, a systematic review", url: "https://doi.org/10.1080/07853890.2023.2273497", grade: "B", how: "Read the abstract through Europe PMC (PMC10836267). Source for the range of calorie errors in 52 studies." },
+    { title: "Nutrients, February 2025: An Evaluation of ChatGPT for Nutrient Content Estimation from Meal Photographs", url: "https://doi.org/10.3390/nu17040607", grade: "B", how: "Read the abstract through Europe PMC (PMC11858203). Source for the 114 photos, the 93.0% precision and the underestimated nutrients." },
+    { title: "Nutrients, August 2024: Evaluating the Quality and Comparative Validity of Manual Food Logging and Artificial Intelligence-Enabled Food Image Recognition in Apps for Nutrition Care", url: "https://doi.org/10.3390/nu16152573", grade: "B", how: "Read the abstract through Europe PMC (PMC11314244). Source for the finding on seven AI-enabled apps." },
+    { title: "Loot Drop database export, 1,749 failed startups", url: "https://www.loot-drop.io/", grade: "C", how: "Local export. AI-written summaries, not independently verified. Source for the failed predecessors." }
+  ]
 }
 ];
 
