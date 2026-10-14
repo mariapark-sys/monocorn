@@ -8257,6 +8257,150 @@ const STORIES = [
     { title: "OpenAI API pricing page, Wayback Machine copies of 4 December 2021 and 17 October 2022", url: "https://openai.com/api/pricing/", grade: "C", how: "Read the price table in both copies. Source for the Davinci price of US$0.06 and then US$0.02 per 1,000 tokens." },
     { title: "Loot Drop database export, 1,749 failed startups", url: "https://www.loot-drop.io/", grade: "C", how: "Local export. AI-written summaries, not independently verified. Source for the failed predecessors." }
   ]
+},
+{
+  slug: "coachvox-ai",
+  name: "Coachvox AI",
+  country: "UK",
+  sector: "Information Technology",
+  productType: "AI clones of coaches and creators",
+  aiType: "AI-native",
+  team: "small",
+  outcome: "running",
+  evidence: "C",
+  added: "2026-10-14",
+  launchLabel: "January 2023",
+  outcomeLabel: "US$180K a year in revenue, November 2023",
+  sticker: "$180K/yr revenue in 2023",
+  outcomeUsd: 180000,
+  months: 10,
+  teamLabel: "2 co-founders and a remote team in 6 time zones; 0 employees listed in 2023",
+  fundingLabel: "15 new shares sold for cash in November 2022, filed as GBP 150,000; no investment fund among the shareholders in November 2022",
+  primaryFactor: "Distribution",
+  meters: { evidence: 1, copyable: 2, capital: 2 },
+  tags: ["AI-native", "Small team", "Funded", "Running", "B2B", "Creator tools"],
+  product: "A coach, author or creator uploads books, articles, podcast transcripts and course material. Coachvox turns them into a chat version of that person, which answers the audience in the creator's voice on a website, inside a course or in a members' group, and gives the creator the email address and the transcript of everyone who chats.",
+  why: "The founder sold places from design mockups to people in her own network before the product existed, and her Forbes column brought a quarter of the sign-ups at no cost. It sold creators what a general chatbot did not give them: the contact details of the people who chat, the transcripts, and the clone on their own site with their own brand.",
+  summary: [
+    `Coachvox AI sells <dfn>AI clones</dfn> to coaches, authors and other creators. An AI clone here is a chat program that answers questions the way one real person would, because it works from that person's books, articles, podcast transcripts and course material. Underneath is a <dfn>large language model</dfn>, a program trained on very large amounts of text that writes answers in normal language; the company's FAQ says its core engine comes from OpenAI. The creator puts the clone on a website, in a course or in a members' group. Everyone who chats gives an email address first, so the clone also works as a <dfn>lead magnet</dfn>, a free offer that a business uses to collect the contact details of possible customers.`,
+    `Jodie Cook, a British founder and Forbes contributor, sold her social media agency, JC Social Media, in 2021, in what she calls a seven-figure exit. Her next company, Coachvox Limited, registered in October 2021, first ran a platform for business coaching by voice note. It did not take off, and at the end of 2022 it turned to AI coaches. It sold places from design mockups to people in her network. On 5 September 2023 she told Starter Story that Coachvox AI had six figures of <dfn>annual recurring revenue</dfn> before its public launch. Annual recurring revenue is the current monthly subscription income multiplied by twelve. Starter Story lists the figure as US$180,000 a year, about US$15,000 a month, at a price of US$99 a month per creator. In November 2023 the revenue database Latka recorded the same US$180,000 with 150 customers, citing a post on X. In December 2023 the BBC reported that around 150 people had made clones with the company.`,
+    `Every revenue number on this page is grade C: a founder statement, or a third party that repeats one. No newer figure was found. It is not a one-person business: two co-founders, a technical lead who joined them and a remote team built it, and nine other shareholders held about 7% of the shares after new shares were sold for cash in November 2022. The page also shows five failed startups that sold an expert's time, or a bot that answered from a body of knowledge, before language models made this cheap.`
+  ],
+  factsCaption: "A founder-reported US$180,000 a year in late 2023, repeated by Latka two months later, with a BBC customer count that fits the price",
+  factsRead: "How to read this table: a grade C value is a founder statement, a third party that repeats one, a journalist's report of a company figure, or a filing on the UK company register, which does not check what companies file. A \"calc\" value was computed on this page from the rows it names. No value is grade A or B.",
+  timelineLead: "From the sale of an agency, through a voice-note coaching platform that did not sell, to AI clones of about 150 creators in December 2023. Each entry carries its grade.",
+  pricing: {
+    caption: "Coachvox AI price in October 2026, from the company's home page (grade C)",
+    note: "There is one plan with everything included. The page shows US$83 a month billed yearly, and its price switch shows US$99 billed monthly; yearly billing saves about two months. The free trial needs card details, has no contract, and comes with a quick-start bootcamp that the page says normally costs US$499. A done-for-you setup by the company's trainers is offered without a published price. In 2023 the price was also US$99 a month. Chats are unlimited under fair-use rules that the FAQ says affect fewer than 1% of accounts.",
+    rows: [
+      ["Coachvox, one plan", "83", "99", "unlimited chats, fair use"],
+      ["Quick-start bootcamp", "499 one-time", "", "included with the free trial, says the page"],
+      ["Done-for-you setup", "", "", "price not published"]
+    ]
+  },
+  facts: [
+    { fact: "Revenue rate, September 2023", value: "US$180,000 a year; in the founder's words, six figures of annual recurring revenue before launch", grade: "C", note: "Starter Story lists 'How much money it makes: $180K/year' for the interview of 5 September 2023. The founder's own text says only 'six figures'.", src: [1, 2] },
+    { fact: "Annual revenue, November 2023", value: "US$180,000, with 150 customers", grade: "C", note: "Latka, a third-party revenue database, gives X (Twitter) as its source. The post itself could not be found or opened.", src: [3] },
+    { fact: "Revenue per month from that figure", value: "US$15,000", grade: "X", note: "Calculated: US$180,000 divided by 12. The product was less than a year old, so this is a yearly rate, not money received over twelve months.", src: [2, 3] },
+    { fact: "People with a clone on Coachvox, December 2023", value: "around 150", grade: "C", note: "BBC News, 7 December 2023. Clients named by type: chief executives, an astrologer, a nutritionist, a fitness coach and a marriage counsellor. The article does not say how the count was obtained.", src: [4] },
+    { fact: "Cross-check: 150 creators at the 2023 price", value: "US$178,200 a year", grade: "X", note: "Calculated: 150 times US$99 times 12. Close to US$180,000, if every creator paid the full monthly price, which no source states.", src: [1, 4] },
+    { fact: "Price for creators, 2023", value: "US$99 a month", grade: "C", note: "Founder, Starter Story interview. Some creators charge their own audience about US$10 a month for access to their clone.", src: [1] },
+    { fact: "Money spent on marketing to September 2023", value: "none", grade: "C", note: "Founder: 'We haven't spent any money on marketing yet.' Customers came from Forbes, X, Google, AI tool directories and creator groups.", src: [1] },
+    { fact: "Share of sign-ups from the founder's Forbes profile", value: "25%", grade: "C", note: "Founder, Starter Story interview, September 2023.", src: [1] },
+    { fact: "Cost to start", value: "US$30,000", grade: "C", note: "Starter Story list page.", src: [2] },
+    { fact: "Team, 2023", value: "2 founders, 0 employees", grade: "C", note: "Starter Story's company box, September 2023. The founder describes a remote team in six time zones, with a technical lead and a UX designer. Latka: 1 person listed Coachvox AI as employer on LinkedIn in November 2023.", src: [1, 3] },
+    { fact: "New shares sold before launch, 5 November 2022", value: "15 ordinary shares for cash; amount paid filed as GBP 150,000", grade: "C", note: "Companies House share allotment form. It shows 'Amount paid: 150000' next to the 15 shares and does not say more clearly whether this is a total; this page reads it as the total, which is GBP 10,000 a share. Afterwards there were 11 shareholders: two with 100 shares each and nine with 1 to 5 shares. No company or fund is among them.", src: [11, 12] },
+    { fact: "Part of the company sold in November 2022", value: "about 7%", grade: "X", note: "Calculated: 15 of 215 shares.", src: [11, 12] },
+    { fact: "Later share issues", value: "68 Ordinary A shares by 21 November 2025, 2 more in April 2026", grade: "C", note: "Companies House filings from August 2024 to April 2026. The November 2025 filing shows them paid at their nominal value of GBP 0.001194 each, with 0.1194 votes each. The filings do not say who received them.", src: [10, 13] },
+    { fact: "Company registered", value: "8 October 2021, as Coachvox Limited", grade: "C", note: "Companies House. The registered office moved from Birmingham to London in March 2023.", src: [10] },
+    { fact: "AI model behind the clones", value: "OpenAI, with the company's own layer of logic and workflows", grade: "C", note: "Company FAQ: 'The core AI engine we use is OpenAI'. The 2023 interview also lists OpenAI in the stack. No source names the model version. The 2026 home page offers a connection to Anthropic's Claude for training the clone; no source says Claude writes the answers.", src: [6, 1, 7] },
+    { fact: "Price, October 2026", value: "US$83 a month billed yearly, US$99 billed monthly", grade: "C", note: "Company home page. One plan.", src: [7] },
+    { fact: "Time from start to the November 2023 figure", value: "10 months", grade: "X", note: "Calculated: January 2023, the start date that Starter Story records, to November 2023.", src: [1, 3] },
+    { fact: "The founder's previous company", value: "JC Social Media, a social media agency founded in 2011, acquired in 2021", grade: "C", note: "Wikipedia, citing Business Live of 3 June 2021: the buyer was the marketing agency group Low&Behold. The founder calls it a seven-figure exit. Its revenue and staff are not part of this page.", src: [14, 1] }
+  ],
+  timeline: [
+    { when: "2011", what: "Jodie Cook starts JC Social Media, a social media agency, in Birmingham.", grade: "C", src: [14] },
+    { when: "2021", what: "She sells the agency to the marketing group Low&Behold, in what she calls a seven-figure exit, after meeting 12 possible buyers through a broker. She writes a book, Ten Year Career, during the sale.", grade: "C", src: [14, 1] },
+    { when: "8 October 2021", what: "Coachvox Limited is registered. Its first product is a platform for business coaching by voice note, built by a Bubble agency.", grade: "C", src: [10, 1] },
+    { when: "5 November 2022", what: "15 new shares are sold for cash, filed as GBP 150,000. Nine shareholders now hold 1 to 5 shares each beside two holders of 100.", grade: "C", src: [11, 12] },
+    { when: "End of 2022", what: "The voice-note platform does not take off: coaches join, but have no clients on it, so the company has to sell twice. It turns to AI coaching.", grade: "C", src: [5, 1] },
+    { when: "Early 2023", what: "Demos: Jodie AI, a business coach trained on her own content, and an unofficial AI version of a famous investor. Starter Story records January 2023 as the start. Places are sold from mockups with Typeform and a Stripe checkout page.", grade: "C", src: [1] },
+    { when: "13 April 2023", what: "Startups Magazine reports AI versions of coaches in marketing, property, sales and mindfulness. One coach's clone answers the questions in her membership group that took her three to five hours a week.", grade: "C", src: [5] },
+    { when: "5 September 2023", what: "Starter Story interview: six figures of annual recurring revenue before the public launch, US$99 a month, no marketing spend, a quarter of sign-ups from Forbes. Starter Story lists US$180,000 a year.", grade: "C", src: [1, 2] },
+    { when: "November 2023", what: "Latka records US$180,000 in annual revenue and 150 customers, citing X.", grade: "C", src: [3] },
+    { when: "7 December 2023", what: "The BBC reports around 150 people with clones made through Coachvox AI, and names Delphi and Synthesia as other providers of AI clones.", grade: "C", src: [4] },
+    { when: "August 2024 to April 2026", what: "The company issues Ordinary A shares in small numbers, 70 in total.", grade: "C", src: [10, 13] },
+    { when: "September to November 2024", what: "The founder posts on X that 'Coachvox is how we sell Coachvox' and invites coaches to free live webinars on the company's site.", grade: "C", src: [15, 16] },
+    { when: "October 2026", what: "Running: one plan at US$83 a month billed yearly, a free trial, a connection to Claude for training, and a partnership with the International Coaching Federation. Accounts to 31 October 2025 were filed on 17 July 2026.", grade: "C", src: [7, 6, 10] }
+  ],
+  mechanism: [
+    { title: "Sell from mockups", text: "Coachvox AI sold creator places from design mockups, with a Typeform sign-up form and a Stripe checkout page, before the product existed. The first creators were friends and people from the founder's networks, and the team looked after them like agency clients. Their feedback became the list of features." },
+    { title: "The founder's column as the sales channel", text: "Jodie Cook writes about entrepreneurship and AI as a Forbes contributor. By September 2023 her contributor profile brought a quarter of all sign-ups, and the company had spent nothing on marketing. Later the founder sold through free webinars and posts, and the company's own clone talks to visitors on its site." },
+    { title: "Give creators what the model maker does not", text: "OpenAI lets anyone build a custom GPT, a chatbot made from their own documents. Coachvox sells the parts a creator's business needs: the email address of everyone who chats, transcripts and summaries, an embed on the creator's own site or course, and the creator's own brand on the chat window." },
+    { title: "OpenAI underneath, workflows on top", text: "The FAQ says the core engine is OpenAI, with the company's own logic and workflows on top and a database with a profile of each person who chats. The creator uploads files and answers questions about how they work; there is no prompt writing and no code." }
+  ],
+  howBuilt: {
+    intro: "These details come from the founder's interview and the company's own pages. They are grade C.",
+    items: [
+      "The first product, coaching by voice note, was built by a Bubble agency. Bubble is a no-code builder: software made by arranging blocks on a screen instead of writing code.",
+      "For Coachvox AI the founder wrote notes and drew diagrams in PowerPoint, a UX designer turned them into mockups, and a technical lead, a friend from a business mastermind group she had been part of, built the platform with a new team. The founder does not write the code.",
+      "The core AI engine is OpenAI. On top, the company built its own logic and workflows, which it calls its cognitive engine, and a database with a profile of every person who chats with a clone.",
+      "Stack named in 2023: Basecamp, Google Cloud Storage, Vercel, OpenAI, Hey email and Jira. Starter Story's tool list for the company adds Firebase, Mailchimp, Upwork for hiring, WP Engine, Xero, Google Workspace, Stripe, Google Analytics, WordPress and Adobe.",
+      "In 2026 a clone can be trained from inside Anthropic's Claude through a connection, sends leads to a CRM through Zapier, and embeds on any page that accepts HTML.",
+      "The team works remotely in six time zones. Each member writes a 'user manual' that says how they like to communicate and work."
+    ],
+    src: [1, 6, 7]
+  },
+  predecessorsIntro: "Five companies in the Loot Drop database sold an expert's time on demand, or a bot that answered from a body of knowledge. The values below are from that database and are not independently verified.",
+  predecessors: [
+    { name: "Arivale", years: "2015 to 2019", funding: "US$50M", cause: "Unit Economics", promise: "Genetic and blood tests with a personal health coach for each customer.", died: "Every customer needed a human coach. The database says it spent US$4,700 per customer to earn US$1,200 a year.", url: "https://www.loot-drop.io/startup/8-arivale" },
+    { name: "AirPair", years: "2014 to 2017", funding: "US$250K", cause: "Competition", promise: "Paid, on-demand help from expert software developers.", died: "Developers took free answers on Stack Overflow instead of paying for an expert's time, and the marketplace never had enough experts and buyers at once.", url: "https://www.loot-drop.io/startup/1130-airpair" },
+    { name: "Operator", years: "2015 to 2020", funding: "US$30M", cause: "Unit Economics", promise: "A personal shopper in your phone, part human and part AI.", died: "The human part cost too much to run at scale.", url: "https://www.loot-drop.io/startup/396-operator" },
+    { name: "Niles", years: "2017 to 2020", funding: "US$2.8M", cause: "Competition", promise: "A Slack bot that answered staff questions from the company's own knowledge.", died: "AI features became cheap and common, and Slack added its own.", url: "https://www.loot-drop.io/startup/1031-niles" },
+    { name: "Charge Running", years: "2021 to 2024", funding: "US$5M", cause: "Competition", promise: "Live running classes with a real coach in your ear.", died: "Live coaching needed fixed times. AI fitness apps gave a personal feel without the schedule.", url: "https://www.loot-drop.io/startup/895-charge-running" }
+  ],
+  whatChanged: [
+    `Four of the five sold a person's time: a health coach, an expert developer, a personal shopper, a running coach. Each new sale needed more hours from people, so costs grew with revenue. Coachvox removes those hours. The creator's existing content answers the questions, and an extra conversation costs a fee to the model provider, not an hour of work.`,
+    `The fifth, Niles, is the warning. It answered questions from a company's knowledge inside Slack, and the platform it depended on built the same feature. Coachvox depends on OpenAI, which sells its own custom GPTs, and the BBC already listed other clone makers in 2023. Its defence is the business layer around the model: leads, transcripts, embeds and the creator's brand.`
+  ],
+  copy: {
+    verdict: "The product, yes. The sales method, only with an audience.",
+    text: "The software is reproducible: document upload, a model provider's API, an embed and an email form before the chat. The sales depended on a founder with a Forbes column, an earlier exit and a network of coaches who paid before the product existed. Without that audience, the same product would need paid customer acquisition, on which this story has no data.",
+    steps: [
+      "Sell places from mockups with a form and a payment link before you build.",
+      "Sell to people who already have content and an audience: authors, coaches, course creators.",
+      "Build what the model maker does not give them: the contact details of every user, transcripts, and an embed with their own brand.",
+      "Use your own clone as your sales tool, as Coachvox does on its own site."
+    ],
+    open: "Experts with a large archive and more questions than hours: consultants, trainers, newsletter writers, and companies that want one chat for their own internal know-how."
+  },
+  watch: [
+    { title: "Old, self-reported numbers", text: "The only revenue figures are from September and November 2023, and both are grade C: a Starter Story figure next to the founder's interview, and a Latka entry that cites an X post this page could not open. No figure since then was found." },
+    { title: "Model makers and other clone makers", text: "OpenAI lets anyone build a custom GPT from their own documents, and Coachvox keeps a page that explains why it is different. In December 2023 the BBC named Delphi, a US start-up, and Synthesia, a UK company that makes video avatars, as other providers of AI clones. The founder herself said in 2023 that a bigger company can release an update that wipes out an AI product with little depth." },
+    { title: "An AI that speaks in a real person's name", text: "A clone can give wrong or too simple advice under a real person's name. A property-investment creator told the BBC he worried his clone would sound 'too black-and-white' about money, and he tells users it is technology, not him. The director of education at a professional body for data scientists told the BBC that machines 'cannot be trusted' with the many parameters of human situations. The company promises a clear notice that users are chatting with AI. The pages read for this story do not say who is responsible when a clone gives harmful advice." },
+    { title: "Dependence on OpenAI", text: "The FAQ names OpenAI as the core engine. A price rise, a model change or a policy change at OpenAI changes the product and its costs. The 2026 Claude connection is for training the clone, and no source says the answers can come from another provider." },
+    { title: "Not a one-person company", text: "Two co-founders, a technical lead, a designer and a remote team in six time zones built it, and nine other shareholders held about 7% of the shares after the November 2022 share sale. Starter Story's count of 0 employees does not include this team." },
+    { title: "Sales depend on the founder", text: "In 2023 a quarter of sign-ups came from her Forbes profile, and the webinars and posts that sell the product are hers. No source shows how the company sells without her." }
+  ],
+  sources: [
+    { title: "Starter Story, 5 September 2023: We Built An AI Coach For Creators And Hit 6-Figures Revenue Pre-Launch", url: "https://www.starterstory.com/stories/jodie-cook", grade: "C", how: "Read in full, the interview text as the page serves it without a login. Founder interview. Source for the backstory, the first version, the price, the marketing channels, the team and the stack." },
+    { title: "Starter Story: AI tool success stories, list page", url: "https://www.starterstory.com/ideas/ai-tool/success-stories", grade: "C", how: "Read the Coachvox AI entry. Source for US$180K/year and US$30K to start; its link for the revenue figure points to the interview above. The entry says 2021 for the start, which the interview contradicts." },
+    { title: "Latka company page: Coachvox AI revenue 2023, updated 10 August 2026", url: "https://getlatka.com/companies/coachvoxai", grade: "C", how: "Read in full. A third-party database. Source for US$180K in November 2023 with X (Twitter) as its stated source, 150 customers and 1 LinkedIn employee." },
+    { title: "BBC News, 7 December 2023, by MaryLou Costa: The people creating digital clones of themselves", url: "https://www.bbc.com/news/business-67623614", grade: "C", how: "Read in full. Journalist report. Source for the count of around 150 clones, the types of client, the competitors named and the outside experts' warnings." },
+    { title: "Startups Magazine, 13 April 2023: Would you trust advice from an AI business coach?", url: "https://startupsmagazine.co.uk/article-would-you-trust-advice-ai-business-coach", grade: "C", how: "Read in full. Based on company statements. Source for the turn to AI coaching at the end of 2022 and the early examples." },
+    { title: "Coachvox AI: FAQs page, read 14 October 2026", url: "https://coachvox.ai/faqs/", grade: "C", how: "Read the sections on the AI engine, the data, chat limits and the coaching federation. Source for OpenAI as the core engine." },
+    { title: "Coachvox AI: home page with pricing, read 14 October 2026", url: "https://coachvox.ai/", grade: "C", how: "Read in full, including the script of the price switch. Source for the prices, the free trial, the Claude connection, Zapier and the embed." },
+    { title: "Coachvox AI: Alternative to OpenAI's custom GPT creator", url: "https://coachvox.ai/alternative-to-openai-gpt-creator/", grade: "C", how: "Read in full. The company's own comparison with OpenAI's GPTs." },
+    { title: "Coachvox AI, 8 September 2025: Why professional coaches choose Coachvox", url: "https://coachvox.ai/ai-software-professional-coaches/", grade: "C", how: "Read the text through the site's WordPress search interface. Source for the promised notice that users are chatting with AI." },
+    { title: "Companies House, the UK company register: Coachvox Limited, company number 13668167, filing history", url: "https://find-and-update.company-information.service.gov.uk/company/13668167/filing-history", grade: "C", how: "Read the full list of filings. The register does not check what companies file. Source for the registration date, the office move, the share issues and the accounts dates. The accounts are image files and could not be read." },
+    { title: "Companies House: statement of capital after the allotment of shares on 5 November 2022", url: "https://find-and-update.company-information.service.gov.uk/company/13668167/filing-history/MzM1OTMzNjU4MGFkaXF6a2N4/document?format=pdf&download=0", grade: "C", how: "Read in full, 3 pages. Source for the 15 shares and the amount paid." },
+    { title: "Companies House: confirmation statement made on 5 November 2022", url: "https://find-and-update.company-information.service.gov.uk/company/13668167/filing-history/MzM1OTMzNzcwMmFkaXF6a2N4/document?format=pdf&download=0", grade: "C", how: "Read the shareholder section for the number and size of holdings. The shareholders' names are not used on this page." },
+    { title: "Companies House: statement of capital after allotments from 31 March to 21 November 2025", url: "https://find-and-update.company-information.service.gov.uk/company/13668167/filing-history/MzUwMTY1NTUzNmFkaXF6a2N4/document?format=pdf&download=0", grade: "C", how: "Read in full, 3 pages. Source for the Ordinary A shares, their price and their votes." },
+    { title: "Wikipedia: Jodie Cook", url: "https://en.wikipedia.org/wiki/Jodie_Cook", grade: "C", how: "Read in full. Source for JC Social Media's founding and its 2021 sale to Low&Behold, which the article cites from Business Live." },
+    { title: "Jodie Cook on X, 5 September 2024: We use our own product", url: "https://x.com/jodie_cook/status/1831634418378645944", grade: "C", how: "Read through the fxtwitter API, as part of her timeline from September 2024 to October 2026, which contains no revenue figures." },
+    { title: "Jodie Cook on X, 15 November 2024: Join me live", url: "https://x.com/jodie_cook/status/1857402039099388376", grade: "C", how: "Read through the fxtwitter API. Source for the free webinars on the company's site." },
+    { title: "Loot Drop database export, 1,749 failed startups", url: "https://www.loot-drop.io/", grade: "C", how: "Local export. AI-written summaries, not independently verified. Source for the failed predecessors." }
+  ]
 }
 ];
 
