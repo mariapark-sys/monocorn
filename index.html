@@ -8569,6 +8569,164 @@ const STORIES = [
     { title: "Fernando Pessagno on X, 5 December 2024: the first version had too many design options", url: "https://x.com/Fer_MOMENTO/status/1864586691614306519", grade: "C", how: "Read the thread through api.fxtwitter.com." },
     { title: "Loot Drop database export, failed startups", url: "https://www.loot-drop.io/", grade: "C", how: "Local export. AI-written summaries, not independently verified. Source for the failed predecessors." }
   ]
+},
+{
+  slug: "llm-gateway",
+  name: "LLM Gateway",
+  country: "USA",
+  sector: "Information Technology",
+  productType: "API gateway for AI models",
+  aiType: "AI-native",
+  team: "small",
+  outcome: "running",
+  evidence: "A",
+  added: "2026-10-14",
+  launchLabel: "22 May 2025",
+  outcomeLabel: "US$1M in Stripe-verified gross receipts in 12 months, September 2026",
+  sticker: "$1M gross in 12 months",
+  outcomeUsd: 999309,
+  months: 16,
+  teamLabel: "2 co-founders, who made 85% of the code commits; size of any wider team not known",
+  fundingLabel: "None found",
+  primaryFactor: "Open source",
+  meters: { evidence: 3, copyable: 2, capital: 1 },
+  tags: ["AI-native", "Small team", "Bootstrapped", "Running", "B2B", "Developer tools"],
+  product: "One API address, in the same format as OpenAI's API, that forwards each request to one of more than 200 models from more than 40 providers, such as OpenAI, Anthropic and Google, and records the cost of each request. Customers prepay credits at the providers' prices plus a 5% fee, bring their own provider keys for free, or run the open-source code on their own servers. DevPass is a monthly subscription for AI coding agents.",
+  why: "Every team that builds with AI models ends up with several provider accounts, keys, invoices and SDKs. One gateway with open code replaces them, and a developer can read the code before sending traffic through the hosted version. In 2026 the founders added DevPass, a flat monthly price for coding agents with an allowance of up to three times the price in model usage. The verified monthly receipts grew from US$57,994 in January 2026 to US$249,922 in August 2026; TrustMRR does not split them by product.",
+  summary: [
+    `LLM Gateway is an <dfn>API gateway</dfn> for <dfn>large language models</dfn> (LLMs). An API gateway is one server address that receives a program's requests and forwards each one to the right service; LLMs are the AI models that read and write text, such as the models behind ChatGPT. An application sends a request in the format of OpenAI's API, and the gateway passes it to OpenAI, Anthropic, Google or one of more than 40 other providers, records the cost, and sends the request to another provider when the first one fails, which is called <dfn>failover</dfn>. The code is <dfn>open source</dfn> under the <dfn>AGPLv3</dfn> licence: anyone may read, run and change it, but whoever offers a changed version as a network service must publish the changes. The hosted version sells prepaid credits at the providers' prices plus a 5% fee. OpenRouter, another gateway, works the same way: its own FAQ says it passes the providers' prices through without markup and charges a fee when customers buy credits.`,
+    `Two co-founders build it: Luca Steeb, and a developer who signs as Smakosh. The GitHub repository was created on 12 April 2025, and the founders give 22 May 2025 as the founding date. <dfn>TrustMRR</dfn>, a site that reads revenue directly from a company's payment processor, shows US$1,000,116 of Stripe receipts from the start to 7 September 2026. Of this, US$999,309 came in the twelve months from October 2025, and US$249,922 in August 2026 alone. In 2026 the company added DevPass, a subscription at US$29 to US$179 a month for AI coding agents. The operating company is Polar Lights LLC in Delaware. No funding round was found.`,
+    `The headline is <dfn>gross receipts</dfn>: all the money that customers paid, before the model providers are paid. On pay-as-you-go credits the business keeps the 5% fee, about 4.8% of each payment. On DevPass it keeps the price minus what the subscriber's usage costs, and that usage may reach three times the price at list rates; no source shows the result. The verified data stops on 7 September 2026, when the Stripe <dfn>API key</dfn> that TrustMRR used expired. An API key is a password that lets one program read another program's account. By a co-founder's own statement, the figures also leave out enterprise deals paid by bank wire.`
+  ],
+  factsCaption: "US$1 million of Stripe-verified gross receipts in about 16 months, with verification stopped on 7 September 2026. Most of the money passes on to the model providers.",
+  factsRead: "How to read this table: a grade A value comes from Stripe through TrustMRR, as read up to 7 September 2026, the day the Stripe API key expired. A grade C value is the company's own page, a founder post, or a public record such as GitHub. A \"calc\" value was computed on this page from the rows above it. The money figures are gross receipts, not the part that the business keeps.",
+  timelineLead: "From a GitHub repository in April 2025 to US$1 million of verified receipts in September 2026, in 16 months. Each entry carries its grade.",
+  pricing: {
+    caption: "LLM Gateway prices in October 2026, from the company's pricing page and DevPass page (grade C)",
+    note: "Pay-as-you-go customers buy credits and pay each provider's per-token price plus a flat 5% platform fee; cards from outside the US pay 1.5% more. With their own provider keys (bring your own key, BYOK) routing costs nothing. DevPass plans are monthly. From 15 October 2026 the DevPass allowance falls from 3 times to 2 times the price at each subscriber's first renewal on or after that date, and new subscriptions start at 2 times. Self-hosting the AGPLv3 code is free; code in the ee/ directory needs an enterprise licence in production.",
+    rows: [
+      ["Free, pay as you go", "0", "0", "provider prices plus 5% fee on credits; BYOK free"],
+      ["DevPass Lite", "", "29", "US$87 of usage at provider list rates (3x); US$58 from 15 October 2026"],
+      ["DevPass Pro", "", "79", "US$237 of usage (3x); US$158 from 15 October 2026"],
+      ["DevPass Max", "", "179", "US$537 of usage (3x); US$358 from 15 October 2026"],
+      ["Enterprise", "custom", "", "volume discounts on credits, SLA, invoicing, 30-day trial"],
+      ["Self-hosted", "0", "0", "AGPLv3; ee/ code needs a commercial licence"]
+    ]
+  },
+  facts: [
+    { fact: "Verified receipts in the 12 months to 7 September 2026", value: "US$999,309", grade: "A", note: "Stripe data on TrustMRR. The twelve monthly figures from October 2025 to September 2026 add up to this total. Gross receipts: they include prepaid model credits that pass on to the providers.", src: [1] },
+    { fact: "Verified receipts, all time to 7 September 2026", value: "US$1,000,116", grade: "A", note: "Stripe data on TrustMRR. By subtraction, only US$807 of it came before October 2025.", src: [1] },
+    { fact: "Verified receipts in August 2026, the last full month", value: "US$249,922", grade: "A", note: "Up from US$161,592 in July, US$101,431 in June and US$57,994 in January 2026. September 2026 has US$51,265 for its first days only.", src: [1] },
+    { fact: "Growth to August 2026", value: "54.7% over July; 4.3 times January", grade: "X", note: "Calculated from the monthly figures above.", src: [1] },
+    { fact: "Run rate from August 2026", value: "about US$3.0 million a year", grade: "X", note: "Calculated: US$249,922 times 12 is US$2,999,064. One month only, gross, and the last full month before verification stopped.", src: [1] },
+    { fact: "Monthly recurring revenue and active subscriptions", value: "US$78,764 from 1,386 subscriptions", grade: "A", note: "Stripe snapshot stored on the profile at the last sync. Calculated: about US$56.83 per subscription a month. TrustMRR does not say which products the subscriptions are for.", src: [1] },
+    { fact: "Receipts in the last 30 days before verification stopped", value: "US$259,539, up 54.6%", grade: "A", note: "Snapshot from the last sync on 7 September 2026. The daily table on the same profile shows US$0.00 for every later day, because no data arrives after the key expired.", src: [1] },
+    { fact: "End of verified data", value: "7 September 2026", grade: "A", note: "Last revenue sync at 02:22 UTC; the Stripe API key expired at 08:22 UTC the same day. Nothing after that date is verified.", src: [1] },
+    { fact: "Missing from the verified figures", value: "enterprise deals paid by bank wire", grade: "C", note: "Co-founder's post on 7 September 2026: TrustMRR does not include them. Their size is not known.", src: [8] },
+    { fact: "What the business keeps on pay-as-you-go credits", value: "a 5% fee, about 4.8% of the payment", grade: "X", note: "Calculated: the pricing table writes \"Pay per token + 5% fee\", so US$100 of credits costs US$105, and 5 divided by 105 is 4.76%. With the customer's own provider keys there is no fee.", src: [2, 3] },
+    { fact: "Fee left after card processing on a US$105 payment", value: "about US$1.66, or 1.6%", grade: "X", note: "Calculated at Stripe's list price for US cards, 2.9% plus 30 cents: US$3.35 of the US$5 fee goes to Stripe. LLM Gateway's real Stripe rate is not known.", src: [3, 20] },
+    { fact: "Upper limit of fee income in the all-time receipts", value: "about US$47,625", grade: "X", note: "Calculated: US$1,000,116 times 5/105, as if every receipt were a credit purchase. Part of the money is DevPass subscriptions, whose margin no source shows.", src: [1, 3] },
+    { fact: "DevPass usage allowance", value: "3 times the price, 2 times from 15 October 2026", grade: "C", note: "Company's DevPass page. Lite at US$29 a month gives US$87 of model usage at provider list rates, metered per request. Daily caps and tighter weekly caps on premium models also start on 15 October.", src: [4] },
+    { fact: "Team", value: "2 co-founders", grade: "C", note: "TrustMRR lists Luca Steeb and Smakosh as co-founders, and both X profiles say co-founder. Their two GitHub accounts made 4,104 of the 4,815 commits that GitHub counts, 85.2%. The About page speaks of a distributed team; its size is not known.", src: [1, 2, 5, 9, 10] },
+    { fact: "Outside funding", value: "none found", grade: "C", note: "No funding announcement in any downloaded source, and no page in the Y Combinator company directory. Not verified that none exists.", src: [21] },
+    { fact: "Company", value: "Polar Lights LLC, Delaware", grade: "C", note: "The About page names it as the operator, at an address in Lewes, Delaware. The LICENSE file names LLMGateway, Inc. as the copyright holder; no source explains the difference.", src: [2, 6] },
+    { fact: "Open-source licence", value: "AGPLv3, with a commercial licence for the ee/ directory", grade: "C", note: "Production use of the ee/ code needs an LLMGateway Enterprise licence for the correct number of user seats. Development and testing use is free.", src: [2, 6] },
+    { fact: "GitHub repository, 14 October 2026", value: "1,686 stars, 193 forks, 39 contributors", grade: "C", note: "GitHub's own record. Created on 12 April 2025. The contributors include bots, among them dependabot and devin-ai-integration.", src: [5] },
+    { fact: "Traffic claimed by the company", value: "more than 1 trillion tokens in more than 80 million requests", grade: "C", note: "Company's About page. Not verified.", src: [2] },
+    { fact: "Time from founding to US$1 million in receipts", value: "16 months", grade: "X", note: "Calculated: 22 May 2025 to 7 September 2026 is 473 days, or 15.5 months.", src: [1] },
+    { fact: "Status, October 2026", value: "running", grade: "C", note: "New code was pushed on 14 October 2026, the company account announced new endpoints on 12 October 2026, and the changelog covers four products: LLM Gateway, DevPass, Lounge and Airside.", src: [5, 11, 14] }
+  ],
+  timeline: [
+    { when: "12 April 2025", what: "The GitHub repository theopenco/llmgateway is created.", grade: "C", src: [5] },
+    { when: "22 May 2025", what: "Founding date, as the founders entered it on TrustMRR.", grade: "C", src: [1] },
+    { when: "9 June 2025", what: "A Hacker News post presents the site as an \"open-source Openrouter\". It gets 3 points.", grade: "C", src: [12] },
+    { when: "13 June 2025", what: "The company account @llmgateway opens on X.", grade: "C", src: [11] },
+    { when: "October to December 2025", what: "First months in the verified timeline: US$89 in October, US$10,920 in November, US$47,191 in December.", grade: "A", src: [1] },
+    { when: "31 March 2026", what: "A commit by Smakosh renames the coding subscription to DevPass.", grade: "C", src: [7] },
+    { when: "26 April 2026", what: "An admin page for DevPass subscribers is added to the code.", grade: "C", src: [7] },
+    { when: "7 May 2026", what: "DevPass launches on Product Hunt.", grade: "C", src: [14] },
+    { when: "June 2026", what: "US$101,431 in one month, the first month above US$100,000.", grade: "A", src: [1] },
+    { when: "22 July 2026", what: "Luca Steeb posts a response-time benchmark of LLM Gateway against OpenRouter on Hacker News.", grade: "C", src: [12] },
+    { when: "August 2026", what: "US$249,922, the highest verified month. After problems with Stripe card disputes, Luca Steeb writes that \"card payments as a merchant really are a nightmare\".", grade: "A", src: [1, 9] },
+    { when: "7 September 2026", what: "All-time Stripe receipts pass US$1 million. Smakosh posts that the US$1 million is now verifiable but leaves out bank-wire deals. The Stripe key expires six hours after the last sync, and verification stops.", grade: "A", src: [1, 8] },
+    { when: "25 September 2026", what: "Both co-founders present LLM Gateway on the DevNTell live stream on X.", grade: "C", src: [9] },
+    { when: "12 October 2026", what: "The company announces new endpoints for OpenAI's Decisions API and Perplexity's Search API.", grade: "C", src: [11] },
+    { when: "15 October 2026", what: "Scheduled: the DevPass allowance falls from 3 times to 2 times the price.", grade: "C", src: [4] }
+  ],
+  mechanism: [
+    { title: "Open code that developers can check", text: "The gateway, dashboard, API and worker are all AGPLv3 on GitHub, and self-hosting takes one Docker command. A developer can read the code before sending traffic through the hosted version, and can leave without losing the tool. An early public mention, on Hacker News in June 2025, described it as an open-source OpenRouter." },
+    { title: "Prepaid credits at provider prices plus 5%", text: "The hosted service sells model usage at each provider's own per-token price and adds a flat 5% fee when credits are bought. Customers pay before they use, so the business does not wait for its money. With their own provider keys, customers pay nothing to the gateway and still get the analytics, caching and failover." },
+    { title: "A flat subscription for coding agents", text: "DevPass costs US$29, US$79 or US$179 a month and meters up to three times that amount in model usage at list rates, for Claude Code, OpenCode and other agents. It got its name in March 2026. The verified monthly receipts rose fastest after that, from US$85,742 in April to US$249,922 in August 2026, but TrustMRR does not split receipts by product, so the share of DevPass is not known." },
+    { title: "Paid features for companies", text: "By the pricing page, Enterprise plans add volume discounts, custom routing, unlimited data retention, a 99.9% uptime SLA and invoicing, and the feature table names enterprise audit logs and enterprise guardrails. Separately, the licence puts the code in the ee/ directory under a paid licence for production use. Enterprise payments by bank wire are not in the Stripe figures." }
+  ],
+  howBuilt: {
+    intro: "These details come from the company's pages, its public GitHub repository and the co-founders' posts. They are grade C.",
+    items: [
+      "One public repository holds the gateway, the dashboard, the API and the worker, licensed AGPLv3. Self-hosting is one Docker command.",
+      "The website moved from TanStack Start to Next.js in July 2025, by the changelog.",
+      "The two co-founders made 85% of the commits that GitHub counts. Bots commit too: dependabot updates dependencies, and devin-ai-integration, the account of an AI coding agent, has 92 commits.",
+      "Google Cloud hosts the application, the database and the file storage, Stripe takes the payments, Resend sends the email and PostHog records product analytics, by the company's sub-processor list of 19 August 2026. In August 2026 Luca Steeb complained in public about Stripe's handling of card disputes.",
+      "A provider page lists, for each of 45 providers, the legal terms, the data handling and the contracting entity. The company says that it adds new models within 48 hours of their release.",
+      "OpenCode has LLM Gateway built in, and Claude Code and other agents connect with two environment variables.",
+      "Marketing: the company X account posts each new model, and the site has comparison pages against OpenRouter, LiteLLM, Portkey and Vercel AI Gateway."
+    ],
+    src: [2, 5, 9, 4, 13, 11, 22, 14]
+  },
+  predecessorsIntro: "Four companies in the Loot Drop database sold one API in front of many services that other companies owned, or a developer platform that a larger company could give away. The values below are from that database and are not independently verified.",
+  predecessors: [
+    { name: "Singly", years: "2011 to 2016", funding: "US$2.7M", cause: "Competition", promise: "One API for a person's data from many social networks and online services.", died: "It depended on other companies' APIs, which were not reliable. Zapier and IFTTT offered broader automation, and after Appcelerator bought it in 2013 the product lost its focus.", url: "https://www.loot-drop.io/startup/548-singly" },
+    { name: "Parse", years: "2011 to 2016", funding: "US$7M", cause: "Competition", promise: "A ready-made backend, so that app developers did not need their own servers.", died: "Facebook bought it in 2013 and did not give it the resources it needed, while Google backed Firebase, a competing product.", url: "https://www.loot-drop.io/startup/414-parse" },
+    { name: "Solid", years: "2017 to 2025", funding: "US$81M", cause: "Unit Economics", promise: "One API that connects a company's business software, so that no one writes custom integrations.", died: "Connecting everything to everything was harder than planned. Long sales cycles, a high cost to win each customer and high support costs were more than customers paid.", url: "https://www.loot-drop.io/startup/2479-solid" },
+    { name: "Finantier", years: "2021 to 2024", funding: "US$3M", cause: "Competition", promise: "One API to connect apps to the many banks of Southeast Asia.", died: "The rules were different in each country and slowed its growth, and Plaid, a much larger rival, entered the region.", url: "https://www.loot-drop.io/startup/885-finantier" }
+  ],
+  whatChanged: [
+    `Each of the four stood between developers and services that other companies owned. Singly broke when the social networks changed their APIs, Parse lost to a rival with Google behind it, Solid's cost of serving each customer was higher than what the customer paid, and Finantier lost to a larger rival. LLM Gateway has the same exposure: the model providers own the models, set the prices and write the terms, and Vercel and Cloudflare offer gateways with no fee at all.`,
+    `Two things differ. First, customers pay in advance and the gateway passes the providers' prices through, so the business needs little money of its own, and no funding round was found. Second, the code is open source, so a customer who stops paying can keep running it, which the company names as the reason that teams stay. Neither difference makes the margin larger: on pay-as-you-go credits the business keeps about 5% before card fees.`
+  ],
+  copy: {
+    verdict: "The method, yes. The margin, with care.",
+    text: "An open-source gateway that resells model usage needs little money to start, because customers prepay. But the fee is a few percent of the money that passes through, and large platforms offer the same function for free. The parts to copy are the open code that brings developers to the product, and products that earn more than a pass-through fee: a subscription and an enterprise licence.",
+    steps: [
+      "Publish the core under a licence such as AGPLv3, which allows self-hosting but makes anyone who sells a changed version as a service publish the changes.",
+      "Sell prepaid credits at the providers' prices plus a small, stated fee, and let customers bring their own keys for free.",
+      "Put the features that companies need, such as audit logs and guardrails, under a commercial licence.",
+      "Test flat-price plans with care: an allowance of three times the price works only when most subscribers use much less."
+    ],
+    open: "Gateways for other paid APIs that change fast: speech, image and video models, web search APIs, and the AI coding agents that need many models behind one key."
+  },
+  watch: [
+    { title: "Gross receipts, not the business's revenue", text: "The US$999,309 is what customers paid through Stripe. On pay-as-you-go credits about 95% passes on to the model providers, and the business keeps the 5% fee, about 4.8% of the payment, or about 1.6% after Stripe's list card fee. The margin on DevPass is not public, and no source gives a profit figure." },
+    { title: "Verification stopped on 7 September 2026", text: "The Stripe API key that TrustMRR reads expired that day, so every verified figure ends then, and the daily table shows US$0.00 for every later day. A co-founder says that enterprise deals paid by bank wire are missing, so the real total may be higher. Nothing after 7 September is verified in either direction." },
+    { title: "Many competitors, some with no fee", text: "OpenRouter uses the same model of pass-through prices and a fee on credits. LiteLLM is an open-source gateway with 61,218 GitHub stars, against 1,686 for LLM Gateway. Portkey sells a production plan at US$49 a month. Vercel AI Gateway charges no markup and no platform fee, and Cloudflare AI Gateway's core features are free. In August 2026 another gateway was posted on Hacker News as one that charges 0%." },
+    { title: "Thin margins on resold model usage", text: "DevPass gave three times its price in model usage at list rates. From 15 October 2026 it gives two times for the same price, with daily caps and tighter weekly caps on premium models. The company did not say why. A plan that gives more usage than its price makes money only when most subscribers use less than their allowance." },
+    { title: "Dependence on the model providers' terms", text: "Every request goes to a provider under that provider's terms; the company's provider page names, for each of 45 providers, the contracting party in the terms that apply to LLM Gateway's account. A provider that raises prices, limits resale or closes the account changes the product at once." },
+    { title: "Two people, two company names", text: "The work rests on two co-founders, who made 85% of the commits. The About page names Polar Lights LLC as the operator, while the licence file names LLMGateway, Inc.; no source explains which company owns the code." }
+  ],
+  sources: [
+    { title: "TrustMRR: LLM Gateway profile, read 14 October 2026", url: "https://trustmrr.com/startup/llm-gateway", grade: "A", how: "Read the markdown profile (https://trustmrr.com/startup/llm-gateway.md) in full. The revenue table, the monthly timeline, the MRR and the subscription count come from Stripe (grade A); the description, the co-founders and the founding date are founder-written (grade C). Last sync 7 September 2026; the Stripe key expired the same day." },
+    { title: "LLM Gateway: About page", url: "https://llmgateway.io/about", grade: "C", how: "Read in full. Source for the 5% fee, the AGPLv3 licence, the ee/ directory, Polar Lights LLC and the traffic totals." },
+    { title: "LLM Gateway: Pricing page", url: "https://llmgateway.io/pricing", grade: "C", how: "Read in full. Source for the plans, the 5% fee, the fee for cards from outside the US and the BYOK rule." },
+    { title: "LLM Gateway: DevPass page", url: "https://llmgateway.io/devpass", grade: "C", how: "Read the plans, the notice of the change on 15 October 2026 and the agent list." },
+    { title: "GitHub API: repository theopenco/llmgateway, its contributors and its organization", url: "https://api.github.com/repos/theopenco/llmgateway", grade: "C", how: "Read the JSON records on 14 October 2026: creation date, last push, stars, forks, licence field and commits per contributor." },
+    { title: "GitHub: LICENSE and ee/LICENSE of theopenco/llmgateway", url: "https://github.com/theopenco/llmgateway/blob/main/LICENSE", grade: "C", how: "Read both files in full, as raw text." },
+    { title: "GitHub: commit \"rebrand to DevPass\", 31 March 2026, and the next DevPass commits", url: "https://github.com/theopenco/llmgateway/commit/ba3de02344f239c574a8a70a35bf83a5b4e02246", grade: "C", how: "Read the three oldest results of the GitHub commit search API for \"devpass\"." },
+    { title: "Smakosh on X, 7 September 2026: TrustMRR and the US$1 million", url: "https://x.com/smakosh/status/2096874683463278902", grade: "C", how: "Read in full through api.fxtwitter.com. Co-founder's post on the US$1 million and the bank-wire deals." },
+    { title: "Luca Steeb on X: profile and recent posts", url: "https://x.com/steebchen", grade: "C", how: "Read the profile and the latest 20 posts through api.fxtwitter.com: co-founder bio, his own Stripe dispute posts of August 2026, and his repost of Developer DAO's announcement of the DevNTell live stream of 25 September 2026." },
+    { title: "Smakosh on X: profile", url: "https://x.com/smakosh", grade: "C", how: "Read the profile and the latest 20 posts through api.fxtwitter.com. Source for the co-founder bio." },
+    { title: "LLM Gateway on X: profile and recent posts", url: "https://x.com/llmgateway", grade: "C", how: "Read the profile and the latest 20 posts through api.fxtwitter.com. Source for the account's start date and the announcements of 12 October 2026." },
+    { title: "Hacker News, 9 June 2025: LLM Gateway: open-source Openrouter", url: "https://news.ycombinator.com/item?id=44220561", grade: "C", how: "Read the story record through the Algolia Hacker News search API: title, date and points. The same search gave the benchmark post of 22 July 2026 and the post of 24 August 2026 about a gateway that charges 0%." },
+    { title: "LLM Gateway: Provider information page", url: "https://llmgateway.io/legal/providers", grade: "C", how: "Read the introduction and the first entries of the table of 45 providers." },
+    { title: "LLM Gateway: Changelog", url: "https://llmgateway.io/changelog", grade: "C", how: "Read the latest entries, to 22 September 2026, and the list of products." },
+    { title: "OpenRouter: FAQ", url: "https://openrouter.ai/docs/faq", grade: "C", how: "Read the section on pricing and fees. The fee rate itself loads by script and is not in the downloaded text." },
+    { title: "Vercel documentation: AI Gateway pricing", url: "https://vercel.com/docs/ai-gateway/pricing", grade: "C", how: "Read the introduction on markup and fees." },
+    { title: "Cloudflare documentation: AI Gateway pricing", url: "https://developers.cloudflare.com/ai-gateway/reference/pricing/", grade: "C", how: "Read the pricing notes." },
+    { title: "Portkey: Pricing page", url: "https://portkey.ai/pricing", grade: "C", how: "Read the plan table." },
+    { title: "GitHub API: repository BerriAI/litellm", url: "https://api.github.com/repos/BerriAI/litellm", grade: "C", how: "Read the JSON record on 14 October 2026: stars and description." },
+    { title: "Stripe: Pricing page", url: "https://stripe.com/pricing", grade: "C", how: "Read the line on card pricing in the US." },
+    { title: "Y Combinator company directory: llm-gateway", url: "https://www.ycombinator.com/companies/llm-gateway", grade: "C", how: "Requested on 14 October 2026; the server answered 404, no such page. A missing page is weak evidence, not proof, that there was no Y Combinator funding." },
+    { title: "LLM Gateway: Sub-processor list, version of 19 August 2026", url: "https://llmgateway.io/legal/sub-processors", grade: "C", how: "Read the list of operational sub-processors in full." },
+    { title: "Loot Drop database export, failed startups", url: "https://www.loot-drop.io/", grade: "C", how: "Local export. AI-written summaries, not independently verified. Source for the failed predecessors." }
+  ]
 }
 ];
 
