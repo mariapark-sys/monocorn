@@ -9639,6 +9639,164 @@ const STORIES = [
     { title: "Chrome for Developers: Chrome Web Store Program Policies", url: "https://developer.chrome.com/docs/webstore/program-policies/policies", grade: "C", how: "Read the sections on user data, Limited Use and policy changes." },
     { title: "Loot Drop database export, failed startups", url: "https://www.loot-drop.io/", grade: "C", how: "Local export. AI-written summaries, not independently verified. Source for the failed predecessors." }
   ]
+},
+{
+  slug: "visualizee-ai",
+  name: "Visualizee.ai",
+  country: "Poland",
+  sector: "Information Technology",
+  productType: "AI rendering for architects",
+  aiType: "AI-native",
+  team: "solo",
+  outcome: "running",
+  evidence: "A",
+  added: "2026-10-14",
+  launchLabel: "21 September 2023",
+  outcomeLabel: "US$8.1K a month recurring revenue, October 2026",
+  sticker: "$98K/yr run rate",
+  outcomeUsd: 97668,
+  months: 37,
+  teamLabel: "1 founder, part-time next to a full-time job; the operating company has a second shareholder and board member",
+  fundingLabel: "None found",
+  primaryFactor: "Simplicity",
+  meters: { evidence: 3, copyable: 2, capital: 1 },
+  tags: ["AI-native", "Solo founder", "Bootstrapped", "Running", "B2B", "Architecture"],
+  product: "A web app where an architect or interior designer uploads a SketchUp screenshot, a sketch or a photo and types what to change. A chat assistant called Vizzy returns a photoreal render, or a short video, that keeps the rest of the design. Plans cost US$15 to US$80 a month.",
+  why: "For two years it was a powerful node editor that architects did not want, and it made about US$150 a month. The founder replaced it with a chat box where you say what you want, and changed one-time payments to subscriptions. Stripe revenue then grew 5.3 times from November 2025 to March 2026. His salary paid for the slow years.",
+  summary: [
+    `Visualizee is a <dfn>rendering</dfn> tool for architects and interior designers. Rendering means making a realistic picture of a building or a room from a 3D model or a drawing; done the classic way, it needs a 3D artist and hours of computer time. Here the user uploads a SketchUp screenshot, a sketch or a photo, types what to change, and a chat assistant called Vizzy returns a photoreal image in 30 seconds to 2 minutes, or a short video. Plans cost US$15, US$35 or US$80 a month. Behind the assistant are <dfn>image models</dfn>, AI programs that generate a picture from a text request and a reference image. The site does not say which ones it uses.`,
+    `Piotr Obidowski builds it next to a full-time job; the company that operates it is registered in Poland. He launched it on Product Hunt on 21 September 2023. For about two years it made about US$150 a month. In his account the cause was the interface: a <dfn>node editor</dfn>, a screen where the user connects boxes into a chain of processing steps, when architects only wanted a render by lunch. He replaced it with the chat assistant and moved from one-time payments to subscriptions. Stripe data shows US$1,737 of revenue in November 2025 and US$9,251 in March 2026. On 14 October 2026 the <dfn>MRR</dfn>, monthly recurring revenue, the subscription revenue of one month, was US$8,139 from 288 active subscriptions.`,
+    `The revenue figures are Stripe data that TrustMRR reads through an API key, grade A. The account of why sales changed is the founder's own, grade C. From April to September 2026 revenue stayed between US$8,852 and US$9,929 a month, and the large design-software makers now sell the same feature inside the programs that architects already use.`
+  ],
+  factsCaption: "Stripe-verified revenue of US$87,384 in twelve months and US$8,139 of monthly recurring revenue in October 2026, after two years at about US$150 a month",
+  factsRead: "How to read this table: a grade A value was read from Stripe by TrustMRR through an API key, or comes from an official Polish register. A grade C value is a founder statement, a founder-written profile field or the company's own page. A \"calc\" value was computed on this page from the rows above it.",
+  timelineLead: "From a node editor that made about US$150 a month to a chat assistant near US$10,000 a month, in 37 months. Each entry carries its grade.",
+  pricing: {
+    caption: "Visualizee prices on 14 October 2026, read from the company's pricing page (grade C)",
+    note: "Each plan is one monthly allowance that can be spent at any quality: a Pro render counts as about 2 Fast renders, an Ultra render as about 4. Fast takes about 30 seconds, Pro under a minute, Ultra about 2 minutes and goes up to 4K. Yearly billing saves 25%: Hobby costs US$135, Pro US$315 and Max US$720 a year. Extra render packs can be bought at any time, 15% cheaper on Pro and 30% cheaper on Max. Paid renders have no watermark and include a commercial license.",
+    rows: [
+      ["Free", "0", "0", "5 Fast renders, watermarked, up to 1K, personal use only"],
+      ["Hobby", "11.25", "15", "about 90 Fast, or 15 Pro plus about 60 Fast a month; images up to 2K"],
+      ["Pro", "26.25", "35", "about 240 Fast, 120 Pro or 65 Ultra a month; 4K images, 1080p video"],
+      ["Max", "60", "80", "about 600 Fast, 300 Pro or 160 Ultra a month; 4K video"]
+    ]
+  },
+  facts: [
+    { fact: "Monthly recurring revenue, 14 October 2026", value: "US$8,139", grade: "A", note: "Stripe data read by TrustMRR through an API key. Two days earlier the profile showed US$8,104.", src: [1] },
+    { fact: "Run rate from the October 2026 MRR", value: "about US$97,700 a year", grade: "X", note: "Calculated: 8,139 times 12 equals 97,668. This is the headline figure on this page.", src: [1] },
+    { fact: "Revenue in the twelve months to 14 October 2026", value: "US$87,384", grade: "A", note: "Stripe data on TrustMRR.", src: [1] },
+    { fact: "Revenue in all time, to 14 October 2026", value: "US$89,547", grade: "A", note: "Stripe data on TrustMRR. No source mentions an earlier payment provider.", src: [1] },
+    { fact: "Revenue before mid-October 2025", value: "US$2,163", grade: "X", note: "Calculated: 89,547 minus 87,384. Over the 26 months from August 2023 that is about US$83 a month. The founder remembers about US$100 to US$150 a month. Either way, almost all revenue came after the change of interface.", src: [1, 6] },
+    { fact: "Monthly revenue, November 2025 to March 2026", value: "US$1,737, US$2,726, US$5,264, US$6,976, US$9,251", grade: "A", note: "Monthly revenue timeline on TrustMRR. The founder writes that the line turns where the chat interface shipped.", src: [1, 11] },
+    { fact: "Growth from November 2025 to March 2026", value: "5.3 times in four months", grade: "X", note: "Calculated: 9,251 divided by 1,737 equals 5.33.", src: [1] },
+    { fact: "Monthly revenue, April to September 2026", value: "between US$8,852 and US$9,929, average US$9,489", grade: "X", note: "Calculated from the six monthly values on TrustMRR. September 2026 is 10.8% below April 2026. Revenue in the last 30 days, US$8,684, is 2.8% below the 30 days before.", src: [1] },
+    { fact: "Visualizee revenue in September 2026, founder's post", value: "US$8,832", grade: "C", note: "Founder's post of 2 October 2026, next to US$9,669 from his full-time job and US$634.10 from his second product. The Stripe figure for September is US$8,852.", src: [5, 1] },
+    { fact: "Active subscriptions, 14 October 2026", value: "288", grade: "A", note: "Stripe data on TrustMRR.", src: [1] },
+    { fact: "MRR per active subscription", value: "about US$28 a month", grade: "X", note: "Calculated: 8,139 divided by 288 equals 28.26, between the monthly prices of Hobby (US$15) and Pro (US$35).", src: [1, 13] },
+    { fact: "Product Hunt launch, 21 September 2023", value: "25 upvotes; 4,000 visitors and 200 signups in 4 days", grade: "C", note: "The upvotes are from an archived copy of the launch page made early on launch day, so the final count may be higher; the page names Piotr Obidowski as the maker. The visitors and signups are the founder's count. Revenue barely moved, he writes.", src: [12, 3] },
+    { fact: "Revenue for about two years after launch", value: "about US$100 to US$150 a month", grade: "C", note: "Founder's posts. The first sales were one-time payments.", src: [3, 6] },
+    { fact: "Time from the chat assistant to about US$10,000 a month", value: "about six months", grade: "C", note: "Founder's post of 6 October 2026. The best Stripe month so far is April 2026, with US$9,929.", src: [4, 1] },
+    { fact: "Credit packs bought by people who already subscribe", value: "97%", grade: "C", note: "Founder's count from 10 months of Stripe data, post of 8 October 2026.", src: [9] },
+    { fact: "Most common cancellation reason", value: "only needed for occasional projects: 5 of the last 11 cancellations", grade: "C", note: "Founder's post of 14 October 2026.", src: [8] },
+    { fact: "Estimated users", value: "25,000", grade: "C", note: "A founder-written field on TrustMRR, not a Stripe figure.", src: [1] },
+    { fact: "Profit margin, last 30 days", value: "66%", grade: "C", note: "Shown on TrustMRR as a snapshot. The profile does not say how costs are entered, so this page does not treat it as verified.", src: [1] },
+    { fact: "Team", value: "1 founder, working on it before and after a full-time job", grade: "C", note: "Founder's posts: no meetings, no calls, no standups for his products, and Claude Code does most of the typing.", src: [11, 10] },
+    { fact: "Operating company", value: "Obidowski Company Sp. z o.o., in the court register since 22 December 2015, share capital PLN 5,000", grade: "A", note: "Polish court register (KRS 0000593281) and the tax register. The terms of service name this company as the operator. Two private persons hold the shares, 60% and 40%; no company or fund holds any. The board has two members and there is no supervisory board. The public register masks personal names.", src: [20, 19, 18] },
+    { fact: "Outside funding", value: "none found", grade: "C", note: "No investor appears in the share register, and no source read for this page mentions a funding round, an accelerator or a grant. Grants and loans would not show in a share register.", src: [20, 11] },
+    { fact: "Second product of the founder", value: "Viztunr.com, US$792 MRR", grade: "A", note: "Stripe data on the founder's TrustMRR page. A try-on tool for car tuning shops. Its customers came from cold email, he writes.", src: [2, 11] },
+    { fact: "Time from launch to the October 2026 figure", value: "37 months", grade: "X", note: "Calculated: September 2023 to October 2026.", src: [12, 1] }
+  ],
+  timeline: [
+    { when: "22 December 2015", what: "Obidowski Company Sp. z o.o., the company that now operates Visualizee, enters the Polish court register. Its main registered activity is software.", grade: "A", src: [20] },
+    { when: "10 August 2023", what: "Founding date of Visualizee, as entered on its TrustMRR profile.", grade: "C", src: [1] },
+    { when: "21 September 2023", what: "Launch on Product Hunt, made by Piotr Obidowski, with an offer of 20% off for life. 25 upvotes in the archived copy from early on launch day. The product is a node editor. 4,000 visitors and 200 signups in four days, and almost no revenue.", grade: "C", src: [12, 3] },
+    { when: "2023 to 2025", what: "About US$100 to US$150 a month from one-time payments, for about 700 days. The founder keeps his full-time job. Stripe shows US$2,163 in total before mid-October 2025.", grade: "C", src: [3, 6, 1] },
+    { when: "Late 2025 (exact date not stated)", what: "He deletes the node editor and replaces it with a chat assistant, Vizzy, and replaces one-time payments with subscriptions.", grade: "C", src: [4, 6] },
+    { when: "November 2025 to March 2026", what: "Stripe revenue grows from US$1,737 to US$9,251 a month.", grade: "A", src: [1] },
+    { when: "April 2026", what: "The best month so far: US$9,929.", grade: "A", src: [1] },
+    { when: "After the chat assistant (dates not stated)", what: "Video, more models, car renders, a public API and an MCP server, so that AI assistants such as Claude and ChatGPT can create renders directly.", grade: "C", src: [3, 15] },
+    { when: "September 2026", what: "US$8,852 on Stripe. The founder reports US$8,832, a little less than the US$9,669 from his full-time job, and writes that he has not yet reached US$10,000 in a month.", grade: "A", src: [1, 5, 3] },
+    { when: "9 October 2026", what: "He writes that Starter Story covered his story: 2 years of failing, then US$10,000 a month. The Starter Story page read for this story is an AI-compiled profile that names SEO and Product Hunt as the growth channels.", grade: "C", src: [11, 25] },
+    { when: "14 October 2026", what: "MRR US$8,139 from 288 active subscriptions. Not listed for sale on TrustMRR.", grade: "A", src: [1] }
+  ],
+  mechanism: [
+    { title: "Delete the expert interface", text: "The first product was a node editor: to get a render, an architect had to connect boxes into a processing chain. In the founder's words, it was powerful, and architects did not want powerful; they wanted a render by lunch. The chat assistant asks for one sentence, such as: make it a real living room in warm evening light, keep the layout and the camera. Revenue followed within months." },
+    { title: "Subscriptions with an allowance, and packs on top", text: "One-time payments became monthly plans of US$15, US$35 and US$80, each a pool of renders that can be spent at three qualities. Extra packs were meant for people who dislike subscriptions, but 97% of pack buyers already subscribe, so packs work as a top-up for heavy users." },
+    { title: "A salary paid for the slow years", text: "The founder never quit his job. He writes that the 9-to-5 paid for 700 days of almost no revenue, and that a salary removes the pressure to look successful in public posts. No investor appears in the company's share register." },
+    { title: "Search pages instead of ads", text: "Product Hunt brought visitors but no revenue. The founder says he focused on SEO, search engine optimization, the work of making pages appear in Google results. The site has a page for each competitor (ReRender AI, Vizcom, ArchiVinci, Rendair AI, Midjourney) and pages for single tasks such as sketch to render or furnishing an empty room. An affiliate program exists but, he writes, he barely promoted it." }
+  ],
+  howBuilt: {
+    intro: "These details come from the founder's posts, the founder-written parts of the TrustMRR profile and the company's own pages. They are grade C.",
+    items: [
+      "Next.js, React and TypeScript in the browser; Supabase for the database and accounts, Vercel for hosting and Stripe for payments. The founder uses the same stack for all of his products.",
+      "Claude Code, an AI coding tool, does most of the typing; the founder decides what to build. He holds no meetings, calls or standups for his products.",
+      "The user talks to Vizzy, a chat assistant, and gets images at three qualities: Fast in about 30 seconds, Pro in under a minute, Ultra in about 2 minutes and up to 4K, plus short videos.",
+      "No page or post read for this story names the image models behind it. The founder writes that he added more models, and that a better AI model did not bring more customers. The FAQ says uploads are not used to train AI models.",
+      "A public API and an MCP server. MCP, the Model Context Protocol, is a standard way for AI assistants to call outside tools, so Claude, ChatGPT or Cursor can request a render directly.",
+      "Lifecycle emails and invoicing run on their own, including KSeF, the Polish national system for electronic invoices. He builds nothing that he cannot leave alone for a week.",
+      "The free plan attracted account farms. Sign-ups from about 121,000 throwaway email domains are now blocked."
+    ],
+    src: [1, 10, 11, 14, 16, 15, 3]
+  },
+  predecessorsIntro: "Four companies in the Loot Drop database promised people a finished picture of a room or a design without the usual cost. The values below are from that database and are not independently verified.",
+  predecessors: [
+    { name: "Modsy", years: "2015 to 2022", funding: "US$72.7M", cause: "Unit Economics", promise: "3D pictures of your own room with new furniture in it, before you buy.", died: "Behind each 3D room were hours of work by human designers, so costs grew with every customer. It never came close to a profit.", url: "https://www.loot-drop.io/startup/2521-modsy" },
+    { name: "Laurel & Wolf", years: "2014 to 2019", funding: "US$25M", cause: "Unit Economics", promise: "Online interior design by professional designers for a flat fee.", died: "The flat fees did not cover the cost of finding customers, and quality fell as the designer network grew.", url: "https://www.loot-drop.io/startup/2012-laurel--wolf" },
+    { name: "Tastemaker", years: "2012 to 2015", funding: "US$1.5M", cause: "Competition", promise: "Affordable interior design for people who cannot pay a designer.", died: "Service from a scattered group of designers was uneven, and competitors with more money and more technology, such as Houzz and Modsy, offered the same.", url: "https://www.loot-drop.io/startup/1572-tastemaker" },
+    { name: "Invision", years: "2011 to 2023", funding: "US$350M", cause: "Competition", promise: "Software for designers to show their designs and hand them over to developers.", died: "Figma offered real-time collaboration in the browser, and Invision could not keep up with it.", url: "https://www.loot-drop.io/startup/251-invision" }
+  ],
+  whatChanged: [
+    `Modsy, Laurel & Wolf and Tastemaker sold pictures of a finished room, and each picture needed hours of a human designer. Their costs grew with every customer, and the money ran out first. Invision had software costs, not designer costs, but lost when a competitor offered what designers wanted inside a better platform.`,
+    `Visualizee takes the human out of the picture: an image model produces it in under a minute, and on the Pro and Max plans a client-ready render costs the customer about US$0.25 to US$0.27. With no staff and no investors, about US$9,000 a month is a working business. The risk that remains is the Invision risk: large design-software makers now ship the same feature inside the programs that architects already pay for.`
+  ],
+  copy: {
+    verdict: "The product, late. The method, yes.",
+    text: "AI rendering for architects is now a crowded market with large vendors in it, so a copy of the product starts late. The method is general: keep a salary while the product finds its form, watch where new users stop, and replace an expert interface with plain requests.",
+    steps: [
+      "Keep your job until the product pays. Here a salary paid for 700 days of almost no revenue.",
+      "Watch the first session of new users and remove the step where they stop. Here that meant deleting the node editor.",
+      "Sell a monthly allowance by subscription, and sell extra packs to subscribers who run out.",
+      "Write one search page for each competitor and for each task that people type into Google."
+    ],
+    open: "Other trades that pay for a picture before they build: kitchens, gardens, car wraps and paint colors, shop fronts. The founder's second product sells car try-ons to tuning shops through cold email."
+  },
+  watch: [
+    { title: "Growth has stopped for now", text: "Revenue rose from US$1,737 in November 2025 to US$9,929 in April 2026, then stayed below that: US$8,852 in September 2026, and the last 30 days were 2.8% below the 30 days before. The founder's goal of US$10,000 in a month was not reached by September 2026." },
+    { title: "The large design-software makers ship the same feature", text: "Chaos, the maker of V-Ray and Enscape, bought EvolveLAB and its AI visualization tool Veras on 19 February 2025. Trimble launched SketchUp AI on 10 December 2025, with AI Render, formerly SketchUp Diffusion, which turns a SketchUp model and a text prompt into images in seconds, sold as a monthly subscription. A SketchUp screenshot is the first kind of input that Visualizee's home page names. Specialist competitors are also many: Visualizee's own site has comparison pages for ReRender AI, Vizcom, ArchiVinci, Rendair AI and Midjourney." },
+    { title: "Renders that change the design", text: "Ibrahim Fawakherji, writing on ArchUp on 15 July 2026, described a project of his own in which an AI tool, asked only to make a finished 3D model realistic, changed the street width and the sidewalk, added elements, removed part of the facade and redrew the entrance, with no warning, and charged for each failed attempt. Visualizee's own pricing page shows smaller cases: at Fast quality a stone wall becomes flat plaster, and at Pro quality a frame sits a little higher than in the model. Its promise is a render that keeps everything else, and that is the claim a buyer should test." },
+    { title: "Dependence on image-model providers", text: "The site does not say which image models it uses. If they come from outside providers, as the founder's mention of adding more models suggests but does not prove, then the quality, the speed and the cost per render depend on companies that also sell to every competitor. A price change by a provider changes the margin; a better public model narrows the gap. The founder himself lists 'better AI model = more customers' among the beliefs that turned out wrong." },
+    { title: "Price pressure from general image generators", text: "Midjourney, a general image generator, starts at US$10 a month, or US$8 a month billed yearly, against US$15 for Visualizee's smallest paid plan. Visualizee's answer is that it keeps the architect's layout and camera, while a general generator invents a new image; a buyer who only needs mood pictures may not pay the difference." },
+    { title: "Architects render in bursts", text: "The most common cancellation reason is that the customer needs renders only for occasional projects: 5 of the last 11 cancellations, the founder wrote on 14 October 2026. A monthly subscription works against that rhythm, and he is adding a reminder email before renewal, which costs some revenue." },
+    { title: "One person, part-time, several products", text: "In September 2026 the founder's full-time job paid more than Visualizee. He also runs Viztunr and started a third product, morga.ai, on 10 October 2026. The operating company has two shareholders, both private persons, with 60% and 40%, and a two-person board; whether the second person works on the product is not known. The headline figure was reached with one person building." }
+  ],
+  sources: [
+    { title: "TrustMRR markdown profile: Visualizee.ai, revenue synced 14 October 2026", url: "https://trustmrr.com/startup/visualizee-ai.md", grade: "A", how: "Read the markdown profile in full on 14 October 2026, and compared it with a cached copy of 12 October. The revenue, MRR and subscription figures are in its Verification Sources section, read from Stripe through an API key. The description, founding date, pricing summary, user estimate, profit margin and tech stack are founder-written or unexplained and are treated as grade C." },
+    { title: "TrustMRR founder page: Piotr Obidowski (@pobidowski)", url: "https://trustmrr.com/founder/pobidowski", grade: "A", how: "Read in full. Lists his two startups with verified revenue, Visualizee.ai and Viztunr.com, and their MRR." },
+    { title: "Piotr Obidowski on X, 11 October 2026: Two years at $150/month. Here's everything that changed, in order", url: "https://x.com/pobidowski/status/2109265760770052449", grade: "C", how: "Read in full through api.fxtwitter.com. Source for the Product Hunt numbers, the node editor, the later features and the September 2026 figures." },
+    { title: "Piotr Obidowski on X, 6 October 2026: Visualizee sat at ~$150/month for two years", url: "https://x.com/pobidowski/status/2107380534666010725", grade: "C", how: "Read in full through api.fxtwitter.com. Source for the change from the node editor to the chat assistant and the six months to about US$10,000 a month." },
+    { title: "Piotr Obidowski on X, 2 October 2026: I've made $19,133.10 in September 2026", url: "https://x.com/pobidowski/status/2105909042275389539", grade: "C", how: "Read in full through api.fxtwitter.com. His three income lines add up to US$19,135.10, two dollars more than his total." },
+    { title: "Piotr Obidowski on X, 26 September 2026: My first Visualizee sales were one-time payments", url: "https://x.com/pobidowski/status/2103786243117269016", grade: "C", how: "Read in full through api.fxtwitter.com. Source for the early revenue and the change to subscriptions." },
+    { title: "Piotr Obidowski on X, 26 September 2026: the affiliate program and SEO", url: "https://x.com/pobidowski/status/2103844790345576766", grade: "C", how: "Read in full through api.fxtwitter.com." },
+    { title: "Piotr Obidowski on X, 14 October 2026: Visualizee's #1 cancellation reason", url: "https://x.com/pobidowski/status/2110362235474411644", grade: "C", how: "Read in full through api.fxtwitter.com." },
+    { title: "Piotr Obidowski on X, 8 October 2026: credit packs next to subscriptions", url: "https://x.com/pobidowski/status/2108082887593722183", grade: "C", how: "Read in full through api.fxtwitter.com." },
+    { title: "Piotr Obidowski on X, 7 October 2026: How I ship 3 products next to a full-time job", url: "https://x.com/pobidowski/status/2107722342113689722", grade: "C", how: "Read in full through api.fxtwitter.com. Source for Claude Code, the stack and the automated invoicing." },
+    { title: "Piotr Obidowski's X profile and timeline, 24 September to 14 October 2026", url: "https://x.com/pobidowski", grade: "C", how: "Read the profile and three pages of posts, about 60, through api.fxtwitter.com; the API returned nothing older. Source for the profile text, the posts on meetings, free-plan abuse, the revenue chart, Starter Story, Viztunr and morga.ai." },
+    { title: "Product Hunt: Visualizee.ai, Render Rapidly. Reveal Reality., archived 21 September 2023", url: "http://web.archive.org/web/20230921074920/https://www.producthunt.com/posts/visualizee-ai", grade: "C", how: "Read in full in the Wayback Machine copy of the launch day. Names the maker, the featured date, the upvotes and the launch discount." },
+    { title: "Visualizee pricing page, read 14 October 2026", url: "https://visualizee.ai/pricing", grade: "C", how: "Read in full. Source for the plans, the allowances, the yearly prices and the quality examples." },
+    { title: "Visualizee home page, read 14 October 2026", url: "https://visualizee.ai/", grade: "C", how: "Read in full. Source for the chat assistant Vizzy, the video feature and the comparison and task pages." },
+    { title: "Visualizee MCP server page", url: "https://visualizee.ai/mcp", grade: "C", how: "Read the opening section on connecting AI assistants." },
+    { title: "Visualizee FAQ", url: "https://visualizee.ai/faq", grade: "C", how: "Read in full and searched for model names; none is given. Source for the statement that uploads are not used to train AI models." },
+    { title: "Visualizee: Visualizee and Midjourney compared", url: "https://visualizee.ai/comparison/midjourney", grade: "C", how: "Read in full. The company's own comparison; its footer links the comparison pages for the other competitors." },
+    { title: "Visualizee Terms of Service", url: "https://visualizee.ai/terms-of-service", grade: "C", how: "Read the sections on the company and on contact. Names Obidowski Company Sp. z o.o. and VAT number PL9471986146 as the operator." },
+    { title: "Polish Ministry of Finance, VAT taxpayer register: NIP 9471986146, 14 October 2026", url: "https://wl-api.mf.gov.pl/api/search/nip/9471986146?date=2026-10-14", grade: "A", how: "Read in full (JSON). Links the VAT number in the terms to court register number KRS 0000593281 and shows an active VAT status." },
+    { title: "Polish court register (KRS), current extract for KRS 0000593281, as of 10 April 2026", url: "https://api-krs.ms.gov.pl/api/krs/OdpisAktualny/0000593281?rejestr=P&format=json", grade: "A", how: "Read in full (JSON) from the Ministry of Justice public API. Source for the registration date, share capital, shareholdings, board and main activity. The API masks personal names." },
+    { title: "Chaos press release, 19 February 2025: Chaos Acquires EvolveLAB and its AEC AI Tools", url: "https://www.chaos.com/press/chaos-acquires-evolvelab-and-its-aec-ai-tools", grade: "A", how: "Read in full. The buyer's own announcement." },
+    { title: "Trimble press release, 10 December 2025: Trimble Launches SketchUp AI", url: "https://news.trimble.com/Trimble-Launches-SketchUp-AI-a-New-Suite-of-AI-Powered-Modeling-Visualization-and-Help-Tools", grade: "C", how: "Read in full. The vendor's announcement of its own product." },
+    { title: "ArchUp, Ibrahim Fawakherji, 15 July 2026: The Trial of AI: Who Pays for the Hallucination?", url: "https://archup.net/who-pays-for-ai-hallucination/", grade: "C", how: "Read in full. An architect's account of an AI render that changed a finished model." },
+    { title: "Midjourney documentation: Comparing Midjourney Plans", url: "https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans", grade: "C", how: "Read the price table." },
+    { title: "Starter Story: Visualizee.ai, revenue, growth and monetization", url: "https://www.starterstory.com/businesses/visualizee-ai", grade: "C", how: "Read in full. The page says it was compiled by Starter Story's AI research system from public sources and not written by the founder. Used only for the growth channels it lists." },
+    { title: "Loot Drop database export, 1,749 failed startups", url: "https://www.loot-drop.io/", grade: "C", how: "Local export. AI-written summaries, not independently verified. Source for the failed predecessors." }
+  ]
 }
 ];
 
