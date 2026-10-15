@@ -12330,6 +12330,166 @@ const STORIES = [
     { title: "Adspirer blog: 10 Best AI Tools for PPC Managers in 2026", url: "https://www.adspirer.com/blog/best-ai-tools-ppc-managers-2026", grade: "C", how: "Read in full. The company's own comparison, with a disclosure that Adspirer is its product. Source for the competitor names." },
     { title: "Loot Drop database export, failed startups", url: "https://www.loot-drop.io/", grade: "C", how: "Local export. AI-written summaries, not independently verified. Source for the failed predecessors." }
   ]
+},
+{
+  slug: "lancer-app",
+  name: "Lancer",
+  country: "North Macedonia",
+  sector: "Information Technology",
+  productType: "AI agent that bids on Upwork jobs",
+  aiType: "AI-native",
+  team: "small",
+  outcome: "running",
+  evidence: "A",
+  added: "2026-10-15",
+  launchLabel: "June 2025",
+  outcomeLabel: "US$17.7K a month recurring revenue, October 2026",
+  sticker: "$212K/yr run rate",
+  outcomeUsd: 212196,
+  months: 16,
+  teamLabel: "2 founders and no employees (January and July 2026)",
+  fundingLabel: "None found; no loans in the company's 2025 accounts",
+  primaryFactor: "Distribution",
+  group: "marketing-content",
+  channel: "partners",
+  trend: "falling",
+  collections: ["platform"],
+  meters: { evidence: 3, copyable: 2, capital: 2 },
+  tags: ["AI-native", "Small team", "Bootstrapped", "Running", "B2B", "Sales"],
+  product: "An AI agent for Upwork. It reads the Upwork job feed against filters that the customer sets, checks with AI whether each job fits, writes a proposal and the answers to the screening questions from the customer's own knowledge base, and submits it from the customer's Upwork account, with optional boosting. Replies are tracked in an inbox. An MCP server and a REST API let the customer's own AI agent run it.",
+  why: "The founder had the problem himself. Upwork had become his agency's best sales channel, but 10,000 jobs a day are posted around the clock and he could cover only about 8% of them by hand. He built the tool for his own agency and charged agency owners a business price from the start. Two Upwork coaches, who advise freelancers and agencies, switched their clients to it as affiliates, and that produced most of the growth.",
+  summary: [
+    `Lancer is an <dfn>AI agent</dfn>, a program that uses a language model to decide and act on its own instead of only answering questions, for Upwork, a marketplace where clients post jobs and freelancers apply with written proposals. It reads the Upwork job feed against filters that the customer sets, such as budget and the client's past spending and hire rate, and runs an AI check on whether each job fits. For the jobs that pass, it writes a proposal from a knowledge base that the customer wrote, answers the job's screening questions, and submits the proposal from the customer's own Upwork account. Proposals use <dfn>Connects</dfn>, credits that freelancers buy from Upwork. Lancer charges US$149 to US$499 a month.`,
+    `Ivan Nedelkovski, from Skopje in North Macedonia, started a software development agency, MVP Masters, in 2020 and grew it to 15 full-time staff before he exited it in 2025 to start a product studio. In 2024 his agency spent US$800 on Upwork and won three contracts worth US$240,000 over the next twelve months, but he could watch only a small part of the job posts by hand. He built Lancer for his own agency first, had paying users at about US$300 a month five months after the first line of code, and launched in June 2025. <dfn>TrustMRR</dfn>, a site that reads a startup's revenue directly from its payment processor, shows Stripe revenue that grew from US$6,434 in December 2025 to US$26,665 in September 2026. The <dfn>MRR</dfn>, monthly recurring revenue, the monthly value of all active subscriptions, was US$17,683 on 15 October 2026, down 17.2% in 30 days. That is a <dfn>run rate</dfn>, the current monthly figure times 12, of about US$212,000 a year. Two people run it, and it has been for sale since January 2026, now at US$699,999.`,
+    `The revenue figures are grade A: TrustMRR reads them from Stripe. The team size, the history and the growth channel are the founder's words, grade C. The Estonian company that operates Lancer, MVP Masters OÜ, files annual reports that show its 2024 revenue came from programming work and that it made a loss in 2025. The largest risk is the platform: Upwork's terms forbid bots and user-interface automation outside its official tools, and Upwork offers its own AI that drafts proposals. The page also shows earlier companies that died when the platform they were built on changed its rules.`
+  ],
+  factsCaption: "An AI agent for Upwork, run by two people, with Stripe-verified recurring revenue of US$17,683 a month in October 2026, down 17.2% in 30 days, listed for sale at US$699,999",
+  factsRead: "How to read this table: a grade A value comes from Stripe through TrustMRR, from Upwork's own published terms and announcements, or from the Estonian company register and the annual reports filed there. A grade C value is a statement by the founder, the company or a third-party site. An X value was computed on this page from the sources it names.",
+  timelineLead: "From an agency's own Upwork problem to a product for sale, in 16 months after launch. Each entry carries its grade.",
+  pricing: {
+    caption: "Lancer prices in October 2026, from the company's pricing page and the price data in its page source (grade C)",
+    note: "There is no yearly plan, so the yearly column is empty. Each plan is billed monthly or by the quarter, and the quarterly price is sold as 'Pay 2, get 1 free'. The cheaper plan charges by lead, a conversation started with a client: the page says 'We charge per conversation started.' Proposals also use the customer's own Upwork Connects, which Lancer can top up automatically. The page also says '33% upgrade to Unlimited within 90 days'.",
+    rows: [
+      ["Pay-Per-Lead", "", "149", "1 Upwork account; unlimited proposals; quarterly: US$299 a quarter (about US$99 a month) with 15 leads a quarter, then US$19 each"],
+      ["Unlimited", "", "499", "several Upwork accounts; setup done for you; monthly check-ins; quarterly: US$999 a quarter (about US$333 a month)"]
+    ]
+  },
+  facts: [
+    { fact: "Monthly recurring revenue (MRR), 15 October 2026", value: "US$17,683", grade: "A", note: "Stripe data read by TrustMRR through an API key, last synced 15 October 2026. 111 active subscriptions.", src: [1] },
+    { fact: "Run rate from that MRR", value: "about US$212,196 a year", grade: "X", note: "Calculated: US$17,683 times 12. This is the headline figure on this page.", src: [1] },
+    { fact: "Change in MRR over the last 30 days", value: "down 17.2%, from about US$21,356", grade: "A", note: "TrustMRR snapshot. The starting value is calculated: US$17,683 divided by 0.828.", src: [1] },
+    { fact: "Revenue in the last 30 days, to 15 October 2026", value: "US$15,267", grade: "A", note: "TrustMRR: 44.5% less than the 30 days before, and 42.7% below September 2026 (calculated). Plans can be paid by the quarter, which can make single months uneven; the profile does not show how much of each month this is.", src: [1, 5] },
+    { fact: "Revenue by month, from Stripe", value: "US$6,434 (December 2025) to US$26,665 (September 2026)", grade: "A", note: "November 2025 US$7,947; February 2026 US$8,858; March US$17,255; June US$19,804; July US$26,645; August US$19,725; September US$26,665; October to the 15th US$7,448.", src: [1] },
+    { fact: "Average revenue a month, July to September 2026", value: "US$24,345, 35.6% more than April to June (US$17,955)", grade: "X", note: "Calculated from the monthly table. The growth of the summer did not continue into the last 30 days.", src: [1] },
+    { fact: "Revenue in the last 12 months, and all time", value: "US$186,772 and US$210,283", grade: "A", note: "TrustMRR. Revenue in 2025 was about US$41,100 (calculated: all-time revenue minus the 2026 months).", src: [1] },
+    { fact: "Asking price", value: "US$699,999, listed since 13 January 2026", grade: "C", note: "Seller's listing on TrustMRR, which shows 26 offers received. No sale is reported.", src: [1] },
+    { fact: "Asking price as a multiple", value: "3.75 times the last 12 months of revenue, 3.3 times the run rate", grade: "X", note: "Calculated: US$699,999 divided by US$186,772 and by US$212,196. TrustMRR shows 3.8.", src: [1] },
+    { fact: "Seller's update on the listing", value: "\"It's now doing $27K months!\"", grade: "C", note: "Seller's message, not dated. It matches revenue in July (US$26,645) and September 2026 (US$26,665). It is not MRR, which was US$17,683 on 15 October 2026.", src: [1] },
+    { fact: "MRR and team, 29 July 2026", value: "US$20,000 with a two-person team", grade: "C", note: "Founder in the Indie Hackers interview; the article header says revenue above US$25,000 a month. The October MRR is 11.6% lower (calculated).", src: [2] },
+    { fact: "Founder's figures, 10 January 2026", value: "first US$10,000 month three months after launch, then \"around $10K MRR\"", grade: "C", note: "Starter Story interview. Stripe revenue from November 2025 to February 2026 was US$6,434 to US$8,858 a month, below this.", src: [3, 1] },
+    { fact: "Team", value: "2 founders, 0 employees", grade: "C", note: "Starter Story profile, January 2026, and \"a two-person team\" in July 2026. The founder calls himself co-founder; no source read names the other founder.", src: [3, 2] },
+    { fact: "Payroll of the operating company, third quarter of 2026", value: "no labour taxes paid, no employee count reported", grade: "C", note: "Inforegister, a site that shows Estonian company and tax data: 'No labour taxes paid' and 'Number of employees is missing'. The 2024 annual report shows labour costs of €4, and the 2025 report shows none.", src: [13, 14, 15] },
+    { fact: "Operating company", value: "MVP Masters OÜ, Tallinn, Estonia, registry code 16911123", grade: "A", note: "Estonian e-Business Register: registered 31 January 2024, share capital €1. Lancer's about page names it as the operator. MVP Masters is also the name of the founder's agency.", src: [12, 4, 3] },
+    { fact: "Operating company, 2024", value: "€533,455 revenue, €287,532 profit", grade: "A", note: "Annual report for 31 January to 31 December 2024. All revenue came from programming. Lancer had not launched yet.", src: [14] },
+    { fact: "Operating company, 2025", value: "€141,215 revenue, €189,323 loss", grade: "A", note: "Annual report 2025: €293,099 spent on goods, materials and services. No loans. Equity fell from €292,789 to €103,466, by exactly the loss (calculated). The report does not say how much went to Lancer.", src: [15] },
+    { fact: "The founder's agency before Lancer", value: "15 full-time staff and seven-figure revenue", grade: "C", note: "Founder in the Indie Hackers interview: started in 2020, exited in 2025 to start a product studio whose first product was Lancer.", src: [2] },
+    { fact: "Upwork result that led to the product, 2024", value: "US$800 spent, 3 contracts, US$240,000 in 12 months", grade: "C", note: "Starter Story. With 10,000 jobs posted a day, he estimated that he covered 8% of them by hand.", src: [3] },
+    { fact: "First price and first revenue", value: "about US$300 a month; about US$800 MRR before launch", grade: "C", note: "Starter Story: paying users five months after the first line of code.", src: [3] },
+    { fact: "Customers", value: "more than 400 freelancers and agencies", grade: "C", note: "Lancer's about page, October 2026. TrustMRR counts 111 active subscriptions on 15 October 2026.", src: [4, 1] },
+    { fact: "Main growth channel", value: "two Upwork coaches as affiliates", grade: "C", note: "Starter Story: \"Most of our growth came from those two experts as affiliates.\" Also the founder's LinkedIn posts, and bids on Upwork jobs that asked for manual bidders. No paid acquisition by January 2026.", src: [3] },
+    { fact: "Offers before the current listing", value: "several, from US$100,000 to US$150,000", grade: "C", note: "Starter Story, January 2026, after the listing on TrustMRR. None was accepted.", src: [3] },
+    { fact: "Launch date", value: "June 2025", grade: "C", note: "Founder in Starter Story. TrustMRR gives 24 April 2025 as the founded date. Lancer's about page says January 2024, the month the Estonian company was registered.", src: [3, 1, 4] },
+    { fact: "Time from launch to the October 2026 figure", value: "16 months", grade: "X", note: "Calculated: June 2025 to October 2026.", src: [3, 1] }
+  ],
+  timeline: [
+    { when: "2020", what: "Nedelkovski, from Skopje, who dropped out of university twice, starts a software development agency. It grows to 15 full-time staff and seven-figure revenue.", grade: "C", src: [2] },
+    { when: "31 January 2024", what: "MVP Masters OÜ is registered in Estonia with €1 of share capital. It later operates Lancer.", grade: "A", src: [12] },
+    { when: "2024", what: "His agency opens a new Upwork account: US$800 spent, three contracts in one quarter, US$240,000 over the next 12 months. He builds a prototype that finds and answers jobs for his own agency, and two agency-owner friends close clients with it in the first week.", grade: "C", src: [3] },
+    { when: "16 October 2024", what: "Upwork announces that Uma, its AI, will create tailored proposal drafts for freelancers.", grade: "A", src: [10] },
+    { when: "31 December 2024", what: "The Estonian company closes its first year with €533,455 of revenue, all from programming, and €287,532 of profit.", grade: "A", src: [14] },
+    { when: "24 April 2025", what: "The founded date on Lancer's TrustMRR profile. Paying users at about US$300 a month arrive five months after the first line of code, and MRR is about US$800 before the launch.", grade: "C", src: [1, 3] },
+    { when: "June 2025", what: "Public launch. The first users come from his network, through a LinkedIn post that asked for beta testers.", grade: "C", src: [3] },
+    { when: "2025", what: "The founder exits the agency to start a product studio. Lancer is its first product.", grade: "C", src: [2] },
+    { when: "23 July 2025", what: "Upwork writes that Uma \"begins the transition from utility companion to always-on work agent\", starting with interviews that Uma runs for clients during the proposal process.", grade: "A", src: [11] },
+    { when: "September 2025", what: "The first US$10,000 month, three months after launch, in the founder's words. Two Upwork coaches who recommend tools to their clients become affiliates.", grade: "C", src: [3] },
+    { when: "November 2025 to February 2026", what: "Stripe revenue of US$6,434 to US$8,858 a month.", grade: "A", src: [1] },
+    { when: "10 January 2026", what: "Starter Story interview: two founders, no employees, \"around $10K MRR\", no money spent on paid acquisition, and offers of US$100,000 to US$150,000.", grade: "C", src: [3] },
+    { when: "13 January 2026", what: "Listed for sale on TrustMRR.", grade: "C", src: [1] },
+    { when: "March 2026", what: "Revenue almost doubles, from US$8,858 in February to US$17,255.", grade: "A", src: [1] },
+    { when: "29 July 2026", what: "Indie Hackers interview: US$20,000 MRR with a two-person team.", grade: "C", src: [2] },
+    { when: "July to September 2026", what: "The best months so far: US$26,645 in July, US$19,725 in August, US$26,665 in September.", grade: "A", src: [1] },
+    { when: "5 October 2026", what: "Upwork's API & MCP Terms, version 2.4, take effect. They forbid user-interface automation and the use of Upwork content taken outside its official tools, and they describe AI agents that submit proposals through the official API.", grade: "A", src: [9] },
+    { when: "15 October 2026", what: "MRR is US$17,683, down 17.2% in 30 days, with 111 active subscriptions. The asking price is US$699,999, and the listing shows 26 offers.", grade: "A", src: [1] }
+  ],
+  mechanism: [
+    { title: "Distribution", text: "Most of the growth came from two Upwork coaches, freelancers who advise agency owners and other freelancers on how to win work on Upwork. One had sent his clients to a team of manual bidders in Pakistan, the other to an established competitor. After a demo, both recommended Lancer as affiliates. The founder added LinkedIn posts, and an Upwork profile of his own that used Lancer to bid on jobs that asked for manual bidders." },
+    { title: "Built for his own agency first", text: "The founder used Upwork as his agency's sales channel and measured it: US$800 of spend, three contracts and US$240,000 in a year. The problem was coverage, with 10,000 new jobs a day around the clock. He built the tool for himself, gave it to two agency-owner friends, and then sold it to people who run the same kind of business." },
+    { title: "A business price from the first user", text: "Paying users came before the launch, at about US$300 a month. Today the plans cost US$149 or US$499 a month, and the cheaper one charges by lead, a conversation started with a client, instead of by proposal sent. One customer on the pricing page reports a first project of US$12,000 won through Lancer." },
+    { title: "Filter first, then write", text: "Each job passes the customer's filters and an AI suitability check before a proposal is written, and each proposal draws on a knowledge base that the customer writes. The company presents this as the opposite of the bots that Upwork forbids: fewer proposals, each one addressed to the job. It says its server rejects changes that remove the budget and client-quality filters unless the customer explicitly opts in." }
+  ],
+  howBuilt: {
+    intro: "These details come from the company's pages and documentation, the founder's interviews, the founder-entered part of the TrustMRR profile and the company's annual report. They are grade C, except the annual report.",
+    items: [
+      "Next.js and TypeScript for the web app; Node.js and Elasticsearch on the server; Stripe for subscriptions (the tech-stack section of the TrustMRR profile).",
+      "Hosting and database on Google Cloud and Firebase. AI requests go through OpenRouter, a service that sends each request to one of several model providers and falls back to another. No source read names the models.",
+      "The pipeline: campaign filters over the Upwork job feed, an AI suitability pass on every match, a proposal and screening answers written from the customer's knowledge base, then submission through the customer's connected Upwork account, which Lancer calls a bidder account, with optional boosting.",
+      "An MCP server, a standard interface that lets AI assistants such as Claude or ChatGPT call a product's functions, and a REST API with webhooks let the customer's own agent or software run campaigns and submit bids.",
+      "Intercom for support chat, Resend for email, PostHog and DataFast for analytics, and Cal.com for booking calls, as listed among the subprocessors in the privacy policy.",
+      "Paying users came five months after the first line of code. The 2025 income statement of the operating company shows €293,099 spent on goods, materials and services and no labour costs."
+    ],
+    src: [1, 8, 7, 6, 3, 15]
+  },
+  predecessorsIntro: "Five companies in the Loot Drop database built a product on top of another company's platform and died when that platform changed its rules, cut off access or built the feature itself. The values below are from that database and are not independently verified.",
+  predecessors: [
+    { name: "BranchOut", years: "2010 to 2017", funding: "US$49M", cause: "Competition", promise: "Professional networking built on Facebook's social graph.", died: "Facebook changed its API rules and removed the channel that its whole growth plan depended on.", url: "https://www.loot-drop.io/startup/30-branchout" },
+    { name: "Meerkat", years: "2015 to 2016", funding: "US$14M", cause: "Competition", promise: "Live video from your phone to your Twitter followers.", died: "Its growth ran through Twitter's API. Twitter bought a competitor, Periscope, and cut Meerkat off.", url: "https://www.loot-drop.io/startup/2194-meerkat" },
+    { name: "PostRocket", years: "2011 to 2014", funding: "US$610K", cause: "Product/Tech Failure", promise: "More reach for Facebook pages, from data on when to post.", died: "Facebook changed its API, and the company had no plan for a different product.", url: "https://www.loot-drop.io/startup/457-postrocket" },
+    { name: "Automate Ads", years: "2015 to 2018", funding: "US$1.5M", cause: "Competition", promise: "Software that runs digital ad campaigns automatically.", died: "The ad platforms' own tools and smaller rivals did the same work.", url: "https://www.loot-drop.io/startup/1100-automate-ads" },
+    { name: "Beetailer", years: "2011 to 2014", funding: "US$250K", cause: "Competition", promise: "Online stores inside Facebook pages, so that likes turn into sales.", died: "Facebook decided to build commerce features itself.", url: "https://www.loot-drop.io/startup/1197-beetailer" }
+  ],
+  whatChanged: [
+    `Each of the five depended on one platform's permission, and lost when the platform changed its rules or did the same job itself. Lancer makes the same bet on Upwork. It submits proposals through its customers' Upwork accounts, Upwork writes the rules for bots and automation, and since October 2024 Upwork has offered its own AI that drafts proposals for freelancers.`,
+    `Two things differ. First, Upwork's API and MCP terms of October 2026 describe AI agents that submit proposals through its official API, so an approved way to build this kind of product exists; no source read says whether Lancer uses it. Second, the buyers are agencies that pay US$149 to US$499 a month to win contracts, so Lancer sells on the quality of its filter and of the replies, not on the number of proposals.`
+  ],
+  copy: {
+    verdict: "The method, yes. The platform bet, with care.",
+    text: "The part that repeats is the path: automate a sales task that your own business already does and measures, sell it at a business price to people who run the same business, and find the few advisers who already recommend tools to those buyers. The part that does not repeat easily is the platform: Upwork sets the rules, controls the accounts and offers its own AI proposal writer.",
+    steps: [
+      "Pick a sales task that your own business pays for and measure it first; here, US$800 of Upwork spend brought US$240,000 of contracts.",
+      "Charge a business price from the first users, before the public launch.",
+      "Find the advisers who already recommend tools to your buyers, show them the product, and pay them as affiliates.",
+      "Read the platform's terms on bots and automation before you build, use its official API where one exists, and keep a human review step."
+    ],
+    open: "Other marketplaces where sellers answer posted requests by hand, such as public tenders, procurement portals and recruiting boards. Each has its own terms, which you must read first."
+  },
+  watch: [
+    { title: "Upwork's rules on bots and automation", text: "Upwork's Terms of Use (version 4.12, effective 10 September 2025) say that users may not \"use a robot, spider, scraper, or similar mechanisms on our site without written permission\", and forbid \"using generative AI or other tools to substantially bolster your job proposals or work product if such use is restricted by your client\". Its API & MCP Terms (version 2.4, effective 5 October 2026) forbid developers and agents to use Upwork content obtained through \"headless browsing, web-browser plug-ins\" and similar interface techniques, or \"any user-interface automation technique designed to obtain access beyond your authorized scope\". The same terms describe an agent that submits proposals \"through the Upwork API\", with the account owner responsible for the content. Lancer submits proposals from customers' own accounts and writes that \"Upwork prohibits bots that mass-apply\". No source read says whether Lancer uses the official API. If it does not, its customers' accounts, and so the business, depend on how Upwork applies these rules." },
+    { title: "Upwork offers its own AI proposal writer", text: "On 16 October 2024 Upwork announced that Uma, its AI, would \"create tailored proposal drafts\" for freelancers with \"custom AI models trained on winning proposals\". On 23 July 2025 it wrote that Uma \"begins the transition from utility companion to always-on work agent\", starting with interviews that Uma runs for clients during the proposal process. The owner of the marketplace is building the same function that Lancer sells." },
+    { title: "One marketplace, one access point", text: "In the company's own words, \"Lancer works on Upwork only — not Fiverr, Toptal, Contra, LinkedIn or cold email\". Every proposal goes through a connected Upwork account. A change in Upwork's access rules, API permissions or account policies reaches every customer at the same time." },
+    { title: "For sale while revenue falls", text: "The business has been listed since 13 January 2026 and asks US$699,999, 3.75 times the last 12 months of revenue. The seller's message says \"$27K months\". That matches revenue in July and September 2026, not recurring revenue: MRR was US$17,683 on 15 October 2026, down 17.2% in 30 days, and revenue in the last 30 days was US$15,267. The founder's January 2026 figure of about US$10,000 MRR was also above the Stripe revenue of those months." },
+    { title: "Competitors with more customers", text: "GigRadar sells an \"AI bidder that applies to the right jobs 24/7\", says \"4,000+ companies\" use it, and also offers an Upwork MCP. Vollna sells \"Upwork Auto Bidding, AI Proposals & Job Qualification\", says it is \"Trusted by 4,500+ Upwork freelancers and agencies\" and offers a 14-day free trial. These are the companies' own claims. Lancer says it has more than 400 users; TrustMRR shows 111 active subscriptions." },
+    { title: "Two founders, inside the agency's company", text: "Two founders run Lancer. The Estonian company that operates it paid no labour taxes in the third quarter of 2026, and its 2025 accounts show no labour costs. That company, MVP Masters OÜ, has the name of the founder's former 15-person agency. Its 2024 revenue, €533,455, all came from programming, and in 2025 it spent €293,099 on goods, materials and services and lost €189,323. The reports do not say who did the work on Lancer or what it cost. No source read names the second founder." }
+  ],
+  sources: [
+    { title: "TrustMRR: Lancer.app, data as of 15 October 2026", url: "https://trustmrr.com/startup/lancer-app", grade: "A", how: "Read the markdown profile (https://trustmrr.com/startup/lancer-app.md) in full. Revenue, MRR and subscriptions come from Stripe through an API key (grade A); the founded date, description, tech stack and sale listing are founder-written (grade C)." },
+    { title: "Indie Hackers, 29 July 2026, by James Fleischmann: Exiting his agency and hitting $10k MRR within 60 days of launching his SaaS", url: "https://www.indiehackers.com/post/selling-his-agency-and-hitting-10k-mrr-within-60-days-of-launching-his-saas-sTo5m9qfhxXbruvhBIyH", grade: "C", how: "Read the public part: the introduction and the first section, with the MRR, the team size and the agency background. The rest of the article needs a free sign-in and was not read. Reader comments were not used." },
+    { title: "Starter Story, 10 January 2026: I Built an AI Agent That Makes $10K/Month", url: "https://www.starterstory.com/stories/lancer", grade: "C", how: "Read in full. Founder interview. Source for the launch date, the first price, the growth channels, the team of 2 founders and 0 employees, and the offers." },
+    { title: "Lancer: About page, read 15 October 2026", url: "https://lancer.app/about", grade: "C", how: "Read in full. Source for what the product does, the customer count, the company's view of Upwork's bot rules and the legal entity." },
+    { title: "Lancer: Pricing page, read 15 October 2026", url: "https://lancer.app/pricing", grade: "C", how: "Read in full, with the structured price data in the page source." },
+    { title: "Lancer: llms.txt, the product summary for AI agents", url: "https://lancer.app/llms.txt", grade: "C", how: "Read in full. Source for 'Upwork only' and for the MCP server and REST API." },
+    { title: "Lancer documentation, full text (llms-full.txt)", url: "https://docs.lancer.app/llms-full.txt", grade: "C", how: "Read the sections on how Lancer works, bidder accounts and connecting an MCP client. No model names found." },
+    { title: "Lancer: Privacy policy, read 15 October 2026", url: "https://lancer.app/privacy-policy", grade: "C", how: "Read the section on subprocessors." },
+    { title: "Upwork Legal Center: Terms of Use version 4.12 (effective 10 September 2025) and API & MCP Terms of Use version 2.4 (effective 5 October 2026)", url: "https://www.upwork.com/legal", grade: "A", how: "Read the sections on prohibited uses, misrepresentation and agent-generated content. Upwork's own published terms." },
+    { title: "Upwork press release, 16 October 2024: Upwork Expands AI Innovation and Unveils New Solutions for Better Work Outcomes with Upwork Updates Fall 2024 Release", url: "https://www.upwork.com/press/releases/upwork-updates-fall-2024-release", grade: "A", how: "Read the section on Uma. Upwork's own announcement as a public company (Nasdaq: UPWK)." },
+    { title: "Upwork blog, 23 July 2025: Upwork Updates Summer 2025: AI Innovation that Amplifies Human Brilliance", url: "https://www.upwork.com/blog/updates-summer-2025", grade: "A", how: "Read the section on Uma as a work agent. Upwork's own announcement." },
+    { title: "Estonian e-Business Register: MVP Masters OÜ, registry code 16911123", url: "https://ariregister.rik.ee/eng/company/16911123", grade: "A", how: "Read in full. Official register: registration date, share capital, address and the list of annual reports." },
+    { title: "Inforegister: MVP Masters OÜ, employee and tax data", url: "https://www.inforegister.ee/en/16911123-MVP-MASTERS-OU", grade: "C", how: "Read the employee and tax sections. A third-party site that shows Estonian company and tax data. Its 2026 turnover figures are forecasts and are not used." },
+    { title: "MVP Masters OÜ annual report 2024 (31 January to 31 December 2024), filed 29 June 2025", url: "https://ariregister.rik.ee/eng/company/16911123/file/9013112046", grade: "A", how: "Read in full (in Estonian). A statutory filing. Source for revenue, labour costs, profit and the main activity." },
+    { title: "MVP Masters OÜ annual report 2025, filed 16 September 2026", url: "https://ariregister.rik.ee/eng/company/16911123/file/9014634979", grade: "A", how: "Read in full (in Estonian). A statutory filing. Source for revenue, costs, loss, cash and equity." },
+    { title: "GigRadar home page, read 15 October 2026", url: "https://gigradar.io/", grade: "C", how: "Read the product description and the customer claim. A competitor's own page." },
+    { title: "Vollna home page, read 15 October 2026", url: "https://www.vollna.com/", grade: "C", how: "Read the product description and the customer claim. A competitor's own page." },
+    { title: "Loot Drop database export, 1,749 failed startups", url: "https://www.loot-drop.io/", grade: "C", how: "Local export. AI-written summaries, not independently verified. Source for the failed predecessors." }
+  ]
 }
 ];
 
