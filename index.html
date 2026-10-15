@@ -205,6 +205,29 @@ a.kern:hover,a.kern:focus-visible{transform:scale(1.3);z-index:3;box-shadow:3px 
 .fbtn{display:inline-flex;align-items:center;height:36px;padding:0 14px;border:2px solid var(--ink);border-radius:999px;background:var(--paper);color:var(--ink);font:inherit;font-size:14px;font-weight:800;cursor:pointer;transition:transform .12s,box-shadow .12s,background .12s}
 .fbtn:hover{transform:translate(-1px,-1px);box-shadow:3px 3px 0 var(--ink);background:var(--purple-soft)}
 .fbtn[aria-pressed="true"]{background:var(--mustard);color:var(--ink);box-shadow:3px 3px 0 var(--ink)}
+#stories{scroll-margin-top:96px}
+.browse{margin:4px 0 26px}
+.browse h3{font-size:18px;margin:0 0 12px}
+.browse .colls{margin-bottom:0}
+.gtiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:10px;margin:0 0 24px}
+.gtile,.coll{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:11px 14px;border:2px solid var(--ink);border-radius:14px;background:var(--paper);color:var(--ink);text-decoration:none;font-size:14px;line-height:1.3;transition:transform .15s,box-shadow .15s}
+.gtile b,.coll b{font-weight:800}
+.gtile span,.coll b span{font-size:12px;color:var(--purple);font-weight:700;white-space:nowrap}
+.gtile:hover,.coll:hover{transform:translate(-1px,-1px);box-shadow:3px 3px 0 var(--ink);background:var(--purple-soft)}
+.gtile[aria-current="true"],.coll[aria-current="true"]{background:var(--mustard);box-shadow:3px 3px 0 var(--ink)}
+.colls{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:10px}
+.coll{background:var(--mustard-soft)}
+.coll b{display:flex;justify-content:space-between;align-items:center;gap:12px;width:100%}
+.gsel{padding:20px 24px;margin:0 0 22px;background:var(--purple-soft);box-shadow:5px 5px 0 var(--purple)}
+.gsel h3{font-size:24px;margin:6px 0 8px}
+.gsel p{margin:0 0 10px;max-width:80ch;line-height:1.55;color:var(--body);font-weight:600}
+.gsel .back{margin:0}
+.more-filters{margin:0 0 14px}
+.more-filters summary{cursor:pointer;font-weight:800;font-size:14px;color:var(--purple);margin:0 0 12px}
+.more-filters .filters{margin-bottom:8px}
+.stat .v .trend{display:block;margin-top:6px;font-size:12px;color:var(--purple);letter-spacing:.04em}
+.fnote{margin:6px 0 0;font-size:13px;line-height:1.5;color:var(--muted);max-width:90ch}
+@media (max-width:480px){.gtiles{grid-template-columns:1fr 1fr}.gtile{padding:10px 12px;font-size:13px}.colls{grid-template-columns:1fr}}
 .count{margin:8px 0 24px;color:var(--muted)}
 
 /* ---------- card grid ---------- */
@@ -466,6 +489,12 @@ noscript .box{padding:16px;margin:16px}
                  "AI-leveraged" (a normal product run by one person with AI tools)
    team          "solo" or "small" (2 to 10 people at the moment of success)
    outcome       "exit" or "running"
+   group         what the product does: one slug from GROUPS (#/group/<slug>)
+   channel       how most customers arrived: one slug from CHANNELS ("unknown" when no source says)
+   trend         revenue in the latest months against the months before: "growing", "flat",
+                 "falling" (about 15% or more below the best recent months), "sold" for an exit, or "unknown"
+   collections   patterns that cut across the groups: any of "platform", "phone-app", "open-source"
+                 (#/collection/<slug>; the pattern "sold" follows from outcome)
    evidence      best grade of the headline number: "A", "B" or "C"
    outcomeUsd    headline number in US dollars, for the "biggest" sort and the ticker
    months        months from launch to the headline outcome, for the "fastest" sort
@@ -495,6 +524,10 @@ const STORIES = [
   teamLabel: "1 founder, then 6 to 8 staff at the sale",
   fundingLabel: "None",
   primaryFactor: "Timing",
+  group: "build-software",
+  channel: "audience",
+  trend: "sold",
+  collections: [],
   meters: { evidence: 4, copyable: 2, capital: 1 },
   tags: ["AI-native", "Solo founder", "Bootstrapped", "Exit", "Vibe coding"],
   product: "You describe an app in plain language. Base44 generates a working web app with its own database, user login and hosting, so you never touch a server.",
@@ -634,6 +667,10 @@ const STORIES = [
   teamLabel: "1 founder alone to US$1M ARR, 26 staff at US$10M ARR",
   fundingLabel: "None",
   primaryFactor: "Timing",
+  group: "support-agents",
+  channel: "audience",
+  trend: "growing",
+  collections: [],
   meters: { evidence: 3, copyable: 3, capital: 1 },
   tags: ["AI-native", "Solo founder", "Bootstrapped", "Running", "Customer support"],
   product: "A company uploads its documents or gives its website address. Chatbase turns that material into a chat agent that answers customer questions on the site, by email or by phone, and hands the conversation to a person when it cannot answer.",
@@ -771,6 +808,10 @@ const STORIES = [
   teamLabel: "2 teenage founders plus 2 partners, 7 employees at the sale",
   fundingLabel: "None",
   primaryFactor: "Distribution",
+  group: "health-appearance",
+  channel: "creators",
+  trend: "sold",
+  collections: ["phone-app"],
   meters: { evidence: 3, copyable: 3, capital: 2 },
   tags: ["AI-native", "Small team", "Bootstrapped", "Exit", "Consumer app", "Teen founders"],
   product: "You photograph your meal. Cal AI sends the picture to a rented AI model and returns an estimate of the calories, protein, carbohydrates and fat. No search, no portion menus.",
@@ -912,6 +953,10 @@ const STORIES = [
   teamLabel: "2 founders, no employees, no CEO",
   fundingLabel: "None",
   primaryFactor: "Audience",
+  group: "photos",
+  channel: "audience",
+  trend: "sold",
+  collections: [],
   meters: { evidence: 2, copyable: 2, capital: 1 },
   tags: ["AI-native", "Two founders", "Bootstrapped", "Exit", "Image tools"],
   product: "You upload a low-resolution image, often one made by Midjourney. Magnific enlarges it and invents plausible detail: skin pores, fabric, leaves. A slider sets how much the model is allowed to invent.",
@@ -1049,6 +1094,10 @@ const STORIES = [
   teamLabel: "1 person, no employees",
   fundingLabel: "None",
   primaryFactor: "Audience",
+  group: "photos",
+  channel: "audience",
+  trend: "falling",
+  collections: [],
   meters: { evidence: 2, copyable: 2, capital: 1 },
   tags: ["AI-native", "Solo founder", "Bootstrapped", "Running", "Consumer app"],
   product: "You upload about 20 photos of yourself. Photo AI trains a model of your face, and then generates photos of you in any clothes, place or style: headshots, dating photos, product shots. The site calls it firing your photographer.",
@@ -1183,6 +1232,10 @@ const STORIES = [
   teamLabel: "1 founder, then 5 people with 2 employees by mid-2024",
   fundingLabel: "None",
   primaryFactor: "Speed",
+  group: "ai-model-tools",
+  channel: "audience",
+  trend: "growing",
+  collections: [],
   meters: { evidence: 2, copyable: 3, capital: 1 },
   tags: ["AI-native", "Solo founder", "Bootstrapped", "Running", "B2B"],
   product: "A chat window for AI models that is better than the one the model makers ship: search in old conversations, folders, prompt library, plugins, and any model from OpenAI, Anthropic or Google. You bring your own API key, so TypingMind never pays for the model.",
@@ -1327,6 +1380,10 @@ const STORIES = [
   teamLabel: "1 founder for the first year, 4 people by November 2024",
   fundingLabel: "None",
   primaryFactor: "Timing",
+  group: "photos",
+  channel: "search",
+  trend: "unknown",
+  collections: [],
   meters: { evidence: 1, copyable: 2, capital: 1 },
   tags: ["AI-native", "Solo founder", "Bootstrapped", "Running", "B2C", "Photography"],
   product: "You upload a few selfies, choose backgrounds and clothing, and get 30 to 70 business headshots back in under 30 minutes. One payment of US$29 to US$59, no subscription. Companies buy credits so every employee's photo matches.",
@@ -1474,6 +1531,10 @@ const STORIES = [
   teamLabel: "1 person, no employees",
   fundingLabel: "None",
   primaryFactor: "Speed",
+  group: "real-estate",
+  channel: "audience",
+  trend: "falling",
+  collections: [],
   meters: { evidence: 1, copyable: 2, capital: 1 },
   tags: ["AI-native", "Solo founder", "Bootstrapped", "Running", "B2C", "Design tool"],
   product: "You upload a photo of a room, pick a room type and a style, and about 25 seconds later you get a photorealistic render of the same room redesigned. It also furnishes empty rooms for real estate listings, turns sketches into renders, and makes walk-through videos.",
@@ -1626,6 +1687,10 @@ const STORIES = [
   teamLabel: "1 founder, plus two contract developers at about 20 hours a week each by 2025",
   fundingLabel: "None",
   primaryFactor: "Timing",
+  group: "documents-data",
+  channel: "creators",
+  trend: "growing",
+  collections: [],
   meters: { evidence: 1, copyable: 3, capital: 1 },
   tags: ["AI-native", "Solo founder", "Bootstrapped", "Running", "B2C", "Spreadsheets"],
   product: "You type what you want a spreadsheet to do, in plain words, and it returns the Excel or Google Sheets formula. Started in August 2022 as a one-page site built without code. Since 2024 it is a chat that reads uploaded files and connected data sources and returns charts, tables and reports. Renamed Better Analyst in 2026.",
@@ -1772,6 +1837,10 @@ const STORIES = [
   teamLabel: "1 founder, plus a full-time developer and a full-time video creator hired in 2023",
   fundingLabel: "None",
   primaryFactor: "Distribution",
+  group: "documents-data",
+  channel: "search",
+  trend: "unknown",
+  collections: [],
   meters: { evidence: 1, copyable: 2, capital: 2 },
   tags: ["AI-native", "Solo founder", "Bootstrapped", "Running", "B2C", "Document tools"],
   product: "You upload a PDF and ask questions about it in a chat window. The answers come from the text of the document. Paid plans add more uploads, more questions, OCR for scanned pages, a Chrome extension, chat across several PDFs, and an API for developers.",
@@ -1917,6 +1986,10 @@ const STORIES = [
   teamLabel: "2 co-founders; about 5 people in late 2023, about 8 by July 2024, 23 by April 2025",
   fundingLabel: "About US$600,000 to US$850,000 in small checks, no venture round",
   primaryFactor: "Distribution",
+  group: "learning",
+  channel: "creators",
+  trend: "flat",
+  collections: [],
   meters: { evidence: 1, copyable: 3, capital: 1 },
   tags: ["AI-native", "Small team", "Funded", "Running", "B2C", "Education"],
   product: "A text editor for students and researchers in which a language model suggests the next sentence, writes from the PDFs you upload, and inserts citations in more than 1,700 styles. Free with a daily word limit; paid plans remove the limits.",
@@ -2053,6 +2126,10 @@ const STORIES = [
   teamLabel: "2 founders, 1 partner on profit share, 1 contract developer",
   fundingLabel: "None",
   primaryFactor: "Distribution",
+  group: "marketing-content",
+  channel: "partners",
+  trend: "sold",
+  collections: ["platform"],
   meters: { evidence: 1, copyable: 2, capital: 1 },
   tags: ["AI-leveraged", "Small team", "Bootstrapped", "Exit", "B2B", "Social media"],
   product: "A tool for people who want to grow an audience on X (then Twitter). It started as a search box over a library of viral tweets, then added a scheduler, automatic direct messages, a contact list, and a language model that proposes tweets and threads in the user's own style. A sister product, Taplio, does the same for LinkedIn.",
@@ -2196,6 +2273,10 @@ const STORIES = [
   teamLabel: "1 founder, no employees, part time next to a family retail business",
   fundingLabel: "None",
   primaryFactor: "Distribution",
+  group: "voice-audio",
+  channel: "audience",
+  trend: "flat",
+  collections: [],
   meters: { evidence: 1, copyable: 3, capital: 1 },
   tags: ["AI-native", "Solo founder", "Bootstrapped", "Running", "B2C", "Productivity software"],
   product: "You press a button, talk in any language, and AudioPen returns a short, well-structured text in the style and language you chose, not a word-for-word transcript. It runs on the web, as a phone app, on desktop and as a browser extension. The free plan has short recordings; the paid plan, Prime, is sold for 3 months, 1 year or 2 years, never by the month.",
@@ -2332,6 +2413,10 @@ const STORIES = [
   teamLabel: "1 developer at the release, 2 founders, 7 people by August 2019, 25 at the sale",
   fundingLabel: "None",
   primaryFactor: "Distribution",
+  group: "photos",
+  channel: "launches",
+  trend: "sold",
+  collections: [],
   meters: { evidence: 1, copyable: 2, capital: 1 },
   tags: ["AI-native", "Small team", "Bootstrapped", "Exit", "B2B", "Image editing"],
   product: "You upload a photo. In about five seconds remove.bg returns the same photo with the background cut away, so the person or product in front stands on a transparent layer. A small preview is free; full-resolution results, the API and the Photoshop plugin cost credits.",
@@ -2482,6 +2567,10 @@ const STORIES = [
   teamLabel: "2 co-founders, then 3 employees by January 2025",
   fundingLabel: "None",
   primaryFactor: "Timing",
+  group: "marketing-content",
+  channel: "sales",
+  trend: "flat",
+  collections: [],
   meters: { evidence: 1, copyable: 3, capital: 1 },
   tags: ["AI-native", "Small team", "Bootstrapped", "Running", "B2C", "Media"],
   product: "Upload a podcast episode and get the transcript, show notes, timestamps, a newsletter, social posts, a blog article, short video clips and quote images. The podcaster pays a monthly subscription priced by minutes of audio processed. Media companies and agencies pay custom contracts.",
@@ -2627,6 +2716,10 @@ const STORIES = [
   teamLabel: "1 founder alone for about 14 months, then 2 brothers, no employees",
   fundingLabel: "None",
   primaryFactor: "Speed",
+  group: "support-agents",
+  channel: "search",
+  trend: "growing",
+  collections: [],
   meters: { evidence: 1, copyable: 3, capital: 1 },
   tags: ["AI-native", "Solo founder", "Bootstrapped", "Running", "B2B", "Customer support"],
   product: "A company pastes its website address. SiteGPT reads every page, builds a chatbot that answers visitor questions from that content, and puts it on the site. Plans are priced by the number of chatbots, pages and messages. There is no free plan, only a 7-day trial.",
@@ -2783,6 +2876,10 @@ const STORIES = [
   teamLabel: "2 founders and 1 employee at US$1M ARR",
   fundingLabel: "None",
   primaryFactor: "Price",
+  group: "marketing-content",
+  channel: "search",
+  trend: "sold",
+  collections: [],
   meters: { evidence: 2, copyable: 2, capital: 1 },
   tags: ["AI-native", "Small team", "Bootstrapped", "Exit", "B2C", "Marketing content"],
   product: "A web page where a user picks a use case (blog outline, product description, email, ad text), a tone and a language, types a few words, and gets a short text written by GPT-3. The free plan gives a monthly character limit; paid plans remove it. Rytr sells the output of OpenAI's model with a simpler interface and a much lower price than the other AI writing tools of 2021.",
@@ -2917,6 +3014,10 @@ const STORIES = [
   teamLabel: "1 founder, no employees",
   fundingLabel: "None",
   primaryFactor: "Paid ads",
+  group: "voice-audio",
+  channel: "paid-ads",
+  trend: "sold",
+  collections: [],
   meters: { evidence: 2, copyable: 3, capital: 2 },
   tags: ["AI-native", "Solo founder", "Bootstrapped", "Exit", "B2C", "Productivity"],
   product: "You speak into your phone or browser. Talknotes transcribes the recording with a speech-to-text model and rewrites it in a style you pick: a clean transcript, a short note, a task list, a formal email, a blog post or a video script. It works in more than 50 languages and exports to text, email or a link.",
@@ -3056,6 +3157,10 @@ const STORIES = [
   teamLabel: "1 founder, 2 people by October 2021, 9 staff by August 2024",
   fundingLabel: "None",
   primaryFactor: "Timing",
+  group: "photos",
+  channel: "communities",
+  trend: "unknown",
+  collections: [],
   meters: { evidence: 1, copyable: 2, capital: 2 },
   tags: ["AI-native", "Small team", "Bootstrapped", "Running", "B2C", "Creative tools"],
   product: "A website where anyone can type a text prompt and get an image from one of many AI models, then share it in a community with daily challenges, chat rooms and streaks. NightCafe trains no models of its own: it rents models from OpenAI, Google, Black Forest Labs and others, and sells credits and subscriptions.",
@@ -3198,6 +3303,10 @@ const STORIES = [
   teamLabel: "1 founder, with 75 code contributors on GitHub and a hiring link on the site in 2026",
   fundingLabel: "None",
   primaryFactor: "Distribution",
+  group: "marketing-content",
+  channel: "open-source",
+  trend: "growing",
+  collections: ["open-source"],
   meters: { evidence: 3, copyable: 2, capital: 1 },
   tags: ["AI-leveraged", "Solo founder", "Bootstrapped", "Running", "B2B", "Social media marketing"],
   product: "A calendar that publishes posts to more than 30 social networks: X, LinkedIn, Instagram, TikTok, YouTube, Reddit, Bluesky, Discord and others. The whole code is open source, so anyone can run it on their own server for free; the company sells the hosted version from US$29 a month. Since 2025 AI agents such as Claude, ChatGPT and OpenClaw can connect to it through an MCP server, a command-line tool and a public API, so an agent drafts and schedules the posts and a person approves them in the calendar.",
@@ -3372,6 +3481,10 @@ const STORIES = [
   teamLabel: "2 co-founders in a team of 5 at US$6M ARR (the interviewer counted 6), 8 people at US$10M ARR",
   fundingLabel: "None until US$10M ARR, then a US$16M seed round in December 2025",
   primaryFactor: "Distribution",
+  group: "video",
+  channel: "paid-ads",
+  trend: "growing",
+  collections: [],
   meters: { evidence: 1, copyable: 2, capital: 2 },
   tags: ["AI-native", "Small team", "Funded", "Running", "B2B", "Advertising"],
   product: "A marketer types a script, picks an AI actor from a library of more than 1,000 or creates a new one, and receives a short video of that actor speaking the script, in the style of a customer's phone video. The same ad can be made again with another face, another script or another language, so the marketer can test which version sells.",
@@ -3516,6 +3629,10 @@ const STORIES = [
   teamLabel: "2 co-founders, one of them the only developer; 3 people on LinkedIn in August 2024",
   fundingLabel: "None",
   primaryFactor: "Distribution",
+  group: "video",
+  channel: "creators",
+  trend: "growing",
+  collections: [],
   meters: { evidence: 1, copyable: 2, capital: 1 },
   tags: ["AI-native", "Small team", "Bootstrapped", "Running", "B2C", "Video"],
   product: "The customer picks a topic, a video style and a posting schedule. The service writes a story, edits it into a short video and posts it to the customer's TikTok, YouTube or Instagram account on that schedule. The customer never appears on camera and does not have to edit anything.",
@@ -3660,6 +3777,10 @@ const STORIES = [
   teamLabel: "1 founder, 4 people at US$5M ARR, 5 people at US$9M ARR",
   fundingLabel: "Seed funding from Pear VC, amount not disclosed (directories say US$1M to US$2M)",
   primaryFactor: "Timing",
+  group: "companions-publishing",
+  channel: "unknown",
+  trend: "unknown",
+  collections: ["phone-app"],
   meters: { evidence: 1, copyable: 1, capital: 2 },
   tags: ["AI-native", "Small team", "Funded", "Running", "B2C", "AI companion"],
   product: "A chat app for adults in which the user creates an AI character, called a Kindroid, by writing its backstory, key memories, personality, appearance and voice. The user then talks to it by text, voice call or live video call, and the character can send generated pictures and short videos of itself. The character keeps a memory of earlier conversations. The app is for users aged 18 or older and runs on the web, iOS and Android.",
@@ -3819,6 +3940,10 @@ const STORIES = [
   teamLabel: "1 founder, with freelancers and paid creators; staff count not published",
   fundingLabel: "None reported",
   primaryFactor: "Distribution",
+  group: "health-appearance",
+  channel: "creators",
+  trend: "falling",
+  collections: ["phone-app"],
   meters: { evidence: 1, copyable: 2, capital: 2 },
   tags: ["AI-native", "Solo founder", "Bootstrapped", "Running", "B2C", "Consumer apps"],
   product: "A phone app that scores a selfie. The user uploads a photo of his face, and the app returns a score up to 100 with ratings of the jawline, the cheekbones, the skin and masculinity, and tips such as starting a skin care routine. The results are shown after the user subscribes, at about US$4 a week, or invites three friends.",
@@ -3980,6 +4105,10 @@ const STORIES = [
   teamLabel: "1 founder, no employees in any source through June 2025",
   fundingLabel: "None",
   primaryFactor: "Distribution",
+  group: "video",
+  channel: "partners",
+  trend: "flat",
+  collections: [],
   meters: { evidence: 1, copyable: 2, capital: 2 },
   tags: ["AI-native", "Solo founder", "Bootstrapped", "Running", "B2C", "Video"],
   product: "A web service that makes a short vertical video from a topic, with a script, a synthetic voice and generated images, and posts it to the customer's TikTok or YouTube account on a fixed schedule, from 3 times a week to twice a day. The customer sets up a series once, and the videos then arrive without more work.",
@@ -4140,6 +4269,10 @@ const STORIES = [
   teamLabel: "1 founder and owner; at US$1M ARR also 1 growth partner, a few employees and contractors",
   fundingLabel: "None",
   primaryFactor: "Timing",
+  group: "support-agents",
+  channel: "search",
+  trend: "flat",
+  collections: [],
   meters: { evidence: 1, copyable: 2, capital: 1 },
   tags: ["AI-native", "Solo founder", "Bootstrapped", "Running", "B2B", "Customer support"],
   product: "A company connects its website, help center, files or old support tickets. DocsBot turns that material into a chatbot that answers customers or employees with links to the source passages, in a website widget, in Slack, by voice or through an API, and passes the conversation to a person when it cannot answer.",
@@ -4312,6 +4445,10 @@ const STORIES = [
   teamLabel: "1 founder with freelance developer help from 2023; 6 people by April 2025, 7 named in October 2025, 12 by his count in May 2026",
   fundingLabel: "No money raised for Magai; investors in his two earlier products, their stake in Magai not verified",
   primaryFactor: "Distribution",
+  group: "ai-model-tools",
+  channel: "audience",
+  trend: "flat",
+  collections: [],
   meters: { evidence: 3, copyable: 2, capital: 1 },
   tags: ["AI-native", "Solo founder", "Bootstrapped", "Running", "B2C", "AI chat"],
   product: "One chat window and one bill for the models of OpenAI, Anthropic, Google, xAI and others, plus image and video models. You can change the model in the middle of a conversation. Magai pays the model providers for every message, and the customer pays Magai a flat monthly price that starts at US$20.",
@@ -4461,6 +4598,10 @@ const STORIES = [
   teamLabel: "1 founder, with a copywriter and a customer support person listed on the About page",
   fundingLabel: "None",
   primaryFactor: "Timing",
+  group: "marketing-content",
+  channel: "audience",
+  trend: "sold",
+  collections: [],
   meters: { evidence: 1, copyable: 2, capital: 1 },
   tags: ["AI-native", "Solo founder", "Bootstrapped", "Exit", "B2B", "Marketing content"],
   product: "A web tool that writes marketing text. The user describes a product in a few sentences, picks a type of text (Facebook ad, Google ad, headline, value proposition, blog post, or landing page, the single web page that an advertisement links to) and a language, and gets several drafts written by GPT-3, OpenAI's text model. A document editor has a button that continues a blog post, and a page builder produces a landing page with text, design and code. Each generation costs credits, and the plan sets the number of credits per month.",
@@ -4619,6 +4760,10 @@ const STORIES = [
   teamLabel: "1 founder until November 2024, then 2 people at the sale",
   fundingLabel: "None reported",
   primaryFactor: "Distribution",
+  group: "build-software",
+  channel: "search",
+  trend: "sold",
+  collections: [],
   meters: { evidence: 1, copyable: 2, capital: 1 },
   tags: ["AI-native", "Small team", "Bootstrapped", "Exit", "Vibe coding"],
   product: "A person describes a web application in plain language. Softgen's AI agent writes a Next.js project with a database, user login and payments, shows a live preview, and changes the app when the person gives feedback. The code goes to the user's own GitHub repository.",
@@ -4763,6 +4908,10 @@ const STORIES = [
   teamLabel: "2 named founders in a team of 4, later 3",
   fundingLabel: "None",
   primaryFactor: "Distribution",
+  group: "marketing-content",
+  channel: "sales",
+  trend: "sold",
+  collections: ["platform"],
   meters: { evidence: 1, copyable: 2, capital: 1 },
   tags: ["AI-native", "Small team", "Bootstrapped", "Exit", "B2B", "E-commerce"],
   product: "An app for Shopify stores that sends marketing messages on WhatsApp and answers shoppers with an AI assistant trained on the store's catalog: reminders for abandoned carts, campaigns to subscribers, product advice in 96 languages. The store pays a monthly plan plus a charge for the WhatsApp conversations.",
@@ -4914,6 +5063,10 @@ const STORIES = [
   teamLabel: "2 founders, no employees",
   fundingLabel: "None",
   primaryFactor: "Price",
+  group: "support-agents",
+  channel: "platform",
+  trend: "growing",
+  collections: ["platform"],
   meters: { evidence: 1, copyable: 2, capital: 1 },
   tags: ["AI-native", "Small team", "Bootstrapped", "Running", "B2B", "Customer support"],
   product: "A company connects My AskAI to the help desk it already uses, such as Intercom or Zendesk, and gives it the help center, the website and past tickets to read. The agent then answers customer questions inside that help desk, or writes a draft as an internal note for a human agent. When it cannot answer, it hands the conversation to a person in the same tool, with a summary.",
@@ -5068,6 +5221,10 @@ const STORIES = [
   teamLabel: "1 founder, with help from his wife since August 2023",
   fundingLabel: "None",
   primaryFactor: "Distribution",
+  group: "ai-model-tools",
+  channel: "audience",
+  trend: "unknown",
+  collections: [],
   meters: { evidence: 1, copyable: 2, capital: 1 },
   tags: ["AI-native", "Solo founder", "Bootstrapped", "Running", "B2C", "Productivity software"],
   product: "A Mac app that puts many AI models in one chat window and behind one keyboard shortcut that works inside any other Mac app. You connect your own account at OpenAI, Anthropic, Google or another provider, or run a model on your own Mac, so BoltAI never pays for the model. You pay once for the app and get one year of updates.",
@@ -5228,6 +5385,10 @@ const STORIES = [
   teamLabel: "Founder and a CTO co-founder; 4 people on Revid in February 2026, no later count; the studio runs 7 products",
   fundingLabel: "None",
   primaryFactor: "Distribution",
+  group: "video",
+  channel: "search",
+  trend: "falling",
+  collections: [],
   meters: { evidence: 1, copyable: 2, capital: 2 },
   tags: ["AI-native", "Small team", "Bootstrapped", "Running", "B2B", "Video"],
   product: "A web application that turns an idea, a link or an existing viral video into a finished short video for TikTok, Instagram and YouTube: script, generated images or video, voice, captions, music and posting. Customers pay a subscription that includes credits, and each second of generated video costs credits.",
@@ -5414,6 +5575,10 @@ const STORIES = [
   teamLabel: "1 founder, alone in November 2023, 5 people in February 2025, 17 names on the About page in October 2026",
   fundingLabel: "None; AWS cloud credits for the first version",
   primaryFactor: "Timing",
+  group: "video",
+  channel: "search",
+  trend: "growing",
+  collections: [],
   meters: { evidence: 1, copyable: 2, capital: 2 },
   tags: ["AI-native", "Small team", "Bootstrapped", "Running", "B2C", "Video"],
   product: "A web application that turns a song into a music video. The musician uploads an audio file; a feature named Autopilot writes a storyboard, renders each scene with a rented video model and cuts the scenes to the beat. Customers pay a subscription from US$39 a month that includes credits, and buy more credits when they run out.",
@@ -5597,6 +5762,10 @@ const STORIES = [
   teamLabel: "3 co-founders, then about 10 people in May 2024, then 2 full-time employees in August 2025",
   fundingLabel: "None",
   primaryFactor: "Distribution",
+  group: "marketing-content",
+  channel: "launches",
+  trend: "falling",
+  collections: [],
   meters: { evidence: 1, copyable: 2, capital: 1 },
   tags: ["AI-native", "Small team", "Bootstrapped", "Running", "B2B", "Marketing content"],
   product: "Upload or link a recording, such as a podcast episode, a webinar or a Zoom call, and get a transcript with speakers and timestamps. From that transcript the product writes show notes, newsletters, social posts, blog articles and quotes, and cuts captioned clips, with prompts that the customer can edit. Subscriptions are priced by the hours of recordings transcribed and start at US$19 a month.",
@@ -5770,6 +5939,10 @@ const STORIES = [
   teamLabel: "1 founder",
   fundingLabel: "None",
   primaryFactor: "Distribution",
+  group: "ai-model-tools",
+  channel: "platform",
+  trend: "falling",
+  collections: ["platform"],
   meters: { evidence: 3, copyable: 2, capital: 1 },
   tags: ["AI-native", "Solo founder", "Bootstrapped", "Running", "B2C", "Creative tools"],
   product: "A remote MCP server that gives an AI assistant such as Claude or ChatGPT tools to generate images, video, speech, music and 3D models with models from Google, OpenAI, ElevenLabs and others. The user installs one plugin or adds one address, logs in once and buys credits from CreativeClaw: US$10 for 1,000 credits, with a published credit cost for each model.",
@@ -5943,6 +6116,10 @@ const STORIES = [
   teamLabel: "2 co-founders: John Rush (chief executive) and Vitalik May (technology chief)",
   fundingLabel: "None, by the founder's statement",
   primaryFactor: "Distribution",
+  group: "seo-ai-search",
+  channel: "audience",
+  trend: "falling",
+  collections: [],
   meters: { evidence: 3, copyable: 2, capital: 1 },
   tags: ["AI-native", "Small team", "Bootstrapped", "Running", "B2B", "Search marketing"],
   product: "A customer enters a website address. SEObot reads the site, chooses search phrases, makes a plan of articles, writes the articles with language models and publishes them to the customer's blog every week. The customer pays a monthly plan of article credits and can approve, edit or decline each article.",
@@ -6104,6 +6281,10 @@ const STORIES = [
   teamLabel: "The founder and his girlfriend at first; the profile says 2 to 5 people, plus paid video creators",
   fundingLabel: "None reported; the profile says bootstrapped",
   primaryFactor: "Distribution",
+  group: "learning",
+  channel: "creators",
+  trend: "falling",
+  collections: ["phone-app"],
   meters: { evidence: 3, copyable: 2, capital: 1 },
   tags: ["AI-native", "Small team", "Bootstrapped", "Running", "B2C", "Education"],
   product: "A phone app for practicing a foreign language by speaking. The learner talks out loud with an AI tutor in short voice lessons and free role plays, and gets feedback after each attempt. Around that sit a daily word feed, quizzes, verb drills, listening clips and a progress score. Nine languages. The download is free and the lessons need a subscription, listed in the US App Store at US$7.99 or US$8.99 a week or US$29.99 to US$79.99 a year.",
@@ -6279,6 +6460,10 @@ const STORIES = [
   teamLabel: "2 co-founders, Priyam Raj (product, Bangalore) and Matt Par (chief executive, USA), and a development team of unstated size; the TrustMRR profile says 2 to 5 people, LinkedIn lists 2",
   fundingLabel: "None, by the founder's statement",
   primaryFactor: "Distribution",
+  group: "video",
+  channel: "audience",
+  trend: "falling",
+  collections: [],
   meters: { evidence: 3, copyable: 2, capital: 2 },
   tags: ["AI-native", "Small team", "Bootstrapped", "Running", "B2C", "Video"],
   product: "A web application that turns an idea or a script into a finished video in which no person appears on camera: a script written by a language model, a synthetic voice, stock footage or AI images, captions and music. It makes vertical shorts and horizontal videos of up to 20 minutes, and it can upload to a YouTube channel that the customer connects. Customers pay a monthly or yearly subscription that includes credits. There is no free plan and no free trial.",
@@ -6460,6 +6645,10 @@ const STORIES = [
   teamLabel: "1 founder; 10 to 12 people at the peak, by his own account; he wrote in September 2026 that he dismissed the whole team",
   fundingLabel: "None",
   primaryFactor: "Distribution",
+  group: "documents-data",
+  channel: "platform",
+  trend: "falling",
+  collections: ["platform"],
   meters: { evidence: 3, copyable: 2, capital: 1 },
   tags: ["AI-native", "Small team", "Bootstrapped", "Running", "B2C", "Presentations"],
   product: "A user gives a topic, a text, a PDF, a web address or a YouTube link, and a language model writes a slide presentation from it. MagicSlides runs as an add-on inside Google Slides and as a web application that exports editable PowerPoint, PDF and Google Slides files. Since July 2026 the same account also includes AI tools for spreadsheets, documents, meeting notes and a design canvas, under the name Magic Suite.",
@@ -6615,6 +6804,10 @@ const STORIES = [
   teamLabel: "1 named founder; team size not published; the UK company named on the site in 2025 reported 1 employee",
   fundingLabel: "No outside funding found; not stated by the founder",
   primaryFactor: "Distribution",
+  group: "companions-publishing",
+  channel: "creators",
+  trend: "flat",
+  collections: ["platform"],
   meters: { evidence: 3, copyable: 2, capital: 1 },
   tags: ["AI-native", "Small team", "Bootstrapped", "Running", "B2C", "Self-publishing"],
   product: "A web application for people who sell simple books through Amazon's Kindle Direct Publishing. The user describes a book, and AI models produce its pages: line drawings for coloring books, puzzles and mazes for activity books, text and layouts for journals and planners, and a description for the Amazon listing. A subscription buys credits. By the terms of service one generated image costs 200,000 credits, so the smallest plan, with 40 million credits a month, pays for about 200 images.",
@@ -6783,6 +6976,10 @@ const STORIES = [
   teamLabel: "2 co-founders: Jacky Chou (marketing) and a developer whom the site names only as Peter; total headcount not published, LinkedIn gives the range 2 to 10",
   fundingLabel: "No outside funding found in any source",
   primaryFactor: "Distribution",
+  group: "seo-ai-search",
+  channel: "audience",
+  trend: "falling",
+  collections: [],
   meters: { evidence: 3, copyable: 1, capital: 2 },
   tags: ["AI-leveraged", "Small team", "Bootstrapped", "Running", "B2B", "Search marketing"],
   product: "Software for marketing agencies and local businesses that want to appear higher in Google Maps and in local search results. One subscription covers a rank tracker that checks positions from a grid of points on the map, one-click listing of a business on more than 550 directories, scheduled posts and review replies for Google Business Profile, a database of local business contacts, and AI-written articles that aim to make ChatGPT and other assistants recommend the business.",
@@ -6957,6 +7154,10 @@ const STORIES = [
   teamLabel: "1 founder, a sole proprietorship; no source presents a second person, and the team size is not published",
   fundingLabel: "None reported; the founder says he launched with no money",
   primaryFactor: "Distribution",
+  group: "photos",
+  channel: "creators",
+  trend: "flat",
+  collections: ["phone-app"],
   meters: { evidence: 3, copyable: 2, capital: 1 },
   tags: ["AI-native", "Solo founder", "Bootstrapped", "Running", "B2C", "Consumer apps"],
   product: "A phone app for iPhone and Android. The user picks a look, such as digicam flash, golden hour or vintage photobooth, and takes or uploads a selfie. The app sends the photo to Google's Gemini image model and returns the same person in that look within seconds. A free editor with film filters runs on the phone without AI. AI pictures cost credits, which come with a weekly subscription or in packs.",
@@ -7123,6 +7324,10 @@ const STORIES = [
   teamLabel: "4 co-founders at the release in February 2024; 5 people and 1 adviser on the About page in June 2025; 7 people and 1 adviser in October 2026",
   fundingLabel: "One investor, a friend of the founder, amount not published; no venture round found; the founder called the company fully bootstrapped in January 2025",
   primaryFactor: "Timing",
+  group: "voice-audio",
+  channel: "creators",
+  trend: "growing",
+  collections: [],
   meters: { evidence: 3, copyable: 2, capital: 2 },
   tags: ["AI-native", "Small team", "Funded", "Running", "B2C", "Music"],
   product: "A website and phone app that masters a song from a written request such as \"warm, powerful and wide stereo\". Each request comes back as a new revision that the user can compare with the earlier ones, and a Spotify link can serve as the reference for loudness and tone. The same subscription includes a splitter that separates a song into vocals, drums, bass and instruments. Since September 2026 the company also offers a generator that makes a music video from the song. Unlimited use costs US$16 a month or US$48 a year on the web.",
@@ -7304,6 +7509,10 @@ const STORIES = [
   teamLabel: "1 named founder; LinkedIn lists 3 people at the company; the headcount is not published",
   fundingLabel: "None reported; ElevenLabs gave a grant of usage credits in February 2026",
   primaryFactor: "Price",
+  group: "voice-audio",
+  channel: "search",
+  trend: "growing",
+  collections: [],
   meters: { evidence: 3, copyable: 2, capital: 1 },
   tags: ["AI-native", "Small team", "Bootstrapped", "Running", "B2B", "Translation"],
   product: "A church connects the audio of its service, from a microphone or the sound desk, to Glossa in a browser and starts a stream. Glossa turns the speech into text, translates the text, and reads the translation aloud with a synthetic voice. Each visitor scans a QR code, picks one of more than 100 languages on a phone, and listens with earphones or reads the captions. The church needs no receivers and no interpreter booth. It pays for the minutes of speech in each language, not for the number of listeners.",
@@ -7486,6 +7695,10 @@ const STORIES = [
   teamLabel: "1 founder, no employees; a law firm and partner companies do some of the work",
   fundingLabel: "US$1M pre-seed in 2025, then US$30M at a US$250M valuation in May 2026, both as stated by the founder",
   primaryFactor: "Distribution",
+  group: "build-software",
+  channel: "audience",
+  trend: "unknown",
+  collections: [],
   meters: { evidence: 1, copyable: 1, capital: 3 },
   tags: ["Cautionary", "AI-native", "Solo founder", "Funded", "Running", "B2C", "AI agents"],
   product: "You describe a business idea, or you let the product choose one. Polsia then creates a company name, a website, an email inbox and a payment account. Its AI agents write code, send sales emails, post on X and run Meta adverts. One agent chooses one task every night, does it, and emails you a report.",
@@ -7652,6 +7865,10 @@ const STORIES = [
   teamLabel: "1 named founder; his sale notice speaks of a founding team; headcount not published",
   fundingLabel: "None, according to the founder",
   primaryFactor: "Paid ads",
+  group: "health-appearance",
+  channel: "paid-ads",
+  trend: "falling",
+  collections: ["phone-app"],
   meters: { evidence: 3, copyable: 2, capital: 2 },
   tags: ["AI-native", "Small team", "Bootstrapped", "Running", "B2C", "Consumer app"],
   product: "You photograph a meal. TrackAI returns the dishes it recognises, an estimated weight, the calories, and the protein, fat and carbohydrates. You can correct an ingredient or a weight, and the totals update. The app also shows daily and weekly statistics, sends meal reminders and gives rewards for days in a row.",
@@ -7810,6 +8027,10 @@ const STORIES = [
   teamLabel: "1 founder with a day job, and a small team of unpublished size",
   fundingLabel: "None; the About page says 100% bootstrapped",
   primaryFactor: "Distribution",
+  group: "voice-audio",
+  channel: "search",
+  trend: "flat",
+  collections: ["platform"],
   meters: { evidence: 3, copyable: 2, capital: 1 },
   tags: ["AI-native", "Solo founder", "Bootstrapped", "Running", "B2C", "Productivity software"],
   product: "A dictation app for Mac, Windows, Linux, Chrome, iPhone and Android. You press a keyboard shortcut and speak, and the text appears with punctuation in whatever app or website you are typing in. The speech is transcribed in the cloud by the open-source Whisper model through Groq's API, or, since 12 October 2026, offline on the computer.",
@@ -7978,6 +8199,10 @@ const STORIES = [
   teamLabel: "1 founder, alone from 2022 to 2026",
   fundingLabel: "None found",
   primaryFactor: "Distribution",
+  group: "ai-model-tools",
+  channel: "platform",
+  trend: "unknown",
+  collections: ["platform"],
   meters: { evidence: 1, copyable: 2, capital: 1 },
   tags: ["AI-native", "Solo founder", "Bootstrapped", "Running", "B2C", "Productivity software"],
   product: "A free browser extension for the ChatGPT website that adds folders and subfolders, search in the full chat history, bulk export to TXT, Markdown, JSON and PDF, pinned messages, a prompt library and a tree map of conversation branches. A Pro plan removes the limits. It works inside the user's own ChatGPT account.",
@@ -8130,6 +8355,10 @@ const STORIES = [
   teamLabel: "1 founder, no employees or contractors",
   fundingLabel: "None",
   primaryFactor: "Distribution",
+  group: "marketing-content",
+  channel: "launches",
+  trend: "unknown",
+  collections: [],
   meters: { evidence: 1, copyable: 2, capital: 1 },
   tags: ["AI-native", "Solo founder", "Bootstrapped", "Running", "B2B", "Marketing content"],
   product: "A web app with more than 150 small writing tools built on OpenAI's GPT-3: business ideas from a 10-second quiz, blog posts, Facebook and Google ads, emails, social media posts, even poems. The user fills a short form and gets the text back in seconds. It sold mostly as a US$59 lifetime deal on AppSumo, next to monthly plans from US$19.",
@@ -8277,6 +8506,10 @@ const STORIES = [
   teamLabel: "2 co-founders and a remote team in 6 time zones; 0 employees listed in 2023",
   fundingLabel: "15 new shares sold for cash in November 2022, filed as GBP 150,000; no investment fund among the shareholders in November 2022",
   primaryFactor: "Distribution",
+  group: "voice-audio",
+  channel: "audience",
+  trend: "unknown",
+  collections: [],
   meters: { evidence: 1, copyable: 2, capital: 2 },
   tags: ["AI-native", "Small team", "Funded", "Running", "B2B", "Creator tools"],
   product: "A coach, author or creator uploads books, articles, podcast transcripts and course material. Coachvox turns them into a chat version of that person, which answers the audience in the creator's voice on a website, inside a course or in a members' group, and gives the creator the email address and the transcript of everyone who chats.",
@@ -8421,6 +8654,10 @@ const STORIES = [
   teamLabel: "1 founder, no employees, from 2023 to 2026",
   fundingLabel: "None",
   primaryFactor: "Speed",
+  group: "marketing-content",
+  channel: "search",
+  trend: "unknown",
+  collections: [],
   meters: { evidence: 1, copyable: 2, capital: 1 },
   tags: ["AI-native", "Solo founder", "Bootstrapped", "Running", "B2C", "Social media content"],
   product: "A web editor that turns a topic, a text, a web page or a YouTube video into a carousel post with several slides for LinkedIn, Instagram or TikTok. The AI writes the slides; the editor sizes the text and keeps the layout fixed, so a person who is not a designer gets a usable post in minutes. It also exports video and PowerPoint.",
@@ -8589,6 +8826,10 @@ const STORIES = [
   teamLabel: "2 co-founders, who made 85% of the code commits; size of any wider team not known",
   fundingLabel: "None found",
   primaryFactor: "Open source",
+  group: "ai-model-tools",
+  channel: "open-source",
+  trend: "growing",
+  collections: ["open-source"],
   meters: { evidence: 3, copyable: 2, capital: 1 },
   tags: ["AI-native", "Small team", "Bootstrapped", "Running", "B2B", "Developer tools"],
   product: "One API address, in the same format as OpenAI's API, that forwards each request to one of more than 200 models from more than 40 providers, such as OpenAI, Anthropic and Google, and records the cost of each request. Customers prepay credits at the providers' prices plus a 5% fee, bring their own provider keys for free, or run the open-source code on their own servers. DevPass is a monthly subscription for AI coding agents.",
@@ -8747,6 +8988,10 @@ const STORIES = [
   teamLabel: "1 founder, Maximilien Kender; NUTRIA SAS has a single shareholder and no salaried staff in the French register",
   fundingLabel: "None found: €1,000 of share capital, and the profile says bootstrapped",
   primaryFactor: "Distribution",
+  group: "health-appearance",
+  channel: "creators",
+  trend: "falling",
+  collections: ["phone-app"],
   meters: { evidence: 3, copyable: 2, capital: 2 },
   tags: ["AI-native", "Solo founder", "Bootstrapped", "Running", "B2C", "Health and fitness"],
   product: "An iPhone and Android app that estimates calories, macronutrients and micronutrients from a photo of a meal, with a barcode scanner for packaged food and a log of weight and BMI. It is free to download; the service needs a subscription after a 3-day free trial, at US$9.99 a month or US$49.99 a year in the US store.",
@@ -8894,6 +9139,10 @@ const STORIES = [
   teamLabel: "4 partners and 1 founding engineer named; 6 people on LinkedIn, October 2026",
   fundingLabel: "None found",
   primaryFactor: "Distribution",
+  group: "seo-ai-search",
+  channel: "partners",
+  trend: "growing",
+  collections: [],
   meters: { evidence: 3, copyable: 2, capital: 1 },
   tags: ["AI-native", "Small team", "Bootstrapped", "Running", "B2B", "Marketing"],
   product: "Software that asks ChatGPT, Perplexity, Google AI Mode, Claude, Gemini and Grok the questions that a brand's customers ask, records whether each answer names the brand and which web pages it cites, and then suggests fixes, writes articles and contacts the cited sites. Agencies can resell it under their own name.",
@@ -9043,6 +9292,10 @@ const STORIES = [
   teamLabel: "3 co-founders and one more person on development, October 2026",
   fundingLabel: "None, by the founders' statement",
   primaryFactor: "Audience",
+  group: "seo-ai-search",
+  channel: "audience",
+  trend: "growing",
+  collections: [],
   meters: { evidence: 3, copyable: 2, capital: 1 },
   tags: ["AI-native", "Small team", "Bootstrapped", "Running", "B2B", "Search marketing"],
   product: "An AI agent for search engine optimisation. The customer enters a website and connects Google Search Console. ChatSEO reads the real clicks, impressions and positions, gives a short list of changes in order of impact, writes articles and page titles, and can publish them to WordPress, Shopify or Webflow. Plans cost €29 to €79 a month.",
@@ -9205,6 +9458,10 @@ const STORIES = [
   teamLabel: "3 managing directors; 2 to 5 people according to TrustMRR",
   fundingLabel: "None reported",
   primaryFactor: "Niche",
+  group: "learning",
+  channel: "platform",
+  trend: "falling",
+  collections: ["platform"],
   meters: { evidence: 3, copyable: 2, capital: 1 },
   tags: ["AI-native", "Small team", "Bootstrapped", "Running", "B2C", "Education"],
   product: "An add-in for Microsoft Word, plus a web app, for German-speaking students who write seminar papers and theses. The student uploads the PDFs of the literature. While the student writes, fastwrite suggests the next sentence or a whole paragraph with a citation from those PDFs, and the Tab key accepts it. It also answers questions across all uploaded PDFs with the exact page, searches more than 20 million papers, and checks a draft against nine criteria that universities use for grading.",
@@ -9362,6 +9619,10 @@ const STORIES = [
   teamLabel: "1 named founder; the sale offer includes 2 engineers for up to 3 months",
   fundingLabel: "None found",
   primaryFactor: "Niche",
+  group: "learning",
+  channel: "unknown",
+  trend: "falling",
+  collections: [],
   meters: { evidence: 3, copyable: 2, capital: 1 },
   tags: ["AI-native", "Small team", "Bootstrapped", "Running", "B2C", "Education"],
   product: "An AI study app. A student uploads class materials, such as PDFs, lecture slides, notes, images or YouTube videos, and gets answers with citations to those files, practice questions, flashcards, study guides, audio summaries and a topic-by-topic progress view. It runs on the web and, since May 2026, as an iOS app.",
@@ -9506,6 +9767,10 @@ const STORIES = [
   teamLabel: "2 co-founders, still a two-person company in October 2026",
   fundingLabel: "None",
   primaryFactor: "Distribution",
+  group: "ai-model-tools",
+  channel: "search",
+  trend: "growing",
+  collections: ["platform"],
   meters: { evidence: 3, copyable: 2, capital: 1 },
   tags: ["AI-native", "Small team", "Bootstrapped", "Running", "B2C", "Productivity"],
   product: "A Chrome extension that adds folders, full-text search, a prompt library, bookmarks and export in four formats to the web pages of ChatGPT, Gemini, Claude and Grok. It sells no AI: users keep their own accounts, and the search index of their chats stays in their browser.",
@@ -9659,6 +9924,10 @@ const STORIES = [
   teamLabel: "1 founder, part-time next to a full-time job; the operating company has a second shareholder and board member",
   fundingLabel: "None found",
   primaryFactor: "Simplicity",
+  group: "real-estate",
+  channel: "search",
+  trend: "flat",
+  collections: [],
   meters: { evidence: 3, copyable: 2, capital: 1 },
   tags: ["AI-native", "Solo founder", "Bootstrapped", "Running", "B2B", "Architecture"],
   product: "A web app where an architect or interior designer uploads a SketchUp screenshot, a sketch or a photo and types what to change. A chat assistant called Vizzy returns a photoreal render, or a short video, that keeps the rest of the design. Plans cost US$15 to US$80 a month.",
@@ -9817,6 +10086,10 @@ const STORIES = [
   teamLabel: "1 named founder, who writes solo founder; no headcount in any source",
   fundingLabel: "None found",
   primaryFactor: "Timing",
+  group: "video",
+  channel: "launches",
+  trend: "falling",
+  collections: [],
   meters: { evidence: 3, copyable: 2, capital: 1 },
   tags: ["AI-native", "Solo founder", "Bootstrapped", "Running", "B2C", "Video"],
   product: "A web app that writes a storyboard from one sentence, keeps the characters the same from scene to scene, generates each scene with video models rented from other companies (LTX, Kling, Seedance), and lets the user edit and export the film. Users pay with prepaid credits, on plans from US$12 to US$600 a month.",
@@ -9982,6 +10255,10 @@ const STORIES = [
   teamLabel: "1 founder; LinkedIn lists him as the only employee",
   fundingLabel: "None found",
   primaryFactor: "Distribution",
+  group: "video",
+  channel: "launches",
+  trend: "growing",
+  collections: [],
   meters: { evidence: 3, copyable: 2, capital: 1 },
   tags: ["AI-native", "Solo founder", "Bootstrapped", "Running", "B2B", "Marketing content"],
   product: "A web app that creates one AI person, from chosen traits or from 1 to 4 photos of the user, and then generates photos, talking videos, outfit try-ons and product shots of that same person for Instagram, TikTok, ads and online shops. Plans cost US$19 to US$199 a month and include credits that each image or video second uses up.",
@@ -10153,6 +10430,10 @@ const STORIES = [
   teamLabel: "1 founder, Or Hirschhorn, by his own TrustMRR profile; the seller is TYGP Technologies, LLC",
   fundingLabel: "None reported; the profile says bootstrapped",
   primaryFactor: "Paid ads",
+  group: "photos",
+  channel: "paid-ads",
+  trend: "growing",
+  collections: [],
   meters: { evidence: 3, copyable: 2, capital: 2 },
   tags: ["AI-native", "Solo founder", "Bootstrapped", "Running", "B2C", "Photography"],
   product: "A web studio that turns one photo of each person and one photo of each pet into a single AI-generated portrait of them together, in a chosen scene. The first three previews are free and watermarked. The first portrait costs US$19 and each additional one US$10, as a one-time purchase, and a portrait can be sent as a gift or printed on a framed print, mug, ornament or blanket.",
@@ -10308,6 +10589,10 @@ const STORIES = [
   teamLabel: "1 founder and no employees throughout; his searches for a co-founder (May 2025) and a part-time developer (October 2025) have no known result",
   fundingLabel: "None",
   primaryFactor: "Distribution",
+  group: "build-software",
+  channel: "communities",
+  trend: "falling",
+  collections: [],
   meters: { evidence: 3, copyable: 2, capital: 1 },
   tags: ["AI-native", "Solo founder", "Bootstrapped", "Running", "B2B", "No-code"],
   product: "An AI tool that draws the screens of a mobile app from a text description or a reference image, refined in a chat and exported as HTML (design.appalchemy.ai, since February 2025). Since July 2026 also an AI app builder that turns a description into React Native code for iOS and Android, with a live preview on the user's phone (appalchemy.ai).",
@@ -10473,6 +10758,10 @@ const STORIES = [
   teamLabel: "2 co-founders, a married couple, no employees",
   fundingLabel: "None",
   primaryFactor: "Distribution",
+  group: "marketing-content",
+  channel: "search",
+  trend: "falling",
+  collections: [],
   meters: { evidence: 3, copyable: 2, capital: 1 },
   tags: ["AI-native", "Small team", "Bootstrapped", "Running", "B2B", "Marketing content"],
   product: "A web app that turns a short description of a business into a marketing strategy, customer profiles, ideas and a task list, using GPT-4 with long prompts written by two marketers. Free AI tools bring the visitors; the full strategy is sold for a one-time payment.",
@@ -10629,6 +10918,10 @@ const STORIES = [
   teamLabel: "1 founder; no co-founder or staff found",
   fundingLabel: "None",
   primaryFactor: "Open source",
+  group: "build-software",
+  channel: "open-source",
+  trend: "falling",
+  collections: ["open-source"],
   meters: { evidence: 3, copyable: 2, capital: 1 },
   tags: ["AI-native", "Solo founder", "Bootstrapped", "Running", "B2B", "Developer tools"],
   product: "A web app that turns a screenshot, a mockup, a Figma design or a screen recording of a website into front-end code: HTML with Tailwind or CSS, React, Vue, Bootstrap or Ionic. The code is open source under the MIT licence and free to run with your own model keys. The hosted version at screenshottocode.com sells monthly credits, so the user needs no API key and no setup.",
@@ -10782,6 +11075,10 @@ const STORIES = [
   teamLabel: "Founder and a technical co-founder, no employees reported; since March 2025 a company with three officer companies",
   fundingLabel: "None reported",
   primaryFactor: "Niche",
+  group: "real-estate",
+  channel: "partners",
+  trend: "growing",
+  collections: [],
   meters: { evidence: 1, copyable: 2, capital: 1 },
   tags: ["AI-native", "Small team", "Bootstrapped", "Running", "B2B", "Real estate"],
   product: "A web and mobile app for real-estate agents that furnishes, redecorates and enhances property photos with AI, turns them into short videos and 2D floor plans, and publishes them to social networks and Meta ads. Agents pay a monthly subscription that includes credits, and each AI action uses some of them.",
@@ -10941,6 +11238,10 @@ const STORIES = [
   teamLabel: "1 founder on Questgen, 3 co-founders on Supermeme, no employees, all with other jobs",
   fundingLabel: "None",
   primaryFactor: "Distribution",
+  group: "learning",
+  channel: "open-source",
+  trend: "falling",
+  collections: ["open-source"],
   meters: { evidence: 1, copyable: 2, capital: 1 },
   tags: ["AI-native", "Small team", "Bootstrapped", "Running", "B2B", "Education"],
   product: "Three small AI web apps from one founder, run beside his full-time job. Questgen turns text, PDFs, web pages, images or videos into quizzes (multiple choice, true/false, fill in the blank) and exports them in the file formats that school learning systems import. Supermeme.ai, built with two co-founders, turns a sentence into memes: it finds fitting meme templates and writes the captions. AiArtist.io, the newest, makes short motion-graphics videos from text.",
@@ -11099,6 +11400,10 @@ const STORIES = [
   teamLabel: "2 co-founders; 9 employees at the sale in October 2024, mostly in Munich",
   fundingLabel: "No external funding reported; US$250,000 from the founders, friends and family",
   primaryFactor: "Niche",
+  group: "real-estate",
+  channel: "unknown",
+  trend: "sold",
+  collections: [],
   meters: { evidence: 3, copyable: 2, capital: 2 },
   tags: ["AI-native", "Small team", "Bootstrapped", "Exit", "B2B", "Real estate"],
   product: "A web app for real estate agents and photographers. The agent uploads a photo of a room, chooses the room type and a furniture style, and gets back the same room with furniture in about 10 to 15 seconds. It can also remove existing furniture. Plans are monthly subscriptions sized by the number of photos, and the top plan includes an API.",
@@ -11234,7 +11539,64 @@ const USES = [{"s":"base44","t":"anthropic-api","role":"Writes the app logic and
 /* TOOLS-DATA-END */
 
 const app = document.getElementById("app");
-const state = { q: "", team: "", aiType: "", outcome: "", evidence: "", sort: "newest" };
+const state = { q: "", team: "", outcome: "", evidence: "", trend: "", channel: "", size: "", speed: "", group: "", collection: "", sort: "newest" };
+
+// Each story names one group (what the product does), one main channel (how most customers arrived),
+// one revenue trend, and any number of patterns ("collections"). The pattern "sold" follows from the outcome.
+const GROUPS = [
+  { slug: "marketing-content", name: "Marketing and social content", text: "Tools that write posts, ads, carousels and show notes, or plan and publish them." },
+  { slug: "video", name: "Video generation", text: "Tools that make short videos, ads with AI actors, music videos and films." },
+  { slug: "photos", name: "Photos and portraits", text: "Headshots, portraits, larger and sharper images, removed backgrounds and generated art." },
+  { slug: "ai-model-tools", name: "Tools for using AI models", text: "Chat apps, browser extensions and gateways that make the large AI models easier to use." },
+  { slug: "voice-audio", name: "Voice and audio", text: "Dictation, voice notes, live translation, audio mastering and AI copies of a person's voice and advice." },
+  { slug: "build-software", name: "Build software with AI", text: "Tools that turn a description or a screenshot into a working app or website." },
+  { slug: "learning", name: "Learning and study", text: "Help for students, language learners and teachers." },
+  { slug: "support-agents", name: "Customer support agents", text: "Chatbots that answer customers from a company's own website and documents." },
+  { slug: "health-appearance", name: "Health and appearance", text: "Calorie counts from food photos, and a score for the face." },
+  { slug: "real-estate", name: "Real estate and architecture visuals", text: "Furniture added to photos of empty rooms, and renders made from architects' sketches." },
+  { slug: "seo-ai-search", name: "SEO and AI search", text: "Search engine optimization (SEO) is the work that brings a website higher in Google. These tools do that work, or measure how AI assistants mention a business." },
+  { slug: "documents-data", name: "Documents, data and slides", text: "Chat with PDF files, spreadsheet formulas and slide decks." },
+  { slug: "companions-publishing", name: "Companions and publishing", text: "AI characters to talk with, and simple books made for Amazon's self-publishing service." },
+];
+const CHANNELS = [
+  { slug: "audience", name: "Founder's posts and audience", text: "The founder showed the product to followers on X, LinkedIn or YouTube, or to the readers of a blog or a newsletter." },
+  { slug: "search", name: "Search and AI answers", text: "Pages, free tools or a strong domain name brought visitors from Google and from AI assistants." },
+  { slug: "creators", name: "Creators and short videos", text: "Many creators on TikTok, Instagram or YouTube showed the product, often for a fee." },
+  { slug: "launches", name: "Launch sites and deal sites", text: "Product Hunt, Hacker News, directories of AI tools, or a lifetime deal on AppSumo." },
+  { slug: "platform", name: "Inside another platform", text: "The product is listed in the store or the interface of another product, for example the Chrome Web Store, Google Slides or the app store of a help desk." },
+  { slug: "paid-ads", name: "Paid ads", text: "Ads on Meta, TikTok or Google, with a measured cost for each customer." },
+  { slug: "open-source", name: "Open source", text: "Free code on GitHub brought developers, and some of them paid for a hosted version." },
+  { slug: "partners", name: "Affiliates and partners", text: "Affiliates, agencies or partners sold the product for a share of each payment." },
+  { slug: "communities", name: "Reddit and communities", text: "Useful posts in Reddit and in other online communities." },
+  { slug: "sales", name: "Cold outreach", text: "Emails and messages to possible customers who had not asked for them." },
+  { slug: "unknown", name: "Not stated", text: "The sources do not say how most customers arrived." },
+];
+const TRENDS = [
+  { slug: "growing", name: "Growing" }, { slug: "flat", name: "Flat" }, { slug: "falling", name: "Falling" },
+  { slug: "sold", name: "Sold" }, { slug: "unknown", name: "Not stated" },
+];
+const COLLECTIONS = [
+  { slug: "platform", name: "Built on another company's platform", text: "These products live inside or on top of another company's product: a browser extension, an add-in, an app in a store, or a tool for the users of one platform. The host brings the users. The host can also change its rules, its prices or its own features, and the product must follow." },
+  { slug: "phone-app", name: "Phone apps sold through app stores", text: "These are mainly iPhone and Android apps. Apple or Google collects the payment in the app and keeps a commission. All of them sell subscriptions." },
+  { slug: "open-source", name: "Open source first", text: "The founder published the code for free. Developers who did not want to run the code themselves paid for a hosted version." },
+  { slug: "sold", name: "Sold", text: "Businesses that were sold. Each story gives the buyer and the price when the sources name them." },
+];
+const SIZES = [
+  { slug: "s1", name: "Under US$100K", test: u => u < 1e5 },
+  { slug: "s2", name: "US$100K to 1M", test: u => u >= 1e5 && u < 1e6 },
+  { slug: "s3", name: "US$1M to 10M", test: u => u >= 1e6 && u < 1e7 },
+  { slug: "s4", name: "US$10M or more", test: u => u >= 1e7 },
+];
+const SPEEDS = [
+  { slug: "t1", name: "Under 6 months", test: m => m < 6 },
+  { slug: "t2", name: "6 to 12 months", test: m => m >= 6 && m <= 12 },
+  { slug: "t3", name: "13 to 24 months", test: m => m > 12 && m <= 24 },
+  { slug: "t4", name: "Over 24 months", test: m => m > 24 },
+];
+const byS = list => Object.fromEntries(list.map(x => [x.slug, x]));
+const GROUP = byS(GROUPS), CHANNEL = byS(CHANNELS), TREND = byS(TRENDS), COLLECTION = byS(COLLECTIONS);
+const inCollection = (s, c) => c === "sold" ? s.outcome === "exit" : s.collections.includes(c);
+const isFunded = s => s.tags.includes("Funded");
 
 const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", "\"": "&quot;" }[c]));
 const money = n => n >= 1e9 ? "US$" + (n / 1e9).toFixed(1).replace(/\.0$/, "") + "B" : n >= 1e6 ? "US$" + Math.round(n / 1e6) + "M" : "US$" + n.toLocaleString("en-US");
@@ -11293,17 +11655,17 @@ function cardHtml(s) {
   return `<a class="card" href="#/story/${esc(s.slug)}" aria-label="${esc(s.name)}: open the full story">
     ${isCaution(s) ? `<div class="card-caution mono">Cautionary story · the famous claim did not verify</div>` : ""}
     <div class="card-head">
-      <div class="meta"><span class="mono">${esc(s.productType)} · ${esc(s.aiType)} · ${esc(s.country)}</span><h3 class="display">${esc(s.name)}</h3></div>
+      <div class="meta"><span class="mono">${esc(s.productType)} · ${esc(s.country)}${isFunded(s) ? " · Funded" : ""}</span><h3 class="display">${esc(s.name)}</h3></div>
       <span class="ev ${esc(s.evidence)}">Evidence ${esc(s.evidence)}</span>
     </div>
-    <div class="card-outcome"><b>${money(s.outcomeUsd)}</b><span>${s.outcome === "exit" ? "exit" : "still running"} · ${s.months} months after launch</span></div>
+    <div class="card-outcome"><b>${money(s.outcomeUsd)}</b><span>${s.outcome === "exit" ? "sold" : "still running"}${["growing", "flat", "falling"].includes(s.trend) ? ", revenue " + s.trend : ""} · ${s.months} months after launch</span></div>
     <div class="card-body">
       <div><span class="lbl mono">The product</span><p>${esc(s.product)}</p></div>
       <div><span class="lbl mono">${isCaution(s) ? "How it grew" : "Why it worked"}</span><p>${esc(s.why)}</p></div>
     </div>
     <div class="meters">${meterHtml("Evidence strength", s.meters.evidence)}${meterHtml("Copyable pattern", s.meters.copyable)}${meterHtml("Capital needed", s.meters.capital, true)}</div>
     <div class="card-foot">
-      <span class="facts"><span><b>Launch</b> ${esc(s.launchLabel)}</span><span><b>${s.outcome === "exit" ? "Exit" : "Status"}</b> ${esc(when)}</span><span><b>Factor</b> ${esc(s.primaryFactor)}</span></span>
+      <span class="facts"><span><b>Launch</b> ${esc(s.launchLabel)}</span><span><b>${s.outcome === "exit" ? "Exit" : "Status"}</b> ${esc(when)}</span><span><b>Channel</b> ${esc(CHANNEL[s.channel].name)}</span></span>
       <span class="arrow">Read the story ${ARROW_R}</span>
     </div>
   </a>`;
@@ -11311,12 +11673,18 @@ function cardHtml(s) {
 
 function filtered() {
   const q = state.q.trim().toLowerCase();
+  const size = SIZES.find(x => x.slug === state.size), speed = SPEEDS.find(x => x.slug === state.speed);
   let list = STORIES.filter(s =>
+    (!state.group || s.group === state.group) &&
+    (!state.collection || inCollection(s, state.collection)) &&
     (!state.team || s.team === state.team) &&
-    (!state.aiType || s.aiType === state.aiType) &&
     (!state.outcome || s.outcome === state.outcome) &&
-    (!state.evidence || s.evidence === state.evidence) &&
-    (!q || [s.name, s.country, s.sector, s.productType, s.product, s.why, s.tags.join(" ")].join(" ").toLowerCase().includes(q))
+    (!state.evidence || (state.evidence === "AB" ? s.evidence !== "C" : s.evidence === "C")) &&
+    (!state.trend || s.trend === state.trend) &&
+    (!state.channel || s.channel === state.channel) &&
+    (!size || size.test(s.outcomeUsd)) &&
+    (!speed || speed.test(s.months)) &&
+    (!q || [s.name, s.country, s.productType, s.product, s.why, GROUP[s.group].name, CHANNEL[s.channel].name, s.tags.join(" ")].join(" ").toLowerCase().includes(q))
   );
   if (state.sort === "newest") list.sort((a, b) => b.added.localeCompare(a.added));
   if (state.sort === "biggest") list.sort((a, b) => b.outcomeUsd - a.outcomeUsd);
@@ -11326,6 +11694,22 @@ function filtered() {
 
 function fbtn(key, val, label) {
   return `<button class="fbtn" data-key="${key}" data-val="${esc(val)}" aria-pressed="${state[key] === val}">${label}</button>`;
+}
+
+function browseHtml() {
+  const count = f => STORIES.filter(f).length;
+  return `<div class="browse">
+        <h3 class="display">Browse by what the product does</h3>
+        <div class="gtiles">${GROUPS.map(g => `<a class="gtile" href="#/group/${g.slug}" aria-current="${state.group === g.slug}"><b>${esc(g.name)}</b><span class="mono">${count(s => s.group === g.slug)}</span></a>`).join("")}</div>
+        <h3 class="display">Patterns to copy</h3>
+        <div class="colls">${COLLECTIONS.map(c => `<a class="coll" href="#/collection/${c.slug}" aria-current="${state.collection === c.slug}"><b>${esc(c.name)}<span class="mono">${count(s => inCollection(s, c.slug))}</span></b></a>`).join("")}</div>
+      </div>`;
+}
+
+function selectionHtml() {
+  const g = GROUP[state.group], c = COLLECTION[state.collection], x = g || c;
+  if (!x) return "";
+  return `<div class="box gsel"><span class="mono accent">${g ? "Group" : "Pattern"}</span><h3 class="display">${esc(x.name)}</h3><p>${esc(x.text)}</p><a class="back" href="#/stories">${ARROW_L}Show all stories</a></div>`;
 }
 
 function renderList() {
@@ -11378,13 +11762,24 @@ function renderList() {
         <div class="sec-head"><span class="mono accent">Stories</span><h2 class="display">Verified, kernel by kernel</h2></div>
         <label class="search-wrap">${SEARCH_ICO}<span class="sr">Search stories</span><input id="q" class="search" type="search" placeholder="Search stories" value="${esc(state.q)}" autocomplete="off"></label>
       </div>
+      ${browseHtml()}
+      ${selectionHtml()}
       <div class="filters">
         <div class="fgroup"><span class="mono lab">Sort</span>${fbtn("sort", "newest", "Newest")}${fbtn("sort", "biggest", "Biggest outcome")}${fbtn("sort", "fastest", "Fastest")}</div>
         <div class="fgroup"><span class="mono lab">Team</span>${fbtn("team", "solo", "Solo founder")}${fbtn("team", "small", "2 to 10 people")}</div>
-        <div class="fgroup"><span class="mono lab">AI</span>${fbtn("aiType", "AI-native", "AI-native")}${fbtn("aiType", "AI-leveraged", "AI-leveraged")}</div>
-        <div class="fgroup"><span class="mono lab">Outcome</span>${fbtn("outcome", "exit", "Exit")}${fbtn("outcome", "running", "Still running")}</div>
-        <div class="fgroup"><span class="mono lab">Evidence</span>${fbtn("evidence", "A", "A")}${fbtn("evidence", "B", "B")}${fbtn("evidence", "C", "C")}</div>
+        <div class="fgroup"><span class="mono lab">Evidence</span>${fbtn("evidence", "AB", "Verified, A or B")}${fbtn("evidence", "C", "Founder claim, C")}</div>
+        <div class="fgroup"><span class="mono lab">Outcome</span>${fbtn("outcome", "running", "Still running")}${fbtn("outcome", "exit", "Sold")}</div>
+        <div class="fgroup"><span class="mono lab">Revenue trend</span>${["growing", "flat", "falling", "unknown"].map(t => fbtn("trend", t, TREND[t].name)).join("")}</div>
       </div>
+      <details class="more-filters"${state.channel || state.size || state.speed ? " open" : ""}>
+        <summary>More filters: main channel, size and time</summary>
+        <div class="filters">
+          <div class="fgroup"><span class="mono lab">Main channel</span>${CHANNELS.map(c => fbtn("channel", c.slug, c.name)).join("")}</div>
+          <div class="fgroup"><span class="mono lab">Headline number</span>${SIZES.map(x => fbtn("size", x.slug, x.name)).join("")}</div>
+          <div class="fgroup"><span class="mono lab">Time to the number</span>${SPEEDS.map(x => fbtn("speed", x.slug, x.name)).join("")}</div>
+        </div>
+        <p class="fnote">The revenue trend compares the latest months in the sources with the months before them. Falling means revenue is about 15% or more below the best recent months, or the sources report a fall. The headline number is the yearly figure or the sale value on each card.</p>
+      </details>
       <p class="count mono">${list.length} of ${n} ${plural} shown</p>
       <div class="grid">
         ${list.map(cardHtml).join("")}
@@ -11445,7 +11840,7 @@ function renderList() {
       <div class="note hidden" id="submit-note">The submission form is not live yet. A story needs three things. First, the company name. Second, a link to verified revenue or a public disclosure. Third, the team size at the moment of success.</div>
     </section>
   </div>`;
-  document.title = "Monocorn";
+  document.title = GROUP[state.group] ? GROUP[state.group].name + " · Monocorn" : COLLECTION[state.collection] ? COLLECTION[state.collection].name + " · Monocorn" : "Monocorn";
 }
 
 function storyHtml(s) {
@@ -11462,17 +11857,17 @@ function storyHtml(s) {
     <a class="back" href="#/">${ARROW_L}All stories</a>
     <header class="story-head">
       <div class="title">
-        <span class="mono accent">${esc(s.productType)} · ${esc(s.aiType)} · ${esc(s.country)}</span>
+        <span class="mono accent">${esc(s.productType)} · ${esc(s.country)}</span>
         <h1 class="display">${esc(s.name)}</h1>
-        <div class="tags">${s.tags.map(t => `<span>${esc(t)}</span>`).join("")}</div>
+        <div class="tags">${s.tags.filter(t => !["AI-native", "AI-leveraged", "Bootstrapped", "Running"].includes(t)).map(t => `<span>${esc(t)}</span>`).join("")}</div>
       </div>
       <div class="box stats">
-        <div class="stat"><span class="mono">Outcome</span><div class="v">${esc(s.outcomeLabel)}</div></div>
+        <div class="stat"><span class="mono">Outcome</span><div class="v">${esc(s.outcomeLabel)}${["growing", "flat", "falling"].includes(s.trend) ? `<span class="trend mono">Revenue ${s.trend}</span>` : ""}</div></div>
         <div class="stat"><span class="mono">Launch</span><div class="v">${esc(s.launchLabel)}</div></div>
         <div class="stat"><span class="mono">Team</span><div class="v">${esc(s.teamLabel)}</div></div>
         <div class="stat"><span class="mono">Outside funding</span><div class="v">${esc(s.fundingLabel)}</div></div>
-        <div class="stat"><span class="mono">Sector</span><div class="v">${esc(s.sector)}</div></div>
-        <div class="stat"><span class="mono">Primary factor</span><div class="v">${esc(s.primaryFactor)}</div></div>
+        <div class="stat"><span class="mono">Group</span><div class="v"><a href="#/group/${s.group}">${esc(GROUP[s.group].name)}</a></div></div>
+        <div class="stat"><span class="mono">Main channel</span><div class="v">${esc(CHANNEL[s.channel].name)}</div></div>
       </div>
     </header>
 
@@ -11571,7 +11966,7 @@ const JOBS = [
   ["measuring", "Measuring", "Analytics and revenue verification."],
   ["operating", "Operating the company", "Contractors, documents, audits and legal services."]
 ];
-const tstate = { team: "", aiType: "", outcome: "", evidence: "" };
+const tstate = { team: "", outcome: "", evidence: "", group: "" };
 const toolBySlug = Object.fromEntries(TOOLS.map(t => [t.slug, t]));
 const storyBySlug = Object.fromEntries(STORIES.map(s => [s.slug, s]));
 const jobLabel = k => (JOBS.find(j => j[0] === k) || ["", k])[1];
@@ -11581,7 +11976,7 @@ const kernBar = us => `<span class="kbar">${us.map(u => `<a class="kern g${esc(u
 const longDate = d => d ? new Date(d + "T00:00:00").toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" }) : "";
 
 function renderTools() {
-  const pool = STORIES.filter(s => (!tstate.team || s.team === tstate.team) && (!tstate.aiType || s.aiType === tstate.aiType) && (!tstate.outcome || s.outcome === tstate.outcome));
+  const pool = STORIES.filter(s => (!tstate.team || s.team === tstate.team) && (!tstate.group || s.group === tstate.group) && (!tstate.outcome || s.outcome === tstate.outcome));
   const inPool = new Set(pool.map(s => s.slug));
   const uses = usesOk().filter(u => inPool.has(u.s) && (!tstate.evidence || u.grade === tstate.evidence));
   const byTool = {};
@@ -11618,8 +12013,8 @@ function renderTools() {
     </header>
     <div class="filters" style="margin:28px 0 40px">
       <div class="fgroup"><span class="mono lab">Team</span>${tbtn("team", "solo", "Solo founder")}${tbtn("team", "small", "2 to 10 people")}</div>
-      <div class="fgroup"><span class="mono lab">AI</span>${tbtn("aiType", "AI-native", "AI-native")}${tbtn("aiType", "AI-leveraged", "AI-leveraged")}</div>
-      <div class="fgroup"><span class="mono lab">Outcome</span>${tbtn("outcome", "exit", "Exit")}${tbtn("outcome", "running", "Still running")}</div>
+      <div class="fgroup"><span class="mono lab">What the product does</span>${GROUPS.map(g => tbtn("group", g.slug, g.name)).join("")}</div>
+      <div class="fgroup"><span class="mono lab">Outcome</span>${tbtn("outcome", "running", "Still running")}${tbtn("outcome", "exit", "Sold")}</div>
       <div class="fgroup"><span class="mono lab">Evidence of use</span>${tbtn("evidence", "A", "A")}${tbtn("evidence", "B", "B")}${tbtn("evidence", "C", "C")}</div>
     </div>
     ${jobs || `<div class="box empty"><p><b>No tool matches these filters.</b></p></div>`}
@@ -11701,6 +12096,10 @@ function router() {
   const mt = h.match(/^#\/tool\/([a-z0-9-]+)/i);
   if (mt) { renderTool(mt[1]); window.scrollTo(0, 0); return; }
   if (/^#\/tools/.test(h)) { renderTools(); window.scrollTo(0, 0); return; }
+  const mg = h.match(/^#\/group\/([a-z0-9-]+)/i), mc = h.match(/^#\/collection\/([a-z0-9-]+)/i);
+  state.group = mg && GROUP[mg[1]] ? mg[1] : "";
+  state.collection = mc && COLLECTION[mc[1]] ? mc[1] : "";
+  if (mg || mc) { renderList(); document.getElementById("stories").scrollIntoView(); return; }
   renderList();
   const anchor = h.replace(/^#\//, "");
   if (anchor && document.getElementById(anchor)) { document.getElementById(anchor).scrollIntoView(); } else { window.scrollTo(0, 0); }
