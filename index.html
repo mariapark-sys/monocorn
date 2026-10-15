@@ -10921,6 +10921,164 @@ const STORIES = [
     { title: "European Central Bank: euro foreign exchange reference rates, 19 December 2024 and 14 October 2026", url: "https://data-api.ecb.europa.eu/service/data/EXR/D.USD.EUR.SP00.A", grade: "B", how: "Read the CSV series: US$1.0395 per euro on 19 December 2024 and US$1.1195 on 14 October 2026." },
     { title: "Loot Drop database export, failed startups", url: "https://www.loot-drop.io/", grade: "C", how: "Local export. AI-written summaries, not independently verified. Source for the failed predecessors." }
   ]
+},
+{
+  slug: "questgen-supermeme",
+  name: "Questgen and Supermeme.ai",
+  country: "India",
+  sector: "Information Technology",
+  productType: "AI quiz generator and AI meme generator",
+  aiType: "AI-native",
+  team: "small",
+  outcome: "running",
+  evidence: "C",
+  added: "2026-10-14",
+  launchLabel: "December 2020",
+  outcomeLabel: "US$6.5K a month, July 2026",
+  sticker: "$78K/yr run rate",
+  outcomeUsd: 78000,
+  months: 67,
+  teamLabel: "1 founder on Questgen, 3 co-founders on Supermeme, no employees, all with other jobs",
+  fundingLabel: "None",
+  primaryFactor: "Distribution",
+  meters: { evidence: 1, copyable: 2, capital: 1 },
+  tags: ["AI-native", "Small team", "Bootstrapped", "Running", "B2B", "Education"],
+  product: "Three small AI web apps from one founder, run beside his full-time job. Questgen turns text, PDFs, web pages, images or videos into quizzes (multiple choice, true/false, fill in the blank) and exports them in the file formats that school learning systems import. Supermeme.ai, built with two co-founders, turns a sentence into memes: it finds fitting meme templates and writes the captions. AiArtist.io, the newest, makes short motion-graphics videos from text.",
+  why: "Questgen started as free open-source code on GitHub whose README sends readers to questgen.ai, where the paid plans are. Both apps then won search traffic for exact phrases such as \"AI meme generator\", and Supermeme says it has spent nothing to acquire its users. Costs are low: in June 2022 the founder said his two products were profitable at US$500 and US$100 a month. So a part-time team with no investors can keep them running.",
+  summary: [
+    `Questgen and Supermeme.ai are <dfn>micro-SaaS</dfn> products: small software services that are sold by subscription and run by one or a few people. Questgen is a quiz generator for teachers and trainers. You paste text or upload a PDF, and it writes multiple-choice, true/false and fill-in-the-blank questions that you can edit and export into a <dfn>learning management system</dfn> (LMS), the software that schools and companies use to run courses and tests. Supermeme turns a sentence into memes: it searches thousands of meme templates for one that fits and writes the captions, and its site says it is "powered by OpenAI". With a third app, AiArtist.io, they had more than 2.5 million registered users in July 2026.`,
+    `Ramsri Goutham Golla is an engineer from India who worked about six years in Silicon Valley and moved back in 2018. In August 2020 he published Questgen as <dfn>open-source</dfn> code, code that anyone may read, use and change, built on <dfn>T5</dfn> models, language models that turn one text into another. By January 2022 the website sold plans and an <dfn>API</dfn>, a way for other programs to call the service. That month he and two partners he knew only online, Nico Botha and Sanjeev NC, started Supermeme. In June 2022 he said his two products made US$500 and US$100 a month. Supermeme's own pitch page showed US$25,000 a year in <dfn>ARR</dfn> (annual recurring revenue) by April 2023 and US$65,000 by March 2025, and the apps together peaked at US$100,000 ARR in 2025. On 30 July 2026 Indie Hackers reported US$6,000 to US$7,000 a month in <dfn>MRR</dfn> (monthly recurring revenue) for the three apps. Two days later he wrote that Supermeme makes US$4,400 a month. Questgen has earned more than US$150,000 since its launch.`,
+    `Every money figure on this page is a statement by the founder, his co-founders or their own web pages, grade C. No payment processor or buyer has confirmed any of them. They fit together across four years: in 2025 and again in 2026, Supermeme's figure is about two thirds of the total. They also show a decline, because the July 2026 run rate is about 22% below the 2025 peak. The page also shows what happened to earlier companies that made quizzes for classrooms or funny images for chats.`
+  ],
+  factsCaption: "A part-time portfolio of three AI apps that peaked at US$100,000 a year in 2025 and made US$6,000 to US$7,000 a month in July 2026, all self-reported",
+  factsRead: "How to read this table: a grade C value is a statement by the founder, his co-founders or the companies' own web pages, including older versions of those pages saved by the Wayback Machine. A \"calc\" value was computed on this page from the rows above it. No value is grade A or B.",
+  timelineLead: "From an open-source research library in 2020 to three paid apps run beside a full-time job, in 67 months. Each entry carries its grade.",
+  pricing: {
+    caption: "Prices in October 2026 from the three products' own pricing pages (grade C). Supermeme's monthly prices are read from the plan data inside its page, which shows yearly prices first",
+    note: "Questgen's yearly plan is US$100 a year, shown here as US$8.33 a month. Supermeme gives 10 free credits a month with a watermark; one credit is one generation with up to 8 meme options. Its page data and FAQ also list a Pro plan at US$13.99 a month billed yearly or US$19.99 monthly, with 1,000 API requests, but the page did not show it as a plan card. AiArtist sells a one-time pass that lasts one year, and its page says the price rises with every 50 new customers.",
+    rows: [
+      ["Questgen Basic", "0", "0", "20 free runs"],
+      ["Questgen Pro", "8.33", "15", "unlimited runs, fair use"],
+      ["Supermeme Free", "0", "0", "10 credits a month, watermark"],
+      ["Supermeme Solo", "6.49", "9.99", "100 credits a month (about 800 memes), 1 brand kit, 100 API requests"],
+      ["Supermeme Startup", "19.99", "34.99", "unlimited credits, 10 brand kits, 2,000 API requests"],
+      ["Supermeme Enterprise", "83.99", "99.99", "unlimited brand kits, 5,000 API requests"],
+      ["AiArtist yearly pass", "99 one-time", "", "100 credits a month for one year, launch offer"]
+    ]
+  },
+  facts: [
+    { fact: "Revenue per month of the three apps, July 2026", value: "US$6,000 to US$7,000", grade: "C", note: "Indie Hackers interview, 30 July 2026. The article's header gives US$6.5K a month and its text \"nearly $7k MRR\". Covers Questgen, Supermeme and AiArtist together.", src: [1] },
+    { fact: "Run rate from the July 2026 figure", value: "about US$78,000 a year", grade: "X", note: "Calculated: US$6,500 times 12. The range gives US$72,000 to US$84,000.", src: [1] },
+    { fact: "Peak of the three apps, 2025", value: "US$100,000 ARR", grade: "C", note: "Indie Hackers interview. His X profile in October 2026 still says \"3 AI SaaS Apps to $100k ARR with no employees\".", src: [1, 4] },
+    { fact: "Fall from the 2025 peak to July 2026", value: "about 22%", grade: "X", note: "Calculated: US$78,000 a year against US$100,000.", src: [1] },
+    { fact: "Supermeme revenue per month, 1 August 2026", value: "US$4,400", grade: "C", note: "Founder's post on X. That is about 63% to 68% of the July 2026 total, so Questgen and AiArtist make about US$1,600 to US$2,600 a month together (calculated).", src: [2, 1] },
+    { fact: "Supermeme ARR on its pitch page, by March 2025", value: "US$65,000, with 750,000 signups", grade: "C", note: "First seen in the Wayback capture of 20 March 2025 and still on the live page in October 2026, so it is not current. The page says its customer acquisition cost is US$0, from organic channels and word of mouth.", src: [7, 5] },
+    { fact: "Supermeme ARR on its pitch page, by April 2023", value: "US$25,000, with 140,000 signups", grade: "C", note: "Wayback capture of 2 April 2023, unchanged until at least November 2024. The same answer says 100,000 signups came through organic channels.", src: [6] },
+    { fact: "Questgen total revenue since launch, July 2026", value: "more than US$150,000", grade: "C", note: "Indie Hackers interview. The founder dates the launch \"4 years ago\"; the website was already online in December 2020.", src: [1, 16] },
+    { fact: "Total revenue of the three apps, August 2026", value: "more than US$300,000", grade: "C", note: "Founder's post on X, 6 August 2026: \"3 Apps, 3 Years, $ 300K+ Revenue\".", src: [3] },
+    { fact: "His two micro-SaaS products, June 2022", value: "US$500 and US$100 a month, both profitable", grade: "C", note: "Founder interview in the languagetech newsletter, 26 June 2022. He did not say which product earned which amount. His Udemy courses had made US$6,700 in total.", src: [15] },
+    { fact: "Registered users, July 2026", value: "more than 2.5 million in total, more than 2 million of them at Supermeme and more than 150,000 at Questgen", grade: "C", note: "Indie Hackers interview. Questgen's home page also says \"Trusted by 150,000+ users\".", src: [1, 10] },
+    { fact: "Paying accounts, upper limit", value: "at most about 1,000", grade: "X", note: "Calculated: US$6,500 a month divided by the cheapest paid price, Supermeme Solo at US$6.49 a month, is about 1,000, or 0.04% of 2.5 million registered users. Every payer on a higher plan makes the real number lower.", src: [1, 12] },
+    { fact: "AiArtist.io paying users, July 2026", value: "more than 20", grade: "C", note: "Indie Hackers interview. Recently launched, sold as a US$99 one-time yearly pass.", src: [1, 13] },
+    { fact: "Supermeme's Product Hunt launch", value: "first place of the day", grade: "C", note: "Founder in the Indie Hackers interview. The launch date was not verified.", src: [1] },
+    { fact: "Team", value: "Questgen: 1 person. Supermeme: 3 co-founders. No employees", grade: "C", note: "Questgen's Team page calls him its \"solo developer\"; a January 2022 version of the site spoke of \"the founders\". Supermeme's Team page lists three co-founders who formed the team in January 2022 and had not met in person. The founder works full-time as a data scientist, and the two co-founders list other jobs.", src: [9, 17, 8, 1, 19] },
+    { fact: "Outside funding", value: "none", grade: "C", note: "Supermeme's Team page: \"completely bootstrapped\". The founder's X profile: \"bootstrapping\".", src: [8, 4] },
+    { fact: "Company behind Questgen", value: "QuestgenAI, Inc.", grade: "C", note: "Copyright line on the Questgen website. Where it is registered was not verified.", src: [11] },
+    { fact: "Time from the first Questgen website to the July 2026 figure", value: "67 months", grade: "X", note: "Calculated: December 2020 to July 2026.", src: [16, 1] }
+  ],
+  timeline: [
+    { when: "2013 to 2018", what: "After a master's degree at Arizona State University in 2013, he works about six years in Silicon Valley, then moves back to India in 2018 to combine freelance work with his own products.", grade: "C", src: [15] },
+    { when: "4 August 2020", what: "GitHub records the creation of the open-source Questgen.ai library, MIT license. Its README today says it uses three T5 models and sends readers to questgen.ai.", grade: "C", src: [14] },
+    { when: "25 December 2020", what: "First Wayback Machine capture of questgen.ai: a simple page for \"A question generation AI to automatically generate assessments for education\".", grade: "C", src: [16] },
+    { when: "16 January 2022", what: "The Questgen site now has pricing and an API for companies, for example US$999 a month for 50,000 calls, and says it uses \"AI algorithms like GPT-3\".", grade: "C", src: [17] },
+    { when: "January 2022", what: "Three people who know each other only online start Supermeme. Its first page, captured on 27 January 2022, says \"Coming Soon\" and names GPT-3.", grade: "C", src: [8, 18] },
+    { when: "26 June 2022", what: "He tells the languagetech newsletter that his two micro-SaaS products make US$500 and US$100 a month and are profitable.", grade: "C", src: [15] },
+    { when: "2 April 2023", what: "Supermeme's pitch page shows US$25,000 ARR and 140,000 signups, with nothing spent to acquire users.", grade: "C", src: [6] },
+    { when: "20 March 2025", what: "The same page now shows US$65,000 ARR and 750,000 signups.", grade: "C", src: [7] },
+    { when: "2025", what: "The apps together peak at US$100,000 ARR.", grade: "C", src: [1] },
+    { when: "30 July 2026", what: "Indie Hackers interview: US$6,000 to US$7,000 a month for three apps, more than 2.5 million registered users, and more than US$150,000 earned by Questgen since launch. He works full-time as a data scientist.", grade: "C", src: [1] },
+    { when: "1 August 2026", what: "He writes that Supermeme makes US$4,400 a month \"even post the ChatGPT Work and Claude Cowork revolution\".", grade: "C", src: [2] },
+    { when: "6 August 2026", what: "He gives more than US$300,000 as the total revenue of the three apps.", grade: "C", src: [3] },
+    { when: "October 2026", what: "All three sites are live with current prices. No source reports a sale of any of them.", grade: "C", src: [11, 12, 13] }
+  ],
+  mechanism: [
+    { title: "Open source first", text: "Questgen began as a free library on GitHub, with 951 stars and 302 copies (forks) in October 2026. The top of its README says \"Try advanced question generation models for free\" and links to questgen.ai. The code shows what the product does; the hosted version saves the work of installing models and word lists." },
+    { title: "One search page for each exact task", text: "Questgen has a page for each task that a teacher might type into a search engine: MCQ generator, true/false generator, PDF to quiz, video to quiz, Bloom's taxonomy quiz. The founder wrote in August 2026 that Supermeme tries to keep the first or second search result for \"AI meme generator\". Supermeme's pitch page gives its customer acquisition cost as US$0." },
+    { title: "Output that fits the next system", text: "Questgen exports quizzes as QTI 2.1, Moodle XML, GIFT, AIKEN, Respondus text and CSV for D2L Brightspace, formats that school learning systems import. That removes the step of copying each question by hand. Supermeme puts a customer's logo, colors and mascot on memes and offers an API, for the same reason: the output goes straight into the customer's work." },
+    { title: "Partners with the missing skills", text: "Supermeme has an AI developer (Golla), a full-stack developer (Botha) and a meme creator (Sanjeev NC). They work mostly asynchronously in a WhatsApp group. In 2022 Golla advised technical founders to take an SEO course and to partner with someone with a complementary skill set." }
+  ],
+  howBuilt: {
+    intro: "These details come from the founder, the companies' own pages and the public Questgen code. They are grade C.",
+    items: [
+      "The open-source Questgen library is written in Python. Its README says it uses three T5 models: one for yes/no questions, one for multiple-choice questions, FAQs and paraphrasing, and one for answers. Wrong answer options come from Sense2vec word vectors, a table of words with related meanings.",
+      "The hosted Questgen reads text, PDFs, web pages, images and videos, and its home page says it makes up to 150 quizzes from 100,000 words in one click. In January 2022 the site said it used \"AI algorithms like GPT-3\". The sources do not say which models it uses today.",
+      "Supermeme named GPT-3 on its first page in January 2022, and its footer today says \"powered by OpenAI\". It writes captions in more than 110 languages, searches templates by meaning, and offers a REST API and an MCP server, a standard connection that lets AI assistants such as Claude, ChatGPT or Cursor make memes.",
+      "AiArtist chains a language model with image and video models to make videos of up to 8 seconds. Its page does not name the models.",
+      "The Supermeme team works mostly asynchronously in a WhatsApp group; the three had not met in person when the Team page was written.",
+      "No outside money. The founder has a full-time data-science job, and the two Supermeme co-founders list other jobs in their X profiles."
+    ],
+    src: [14, 10, 17, 18, 12, 13, 8, 1, 19]
+  },
+  predecessorsIntro: "Five companies in the Loot Drop database made quizzes for classrooms or funny images for chats. They lost to free features from larger platforms or never found a way to charge. The values below are from that database and are not independently verified.",
+  predecessors: [
+    { name: "Guggy", years: "2017 to 2020", funding: "US$120K", cause: "Competition", promise: "Turn the text of a chat message into a matching GIF.", died: "Chat apps such as WhatsApp and Facebook Messenger offered GIFs themselves. Guggy had no way to make money, and users did not stay after the first try.", url: "https://www.loot-drop.io/startup/1429-guggy" },
+    { name: "Riffsy", years: "2013 to 2019", funding: "US$10.5M", cause: "Competition", promise: "GIFs on demand from a phone keyboard.", died: "Pushed out by Giphy and Tenor, with no plan to make money and no large partner.", url: "https://www.loot-drop.io/startup/506-riffsy" },
+    { name: "Socrative", years: "2010 to 2013", funding: "US$750K", cause: "Competition", promise: "Classroom quizzes answered on students' phones instead of clicker devices.", died: "Free products from large technology companies and slow adoption by schools. The quiz tool did not become a sustainable business.", url: "https://www.loot-drop.io/startup/1697-socrative" },
+    { name: "Blendspace", years: "2010 to 2013", funding: "US$150K", cause: "Competition", promise: "Drag-and-drop digital lesson plans for teachers.", died: "Google Classroom took the market, and the free plan did not turn into revenue.", url: "https://www.loot-drop.io/startup/1693-blendspace" },
+    { name: "QuizUp", years: "2013 to 2020", funding: "US$27M", cause: "No Market Need", promise: "Real-time trivia quiz battles on any topic.", died: "It did not find a way to make money from its players, lost to live-hosted rivals, and was neglected by the company that bought it.", url: "https://www.loot-drop.io/startup/479-quizup" }
+  ],
+  whatChanged: [
+    `The five promised the same two things as this portfolio: quizzes for teachers, and funny images made from a few words. Each died for one of two reasons. A larger platform offered the feature for free (Google Classroom, WhatsApp, Messenger), or many users never turned into payers. Both risks are visible here. Google Forms added quiz generation with Gemini in July 2026, and 2.5 million registered users produce about US$6,500 a month.`,
+    `Three things differ. First, AI now writes the questions and the captions, so a part-time team can serve millions of users without writing content by hand. Second, the apps charged early and stayed small: no venture money, no employees, and costs low enough that both were profitable at a few hundred dollars a month in 2022. A business that does not need growth to survive can live on revenue that would end a funded company. Third, they compete on the work around the AI output: export formats for school systems, brand kits for marketing teams, an API and an MCP server.`
+  ],
+  copy: {
+    verdict: "The method, yes. The 2020 head start, no.",
+    text: "Questgen had public code and a website by 2020, and Supermeme started in what its team page calls \"the pre-ChatGPT era\". A new quiz or meme generator today starts against free features from Google and OpenAI. The method still works for a new narrow task: free open code, one search page for each exact need, and output in the formats that the customer's other systems read.",
+    steps: [
+      "Publish a small open-source library that does one task well, and link the hosted version at the top of its README.",
+      "Build one web page for each exact task that people search for, such as \"PDF to quiz\" or \"AI meme generator\".",
+      "Export into the file formats that the customer's systems already import.",
+      "Find partners with the skills you lack, and keep costs near zero so that a part-time product is profitable at a few hundred dollars a month."
+    ],
+    open: "Narrow, repeated work tasks where the output must go into another system: test banks for training platforms, branded content for marketing teams, and tools that AI assistants call through an API or an MCP server."
+  },
+  watch: [
+    { title: "Self-reported and falling", text: "Every money figure comes from the founder, his co-founders or their own pages. The July 2026 run rate is about 22% below the 2025 peak. Supermeme's pitch page still shows US$65,000 ARR from early 2025, while the founder's US$4,400 a month in August 2026 equals about US$52,800 a year." },
+    { title: "Free chatbots do the same job", text: "OpenAI made ChatGPT for Teachers free for verified US K-12 teachers on 19 November 2025. Its page now says the free period runs through June 2028; eWeek reported June 2027 at launch. Any general chatbot can write quiz questions or meme captions. The founder himself presents Supermeme's US$4,400 a month as surviving \"the ChatGPT Work and Claude Cowork revolution\", and one section of his interview is titled \"Competing with big dogs\"." },
+    { title: "Education platforms build it in", text: "Google Forms started rolling out quiz generation with Gemini on 24 July 2026, from a prompt or from Docs, Slides and PDFs in Google Drive, on paid Workspace, Education Plus and Google AI Pro and Ultra plans. Quizlet launched Q-Chat on 1 March 2023, an AI tutor built on OpenAI's ChatGPT API that quizzes students. Questgen's answer is export into other systems, but a teacher who builds quizzes inside Google Forms needs no export step." },
+    { title: "Meme templates belong to someone", text: "On 7 June 2024 a US federal appeals court, the Eighth Circuit, upheld a jury verdict that a congressman's campaign committee infringed the copyright in the \"Success Kid\" meme photo by using it in a fundraising post. The jury had rejected the committee's fair use defense. The photographer had registered the photo in 2012 and licensed it to companies such as Coca-Cola and Microsoft. Damages were US$750, the legal minimum. Supermeme's own guide says that the images behind most memes are copyrighted and that marketing is commercial use, which weighs against fair use. Marketing teams are Supermeme's main target." },
+    { title: "Built on one model provider", text: "Supermeme says it is \"powered by OpenAI\" and named GPT-3 on its first page in 2022. OpenAI also gives away the chat product that competes with it. A price change, a rule change or a better free feature at the provider reaches Supermeme directly. Questgen's open-source roots use T5 models that anyone can run on their own servers, but the sources do not say which models the paid service uses now." },
+    { title: "Many users, few payers", text: "At the cheapest paid price, US$6,500 a month means at most about 1,000 paying accounts among 2.5 million registered users, or 0.04%. Supermeme has more than 2 million of those users and about two thirds of the revenue." },
+    { title: "A part-time team", text: "The founder has a full-time job as a data scientist and runs three apps; his two Supermeme partners list other jobs in their X profiles. Each person holds one role: if one of the three stops, a product loses its only developer, its only AI developer or its only meme creator." }
+  ],
+  sources: [
+    { title: "Indie Hackers, 30 July 2026, by James Fleischmann: This full-time data scientist built a $7k/mo portfolio of side projects", url: "https://www.indiehackers.com/post/quOo7AXtrGlePopsGslc", grade: "C", how: "Read the free introduction and the table of contents in full. The rest of the article needs an Indie Hackers account and was not read. The lead link indiehackers.com/interview/eda6679953 now opens the case-study database, whose card for this interview shows \"$6.5K MRR\"." },
+    { title: "Ramsri Goutham Golla on X, 1 August 2026: Supermeme makes 4400$ MRR", url: "https://x.com/ramsri_goutham/status/2083487374533922928", grade: "C", how: "Read in full through api.fxtwitter.com, from the founder's timeline." },
+    { title: "Ramsri Goutham Golla on X, 6 August 2026: 3 Apps, 3 Years, $ 300K+ Revenue", url: "https://x.com/ramsri_goutham/status/2085297426307727380", grade: "C", how: "Read in full through api.fxtwitter.com, from the founder's timeline." },
+    { title: "Ramsri Goutham Golla, X profile, read October 2026", url: "https://x.com/ramsri_goutham", grade: "C", how: "Read the profile through api.fxtwitter.com: 15,580 followers and the bio quoted on this page. His timeline was read back to May 2026." },
+    { title: "Supermeme.ai pitch-deck page, read October 2026", url: "https://www.supermeme.ai/pitch-deck", grade: "C", how: "Read in full. Its figures carry no date; the dates come from Wayback captures. 17 captures from May 2022 to August 2026 were downloaded, one per quarter, and 7 of them contain the figures as text." },
+    { title: "Wayback Machine capture of the Supermeme.ai pitch-deck page, 2 April 2023", url: "https://web.archive.org/web/20230402231859/https://www.supermeme.ai/pitch-deck", grade: "C", how: "Read the archived page in full. Source for US$25,000 ARR and 140,000 signups. The captures of October 2023, July 2024 and November 2024 show the same text." },
+    { title: "Wayback Machine capture of the Supermeme.ai pitch-deck page, 20 March 2025", url: "https://web.archive.org/web/20250320151930/https://www.supermeme.ai/pitch-deck", grade: "C", how: "Read the archived page in full. The first checked capture that shows US$65,000 ARR and 750,000 signups." },
+    { title: "Supermeme.ai Team page: Meet the Supermeme.ai Founders and Team", url: "https://www.supermeme.ai/team", grade: "C", how: "Read in full. Source for the three co-founders, their roles, the start in January 2022 and \"completely bootstrapped\"." },
+    { title: "Questgen Team page", url: "https://www.questgen.ai/team", grade: "C", how: "Read in full. Source for \"solo developer of Questgen\" and the link to the 2022 interview." },
+    { title: "Questgen home page, read October 2026", url: "https://www.questgen.ai/", grade: "C", how: "Read in full. Source for the user count, the input types and the export formats." },
+    { title: "Questgen pricing page, read October 2026", url: "https://www.questgen.ai/pricing", grade: "C", how: "Read in full. Source for the prices and the QuestgenAI, Inc. copyright line." },
+    { title: "Supermeme.ai pricing page, read October 2026", url: "https://www.supermeme.ai/pricing", grade: "C", how: "Read in full, including the plan data inside the page, which holds the monthly prices." },
+    { title: "AiArtist.io pricing page and home page, read October 2026", url: "https://www.aiartist.io/pricing", grade: "C", how: "Read both in full; the home page is www.aiartist.io. Source for the one-time pass and the description of the video pipeline." },
+    { title: "GitHub: ramsrigouthamg/Questgen.ai, question generation library", url: "https://github.com/ramsrigouthamg/Questgen.ai", grade: "C", how: "Read the README in full and the repository record through the GitHub API: created 4 August 2020, MIT license, 951 stars and 302 forks in October 2026." },
+    { title: "languagetech newsletter, 26 June 2022: Building and Monetizing AI Micro-SaaS: Interview with Ramsri Golla", url: "https://languagetech.substack.com/p/building-and-monetizing-ai-micro", grade: "C", how: "Read in full. An interview by the newsletter's author, linked from the Questgen Team page. Source for the background, the 2022 revenue and where both ideas came from." },
+    { title: "Wayback Machine capture of questgen.ai, 25 December 2020", url: "https://web.archive.org/web/20201225060350/https://questgen.ai/", grade: "C", how: "Read the archived page in full. The first capture of the domain." },
+    { title: "Wayback Machine capture of questgen.ai, 16 January 2022", url: "https://web.archive.org/web/20220116231211/https://questgen.ai/", grade: "C", how: "Read the archived page in full. Source for the plans, the company API and the GPT-3 wording." },
+    { title: "Wayback Machine capture of supermeme.ai, 27 January 2022", url: "https://web.archive.org/web/20220127185052/https://supermeme.ai/", grade: "C", how: "Read the archived page in full. Supermeme before launch: \"Coming Soon\" and GPT-3." },
+    { title: "X profiles of the Supermeme co-founders Nico Botha (@nwbotha) and Sanjeev NC (@yenceesanjeev), read October 2026", url: "https://x.com/nwbotha", grade: "C", how: "Read both profiles through api.fxtwitter.com; the second is x.com/yenceesanjeev. They tie both people to Supermeme and list their other jobs." },
+    { title: "Supermeme.ai guide by Sanjeev NC, 20 June 2023, updated 24 August 2026: Are Memes Copyrighted?", url: "https://www.supermeme.ai/meme-marketing/are-memes-copyrighted", grade: "C", how: "Read in full. Written by a Supermeme co-founder, and it says it is not legal advice." },
+    { title: "US Court of Appeals for the Eighth Circuit, opinion filed 7 June 2024, on the Success Kid meme photo", url: "https://ecf.ca8.uscourts.gov/opndir/24/06/223623P.pdf", grade: "A", how: "Read in full, 13 pages. An official court record about meme copyright in general, not about this business." },
+    { title: "Google Workspace Updates, 30 July 2026: Use Gemini in Google Forms to quickly create a new quiz", url: "https://workspaceupdates.googleblog.com/2026/07/use-gemini-in-google-forms-to-quickly-create-a-new-quiz.html", grade: "C", how: "Read in full. Google's own announcement, with the rollout dates and the plans that include the feature." },
+    { title: "Training Industry, 1 March 2023: Quizlet Launches \"Q-Chat,\" AI Tutor Built with OpenAI API", url: "https://trainingindustry.com/press-release/personalization-and-learning-pathways/quizlet-launches-q-chat-ai-tutor-built-with-openai-api/", grade: "C", how: "Read in full. Quizlet's press release as published by Training Industry." },
+    { title: "OpenAI, 19 November 2025: A free version of ChatGPT built for teachers", url: "https://openai.com/index/chatgpt-for-teachers/", grade: "C", how: "Read in full in October 2026. OpenAI's own page; it now gives June 2028 as the end of the free period." },
+    { title: "eWeek, 19 November 2025: OpenAI Launches ChatGPT for Teachers With Free Access Through 2027", url: "https://www.eweek.com/news/chatgpt-for-teachers-launch-openai/", grade: "B", how: "Read in full. A news report from the launch day, which gave June 2027 as the end of the free period." },
+    { title: "Loot Drop database export, 1,749 failed startups", url: "https://www.loot-drop.io/", grade: "C", how: "Local export. AI-written summaries, not independently verified. Source for the failed predecessors." }
+  ]
 }
 ];
 
