@@ -13791,6 +13791,155 @@ const STORIES = [
     { title: "OpenAI, updated 24 April 2024: GPT-4 API general availability and deprecation of older models in the Completions API", url: "https://openai.com/index/gpt-4-api-general-availability/", grade: "C", how: "Read in full. Source for the retirement of older completion models on 4 January 2024." },
     { title: "Loot Drop database export, 1,749 failed startups", url: "https://www.loot-drop.io/", grade: "C", how: "Local export. AI-written summaries, not independently verified. Source for the failed predecessors." }
   ]
+},
+{
+  slug: "launch-fast",
+  name: "Launch Fast",
+  country: "United States",
+  sector: "Information Technology",
+  productType: "Product research software and AI agent tools for Amazon sellers",
+  aiType: "AI-leveraged",
+  team: "small",
+  outcome: "running",
+  evidence: "C",
+  added: "2026-10-15",
+  launchLabel: "July 2025",
+  outcomeLabel: "US$30K a month, June 2026",
+  sticker: "$360K/yr run rate",
+  outcomeUsd: 360000,
+  months: 11,
+  teamLabel: "1 founder who builds the product, in partnership with the Legacy X coaching company, which holds equity",
+  fundingLabel: "None found; equity traded for distribution",
+  primaryFactor: "Distribution",
+  group: "documents-data",
+  channel: "partners",
+  trend: "growing",
+  collections: ["platform"],
+  meters: { evidence: 1, copyable: 2, capital: 1 },
+  tags: ["AI-leveraged", "Small team", "Bootstrapped", "Running", "B2B", "E-commerce"],
+  product: "A web app, a Chrome extension and an MCP server for Amazon sellers. It estimates the revenue, prices, reviews and keyword demand of a product market, matches Amazon products to suppliers on Alibaba, analyzes ads, tracks rankings and drafts listings. Paid plans connect the seller's own Amazon account, so Claude or Codex can answer questions about the seller's sales and ads.",
+  why: "An Amazon seller who could not code built the research tool he needed in 48 hours with Cursor, then offered it to Legacy X, a coaching program for Amazon sellers that he had bought two years earlier. Legacy X took a share of the business, and its students were the customers from the first day. He says it reached US$10,000 a month in 30 days and US$30,000 a month by June 2026.",
+  summary: [
+    `Launch Fast is <dfn>product research</dfn> software for Amazon sellers. Product research here means checking a market before buying stock: how much the top products sell, at what price, with how many reviews, which keywords buyers type, and what a factory would charge. It is made for <dfn>private label</dfn> sellers, who sell a factory-made product under their own brand, and it matches Amazon products to suppliers on Alibaba. It comes as a web app, as a Chrome extension that shows the data on Amazon's own pages, and, since February 2026, as an <dfn>MCP server</dfn>. MCP, the Model Context Protocol, is a standard way for an AI app such as Claude or Codex to call outside tools, so a seller can ask about markets and about his own sales and ads in a chat.`,
+    `Hasaam Bhatti had a corporate job and ran two Amazon brands on the side. He has no computer science degree and says he had never written a line of code when he found <dfn>Cursor</dfn>, a code editor in which an AI model writes and changes the code from plain-English instructions. Ten to twelve earlier projects never reached production. This time he built for his own problem: 20 to 30 hours of spreadsheet work for every product idea. He had no audience, so he offered Legacy X, a coaching program for Amazon sellers that he had bought two years earlier, a working tool in 48 hours. Legacy X took <dfn>equity</dfn>, a share of ownership, and its students became the first customers, at US$50 a month; the public price was US$199. He says it reached US$10,000 in <dfn>monthly recurring revenue</dfn> (MRR), the subscription revenue that repeats every month, after 30 days, about US$21,800 after 90 days, and US$30,000 by June 2026.`,
+    `Every revenue number is the founder's own statement in two interviews, Starter Story in January 2026 and Indie Hackers in June 2026, grade C. The two agree with each other. No payment processor confirms them, and the size of Legacy X's share is not public, so the founder's own part of the revenue is not known. The page also shows earlier companies that sold tools to sellers on top of a platform that they did not control, and what is different this time.`
+  ],
+  factsCaption: "A subscription tool sold first to one coaching program's students: US$10,000 a month after 30 days and US$30,000 a month by June 2026, all self-reported",
+  factsRead: "How to read this table: a grade C value is a statement by the founder in an interview or on X, a page of the company's own site, or a page of an outside site such as a store listing or a web archive. A \"calc\" value was computed on this page from the rows above it. No value is grade A or B.",
+  timelineLead: "From a 48-hour demo for a coaching company to US$30,000 a month in about 11 months. Each entry carries its grade.",
+  pricing: {
+    caption: "Launch Fast prices in October 2026, from the company's pricing page (grade C)",
+    note: "The pricing page shows each price per month billed yearly (\"Then $74/month, billed annually\"); the prices for monthly billing load by script and could not be read. Every plan starts with a free trial of 3 Product Research reports, and a card is required. In late 2025 the founder gave two prices: US$50 a month for Legacy X students and US$199 a month for everyone else. The terms still reserve a discount for Legacy X FBA Mentorship students.",
+    rows: [
+      ["Free trial", "0", "0", "3 Product Research reports; card required"],
+      ["Starter", "41", "", "100 research credits, 20 AI report credits, 100 supplier quotes, 1 keyword rank tracker"],
+      ["Growth", "74", "", "250 research credits, 60 AI report credits, 500 supplier quotes, 3 rank trackers, MCP access, Amazon Ads and SP-API reports"],
+      ["Scale", "166", "", "500 research credits, 100 AI report credits, 1,500 supplier quotes, 5 rank trackers, advanced MCP workflows"]
+    ]
+  },
+  facts: [
+    { fact: "Monthly recurring revenue, June 2026", value: "US$30,000", grade: "C", note: "Founder interview with Indie Hackers by James Fleischmann, published 2 June 2026: \"We're at $30K MRR now.\" This is Launch Fast's figure; the founder's contract work and workshops are separate.", src: [1] },
+    { fact: "Run rate from the June 2026 figure", value: "US$360,000 a year", grade: "X", note: "Calculated: US$30,000 times 12. This is the headline figure on this page. Part of it belongs to Legacy X, whose share is not public.", src: [1] },
+    { fact: "Monthly recurring revenue about 90 days after launch", value: "about US$21,800", grade: "C", note: "Founder, in the Starter Story video published 5 January 2026, and again in the Indie Hackers interview. The Starter Story title says US$25K, but in the video he says about US$21,800.", src: [2, 1] },
+    { fact: "Monthly recurring revenue about 30 and 60 days after launch", value: "US$10,000, then US$17,000 to US$18,000", grade: "C", note: "Founder. The same figures in both interviews.", src: [2, 1] },
+    { fact: "Growth from day 90 to June 2026", value: "about 38%", grade: "X", note: "Calculated: US$30,000 divided by US$21,800 is 1.376.", src: [1, 2] },
+    { fact: "Prices in late 2025", value: "US$50 a month for Legacy X students, US$199 a month for everyone else", grade: "C", note: "Founder in the Starter Story interview. The terms in October 2026 still reserve a discount for Legacy X FBA Mentorship students.", src: [2, 4] },
+    { fact: "Subscribers implied by about US$21,800 a month", value: "between about 110 and 436", grade: "X", note: "Calculated: US$21,800 divided by US$199 is 109.5, and divided by US$50 it is 436. The founder gives no subscriber count; he says all users pay.", src: [2] },
+    { fact: "Chrome extension users", value: "330 active users about 90 days after launch; 848 users in October 2026", grade: "C", note: "The first figure is the founder's. The second is the count in Google's Chrome Web Store, read 15 October 2026, with a 5.0 rating from 7 ratings, version 2.4.7, updated 16 August 2026.", src: [2, 9] },
+    { fact: "Time to build the first version", value: "48 hours", grade: "C", note: "Founder's hour-by-hour account. He started from Legacy X's own systems, standard procedures and data.", src: [2, 1] },
+    { fact: "Main tool cost at the start", value: "US$200 a month for Cursor's Max plan", grade: "C", note: "Founder: after launch the costs are minimal, and Cursor is the only large one.", src: [2] },
+    { fact: "Share of the business given to Legacy X", value: "not public", grade: "C", note: "The founder says he traded equity for the distribution, and that even at 50%, half of US$20,000 a month is better than half of nothing. One of the Starter Story hosts guessed about 50%. Neither is a stated figure.", src: [2] },
+    { fact: "Outside funding", value: "none found", grade: "C", note: "No investor is named in any source. The only partner is Legacy X.", src: [1, 2] },
+    { fact: "Launch date", value: "not given; the site was live by 22 July 2025", grade: "C", note: "First Internet Archive capture of the site, with sign-up and log-in pages and the label \"Built by LegacyX FBA\". The founder counts the days from the launch with Legacy X.", src: [10] },
+    { fact: "Time from launch to the June 2026 figure", value: "about 11 months", grade: "X", note: "Calculated: July 2025, the month of the first archived capture, to June 2026.", src: [10, 1] },
+    { fact: "Operating company", value: "not named", grade: "C", note: "The terms are governed by the laws of Texas, with courts in Harris County, Texas, and the contact address is a Gmail account. The founder's X profile gives Toronto as his location.", src: [4, 12] },
+    { fact: "The founder's other work", value: "contract builds, enterprise workshops on Claude Code, and Notara, a tool for teams", grade: "C", note: "Indie Hackers interview and his X post of 3 September 2026. The US$30,000 a month is Launch Fast's figure; this work is separate.", src: [1, 16] }
+  ],
+  timeline: [
+    { when: "About 2023", what: "Bhatti, who has a corporate job and runs two Amazon brands, buys Legacy X, a coaching program for Amazon sellers. Ten to twelve earlier software projects of his, such as AI video tools and job-application automation, never reach production.", grade: "C", src: [1, 2] },
+    { when: "Mid-2025", what: "He offers Legacy X a better product research tool in 48 hours, with no obligation. He builds it in Cursor and sends a demo video. The next morning Legacy X tells him to quit his job. He gives equity in exchange for access to its students.", grade: "C", src: [1, 2] },
+    { when: "22 July 2025", what: "First Internet Archive capture of launchfastlegacyx.com: \"LaunchFast, Built by LegacyX FBA\", with sign-up and log-in pages.", grade: "C", src: [10] },
+    { when: "15 August 2025", what: "The archived site shows Dashboard v1.3 and a Chrome extension with market summaries on Amazon's own pages.", grade: "C", src: [11] },
+    { when: "About 30, 60 and 90 days after launch", what: "US$10,000, then US$17,000 to US$18,000, then about US$21,800 in monthly recurring revenue. All users pay. The Chrome extension has 330 active users. Legacy X students pay US$50 a month, everyone else US$199.", grade: "C", src: [2, 1] },
+    { when: "5 January 2026", what: "Starter Story publishes the founder interview \"I built a $25K MRR app with Cursor\".", grade: "C", src: [2] },
+    { when: "24 February 2026", what: "The MCP server: Launch Fast data inside Claude and other MCP clients. From 20 March it can be added through Claude's connector settings, without configuration files or API keys.", grade: "C", src: [6] },
+    { when: "4 April 2026", what: "Sellers can connect their Seller Central and Amazon Ads accounts and ask Claude about their own sales, inventory and ads.", grade: "C", src: [6] },
+    { when: "1 May 2026", what: "New Starter, Growth and Scale plans, and a free FBA profit calculator and a link generator that work without an account.", grade: "C", src: [6] },
+    { when: "2 June 2026", what: "Indie Hackers interview: US$30,000 in monthly recurring revenue. He also builds products for other founders on contract and runs enterprise workshops on Claude Code.", grade: "C", src: [1] },
+    { when: "12 August 2026", what: "He writes that Amazon's SP-API compliance rules now include WAF protection (a web application firewall), encrypted credentials, login lockouts, vulnerability scans, penetration testing and strict data deletion.", grade: "C", src: [14] },
+    { when: "11 September 2026", what: "Launch Fast becomes an official Amazon Solutions Provider with a Seller App Store listing, and opens an iPhone beta on TestFlight with Launchie, an agent that analyzes the seller's data and runs scheduled ads audits.", grade: "C", src: [13, 8] },
+    { when: "9 October 2026", what: "Launchie moves to \"code mode\" on Cloudflare Dynamic Workers: it writes code that analyzes every row of a seller's account in a sandbox. The founder reports that its evaluation score rose from 93% to 98.5%.", grade: "C", src: [15] }
+  ],
+  mechanism: [
+    { title: "Borrowed distribution, paid in equity", text: "He had no audience, and he says zero audience means zero customers. Legacy X had thousands of active Amazon sellers who were looking for tools. He offered a working tool in 48 hours with no obligation and paid for the access with a share of the business. He argued that half of US$20,000 a month is better than half of nothing. Its students were customers from the first day, at a discount." },
+    { title: "A tool for a problem he had himself", text: "He was an Amazon seller who spent 20 to 30 hours on each product idea, copying data into Google Sheets. He says his 10 to 12 earlier projects failed because he built for users whom he did not know. Here he knew the data that new sellers need, and he started the build from Legacy X's own procedures and workflows." },
+    { title: "AI coding tools instead of a developer", text: "A founder who cannot code built the whole product in Cursor; he says he still cannot read a stack trace without AI help. He says the running costs after launch were minimal and that the only large one was Cursor's Max plan at US$200 a month." },
+    { title: "From market estimates to the seller's own data", text: "In 2026 the product added agent tools: an MCP server for Claude and other AI apps in February, connections to the seller's own Seller Central and Amazon Ads accounts in April, and official Amazon Solutions Provider status in September. The newer features work on data that each seller owns, not only on market estimates." }
+  ],
+  howBuilt: {
+    intro: "These details come from the founder's two interviews, the company's site and changelog, and his posts on X. They are grade C.",
+    items: [
+      "The first version took 48 hours: hours 1 to 4 to map Legacy X's systems, standard procedures and data; 5 to 12 to build the core features in Cursor; 13 to 20 to test; 21 to 30 for branding and the interface; 31 to 40 for edge cases; then a demo video.",
+      "The stack that he described on Starter Story: Cursor to write the code, Vercel for hosting, Supabase for the database, login and file storage (written \"Superbase\" in the transcript), Resend for onboarding emails, Apify for data collection, and TypeScript with Next.js.",
+      "Data: market estimates of revenue, sales rank, reviews and price, supplier matches from Alibaba, and, on the Growth and Scale plans, the seller's own data through Amazon's Selling Partner API (SP-API), Amazon Ads reports and Brand Analytics, Amazon's own reports on search terms and categories. The terms say that outputs may include modeled or estimated values and information from third-party sources; no source names those third parties.",
+      "AI: the plans include AI report credits, but no source names the model that writes the reports. The MCP server lets Claude, OpenAI's apps, Gemini and Cursor call Launch Fast's tools, and the customer's own AI app does the reasoning.",
+      "Launchie, the company's own agent in the iPhone beta, runs its analysis code in a sandbox on Cloudflare Dynamic Workers, with read-only tools and no internet access.",
+      "Payments go through Stripe, according to the terms. The site loads the DataFast analytics script."
+    ],
+    src: [2, 3, 4, 7, 15]
+  },
+  predecessorsIntro: "Four companies in the Loot Drop database sold tools or data to online sellers and advertisers on top of a platform that they did not control. The values below are from that database and are not independently verified.",
+  predecessors: [
+    { name: "TradeGecko", years: "2012 to 2021", funding: "US$10.4M", cause: "Competition", promise: "Inventory and order management for small online sellers, connected to their store platforms.", died: "After Intuit bought it, the focus moved to QuickBooks, and Shopify's own tools took its place.", url: "https://www.loot-drop.io/startup/656-tradegecko" },
+    { name: "Trada", years: "2008 to 2015", funding: "US$19M", cause: "Competition", promise: "Better Google Ads results by letting businesses hand their campaigns to outside experts.", died: "Google automated ad management itself, and the paid human experts could not scale fast enough.", url: "https://www.loot-drop.io/startup/655-trada" },
+    { name: "Intent Media", years: "2008 to 2018", funding: "US$51M", cause: "Competition", promise: "Predict which online shoppers will buy, so that e-commerce ad spending pays.", died: "Google and Facebook targeted better, and the GDPR privacy rules cut the data that its models needed.", url: "https://www.loot-drop.io/startup/248-intent-media" },
+    { name: "Kinnek", years: "2012 to 2020", funding: "US$25M", cause: "Competition", promise: "A marketplace that made it easy for small businesses to find and compare suppliers.", died: "Amazon Business and Alibaba took over its supplier network.", url: "https://www.loot-drop.io/startup/277-kinnek" }
+  ],
+  whatChanged: [
+    `Each of the four sold a tool or a data layer to online sellers or advertisers on top of a larger platform: Shopify stores, Google and Facebook ads, Amazon and Alibaba suppliers. Each lost when the platform owner or a giant built the same thing, or when privacy rules cut the data. Launch Fast sits in the same place: its data, its customers and its newest sales channel, Amazon's Seller App Store, all depend on Amazon, and Helium 10 and Jungle Scout already sell the same research.`,
+    `Two things differ. First, the cost: one founder who cannot code built it with an AI code editor for about US$200 a month, while the four predecessors raised US$10.4 million to US$51 million. A few hundred subscribers are enough for the revenue on this page. Second, it did not have to buy its first customers: a coaching program with thousands of students gave it a market on the first day in exchange for equity. In September 2026 it announced that it had become an official Amazon Solutions Provider with a Seller App Store listing, so it reads account data through a route that Amazon approves.`
+  ],
+  copy: {
+    verdict: "The distribution deal, yes. The 48-hour build is the easy part.",
+    text: "Many people can now build a working tool in a weekend with AI coding tools. The part worth copying is the order of work: pick a market that you know as a customer, find the company that already has those customers, show it a working product, and pay for the access with a share of the business instead of with years of audience building.",
+    steps: [
+      "Write down three to five fields where you have solved real problems yourself, as the founder suggests.",
+      "List who already has your future customers: coaching companies, paid communities, influencer groups.",
+      "Build a working first version in days from their workflows and data, and send them a demo video.",
+      "Offer a partnership or equity for access, with a member price and a public price.",
+      "Ship an improvement every day for the first 30 days, from the users' requests and bug reports."
+    ],
+    open: "Coaching programs and paid communities in other trades, such as Etsy or Shopify sellers, real estate agents or freelancers, that teach a workflow but have no software of their own."
+  },
+  watch: [
+    { title: "Self-reported, and the founder's share is unknown", text: "Every revenue figure is the founder's own statement in two interviews. No payment processor confirms them, and no TrustMRR profile was found under the names launchfast or launch-fast. The Starter Story title says US$25K a month while the founder says about US$21,800 in the video. Legacy X holds equity of an undisclosed size, so his own part of the US$30,000 is not known." },
+    { title: "One coaching partner brings the customers", text: "The first customers were students of Legacy X, an \"FBA Mentorship\" that teaches people to sell on Amazon (FBA, Fulfillment by Amazon, is the Amazon service that stores and ships a seller's goods), and they paid a discounted US$50 a month. The early site said \"Built by LegacyX FBA\", and the terms still give its students a discount. If that program loses students, Launch Fast loses its main channel. The founder's own posts also use income promises, for example \"Making money on Amazon is too easy when you use Claude + Launch Fast\" (30 June 2026)." },
+    { title: "Large, established competitors", text: "Helium 10 shows its Platinum plan, for sellers with up to US$100,000 in yearly sales, at US$129 and US$99 a month, depending on monthly or yearly billing, and it now offers free skills for analysis in Claude. Jungle Scout says that more than 1 million sellers and brands use it. Both sell the same market research and can add the same AI features." },
+    { title: "Amazon owns the data and the rules", text: "The product exists only for Amazon sellers, and its paid features read each seller's account through Amazon's Selling Partner API, the Amazon Ads data and Amazon's own Brand Analytics. The founder wrote in August 2026 that SP-API compliance now requires WAF protection, encrypted credentials, login lockouts, penetration testing and strict data deletion. Amazon can change these terms or show the same research in Seller Central. Amazon's policy pages blocked automated download, so this page relies on the founder's account of them." },
+    { title: "AI apps between the product and the customer", text: "The newest features run inside Claude or Codex, which Launch Fast does not control: its own guide says the customer needs the Claude or Codex desktop app and that \"Your AI app may have its own access requirements.\" The plans sell AI report credits without naming the model that writes the reports. The founder says he still cannot read a stack trace without AI help, so the building also depends on AI coding tools." }
+  ],
+  sources: [
+    { title: "Indie Hackers, 2 June 2026: Building a product in 48 hours and hitting $30k MRR as a non-technical founder", url: "https://www.indiehackers.com/post/tech/building-a-product-in-48-hours-and-hitting-30k-mrr-as-a-non-technical-founder-wWtWIH5tmwASUbxKaLT9", grade: "C", how: "Read the free part in full; the rest is for subscribers and could not be read. Founder interview by James Fleischmann. Source for the revenue at 30, 60 and 90 days, the US$30,000 MRR, the Legacy X pitch and the founder's other work." },
+    { title: "Starter Story, 5 January 2026: I built a $25K MRR app with Cursor", url: "https://www.starterstory.com/hassam", grade: "C", how: "Read the page and the full transcript. Founder interview. Source for the prices, the equity trade, the 48-hour build plan and the stack. The title says US$25K; in the video the founder says about US$21,800 at 90 days." },
+    { title: "Launch Fast pricing page, read 15 October 2026", url: "https://launchfastlegacyx.com/pricing", grade: "C", how: "Read in full. Source for the plans, credits and features. The prices are per month billed yearly; the monthly-billing prices load by script and could not be read." },
+    { title: "Launch Fast terms", url: "https://launchfastlegacyx.com/terms", grade: "C", how: "Read in full. Source for the Legacy X student discount, Stripe, the Texas governing law and the note on estimated and third-party data." },
+    { title: "Launch Fast home page, read 15 October 2026", url: "https://launchfastlegacyx.com/", grade: "C", how: "Read in full. Source for the product description, the MCP connections and the analytics script." },
+    { title: "Launch Fast changelog", url: "https://docs.launchfastlegacyx.com/changelog", grade: "C", how: "Read in full. Source for the dated releases from December 2025 to September 2026." },
+    { title: "Launch Fast: The MCP server for serious Amazon sellers", url: "https://launchfastlegacyx.com/solutions/amazon-fba-mcp-server", grade: "C", how: "Read in full. Source for the MCP clients and the data types that the agent can call." },
+    { title: "Launch Fast blog, September 2026: How to Connect Amazon to Claude or Codex with Launch Fast MCP", url: "https://launchfastlegacyx.com/blog/review-amazon-sales-ads-claude-codex", grade: "C", how: "Read in full. Source for the Solutions Provider status, the Seller App Store listing and the AI app requirement." },
+    { title: "Chrome Web Store: Launch Fast, Amazon product research extension, read 15 October 2026", url: "https://chromewebstore.google.com/detail/launch-fast-amazon-fba-re/aaanahdkbajinekpffbddfimfcnagbkm", grade: "C", how: "Read in full. Source for the 848 users, the rating, the version and the Alibaba supplier matching." },
+    { title: "Internet Archive capture of launchfastlegacyx.com, 22 July 2025", url: "https://web.archive.org/web/20250722011915/https://launchfastlegacyx.com/", grade: "C", how: "Read in full. The first capture of the site. Source for the earliest date and the \"Built by LegacyX FBA\" label." },
+    { title: "Internet Archive capture of launchfastlegacyx.com, 15 August 2025", url: "https://web.archive.org/web/20250815052949/https://launchfastlegacyx.com/", grade: "C", how: "Read in full. Source for Dashboard v1.3 and the Chrome extension in August 2025." },
+    { title: "Hasaam Bhatti's X profile (@hasaamb)", url: "https://x.com/hasaamb", grade: "C", how: "Read the profile through api.fxtwitter.com. Ties the founder to Launch Fast and gives his location." },
+    { title: "Hasaam Bhatti on X, 11 September 2026: Launch Fast is now an official Amazon Solutions Provider", url: "https://x.com/hasaamb/status/2098455378639966520", grade: "C", how: "Read in full in the founder's timeline through api.fxtwitter.com. Source for the Solutions Provider status, the iPhone app and the TestFlight beta." },
+    { title: "Hasaam Bhatti on X, 12 August 2026: Amazon SP-API compliance", url: "https://x.com/hasaamb/status/2087655017691885739", grade: "C", how: "Read in full in the founder's timeline through api.fxtwitter.com. Source for the compliance rules." },
+    { title: "Hasaam Bhatti on X, 9 October 2026: Launchie on Cloudflare Dynamic Workers", url: "https://x.com/hasaamb/status/2108573699083235646", grade: "C", how: "Read in full in the founder's timeline through api.fxtwitter.com. Source for the agent sandbox and the evaluation scores." },
+    { title: "Hasaam Bhatti on X, 3 September 2026: Notara", url: "https://x.com/hasaamb/status/2095520013377536251", grade: "C", how: "Read in full in the founder's timeline through api.fxtwitter.com. Source for his other product and his work with companies." },
+    { title: "Hasaam Bhatti on X, 30 June 2026: Making money on Amazon is too easy", url: "https://x.com/hasaamb/status/2071797622205972788", grade: "C", how: "Read in full in the founder's timeline through api.fxtwitter.com. An example of the income promise in his posts." },
+    { title: "Helium 10 pricing page, read 15 October 2026", url: "https://www.helium10.com/pricing/", grade: "C", how: "Read in full. A competitor's prices and its Claude skills." },
+    { title: "Jungle Scout pricing page, read 15 October 2026", url: "https://www.junglescout.com/pricing/", grade: "C", how: "Read in full. A competitor's claim of more than 1 million sellers and brands." },
+    { title: "Loot Drop database export, failed startups", url: "https://www.loot-drop.io/", grade: "C", how: "Local export. AI-written summaries, not independently verified. Source for the failed predecessors." }
+  ]
 }
 ];
 
