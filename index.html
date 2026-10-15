@@ -14274,6 +14274,161 @@ const STORIES = [
     { title: "Loot Drop database export, 1,749 failed startups", url: "https://www.loot-drop.io/", grade: "C", how: "Local export. AI-written summaries, not independently verified. Source for the failed predecessors." },
     { title: "Setter AI text-message appointment setter page", url: "https://www.trysetter.com/text-ai-appointment-setter", grade: "C", how: "Read in full on 15 October 2026: \"Launching soon\" and a waiting list." }
   ]
+},
+{
+  slug: "kleo",
+  name: "Kleo",
+  country: "United Kingdom and Cyprus",
+  sector: "Information Technology",
+  productType: "AI writing tool for LinkedIn posts",
+  aiType: "AI-native",
+  team: "small",
+  outcome: "running",
+  evidence: "C",
+  added: "2026-10-15",
+  launchLabel: "October 2025",
+  outcomeLabel: "More than US$1M in revenue, September 2026",
+  sticker: "Over $1M in revenue",
+  outcomeUsd: 1000000,
+  months: 11,
+  teamLabel: "4 co-founders: 3 with LinkedIn audiences and 1 engineer",
+  fundingLabel: "None reported",
+  primaryFactor: "Distribution",
+  group: "marketing-content",
+  channel: "audience",
+  trend: "growing",
+  collections: ["platform"],
+  meters: { evidence: 1, copyable: 2, capital: 1 },
+  tags: ["AI-native", "Small team", "Bootstrapped", "Running", "B2C", "Marketing"],
+  product: "A web app for LinkedIn posts. It stores what a member knows and how the member writes, suggests topics from posts that do well, writes drafts with the member in a chat, makes 20 images a month, and schedules and publishes posts to a connected LinkedIn account, with statistics and weekly group calls. A Chrome extension saves ideas from other websites.",
+  why: "Three of the four co-founders had LinkedIn audiences, together more than 480,000 followers, made of the people Kleo sells to, and the free extension had already reached tens of thousands of users. When LinkedIn stopped the extension, they sold a rebuilt paid version to that audience first, in limited groups of seats, before any public launch.",
+  summary: [
+    `Kleo is a web app that helps people write and plan posts for LinkedIn. A member stores what they know and how they write; Kleo suggests topics from posts that do well, writes drafts with the member in a chat, makes images, and schedules and publishes posts through LinkedIn's <dfn>API</dfn>, the official interface that LinkedIn offers to outside programs, on an account that the member connects. The engineer's account of the build names Claude, Anthropic's model, as the AI that writes. Kleo costs US$99 a month or US$999 a year.`,
+    `Jake Ward, who has more than 180,000 LinkedIn followers, released the first Kleo on 8 November 2023 as a free <dfn>Chrome extension</dfn>, a small program that adds features to the Chrome browser. It showed popular posts inside LinkedIn's own pages and reached 60,000 to more than 70,000 users. In 2025 LinkedIn sent a <dfn>cease-and-desist letter</dfn>, a formal legal demand to stop an activity, because the extension read and overlaid LinkedIn's pages. Ward rebuilt Kleo as a paid web app with Lara Acosta, a LinkedIn creator with more than 300,000 followers, Rob Hoffman, and Cameron Trew, a software engineer who left his job in September 2025. The paid beta opened in October 2025. About three months later the founders told Indie Hackers that Kleo made US$62,000 in <dfn>monthly recurring revenue</dfn> (MRR), the subscription revenue that repeats every month. In September 2026 Trew wrote in his X profile that it had made more than US$1 million in revenue.`,
+    `Every number on this page is a founder statement, grade C. This page did not read the Indie Hackers interview, because that site asks AI programs not to read it; the MRR figure comes from two publications that quote it. The page also shows earlier companies that built on a social network that they did not control, and what LinkedIn has done since 2023 about AI-written posts.`
+  ],
+  factsCaption: "A free LinkedIn extension that LinkedIn stopped, rebuilt as a paid app that reported US$62,000 a month after three months and more than US$1 million in revenue by September 2026, all self-reported",
+  factsRead: "How to read this table: a grade C value is a founder statement, or a statement by a reviewer or a newsletter that quotes the founders. A \"calc\" value was computed on this page from the rows above it. No value is grade A or B.",
+  timelineLead: "From a free extension that LinkedIn shut down to a paid app with more than US$1 million in revenue. Each entry carries its grade.",
+  pricing: {
+    caption: "Kleo prices in October 2026, from the company's home page (grade C)",
+    note: "There is one plan with all features: strategy, unlimited chats and posts, 20 images a month, scheduling and publishing, analytics, weekly live calls, a template library and a private community. The yearly plan costs US$999, which is US$189 less than twelve monthly payments, and adds a private onboarding call and a price that stays the same while the plan is active. Each extra profile, for a team member or a client, costs US$49 a month more. Reviewers found no free trial; the yearly plan has a 30-day money-back guarantee. The first 1,000 beta buyers kept US$59 or US$79 a month for life.",
+    rows: [
+      ["Standard, monthly", "", "99", "1 profile"],
+      ["Standard, yearly", "83.25", "", "US$999 a year; adds a private onboarding call and a price lock"],
+      ["Extra profile", "", "49", "per added profile, for a team member or a client"],
+      ["Founding beta seats (closed)", "", "59 or 79", "first 1,000 seats, price kept for life"]
+    ]
+  },
+  facts: [
+    { fact: "Revenue by September 2026", value: "more than US$1 million", grade: "C", note: "Co-founder Cam Trew's X profile, read 15 October 2026: he quit his job in September 2025 to co-found the business, and by September 2026 it had made over US$1 million in revenue. It does not say whether this is gross or net, or whether sales before the relaunch are included.", src: [1] },
+    { fact: "Monthly recurring revenue about three months after the relaunch", value: "US$62,000", grade: "C", note: "The founders' interview with Indie Hackers, quoted by a Japanese newsletter on 19 July 2026 and by a review updated 16 May 2026. The interview itself was not read for this page. The founders had not yet made a public launch.", src: [2, 3] },
+    { fact: "Run rate from the US$62,000 a month", value: "US$744,000 a year", grade: "X", note: "Calculated: US$62,000 times 12.", src: [2] },
+    { fact: "Average monthly revenue implied for January to September 2026", value: "at least about US$90,000", grade: "X", note: "Calculated: if October to December 2025 brought at most 3 times US$62,000, or US$186,000, then at least US$814,000 of the US$1 million came in the next nine months, about US$90,444 a month, 46% above US$62,000. Yearly plans are paid in advance, so this is cash received, not recurring revenue.", src: [1, 2] },
+    { fact: "Mentions, the founders' sister product, at the time of the interview", value: "US$20,000 a month", grade: "C", note: "Same interview, as quoted. Mentions is a separate product and is not counted on this page. Together the two made US$82,000 a month.", src: [2] },
+    { fact: "Founding prices in the paid beta", value: "500 seats at US$59 a month, then 500 at US$79, then US$99", grade: "C", note: "The first 500 seats sold out in 4 days, the next 500 in 9 days. The early prices were for life.", src: [2] },
+    { fact: "Most recurring revenue that the first 1,000 seats could bring", value: "US$69,000 a month", grade: "X", note: "Calculated: 500 times US$59 plus 500 times US$79, if every seat paid monthly and stayed. Close to the US$62,000 reported.", src: [2] },
+    { fact: "Sales from pre-launch webinars", value: "more than US$5,000 each, from three webinars", grade: "C", note: "Lara Acosta hosted them, as quoted from the interview.", src: [2] },
+    { fact: "Users of the free extension before LinkedIn stopped it", value: "60,000 to more than 70,000", grade: "C", note: "The interview, as quoted, says 60,000; the company's home page and a review say more than 70,000.", src: [2, 4, 5] },
+    { fact: "Founders' audience on LinkedIn", value: "more than 480,000 followers", grade: "C", note: "Jake Ward more than 180,000 and Lara Acosta more than 300,000, as quoted from the interview. Their followers are people who post on LinkedIn, the same people Kleo sells to.", src: [2] },
+    { fact: "Team", value: "4 co-founders", grade: "C", note: "Jake Ward, Lara Acosta and Rob Hoffman, plus the engineer Cameron Trew, who calls himself a co-founder. No source gives a number of employees.", src: [1, 2, 13] },
+    { fact: "Where the founders work", value: "London and Cyprus", grade: "C", note: "Acosta's X profile says London, and the company blog calls her a top UK creator; Ward wrote in October 2026 that he had recently moved to Cyprus. The other two co-founders' locations are not given.", src: [13, 15, 17] },
+    { fact: "Time to rebuild the product", value: "4 weeks", grade: "C", note: "Trew rebuilt version 2.0 from Vercel's AI chatbot template, as quoted from the interview.", src: [2] },
+    { fact: "Advertising and Product Hunt", value: "none before US$62,000 a month", grade: "C", note: "As quoted from the interview. The public launch came after that figure.", src: [2] },
+    { fact: "Price, October 2026", value: "US$99 a month, or US$999 a year", grade: "C", note: "Company home page. Each extra profile costs US$49 a month more.", src: [5] },
+    { fact: "Outside funding", value: "none reported", grade: "C", note: "The home page says Kleo is built by creators to serve creators, not investors. No source mentions a funding round.", src: [5] },
+    { fact: "Operating company", value: "not found", grade: "C", note: "The terms name no company and follow the laws of Texas. None of the 20 companies named Kleo or Kleos on the first page of a UK company register search lists a co-founder as an officer.", src: [7, 21] },
+    { fact: "Time from the paid beta to the US$1 million", value: "11 months", grade: "X", note: "Calculated: October 2025 to September 2026.", src: [1, 11] }
+  ],
+  timeline: [
+    { when: "8 November 2023", what: "Jake Ward releases Kleo on the Chrome Web Store as a free extension that shows popular posts inside LinkedIn. About 2,500 people from his community had used an early version.", grade: "C", src: [8] },
+    { when: "23 January 2024", what: "7,000 weekly users. Ward quotes Lara Acosta, then a user, who gained more than 60,000 followers in 5 months.", grade: "C", src: [9] },
+    { when: "29 November 2024", what: "Ward sells founding memberships of Kleo Pro, a separate web platform. He writes that more than 40,000 creators use the free extension and that an extension limits what he can build.", grade: "C", src: [10] },
+    { when: "2025", what: "LinkedIn sends a cease-and-desist letter because the extension overlaid LinkedIn's pages and read data from them. The extension is shut down. One review dates the letter to early 2026, which does not fit the October 2025 relaunch.", grade: "C", src: [2, 3, 4] },
+    { when: "September 2025", what: "Cameron Trew leaves his software engineering job to co-found the new Kleo and rebuilds it in four weeks.", grade: "C", src: [1, 2] },
+    { when: "29 September 2025", what: "Ward announces that Kleo 2.0 opens to 500 more beta users in two days, from a waitlist. Seats are sold in groups: 500 at US$59 a month sell out in 4 days, the next 500 at US$79 in 9 days.", grade: "C", src: [11, 2] },
+    { when: "9 October 2025", what: "Ward describes Kleo 2.0 as \"Cursor, but for LinkedIn posts\", after the AI code editor: it learns the member's writing style, finds trending topics and writes with the member in a chat.", grade: "C", src: [12] },
+    { when: "End of 2025", what: "About three months after the relaunch, US$62,000 a month in recurring revenue, with no ads and no Product Hunt launch. Mentions, a sister product, makes US$20,000 a month.", grade: "C", src: [2, 3] },
+    { when: "21 May 2026", what: "A review describes Kleo as a paid web app at US$99 a month, where members write and then switch to LinkedIn to publish. The extension now only saves ideas from other websites.", grade: "C", src: [4] },
+    { when: "10 June 2026", what: "Trew writes that his working days went from 8 to 14 hours after he quit his job.", grade: "C", src: [16] },
+    { when: "24 July 2026", what: "Acosta writes that Kleo has been growing very fast and that she is proud of the team.", grade: "C", src: [13] },
+    { when: "Mid-2026", what: "Kleo 3.0 adds stored knowledge, a trained writing style, a member identity and automatic memories.", grade: "C", src: [4] },
+    { when: "September 2026", what: "Trew's X profile: more than US$1 million in revenue in the year since he quit his job.", grade: "C", src: [1] },
+    { when: "7 October 2026", what: "Ward posts the Kleo team's analysis of more than 13 million LinkedIn posts: median views for the largest 5% of profiles fell by 50%.", grade: "C", src: [14] }
+  ],
+  mechanism: [
+    { title: "Co-founders who are the audience", text: "Ward and Acosta had more than 480,000 LinkedIn followers between them, and those followers are people who post on LinkedIn, which is exactly who Kleo sells to. The founders built a waitlist from that audience, Acosta ran three webinars that each sold more than US$5,000, and Ward and Hoffman showed how they wrote their own popular posts with the tool. There were no ads." },
+    { title: "Seats that run out", text: "The beta was sold in groups of 500 seats, each with a price for life: US$59 a month, then US$79, then the full US$99. The first group sold out in four days and the second in nine. A buyer had a reason to buy now, and later buyers paid the full price." },
+    { title: "Four weeks on standard parts", text: "Trew started from Vercel's open AI chatbot template, so the chat interface already worked, and added hosted services for the database, background jobs, login, voice input and monitoring. Beta users had a private Slack; a reported bug was fixed within hours, with a personal reply." },
+    { title: "Beside LinkedIn, not inside it", text: "The first Kleo ran inside LinkedIn's pages, and LinkedIn stopped it. The paid version is a separate web app that connects to LinkedIn through LinkedIn's own API to publish and to read post statistics, and its Chrome extension only saves ideas from other websites." }
+  ],
+  howBuilt: {
+    intro: "These details come from the engineer's account in the Indie Hackers interview, as quoted by a newsletter and a review, and from the company's own pages. They are grade C.",
+    items: [
+      "Started from Vercel's AI Chatbot template, an open project that already has a chat interface, so the first version took four weeks.",
+      "TypeScript and Next.js, deployed on Vercel. Neon, a hosted PostgreSQL database. Inngest for background jobs, retries and queues. Clerk for login. shadcn/ui for interface parts.",
+      "Claude, Anthropic's model, writes the posts. Deepgram turns voice input into text. PostHog measures how members use the app, and Langfuse records the prompts and the model costs.",
+      "Instead of more setup forms, the product lets Claude's memory feature learn each member's writing from use.",
+      "Members connect their LinkedIn account; Kleo then uses LinkedIn's APIs to publish or schedule posts and to show their statistics.",
+      "Payments run through Polar. The Chrome extension saves ideas from articles on other websites into a swipe file, a saved collection of examples."
+    ],
+    src: [2, 3, 5, 6, 4]
+  },
+  predecessorsIntro: "Four companies in the Loot Drop database sold a tool for people who post or write online, three of them on top of a social network that they did not control. The values below are from that database and are not independently verified.",
+  predecessors: [
+    { name: "BranchOut", years: "2010 to 2017", funding: "US$49M", cause: "Competition", promise: "Professional networking built on Facebook, as an alternative to LinkedIn.", died: "Facebook changed its API rules, and the growth path that depended on them was gone.", url: "https://www.loot-drop.io/startup/30-branchout" },
+    { name: "Klout", years: "2008 to 2017", funding: "US$40M", cause: "Competition", promise: "A score from 1 to 100 for a person's influence, built from their posts on social networks.", died: "Facebook and Twitter built better statistics into their own products.", url: "https://www.loot-drop.io/startup/280-klout" },
+    { name: "Socialbrowse", years: "2008 to 2011", funding: "US$20K", cause: "Competition", promise: "A browser extension that added social features to ordinary web browsing.", died: "It could not gather enough users while people spent their social time on Facebook.", url: "https://www.loot-drop.io/startup/1229-socialbrowse" },
+    { name: "Draft", years: "2011 to 2014", funding: "US$120K", cause: "Competition", promise: "A simple online writing tool with version control and editing help for writers.", died: "Google Docs covered the same needs, and the narrow product could not compete.", url: "https://www.loot-drop.io/startup/1605-draft" }
+  ],
+  whatChanged: [
+    `Three of the four lived on a social network that another company controlled, and lost when that company changed its rules or built the feature itself; the fourth, a writing tool, lost when Google Docs covered the same needs. Kleo has already lived through one such event: LinkedIn's letter in 2025 ended the free extension, which had tens of thousands of users.`,
+    `Two things differ. First, the paid product does not depend on reading LinkedIn's pages; it uses the API that LinkedIn offers to outside programs, and the writing happens in Kleo's own app. Second, the founders sold to their own followers, so they did not need LinkedIn to send them customers, and they charged from the first day of the beta.`
+  ],
+  copy: {
+    verdict: "The structure, yes. The audience, rarely.",
+    text: "Kleo's build was ordinary: a public template and hosted services, ready in four weeks. What is rare is co-founders whose 480,000 followers were the people Kleo sells to. A builder without such an audience can still copy the arrangement: an engineer who builds, and creators who sell to their own followers, all as co-founders.",
+    steps: [
+      "Find creators whose followers are the buyers, and make them co-founders, not paid promoters.",
+      "Build the first version on a public template and hosted services, in weeks.",
+      "Sell the beta in limited groups of seats, with a lower price for life for each early group.",
+      "Use the platform's official API; do not read or change its pages."
+    ],
+    open: "Other platforms where people publish for work, such as Substack, YouTube or X, where the followers of a few creators are the buyers of a writing or planning tool."
+  },
+  watch: [
+    { title: "Founder figures only, partly second-hand", text: "Every money figure is a founder statement. The US$62,000 a month comes from an interview that this page could not read and that two publications quote. The US$1 million comes from one line in a co-founder's X profile, which does not say whether it is gross or net or which months it covers. No payment processor, buyer or journalist has confirmed either." },
+    { title: "LinkedIn has stopped Kleo once", text: "In 2025 LinkedIn sent a cease-and-desist letter because the extension overlaid LinkedIn's pages and read data from them. A review summarizes LinkedIn's User Agreement as forbidding scraping or automated access without consent. The current product publishes through LinkedIn's API, and its home page says it avoids risky automation, but that access depends on LinkedIn's permission." },
+    { title: "LinkedIn's own writing tools", text: "By 26 September 2023 LinkedIn had its own tool that drafts a post from a member's ideas. In September 2026 it removed its AI rewriting option and gave Premium members a proofreader that only edits words that the member typed. LinkedIn can add writing help at any time, and for now it has chosen not to write posts for members." },
+    { title: "LinkedIn shows AI-written posts less", text: "On 31 July 2026 LinkedIn added an option to report posts that \"seem like AI slop\", and said it already shows such posts less outside the writer's own network and uses better classifiers, programs that sort posts automatically, to find them. Kleo's own analysis of 13 million posts, posted on 7 October 2026, found that median views for the largest 5% of profiles fell by 50%. Both affect what customers get, and the founders' own reach is the sales channel." },
+    { title: "The same field on this site", text: "Supergrow, from India, sells AI-written LinkedIn posts with payment-processor evidence of US$32,200 in 30 days in February 2026 and a falling trend, and aiCarousels, a one-person Swedish tool for carousel posts, reported US$5,000 a month in November 2023; Kleo reports larger numbers than both, with weaker evidence." },
+    { title: "One model provider", text: "The engineer's stack names one model, Anthropic's Claude, for writing and for memory. A change in Anthropic's prices, rules or model behaviour changes Kleo's costs and its output. The home page itself has to explain why a member should pay for Kleo instead of using ChatGPT or Claude directly." },
+    { title: "A sister product", text: "The founders also run Mentions, which made US$20,000 a month at the time of the interview. The combined figure of US$82,000 a month is not Kleo's; this page counts only Kleo." }
+  ],
+  sources: [
+    { title: "Cam Trew's X profile, read 15 October 2026", url: "https://x.com/camtrew", grade: "C", how: "Read the profile text through api.fxtwitter.com. Co-founder's own statement. Source for the US$1 million in revenue by September 2026 and for his September 2025 start." },
+    { title: "Lagless Portal (note.com), 19 July 2026: Issue 86: $62k MRR in 3 months with zero ads and zero Product Hunt", url: "https://note.com/lagless/n/ne385b76682df", grade: "C", how: "Read in full, English version. A newsletter summary of the founders' Indie Hackers interview, which was not read because indiehackers.com does not allow AI agents. Source for the US$62,000 and US$20,000 figures, the team, the build stack, the seat prices, the webinars and the payment provider." },
+    { title: "ConnectSafely, updated 16 May 2026: Kleo Review: LinkedIn AI Tool Pricing & Features", url: "https://connectsafely.ai/articles/kleo-review-linkedin-content-tool-2026", grade: "C", how: "Read in full. A review by a company that sells a competing LinkedIn tool. Quotes the US$62,000 figure from the Indie Hackers interview and says the product uses Claude. Its date for the cease-and-desist letter does not fit the other sources." },
+    { title: "AuthoredUp, 21 May 2026, updated 11 August 2026: Kleo Review 2026: Is the $99 LinkedIn Tool Worth It?", url: "https://authoredup.com/blog/kleo-review", grade: "C", how: "Read in full. A review by a company that sells a competing LinkedIn tool. Source for the 2025 cease-and-desist letter and its reason, Kleo 3.0, the separate web app and the 30-day money-back guarantee." },
+    { title: "Kleo home page, read 15 October 2026", url: "https://kleo.so/", grade: "C", how: "Read in full. Source for the prices, the features, the statement on LinkedIn's official API, the 70,000-user extension and the statement about investors." },
+    { title: "Kleo privacy policy, read 15 October 2026", url: "https://app.kleo.so/privacy", grade: "C", how: "Read the section on LinkedIn features and connected account data." },
+    { title: "Kleo terms of service, read 15 October 2026", url: "https://app.kleo.so/terms", grade: "C", how: "Read in full. Names no company; governed by the laws of Texas." },
+    { title: "Jake Ward on X, 8 November 2023: Kleo is officially live", url: "https://x.com/jakezward/status/1722245502430072900", grade: "C", how: "Read in full through api.fxtwitter.com." },
+    { title: "Jake Ward on X, 23 January 2024: My free LinkedIn tool crossed 7,000 weekly users", url: "https://x.com/jakezward/status/1749772879917371518", grade: "C", how: "Read in full through api.fxtwitter.com." },
+    { title: "Jake Ward on X, 29 November 2024: Kleo Pro for founding members", url: "https://x.com/jakezward/status/1862496143881511310", grade: "C", how: "Read in full through api.fxtwitter.com." },
+    { title: "Jake Ward on X, 29 September 2025: Kleo 2.0 opens to 500 more beta users", url: "https://x.com/jakezward/status/1972646886705074362", grade: "C", how: "Read in full through api.fxtwitter.com." },
+    { title: "Jake Ward on X, 9 October 2025: Imagine Cursor, but for LinkedIn posts", url: "https://x.com/jakezward/status/1976270813306204324", grade: "C", how: "Read in full through api.fxtwitter.com." },
+    { title: "Lara Acosta on X, profile and post of 24 July 2026", url: "https://x.com/Laraacostar/status/2080606714370363801", grade: "C", how: "Read the profile and the post through api.fxtwitter.com. The profile says co-founder of Kleo, London." },
+    { title: "Jake Ward on X, 7 October 2026: the Kleo team's analysis of 13M+ LinkedIn posts", url: "https://x.com/jakezward/status/2107845110708814273", grade: "C", how: "Read the first post of the thread through api.fxtwitter.com." },
+    { title: "Jake Ward on X, 8 October 2026: recently moved to Cyprus", url: "https://x.com/jakezward/status/2108166761967235207", grade: "C", how: "Read in full through api.fxtwitter.com." },
+    { title: "Cam Trew on X, 10 June 2026", url: "https://x.com/camtrew/status/2064674227467514286", grade: "C", how: "Read in full through api.fxtwitter.com. Source for his working hours after he quit his job." },
+    { title: "Kleo blog: Lara Acosta: The UK's #1 Female LinkedIn Creator", url: "https://kleo.so/blog/lara-acosta", grade: "C", how: "Read in full. The company's own profile of the co-founder." },
+    { title: "Digital Works, 26 September 2023: LinkedIn's AI-powered writing tool for posts", url: "https://digitalworks.dk/en/artikler/linkedins-ai-powered-writing-tool-for-posts", grade: "C", how: "Read in full. A Danish agency's description of LinkedIn's tool that drafts posts." },
+    { title: "ProPakistani, 31 July 2026: LinkedIn Finally Adds a Button To Kill All That AI Slop", url: "https://propakistani.pk/2026/07/31/linkedin-finally-adds-a-button-to-kill-all-that-ai-slop/", grade: "C", how: "Read in full. Reports LinkedIn's statements; LinkedIn's own pages were not read because linkedin.com does not allow AI agents." },
+    { title: "Metricool, 2 October 2026: LinkedIn Swaps Its AI Post Writer for a Proofreading Tool", url: "https://metricool.com/linkedin-post-proofreader/", grade: "C", how: "Read in full." },
+    { title: "UK Companies House search for \"kleo\", read 15 October 2026", url: "https://find-and-update.company-information.service.gov.uk/search/companies?q=kleo", grade: "C", how: "Read the first page of results and the officer lists of the 20 companies on it. None lists a Kleo co-founder." },
+    { title: "Loot Drop database export, 1,749 failed startups", url: "https://www.loot-drop.io/", grade: "C", how: "Local export. AI-written summaries, not independently verified. Source for the failed predecessors." }
+  ]
 }
 ];
 
