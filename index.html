@@ -13486,6 +13486,158 @@ const STORIES = [
     { title: "Loot Drop database export, failed startups", url: "https://www.loot-drop.io/", grade: "C", how: "Local export. AI-written summaries, not independently verified. Source for the failed predecessors." },
     { title: "ThreadMaster blog index, read 15 October 2026", url: "https://threadmaster.ai/blog", grade: "C", how: "Read the list of posts and their dates." }
   ]
+},
+{
+  slug: "adle",
+  name: "Adle",
+  country: "USA",
+  sector: "Information Technology",
+  productType: "AI media buyer for ad campaigns",
+  aiType: "AI-native",
+  team: "small",
+  outcome: "running",
+  evidence: "A",
+  added: "2026-10-15",
+  launchLabel: "27 September 2022",
+  outcomeLabel: "US$9.9K MRR verified by Stripe at the last sync, September 2026",
+  sticker: "$9.9K MRR in September 2026",
+  outcomeUsd: 118224,
+  months: 48,
+  teamLabel: "2 co-founders; LinkedIn lists 8 employees in October 2026",
+  fundingLabel: "Parallel18 accelerator grant in 2024; no venture round found",
+  primaryFactor: "Distribution",
+  group: "marketing-content",
+  channel: "sales",
+  trend: "falling",
+  collections: [],
+  meters: { evidence: 3, copyable: 2, capital: 2 },
+  tags: ["AI-native", "Small team", "Bootstrapped", "Running", "B2B", "Advertising"],
+  product: "A web app that creates, launches and adjusts ad campaigns on Meta, Google, TikTok and LinkedIn from a written request. It writes the ads, makes images and videos, works in the customer's own connected ad accounts, and shows which ads to pause or give more budget. Agencies run it themselves from US$499 a month; for brands, Adle's staff run it for US$499 a month plus 15% of the ad spend.",
+  why: "The founders first ran a marketplace that paid creators in free products, and saw that their clients' results were decided inside the ad platforms. In 2024 they rebuilt the company around ad buying, sold it themselves through demos to agencies and brands, and added a plan where their own staff run the ads. Stripe shows revenue almost four times higher in March 2026 than in October 2025, then a fall.",
+  summary: [
+    `Adle is an AI <dfn>media buyer</dfn>. A media buyer is the person who plans, buys and adjusts paid advertising; Adle does this work as software on Meta, Google, TikTok and LinkedIn. The customer writes a request, and Adle builds the campaign, makes the ad text, images and videos, launches it through each platform's <dfn>API</dfn>, the official interface that lets one program operate another, and then shows which ads to pause and which to give more budget. Customers connect their own ad accounts with <dfn>OAuth</dfn>, a standard way to give an app limited access to an account without sharing the password. The ads therefore run in the customer's own accounts, and Adle charges only its own fees.`,
+    `The operating company, Clapp Technologies, LLC, started in September 2022 as Buzzly, a marketplace where brands gave creators free products in exchange for social media posts. The co-founders are Alejandro Reyes Bradford, the chief executive, and Daniel Ruiz Ortega, the chief operating officer. In June 2024 Buzzly joined Parallel18, an <dfn>accelerator</dfn>, a program that gives young companies training, contacts and money, run in Puerto Rico with grants. In September 2024 the accelerator described Buzzly as a tool that creates TikTok and Meta campaigns from a short prompt. The founders write that they closed the marketplace and kept the ad-buying part, now sold as Adle. Stripe data on <dfn>TrustMRR</dfn>, a site that reads revenue directly from a company's payment provider, shows US$4,347 of revenue in October 2025, US$16,855 in March 2026 and US$9,587 in September 2026, and <dfn>MRR</dfn> (monthly recurring revenue, the subscription revenue of one month) of US$9,852 from 14 active subscriptions.`,
+    `The headline number is grade A, but it is not current. The Stripe key that TrustMRR uses expired on 30 September 2026, so no revenue after that date is recorded, and monthly revenue had already fallen 43.1% from the March peak. The team is larger than in most stories here: LinkedIn lists 8 employees, and the brand plan includes a human media buyer. The page also shows four failed companies that sold automated or outsourced ad buying, or a creator marketplace like Buzzly's first product.`
+  ],
+  factsCaption: "US$9,852 of monthly recurring revenue and US$131,066 in twelve months, read from Stripe, in data that stops on 30 September 2026",
+  factsRead: "How to read this table: a grade A value comes from Stripe, the payment processor, through TrustMRR's connection to the company's Stripe account. A grade C value is a statement by the company, its founders, its accelerator or LinkedIn. A \"calc\" value was computed on this page from the rows above it.",
+  timelineLead: "From a creator marketplace founded in September 2022 to an AI media buyer with US$9,852 of MRR, in 48 months. Each entry carries its grade.",
+  pricing: {
+    caption: "Adle prices in October 2026, read from the script that draws the company's pricing page (grade C)",
+    note: "The pricing page shows only \"Plans from $499/mo\" until the visitor chooses agency or brand; the plan details are in the page's script. Agency plans are monthly subscriptions with credits: a campaign costs 5 credits, an AI image 3 and an AI optimization 2. Extra credits cost from US$49 for 65 to US$636 for 1,200 a month, and extra AI videos from US$75 for 4. The brand plan, Adle Scale, adds 15% of the ad spend to US$499 a month: with US$10,000 of ad spend a month, the brand pays US$1,999 to Adle and the US$10,000 to the ad platforms. No yearly price is shown. The terms say there are no free trials and regular plans are not refundable.",
+    rows: [
+      ["Studio, for agencies", "", "499", "600 credits, 15 AI videos, 10 advertisers, 5 users"],
+      ["Agency, for agencies", "", "999", "1,500 credits, 50 AI videos, 25 advertisers, 12 users"],
+      ["Enterprise", "", "custom", "price not shown"],
+      ["Adle Scale, for brands", "", "499 plus 15% of ad spend", "done for you, with a customer success manager and a media buyer"],
+      ["Extra credits", "", "49 to 636", "65 to 1,200 credits"]
+    ]
+  },
+  facts: [
+    { fact: "Monthly recurring revenue at the last sync, 30 September 2026", value: "US$9,852", grade: "A", note: "Stripe data read by TrustMRR. 14 active subscriptions at the same time.", src: [1] },
+    { fact: "Run rate from that MRR", value: "about US$118,224 a year", grade: "X", note: "Calculated: 9,852 times 12. This is the headline figure on this page.", src: [1] },
+    { fact: "Revenue in the last twelve months", value: "US$131,066", grade: "A", note: "Stripe data read by TrustMRR. The twelve monthly figures from October 2025 to September 2026 add up to US$131,064; the difference is rounding.", src: [1] },
+    { fact: "Total revenue recorded from Stripe", value: "US$258,260", grade: "A", note: "All time. US$127,194 of it came before mid-October 2025 (calculated: 258,260 minus 131,066).", src: [1] },
+    { fact: "Best month", value: "US$16,855 in March 2026", grade: "A", note: "October 2025 was US$4,347, so March 2026 was 3.88 times as much (calculated).", src: [1] },
+    { fact: "Revenue in September 2026", value: "US$9,587", grade: "A", note: "43.1% below March 2026 (calculated). July to September 2026 together, US$30,140, were 28.4% below April to June, US$42,098 (calculated).", src: [1] },
+    { fact: "Revenue shown for the last 30 days", value: "US$3,793", grade: "A", note: "The gap to the MRR comes from stale data. TrustMRR last synced at 08:06 UTC on 30 September 2026, and its Stripe API key expired at 14:06 UTC that day. The 30-day window, 16 September to 15 October, holds only 15 days of synced data, and the daily rows from 16 to 30 September add up to exactly US$3,793. The snapshot saved at the last sync shows US$10,086 for its own 30 days.", src: [1] },
+    { fact: "Daily revenue, 16 to 30 September 2026", value: "US$0 to US$999 a day", grade: "A", note: "The days with revenue show US$75, US$299, US$499, US$924, US$997 and US$999. These are the sizes of the plan prices and add-on packs (US$499, US$999, US$75 for 4 extra AI videos), not of advertising budgets.", src: [1, 2] },
+    { fact: "Average MRR per active subscription", value: "about US$704", grade: "X", note: "Calculated: 9,852 divided by 14 equals 703.71.", src: [1] },
+    { fact: "Ad spend inside the revenue", value: "none found", grade: "C", note: "Customers connect their own Meta, TikTok and Google business accounts with OAuth, so the ads run in their accounts. The brand plan charges 15% of ad spend as Adle's fee. No source shows ad money passing through Adle's Stripe account.", src: [2, 6] },
+    { fact: "Early figures after the relaunch", value: "19 paying customers and US$7,000 MRR after the first month", grade: "C", note: "Founder-written story page, undated. It also claims 1 cancellation in 4 months and a gross margin of about 88%.", src: [3] },
+    { fact: "Offer for the ads module", value: "a US$10,000 setup and US$5,000 a month license", grade: "C", note: "Story page, undated: a company tried to buy the ads module, and the founders offered a license instead of a sale.", src: [3] },
+    { fact: "Users in 2024", value: "hundreds of businesses", grade: "C", note: "Parallel18's spotlight post, 16 September 2024. Not a count of paying customers.", src: [10] },
+    { fact: "Team, October 2026", value: "2 co-founders; 8 employees on LinkedIn", grade: "C", note: "The about page names the chief executive and the chief operating officer as co-founders. LinkedIn gives a company size of 2 to 10 employees and lists 8. The story page sets a limit of about 20 people.", src: [4, 7, 3] },
+    { fact: "Revenue per LinkedIn employee", value: "about US$14,778 a year", grade: "X", note: "Calculated: the US$118,224 run rate divided by 8.", src: [1, 7] },
+    { fact: "Outside funding", value: "an accelerator grant, amount not verified; no venture round found", grade: "C", note: "Buzzly joined Parallel18, a program of the Puerto Rico Science, Technology and Research Trust whose startups sign a grant contract. Y Combinator's directory has no page for Adle.", src: [8, 12, 21] },
+    { fact: "Operating company", value: "Clapp Technologies, LLC", grade: "C", note: "Named on the about page and in the terms, which are governed by the law of Delaware, USA.", src: [4, 5] },
+    { fact: "Time from founding to the September 2026 figure", value: "48 months", grade: "X", note: "Calculated: September 2022 to September 2026. The founded date, 27 September 2022, is entered by the founder on TrustMRR; LinkedIn gives 2022.", src: [1, 7] }
+  ],
+  timeline: [
+    { when: "27 September 2022", what: "Founded date on the TrustMRR profile. The company starts as Buzzly, owned by Clapp Technologies, LLC.", grade: "C", src: [1, 4] },
+    { when: "19 May 2024", what: "The archived Buzzly site is a marketplace for user-generated content: brands give products or experiences, and creators with at least 5,000 followers post about them.", grade: "C", src: [11] },
+    { when: "19 June 2024", what: "The chief executive announces that Buzzly is joining Parallel18, an accelerator in Puerto Rico. The chief operating officer posts the next day that they were accepted.", grade: "C", src: [8, 9] },
+    { when: "16 September 2024", what: "Parallel18's spotlight describes Buzzly as a tool that creates, launches and manages TikTok and Meta campaigns from a few phrases, with large language models, already used by hundreds of businesses.", grade: "C", src: [10] },
+    { when: "Undated, from 2024", what: "The founders close the marketplace and rebuild its ad-buying part as an AI agent. Their story page reports 19 paying customers and US$7,000 MRR one month after that launch.", grade: "C", src: [3] },
+    { when: "October 2025", what: "Stripe revenue of US$4,347 for the month.", grade: "A", src: [1] },
+    { when: "March 2026", what: "Best month: US$16,855.", grade: "A", src: [1] },
+    { when: "September 2026", what: "US$9,587 for the month, and MRR of US$9,852 from 14 active subscriptions.", grade: "A", src: [1] },
+    { when: "30 September 2026", what: "TrustMRR's last revenue sync, at 08:06 UTC. The Stripe API key expires at 14:06 UTC, and no revenue is recorded after that.", grade: "A", src: [1] },
+    { when: "October 2026", what: "Renamed from Buzzly to Adle, the site sells agency plans from US$499 a month and a done-for-you plan for brands. LinkedIn lists 8 employees. The chief executive posts advertising advice on X almost every day.", grade: "C", src: [2, 7, 13] }
+  ],
+  mechanism: [
+    { title: "Keep the part that made money", text: "The marketplace connected brands with creators, but the founders write that their clients' results were decided by the media buying: campaign setup, targeting, budgets, optimization and reports. They closed the marketplace and kept that part, rebuilt as an AI agent that works from a single prompt." },
+    { title: "Fees, not ad budgets", text: "In the sources, Adle does not buy the ads itself. The customer's ad accounts stay connected through OAuth, and Adle charges a subscription, credits for each AI action and, for brands, 15% of the ad spend. Its revenue grows when a brand's budget grows, without Adle paying the platforms first." },
+    { title: "Software and a service team", text: "Agencies use the software themselves, for up to 25 advertisers on the US$999 plan. Brands get Adle Scale, where a customer success manager and a media buyer run the campaigns with the software. That service needs people, and LinkedIn lists 8 employees." },
+    { title: "Sold by the founders", text: "The story page says the founders did the early sales themselves, with close personal contact, and every page of the site asks the visitor to book a demo. The chief executive's X account has about 250 followers, so his posts there are not the main channel." }
+  ],
+  howBuilt: {
+    intro: "These details come from Adle's own pages, its accelerator and Google's developer documentation. They are grade C.",
+    items: [
+      "A web app in English and Spanish at adle.ai, owned by Clapp Technologies, LLC, with terms under Delaware law.",
+      "Customers connect their Meta, TikTok and Google business accounts with OAuth. The security page says the permissions are limited to those required, tokens are kept in an encrypted vault, and each advertiser runs in its own micro-service agent.",
+      "The ad platforms grant API access only after an application. For example, a new Google Ads API developer token starts with test access; Basic Access allows 15,000 operations a day and Standard Access has no limit. No source says which level Adle holds.",
+      "The AI writes campaigns from a prompt and makes images, videos and captions. Parallel18 wrote in 2024 that it uses large language models; no source names the models.",
+      "Usage is metered in credits: 5 for a campaign, 3 for an AI image, 2 for an AI optimization.",
+      "Payments run through Stripe. The security page lists a SOC 2 Type II audit, an outside check of security controls over a period of time, as in progress with the auditor Strike Graph, with a target of the first quarter of 2026.",
+      "The terms also cover lifetime deals bought through AppSumo, and the site's script holds an AppSumo customer rating from 34 verified reviews, but no AppSumo page was found under the names Adle or Buzzly. AppSumo sales would not appear in the Stripe data."
+    ],
+    src: [6, 19, 10, 2, 1, 5]
+  },
+  predecessorsIntro: "Four companies in the Loot Drop database sold automated or outsourced ad buying, or the creator marketplace that Buzzly started as. The values below are from that database and are not independently verified.",
+  predecessors: [
+    { name: "Trada", years: "2008 to 2015", funding: "US$19M", cause: "Competition", promise: "Outsource your Google Ads to a marketplace of paid-search experts.", died: "Google's own automation did the experts' work, and the human experts were too expensive to scale.", url: "https://www.loot-drop.io/startup/655-trada" },
+    { name: "Automate Ads", years: "2015 to 2018", funding: "US$1.5M", cause: "Competition", promise: "Software that keeps Facebook and Instagram campaigns running and adjusted without manual work.", died: "The platforms' own tools and faster rivals did the same work.", url: "https://www.loot-drop.io/startup/1100-automate-ads" },
+    { name: "Admazely", years: "2012 to 2014", funding: "US$2.3M", cause: "Unit Economics", promise: "Retargeting ads made simple for small webshops.", died: "Small customers with small budgets cost more to win than they paid, and Facebook competed directly.", url: "https://www.loot-drop.io/startup/1830-admazely" },
+    { name: "FameBit", years: "2013 to 2019", funding: "US$1.75M", cause: "Competition", promise: "Self-service matching of brands and YouTube creators.", died: "Google bought it and let it fade as YouTube moved to large brands and TikTok took the creators.", url: "https://www.loot-drop.io/startup/132-famebit" }
+  ],
+  whatChanged: [
+    `Each of the four sold a layer on top of ad platforms or creators that it did not control. Trada and Automate Ads are the closest: one sold human experts for Google Ads, the other automation for Facebook ads, and both lost to the platforms' own tools. Adle makes the same bet with both parts at once: an AI agent for agencies, and a done-for-you service for brands.`,
+    `Two things differ. Large language models can now write the ad text and make images and videos from a prompt, so one tool can do the creative work as well as the campaign setup. And Adle works across Meta, Google, TikTok and LinkedIn at once, while each platform's own automation works only inside that platform. Neither difference has protected the revenue so far: Stripe shows a fall of 43.1% from March to September 2026.`
+  ],
+  copy: {
+    verdict: "The structure, yes. The position, with care.",
+    text: "A subscription plus a share of ad spend, while the customer keeps the ad accounts, is a simple structure, and the official ad APIs are open to approved apps. Two things are hard: agencies must trust software to spend their clients' money, and Google and Meta are building the same automation into their own platforms.",
+    steps: [
+      "Start from a service you already sell, here media buying, and turn its repeated steps into software.",
+      "Connect to the customer's own ad accounts through the official APIs, so you never pay for the ads.",
+      "Charge a fixed fee plus a share of ad spend, and meter the AI work in credits.",
+      "Require the customer's approval before any campaign goes live."
+    ],
+    open: "Work that each platform's own AI does not cover: running several ad platforms from one place, reports across them, and white-label tools that agencies show to their clients under their own name."
+  },
+  watch: [
+    { title: "The data stopped on 30 September 2026", text: "TrustMRR's key to Adle's Stripe account expired that day, so the profile shows no revenue for October and a 30-day figure of only US$3,793. September revenue, US$9,587, was close to the MRR, so the business was still earning then. Whether it still earns in October 2026 is unknown." },
+    { title: "Revenue fell from its March peak", text: "From US$16,855 in March 2026 to US$9,587 in September, a fall of 43.1%. July to September was 28.4% below April to June. The story page set a goal of 100 recurring customers in 13 weeks; TrustMRR shows 14 active subscriptions at the last sync." },
+    { title: "Google and Meta build the same automation", text: "Google opened Performance Max, which buys ads across YouTube, Display, Search, Discover, Gmail and Maps from a single campaign, to all advertisers on 2 November 2021, and introduced AI Max for Search campaigns, a one-click suite of AI targeting and creative features, on 6 May 2025. Meta launched Advantage+ shopping campaigns in August 2022, which create up to 150 creative combinations at once. On 2 June 2025 MediaPost, citing The Wall Street Journal, reported that Meta plans to let brands create and target their ads with its AI by 2026. Google's tools are open to all advertisers, so Adle's customers already have them in their own accounts." },
+    { title: "An AI agent can spend a budget badly", text: "Adle's terms say it does not guarantee any return on ad spend and is not liable for lost ad spend. The company's answer is approval: its LinkedIn posts say the customer approves every campaign. The chief executive himself writes that a bidding algorithm with fewer than 30 conversions a month is guessing with the budget, and that moving a target more than 15 to 20% at once sends a campaign back into learning." },
+    { title: "Access depends on the platforms", text: "Every campaign runs through the APIs of Meta, Google and TikTok, which those companies open only to approved apps; Google, for example, gives full Google Ads API access only after an application. Adle's own terms list repeated platform policy violations that put its accounts or integrations at risk as a reason to end a customer's account." },
+    { title: "Eight people, not one", text: "LinkedIn lists 8 employees in October 2026, with two co-founders, and the brand plan includes a human media buyer. At the run rate of US$118,224 a year, that is about US$14,778 per person, and part of the revenue pays for service work." },
+    { title: "Competing tools", text: "Adspirer, another story on this site, sells a similar agent that works inside ChatGPT, Claude and other AI assistants and creates every campaign paused, and it had US$54,700 MRR at its last Stripe sync in June 2026 with one founder. Adle's own comparison page names Madgicx, which it says charges by ad spend." }
+  ],
+  sources: [
+    { title: "TrustMRR: Adle, Stripe-verified revenue profile (data as of October 2026)", url: "https://trustmrr.com/startup/adle", grade: "A", how: "Read the markdown profile (https://trustmrr.com/startup/adle.md) in full, once, on 15 October 2026. Grade A for the metrics in its Verification Sources section; the description and founded date are founder-written, grade C." },
+    { title: "Adle pricing page, read 15 October 2026", url: "https://adle.ai/pricing", grade: "C", how: "Read the page and, because the plans load by script, the plan data in the page's JavaScript file." },
+    { title: "Adle: Our Story, From Marketplace to AI Media Operator", url: "https://adle.ai/story", grade: "C", how: "Read in full. Founder-written and undated. Source for the pivot, the early customer figures, the sales method and the pricing model." },
+    { title: "Adle: About, Meet the Founders", url: "https://adle.ai/about", grade: "C", how: "Read in full. Source for the operating company and the two co-founders." },
+    { title: "Adle AI Terms and Conditions", url: "https://adle.ai/terms-and-conditions", grade: "C", how: "Read in full. Source for the operator, Delaware law, billing, AppSumo lifetime deals and the disclaimers on ad spend." },
+    { title: "Adle Security page", url: "https://adle.ai/security", grade: "C", how: "Read in full. Source for the OAuth connections and the SOC 2 plan." },
+    { title: "LinkedIn company page: Adle (formerly Buzzly)", url: "https://www.linkedin.com/company/adle-ai", grade: "C", how: "Read the public page on 15 October 2026. Source for the company size, the 8 employees, the founding year and the post on campaign approval." },
+    { title: "LinkedIn post by Alejandro Reyes Bradford, 19 June 2024: Buzzly is joining Parallel18", url: "https://www.linkedin.com/posts/alejandrorbrad_proud-to-announce-that-buzzly-is-joining-activity-7209164226534240256-c4nJ", grade: "C", how: "Read in full. Date from the page's published time." },
+    { title: "LinkedIn post by Daniel Ruiz Ortega, 20 June 2024: Buzzly se une a Parallel18", url: "https://www.linkedin.com/posts/danielruizortega1_buzzly-parallel18-startups-activity-7209569944533909504--ULi", grade: "C", how: "Read in full. It tags four other people, who are not named on this page." },
+    { title: "LinkedIn post, 16 September 2024: Parallel18 Gen.12 Startup Spotlight: Buzzly", url: "https://www.linkedin.com/posts/hjirau_parallel18-p18-gen12-startup-spotlight-activity-7241438199309303811-pdB0", grade: "C", how: "Read in full. The accelerator's description of the product and its users in 2024." },
+    { title: "Internet Archive copy of heybuzzly.com, 19 May 2024", url: "http://web.archive.org/web/20240519182301/https://www.heybuzzly.com/", grade: "C", how: "Read the archived home page in full. Shows the marketplace before the pivot." },
+    { title: "Parallel18 home page and program questions", url: "https://www.parallel18.com/", grade: "C", how: "Read the program description and the questions section. Source for the grant; the amount is not on the page." },
+    { title: "Alejandro Reyes Bradford on X (@alejandrobradf), posts of 1 to 15 October 2026", url: "https://x.com/alejandrobradf", grade: "C", how: "Read the profile and the 40 most recent posts through api.fxtwitter.com, which returned no older pages. None of them gives a revenue figure." },
+    { title: "Adle vs Madgicx comparison page", url: "https://adle.ai/vs/madgicx", grade: "C", how: "Read in full. Adle's own comparison, including its pricing model." },
+    { title: "Google Ads and Commerce blog, 2 November 2021: Performance Max campaigns launch to all advertisers", url: "https://blog.google/products/ads-commerce/performance-max/", grade: "C", how: "Read the dated header and the introduction." },
+    { title: "Google Ads and Commerce blog, 6 May 2025: Introducing AI Max for Search campaigns", url: "https://blog.google/products/ads-commerce/google-ai-max-for-search-campaigns/", grade: "C", how: "Read the dated header and the introduction." },
+    { title: "Social Media Today, 9 January 2023: How to Take Advantage of Meta's Advantage+ Shopping Campaigns", url: "https://www.socialmediatoday.com/news/how-to-take-advantage-of-metas-advantage-shopping-campaigns/640002/", grade: "C", how: "Read in full. Source for the August 2022 launch and the 150 creative combinations." },
+    { title: "MediaPost, 2 June 2025: Meta Plans To Automate All Ad Creation By 2026: Report", url: "https://www.mediapost.com/publications/article/406315/", grade: "C", how: "Read in full. It reports a Wall Street Journal story." },
+    { title: "Google Ads API: Access levels and permissible use", url: "https://developers.google.com/google-ads/api/docs/api-policy/access-levels", grade: "C", how: "Read the section on access levels." },
+    { title: "Loot Drop database export, failed startups", url: "https://www.loot-drop.io/", grade: "C", how: "Local export. AI-written summaries, not independently verified. Source for the failed predecessors." },
+    { title: "Y Combinator company directory, address for Adle", url: "https://www.ycombinator.com/companies/adle", grade: "C", how: "Opened on 15 October 2026. The page returns File Not Found." }
+  ]
 }
 ];
 
