@@ -12171,6 +12171,165 @@ const STORIES = [
     { title: "Loot Drop database export, failed startups", url: "https://www.loot-drop.io/", grade: "C", how: "Local export. AI-written summaries, not independently verified. Source for the failed predecessors." },
     { title: "Supergrow home page, read 15 October 2026", url: "https://www.supergrow.ai/", grade: "C", how: "Read in full. Source for the input types, the length of a PostCast interview and the \"LinkedIn Verified Partner\" claim." }
   ]
+},
+{
+  slug: "adspirer",
+  name: "Adspirer",
+  country: "USA",
+  sector: "Information Technology",
+  productType: "AI agent and MCP server for ad campaigns",
+  aiType: "AI-native",
+  team: "solo",
+  outcome: "running",
+  evidence: "A",
+  added: "2026-10-15",
+  launchLabel: "November 2025",
+  outcomeLabel: "US$54.7K MRR verified by Stripe at the last sync, June 2026",
+  sticker: "$54.7K MRR in June 2026",
+  outcomeUsd: 656208,
+  months: 7,
+  teamLabel: "1 founder; LinkedIn lists 2 employees in October 2026",
+  fundingLabel: "None found; the profile says bootstrapped",
+  primaryFactor: "Distribution",
+  group: "marketing-content",
+  channel: "platform",
+  trend: "growing",
+  collections: ["platform"],
+  meters: { evidence: 3, copyable: 2, capital: 1 },
+  tags: ["AI-native", "Solo founder", "Bootstrapped", "Running", "B2B", "Advertising"],
+  product: "An AI agent for paid advertising that works inside ChatGPT, Claude, Claude Code, Cursor and other AI assistants. It connects to the customer's ad accounts at Google, Meta, LinkedIn, TikTok, Amazon and ChatGPT Ads, researches keywords, builds campaigns (always created paused), reports results and finds wasted spend. Scheduled agents can also watch the accounts and make reversible changes. The customer pays the ad platforms directly.",
+  why: "It went where the users already were: an app in ChatGPT's app store, a plugin in Claude's directory and in Claude Code, and setups for Cursor and Codex, in the months when these directories were new. It charges per tool call instead of a share of ad spend, so a small advertiser starts at US$49 a month. And it applied to the platforms' own API programs; the company says Google approved it in June 2026 and Amazon admitted it to its partner network.",
+  summary: [
+    `Adspirer is an <dfn>MCP server</dfn>: a program that offers tools to AI assistants through the Model Context Protocol, an open standard by which a chat assistant such as ChatGPT or Claude calls outside software. Its tools act on a customer's ad accounts at Google, Meta, LinkedIn, TikTok, Amazon and ChatGPT Ads: they research keywords, build campaigns, read results, change budgets and find wasted spend, all from a conversation. Each action is a <dfn>tool call</dfn>, one request from the assistant to one tool, and the price is a monthly number of them: 15 free, 150 for US$49, 600 for US$99 and 3,000 for US$199. The ad money goes from the customer to the platforms and never passes through Adspirer, so all of the subscription fee is the business's revenue.`,
+    `Abhilash Mekala, who describes himself as formerly at Meta and Uber and is based in San Francisco, created the public code repository on 27 October 2025 and took the first payment, US$25, in November 2025. He submitted a ChatGPT app with 36 tools on 20 December 2025, added Meta Ads on 5 January 2026, and became an official Claude Code plugin on 30 March 2026. Revenue read from Stripe by TrustMRR went from US$1,073 in February to US$68,747 in June 2026. At the last sync, on 29 June 2026, <dfn>MRR</dfn> (monthly recurring revenue, the subscription money that repeats every month) was US$54,684 from 742 active subscriptions, and customers had paid US$70,229 in the previous 30 days. The operating company is BETSONAGI LLC, d/b/a Adspirer. The profile lists a team of one, LinkedIn lists two employees, and no funding was found.`,
+    `The money figures are grade A, from Stripe, but they stop on 29 June 2026. The profile now says that the Stripe <dfn>API key</dfn>, a password that lets one program read another program's account, has expired, and it gives no expiry time. Nothing after 29 June is verified in either direction. The team size, the platform approvals, the tool counts and the agents come from the company, the founder or a partner. The page also shows what ended earlier companies that ran ads for small businesses: mostly the platforms' own automation.`
+  ],
+  factsCaption: "Stripe-verified MRR of US$54,684 and US$70,229 paid in 30 days at the last sync on 29 June 2026, seven months after the first payment; nothing later is verified",
+  factsRead: "How to read this table: a grade A value comes from Stripe through TrustMRR, as read up to the last sync on 29 June 2026; the Stripe API key has expired since then. A grade C value is the company's own page, a founder post, a partner's page or a public record such as GitHub or LinkedIn. A \"calc\" value was computed on this page from the rows above it.",
+  timelineLead: "From the first payment in November 2025 to US$54,684 of verified MRR seven months later, then no verified data. Each entry carries its grade.",
+  pricing: {
+    caption: "Adspirer prices in October 2026, from the company's pricing page and its llms.txt file (grade C)",
+    note: "Each plan is a monthly number of tool calls; the pricing page calls them tasks. Annual billing costs US$485, US$999 or US$2,000 a year, 15.9% to 17.5% less than twelve monthly payments. Every plan includes all ad platforms and the ChatGPT and Claude integrations, and the scheduled Ad Ops agents come with the paid plans. Ad spend is paid by the customer to the ad platforms and is not part of these prices.",
+    rows: [
+      ["Free Forever", "0", "0", "15 tool calls a month"],
+      ["Plus", "40.42", "49", "150 tool calls a month; US$485 a year"],
+      ["Pro", "83.25", "99", "600 tool calls a month; US$999 a year"],
+      ["Max", "166.67", "199", "3,000 tool calls a month; US$2,000 a year"]
+    ]
+  },
+  facts: [
+    { fact: "MRR at the last sync, 29 June 2026", value: "US$54,684", grade: "A", note: "Stripe through TrustMRR, last revenue sync on 29 June 2026 at 14:31 UTC. The profile says the Stripe API key has expired and gives no expiry time. MRR grew 30.0% in the 30 days before the sync.", src: [1] },
+    { fact: "Money paid in the 30 days before the sync", value: "US$70,229, up 25.2%", grade: "A", note: "Snapshot stored at the 29 June sync. The daily table for 16 September to 15 October 2026 shows US$0.00 for every day, because no data has arrived since.", src: [1] },
+    { fact: "Gap between the 30-day payments and MRR", value: "US$15,545, or 28.4% above MRR", grade: "X", note: "Calculated: US$70,229 minus US$54,684. A likely reason, not stated on the profile: an annual plan (US$485, US$999 or US$2,000) counts in full as a payment on the day it is paid, but only one twelfth of it counts in MRR. Ad spend is not the reason: the terms say that the platforms charge it to the customer directly.", src: [1, 2, 3] },
+    { fact: "Run rate from the MRR", value: "about US$656,208 a year", grade: "X", note: "Calculated: US$54,684 times 12. This is the headline value in dollars a year.", src: [1] },
+    { fact: "Verified revenue by month", value: "US$25 (November 2025), US$1,073 (February 2026), US$21,553 (March), US$36,411 (April), US$56,108 (May), US$68,747 (June, to the 29th)", grade: "A", note: "Monthly timeline on the profile; no payments in December 2025 or January 2026. The six months add up to US$183,917, the all-time total on the profile.", src: [1] },
+    { fact: "Growth from month to month", value: "+68.9% (April), +54.1% (May), +22.5% (June)", grade: "X", note: "Calculated from the monthly timeline. Growth slowed, but every month was higher than the one before. June 2026 was 3.19 times March.", src: [1] },
+    { fact: "Active subscriptions at the last sync", value: "742", grade: "A", note: "Snapshot from the 29 June 2026 sync.", src: [1] },
+    { fact: "MRR per active subscription", value: "about US$73.70 a month", grade: "X", note: "Calculated: US$54,684 divided by 742. Between the monthly prices of Plus (US$49) and Pro (US$99).", src: [1, 3] },
+    { fact: "Profile windows that end today", value: "US$0.00 in the last 3 months; US$141,117 in the last 6 months", grade: "A", note: "These windows end on 15 October 2026, but no data exists after 29 June, so they undercount. Calculated: the 6-month figure contains US$16,262 from part of April plus all of May and June.", src: [1] },
+    { fact: "Profit margin in the 30 days before the sync", value: "82.0%", grade: "C", note: "Shown on the profile, which does not say where the costs come from. This page treats the cost side as founder-supplied.", src: [1] },
+    { fact: "What the business keeps of each payment", value: "the whole subscription fee; no ad spend passes through", grade: "C", note: "Terms of Service, section 6: all advertising spend is charged directly by the advertising platforms to the customer's own accounts, and Adspirer does not receive, hold, manage or process it.", src: [2] },
+    { fact: "Prices, October 2026", value: "Free, then US$49, US$99 and US$199 a month", grade: "C", note: "For 15, 150, 600 and 3,000 tool calls a month. The founder wrote in December 2025 that per-tool-call pricing replaced a share of ad spend.", src: [3, 4, 5] },
+    { fact: "Team", value: "1 person on the profile; LinkedIn lists 2 employees", grade: "C", note: "The TrustMRR team size is founder-written. The LinkedIn company page, read 15 October 2026, gives the size band 2-10 employees and shows 2 people. No count exists for June 2026.", src: [1, 6] },
+    { fact: "Outside funding", value: "none found", grade: "C", note: "The profile says bootstrapped. No funding round was found on the company's pages, its newsroom or the founder's posts.", src: [1, 9, 5] },
+    { fact: "Operating company", value: "BETSONAGI LLC, d/b/a Adspirer", grade: "C", note: "Terms of Service and privacy policy. The terms are governed by the laws of Delaware.", src: [2, 14] },
+    { fact: "Tools offered to the AI assistants", value: "36 in December 2025; 430 documented tools in October 2026", grade: "C", note: "Founder's thread on the ChatGPT app submission, 20 December 2025, and the company's llms.txt file. Anthropic's plugin page describes 91 tools in the Claude Code plugin.", src: [5, 3, 7] },
+    { fact: "Claude Code plugin installs", value: "2,950", grade: "C", note: "Anthropic's plugin directory page, read 15 October 2026. Installs are not customers; many are free accounts.", src: [7] },
+    { fact: "Estimated users", value: "about 2,000", grade: "C", note: "Founder-written field on the profile.", src: [1] },
+    { fact: "Scale claimed by a partner", value: "about 3,000 customer environments and about 50 million MCP tool calls a day", grade: "C", note: "BlueRock's customer story. Not verified. Calculated: 3,000 accounts on the Max plan's 3,000 calls a month would make about 300,000 calls a day, so the 50 million cannot be billed tool calls.", src: [12, 3] },
+    { fact: "Time from the first payment to the headline", value: "7 months", grade: "X", note: "Calculated: November 2025 to June 2026. The profile gives 1 January 2026 as the founding date, after the first payment.", src: [1] }
+  ],
+  timeline: [
+    { when: "27 October 2025", what: "The founder creates the public GitHub repository ads-mcp, which later holds the plugins and skills for Claude Code and Cursor.", grade: "C", src: [8] },
+    { when: "November 2025", what: "First verified payment: US$25.", grade: "A", src: [1] },
+    { when: "11 to 16 December 2025", what: "The founder posts that agencies charging a share of ad spend gain from bloated budgets, and that Adspirer charges per tool call instead. He also writes that AI tool builders should think about MCP distribution.", grade: "C", src: [5] },
+    { when: "20 December 2025", what: "He submits Adspirer v1.0, the first ChatGPT app, to OpenAI's review. Each of its 36 tools needed annotations; he says it took about two hours.", grade: "C", src: [5] },
+    { when: "5 January 2026", what: "Meta Ads support goes live: Facebook and Instagram campaigns from ChatGPT or Claude. Three platforms: Google, TikTok and Meta.", grade: "C", src: [5] },
+    { when: "15 February 2026", what: "He posts a video on creating Google Ads campaigns from Claude Code and hosts an event listed on Luma, Build Your AI Marketing Stack with OpenClaw.", grade: "C", src: [5] },
+    { when: "March 2026", what: "Verified revenue reaches US$21,553, from US$1,073 in February.", grade: "A", src: [1] },
+    { when: "30 March 2026", what: "Adspirer becomes an official Claude Code plugin, installed from the plugin directory.", grade: "C", src: [5, 7] },
+    { when: "April to May 2026", what: "Verified revenue: US$36,411 in April, US$56,108 in May.", grade: "A", src: [1] },
+    { when: "13 June 2026", what: "The company announces Google Ads API approval \"at the agency level\".", grade: "C", src: [9] },
+    { when: "14 June 2026", what: "The company announces admission to the Amazon Ads Partner Network. Amazon Ads becomes its sixth ad platform.", grade: "C", src: [10] },
+    { when: "29 June 2026", what: "Last Stripe sync: MRR US$54,684, 742 active subscriptions, US$70,229 paid in 30 days, US$68,747 in June. No verified data after this day.", grade: "A", src: [1] },
+    { when: "14 July 2026", what: "Launch of Ad Ops agents, which run on a schedule at a level the advertiser chooses, from watch-and-alert to autonomous reversible changes.", grade: "C", src: [11] },
+    { when: "8 October 2026", what: "Latest push to the public GitHub repository. The founder still posts on X on 13 October. No new revenue figure.", grade: "C", src: [8, 5] }
+  ],
+  mechanism: [
+    { title: "Distribution", text: "In December 2025 the founder wrote that users do not adopt because of features but because you showed up where they already were. Adspirer is an app in ChatGPT's app store, a plugin in Claude's directory and an official Claude Code plugin with 2,950 installs, with setups for Cursor, Codex, Windsurf and OpenClaw. The sign-in during the install creates the free account, so the assistant's directory is the shop window." },
+    { title: "Tools instead of screens", text: "The founder wrote that ChatGPT and Claude are the interface, so he builds tools, not a dashboard. In a test he posted on 22 March 2026, the MCP tools built a full Performance Max campaign in 20 seconds with 15 tool calls, while Perplexity's computer-use agent, which works through the ad screens, needed 15 minutes." },
+    { title: "Price per tool call, not per ad spend", text: "Agencies and many ad tools charge a percentage of ad spend. Adspirer charges for the number of tool calls, so an advertiser with US$1 million of spend pays the same as one with US$10,000 if both use the same number of tools, in the founder's words. A small advertiser can start for US$49 a month." },
+    { title: "Platform approvals and guardrails", text: "The company applied to the platforms' API programs: it announced Google Ads API approval and admission to the Amazon Ads Partner Network in June 2026. To make an AI acting on real budgets acceptable, new campaigns are created paused, new spend waits for approval, every action is logged, and autonomous agents may only make changes from a list of reversible ones." }
+  ],
+  howBuilt: {
+    intro: "These details come from the company's own pages, the founder's posts and the technology list on the TrustMRR profile. They are grade C.",
+    items: [
+      "A remote MCP server at mcp.adspirer.com/mcp. Assistants connect over Streamable HTTP or SSE and sign in with OAuth 2.1 with PKCE. The company says it does not collect or store the passwords of the connected accounts.",
+      "Ad accounts connect through each platform's own authorization: OAuth or another approved method for Google, Microsoft, Meta, LinkedIn, TikTok and Amazon, and an API key for ChatGPT Ads. Contact data sent to a platform as a conversion is hashed with SHA-256 first.",
+      "The technology list on the profile names Next.js, FastAPI, Google Cloud, Docker, Redis, GraphQL, Clerk, Stripe, Datadog, Twilio and GitHub Actions, and the model providers Anthropic and OpenAI. In chat use the customer's own assistant is the model; no source says which model runs the scheduled agents.",
+      "The ChatGPT app passed OpenAI's review: every tool needed annotations (readOnlyHint, destructiveHint, openWorldHint), at least five test cases and three negative test cases, and the server had to prove ownership of its domain.",
+      "Plugins and skills for Claude Code and Cursor are in a public GitHub repository under the MIT license. The documentation runs on Mintlify and has its own llms.txt file for AI agents.",
+      "Runtime security and monitoring for the MCP traffic come from BlueRock, according to BlueRock's customer story."
+    ],
+    src: [3, 14, 1, 5, 8, 12]
+  },
+  predecessorsIntro: "Four companies in the Loot Drop database promised to take ad management off a small advertiser's hands, and failed. The values below are from that database and are not independently verified.",
+  predecessors: [
+    { name: "Trada", years: "2008 to 2015", funding: "US$19M", cause: "Competition", promise: "A marketplace of paid-search experts who ran small businesses' Google AdWords campaigns.", died: "Human experts were costly to scale, and Google's own automated campaign tools reduced the need for them.", url: "https://www.loot-drop.io/startup/655-trada" },
+    { name: "Automate Ads", years: "2015 to 2018", funding: "US$1.5M", cause: "Competition", promise: "Automated management of Facebook and Instagram ad campaigns.", died: "Facebook and Google kept improving their own ad tools, and the product depended on their APIs.", url: "https://www.loot-drop.io/startup/1100-automate-ads" },
+    { name: "Metigy", years: "2014 to 2022", funding: "US$14M", cause: "No Market Need", promise: "An AI marketing brain for small businesses that recommended content and ad spend.", died: "Its recommendations were generic. Small businesses wanted the work done for them, not a dashboard of advice, and the money ran out.", url: "https://www.loot-drop.io/startup/2338-metigy" },
+    { name: "Admazely", years: "2012 to 2014", funding: "US$2.3M", cause: "Unit Economics", promise: "Simple retargeting ads for small web shops.", died: "Small shops had small ad budgets, so each customer cost more to acquire than it brought in.", url: "https://www.loot-drop.io/startup/1830-admazely" }
+  ],
+  whatChanged: [
+    `All four sold a layer between small advertisers and the large ad platforms, and in three of them the platforms' own tools or the customers' small budgets ended it. Adspirer makes the same bet on the same platforms, and the platforms are still adding automation: Performance Max for all Google advertisers since November 2021, AI Max for Search campaigns from May 2025, and a Meta Advantage+ setup that applies AI to sales, app and leads campaigns from February 2025.`,
+    `Three things differ. The work that Trada paid human experts for, and that Metigy only recommended, is now done by a language model inside an assistant that the customer already pays for, so Adspirer builds tools, not screens, and the work gets done rather than suggested. It is found in the assistants' app directories instead of through sales. And the price is per tool call, not a share of ad spend, so a small advertiser pays US$49 a month and the business never holds ad money. None of this protects it from the platforms deciding to offer the same agent themselves.`
+  ],
+  copy: {
+    verdict: "The method, yes. The early timing, no longer.",
+    text: "In late 2025 the app directories inside ChatGPT and Claude were new and had few ad tools, and Adspirer was in them early. That opening is narrower now: a GitHub organization named Google Ads, linked to Google's developer site, publishes an open-source Google Ads MCP server, and Pipeboard offers a free plan for Meta. The method still works for any professional software with a public API that a specialist uses every day: wrap the API as tools, list them where the assistants are, and charge per call.",
+    steps: [
+      "Pick one paid job with official APIs and wrap each action as a tool, with reading and writing separated.",
+      "Publish it in the assistants' directories: ChatGPT's app store, Claude's plugin directory, Claude Code and Cursor.",
+      "Apply early for the platforms' API access levels and partner programs, because the reviews take time.",
+      "Charge per tool call, with a free tier large enough to test in one session.",
+      "Create every change paused or reversible, require approval for new spend, and write the terms so that the customer owns the spend."
+    ],
+    open: "Jobs that run through official APIs and cost specialists hours each week: retail media, email marketing platforms, app store ads, and cloud cost management."
+  },
+  watch: [
+    { title: "Verification stopped on 29 June 2026", text: "The profile says the Stripe API key that TrustMRR reads has expired, with no expiry time. Every verified figure ends on 29 June, and the daily table shows US$0.00 for every day since, which says nothing in either direction. The latest signs that the business runs are the agents launch on 14 July, a push to the public repository on 8 October and a post by the founder on 13 October 2026, none of them with a figure." },
+    { title: "The platforms automate the same job", text: "Google made Performance Max available to all advertisers on 2 November 2021 and announced AI Max for Search campaigns on 6 May 2025. Meta made its Advantage+ setup apply AI to sales, app and leads campaigns from February 2025, and on 3 June 2025 MediaPost, citing The Wall Street Journal, reported a plan to let brands create and target ads with Meta's AI tools by 2026. Each step moves part of what an agent like Adspirer does into the platform's own product." },
+    { title: "API access is granted, and can be withdrawn", text: "The Google Ads API has access levels that each need an application: Basic Access allows 15,000 operations a day, Standard Access has no daily limit. LinkedIn opens its Advertising API only to approved developers. Adspirer's privacy policy shows a partner duty too: for data received through Meta's Muse connector platform it must notify Meta of an incident within 48 hours. Adspirer says it holds Google approval \"at the agency level\", a term that Google's access page does not use. Automate Ads, a predecessor, depended on the same kind of access." },
+    { title: "An AI agent spending real budgets", text: "The terms say that AI output can include incorrect values, \"for example, budget or bid amounts\", that Adspirer is not liable for ad spend or budget overruns, and that its liability is capped at the customer's most recent monthly fee. The guardrails are the company's own: campaigns are created paused, new spend waits for approval, and autonomous agents may only make changes from a list of reversible ones. No outside party has tested them." },
+    { title: "Competitors, including free ones", text: "The GitHub organization googleads, named Google Ads and linked to Google's developer site, publishes an open-source Google Ads MCP server, created on 3 October 2025, with 1,042 stars; its README lists tools that read account data. Pipeboard's Meta Ads MCP server has a free plan, a Meta Business Partner badge and 1,305 stars. Adspirer's own comparison page lists Ryze AI, Optmyzr, Smartly, Skai, Madgicx, Bïrch, Opteo and Adzviser." },
+    { title: "Claims that no one outside has checked", text: "BlueRock's customer story gives about 3,000 customer environments and about 50 million MCP tool calls a day, which cannot be billed calls (about 300,000 a day even if every account were on the Max plan). The Google and Amazon approvals appear only on Adspirer's own newsroom, and the team size of one is the founder's own entry, while LinkedIn lists two employees." }
+  ],
+  sources: [
+    { title: "TrustMRR: Adspirer profile, read 15 October 2026", url: "https://trustmrr.com/startup/adspirer", grade: "A", how: "Read the markdown profile (https://trustmrr.com/startup/adspirer.md) in full. Revenue, the monthly timeline, MRR and the subscription count come from Stripe (grade A); the description, team size, funding, user estimate, technology list and founding date are founder-written (grade C). Last revenue sync 29 June 2026 at 14:31 UTC; the Stripe API key has expired, with no expiry time given." },
+    { title: "Adspirer Terms of Service", url: "https://www.adspirer.com/terms", grade: "C", how: "Read in full. Source for the operating company, the separation of ad spend, the AI-output clauses and the liability cap." },
+    { title: "Adspirer llms.txt file", url: "https://www.adspirer.com/llms.txt", grade: "C", how: "Read in full. The company's machine-readable summary: product, MCP server address and sign-in method, platforms, assistants, tool count, prices, GitHub repository and documentation." },
+    { title: "Adspirer pricing page", url: "https://www.adspirer.com/pricing", grade: "C", how: "Read the page and its embedded price data. The plan cards load by script; the prices were read from the page's metadata, which matches the llms.txt file." },
+    { title: "Abhilash Mekala on X (@abhilashreddi): profile and posts from 9 December 2025 to 13 October 2026", url: "https://x.com/abhilashreddi", grade: "C", how: "Read the profile and two pages of the timeline through api.fxtwitter.com in full. The third page returned no posts. Source for the pricing posts, the ChatGPT app submission, the platform launches and the Claude Code plugin." },
+    { title: "LinkedIn: Adspirer company page, read 15 October 2026", url: "https://www.linkedin.com/company/adspirer", grade: "C", how: "Read the public page. Source for the size band of 2-10 employees and the 2 employees listed." },
+    { title: "Claude plugin directory: Adspirer Ads Agent, read 15 October 2026", url: "https://claude.com/plugins/adspirer-ads-agent", grade: "C", how: "Read in full. Anthropic's listing, made by Adspirer, with the install count and the tool count." },
+    { title: "GitHub repository amekala/ads-mcp: README and repository record", url: "https://github.com/amekala/ads-mcp", grade: "C", how: "Read the README in full and the repository record through the GitHub API: created 27 October 2025, last push 8 October 2026, MIT license." },
+    { title: "Adspirer newsroom, 13 June 2026: Adspirer Earns Google Ads API Approval at the Agency Level", url: "https://www.adspirer.com/newsroom/adspirer-google-ads-api-agency-approval", grade: "C", how: "Read in full. The company's own announcement; Google's side was not found." },
+    { title: "Adspirer newsroom, 14 June 2026: Adspirer Approved as an Amazon Ads Partner; Amazon Ads Now Live", url: "https://www.adspirer.com/newsroom/adspirer-amazon-ads-partner", grade: "C", how: "Read in full. The company's own announcement." },
+    { title: "Adspirer newsroom, 14 July 2026: Adspirer Launches Autonomous Ad Ops Agents", url: "https://www.adspirer.com/newsroom/adspirer-ad-ops-agents", grade: "C", how: "Read in full. Source for the autonomy levels and the rule that auto-apply covers only reversible changes." },
+    { title: "BlueRock customer story: How Adspirer secures the full lifecycle of AI advertising operations", url: "https://www.bluerock.io/customers/adspirer", grade: "C", how: "Read in full. A partner's marketing page. Source for the customer environments and the tool calls a day, which this page could not verify." },
+    { title: "Adspirer About page", url: "https://www.adspirer.com/about", grade: "C", how: "Read in full. Source for the guardrails: paused campaigns, approval for consequential moves, activity log." },
+    { title: "Adspirer Privacy Policy", url: "https://www.adspirer.com/privacy", grade: "C", how: "Read the sections on connected platforms, authorization, security incidents and the operating company." },
+    { title: "Google Ads API: Access levels and permissible use", url: "https://developers.google.com/google-ads/api/docs/api-policy/access-levels", grade: "C", how: "Read in full. Google's rules for API access levels and daily operation limits." },
+    { title: "Google Ads and Commerce blog, 2 November 2021: Performance Max campaigns launch to all advertisers", url: "https://blog.google/products/ads-commerce/performance-max/", grade: "C", how: "Read in full. Date and scope of the launch." },
+    { title: "Google Ads and Commerce blog, 6 May 2025: Introducing AI Max for Search campaigns", url: "https://blog.google/products/ads-commerce/google-ai-max-for-search-campaigns/", grade: "C", how: "Read in full. Date and rollout of AI Max for Search." },
+    { title: "Search Engine Land, 7 February 2025: Meta simplifies Advantage+ campaign setup, adds leads campaigns", url: "https://searchengineland.com/meta-advantage-campaign-setup-leads-campaigns-451713", grade: "C", how: "Read in full. Trade press report on Meta's streamlined Advantage+ setup." },
+    { title: "MediaPost, 3 June 2025: Meta Plans To Automate All Ad Creation By 2026: Report", url: "https://www.mediapost.com/publications/article/406315/", grade: "C", how: "Read in full. Trade press report citing The Wall Street Journal; the Journal's article was not read." },
+    { title: "Microsoft Learn: LinkedIn Marketing API, increasing access", url: "https://learn.microsoft.com/en-us/linkedin/marketing/increasing-access", grade: "C", how: "Read in full. LinkedIn's rules for access to the Advertising API." },
+    { title: "GitHub repository googleads/google-ads-mcp: README and repository record", url: "https://github.com/googleads/google-ads-mcp", grade: "C", how: "Read the README and the repository record through the GitHub API: created 3 October 2025, 1,042 stars. The organization record names it Google Ads and links to developers.google.com/ads; GitHub does not mark it verified." },
+    { title: "GitHub repository pipeboard-co/meta-ads-mcp: repository record", url: "https://github.com/pipeboard-co/meta-ads-mcp", grade: "C", how: "Read the repository record through the GitHub API: description, created 11 April 2025, 1,305 stars." },
+    { title: "Adspirer blog: 10 Best AI Tools for PPC Managers in 2026", url: "https://www.adspirer.com/blog/best-ai-tools-ppc-managers-2026", grade: "C", how: "Read in full. The company's own comparison, with a disclosure that Adspirer is its product. Source for the competitor names." },
+    { title: "Loot Drop database export, failed startups", url: "https://www.loot-drop.io/", grade: "C", how: "Local export. AI-written summaries, not independently verified. Source for the failed predecessors." }
+  ]
 }
 ];
 
