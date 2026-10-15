@@ -12827,6 +12827,170 @@ const STORIES = [
     { title: "Loot Drop database export, 1,749 failed startups", url: "https://www.loot-drop.io/", grade: "C", how: "Local export. AI-written summaries, not independently verified. Source for the failed predecessors." },
     { title: "Florian Pariset on X, 22 August 2026: work routed to the subscriptions customers already pay for", url: "https://x.com/mindtheflo/status/2091065543763661100", grade: "C", how: "Read in full through api.fxtwitter.com." }
   ]
+},
+{
+  slug: "superbulletai",
+  name: "SuperbulletAI",
+  country: "USA",
+  sector: "Information Technology",
+  productType: "AI game builder for Roblox Studio",
+  aiType: "AI-native",
+  team: "solo",
+  outcome: "running",
+  evidence: "A",
+  added: "2026-10-15",
+  launchLabel: "2 August 2025",
+  outcomeLabel: "US$19.2K revenue in the last 30 days, October 2026",
+  sticker: "$230K/yr run rate",
+  outcomeUsd: 230028,
+  months: 14,
+  teamLabel: "1 founder, solo at launch; no other team member named in October 2026",
+  fundingLabel: "Saudi accelerator investors named by the company, amount not disclosed",
+  primaryFactor: "Niche",
+  group: "build-software",
+  channel: "communities",
+  trend: "growing",
+  collections: ["platform"],
+  meters: { evidence: 3, copyable: 2, capital: 2 },
+  tags: ["AI-native", "Solo founder", "Funded", "Running", "B2C", "Developer tools"],
+  product: "A desktop app and Roblox Studio plugin that builds parts of a Roblox game from a written request: game systems, user interfaces, animations, visual effects, sounds and 3D builds, written straight into the user's project after the AI has read it. Users pay for AI tokens with a monthly plan or one-time top-ups, and can install ready-made systems from a marketplace.",
+  why: "The founder had made Roblox games for nine years, with 200 million visits on his own games, and his launch post on the official Roblox developer forum was read 112,656 times. He launched free, with 1 million tokens a month, and charged US$20 a month for heavy use. Then he added top-ups and a marketplace of tested systems that the AI installs, instead of writing every system from nothing.",
+  summary: [
+    `SuperbulletAI is an AI game builder for <dfn>Roblox</dfn>, an online platform where people play games that other users make. Roblox games are made in <dfn>Roblox Studio</dfn>, Roblox's free editor, and programmed in <dfn>Luau</dfn>, Roblox's version of the Lua programming language. SuperbulletAI is a desktop app with a Studio <dfn>plugin</dfn>, an add-on that runs inside Studio, so its AI can read the whole project and write code, user interfaces, animations, visual effects and sounds into it. The AI is made of <dfn>large language models</dfn>, programs trained on very large amounts of text that can write text and code; its roadmap and release notes name Anthropic's Claude, OpenAI's GPT-4.1 and DeepSeek. Customers pay for <dfn>tokens</dfn>, the units of text that a language model reads and writes: 1 million a month are free, 11 million cost US$20 a month.`,
+    `The founder posts as Froredion on X, on the Roblox Developer Forum and on TrustMRR. On 2 August 2025 he launched SuperbulletAI on the forum, free for everyone, after what he called two months of solo development. He wrote that he had started making Roblox games at 12, was now 21, and had 200 million visits on his own games. The studio's own site names one founder, Erickson Talaue, as studio head and co-founder with "200M+ visits as solo creator", and shows the seat of a technical co-founder as open. Superbullet Studios also makes Roblox games and says it is partnered with Do Big Studios, a Roblox game publisher. In February 2026 the founder wrote that the company was venture-funded, had 25,000 registered users and made about US$12,000 a month. The website names two Saudi investors, Merak Capital and Impact46.`,
+    `The headline number is grade A. <dfn>TrustMRR</dfn>, a site that reads revenue directly from a company's payment processor through an API key, shows US$19,169 of Stripe revenue in the 30 days to 15 October 2026, and <dfn>MRR</dfn>, monthly recurring revenue from subscriptions, of US$12,256 from 619 active subscriptions. Monthly Stripe revenue rose from US$12,083 in March to US$18,044 in September 2026. Stripe is not the only payment route: the website's code also has checkouts for Tebex and Lemon Squeezy, so money taken there, and everything before February 2026, is not in these figures. The investment, the user counts and the claims about the models are the company's own statements, grade C.`
+  ],
+  factsCaption: "Stripe-verified revenue of US$19,169 in 30 days and US$12,256 MRR in October 2026, 14 months after a free launch on the Roblox developer forum",
+  factsRead: "How to read this table: a grade A value comes from TrustMRR, which reads the company's Stripe account through the Stripe API. A grade C value is a statement by the founder or the company, on X, on the forum, or in the website's own text and code. A \"calc\" value was computed on this page from the rows above it.",
+  timelineLead: "From a free launch post on the Roblox developer forum to US$18,044 of Stripe revenue in one month, in 13 months. Each entry carries its grade.",
+  pricing: {
+    caption: "SuperbulletAI prices in October 2026, read from the plan list in the website's JavaScript code because the pricing page loads by script (grade C)",
+    note: "A token is a unit of text that a language model reads or writes. The Pro plan includes 11 million tokens a month with no daily limit, and unused tokens roll over to the next month. The yearly Pro plan costs US$192 and gives 120 million tokens at once, 20% less than twelve monthly payments. One-time top-ups come in 11 sizes, from US$20 for 10 million tokens to US$2,000 for 1 billion tokens. Systems and templates in the marketplace are paid with these credits.",
+    rows: [
+      ["Free", "0", "0", "1M tokens a month, 150K a day"],
+      ["Pro", "16", "20", "11M tokens a month, no daily limit"],
+      ["Token top-up, smallest", "20 one-time", "", "10M tokens"],
+      ["Token top-up, largest", "2,000 one-time", "", "1B tokens"]
+    ]
+  },
+  facts: [
+    { fact: "Revenue in the last 30 days, to 15 October 2026", value: "US$19,169", grade: "A", note: "TrustMRR, read from the Stripe API, last synced 15 October 2026. The profile's stored snapshot shows US$19,189 and growth of 10.6% over the 30 days before. The account belongs to Superbullet, LLC, which also runs a Roblox game studio; the profile does not split revenue by product.", src: [1] },
+    { fact: "Monthly recurring revenue, October 2026", value: "US$12,256 from 619 active subscriptions", grade: "A", note: "TrustMRR, Stripe API. Growth of 2.1% in the last 30 days.", src: [1] },
+    { fact: "Run rate from the last 30 days", value: "about US$230,000 a year", grade: "X", note: "Calculated: US$19,169 × 12 = US$230,028. MRR × 12 is US$147,072, the part that renews without a new purchase.", src: [1] },
+    { fact: "Part of the last 30 days above the monthly subscription value", value: "about 36%", grade: "X", note: "Calculated: (US$19,169 − US$12,256) ÷ US$19,169. The plan list sells one-time top-ups and a yearly plan paid at once, which count fully as revenue but not as MRR; TrustMRR does not break the difference down.", src: [1, 4] },
+    { fact: "Stripe revenue by month, 2026", value: "US$5,088 (February), US$12,083 (March), US$15,408 (June), US$18,044 (September)", grade: "A", note: "TrustMRR monthly timeline. February is the first month of the Stripe account. September is the best full month. Calculated: 49.3% more in September than in March.", src: [1] },
+    { fact: "Last three full months against the three before", value: "16.9% more", grade: "X", note: "Calculated: July to September 2026, US$47,432, against April to June, US$40,585.", src: [1] },
+    { fact: "All Stripe revenue to date", value: "US$115,237", grade: "A", note: "TrustMRR, February to 15 October 2026. Payments taken through Lemon Squeezy or Tebex, and everything before February 2026, are not included.", src: [1, 4] },
+    { fact: "Other payment providers", value: "Lemon Squeezy and Tebex, besides Stripe", grade: "C", note: "The website's code has a Lemon Squeezy checkout, a Tebex checkout, and a Stripe checkout with a step that moves a subscriber from Tebex to Stripe. An internal revenue panel in the same code splits money between Stripe and Tebex.", src: [4] },
+    { fact: "Revenue stated by the founder, February 2026", value: "about US$12,000 a month", grade: "C", note: "Founder's post on X, 18 February 2026. Stripe recorded US$5,088 in that month, so most of it, if the statement is right, came through the other providers.", src: [8, 1] },
+    { fact: "Revenue and users in the founder's X profile, October 2026", value: "about US$14,000 a month and more than 29,000 users", grade: "C", note: "The profile also says US$0 was spent on marketing. Read 15 October 2026.", src: [7] },
+    { fact: "Registered users", value: "more than 25,000 (18 February 2026) and more than 29,000 (27 February 2026)", grade: "C", note: "Founder's posts on X. The website's page description says \"Join 1M+ creators\", which no other source supports.", src: [8, 10, 3] },
+    { fact: "Marketplace", value: "added 25 February 2026, paid with credits", grade: "C", note: "Release notes add the \"marketplace platform\" on 25 February 2026, and the terms have a marketplace section. The website's internal metrics code calls marketplace volume \"Credit spent on systems and templates. Already-recognised revenue changing hands, not new cash\", split into what the platform keeps and what creators earn. No source states the split.", src: [4, 5] },
+    { fact: "Launch", value: "2 August 2025, free for everyone", grade: "C", note: "Founder's post on the Roblox Developer Forum, after \"2 months of intense solo development\". Every user got 1 million free tokens a month.", src: [2] },
+    { fact: "Reach of the launch post", value: "112,656 views, 986 likes and 216 posts", grade: "C", note: "Counters of the forum thread, read 15 October 2026.", src: [2] },
+    { fact: "Releases of the app", value: "184, from 27 July 2025 to 15 October 2026", grade: "C", note: "Release list on the downloads page. Calculated: about 2.9 a week over 445 days.", src: [4] },
+    { fact: "Founder's background", value: "9 years of Roblox games, 200 million visits on his own games", grade: "C", note: "Launch post, and the studio site's founder entry: \"200M+ visits as solo creator\" and \"Contributed to 5B+ visits as tech lead\".", src: [2, 6] },
+    { fact: "Team, October 2026", value: "1 named founder", grade: "C", note: "The studio site shows the technical co-founder seat as \"[Looking for co-founder]\", lists COO, CMO, CFO and CTO roles without names, and marks its team section \"Work-In-Progress\". No headcount is published.", src: [6] },
+    { fact: "Investors named on the website", value: "Merak Capital and Impact46, Saudi Arabia", grade: "C", note: "Under \"Invested By\": \"Sovereign-backed by Saudi Arabia — through the National Development Fund and Social Development Bank\". The Merak logo links to the launch of Exel by Merak, Merak's gaming fund and accelerator. No amount is given.", src: [3, 15] },
+    { fact: "Investment terms of Exel by Merak", value: "US$300,000 per company, as equity", grade: "C", note: "Jawlah, 18 August 2025: 17 startups in the first cohort received US$5.1 million in total, with founding support from the National Development Fund and the Social Development Bank. The article does not name Superbullet.", src: [14] },
+    { fact: "Seed round", value: "US$3 million to US$4 million, said to be close in February 2026", grade: "C", note: "Founder's post on X, 8 February 2026. On 18 February he listed \"Seed round millions of dollars\" under what is coming. No investor or news report that we found confirms it.", src: [9, 8] },
+    { fact: "Minimum age of users", value: "13", grade: "C", note: "Terms of service. The privacy policy asks users between 13 and 18 to review it with a parent or guardian. The roadmap calls the free plan \"perfect for students and indie developers\".", src: [5, 4] },
+    { fact: "Governing law of the terms", value: "Saudi Arabia", grade: "C", note: "Terms of service, section 12. TrustMRR lists the company's country as the US.", src: [5, 1] },
+    { fact: "Time from launch to the October 2026 figure", value: "14 months", grade: "X", note: "Calculated: 2 August 2025 to 15 October 2026, 439 days.", src: [1, 2] }
+  ],
+  timeline: [
+    { when: "About 2016", what: "The founder starts making Roblox games at 12, by his own account. Over nine years his own games reach 200 million visits.", grade: "C", src: [2] },
+    { when: "May to June 2025", what: "First features, by the roadmap: reading a Studio project, generating user interfaces and game systems, and models based on GPT-4.1 and Claude Sonnet 4.0.", grade: "C", src: [4] },
+    { when: "27 July 2025", what: "Earliest release in the public list, version 0.1.12, with file search, grep and console-reading tools.", grade: "C", src: [4] },
+    { when: "2 August 2025", what: "Launch on the Roblox Developer Forum after two months of solo development, free with 1 million tokens a month. Version 0.2.0 adds the free plan the same day.", grade: "C", src: [2, 4] },
+    { when: "21 August 2025", what: "Release notes add models named BulletGPT-5, BulletMindV1 and BulletLearnV1. The founder presents BulletLearn on the forum as \"The Duolingo for Roblox Scripting\".", grade: "C", src: [4, 13] },
+    { when: "3 December 2025", what: "Claude Opus 4.5 is added to the app.", grade: "C", src: [4] },
+    { when: "8 December 2025", what: "Founding date of Superbullet, LLC, as entered on TrustMRR.", grade: "C", src: [1] },
+    { when: "17 January 2026", what: "The founder explains the plan on X: Roblox has about 70 libraries and Python more than 500,000, so SuperbulletAI will build reusable Roblox libraries for its AI.", grade: "C", src: [11] },
+    { when: "February 2026", what: "First month of the Stripe account that TrustMRR reads: US$5,088.", grade: "A", src: [1] },
+    { when: "18 February 2026", what: "The founder writes that the company is venture-funded, has more than 25,000 registered users and makes about US$12,000 a month.", grade: "C", src: [8] },
+    { when: "25 to 27 February 2026", what: "Marketplace added on 25 February. On 27 February the founder announces the platform as live, with more than 29,000 users after six months of beta.", grade: "C", src: [4, 10] },
+    { when: "March 2026", what: "Stripe revenue reaches US$12,083 in the month.", grade: "A", src: [1] },
+    { when: "26 April 2026", what: "Settings for Opus 4.7, an Anthropic model, are added; a fix for DeepSeek models follows on 30 April.", grade: "C", src: [4] },
+    { when: "September 2026", what: "Best month so far: US$18,044 of Stripe revenue.", grade: "A", src: [1] },
+    { when: "15 October 2026", what: "US$19,169 in the last 30 days and US$12,256 MRR from 619 subscriptions. Version 0.4.6 adds procedural map generation.", grade: "A", src: [1, 4] }
+  ],
+  mechanism: [
+    { title: "A builder from the platform's own community", text: "The founder had nine years of Roblox games behind him and launched where Roblox developers read: the official developer forum. The post was read 112,656 times. His X profile says the company spent nothing on marketing; its channels were forum posts, demo videos on X and a Discord server." },
+    { title: "Free tokens, then paid tokens", text: "Every user gets 1 million tokens a month free. Heavy users pay US$20 a month for 11 million, or buy top-ups from US$20 to US$2,000. In the last 30 days revenue was 1.56 times MRR, so a large part came from purchases other than monthly renewals." },
+    { title: "Reusable systems instead of new code", text: "The founder's argument is that Roblox has few shared libraries, so an AI writes every system from nothing and makes mistakes. SuperbulletAI installs tested templates and marketplace systems and lets the AI adapt them. He wrote that a movement system with sliding and sprinting costs US$0.02 to add this way, against US$20 to US$100 of model cost in other tools; that comparison is his own." },
+    { title: "Inside Studio, shipped often", text: "The app reads the project, the output log and the console, writes into Studio directly, and keeps checkpoints so that changes can be undone. It shipped 184 versions in 445 days, about three a week, and added new models such as Claude Opus 4.5 in December 2025." }
+  ],
+  howBuilt: {
+    intro: "These details come from the website's code and text, its documentation and the founder's posts. They are grade C.",
+    items: [
+      "A desktop app for Windows and Mac with a Roblox Studio plugin. It reads the project's properties, hierarchy and files, the output log and the console, and keeps checkpoints so that changes can be undone.",
+      "Models: the roadmap lists GPT-4.1 and Claude Sonnet 4.0 in June 2025; release notes add Claude Opus 4.5 in December 2025, and settings for Opus 4.7 and a DeepSeek fix in April 2026. In February 2026 the founder offered users the option to work with their own Claude or ChatGPT subscription alongside it.",
+      "BulletMindV1, a model of its own, appears in the release notes of August 2025, but the home page still calls it \"Coming soon\" and says its development begins at 2,000 subscribers. Which models run under the Bullet names is not stated.",
+      "3D models come through Roblox's own Cube 3D generation, by the documentation. Code follows a framework that the company calls SuperbulletFrameworkV1-Knit, and the app works with Rojo, a tool that syncs code files on disk with Studio.",
+      "The website uses Firebase for sign-in and has its own backend. Checkouts go through Stripe, Tebex and Lemon Squeezy.",
+      "Marketing: the founder's forum posts, demo videos on X and a Discord community. The X profile says US$0 on marketing."
+    ],
+    src: [4, 3, 23, 8, 2, 7]
+  },
+  predecessorsIntro: "Four companies in the Loot Drop database promised to make writing code or building games easier, or built a service on another company's game. The values below are from that database and are not independently verified.",
+  predecessors: [
+    { name: "Kite DevTool", years: "2014 to 2024", funding: "US$21M", cause: "Competition", promise: "AI code completion inside the programmer's editor.", died: "GitHub Copilot, with OpenAI's Codex model and Microsoft's distribution, gave better suggestions to more developers. The free product never made enough money.", url: "https://www.loot-drop.io/startup/2491-kite-devtool" },
+    { name: "Minefold", years: "2012 to 2015", funding: "US$120K", cause: "Unit Economics", promise: "Minecraft servers that any player could start in a click.", died: "A server for each user cost too much without a very large user base, and cloud companies and the game platforms added similar features themselves.", url: "https://www.loot-drop.io/startup/1177-minefold" },
+    { name: "Crejo.Fun", years: "2020 to 2022", funding: "US$3M", cause: "No Market Need", promise: "A no-code builder for apps and games, for creators in India.", died: "A general tool for creators who needed more followers, not another app to run and promote.", url: "https://www.loot-drop.io/startup/2303-crejofun" },
+    { name: "CodeMao", years: "2015 to 2021", funding: "US$360M", cause: "Legal/Regulatory", promise: "Game-like coding lessons for children aged 7 to 16, with 30 million registered users.", died: "China's Double Reduction Policy of July 2021 banned for-profit tutoring for school-age children and removed about 95% of its revenue.", url: "https://www.loot-drop.io/startup/2554-codemao" }
+  ],
+  whatChanged: [
+    `Kite and Minefold show the two usual endings for a tool built on someone else's platform. A bigger company with more distribution ships the same feature, as GitHub Copilot did to Kite, or the platform owner builds it in, as game platforms did to Minefold's servers. SuperbulletAI faces both: Roblox adds mesh generation, a playtest agent and a connection point for outside AI agents to Studio every few months, and general coding agents can already edit Studio through it.`,
+    `Two things are different. First, large language models made the product possible for one person: the founder built and launched it in two months on models from Anthropic, OpenAI and DeepSeek instead of building a model from the start. Second, it sells what Roblox and the general agents do not have: tested, Roblox-specific systems and templates, sold through a marketplace and installed by the AI. Whether that library stays ahead of Roblox's own tools is the open question.`
+  ],
+  copy: {
+    verdict: "The method, yes. The niche needs years on the platform.",
+    text: "A solo developer reached US$12,256 of verified monthly recurring revenue 14 months after launch by selling AI to the community he had worked in for nine years. The pattern works on other creation platforms, but it depended on a public record that the community could check.",
+    steps: [
+      "Choose one creation platform with its own editor and language, where you have shipped work that its developers can check.",
+      "Launch free on the platform's official developer forum, with a monthly token allowance, and answer the critical replies yourself.",
+      "Charge a flat monthly plan for a fixed number of tokens, and sell one-time top-ups to heavy users.",
+      "Build a library of tested, reusable systems that the AI installs and adapts, so each request needs fewer model calls."
+    ],
+    open: "Other platforms where people build games or apps inside one company's editor, with a scripting language that general coding tools know less well."
+  },
+  watch: [
+    { title: "Roblox builds the same tools", text: "Roblox's own Assistant was available to everyone in Studio by March 2025. On 20 March 2025 Roblox released Cube 3D, a 1.8-billion-parameter model for 3D generation. On 19 March 2026 it extended mesh generation in Assistant and added tools to its Studio MCP server, the standard interface through which outside AI agents such as Claude edit Studio; on 9 April 2026 it added a playtest agent, and on 19 August 2026 support for several connected AI clients. SuperbulletAI's FAQ says Roblox Assistant takes 52 to 53 seconds for a user interface that SuperbulletAI makes in 18; that test is its own." },
+    { title: "Roblox's terms decide what the tool may do", text: "The Roblox Terms of Use, in the version effective 1 November 2026, say that Roblox may monitor use of its APIs and \"may suspend access to the APIs by you or your API Client without notice\" if it believes the terms are broken, and that it may restrict AI tools for specific age groups of users. SuperbulletAI's release notes track the expiry of users' Roblox API keys, and its demos upload assets to Roblox automatically, so a change in these rules reaches it directly." },
+    { title: "One platform, one kind of customer", text: "All revenue comes from people who make Roblox games, and the product does not work without Roblox Studio. Minefold, above, depended on Minecraft in the same way. The studio's partnership with Do Big Studios, a Roblox game publisher, ties the company further to the same platform." },
+    { title: "Competitors at the same price", text: "Ropilot, a Roblox AI agent that also works with Claude, ChatGPT and Blender, now sells Ropilot Plus for US$20 a month, the price of SuperbulletAI Pro; in February 2026 the founder said it cost US$50. Lemonade calls itself \"The first agent for making games on Roblox\". A reply to the launch post said that GitHub Copilot with Rojo gives the same result." },
+    { title: "Only part of the money is verified", text: "TrustMRR reads only the Stripe account, which starts in February 2026. The website's code also takes payments through Tebex and Lemon Squeezy, so the true total may be higher, and part of the rise from February to March 2026 may be subscribers moved from Tebex to Stripe. Some company claims do not agree: the site says \"Join 1M+ creators\" while the founder says 29,000 users, and BulletMindV1 is listed as added in August 2025 but called \"Coming soon\" on the home page." },
+    { title: "The funding is not confirmed", text: "The founder calls the company venture-funded and wrote in February 2026 that a US$3 million to US$4 million seed round would close soon. The site shows Merak Capital and Impact46 as investors. No investor statement or news report that we found names Superbullet, and no amount is public. The terms are governed by Saudi law, while TrustMRR lists the company in the US." },
+    { title: "Users from age 13", text: "The founder started making Roblox games at 12. SuperbulletAI accepts users from 13, asks users between 13 and 18 to read its privacy policy with a parent, and calls its free plan \"perfect for students\". Paid AI plans sold to teenagers bring duties around consent, refunds and personal data. CodeMao, above, shows how fast rules for children's products can remove a business." },
+    { title: "Headcount not published", text: "Only one founder is named. The site's team section is empty and four executive roles have no names. The founder writes \"we\", and the roadmap describes libraries made by \"real human programmers\" and animators, so other people may work on it; how many is not known." }
+  ],
+  sources: [
+    { title: "TrustMRR: Superbullet, LLC, verified revenue profile, data as of 15 October 2026", url: "https://trustmrr.com/startup/superbullet-llc", grade: "A", how: "Read the markdown profile. Revenue, MRR and subscription figures in its Verification Sources section come from the Stripe API (grade A); the description and founding date are founder-written (grade C)." },
+    { title: "Roblox Developer Forum, 2 August 2025: SuperbulletAI launched the most powerful AI Game Builder for Roblox, and it's free for everyone to try", url: "https://devforum.roblox.com/t/superbulletai-launched-the-most-powerful-ai-game-builder-for-roblox-and-its-free-for-everyone-to-try/3856417", grade: "C", how: "Read the first post and the first replies through the forum's JSON interface. Founder's launch post; source for the launch date, the solo development, his background and the thread counters." },
+    { title: "SuperbulletAI home page, read 15 October 2026", url: "https://superbullet.ai/", grade: "C", how: "Read the pre-rendered page text in full, and the investor section in the site's JavaScript code. Source for the product description, the investor logos and the BulletMindV1 note." },
+    { title: "SuperbulletAI pricing, downloads, roadmap and FAQ pages, read 15 October 2026", url: "https://superbullet.ai/pricing", grade: "C", how: "These pages load by script; read their text in the site's JavaScript bundle. Source for the plans and top-ups, the 184 dated releases, the roadmap, the payment providers and the FAQ comparison with Roblox Assistant." },
+    { title: "SuperbulletAI terms of service and privacy policy", url: "https://superbullet.ai/terms-of-service", grade: "C", how: "Read the sections on age, governing law and the marketplace in the site's JavaScript bundle." },
+    { title: "Superbullet Studios website, About section", url: "https://superbulletstudios.com/", grade: "C", how: "The page loads by script; read the founders, team and partner text in its JavaScript bundle." },
+    { title: "Froredion on X, profile", url: "https://x.com/froredion", grade: "C", how: "Read the profile through api.fxtwitter.com on 15 October 2026. Source for the revenue, user and marketing figures in the bio." },
+    { title: "Froredion on X, 18 February 2026: Superbullet is a Roblox AI game creation platform", url: "https://x.com/froredion/status/2024250000642101461", grade: "C", how: "Read in full through api.fxtwitter.com, with a second version of the post from the same evening. Source for venture-funded, 25,000 users, about US$12,000 a month and the seed round plan." },
+    { title: "Froredion on X, 8 February 2026: Ropilot is essentially just Claude Code, repackaged", url: "https://x.com/froredion/status/2020622731109347580", grade: "C", how: "Read in full through api.fxtwitter.com. Source for the US$3 million to US$4 million seed round claim and the competitor's price then." },
+    { title: "Froredion on X, 27 February 2026: Introducing SuperbulletAI", url: "https://x.com/froredion/status/2027339207983906892", grade: "C", how: "Read in full through api.fxtwitter.com. Source for 29,000 users and six months of beta." },
+    { title: "Froredion on X, 17 January 2026: Roblox AI sucks, not because of AI", url: "https://x.com/froredion/status/2012544492231086227", grade: "C", how: "Read in full through api.fxtwitter.com. Source for the library argument." },
+    { title: "Froredion on X, 22 March 2026: Advanced Movement System now added to Superbullet", url: "https://x.com/froredion/status/2035725288051785828", grade: "C", how: "Read in full through api.fxtwitter.com. Source for the US$0.02 cost comparison." },
+    { title: "Roblox Developer Forum search results for SuperbulletAI", url: "https://devforum.roblox.com/search?q=superbulletai", grade: "C", how: "Read the result list through the forum's JSON interface. Source for the titles and dates of the founder's posts, including BulletLearn on 21 August 2025." },
+    { title: "Jawlah, 18 August 2025: Exel by Merak accelerator invests $5.1 million in 17 gaming startups", url: "https://jawlah.co/en/40480", grade: "C", how: "Read in full. Source for the US$300,000 per company and the backing of the accelerator. It does not name Superbullet." },
+    { title: "Merak Capital, 17 November 2024: Merak Capital launches Exel by Merak to empower gaming startups", url: "https://merak.capital/blog/merak-capital-launches-exel-by-merak-to-empower-gaming-startups-as-global-leaders-2", grade: "C", how: "Read in full. The SuperbulletAI site links to an older address of this page, which returns a not-found page; no Wayback copy of that address exists." },
+    { title: "Roblox Developer Forum, 20 March 2025: [Beta] Cube 3D Generation Tools and APIs for Creators", url: "https://devforum.roblox.com/t/beta-cube-3d-generation-tools-and-apis-for-creators/3558947", grade: "C", how: "Read the announcement through the forum's JSON interface. Roblox's own statement." },
+    { title: "Roblox Developer Forum, 19 March 2026: Assistant Updates: Mesh Generation, New MCP Server Tools, Screenshot Tool, and More", url: "https://devforum.roblox.com/t/assistant-updates-mesh-generation-new-mcp-server-tools-screenshot-tool-and-more/4527258", grade: "C", how: "Read the announcement through the forum's JSON interface." },
+    { title: "Roblox Developer Forum, 9 April 2026: [Studio Beta] Studio Assistant & MCP Playtest Agent", url: "https://devforum.roblox.com/t/studio-beta-studio-assistant-mcp-playtest-agent/4566767", grade: "C", how: "Read the announcement through the forum's JSON interface." },
+    { title: "Roblox Developer Forum, 19 August 2026: Studio MCP: Multi-Agent Improvements and Connected AI Clients", url: "https://devforum.roblox.com/t/studio-mcp-multi-agent-improvements-and-connected-ai-clients/4820583", grade: "C", how: "Read the announcement through the forum's JSON interface." },
+    { title: "Roblox Terms of Use, version effective 1 November 2026", url: "https://en.help.roblox.com/hc/en-us/articles/115004647846-Roblox-Terms-of-Use", grade: "C", how: "Read the sections on AI Tools and Roblox APIs in the Creator Terms." },
+    { title: "Ropilot home page, read 15 October 2026", url: "https://ropilot.ai/", grade: "C", how: "Read in full. A competing Roblox AI agent; source for its current price." },
+    { title: "Lemonade home page, read 15 October 2026", url: "https://lemonade.gg/", grade: "C", how: "The page loads by script; read its title and description only." },
+    { title: "SuperbulletAI documentation", url: "https://docs.superbulletstudios.com/", grade: "C", how: "Read the contents page. Source for the framework, Rojo and Cube 3D chapters." },
+    { title: "Loot Drop database export, 1,749 failed startups", url: "https://www.loot-drop.io/", grade: "C", how: "Local export. AI-written summaries, not independently verified. Source for the failed predecessors." }
+  ]
 }
 ];
 
