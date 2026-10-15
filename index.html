@@ -11079,6 +11079,149 @@ const STORIES = [
     { title: "eWeek, 19 November 2025: OpenAI Launches ChatGPT for Teachers With Free Access Through 2027", url: "https://www.eweek.com/news/chatgpt-for-teachers-launch-openai/", grade: "B", how: "Read in full. A news report from the launch day, which gave June 2027 as the end of the free period." },
     { title: "Loot Drop database export, 1,749 failed startups", url: "https://www.loot-drop.io/", grade: "C", how: "Local export. AI-written summaries, not independently verified. Source for the failed predecessors." }
   ]
+},
+{
+  slug: "virtual-staging-ai",
+  name: "Virtual Staging AI (VSAI)",
+  country: "USA, team mostly in Germany",
+  sector: "Information Technology",
+  productType: "AI virtual staging of listing photos",
+  aiType: "AI-native",
+  team: "small",
+  outcome: "exit",
+  evidence: "A",
+  added: "2026-10-14",
+  launchLabel: "February 2023",
+  outcomeLabel: "Sold to Zillow for an undisclosed price after US$1M ARR, October 2024",
+  sticker: "$1M ARR, sold to Zillow",
+  outcomeUsd: 1000000,
+  months: 20,
+  teamLabel: "2 co-founders; 9 employees at the sale in October 2024, mostly in Munich",
+  fundingLabel: "No external funding reported; US$250,000 from the founders, friends and family",
+  primaryFactor: "Niche",
+  meters: { evidence: 3, copyable: 2, capital: 2 },
+  tags: ["AI-native", "Small team", "Bootstrapped", "Exit", "B2B", "Real estate"],
+  product: "A web app for real estate agents and photographers. The agent uploads a photo of a room, chooses the room type and a furniture style, and gets back the same room with furniture in about 10 to 15 seconds. It can also remove existing furniture. Plans are monthly subscriptions sized by the number of photos, and the top plan includes an API.",
+  why: "In 2023, general image generators that were asked to furnish a room also changed the room: the founder said DALL-E might turn a window into a wall painting or add a door, which misrepresents a property. VSAI's own model finds the floor, the ceiling, the mirrors and the doors first and only then adds furniture. It cost US$12 to US$69 a month in early 2024, while VSAI's comparison page lists other staging services at US$16 to US$29 per photo with 12 to 48 hours of waiting. Zillow, the listing portal where such photos end up, bought it.",
+  summary: [
+    `Virtual Staging AI, or VSAI, sells <dfn>virtual staging</dfn>: furniture and decoration added by software to a photo of an empty room, so that people who look at a home for sale online can see how a room could be used. An agent could also pay someone to do this by hand in Photoshop, photo by photo. VSAI does it with an <dfn>image model</dfn>, a neural network trained to create or change pictures. According to the founder, the model first works out the <dfn>3D structure</dfn> of the room, meaning where the floor, the ceiling, the mirrors and the doors are in space, and then places furniture that fits, so that the room itself is not changed. The agent uploads a photo, chooses the room type and a style, and gets the staged photo in seconds.`,
+    `Michael Bonacina, the co-founder and CEO, was looking for an apartment in Boston to study at Harvard when he saw a listing that showed the space furnished. After a class on startup research and development, he and another Harvard student, Mikhail Andreev, started VSAI at the Harvard Innovation Labs in 2023; the website was online by 21 February 2023. They put in US$250,000 from their own money and from friends and family, and raised no outside funding. In February 2024 they told TechCrunch that VSAI had 4,500 paying monthly subscribers, made more than 500,000 images a month and had reached US$1 million in <dfn>annual recurring revenue</dfn> (ARR), the yearly value of the subscriptions active at that moment, in ten months. Zillow Group, the Seattle listing company, bought VSAI in a deal that closed on 7 October 2024, for a price that was not disclosed. Its nine employees, most of them in Munich, joined Zillow's AI and tech teams, and in September 2025 Zillow built the technology into its premium listings.`,
+    `The sale is grade A: Zillow announced it in a press release and named it in its <dfn>proxy statement</dfn>, a document that a listed US company files with the Securities and Exchange Commission (SEC) before its shareholder meeting. The revenue and subscriber numbers are the founders' statements to a journalist, grade C, and no later number was published. With nine employees at the sale, VSAI is at the upper end of what this site calls a small team. The page also shows what happened to earlier companies that sold pictures of furnished rooms made by human designers, and to a photo editor that a platform bought.`
+  ],
+  factsCaption: "A bootstrapped image-model subscription that reported US$1 million in annual recurring revenue within ten months, then sold to Zillow for an undisclosed price",
+  factsRead: "How to read this table: grade A is Zillow's own press release or SEC filing, or the official text of a law. Grade B is a journalist's report. Grade C is a founder statement to the press, a product review or the company's own web page. A \"calc\" value was computed on this page from the rows above it. No source gives the sale price.",
+  timelineLead: "From a website online in February 2023 to a sale to Zillow 20 months later, and a feature on Zillow's own listings 11 months after that. Each entry carries its grade.",
+  pricing: {
+    caption: "Virtual Staging AI prices on its own pricing page, read 14 October 2026, under Zillow's ownership (grade C)",
+    note: "The page shows each plan's price per month with yearly billing and says that yearly billing saves up to 50%. The monthly-billing prices are switched in by a script and could not be read. The Basic plan already includes unlimited renders and downloads, furniture removal and no watermark. Earlier prices: US$29 to US$299 a month in May 2023 (Inman review), and US$12 a month for 6 photos to US$69 a month for 250 photos in February 2024 (TechCrunch).",
+    rows: [
+      ["Basic", "16", "", "6 photos a month; billed US$192 a year"],
+      ["Standard, for agents", "19", "", "20 photos a month; billed US$228 a year"],
+      ["Professional, for top producers", "39", "", "60 photos a month; billed US$468 a year"],
+      ["Enterprise, for teams, brokerages and photographers", "79", "", "150 photos a month; billed US$948 a year; includes the API"]
+    ]
+  },
+  facts: [
+    { fact: "Sale", value: "to Zillow Group; the deal closed on 7 October 2024", grade: "A", note: "Zillow's press release. Zillow's proxy statement, filed with the SEC on 16 April 2025, repeats it: \"In October 2024, we acquired Virtual Staging AI Inc.\"", src: [1, 2] },
+    { fact: "Sale price and terms", value: "not disclosed", grade: "B", note: "Inman: \"Terms of the acquisition were not disclosed.\" Neither Zillow document gives a price.", src: [5, 1, 2] },
+    { fact: "Annual recurring revenue, February 2024", value: "US$1 million", grade: "C", note: "Founders to TechCrunch, 23 February 2024: reached \"over the past 10 months\" without outside investors. No later figure was published.", src: [4] },
+    { fact: "Monthly revenue implied by that ARR", value: "about US$83,000 a month", grade: "X", note: "Calculated: US$1 million divided by 12 is US$83,333.", src: [4] },
+    { fact: "Paying subscribers, February 2024", value: "4,500", grade: "C", note: "Founders to TechCrunch: \"4,500 monthly paid subscribers\".", src: [4] },
+    { fact: "Revenue per subscriber implied", value: "about US$18.50 a month", grade: "X", note: "Calculated: US$83,333 a month divided by 4,500 subscribers is US$18.52. That fits the plans of US$12 to US$69 a month at the time.", src: [4] },
+    { fact: "Images made per month, February 2024", value: "more than 500,000", grade: "C", note: "Founders to TechCrunch: \"over half a million renders per month\".", src: [4] },
+    { fact: "Revenue per image implied", value: "about 17 US cents", grade: "X", note: "Calculated: US$83,333 a month divided by 500,000 images a month is US$0.167.", src: [4] },
+    { fact: "Money put in before the sale", value: "US$250,000 from the founders, friends and family", grade: "C", note: "TechCrunch, February 2024: no external funding had been raised.", src: [4] },
+    { fact: "Team at the sale", value: "9 employees, mostly in Munich", grade: "B", note: "GeekWire: the nine employees joined Zillow's AI and tech team. Zillow: \"Most of the VSAI team is based in Munich\". GeekWire does not say whether the nine include the two founders.", src: [3, 1] },
+    { fact: "Team on the company's careers page", value: "10 people and 2 machine-learning advisers", grade: "C", note: "Undated page, read in October 2026. It lists the two co-founders, research and full-stack engineers, and two customer-success managers.", src: [10] },
+    { fact: "Prices, May 2023", value: "US$29 to US$299 a month", grade: "C", note: "Inman review. The top plan was to include API access. Free images carried a watermark.", src: [6] },
+    { fact: "Prices, February 2024", value: "US$12 a month for 6 photos to US$69 a month for 250 photos", grade: "C", note: "TechCrunch.", src: [4] },
+    { fact: "Prices, October 2026", value: "US$16 to US$79 a month with yearly billing", grade: "C", note: "Company pricing page: 6 to 150 photos a month.", src: [8] },
+    { fact: "Website online", value: "by 21 February 2023", grade: "C", note: "First capture of virtualstagingai.app by the Internet Archive. Zillow dates the founding to 2023.", src: [12, 1] },
+    { fact: "Time from the first website capture to the sale", value: "20 months", grade: "X", note: "Calculated: February 2023 to October 2024.", src: [12, 1] },
+    { fact: "Use inside Zillow", value: "Virtual Staging in Zillow Showcase, from 10 September 2025", grade: "A", note: "Zillow calls it \"the first major integration of technology from Virtual Staging AI\". A buyer who views a Showcase listing taps an icon on a room photo and chooses a design style.", src: [7] }
+  ],
+  timeline: [
+    { when: "Before February 2023", what: "Michael Bonacina, looking for an apartment in Boston to study at Harvard, sees a listing that shows its rooms furnished. After a class on startup research and development, he and Mikhail Andreev, another Harvard student, decide to build a virtual staging startup.", grade: "C", src: [4] },
+    { when: "21 February 2023", what: "virtualstagingai.app is online, in its first Internet Archive capture. Zillow later dates the founding to 2023, at the Harvard Innovation Labs.", grade: "C", src: [12, 1] },
+    { when: "19 May 2023", what: "Inman reviews it: upload a photo, choose a room type, wait for the render. Plans from US$29 to US$299 a month; free images carry a watermark.", grade: "C", src: [6] },
+    { when: "23 February 2024", what: "The founders tell TechCrunch: 4,500 paying subscribers, more than 500,000 images a month, US$1 million in ARR within 10 months, no outside investors. Plans from US$12 to US$69 a month.", grade: "C", src: [4] },
+    { when: "7 October 2024", what: "Zillow Group's acquisition of VSAI closes. The price is not disclosed.", grade: "A", src: [1, 5] },
+    { when: "8 October 2024", what: "GeekWire reports that the nine employees, mostly in Munich, join Zillow's AI and tech team, and that Zillow plans to offer the technology through its own products.", grade: "B", src: [3] },
+    { when: "16 April 2025", what: "Zillow's proxy statement names the acquisition in its list of the company's 2024 events.", grade: "A", src: [2] },
+    { when: "10 September 2025", what: "Zillow launches Virtual Staging in Showcase, its premium listing format, as the first major use of VSAI's technology.", grade: "A", src: [7] },
+    { when: "10 October 2025", what: "California's AB 723 is enacted as Chapter 497: agents must disclose digitally altered listing images, furniture included, and link to the original photo.", grade: "A", src: [13] },
+    { when: "1 January 2026", what: "AB 723 takes effect.", grade: "B", src: [14] },
+    { when: "June 2026", what: "A study by Coraly, reported by HousingWire, finds signs of digital change in 10.8% of main listing photos on the four largest US portals, and no visible disclosure on more than 90% of them.", grade: "C", src: [14] },
+    { when: "14 October 2026", what: "virtualstagingai.app still sells plans from US$16 a month, under Zillow's ownership.", grade: "C", src: [8] }
+  ],
+  mechanism: [
+    { title: "Niche", text: "General image generators could add furniture to a photo, but they also changed the room. The founder told TechCrunch that DALL-E \"might turn the window into a wall painting, or it might add an additional door\", and that this misrepresents the property. VSAI built a model for this one task: it finds the floor, the ceiling, the mirrors and the doors first, and then adds furniture in the style the agent chose. For a listing photo, an unchanged room matters more than a beautiful picture." },
+    { title: "A price per photo close to zero", text: "VSAI's own comparison page lists other staging services at US$16 to US$29 per photo, with 12 to 48 hours of waiting. VSAI sold a monthly subscription that started at US$12 a month for 6 photos in February 2024, returned each image in seconds and allowed unlimited new attempts. At about US$83,000 a month of revenue and 500,000 images a month, one image brought in about 17 US cents." },
+    { title: "Built for agents who are not technical", text: "TechCrunch reports that the company wanted an easy tool partly because, according to the National Association of Realtors, the median age of its agents in the United States is 60. The product has three steps: upload a photo, choose a room type and a style, download. Free use left a watermark on the image, so an agent could see the result before paying." },
+    { title: "A buyer that owns the listing page", text: "The staged photos end up on listing portals. Zillow bought the team and, eleven months later, built the technology into Showcase, its premium listing format: a home buyer taps an icon on a room photo and chooses a design style, such as Scandinavian or farmhouse. The stand-alone website kept selling subscriptions to agents." }
+  ],
+  howBuilt: {
+    intro: "The sources say little about the technology. These points come from the founder's interview, a review and the company's own pages, grade C, and from the page source of an archived copy of the website, grade B.",
+    items: [
+      "Its own image model for one task: it works out the 3D structure of the room, then chooses furniture for the room type and style that the agent picked. The sources do not name a base model or describe the training data.",
+      "Each photo comes back in 10 to 15 seconds, with unlimited new renders of the same photo. Furniture removal is included even in the cheapest plan.",
+      "More than 500,000 images a month in February 2024, for 4,500 paying subscribers.",
+      "The careers page lists two team members with doctorates in computer vision from TU Munich, and one who was an assistant researcher at the lab that developed Stable Diffusion.",
+      "API access was announced for the top plan in 2023 and is part of the Enterprise plan today. The current site also runs an affiliate program that pays 30% commission on referrals.",
+      "In May 2024 the website was a Next.js application whose images were served from Firebase Storage, as the page source of an Internet Archive copy shows."
+    ],
+    src: [4, 6, 8, 9, 10, 18]
+  },
+  predecessorsIntro: "Four companies in the Loot Drop database sold software pictures of furnished or edited rooms, or were bought by a platform. The values below are from that database and are not independently verified.",
+  predecessors: [
+    { name: "Modsy", years: "2015 to 2022", funding: "US$72.7M", cause: "Unit Economics", promise: "3D pictures of your own room with furniture you could buy.", died: "Each design still needed paid human designers, customers were expensive to win and rarely came back, and it never made a profit.", url: "https://www.loot-drop.io/startup/2521-modsy" },
+    { name: "Laurel & Wolf", years: "2014 to 2019", funding: "US$25M", cause: "Unit Economics", promise: "Online interior design by professional designers for a flat fee.", died: "The flat fees did not cover the cost of finding customers, and quality fell as the designer network grew.", url: "https://www.loot-drop.io/startup/2012-laurel--wolf" },
+    { name: "Tastemaker", years: "2012 to 2015", funding: "US$1.5M", cause: "Competition", promise: "Affordable online interior design for middle-income households.", died: "Competitors, uneven quality from freelance designers, and too little cash.", url: "https://www.loot-drop.io/startup/1572-tastemaker" },
+    { name: "Picnik", years: "2005 to 2012", funding: "US$3.5M", cause: "Competition", promise: "Photo editing in the browser, with nothing to install.", died: "Google bought it in 2010, moved its technology into other products such as Google+, and shut it down in 2012.", url: "https://www.loot-drop.io/startup/429-picnik" }
+  ],
+  whatChanged: [
+    `Modsy, Laurel & Wolf and Tastemaker sold what VSAI sells, a picture of a furnished room, but each picture needed paid human designers. Their costs grew with each customer, and the database gives unit economics or competition as the cause. VSAI's extra cost for one more image is computing time. At about US$83,000 a month in revenue and more than 500,000 images a month in early 2024, one image brought in about 17 US cents, far below the US$16 or more per photo that VSAI's comparison page lists for other staging services.`,
+    `Picnik shows the other risk for a small product: Google bought it, used its technology in other products and closed it two years later. Zillow has so far done something different: it kept virtualstagingai.app selling to agents and built the technology into its own listings. What separates VSAI from the first three is that one model replaced the designer, so a small team could serve 4,500 subscribers without outside investors.`
+  ],
+  copy: {
+    verdict: "The method, yes. Virtual staging itself is crowded now.",
+    text: "VSAI found a task where general image models failed in a way that mattered to the customer, built a narrow model that does not fail that way, and sold it as a cheap self-serve subscription. By 2026 many tools sell virtual staging: one competitor shows US$30,688 of Stripe-verified revenue in 30 days, and Zillow lets buyers restyle rooms on its own listings. The opening is in the next task of the same kind.",
+    steps: [
+      "Find a professional photo or document task where a general AI model changes something that must stay the same: walls, doors, text, measurements.",
+      "Build or adapt a model that keeps those parts fixed, and show the before and after on the home page.",
+      "Price per month by volume, low enough that an agent can pay without asking anyone, and let free users see a watermarked result.",
+      "Put an API in the top plan, so photographers and software platforms can build you into their own work."
+    ],
+    open: "Other listing-photo and document edits that must stay true: floor plans from photos, renovation previews that keep the measurements, and tools that create the disclosure and the link to the original photo that California now requires."
+  },
+  watch: [
+    { title: "Nine people, and only founder numbers for revenue", text: "VSAI had nine employees at the sale, at the top of what this site calls a small team. The US$1 million ARR and the 4,500 subscribers are the founders' statements to TechCrunch in February 2024. No later revenue number and no sale price were published, so the size of the exit is unknown." },
+    { title: "Disclosure rules for altered photos", text: "California's AB 723, in force since 1 January 2026, requires agents who advertise with a digitally altered image, including one with furniture added, to say so on or next to the image and to link to the original photo. Changes to lighting, color, cropping and exposure are excluded. The National Association of Realtors' Code of Ethics already requires its members to present a \"true picture\" in advertising, in Article 12, and MLS rules copy that standard." },
+    { title: "Buyers who feel misled", text: "In the study reported by HousingWire in June 2026, 10.8% of main listing photos on the four largest US portals showed signs of digital change, and more than 90% of those had no visible disclosure. A representative of the MLS company CRMLS, quoted by HousingWire, described buyers who used listing photos as evidence in claims: in one case a fire had been added digitally to a fireplace, and the chimney and flue needed US$25,000 to US$30,000 of repairs." },
+    { title: "Many competitors, and the platform itself", text: "VSAI's comparison page lists Styldod, Padstyler, BoxBrownie and Stuccco, which take 12 to 48 hours and charge from US$16 to US$29 per photo. AI tools now compete on price: Refined Listings, a US virtual staging and marketing toolkit, shows US$30,688 of Stripe-verified revenue in the last 30 days on TrustMRR. And Zillow now lets home buyers restyle rooms on its own Showcase listings." },
+    { title: "What a sale to a platform means for a small team", text: "The team now works inside Zillow's AI and tech teams, and the product's future depends on Zillow's plans. Zillow said it would offer the technology \"through Zillow's product suite\", and the stand-alone website still sells subscriptions in October 2026. Picnik, a browser photo editor that Google bought, was closed two years after the sale." }
+  ],
+  sources: [
+    { title: "Zillow Group press release, 8 October 2024: Zillow Group acquires AI company offering virtual staging", url: "https://www.zillowgroup.com/news/zillow-group-acquires-ai-company-offering-virtual-staging/", grade: "A", how: "The live page refused the download (HTTP 403). Read in full from an Internet Archive copy. Source for the closing date, the founders, the Munich team and the plan to offer the technology through Zillow's products." },
+    { title: "Zillow Group proxy statement (Schedule 14A), filed with the SEC on 16 April 2025", url: "https://www.sec.gov/Archives/edgar/data/1617640/000161764025000056/z-20250415.htm", grade: "A", how: "The SEC site refused the download. Read the list of 2024 events in an Internet Archive copy of January 2026, which names the acquisition of Virtual Staging AI Inc." },
+    { title: "GeekWire, 8 October 2024: Zillow Group acquires VSAI, a virtual staging tool that adds furniture to real estate listings", url: "https://www.geekwire.com/2024/zillow-group-acquires-vsai-a-virtual-staging-tool-that-adds-furniture-to-real-estate-listings/", grade: "B", how: "Read in full. Source for the nine employees, the Munich base and the Harvard origin." },
+    { title: "TechCrunch, 23 February 2024: Virtual Staging AI helps Realtors digitally furnish rooms within seconds", url: "https://techcrunch.com/2024/02/23/virtual-staging-ai-helps-realtors-digitally-furnish-rooms-within-seconds/", grade: "C", how: "Read in full. Founder interview. Source for the ARR, the subscribers, the images a month, the prices, the model description and the US$250,000." },
+    { title: "Inman, 9 October 2024: Super App Stronger, Zillow Acquires Virtual Staging AI", url: "https://inman.com/2024/10/09/super-app-stronger-zillow-acquires-virtual-staging-ai/", grade: "B", how: "Read the free part of the article. Source for the statement that the terms were not disclosed." },
+    { title: "Inman, 19 May 2023: Virtual Staging AI ensures you'll never market an empty room again: Tech Review", url: "https://www.inman.com/2023/05/19/virtual-staging-ai-ensures-youll-never-market-an-empty-room-again-tech-review/", grade: "C", how: "Read in full. A product review. Source for the 2023 prices, the workflow and the watermark on free images." },
+    { title: "Zillow press release, 10 September 2025: Zillow brings AI-powered Virtual Staging to Showcase listings", url: "https://zillow.mediaroom.com/2025-09-10-Zillow-brings-AI-powered-Virtual-Staging-to-Showcase-listings", grade: "A", how: "Read in full. Source for the first major use of VSAI's technology inside Zillow and the design styles." },
+    { title: "Virtual Staging AI pricing page, read 14 October 2026", url: "https://www.virtualstagingai.app/prices", grade: "C", how: "Read in full. Shows prices with yearly billing. The monthly-billing prices are switched in by a script and could not be read." },
+    { title: "Virtual Staging AI home, API and affiliate pages, read 14 October 2026", url: "https://www.virtualstagingai.app/", grade: "C", how: "Read in full. Pages of the product under Zillow's ownership. Source for the turnaround time, the API in the Enterprise plan and the 30% affiliate commission." },
+    { title: "Virtual Staging AI careers page, read 14 October 2026", url: "https://www.virtualstagingai.app/career", grade: "C", how: "Read in full. An undated list of team members by first name and role. Source for the team size and backgrounds; this story names only the two co-founders." },
+    { title: "Virtual Staging AI comparison page on BoxBrownie competitors, read 14 October 2026", url: "https://www.virtualstagingai.app/boxbrownie-competitors", grade: "C", how: "Read in full. VSAI's own comparison of staging services by price per photo and turnaround time." },
+    { title: "Internet Archive capture list for virtualstagingai.app", url: "http://web.archive.org/cdx/search/cdx?url=virtualstagingai.app", grade: "C", how: "Read the list of captures. The first capture is from 21 February 2023." },
+    { title: "California Assembly Bill 723 (2025), Real estate: digitally altered images: disclosure, chaptered text (Chapter 497)", url: "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260AB723", grade: "A", how: "Read in full. The official text of the new Section 10140.8 of the Business and Professions Code." },
+    { title: "HousingWire, 24 June 2026: Most AI-altered listings go undisclosed, California law bans it", url: "https://www.housingwire.com/articles/most-ai-altered-listings-go-undisclosed-california-law-bans-it/", grade: "B", how: "Read in full. Reports the Coraly study of listing photos and the date AB 723 took effect." },
+    { title: "HousingWire, 16 April 2026: When listings lie: AI staging pushes real estate into an ethics gray zone", url: "https://www.housingwire.com/articles/when-listings-lie-ai-staging-pushes-real-estate-into-an-ethics-gray-zone/", grade: "B", how: "Read in full. Source for the NAR Article 12 true-picture standard and the fireplace claim." },
+    { title: "The Close, 25 June 2026: AI Listing Photos Are Now a Disclosure Risk for Agents", url: "https://theclose.com/news-ai-listing-photo-disclosure/", grade: "C", how: "Read the section on the NAR Code of Ethics and MLS rules." },
+    { title: "TrustMRR profile of Refined Listings, a competing virtual staging toolkit", url: "https://trustmrr.com/startup/refined-listings", grade: "A", how: "Read the markdown profile (local cache, revenue last synced 12 October 2026). The revenue is verified through Stripe; the description is written by the seller." },
+    { title: "Internet Archive copy of virtualstagingai.app, 25 May 2024", url: "https://web.archive.org/web/20240525232438/https://www.virtualstagingai.app/", grade: "B", how: "Read the page source. Source for Next.js and Firebase Storage before the sale." },
+    { title: "Loot Drop database export of failed startups", url: "https://www.loot-drop.io/", grade: "C", how: "Local export. AI-written summaries, not independently verified. Source for the failed predecessors." }
+  ]
 }
 ];
 
