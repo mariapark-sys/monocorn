@@ -15802,6 +15802,150 @@ const STORIES = [
     { title: "Jungle: Anki vs Jungle comparison page", url: "https://jungleai.com/anki-vs-jungle", grade: "C", how: "Read in full. The company's own comparison of deck creation time." },
     { title: "Loot Drop database export, failed startups", url: "https://www.loot-drop.io/", grade: "C", how: "Local export. AI-written summaries, not independently verified. Source for the failed predecessors." }
   ]
+},
+{
+  slug: "ai2sql",
+  name: "AI2SQL",
+  country: "United States",
+  sector: "Information Technology",
+  productType: "Text-to-SQL assistant (web app)",
+  aiType: "AI-native",
+  team: "solo",
+  outcome: "running",
+  evidence: "C",
+  added: "2026-10-16",
+  launchLabel: "25 October 2021",
+  outcomeLabel: "US$10K a month, January 2025",
+  sticker: "$120K/yr run rate",
+  outcomeUsd: 120318,
+  months: 39,
+  teamLabel: "1 founder; no employees reported",
+  fundingLabel: "None reported",
+  primaryFactor: "Niche",
+  group: "documents-data",
+  channel: "search",
+  trend: "unknown",
+  collections: [],
+  meters: { evidence: 1, copyable: 2, capital: 1 },
+  tags: ["AI-native", "Solo founder", "Bootstrapped", "Running", "B2B", "Developer tools"],
+  product: "A web app that writes SQL queries from requests in plain English, and explains, fixes and speeds up existing queries, for MySQL, PostgreSQL, SQL Server, Oracle, SQLite, Snowflake, BigQuery and other databases. Paid plans connect to the customer's own database and run read-only queries, also from Claude, ChatGPT and Cursor.",
+  why: "It launched in October 2021 with one narrow promise, write SQL without knowing SQL, on OpenAI's Codex and GPT-3 models and a no-code app builder. It kept its prices low, built a site of more than 700 pages, among them SQL lessons, templates and comparisons, and added what a general chatbot does not have: a live, read-only connection to the customer's database. Its recurring revenue, as the founder reported it, doubled in 2024 to about US$10,000 a month.",
+  summary: [
+    `AI2SQL writes <dfn>SQL</dfn>, Structured Query Language, the standard language for reading and changing data in relational databases, from requests in plain English. This is called <dfn>text-to-SQL</dfn>: a language model reads the request and the type of database and returns the query. The 2022 home page gave this example request: "Show me dogs and cat names where breed is 'dachshund' and size is 'small'". The tool also explains a query, fixes syntax errors and suggests a faster version. On the Pro and Team plans it connects to the customer's own database, reads its <dfn>schema</dfn>, the list of tables and columns with their types, and runs read-only queries. It can do this from inside Claude, ChatGPT and Cursor through an <dfn>MCP server</dfn>, a service that follows the Model Context Protocol, a standard way for AI assistants to call outside tools.`,
+    `Mustafa Ergisi launched AI2SQL on Product Hunt on 25 October 2021. In February 2022 the site said it was "Powered by OpenAI Codex & GPT3", and its sign-up pages ran on Bubble, a <dfn>no-code builder</dfn>, a service for making web apps by arranging parts on screen instead of writing code. A third-party write-up says it had US$1,151 of <dfn>MRR</dfn>, monthly recurring revenue, the amount that all active subscriptions bring in each month, in February 2023 (not verified). According to the gaps.com newsletter, the founder reported US$5,000 MRR about a year before January 2025, and a screenshot of his revenue dashboard shows US$10,026.53 MRR on 19 January 2025. That is a <dfn>run rate</dfn>, the current month's revenue times 12, of about US$120,000 a year, 39 months after launch.`,
+    `Every figure on this page comes from the founder, through a screenshot or a third party that repeats him, so it is grade C. No payment processor, buyer or journalist has confirmed it, and no figure newer than January 2025 was found. The same write-up also reports US$100,000 a year in December 2023, which does not fit the other figures, so this page does not use it. The page also shows earlier companies that promised an easier way to get answers from data, and what happened to them when larger platforms built the same feature.`
+  ],
+  factsCaption: "A text-to-SQL tool, launched in October 2021, at about US$10,000 a month in recurring revenue by January 2025, all self-reported",
+  factsRead: "How to read this table: a grade C value is a founder statement, shown in a screenshot or repeated by a newsletter or a write-up, or a record on Product Hunt or on the company's own pages. A \"calc\" value was computed on this page from the rows above it. No value is grade A or B.",
+  timelineLead: "From a Bubble app \"Powered by OpenAI Codex & GPT3\" to an MCP server for Claude and ChatGPT, in five years. Each entry carries its grade.",
+  pricing: {
+    caption: "AI2SQL prices in October 2026, from the company's pricing page (grade C)",
+    note: "Every paid plan starts with a 7-day free trial that needs a card. Billed yearly, the plans cost US$84, US$168 and US$348 a year, which the page calls a 25% saving. Connecting your own database needs Pro or Team. The Lifetime plan is one payment with a monthly query limit.",
+    rows: [
+      ["Free", "0", "0", "3 queries a day on a demo database"],
+      ["Start", "7", "9", "100 queries a month; MySQL and PostgreSQL"],
+      ["Pro", "14", "19", "unlimited queries; advanced model; own database; MCP; desktop app"],
+      ["Team", "29", "39", "5 users; shared query library; role-based access"],
+      ["Lifetime", "29 one-time", "", "500 AI queries a month"]
+    ]
+  },
+  facts: [
+    { fact: "Monthly recurring revenue, 19 January 2025", value: "US$10,026.53", grade: "C", note: "A screenshot of a revenue dashboard (\"MRR $10,026.53\", \"Updated Jan 19\") in the gaps.com report for January 2025, published 6 February 2025. The newsletter wrote \"If correct\" and does not say that it checked the account.", src: [1] },
+    { fact: "Run rate from that figure", value: "about US$120,000 a year", grade: "X", note: "Calculated: US$10,026.53 times 12 is US$120,318.", src: [1] },
+    { fact: "Monthly recurring revenue, early 2024", value: "US$5,000", grade: "C", note: "The founder's earlier statement as gaps.com reports it, \"almost a year\" before the January 2025 figure. The newsletter gives no exact date or link.", src: [1] },
+    { fact: "Growth during 2024", value: "about 2 times", grade: "X", note: "Calculated: US$10,026.53 divided by US$5,000 is 2.0. Gaps.com: he \"effectively doubled his revenue in 2024\".", src: [1] },
+    { fact: "Monthly recurring revenue, February 2023", value: "US$1,151 from 128 paying users", grade: "C", note: "A third-party write-up of September 2025 that cites an Indie Hackers post by the founder, which this page could not open. Not verified. About US$9 per paying user a month (calculated).", src: [2] },
+    { fact: "\"US$100,000 ARR\", December 2023", value: "not used", grade: "C", note: "Same write-up, which gives it as about US$8,500 a month. US$100,000 divided by 12 is US$8,333, two thirds more than the US$5,000 reported for early 2024, and the dashboard line shows no fall. The write-up does not say how it was counted.", src: [2, 1] },
+    { fact: "Users and queries, early 2025", value: "50,000 users, 75,000 queries", grade: "C", note: "The site's own numbers as gaps.com quotes them: 1.5 queries per user (calculated). The newsletter guessed that most people test one query and do not return.", src: [1] },
+    { fact: "Early use, February 2022", value: "500+ sign-ups, 1,600+ queries generated", grade: "C", note: "Counters on the home page in the Wayback Machine snapshot of 27 February 2022, four months after launch.", src: [4] },
+    { fact: "Product Hunt launches", value: "25 October 2021 and 14 March 2023", grade: "C", note: "Product Hunt's record. The first, \"Write SQL queries with no knowledge of SQL\", was fifth of the day and 26th of the week. AI2sql 2.0 was 20th of the day. The write-up's launch date of April 2022 does not match.", src: [3, 2] },
+    { fact: "AI models", value: "OpenAI Codex and GPT-3 in 2022; not named today", grade: "C", note: "The 2022 footer: \"Powered by OpenAI Codex & GPT3\". In October 2026 the pricing page names only a \"Basic\" and an \"Advanced\" model. The company also published a fine-tuned Mistral 7B model on Hugging Face.", src: [4, 5, 9] },
+    { fact: "Prices, October 2026", value: "US$9, US$19 and US$39 a month; US$29 one-time", grade: "C", note: "Start, Pro and Team, or US$7, US$14 and US$29 a month billed yearly. The one-time Lifetime plan allows 500 queries a month. A free plan allows 3 queries a day on a demo database.", src: [5] },
+    { fact: "Affiliate commission", value: "30% of the first 3 subscription payments", grade: "C", note: "From the affiliate program page.", src: [8] },
+    { fact: "Pages in the sitemap, October 2026", value: "752", grade: "X", note: "Calculated: counted on this page from the sitemap. They include SQL lessons, SQL templates, database comparisons and blog posts.", src: [6] },
+    { fact: "Team", value: "1 founder; no employees reported", grade: "C", note: "Gaps.com and Product Hunt name only Mustafa Ergisi. The write-up calls him a solo founder and a former data analyst from Istanbul, Turkey: not verified.", src: [1, 3, 2] },
+    { fact: "Outside funding", value: "none reported", grade: "C", note: "No source reports a funding round. The write-up says \"No external funding\".", src: [2] },
+    { fact: "Operating company", value: "Cross Regions Technology, Jacksonville, Florida", grade: "C", note: "Named on the contact page in October 2026. The terms of service say only \"operated by AI2sql\" and choose United States law.", src: [8] },
+    { fact: "Time from launch to the January 2025 figure", value: "39 months", grade: "X", note: "Calculated: October 2021 to January 2025.", src: [3, 1] }
+  ],
+  timeline: [
+    { when: "25 October 2021", what: "First launch on Product Hunt: \"Write SQL queries with no knowledge of SQL\". Fifth product of the day, 26th of the week.", grade: "C", src: [3] },
+    { when: "27 February 2022", what: "The site says \"Powered by OpenAI Codex & GPT3\". Its sign-up and pricing links go to ai2sql.bubbleapps.io, an app built with Bubble. Counters show 500+ sign-ups and 1,600+ generated queries.", grade: "C", src: [4] },
+    { when: "February 2023", what: "US$1,151 MRR from 128 paying users, according to a third-party write-up that cites the founder. Not verified.", grade: "C", src: [2] },
+    { when: "14 March 2023", what: "Second Product Hunt launch, AI2sql 2.0: \"Converse with your data in natural language\". 20th product of the day.", grade: "C", src: [3] },
+    { when: "31 July 2023", what: "Databricks opens a public preview of an assistant that generates, explains and fixes SQL from English inside its SQL editor.", grade: "C", src: [11] },
+    { when: "Early 2024", what: "The founder reports US$5,000 MRR, as gaps.com later recounts.", grade: "C", src: [1] },
+    { when: "12 June 2024", what: "Databricks announces AI/BI with Genie, which answers business questions in conversation with queries and charts.", grade: "C", src: [12] },
+    { when: "19 January 2025", what: "A dashboard screenshot shows MRR of US$10,026.53, about double the figure of a year earlier. Gaps.com publishes it on 6 February 2025.", grade: "C", src: [1] },
+    { when: "October 2026", what: "Plans from US$9 to US$39 a month and a US$29 lifetime plan, an MCP server for Claude, ChatGPT and Cursor, and a desktop app. The footer calls the product \"The data layer for AI agents\".", grade: "C", src: [5, 7] }
+  ],
+  mechanism: [
+    { title: "One narrow job", text: "AI2SQL does one thing: SQL. It writes a query from a request in plain English, explains a query, fixes syntax errors and suggests faster versions, in the variant of SQL that each database uses: MySQL, PostgreSQL, SQL Server, Oracle, SQLite, Snowflake, BigQuery and others. It went on Product Hunt in October 2021 with that single promise and still sells it five years later." },
+    { title: "Bought parts for the first version", text: "In February 2022 the site said that OpenAI's Codex and GPT-3 models produced the SQL, and the sign-up and pricing pages ran on Bubble, a no-code builder. The model came from OpenAI and the app pages from Bubble." },
+    { title: "A page for every SQL question", text: "The sitemap lists 752 pages: SQL lessons for functions in each database, SQL templates, database comparisons, pages such as \"AI2sql vs. ChatGPT\", and blog posts. Pages like these answer searches that people who write SQL type, and the pages read for this story carry a free sign-up offer. No source says what share of customers came from search." },
+    { title: "Low prices, a trial and a lifetime plan", text: "Plans cost US$9 to US$39 a month, or US$7 to US$29 a month billed yearly, and each starts with a 7-day trial that needs a card. A US$29 lifetime plan with 500 queries a month brings in cash once. Affiliates get 30% of the first 3 subscription payments of each customer they refer." },
+    { title: "Inside the chatbots, not against them", text: "The newest features put AI2SQL inside the general assistants. Its MCP server lets Claude, ChatGPT, Cursor and VS Code write SQL through AI2SQL on every plan, and run read-only queries on a connected database on Pro and Team. The footer now calls the product \"The data layer for AI agents\"." }
+  ],
+  howBuilt: {
+    intro: "These details come from the company's pages, read in October 2026 and in a Wayback Machine snapshot of February 2022, including the code of those pages. They are grade C.",
+    items: [
+      "2022: a landing page whose sign-up and pricing links went to ai2sql.bubbleapps.io, an app made with Bubble. The footer said \"Powered by OpenAI Codex & GPT3\". The page loaded Google Analytics and Hotjar to record visits.",
+      "2026: the marketing site is built with Astro, a framework that produces static pages, and the app runs at builder.ai2sql.io. The pages load Google Analytics, Google Tag Manager, Mixpanel and Microsoft Clarity to measure visits, a Google Ads tag, and Crisp for support chat.",
+      "Models: the pricing page names only a \"Basic\" and an \"Advanced\" AI model and says that customer queries and schemas are \"never sold or used to train models\". A blog post describes AI2SQL Mistral-7B, the open Mistral 7B model fine-tuned for text-to-SQL on WikiSQL data with LoRA, a method that trains a small set of added weights instead of the whole model, and published on Hugging Face. The site does not say whether the paid plans use it.",
+      "Today the product has a web app, a desktop app for Windows and Mac, an API, and an MCP server for Claude, ChatGPT, Cursor and VS Code.",
+      "Company: the contact page names Cross Regions Technology in Jacksonville, Florida. The terms of service, made with the PolicyMaker.io template generator, say only \"operated by AI2sql\" and choose United States law.",
+      "A third-party write-up lists Bubble, Google Cloud, HubSpot, Stripe, Google Analytics and Microsoft Clarity as the tools, with monthly costs. Bubble, Google Analytics and Clarity are visible in the page code; the rest is not verified."
+    ],
+    src: [4, 6, 5, 9, 7, 8, 2]
+  },
+  predecessorsIntro: "Four companies in the Loot Drop database promised an easier way to get answers from data or to run a database, and lost when larger platforms offered the same thing. The values below are from that database and are not independently verified.",
+  predecessors: [
+    { name: "Ask Jeeves", years: "1996 to 2007", funding: "US$50M", cause: "Competition", promise: "Ask a search engine a question in plain words, without learning keyword and Boolean syntax.", died: "Its answers depended on human editors and a fixed set of question-and-answer pairs, which could not grow with the web. Google's automatic ranking won.", url: "https://www.loot-drop.io/startup/10-ask-jeeves" },
+    { name: "SumAll", years: "2011 to 2019", funding: "US$15M", cause: "Competition", promise: "One dashboard of marketing and sales data for small businesses, with no data specialist needed.", died: "It could not stand apart from Tableau, Google Analytics and free tools. Small businesses did not see the value in its price, and many left.", url: "https://www.loot-drop.io/startup/587-sumall" },
+    { name: "Skysheet", years: "2009 to 2012", funding: "US$200K", cause: "Competition", promise: "A spreadsheet in the cloud with real-time collaboration and better charts.", died: "Google and Microsoft moved their own spreadsheets to the cloud and added collaboration.", url: "https://www.loot-drop.io/startup/1218-skysheet" },
+    { name: "FathomDB", years: "2008 to 2011", funding: "US$0", cause: "Competition", promise: "Managed cloud databases with automatic scaling, backups and monitoring.", died: "AWS introduced RDS, and the large cloud providers offered the same service with far more money.", url: "https://www.loot-drop.io/startup/1231-fathomdb" }
+  ],
+  whatChanged: [
+    `Each of the four sold an easier way to reach data or to run a database, and each lost when a larger company that owned the platform built the same feature into it. AI2SQL faces the same risk. The databases that it writes SQL for now write SQL themselves: in July 2023 Databricks wrote: "Describe your task in English and let the Assistant generate SQL queries, explain complex code, and automatically fix errors." That is close to AI2SQL's own list of features. Snowflake, Google and Microsoft document similar features.`,
+    `Two things differ. First, AI2SQL is one person without outside funding, so it does not need a large share of the market: about US$10,000 a month can support one person. Second, it works across many databases and also inside Claude, ChatGPT and Cursor, so a customer with data in several systems, or a person who already works in a chatbot, has a reason to use it instead of one vendor's assistant. Whether that reason lasts as each platform improves its own assistant is the open question.`
+  ],
+  copy: {
+    verdict: "The early start, no. The narrow tool with search pages, partly.",
+    text: "AI2SQL started in 2021 on OpenAI's Codex and GPT-3; today the database makers and the general chatbots write SQL too. What a new founder can still copy is the shape: one narrow job that people repeat every week, a reference page for every variant of that job, a low price with a trial, and a connection into the tools that people already use.",
+    steps: [
+      "Choose one task that people repeat every week and must get exactly right, such as SQL for a particular database.",
+      "Build the first version on a model API and a no-code builder, as AI2SQL did with OpenAI's models and Bubble.",
+      "Publish a page for every variant of the task: each function, database, error code and comparison.",
+      "Add what a general chatbot lacks, the customer's own schema, a read-only connection and team features, and offer them inside the chatbots through MCP."
+    ],
+    open: "Other formal languages that people write rarely but must get exactly right: spreadsheet formulas, regular expressions, DAX for Power BI, log search queries and infrastructure configuration files."
+  },
+  watch: [
+    { title: "Self-reported, from one screenshot", text: "The headline figure is a screenshot of a revenue dashboard that the founder shared and a newsletter republished with the words \"If correct\". No payment processor, buyer or journalist has confirmed it. The latest figure is from January 2025, 21 months before this page was written, so whether revenue kept growing is not known." },
+    { title: "The 2023 figures conflict", text: "A third-party write-up gives US$100,000 ARR in December 2023, which is about US$8,333 a month. That is two thirds more than the US$5,000 a month reported for early 2024, and the dashboard line shows no fall in that period, so this page does not use it. The same write-up dates the launch to April 2022, but Product Hunt records the first launch on 25 October 2021." },
+    { title: "The database makers built it in", text: "Databricks put SQL generation, explanation and error fixing into its SQL editor in a public preview on 31 July 2023, and announced Genie, a conversational interface for business questions, on 12 June 2024. Snowflake documents Cortex Analyst, with which \"business users can ask questions in natural language\". Google's BigQuery documentation describes a SQL generation tool that \"lets you use natural language to generate a SQL query\", and Microsoft documents Copilot in Azure SQL Database on a page dated 8 April 2025. These come with platforms that the customers already pay for." },
+    { title: "General chatbots write SQL", text: "The company's own site has pages that compare AI2SQL with ChatGPT. The gaps.com writer guessed that \"standard ChatGPT could handle the majority of use cases\". The site's numbers in early 2025, 50,000 users and 75,000 queries, are 1.5 queries per user, and the writer read them as most people trying one query and not returning." },
+    { title: "Dependence on model providers", text: "The product started on OpenAI's Codex and GPT-3, and today the pricing page names only a \"Basic\" and an \"Advanced\" model. The newest features run inside Claude, ChatGPT and Cursor through MCP, so the companies that sell the language models also own the screens where these users work." },
+    { title: "Company details are incomplete", text: "The terms of service are a generic template that names no company. The contact page names Cross Regions Technology in Jacksonville, Florida. Where the founder lives and works is not verified." }
+  ],
+  sources: [
+    { title: "Gaps.com report for January 2025, published 6 February 2025, insight #2: An AI-Powered SQL Query Builder Just Surpassed $10,000 in Monthly Recurring Revenue", url: "https://gaps.com/jan-2025/", grade: "C", how: "Read the section on AI2SQL and viewed its screenshot of the MRR chart. Source for the January 2025 MRR, the earlier US$5,000 figure, the growth in 2024 and the user and query counts." },
+    { title: "Linh BaDien, 11 September 2025: AI2SQL, From Idea to $100K ARR in One Year with a Solo Founder", url: "https://linhbadien.com/ai2sql-from-idea-to-100k-arr-in-one-year-with-a-solo-founder/", grade: "C", how: "Read in full. A third-party write-up that names an Indie Hackers post by the founder as its source; that post was not opened, because Indie Hackers does not allow this crawler. Its launch date conflicts with Product Hunt's record, so it is used only for the 2023 figures, the team and the funding, each marked not verified." },
+    { title: "Product Hunt: AI2sql product page and launch pages", url: "https://www.producthunt.com/products/ai2sql", grade: "C", how: "Read the launch list and the page data. Source for the two launch dates, the daily and weekly ranks and the maker's name." },
+    { title: "Wayback Machine: ai2sql.io on 27 February 2022", url: "https://web.archive.org/web/20220227224750/https://www.ai2sql.io/", grade: "C", how: "Read in full, including the page code. Source for the 2022 model statement, the Bubble sign-up address, the analytics scripts and the early counters." },
+    { title: "AI2SQL pricing page, read 16 October 2026", url: "https://ai2sql.io/pricing", grade: "C", how: "Read in full. Source for the plans, prices, limits, trial terms and model labels." },
+    { title: "AI2SQL home page and sitemap, read 16 October 2026", url: "https://ai2sql.io/", grade: "C", how: "Read in full, including the page code, and counted the 752 addresses in the sitemap at ai2sql.io/sitemap-0.xml. Source for the features and the analytics, ads and chat scripts." },
+    { title: "AI2SQL: MCP server page", url: "https://ai2sql.io/mcp", grade: "C", how: "Read in full. Source for the connection to Claude, ChatGPT, Cursor and VS Code." },
+    { title: "AI2SQL contact page, terms of service and affiliate program page", url: "https://ai2sql.io/contact", grade: "C", how: "Read in full, with ai2sql.io/termsandconditions and ai2sql.io/affiliate-program. Source for the operating company, the governing law and the affiliate commission." },
+    { title: "AI2SQL blog: Exploring the AI2SQL Mistral-7B Model on Hugging Face", url: "https://ai2sql.io/ai2sql-mistral-7b-model/", grade: "C", how: "Read in full. Undated. Source for the fine-tuned open model." },
+    { title: "AI2SQL: AI2sql vs. ChatGPT, Which AI Tool Is Best for Generating SQL Queries?", url: "https://ai2sql.io/ai2sql-vs-chatgpt-generate-sql-queries/", grade: "C", how: "Read in full. The company's own comparison with ChatGPT. Not used for numbers." },
+    { title: "Databricks Blog, 31 July 2023: Introducing Databricks Assistant", url: "https://www.databricks.com/blog/introducing-databricks-assistant", grade: "C", how: "Read in full. Not used for numbers. Source for the public preview of SQL generation, explanation and error fixing." },
+    { title: "Databricks Blog, 12 June 2024: Introducing AI/BI: Intelligent Analytics for Real-World Data", url: "https://www.databricks.com/blog/introducing-aibi-intelligent-analytics-real-world-data", grade: "C", how: "Read in full. Not used for numbers. Source for Genie." },
+    { title: "Snowflake Documentation: Cortex Analyst", url: "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-analyst", grade: "C", how: "Read in full. The page has no date; read 16 October 2026. Not used for numbers." },
+    { title: "Google Cloud Documentation: Write queries with Gemini assistance, BigQuery, updated 13 October 2026", url: "https://cloud.google.com/bigquery/docs/write-sql-gemini", grade: "C", how: "Read the sections on the SQL generation tool. Not used for numbers." },
+    { title: "Microsoft Learn, 8 April 2025: Microsoft Copilot in Azure with Azure SQL Database Overview", url: "https://learn.microsoft.com/en-us/azure/azure-sql/copilot/copilot-azure-sql-overview", grade: "C", how: "Read in full. The date is the page's own. Not used for numbers." },
+    { title: "Loot Drop database export, 1,749 failed startups", url: "https://www.loot-drop.io/", grade: "C", how: "Local export. AI-written summaries, not independently verified. Source for the failed predecessors." }
+  ]
 }
 ];
 
