@@ -16696,6 +16696,154 @@ const STORIES = [
     { title: "OpenAI Help Center: ChatGPT release notes", url: "https://help.openai.com/en/articles/6825453-chatgpt-release-notes", grade: "C", how: "Read the entries on record mode (June and July 2025), dictation (26 June 2026) and audio uploads (6 October 2026)." },
     { title: "Loot Drop database export, failed startups", url: "https://www.loot-drop.io/", grade: "C", how: "Local export. AI-written summaries, not independently verified. Source for the failed predecessors." }
   ]
+},
+{
+  slug: "coconote",
+  name: "Coconote",
+  country: "USA",
+  sector: "Consumer software",
+  productType: "AI note-taker and study app for students",
+  aiType: "AI-native",
+  team: "small",
+  outcome: "exit",
+  evidence: "C",
+  added: "2026-10-16",
+  launchLabel: "April 2024",
+  outcomeLabel: "Sold for an undisclosed price after US$6.7M ARR, February 2026",
+  sticker: "Sold after $6.7M ARR",
+  outcomeUsd: 6700000,
+  months: 22,
+  teamLabel: "2 co-founders, plus 5 to 12 contracted content creators before the sale and about 25 after it",
+  fundingLabel: "None (US$0 raised; about US$10,000 from each founder)",
+  primaryFactor: "Distribution",
+  group: "learning",
+  channel: "creators",
+  trend: "sold",
+  collections: ["phone-app"],
+  meters: { evidence: 1, copyable: 2, capital: 2 },
+  tags: ["AI-native", "Small team", "Bootstrapped", "Exit", "B2C", "Education"],
+  product: "A phone and web app that records a lecture, or imports audio, video, a PDF, a document or a link, and makes a transcript, organized notes, flashcards, quizzes, a chat with the note and a short AI-narrated podcast of it. A student gets one free note; after that the app needs a subscription, which starts with a free trial.",
+  why: "Two former Loom staff built a premium-priced app for something students do several times a week, going to class, and sold it through short videos by a small group of contracted creators instead of paid ads. It charged from the first day, and revenue paid for growth with about 50% EBITDA margins until Quizlet bought it.",
+  summary: [
+    `Coconote is a phone and web app for students that turns a recorded lecture into study material. The student records the class, or imports audio, video, a PDF, a document or a link. A <dfn>speech-to-text</dfn> model, a program that writes down spoken words, makes a <dfn>transcript</dfn>, the full text of what was said, and a <dfn>large language model</dfn>, an AI program that writes text from instructions, turns it into organized notes, flashcards, quizzes, a chat with the note and a short podcast read by an AI voice. The app gives one free note; after that the student needs a subscription. Its home page says it uses "AI that doesn't break your University's honor code" and that "it doesn't cheat for you".`,
+    `Zack Hargett, who worked in design and product at Loom, the video-messaging company, and Brett Bauman, an engineer on Loom's mobile team, launched it in April 2024 at US$99 a year or US$19.99 a month, with about US$10,000 of their own money each and no outside investors. They say it passed US$100,000 in <dfn>annual recurring revenue</dfn> (ARR, the yearly value of all active subscriptions) within 45 days, US$1 million in four months and US$2 million in five, while a small group of contracted creators posted short videos on TikTok and Instagram. They also say it made an <dfn>EBITDA</dfn> margin of about 50% in nearly every month; EBITDA is profit before interest, taxes, depreciation and amortization. On 5 February 2026 Quizlet, an online learning platform, announced that it had acquired Coconote; a founder says the deal closed in December 2025. On 18 March 2026 Zack Hargett posted that Coconote had US$6.7 million in ARR at the sale.`,
+    `The revenue figures are the founders' own statements, grade C. Quizlet's announcement confirms the purchase and the more than 1 billion video views, grade B, but gives no price and no revenue. RevenueCat, the subscription platform that the founders used and that publishes the Sub Club podcast, repeats the figures without saying that it checked them in its own data. The page also shows earlier companies that tried to help students study or take notes, and why they failed.`
+  ],
+  factsCaption: "US$6.7 million in annual recurring revenue 22 months after launch, then a sale to Quizlet at an undisclosed price; the revenue is self-reported, the sale is confirmed by the buyer",
+  factsRead: "How to read this table: a grade B value comes from Quizlet's own announcement of the purchase. A grade C value is a founder statement on the Sub Club podcast or in a post quoted by AI Dev Cases, or a store listing. A \"calc\" value was computed on this page from the rows above it. No revenue value is grade A or B.",
+  timelineLead: "From a Chrome extension that summarized videos to a sale to Quizlet, 22 months after launch. Each entry carries its grade.",
+  pricing: {
+    caption: "Coconote prices: the company has no pricing page (coconote.app/pricing returns 404), so the launch prices come from the founders and the October 2026 list from Apple's App Store page, which does not show billing periods (grade C)",
+    note: "The founders say about 80% of subscribers chose the yearly plan. Apart from one free note, the app works only with a subscription, which starts with a free trial. The App Store page of October 2026 lists ten Coconote Pro purchases: US$9.99 (twice), US$19.99 (three times), US$71.99, US$99.99, US$129.99 (twice) and US$152.99, without saying which period each one covers. In June 2026 AI Dev Cases read a range of US$9.99 to US$129.99.",
+    rows: [
+      ["Free", "0", "0", "one note, then a free trial"],
+      ["Coconote Pro, yearly, at launch in April 2024", "8.25", "", "US$99 a year; founders"],
+      ["Coconote Pro, monthly, at launch", "", "19.99", "founders"],
+      ["Coconote Pro, yearly, after an early price test", "10.83", "", "US$129.99 a year on the App Store; the founders say US$129"],
+      ["Other Coconote Pro prices, October 2026", "", "", "US$9.99, US$71.99, US$99.99 and US$152.99; periods not shown"]
+    ]
+  },
+  facts: [
+    { fact: "Annual recurring revenue at the sale", value: "US$6.7 million", grade: "C", note: "Zack Hargett's post of 18 March 2026, quoted by AI Dev Cases, and the founders on the Sub Club podcast. Quizlet published no revenue figure.", src: [3, 1] },
+    { fact: "Sale to Quizlet", value: "announced 5 February 2026, price not disclosed", grade: "B", note: "EdTech Innovation Hub reports Quizlet's announcement of \"the acquisition of note-taking app Coconote\", with no price or terms. AI Dev Cases gives the date. A founder says the deal closed in December 2025.", src: [2, 3, 1] },
+    { fact: "EBITDA margin", value: "about 50% in nearly every month from the start to the sale", grade: "C", note: "Founder on the podcast; the post says \"~50% ebitda\".", src: [1, 3] },
+    { fact: "EBITDA at the sale run rate", value: "about US$3.35 million a year", grade: "X", note: "Calculated: 50% of US$6.7 million. The founders did not give this figure.", src: [1, 3] },
+    { fact: "Annual recurring revenue 45 days after launch", value: "US$100,000", grade: "C", note: "Founder on the podcast.", src: [1] },
+    { fact: "Annual recurring revenue four months after launch", value: "US$1 million", grade: "C", note: "Founder on the podcast and the headline of RevenueCat's recap. That is about August 2024.", src: [1, 4] },
+    { fact: "Annual recurring revenue five months after launch", value: "US$2 million", grade: "C", note: "Founder on the podcast. That is about September 2024.", src: [1] },
+    { fact: "Revenue during the year of the sale process", value: "roughly doubled", grade: "C", note: "Zack Hargett on the podcast, for the time in which an investment bank prepared and ran the sale.", src: [1] },
+    { fact: "Outside funding", value: "US$0; about US$10,000 from each founder", grade: "C", note: "The founder's post says \"$0 raised\"; the podcast gives the founders' own money.", src: [3, 1] },
+    { fact: "Founders' money at the start", value: "about US$20,000", grade: "X", note: "Calculated: about US$10,000 from each of the two founders.", src: [1] },
+    { fact: "Views of the creators' videos", value: "more than 1 billion in 18 months", grade: "B", note: "Quizlet's announcement, as reported by EdTech Innovation Hub. The founder's post says \"1 billion+ organic views on social\".", src: [2, 3] },
+    { fact: "Content creators, all contractors", value: "5 to 10 before the sale, 12 at most; about 25 after it", grade: "C", note: "Founder on the podcast. About 30 creators were tried in the first two months, and three of them made a large difference.", src: [1] },
+    { fact: "Prices at launch", value: "US$99 a year or US$19.99 a month", grade: "C", note: "Founder on the podcast. About 80% of subscribers chose the yearly plan.", src: [1] },
+    { fact: "Yearly price after an early test", value: "US$129", grade: "C", note: "Founder: the higher price brought more users and more revenue at the same time, and it stayed for most of the company's life. The App Store lists a US$129.99 Coconote Pro purchase.", src: [1, 5] },
+    { fact: "Free use", value: "one note, then a free trial", grade: "C", note: "Founder: \"You can make one note for free without starting a trial and that's it.\"", src: [1] },
+    { fact: "Paid advertising", value: "tried and stopped", grade: "C", note: "The founders could not make the first purchase pay back the cost of the ads.", src: [1] },
+    { fact: "App Store rating, October 2026", value: "4.8 from about 17,000 ratings", grade: "C", note: "Apple's listing, shown as 17K ratings. The seller is now Quizlet Inc.", src: [5] },
+    { fact: "Time from launch to the announced sale", value: "22 months", grade: "X", note: "Calculated: April 2024 to February 2026. To the close in December 2025 it is 20 months.", src: [1, 2] }
+  ],
+  timeline: [
+    { when: "2022", what: "Zack Hargett, who had shut down a venture-backed product studio that built apps for high school and college students, makes a Chrome extension that summarizes blog posts and YouTube videos with GPT-3.", grade: "C", src: [1] },
+    { when: "2023", what: "He and Brett Bauman, who met through Loom, try to replace Siri with GPT-4 before they arrive at Coconote.", grade: "C", src: [1] },
+    { when: "April 2024", what: "Coconote launches with a free trial and charges from the first day: US$99 a year or US$19.99 a month. The Internet Archive holds a copy of coconote.app from 1 May 2024.", grade: "C", src: [1, 8] },
+    { when: "45 days after launch", what: "US$100,000 in annual recurring revenue. About 30 creators are tried in the first two months.", grade: "C", src: [1] },
+    { when: "About August 2024", what: "US$1 million in annual recurring revenue, four months after launch, without relying on paid ads.", grade: "C", src: [1, 4] },
+    { when: "About September 2024", what: "US$2 million in annual recurring revenue, five months after launch.", grade: "C", src: [1] },
+    { when: "25 September 2024", what: "The home page says Coconote uses \"AI that doesn't break your University's honor code\" and lists iPhone, Android and web.", grade: "C", src: [7] },
+    { when: "2025", what: "An investment bank prepares and runs a sale process through the year. The founders tell no one, and revenue roughly doubles in that time.", grade: "C", src: [1] },
+    { when: "December 2025", what: "The sale to Quizlet closes, according to a founder.", grade: "C", src: [1] },
+    { when: "5 February 2026", what: "Quizlet announces that it has acquired Coconote, together with a new AI study experience of its own. No price is given.", grade: "B", src: [2, 3] },
+    { when: "18 March 2026", what: "Zack Hargett posts US$6.7 million ARR, about 50% EBITDA, more than 1 billion organic views and US$0 raised. The Sub Club podcast episode and RevenueCat's recap appear the same day.", grade: "C", src: [3, 1, 4] },
+    { when: "October 2026", what: "The App Store lists the app under Quizlet Inc, rated 4.8 from about 17,000 ratings, with Coconote Pro prices from US$9.99 to US$152.99.", grade: "C", src: [5] }
+  ],
+  mechanism: [
+    { title: "Distribution: creators, not influencers", text: "The founders paid content creators to make short videos, not famous people to mention the app. They looked for creators with 5,000 to 10,000 followers and a personal email address in their profile, and avoided creators who had an agency, because, in a founder's words, agencies \"are almost always going to take more than they give\". Before the sale they worked with 5 to 10 creators at a time, at most 12, and met each one. One creator ran the main Coconote account and brought hundreds of millions of views. Quizlet counts more than 1 billion views in 18 months." },
+    { title: "Videos that sell, not only videos that spread", text: "A video with 41 million views did not bring sales, because it showed the app as a toy. Videos that showed a student's problem and then the app solving it converted much better. The founders told creators to imagine offering the app to a new student and her mother at college orientation." },
+    { title: "A premium price and almost no free use", text: "The app launched at US$99 a year or US$19.99 a month, and an early test at US$129 a year brought more users and more revenue. Apart from one free note, it cannot be used without a subscription. The founders say a high price made students trust the app with notes they would be examined on." },
+    { title: "Small tests on the sign-up and cancel screens", text: "A longer onboarding, the first screens of the app, of about 15 screens raised free-trial starts by 16%. Moving the login screen to after the paywall, the screen that asks for payment, removed a 10% drop-off. On the web, a cancel flow kept 25% of people who tried to cancel, and the best offer was seven more days of free trial, not a discount." },
+    { title: "A task that repeats", text: "Students go to class several times a week, so a recording app is used often, and the notes from one course build up over a term. The founders compare this with apps such as Strava and Ladder that people open for every run or workout." }
+  ],
+  howBuilt: {
+    intro: "These details come from the founders on the Sub Club podcast, from AI Dev Cases and from the app's store listing. They are grade C.",
+    items: [
+      "An app for iPhone first, then Android and the web. By October 2026 the App Store lists versions for iPhone, iPad, Mac, Apple Watch and Apple Vision.",
+      "Two AI steps: speech-to-text turns the recording into a transcript, then a large language model writes the notes, quizzes and flashcards. The founders say transcription costs more than the language model. No source names the model providers.",
+      "Reliable recording on a phone was hard: early versions lost recordings, and a phone call can stop a recording. A founder says Apple does not make reliable recording easy.",
+      "Payments through the App Store and Google Play, with RevenueCat for subscription data (a founder says he checked \"the RevenueCat chart\" far too often), and Stripe for subscriptions on the web. The cancel flow with the trial extension ran on the web.",
+      "The account is created after the payment screen, which needed extra work to connect an Apple purchase to an account made later.",
+      "A content team of contracted creators who post on TikTok and Instagram Reels, coached by the founders. A test of paid ads, with an outside agency cutting the creators' raw videos into ads, did not pay back.",
+      "The sale was run by an investment bank, Accretive Partners, through which the founders got back in touch with Quizlet."
+    ],
+    src: [1, 3, 5]
+  },
+  predecessorsIntro: "Five companies in the Loot Drop database tried to help students study or take notes, and failed. The values below are from that database and are not independently verified.",
+  predecessors: [
+    { name: "Flashnotes", years: "2010 to 2016", funding: "US$1.47M", cause: "Competition", promise: "A marketplace where college students sold their class notes and study guides to other students.", died: "It could not control the quality of the notes, and Course Hero and Chegg won with a better product and more money.", url: "https://www.loot-drop.io/startup/154-flashnotes" },
+    { name: "StudyRoom", years: "2010 to 2013", funding: "US$2M", cause: "No Market Need", promise: "An online place where students in the same course study together and swap notes.", died: "It did not reach the number of users that a network product needs, and it found no way to earn money.", url: "https://www.loot-drop.io/startup/1691-studyroom" },
+    { name: "InstaGrok", years: "2010 to 2013", funding: "US$500K", cause: "Competition", promise: "A search tool for students that showed a topic as a map of concepts.", died: "Schools did not change their methods, and the free tools of Quizlet and Khan Academy took the users.", url: "https://www.loot-drop.io/startup/1700-instagrok" },
+    { name: "Xuebajun", years: "2013 to 2021", funding: "US$150M", cause: "Unit Economics", promise: "Photograph a homework problem and get the solution from software, for school students in China.", died: "It moved from the cheap homework app to costly live tutoring, then Chinese rules banned its business.", url: "https://www.loot-drop.io/startup/2325-xuebajun" },
+    { name: "Transpose", years: "2012 to 2018", funding: "US$0", cause: "Competition", promise: "A note-taking app with templates, first as an alternative to Evernote, then for business data.", died: "It charged US$14.99 against Evernote without outside money, and users had no reason to switch.", url: "https://www.loot-drop.io/startup/1849-transpose" }
+  ],
+  whatChanged: [
+    `The five earlier companies each needed something that was slow or expensive to get: good notes written by other students (Flashnotes), enough users in the same course (StudyRoom), schools that would change their habits (InstaGrok), paid human tutors (Xuebajun), or a reason to leave an established notes app (Transpose). InstaGrok lost to free tools that included Quizlet, the company that bought Coconote.`,
+    `Coconote needed none of these. A speech-to-text model and a language model turn each student's own lecture into notes, so there is no marketplace to fill and no network to build, and the founders kept a margin of about 50% while paying for the models. Short-video feeds that rank videos by interest, not by the number of followers, let a few contracted creators reach students without paid ads. What has not changed is the risk that a larger, free product does the same job: in 2025 OpenAI and Google added study features to their assistants.`
+  ],
+  copy: {
+    verdict: "The creator method, yes. The empty market of early 2024, no.",
+    text: "Coconote launched when the note-takers that existed were mostly web apps or tools for business meetings, and the founders thought that no one was taking the idea seriously. By 2026 the field is crowded, and the AI makers have their own study features. The method still transfers: pick a task people do several times a week, charge a premium price from the first day, and pay a few chosen creators for videos that show the product solving a real problem.",
+    steps: [
+      "Choose a task the customer repeats every week, such as going to class, so that the product gains value with each use.",
+      "Charge from the first day with a yearly price and a free trial, and test a higher price early.",
+      "Recruit creators with 5,000 to 10,000 followers and a personal email address, coach each one, and keep the video formats that show a problem and its solution.",
+      "Test the sign-up and cancel screens: put the login after the payment screen, and offer more trial time instead of a discount."
+    ],
+    open: "Other recordings that people make every week and must study afterwards: language classes, medical and nursing training, professional exam courses and training sessions at work."
+  },
+  watch: [
+    { title: "The revenue figures are the founders' own", text: "US$6.7 million ARR, the 50% EBITDA margin and every earlier step come from the founders: a post on X quoted by AI Dev Cases, and the Sub Club podcast. RevenueCat, which hosts the podcast and handled the app's subscription data, repeats the figures in its recap but does not say it checked them. Quizlet's announcement confirms the purchase and the views, not the revenue or the price." },
+    { title: "Team size is not documented", text: "The sources name two co-founders and count the creators, who were contractors: 5 to 10 at a time before the sale, at most 12, and about 25 after it. No source gives a number of employees; a founder mentions \"the folks on the team\" without a count." },
+    { title: "The AI makers now offer study help inside their assistants", text: "OpenAI added study mode to ChatGPT on 29 July 2025 for logged-in Free, Plus, Pro and Team users, to help students \"work through problems step by step instead of just getting an answer\". Google launched Guided Learning in Gemini on 6 August 2025 as \"a personal learning companion\". Students already use these assistants, and the study features come at no extra price, while Coconote charged about US$130 a year." },
+    { title: "Recording a class can need permission", text: "Coconote's own FAQ says the app is fine \"as long as your professor or teacher is cool with you audio recording the class\". Rules differ by place: Florida law lets a student at a public college record a lecture for personal educational use, but says a recorded lecture \"may not be published without the consent of the lecturer\". The app also serves shared notes at public web addresses with transcript pages, according to the Internet Archive's capture list." },
+    { title: "Model costs it does not control", text: "The founders say transcription costs more than the language model, and that \"the foundational LLM or AI model providers are doing amazing work and we have no right to compete with them\". The 50% margin depended on prices set by providers that no source names. Local models, which the founders say are getting much better, can cut that cost, and they also make copies cheaper to build." },
+    { title: "Same field, smaller numbers on this site", text: "Jungle, a funded study app that also grows through creator videos, reported US$850,000 a year in recurring revenue in December 2024, about one eighth of Coconote's US$6.7 million, and AudioNotes, a voice-notes app built by one founder, reported about US$7,200 a month in August 2024." },
+    { title: "One channel and a few people", text: "Paid ads did not pay back, so sales depended on short videos on TikTok and Instagram, and three of about 30 early creators made a large difference. A change in how these feeds rank videos, or the loss of those creators, would reach revenue directly. A founder says their own first TikTok attempts ended with a ban." },
+    { title: "Now part of Quizlet", text: "Quizlet Inc is the seller on the App Store, and the founders said that under the new owner the app may become cheaper (\"stay tuned on that\"). The October 2026 listing shows Coconote Pro prices from US$9.99 to US$152.99 without billing periods. Results after the sale belong to Quizlet and are not public." }
+  ],
+  sources: [
+    { title: "Sub Club podcast, 18 March 2026: Bootstrapped to $6.7M ARR and an Exit to Quizlet in 2 Years, Brett Bauman and Zack Hargett, Coconote", url: "https://subclub.com/episode/bootstrapped-to-67m-arr-and-an-exit-to-quizlet-in-2-years-brett-bauman-zack-hargett-coconote", grade: "C", how: "Read the full transcript on the episode page. The founders' own account of the launch, the revenue steps, prices, margins, creators, ad tests and the sale process." },
+    { title: "EdTech Innovation Hub, 11 February 2026: Quizlet acquires note-taking app Coconote, launches new AI-powered learning experience", url: "https://www.edtechinnovationhub.com/news/quizlet-acquires-note-taking-app-coconote-launches-new-ai-powered-learning-experience", grade: "B", how: "Read in full. A press report of Quizlet's announcement: the acquisition, the new AI study experience and the more than 1 billion views in 18 months, with no price or terms. Quizlet's own release on PR Newswire of 5 February 2026, also read in full, gives the same facts and no price." },
+    { title: "AI Dev Cases, 22 June 2026: How Coconote Hit $6.7M ARR in 18 Months With Almost No Ad Spend", url: "https://aidevcases.com/en/cases/coconote", grade: "C", how: "Read in full. Quotes Zack Hargett's X post of 18 March 2026 ($6.7m ARR, ~50% ebitda, 1 billion+ organic views, $0 raised). The post itself was not opened, because x.com needs a login; its date was checked from the post ID. Source for the creator details and the TikTok and Reels channels." },
+    { title: "RevenueCat blog, by David Barnard, 18 March 2026: How Coconote hit $1M ARR in 4 months with no paid ads", url: "https://www.revenuecat.com/blog/growth/brett-zack-coconote-sub-club-podcast-2026/", grade: "C", how: "Read in full. The podcast host's recap. It repeats the founders' figures and does not say they come from RevenueCat's own data, so it is not an independent check." },
+    { title: "Apple App Store listing: Coconote - AI Note Taker, read 16 October 2026", url: "https://apps.apple.com/us/app/coconote-ai-note-taker/id6479320349", grade: "C", how: "Read in full. Seller, rating, platforms and the list of Coconote Pro in-app purchase prices, which does not show billing periods." },
+    { title: "Coconote home page, read 16 October 2026", url: "https://coconote.app/", grade: "C", how: "Read in full. Features and the FAQ on honor codes and recording permission. The footer now says Quizlet, Inc. The address coconote.app/pricing returns 404." },
+    { title: "Internet Archive copy of the Coconote home page, 25 September 2024", url: "http://web.archive.org/web/20240925160039/https://coconote.app/", grade: "C", how: "Read in full. The home page before the sale: features, platforms and the honor-code statement." },
+    { title: "Internet Archive capture list for coconote.app, 2024 to 2026", url: "http://web.archive.org/cdx/search/cdx?url=coconote.app*&from=2024&to=2026", grade: "C", how: "Read the list of captures from 2024 onward. It starts with a copy of the home page from 1 May 2024. Shared notes are served under coconote.app/notes/ with transcript, quiz and flashcard pages." },
+    { title: "OpenAI, 29 July 2025: Introducing study mode", url: "https://openai.com/index/chatgpt-study-mode/", grade: "C", how: "Read in full. The maker's own announcement, with the plans that get the feature." },
+    { title: "Google, 6 August 2025: Guided Learning in Gemini: From answers to understanding", url: "https://blog.google/outreach-initiatives/education/guided-learning/", grade: "C", how: "Read in full. The maker's own announcement." },
+    { title: "The Florida Senate: 2025 Florida Statutes, section 1004.097", url: "https://www.flsenate.gov/Laws/Statutes/2025/1004.097", grade: "B", how: "Read the section on recording class lectures at public colleges and universities." },
+    { title: "Loot Drop database export, 1,749 failed startups", url: "https://www.loot-drop.io/", grade: "C", how: "Local export. AI-written summaries, not independently verified. Source for the failed predecessors." }
+  ]
 }
 ];
 
