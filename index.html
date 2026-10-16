@@ -16392,6 +16392,160 @@ const STORIES = [
     { title: "Livmo: Acquire.com Biannual Acquisition Multiples Report (Feb 2023), Livmo Summary, published 13 November 2023, updated 28 August 2026", url: "https://livmo.com/blog/acquire-com-biannual-acquisition-multiples-report-feb-2023-livmo-summary/", grade: "C", how: "Read in full. A sale advisor's summary of Acquire.com's February 2023 and January 2024 reports; the reports themselves were not opened." },
     { title: "Loot Drop database export, 1,749 failed startups", url: "https://www.loot-drop.io/", grade: "C", how: "Local export. AI-written summaries, not independently verified. Source for the failed predecessors." }
   ]
+},
+{
+  slug: "laper",
+  name: "Laper",
+  country: "China, company registered in Hong Kong",
+  sector: "Information Technology",
+  productType: "AI screenwriting and pre-production web app",
+  aiType: "AI-native",
+  team: "small",
+  outcome: "running",
+  evidence: "A",
+  added: "2026-10-16",
+  launchLabel: "18 December 2025",
+  outcomeLabel: "US$43.4K a month in recurring revenue, October 2026",
+  sticker: "$521K/yr run rate",
+  outcomeUsd: 520812,
+  months: 10,
+  teamLabel: "1 founder at first, 5 people within about half a year",
+  fundingLabel: "None reported (listed as bootstrapped)",
+  primaryFactor: "Niche",
+  group: "companions-publishing",
+  channel: "audience",
+  trend: "flat",
+  collections: [],
+  meters: { evidence: 3, copyable: 2, capital: 1 },
+  tags: ["AI-native", "Small team", "Bootstrapped", "Running", "B2C", "Screenwriting"],
+  product: "A web editor for screenplays and novels. It keeps the industry page format automatically, turns the scene headings and character names in the script into lists of scenes, characters and locations, and adds AI help that the writer calls on: short continuations, script review, character images and storyboard frames. Several people can edit one script at the same time.",
+  why: "The founder had worked as a screenwriter and knew which part of the job is tool work: the page format, and keeping characters and scenes consistent across a long draft. He built the editor around that work and kept the AI in the role of a helper. He says Claude Code wrote all the code. The beta grew through invite codes that users earned by posting about it, and monthly revenue rose from US$5,136 in May 2026 to about US$46,000 in August and in September.",
+  summary: [
+    `Laper is <dfn>screenwriting software</dfn>, a text editor that keeps a script in the page format that film and television productions expect: scene headings, action lines, character names and dialogue each have a fixed place on the page. Laper adds AI help inside that editor. In the beta that Tencent News tested in December 2025, when the cursor rested on an empty line for 3 to 5 seconds, the AI proposed a short continuation, usually 50 to 100 Chinese characters, which the writer could accept or change. The editor also reads the script and builds lists of scenes, characters and locations, and from them a relationship map, character images and <dfn>storyboard</dfn> frames. A storyboard is a series of pictures, one per camera shot, that a film crew plans with. Several people can edit one script at once through a <dfn>CRDT</dfn> (conflict-free replicated data type), a data structure that lets copies of one document on different computers take edits separately and merge them later; Laper merges at the level of whole screenplay blocks, such as one dialogue paragraph.`,
+    `The founder, Zhao Chunxiang (赵纯想), worked for several years at Tingdong Pictures, a Chinese film studio, where he broke films down shot by shot, wrote scripts and was an actor for one year. The name Laper comes from 拉片 (la pian), the Chinese film term for that shot-by-shot study. He then built AI apps, among them an AI food diary that was popular in 2023. In a WeChat chat, a co-founder of the Chinese company Meituan asked him why he did not build an AI screenwriting product from his own experience, and he stopped his earlier project. Laper was founded on 28 September 2025, shipped a first alpha on 6 October 2025 and opened an invite-only beta on 18 December 2025. The founder says that all of the code, more than 100,000 lines, was written by <dfn>Claude Code</dfn>, an AI coding agent from Anthropic that writes and changes the code of a project when the developer describes the change in words.`,
+    `Laper connected its account at <dfn>Stripe</dfn>, the payment processor that charges its customers' cards, to TrustMRR, a site that reads revenue directly from the processor through an <dfn>API key</dfn>, a password that lets one program read another program's data. On 16 October 2026 TrustMRR showed US$43,401 in <dfn>monthly recurring revenue</dfn> (MRR), the subscription revenue of one month, from 1,348 active subscriptions: grade A. Revenue was small until April 2026, rose fast from May to August, and was level in August and September at about US$46,000 a month. The founder says the team grew from one person to five, and no source reports outside funding. Since 17 August 2026 the business has been listed for sale on TrustMRR at US$1,999,999; on 16 October 2026 it was still listed.`
+  ],
+  factsCaption: "US$43,401 a month in recurring revenue ten months after an invite-only beta, read from Stripe by TrustMRR, for a business that is now listed for sale",
+  factsRead: "How to read this table: a grade A value was read from the company's Stripe account by TrustMRR. A grade C value is a founder statement, a press report, or a value that the seller typed into the TrustMRR profile. A \"calc\" value was computed on this page from the rows above it.",
+  timelineLead: "From a first alpha release in October 2025 to about US$46,000 of revenue a month in August 2026. Each entry carries its grade.",
+  pricing: {
+    caption: "Laper plans in October 2026, from the company's pricing page and its llms.txt file (grade C)",
+    note: "The pricing page shows the monthly prices; the yearly prices come from the company's llms.txt file and are 20% below twelve monthly payments. AI chats and writing cards are text requests to the assistant. Credits pay for image, video and other generation, and every plan also gets daily refresh credits. The December 2025 beta had other prices: a free tier, Senior at US$9 a month (beta only) and Master at US$50 a month, with 500 credits for US$4.99.",
+    rows: [
+      ["Junior", "0", "0", "10 AI chats and 10 writing cards a month; 2 screenplay, 2 film and 2 novel projects"],
+      ["Senior", "16", "20", "500 AI chats, 500 writing cards and 600 credits a month; assistant model Laper 16mm"],
+      ["Elite", "48", "60", "2,000 AI chats, 2,000 writing cards and 2,800 credits a month; assistant model Laper IMAX"],
+      ["Master", "80", "100", "unlimited AI chats and projects, 6,000 credits a month"],
+      ["Legend", "320", "400", "unlimited AI chats and projects, 32,000 credits a month, dedicated support"]
+    ]
+  },
+  facts: [
+    { fact: "Monthly recurring revenue, 16 October 2026", value: "US$43,401", grade: "A", note: "TrustMRR, read from the Stripe account by API key; revenue last synced 16 October 2026 at 14:41 UTC. The profile shows MRR growth of -3.5% over the last 30 days.", src: [1] },
+    { fact: "Run rate from that MRR", value: "about US$520,800 a year", grade: "X", note: "Calculated: 43,401 times 12 equals 520,812. This is the headline figure on this page.", src: [1] },
+    { fact: "Active subscriptions, 16 October 2026", value: "1,348", grade: "A", note: "TrustMRR, from Stripe.", src: [1] },
+    { fact: "Average MRR per subscription", value: "about US$32 a month", grade: "X", note: "Calculated: 43,401 divided by 1,348 equals 32.20. The paid plans cost US$20 to US$400 a month, or less per month when billed yearly.", src: [1, 4] },
+    { fact: "Revenue in the 30 days to 16 October 2026", value: "US$45,917", grade: "A", note: "TrustMRR, from Stripe. The profile shows revenue growth of -3.3% over the last 30 days.", src: [1] },
+    { fact: "Revenue per month, June to September 2026", value: "US$15,857, US$27,108, US$45,999 and US$46,079", grade: "A", note: "TrustMRR monthly timeline, from Stripe. October 2026 shows US$24,961 for the first 16 days.", src: [1] },
+    { fact: "Change from August to September 2026", value: "+0.17%", grade: "X", note: "Calculated: (46,079 - 45,999) divided by 45,999. Within 15% either way, so this page calls the trend flat. From June to August revenue grew 2.9 times.", src: [1] },
+    { fact: "Revenue from December 2025 to April 2026", value: "US$3,145 in five months", grade: "X", note: "Calculated: the sum of the TrustMRR monthly rows US$760, US$294, US$162, US$1,334 and US$595.", src: [1] },
+    { fact: "Revenue, May 2026", value: "US$5,136", grade: "A", note: "TrustMRR monthly timeline. The first month above US$2,000.", src: [1] },
+    { fact: "All-time revenue to 16 October 2026", value: "US$168,486", grade: "A", note: "TrustMRR, from Stripe.", src: [1] },
+    { fact: "Share of all-time revenue earned in June to September 2026", value: "80.2%", grade: "X", note: "Calculated: 135,043 divided by 168,486.", src: [1] },
+    { fact: "MRR reported on 3 September 2026", value: "US$40,708 from 1,165 paid subscriptions", grade: "C", note: "aidevcases.com, quoting TrustMRR at that date; this page did not read TrustMRR on that date. The same article mentions an earlier, undated snapshot of US$30,200 and 898 subscriptions on aggregator sites.", src: [2] },
+    { fact: "Growth from 3 September to 16 October 2026", value: "MRR +6.6%, subscriptions +15.7%", grade: "X", note: "Calculated: 43,401 against 40,708, and 1,348 against 1,165.", src: [1, 2] },
+    { fact: "Profit margin, last 30 days", value: "68.0%", grade: "C", note: "Shown on the TrustMRR profile, outside the metrics that TrustMRR says it reads from the payment processor. The profile does not say how it is computed.", src: [1] },
+    { fact: "Asking price", value: "US$1,999,999", grade: "C", note: "The seller's listing on TrustMRR, first listed on 17 August 2026. The profile shows 4 acquisition offers received; their amounts are not public.", src: [1] },
+    { fact: "Asking price as a multiple of revenue", value: "about 3.6 times a year of revenue", grade: "X", note: "Calculated: 1,999,999 divided by 12 times the last-30-day revenue of US$45,917 equals 3.63, which TrustMRR shows as 3.6x. On the current MRR it is 3.84.", src: [1] },
+    { fact: "Team", value: "1 founder at first, 5 people within about half a year", grade: "C", note: "The founder's text on TrustMRR and aidevcases.com. TrustMRR lists the team size as 2 to 5 people. No source names the other members.", src: [1, 2] },
+    { fact: "Outside funding", value: "none reported", grade: "C", note: "TrustMRR lists the business as bootstrapped. No source reports an investment.", src: [1, 2, 3] },
+    { fact: "Beta participants by 24 December 2025", value: "more than 1,800", grade: "C", note: "Tencent News, six days after the invite-only beta opened.", src: [3, 2] },
+    { fact: "Beta prices, December 2025", value: "free, US$9 and US$50 a month", grade: "C", note: "Senior at US$9 a month was a beta price. Credits were US$4.99 for 500, about US$0.01 each. In October 2026 the Senior plan costs US$20 a month.", src: [3, 4] },
+    { fact: "Code written by hand", value: "none, by the founder's account", grade: "C", note: "The founder says Claude Code wrote all of the more than 100,000 lines. The site footer says 100% Built by Claude Code. No one outside the company has checked it.", src: [2, 3, 4] },
+    { fact: "Founder's followers on X", value: "46,306", grade: "C", note: "Shown on the TrustMRR profile in October 2026.", src: [1] },
+    { fact: "Time from the beta to the October 2026 figure", value: "10 months", grade: "X", note: "Calculated: December 2025 to October 2026.", src: [1, 3] }
+  ],
+  timeline: [
+    { when: "Earlier, not dated", what: "Zhao Chunxiang works for several years at Tingdong Pictures, a Chinese film studio: shot-by-shot film breakdowns, screenwriting, and one year as an actor.", grade: "C", src: [3, 2] },
+    { when: "2023", what: "His AI food-diary app becomes popular. It used invite codes: each code entered improved the app's food recognition for the inviter and for the invited user.", grade: "C", src: [3] },
+    { when: "2025, before the founding", what: "In a WeChat chat, a co-founder of Meituan asks him why he does not build an AI screenwriting product from his own experience. He stops the project he had worked on and moves to Laper.", grade: "C", src: [3, 2] },
+    { when: "28 September 2025", what: "Founding date on the TrustMRR profile. The company is registered in Hong Kong.", grade: "C", src: [1, 2] },
+    { when: "6 October 2025", what: "Version 0.0.1, the first alpha release.", grade: "C", src: [7] },
+    { when: "13 October 2025", what: "A post on the Laper site says that its assistant runs on Claude Sonnet 4, a model from Anthropic.", grade: "C", src: [6] },
+    { when: "November 2025", what: "Versions 0.1.0 to 0.3.0: real-time sync through the Loro CRDT, file import, and an interface in 11 languages.", grade: "C", src: [7] },
+    { when: "18 December 2025", what: "The invite-only beta opens. A user earns an invite code by forwarding a set post to WeChat Moments, keeping it visible for at least 5 minutes and uploading a screenshot. Posts about Laper on Xiaohongshu, X and TikTok that get 3 likes earn points, up to 60 days of free membership.", grade: "C", src: [3, 2] },
+    { when: "21 December 2025", what: "The founder posts on X that Laper started with that WeChat chat. aidevcases.com quotes the post.", grade: "C", src: [2] },
+    { when: "24 December 2025", what: "More than 1,800 people are in the beta. Plans: free, US$9 and US$50 a month.", grade: "C", src: [3] },
+    { when: "December 2025 to April 2026", what: "US$3,145 of revenue in five months.", grade: "A", src: [1] },
+    { when: "May to August 2026", what: "Monthly revenue goes from US$5,136 to US$15,857, US$27,108 and US$45,999.", grade: "A", src: [1] },
+    { when: "17 August 2026", what: "Listed for sale on TrustMRR with an asking price of US$1,999,999.", grade: "C", src: [1] },
+    { when: "3 September 2026", what: "aidevcases.com reports US$40,708 in MRR from 1,165 paid subscriptions, and a team of five.", grade: "C", src: [2] },
+    { when: "September 2026", what: "US$46,079 of revenue, level with August.", grade: "A", src: [1] },
+    { when: "16 October 2026", what: "US$43,401 in MRR from 1,348 subscriptions. Still listed for sale, with 4 offers received.", grade: "A", src: [1] }
+  ],
+  mechanism: [
+    { title: "Niche", text: "Laper is built for one profession. The founder broke films down shot by shot and wrote scripts at a film studio, and he designed the tool around the work that takes a writer's time without being writing: the page format, and keeping characters, locations and scenes consistent across a long draft. General writing tools and general AI chat do not handle that format, and Final Draft, the long-time standard in Hollywood, is a desktop program." },
+    { title: "AI as a helper, not the author", text: "The AI proposes a short continuation when the writer pauses, and it reads only the part of the script that the writer chooses: the cursor position, a scene, a range or the outline. Edits that the writer approves go through the normal editor. The company says it serves writers who dislike generative AI. Tencent News noted the difference from tools that generate a complete story from one prompt: in Laper the writer keeps the decisions." },
+    { title: "Sharing built into sign-up", text: "In the beta, an invite code cost a public post: forward a set post to WeChat Moments, keep it there for at least five minutes and upload a screenshot. Posts on Xiaohongshu, X and TikTok that got three likes earned points toward free months. Every new user was also a post that friends saw. More than 1,800 people joined in the first six days." },
+    { title: "Claude Code wrote the code", text: "The founder says he wrote none of the more than 100,000 lines himself. The documentation files that the site publishes carry a header line that says, in Chinese, to update the header after each change and then check CLAUDE.md, the instruction file that Claude Code reads. A former screenwriter who had built smaller apps before shipped a collaborative editor with real-time sync and AI features, then grew the team to five." }
+  ],
+  howBuilt: {
+    intro: "These details come from the company's own pages, the TrustMRR profile (the tech stack there is typed by the seller) and the founder's account in the press. They are grade C.",
+    items: [
+      "Code: written by Claude Code, by the founder's account, more than 100,000 lines with no hand-written code. The site footer says 100% Built by Claude Code.",
+      "Editor: Plate, an open-source rich-text editor framework for React, with typed screenplay elements. Scene headings feed the list of locations, and character cues feed the list of characters.",
+      "Collaboration: Loro, an open-source CRDT library, with a separate lorosync service. Conflicts are resolved per screenplay block. Supabase Realtime is not used for script data.",
+      "AI: the footer says Powered by Mastra, an open-source TypeScript framework for AI agents. A post of 13 October 2025 says the assistant runs on Claude Sonnet 4. The plans name the assistant models Laper 16mm and Laper IMAX without saying which models are behind them, and no source names the image or video models.",
+      "Backend: an API service owns authorization, credits, task status, retries and refunds; a separate generation worker calls the models and uploads the results. The TrustMRR stack lists React, TypeScript, Tailwind CSS, Supabase, PostgreSQL, Go, Docker and Stripe.",
+      "Hosting and search: a comment in the robots.txt file names Cloudflare Pages as the host. The site publishes llms.txt files for AI assistants, comparison pages against Final Draft, WriterDuet, Celtx, Sudowrite, Highland and Fade In, and a script archive that the robots.txt file describes as thousands of pages built on request.",
+      "Files: imports Final Draft .fdx scripts and exports PDF and Final Draft XML. The interface has been in 11 languages since November 2025."
+    ],
+    src: [2, 3, 4, 6, 1, 11, 7]
+  },
+  predecessorsIntro: "Five companies in the Loot Drop database sold tools for writers or for visual storytelling before AI could help with the work. The values below are from that database and are not independently verified.",
+  predecessors: [
+    { name: "Draft", years: "2011 to 2014", funding: "US$120K", cause: "Competition", promise: "A simple cloud editor for writers, with version control and shared editing.", died: "Google Docs gave the same basic features for free, and a narrow writing tool with a freemium model could not compete.", url: "https://www.loot-drop.io/startup/1605-draft" },
+    { name: "Taleship", years: "2018 to 2020", funding: "US$0", cause: "No market need", promise: "Real-time co-writing of stories: Google Docs for novelists.", died: "Few writers wanted to write together, and the company spread its work over too many features.", url: "https://www.loot-drop.io/startup/1918-taleship" },
+    { name: "Real Artists", years: "2016 to 2019", funding: "US$3M", cause: "Competition", promise: "A cloud animation studio for independent artists and small studios.", died: "Adobe and other large companies had more money and better tools, and it did not win the large clients it needed.", url: "https://www.loot-drop.io/startup/1073-real-artists" },
+    { name: "Lightwell", years: "2019 to 2022", funding: "US$500K", cause: "Competition", promise: "A no-code tool for designers and other creative people to build interactive stories.", died: "Adobe and Canva covered most of the need, and the remaining niche was too small.", url: "https://www.loot-drop.io/startup/1369-lightwell" },
+    { name: "Fuzzwich", years: "2007 to 2010", funding: "US$20K", cause: "Competition", promise: "Short animated videos by drag and drop, for people without animation skills.", died: "It stayed on the desktop while users moved to phones, and Adobe had far more money.", url: "https://www.loot-drop.io/startup/1655-fuzzwich" }
+  ],
+  whatChanged: [
+    `The five companies in this list sold tools for writers or for visual storytelling, and the database records the same end for four of them: a large company offered enough of the same thing. Draft and Taleship were general writing editors, and Google Docs gave basic shared editing for free. Real Artists, Lightwell and Fuzzwich made visual tools and lost to Adobe and Canva. Each of them also had to pay engineers to build the editor, the sync and the drawing tools before it could sell anything.`,
+    `Laper differs in three ways. It is not a general editor: it serves one profession whose format and planning work general tools do not handle, the same kind of position that Final Draft has held for about 20 years. The visual part, character images and storyboard frames, is now a request to a model provider instead of a studio's work. And the founder says that an AI agent wrote the code, so a team of five could build the editor, the real-time sync and the AI features. The same change lowers the cost for every competitor: WriterDuet had added generated images by June 2024, and the founder's own listing names a rival that raised a US$12 million seed round.`
+  ],
+  copy: {
+    verdict: "The founder's position, no. The method, yes.",
+    text: "Laper rests on two things that a new founder cannot copy quickly: years of work inside a film studio, and an audience of 46,306 followers on X plus an earlier app that was popular in China. The method is open to anyone with real experience in one profession: build the tool for the part of the work that follows fixed rules and takes time, keep the AI in the role of a helper, and let an AI coding agent write the code.",
+    steps: [
+      "Pick a profession that you worked in, and list the tasks that follow fixed rules and take time without being the real work.",
+      "Build the editor around those rules first, then add AI that the user calls on for a defined part of the document.",
+      "Make each invite code cost a public post, so that every sign-up also creates a post that friends see.",
+      "Price the plans by AI usage, because every generation request costs money."
+    ],
+    open: "The same kind of tool for other writing jobs with fixed formats: stage plays, comics, game scripts, subtitles, and legal or grant documents. Each has a format, a review process and a profession that general AI chat does not serve well."
+  },
+  watch: [
+    { title: "Listed for sale", text: "Since 17 August 2026 the business has been on TrustMRR's marketplace with an asking price of US$1,999,999, about 3.6 times a year of revenue at the last-30-day rate, and the profile shows 4 offers received by 16 October 2026. A new owner may change the product, the prices or the team." },
+    { title: "A short revenue history", text: "Most of the money came in four months: 80.2% of all-time revenue fell in June to September 2026. August and September were level at about US$46,000, and over the last 30 days revenue changed by -3.3% and MRR by -3.5%. Ten months of data do not show whether subscribers stay for a year." },
+    { title: "Competitors, old and new", text: "Final Draft, the desktop program that Hollywood writers have used for about 20 years, sells version 13 in October 2026. A Leonardo.Ai case study of June 2024 describes how WriterDuet added generated character headshots, environments and video trailers through Leonardo.Ai's API. Laper's own comparison pages list Celtx, Sudowrite, Highland and Fade In as alternatives, and the founder's listing names preiview.io, which he says raised a US$12 million seed round. Large companies can add AI features fast, so Laper's advantage has to come from the format and planning work." },
+    { title: "Union rules on AI", text: "The Writers Guild of America's summary of its 2023 Minimum Basic Agreement (MBA), the contract between the guild and the studios, says that AI cannot write or rewrite literary material, and that AI output is not source material that could reduce a writer's credit. A writer may use AI if the company consents and the writer follows its policies, but the company cannot require it, and it must tell the writer when material it hands over was made with AI. So a guild writer on a covered project can use Laper's AI only with the studio's consent. The guild also reserves the right to argue that training AI on writers' material is prohibited. This page did not check whether a newer agreement changed these rules." },
+    { title: "Dependence on model providers", text: "The assistant runs on a rented model, Claude Sonnet 4 according to the company's post of October 2025, and the code itself was written by Claude Code. Image and video generation runs through a generation worker that calls the models, and no source names those models. A price rise, a model change or an outage at a provider would change both the product and the 68.0% profit margin that the profile shows." },
+    { title: "Numbers and people that do not agree", text: "The founder's TrustMRR text says Laper grew from a solo founder, while Tencent News in December 2025 says he built it with his team and quotes a business partner. No source names the other team members. The company is registered in Hong Kong, and aidevcases.com notes that the founder's activity looks centered in mainland China. The profile's traffic figure, 19 visitors in 30 days, is far too low for 1,348 subscribers and is not used here." }
+  ],
+  sources: [
+    { title: "TrustMRR profile of Laper, revenue read from Stripe by API key", url: "https://trustmrr.com/startup/laper.md", grade: "A", how: "Read the markdown profile on 16 October 2026 (revenue last synced 16 October 2026 at 14:41 UTC). MRR, subscriptions, revenue and the monthly timeline come from the Stripe account. The founding date, team size, funding status, tech stack, channels, description, follower count, profit margin and sale listing are written or entered by the seller, or not covered by the verification note, and are grade C." },
+    { title: "AI Dev Cases, 3 September 2026: \"I Didn't Write a Single Line of Code\": A Former Screenwriter Built a 100,000-Line AI Screenwriting Tool With Claude Code Alone, Hitting $40K+ MRR in 8 Months", url: "https://aidevcases.com/en/cases/laper", grade: "C", how: "Read in full. An editorial case study that quotes TrustMRR and the founder's X post of 21 December 2025. Source for the background, the beta mechanics, the team growth and the September 2026 snapshot." },
+    { title: "Tencent News, 24 December 2025, Yangfan Chuhai account, author 子墨: a screenwriter turned app developer goes all in on an AI screenwriting tool after one remark by a Meituan co-founder (title translated from Chinese and shortened)", url: "https://news.qq.com/rain/a/20251224A0410K00", grade: "C", how: "Read in full, in Chinese. Launch coverage six days after the beta opened. Source for the founder's background, the origin of the idea, the Claude Code claim, the invite mechanics, the beta prices and the 1,800 beta users." },
+    { title: "Laper pricing page and llms.txt file, read 16 October 2026", url: "https://laper.ai/pricing", grade: "C", how: "Read in full. Monthly prices and plan limits from the pricing page; yearly prices from https://laper.ai/llms.txt, which also gives the architecture notes. The footer says 100% Built by Claude Code and Powered by Loro CRDT / Mastra." },
+    { title: "Laper home page, read 16 October 2026", url: "https://laper.ai/", grade: "C", how: "Read in full. Source for the product description and the purpose check." },
+    { title: "Laper llms-full.txt, the company's generated reference for AI assistants", url: "https://laper.ai/llms-full.txt", grade: "C", how: "Read the sections on architecture, Final Draft import, the comparison pages and the post of 13 October 2025 that names Claude Sonnet 4 as the assistant model." },
+    { title: "Laper changelog", url: "https://laper.ai/changelog/", grade: "C", how: "Read in full. Release dates from 0.0.1 on 6 October 2025 to 0.4.1 on 9 January 2026; no later entries." },
+    { title: "Leonardo.Ai case study, 14 June 2024: WriterDuet Brings Screenplays to Life with Leonardo.Ai", url: "https://www.leonardo.ai/news/writerduet-brings-screenplays-to-life-with-leonardo-ai", grade: "B", how: "Read in full. A supplier's account. Source for WriterDuet's generated images and trailers." },
+    { title: "Final Draft home page, read 16 October 2026", url: "https://www.finaldraft.com/", grade: "C", how: "Read in full. Shows Final Draft 13 as the version on sale. Its prices load by script and were not read." },
+    { title: "Writers Guild of America: Summary of the 2023 WGA MBA", url: "https://www.wgacontract2023.org/the-campaign/summary-of-the-2023-wga-mba", grade: "B", how: "Read the section on artificial intelligence. The guild's own summary of its 2023 agreement with the studios." },
+    { title: "Laper robots.txt, updated 26 June 2026", url: "https://laper.ai/robots.txt", grade: "C", how: "Read in full. Its comments name Cloudflare Pages as the host and describe the script archive." },
+    { title: "Loot Drop database export of failed startups", url: "https://www.loot-drop.io/", grade: "C", how: "Local export. AI-written summaries, not independently verified. Source for the failed predecessors." }
+  ]
 }
 ];
 
